@@ -5,11 +5,15 @@
 # found in the LICENSE file.
 
 from importlib import import_module
+import locale
 import optparse
 import re
 import sys
 
 import harfile
+
+
+locale.setlocale(locale.LC_ALL, 'en_US')
 
 
 def CompareHeaders(a, b):
@@ -220,10 +224,10 @@ def main():
         rsp_accum,
         options.verbose)
 
-  print 'Success.'
-  print '#' * 80 
-  print '#' * 80 
-  print
+  if options.verbose > 2:
+    print '#' * 80 
+    print '#' * 80 
+    print
 
   baseline_size = 0
   lines = []
@@ -236,8 +240,8 @@ def main():
       ratio = 1.0* compressed_size / baseline_size
     lines.append(('req',
                   module_name,
-                  uncompressed_size,
-                  compressed_size,
+                  locale.format("%10d", uncompressed_size, grouping=True),
+                  locale.format("%10d", compressed_size, grouping=True),
                   ratio) )
   if baseline_name in rsp_accum:
     baseline_size = rsp_accum[baseline_name][1]
@@ -248,12 +252,12 @@ def main():
       ratio = 1.0* compressed_size / baseline_size
     lines.append(('rsp',
                   module_name,
-                  uncompressed_size,
-                  compressed_size,
+                  locale.format("%10d", uncompressed_size, grouping=True),
+                  locale.format("%10d", compressed_size, grouping=True),
                   ratio) )
-  print ('\t    %% %ds                UC    |    CM    | ratio' % (
+  print ('\t %% %ds   uncompressed | compressed | ratio' % (
          longest_module_name+10)) % ''
-  line_format = '\t%%s %% %ds frame size: %%8d | %%8d | %%2.2f ' % (
+  line_format = '\t%%s %% %ds: %%s | %%s | %%2.2f ' % (
       longest_module_name+10)
   for line in sorted(lines):
     print line_format % line
