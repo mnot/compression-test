@@ -121,51 +121,6 @@ def ProcessAndFormat(top_message,
       print line_format % line
     print
 
-# comman-separated list of name[="string"]
-def ParseCodecList(options_string):
-  key_accum = []
-  val_accum = []
-  parsed_params = {}
-
-  i = 0
-  os_len = len(options_string)
-  parsing_val = False
-  escape = False
-  while i < os_len:
-    c = options_string[i]
-    i += 1
-    if not parsing_val:
-      if c == ',':
-        if key_accum:
-          parsed_params[''.join(key_accum)] = ''.join(val_accum)
-          key_accum = []
-          val_accum = []
-      elif c == '=':
-        parsing_val = True
-        c = options_string[i]
-        i += 1
-        if c != '"':
-          raise StandardError()
-        continue
-      else:  # c != ',' and c != '='
-        key_accum.append(c)
-
-    else:  # parsing_key == False
-      if escape:
-        escape = False
-        val_accum.append(c)
-      else:
-        if c == '\\':
-          escape = True
-        elif c == '"':
-          parsing_val = False
-        else:
-          val_accum.append(c)
-  if key_accum:
-    parsed_params[''.join(key_accum)] = ''.join(val_accum)
-  print parsed_params
-  return parsed_params
-
 def main():
   op = optparse.OptionParser()
   op.add_option('-n', '--new',
@@ -185,15 +140,15 @@ def main():
                 help='If set, everything will use stream-group 0. '
                 '[default: %default]',
                 default=0)
-  op.add_option('-c', '--codecs',
-                dest='codecs',
+  op.add_option('-c', '--codec',
+                action='append',
+                dest='codec',
                 help='If set, the argument will be parsed as a'
                 'comma-separated list of compression module names'
-                'to use and the parameters to be passed to each.'
-                'e.g. --c'
-                    'http1_gzip,spdy3,spdy4,exec_codec="exec_parap1,'
-                    'exec_param2" [default: %default]',
-                default="http1_gzip,spdy3")
+                'to use and the parameters to be passed to each. '
+                'e.g. -c http1_gzip -c spdy3 -c exec="param1,param2"'
+                '[default: %default]',
+                default=[])
   op.add_option('-b', '--baseline',
                 dest='b',
                 help='Baseline codec-- all comparitive ratios are based on'
@@ -215,7 +170,6 @@ def main():
     sys.exit(1)
 
   # load indicated codec modules and prepare for their execution
-  codec_params = ParseCodecList(options.codecs)
   codec_names = []
   req_accum = {}
   rsp_accum = {}
@@ -223,14 +177,23 @@ def main():
   response_processors = {}
   module_name_to_module = {}
   longest_module_name = 0
-  for module_name, params in codec_params.iteritems():
+  for codec in options.codec:
+    print "codec", codec
+    if "=" in codec:
+      module_name, param_str = module_name.split("=", 1)
+      if param_str[0] == param_str[-1] == '"':
+        param_str = param_str[1:-1]
+      params = [param.strip() for param in param_str.split(",")]
+    else:
+      module_name = codec
+      params = []
     if len(module_name) > longest_module_name:
       longest_module_name = len(module_name)
     module = import_module("compression.%s" % module_name)
     module_name_to_module[module_name] = module
+
     req_accum[module_name] = [0,0]
     rsp_accum[module_name] = [0,0]
-
     request_processor = module.Processor(options, True, params)
     request_processors[module_name] = request_processor
     response_processor = module.Processor(options, False, params)
