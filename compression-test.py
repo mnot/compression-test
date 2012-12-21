@@ -3,23 +3,20 @@
 # Copyright (c) 2012 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+
 import re
 import optparse
 
 import harfile
-import default_headers
-import http1_gzip
-import spdy3_codec
-import spdy4_codec
 
 options = {}
 
 def CompareHeaders(a, b):
   """
-  Compares two sets of headers, and returns a message denoting any differences.
-  It ignores ordering differences in cookies, but tests that all the content
-  does exist in both.
-  If nothing is different, it returns an empty string
+  Compares two sets of headers, and returns a message denoting any
+  differences. It ignores ordering differences in cookies, but tests that all
+  the content does exist in both.
+  If nothing is different, it returns an empty string.
   """
   a = dict(a)
   b = dict(b)
@@ -55,19 +52,23 @@ def ProcessAndFormat(top_message,
   This uses the various different framing classes to encode/compress,
   potentially report on the results of each, and then accumulates stats on the
   effectiveness of each.
-  'top_message' is the message printed at the top of the results,
-                e.g. "request foo"
+
+  'top_message' is the message printed at the top of the results, e.g.
+  "request foo"
+
   'frametype_message' denotes the kind of message, e.g. request or response.
+
   'framers' is a dictionary of protocol_name: framer. It *must* include a
-           'spdy4' and 'http1' framer if the function is to do its job properly.
-  'request' is the request associated with the test_frame. If the test_frame is
-            a request, this would simply be a repetition of that. If the
-            test_frame is a response, this would be the request which engendered
-            the response.
-  'accumulator' is a dictionary of protocol_name to list-of-ints (of size two).
-               this function adds the compressed and uncompressed sizes into
-               the dictionary entry corresponding to the protocol_name for each
-               of the framers in 'framers'
+  'spdy4' and 'http1' framer if the function is to do its job properly.
+
+  'request' is the request associated with the test_frame. If the test_frame
+  is a request, this would simply be a repetition of that. If the test_frame
+  is a response, this would be the request which engendered the response.
+
+  'accumulator' is a dictionary of protocol_name to list-of-ints (of size
+  two). this function adds the compressed and uncompressed sizes into the
+  dictionary entry corresponding to the protocol_name for each of the framers
+  in 'framers'
   """
   if options.v >= 1:
     print '    ######## %s ########' % top_message
@@ -120,8 +121,8 @@ def ProcessAndFormat(top_message,
 
 # comman-separated list of name[="string"]
 def ParseCodecList(options_string):
-  key_accum= []
-  val_accum= []
+  key_accum = []
+  val_accum = []
   parsed_params = {}
 
   i = 0
@@ -198,18 +199,19 @@ def main():
                     default='http1_gzip')
   global options
   (options, args) = parser.parse_args()
+  
   codec_params = ParseCodecList(options.c)
 
+  if len(args) < 1:
+      ...
+
   # load .har files
-  requests = default_headers.default_requests
-  responses = default_headers.default_responses
-  if args >= 1:
-    requests = []
-    responses = []
-    for filename in args:
-      (har_requests, har_responses) = harfile.ReadHarFile(filename)
-      requests.extend(har_requests)
-      responses.extend(har_responses)
+  requests = []
+  responses = []
+  for filename in args:
+    (har_requests, har_responses) = harfile.ReadHarFile(filename)
+    requests.extend(har_requests)
+    responses.extend(har_responses)
 
   baseline_name = options.b
 
