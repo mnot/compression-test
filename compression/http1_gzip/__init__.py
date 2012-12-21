@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 import zlib
-import common_utils
+from .. import common_utils
 from .. import spdy_dictionary
 
 class Processor(object):

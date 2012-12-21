@@ -3,10 +3,18 @@ HTTP Header Compression Tests
 =============================
 
 Usage:
-  ./compression-test.py list-of-har-files
+  ./compression-test.py [options] list-of-har-files
 
 See [the HAR specification](http://www.softwareishard.com/blog/har-12-spec/), 
 and our [collected sample HAR files](https://github.com/http2/http_samples).
+
+The most important option is -c, which specifies what compressors to run.
+Current codecs include:
+
+* http1_gzip - gzip compression of HTTP1.x headers
+* spdy3 - SPDY 3's gzip-based compression
+* delta - draft-rpeon-httpbis-header-compression implementation
+* fork - fork a process; see below
 
 Adding New Compression Algorithms
 ---------------------------------
@@ -17,18 +25,9 @@ If you wish to implement a new codec, there are two easy approaches.
 'compression'. 
 
 2) Develop it in another language, and use the 'fork' module to execute
-it in a separate process. 
+it in a separate process. See 'sample_exec_codec.py' for an example of this; 
+it can be run like this:
 
-A short example
-of a program that could be fork-exec'd is 'trivial_codec.py', which accepts
-HTTP1 formatted input from stdin, and produces 8-byte unsigned int-followed by
-compressed-payload for each HTTP frame on stdout.
+  ./compression-test.py -c fork="sample_exec_codec.py" file.har
 
-In either case, you can include your compression module from the command-line.
-The following example loads http1_gzip.py, spdy4_codec.py, and fork_codec.py,
-which in turn launches trivial_codec.py
 
-  ./headers_sample.py \
-      --codecs="http1_gzip,spdy4_codec,fork_codec=\"$PWD/trivial_codec.py\""
-  The format of the "--codecs" parameter is:
-      --codecs=(module_name[="module_params"])*
