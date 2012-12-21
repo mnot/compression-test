@@ -4,12 +4,13 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-import re
+from importlib import import_module
 import optparse
+import re
+import sys
 
 import harfile
 
-options = {}
 
 def CompareHeaders(a, b):
   """
@@ -47,7 +48,8 @@ def ProcessAndFormat(top_message,
                      framers,
                      baseline_name,
                      request, test_frame,
-                     accumulator):
+                     accumulator,
+                     verbose):
   """
   This uses the various different framing classes to encode/compress,
   potentially report on the results of each, and then accumulates stats on the
@@ -68,9 +70,9 @@ def ProcessAndFormat(top_message,
   'accumulator' is a dictionary of protocol_name to list-of-ints (of size
   two). this function adds the compressed and uncompressed sizes into the
   dictionary entry corresponding to the protocol_name for each of the framers
-  in 'framers'
+  in 'framers'.
   """
-  if options.v >= 1:
+  if verbose >= 1:
     print '    ######## %s ########' % top_message
   processing_results = []
 
@@ -81,16 +83,16 @@ def ProcessAndFormat(top_message,
     if protocol_name == baseline_name:
       baseline_size = len(result['serialized_ops'])
 
-    if options.v >= 2 and 'decompressed_interpretable_ops' in result:
+    if verbose >= 2 and 'decompressed_interpretable_ops' in result:
       framer.PrintOps(result['decompressed_interpretable_ops'])
     if 'output_headers' in result:
       output_headers = result['output_headers']
       message = CompareHeaders(test_frame, output_headers)
       if message:
         print 'Something is wrong with this frame.'
-        if options.v >= 1:
+        if verbose >= 1:
           print message
-        if options.v >= 5:
+        if verbose >= 5:
           print 'It should be:'
           for k,v in        request.iteritems(): print '\t%s: %s' % (k,v)
           print 'but it was:'
@@ -110,7 +112,7 @@ def ProcessAndFormat(top_message,
                   uncompressed_size,
                   compressed_size,
                   ratio) )
-  if options.v >= 1:
+  if verbose >= 1:
     print ('\t%% %ds              UC  |  CM  | ratio' % (
            protocol_name_field_width+10)) % ''
     line_format = '\t%% %ds frame size: %%4d | %%4d | %%2.2f ' % (
@@ -165,45 +167,40 @@ def ParseCodecList(options_string):
   return parsed_params
 
 def main():
-  parser = optparse.OptionParser()
-  parser.add_option('-n', '--new',
-                    type='int',
-                    dest='n',
-                    help='if set, uses the new serialization method',
-                    default=0)
-  parser.add_option('-v', '--verbose',
-                    type='int',
-                    dest='v',
-                    help='Sets verbosity. At v=1, the opcodes will be printed. '
-                    'At v=2, so will the headers [default: %default]',
-                    default=0,
-                    metavar='VERBOSITY')
-  parser.add_option('-f', '--force_streamgroup',
-                    dest='f',
-                    help='If set, everything will use stream-group 0. '
-                    '[default: %default]',
-                    default=0)
-  parser.add_option('-c', '--codecs',
-                    dest='c',
-                    help='If set, the argument will be parsed as a'
-                    'comma-separated list of compression module names'
-                    'to use and the parameters to be passed to each.'
-                    'e.g. --c'
-                    'http1_gzip,spdy3_codec,spdy4_codec,exec_codec="exec_parap1,'
+  op = optparse.OptionParser()
+  op.add_option('-n', '--new',
+                type='int',
+                dest='n',
+                help='use the new serialization method',
+                default=0)
+  op.add_option('-v', '--verbose',
+                type='int',
+                dest='verbose',
+                help='Sets verbosity. At v=1, the opcodes will be printed. '
+                'At v=2, so will the headers [default: %default]',
+                default=0,
+                metavar='VERBOSITY')
+  op.add_option('-f', '--force_streamgroup',
+                dest='f',
+                help='If set, everything will use stream-group 0. '
+                '[default: %default]',
+                default=0)
+  op.add_option('-c', '--codecs',
+                dest='codecs',
+                help='If set, the argument will be parsed as a'
+                'comma-separated list of compression module names'
+                'to use and the parameters to be passed to each.'
+                'e.g. --c'
+                    'http1_gzip,spdy3,spdy4,exec_codec="exec_parap1,'
                     'exec_param2" [default: %default]',
-                    default="http1_gzip,spdy3_codec,spdy4_codec")
-  parser.add_option('-b', '--baseline',
-                    dest='b',
-                    help='Baseline codec-- all comparitive ratios are based on'
-                    'this',
-                    default='http1_gzip')
-  global options
-  (options, args) = parser.parse_args()
-  
-  codec_params = ParseCodecList(options.c)
+                default="http1_gzip,spdy3")
+  op.add_option('-b', '--baseline',
+                dest='b',
+                help='Baseline codec-- all comparitive ratios are based on'
+                'this',
+                default='http1_gzip')
 
-  if len(args) < 1:
-      ...
+  options, args = op.parse_args()  
 
   # load .har files
   requests = []
@@ -213,11 +210,13 @@ def main():
     requests.extend(har_requests)
     responses.extend(har_responses)
 
-  baseline_name = options.b
+  if len(requests) == len(responses) == 0:
+    sys.stderr.write("Nothing to process; exiting.\n")
+    sys.exit(1)
 
   # load indicated codec modules and prepare for their execution
+  codec_params = ParseCodecList(options.codecs)
   codec_names = []
-  codec_modules = {}
   req_accum = {}
   rsp_accum = {}
   request_processors = {}
@@ -227,7 +226,7 @@ def main():
   for module_name, params in codec_params.iteritems():
     if len(module_name) > longest_module_name:
       longest_module_name = len(module_name)
-    module = __import__(module_name, globals(), locals(), [], -1)
+    module = import_module("compression.%s" % module_name)
     module_name_to_module[module_name] = module
     req_accum[module_name] = [0,0]
     rsp_accum[module_name] = [0,0]
@@ -237,31 +236,33 @@ def main():
     response_processor = module.Processor(options, False, params)
     response_processors[module_name] = response_processor
 
+  baseline_name = options.b
   for i in xrange(len(requests)):
     request = requests[i]
     response = responses[i]
-    if options.v >= 2:
-      print '##################################################################'
+    if options.verbose >= 2:
+      print '#' * 80 
       print '    ####### request-path: "%s"' % requests[i][':path'][:80]
     ProcessAndFormat("request", "req",
         longest_module_name,
         request_processors,
         baseline_name,
-        #{'http1': http1_req, 'spdy3': spdy3_req, 'spdy4': spdy4_req},
         request, request,
-        req_accum)
+        req_accum,
+        options.verbose)
     ProcessAndFormat("response", "rsp",
         longest_module_name,
         response_processors,
         baseline_name,
-        #{'http1': http1_rsp, 'spdy3': spdy3_rsp, 'spdy4': spdy4_rsp},
         request, response,
-        rsp_accum)
-  print 'Thats all folks. If you see this, everything worked OK'
+        rsp_accum,
+        options.verbose)
 
-  print '######################################################################'
-  print '######################################################################'
+  print 'Success.'
+  print '#' * 80 
+  print '#' * 80 
   print
+
   baseline_size = 0
   lines = []
   if baseline_name in req_accum:
@@ -296,4 +297,5 @@ def main():
     print line_format % line
   print
 
-main()
+if __name__ == "__main__":
+  main()
