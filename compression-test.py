@@ -17,6 +17,94 @@ locale.setlocale(locale.LC_ALL, 'en_US')
 
 
 def main():
+
+  options, args = parse_options()
+
+  # load .har files
+  requests = []
+  responses = []
+  for filename in args:
+    (har_requests, har_responses) = harfile.ReadHarFile(filename)
+    requests.extend(har_requests)
+    responses.extend(har_responses)
+
+  if len(requests) == 0:
+    sys.stderr.write("Nothing to process; exiting.\n")
+    sys.exit(1)
+
+  # load indicated codec modules and prepare for their execution
+  codec_names = []
+  req_accum = {}
+  rsp_accum = {}
+  request_processors = {}
+  response_processors = {}
+  codec_processors, longest_module_name = get_codecs(options)
+
+  for module_name, processor in codec_processors.items():
+    req_accum[module_name] = [0,0]
+    rsp_accum[module_name] = [0,0]
+
+  for i in xrange(len(requests)):
+    request = requests[i]
+    response = responses[i]
+    if options.verbose >= 2:
+      print '#' * 80 
+      print '    ####### request-path: "%s"' % requests[i][':path'][:80]
+    ProcessAndFormat("request", "req",
+        longest_module_name,
+        [(name, proc[0]) for name, proc in codec_processors.items()],
+        request, request,
+        req_accum,
+        options)
+    ProcessAndFormat("response", "rsp",
+        longest_module_name,
+        [(name, proc[1]) for name, proc in codec_processors.items()],
+        request, response,
+        rsp_accum,
+        options)
+
+  if options.verbose > 2:
+    print '#' * 80 
+    print '#' * 80 
+    print
+
+  baseline_size = 0
+  lines = []
+  if options.baseline in req_accum:
+    baseline_size = req_accum[options.baseline][1]
+  for module_name, stats in req_accum.iteritems():
+    (compressed_size, uncompressed_size) = stats
+    ratio = 0
+    if baseline_size > 0:
+      ratio = 1.0* compressed_size / baseline_size
+    lines.append(('req',
+                  module_name,
+                  locale.format("%10d", uncompressed_size, grouping=True),
+                  locale.format("%10d", compressed_size, grouping=True),
+                  ratio) )
+  if options.baseline in rsp_accum:
+    baseline_size = rsp_accum[options.baseline][1]
+  for module_name, stats in rsp_accum.iteritems():
+    (compressed_size, uncompressed_size) = stats
+    ratio = 0
+    if baseline_size > 0:
+      ratio = 1.0* compressed_size / baseline_size
+    lines.append(('rsp',
+                  module_name,
+                  locale.format("%10d", uncompressed_size, grouping=True),
+                  locale.format("%10d", compressed_size, grouping=True),
+                  ratio) )
+  print ('\t %% %ds   uncompressed | compressed | ratio' % (
+         longest_module_name+10)) % ''
+  line_format = '\t%%s %% %ds: %%s | %%s | %%2.2f ' % (
+      longest_module_name+10)
+  for line in sorted(lines):
+    print line_format % line
+  print
+  
+
+def parse_options():
+  "Parse command-line options and return (options, args)."
   op = optparse.OptionParser()
   op.add_option('-n', '--new',
                 type='int',
@@ -45,33 +133,17 @@ def main():
                 '[default: %default]',
                 default=[])
   op.add_option('-b', '--baseline',
-                dest='b',
+                dest='baseline',
                 help='Baseline codec-- all comparitive ratios are based on'
                 'this',
                 default='http1_gzip')
 
-  options, args = op.parse_args()  
+  return op.parse_args()  
 
-  # load .har files
-  requests = []
-  responses = []
-  for filename in args:
-    (har_requests, har_responses) = harfile.ReadHarFile(filename)
-    requests.extend(har_requests)
-    responses.extend(har_responses)
-
-  if len(requests) == len(responses) == 0:
-    sys.stderr.write("Nothing to process; exiting.\n")
-    sys.exit(1)
-
-  # load indicated codec modules and prepare for their execution
-  codec_names = []
-  req_accum = {}
-  rsp_accum = {}
-  request_processors = {}
-  response_processors = {}
-  module_name_to_module = {}
+def get_codecs(options):
+  "Get a hash of codec names to modules. Also return the longest module name."
   longest_module_name = 0
+  codec_processors = {}
   for codec in options.codec:
     if "=" in codec:
       module_name, param_str = codec.split("=", 1)
@@ -84,77 +156,14 @@ def main():
     if len(module_name) > longest_module_name:
       longest_module_name = len(module_name)
     module = import_module("compression.%s" % module_name)
-    module_name_to_module[module_name] = module
+    codec_processors[module_name] = (
+      module.Processor(options, True, params), 
+      module.Processor(options, False, params)
+    )
+  return codec_processors, longest_module_name
+    
 
-    req_accum[module_name] = [0,0]
-    rsp_accum[module_name] = [0,0]
-    request_processor = module.Processor(options, True, params)
-    request_processors[module_name] = request_processor
-    response_processor = module.Processor(options, False, params)
-    response_processors[module_name] = response_processor
-
-  baseline_name = options.b
-  for i in xrange(len(requests)):
-    request = requests[i]
-    response = responses[i]
-    if options.verbose >= 2:
-      print '#' * 80 
-      print '    ####### request-path: "%s"' % requests[i][':path'][:80]
-    ProcessAndFormat("request", "req",
-        longest_module_name,
-        request_processors,
-        baseline_name,
-        request, request,
-        req_accum,
-        options.verbose)
-    ProcessAndFormat("response", "rsp",
-        longest_module_name,
-        response_processors,
-        baseline_name,
-        request, response,
-        rsp_accum,
-        options.verbose)
-
-  if options.verbose > 2:
-    print '#' * 80 
-    print '#' * 80 
-    print
-
-  baseline_size = 0
-  lines = []
-  if baseline_name in req_accum:
-    baseline_size = req_accum[baseline_name][1]
-  for module_name, stats in req_accum.iteritems():
-    (compressed_size, uncompressed_size) = stats
-    ratio = 0
-    if baseline_size > 0:
-      ratio = 1.0* compressed_size / baseline_size
-    lines.append(('req',
-                  module_name,
-                  locale.format("%10d", uncompressed_size, grouping=True),
-                  locale.format("%10d", compressed_size, grouping=True),
-                  ratio) )
-  if baseline_name in rsp_accum:
-    baseline_size = rsp_accum[baseline_name][1]
-  for module_name, stats in rsp_accum.iteritems():
-    (compressed_size, uncompressed_size) = stats
-    ratio = 0
-    if baseline_size > 0:
-      ratio = 1.0* compressed_size / baseline_size
-    lines.append(('rsp',
-                  module_name,
-                  locale.format("%10d", uncompressed_size, grouping=True),
-                  locale.format("%10d", compressed_size, grouping=True),
-                  ratio) )
-  print ('\t %% %ds   uncompressed | compressed | ratio' % (
-         longest_module_name+10)) % ''
-  line_format = '\t%%s %% %ds: %%s | %%s | %%2.2f ' % (
-      longest_module_name+10)
-  for line in sorted(lines):
-    print line_format % line
-  print
   
-
 
 def CompareHeaders(a, b):
   """
@@ -190,10 +199,9 @@ def ProcessAndFormat(top_message,
                      frametype_message,
                      protocol_name_field_width,
                      framers,
-                     baseline_name,
                      request, test_frame,
                      accumulator,
-                     verbose):
+                     options):
   """
   This uses the various different framing classes to encode/compress,
   potentially report on the results of each, and then accumulates stats on the
@@ -216,27 +224,27 @@ def ProcessAndFormat(top_message,
   dictionary entry corresponding to the protocol_name for each of the framers
   in 'framers'.
   """
-  if verbose >= 1:
+  if options.verbose >= 1:
     print '    ######## %s ########' % top_message
   processing_results = []
 
   baseline_size = None
-  for protocol_name, framer in framers.iteritems():
+  for protocol_name, framer in framers:
     result = framer.ProcessFrame(test_frame, request)
     processing_results.append((protocol_name, result))
-    if protocol_name == baseline_name:
+    if protocol_name == options.baseline:
       baseline_size = len(result['serialized_ops'])
 
-    if verbose >= 2 and 'decompressed_interpretable_ops' in result:
+    if options.verbose >= 2 and 'decompressed_interpretable_ops' in result:
       framer.PrintOps(result['decompressed_interpretable_ops'])
     if 'output_headers' in result:
       output_headers = result['output_headers']
       message = CompareHeaders(test_frame, output_headers)
       if message:
         print 'Something is wrong with this frame.'
-        if verbose >= 1:
+        if options.verbose >= 1:
           print message
-        if verbose >= 5:
+        if options.verbose >= 5:
           print 'It should be:'
           for k,v in        request.iteritems(): print '\t%s: %s' % (k,v)
           print 'but it was:'
@@ -256,7 +264,7 @@ def ProcessAndFormat(top_message,
                   uncompressed_size,
                   compressed_size,
                   ratio) )
-  if verbose >= 1:
+  if options.verbose >= 1:
     print ('\t%% %ds              UC  |  CM  | ratio' % (
            protocol_name_field_width+10)) % ''
     line_format = '\t%% %ds frame size: %%4d | %%4d | %%2.2f ' % (
