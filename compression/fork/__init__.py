@@ -2,17 +2,21 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
+import os
 import subprocess
 import struct
+import sys
 
 from .. import common_utils
 
 class Processor(object):
   def __init__(self, options, is_request, params):
-    print "CREATING FORK PROCESSOR FOR", params
     # 'is_request' is  ignored
     self.options = options
-    self.process = subprocess.Popen(params.split(),
+    path = os.path.join(os.getcwd(), params[0])
+    if options.verbose > 0:
+      sys.stderr.write("CREATING FORK PROCESSOR FOR %s\n" % path)
+    self.process = subprocess.Popen(path,
                                     #bufsize=-1,
                                     shell=False,
                                     stdout=subprocess.PIPE,

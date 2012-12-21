@@ -178,12 +178,11 @@ def main():
   module_name_to_module = {}
   longest_module_name = 0
   for codec in options.codec:
-    print "codec", codec
     if "=" in codec:
-      module_name, param_str = module_name.split("=", 1)
+      module_name, param_str = codec.split("=", 1)
       if param_str[0] == param_str[-1] == '"':
         param_str = param_str[1:-1]
-      params = [param.strip() for param in param_str.split(",")]
+      params = [param.strip() for param in param_str.split(',')]
     else:
       module_name = codec
       params = []
