@@ -16,115 +16,6 @@ import harfile
 locale.setlocale(locale.LC_ALL, 'en_US')
 
 
-def CompareHeaders(a, b):
-  """
-  Compares two sets of headers, and returns a message denoting any
-  differences. It ignores ordering differences in cookies, but tests that all
-  the content does exist in both.
-  If nothing is different, it returns an empty string.
-  """
-  a = dict(a)
-  b = dict(b)
-  output = []
-  if 'cookie' in a:
-    splitvals = a['cookie'].split(';')
-    a['cookie'] = '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
-  if 'cookie' in b:
-    splitvals = b['cookie'].split(';')
-    b['cookie'] = '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
-  for (k,v) in a.iteritems():
-    if not k in b:
-      output.append('\tkey: %s present in only one (A)' % k)
-      continue
-    if v != b[k]:
-      output.append('\tkey: %s has mismatched values:' % k)
-      output.append('\t  -> %s' % v)
-      output.append('\t  -> %s' % b[k])
-    del b[k]
-  for (k, v) in b.iteritems():
-      output.append('\tkey: %s present in only one (B)' % k)
-  return '\n'.join(output)
-
-
-def ProcessAndFormat(top_message,
-                     frametype_message,
-                     protocol_name_field_width,
-                     framers,
-                     baseline_name,
-                     request, test_frame,
-                     accumulator,
-                     verbose):
-  """
-  This uses the various different framing classes to encode/compress,
-  potentially report on the results of each, and then accumulates stats on the
-  effectiveness of each.
-
-  'top_message' is the message printed at the top of the results, e.g.
-  "request foo"
-
-  'frametype_message' denotes the kind of message, e.g. request or response.
-
-  'framers' is a dictionary of protocol_name: framer. It *must* include a
-  'spdy4' and 'http1' framer if the function is to do its job properly.
-
-  'request' is the request associated with the test_frame. If the test_frame
-  is a request, this would simply be a repetition of that. If the test_frame
-  is a response, this would be the request which engendered the response.
-
-  'accumulator' is a dictionary of protocol_name to list-of-ints (of size
-  two). this function adds the compressed and uncompressed sizes into the
-  dictionary entry corresponding to the protocol_name for each of the framers
-  in 'framers'.
-  """
-  if verbose >= 1:
-    print '    ######## %s ########' % top_message
-  processing_results = []
-
-  baseline_size = None
-  for protocol_name, framer in framers.iteritems():
-    result = framer.ProcessFrame(test_frame, request)
-    processing_results.append((protocol_name, result))
-    if protocol_name == baseline_name:
-      baseline_size = len(result['serialized_ops'])
-
-    if verbose >= 2 and 'decompressed_interpretable_ops' in result:
-      framer.PrintOps(result['decompressed_interpretable_ops'])
-    if 'output_headers' in result:
-      output_headers = result['output_headers']
-      message = CompareHeaders(test_frame, output_headers)
-      if message:
-        print 'Something is wrong with this frame.'
-        if verbose >= 1:
-          print message
-        if verbose >= 5:
-          print 'It should be:'
-          for k,v in        request.iteritems(): print '\t%s: %s' % (k,v)
-          print 'but it was:'
-          for k,v in output_headers.iteritems(): print '\t%s: %s' % (k,v)
-
-  lines = []
-  for protocol_name, results in processing_results:
-    compressed_size = len(results['compressed'])
-    uncompressed_size = len(results['serialized_ops'])
-    accumulator[protocol_name][0] += compressed_size
-    accumulator[protocol_name][1] += uncompressed_size
-    if baseline_size is not None:
-      ratio = 1.0 * compressed_size / baseline_size
-    else:
-      ratio = 0
-    lines.append( ('%s %s' % (protocol_name, frametype_message),
-                  uncompressed_size,
-                  compressed_size,
-                  ratio) )
-  if verbose >= 1:
-    print ('\t%% %ds              UC  |  CM  | ratio' % (
-           protocol_name_field_width+10)) % ''
-    line_format = '\t%% %ds frame size: %%4d | %%4d | %%2.2f ' % (
-        protocol_name_field_width+10)
-    for line in sorted(lines):
-      print line_format % line
-    print
-
 def main():
   op = optparse.OptionParser()
   op.add_option('-n', '--new',
@@ -262,6 +153,119 @@ def main():
   for line in sorted(lines):
     print line_format % line
   print
+  
+
+
+def CompareHeaders(a, b):
+  """
+  Compares two sets of headers, and returns a message denoting any
+  differences. It ignores ordering differences in cookies, but tests that all
+  the content does exist in both.
+  If nothing is different, it returns an empty string.
+  """
+  a = dict(a)
+  b = dict(b)
+  output = []
+  if 'cookie' in a:
+    splitvals = a['cookie'].split(';')
+    a['cookie'] = '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
+  if 'cookie' in b:
+    splitvals = b['cookie'].split(';')
+    b['cookie'] = '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
+  for (k,v) in a.iteritems():
+    if not k in b:
+      output.append('\tkey: %s present in only one (A)' % k)
+      continue
+    if v != b[k]:
+      output.append('\tkey: %s has mismatched values:' % k)
+      output.append('\t  -> %s' % v)
+      output.append('\t  -> %s' % b[k])
+    del b[k]
+  for (k, v) in b.iteritems():
+      output.append('\tkey: %s present in only one (B)' % k)
+  return '\n'.join(output)
+
+
+def ProcessAndFormat(top_message,
+                     frametype_message,
+                     protocol_name_field_width,
+                     framers,
+                     baseline_name,
+                     request, test_frame,
+                     accumulator,
+                     verbose):
+  """
+  This uses the various different framing classes to encode/compress,
+  potentially report on the results of each, and then accumulates stats on the
+  effectiveness of each.
+
+  'top_message' is the message printed at the top of the results, e.g.
+  "request foo"
+
+  'frametype_message' denotes the kind of message, e.g. request or response.
+
+  'framers' is a dictionary of protocol_name: framer. It *must* include a
+  'spdy4' and 'http1' framer if the function is to do its job properly.
+
+  'request' is the request associated with the test_frame. If the test_frame
+  is a request, this would simply be a repetition of that. If the test_frame
+  is a response, this would be the request which engendered the response.
+
+  'accumulator' is a dictionary of protocol_name to list-of-ints (of size
+  two). this function adds the compressed and uncompressed sizes into the
+  dictionary entry corresponding to the protocol_name for each of the framers
+  in 'framers'.
+  """
+  if verbose >= 1:
+    print '    ######## %s ########' % top_message
+  processing_results = []
+
+  baseline_size = None
+  for protocol_name, framer in framers.iteritems():
+    result = framer.ProcessFrame(test_frame, request)
+    processing_results.append((protocol_name, result))
+    if protocol_name == baseline_name:
+      baseline_size = len(result['serialized_ops'])
+
+    if verbose >= 2 and 'decompressed_interpretable_ops' in result:
+      framer.PrintOps(result['decompressed_interpretable_ops'])
+    if 'output_headers' in result:
+      output_headers = result['output_headers']
+      message = CompareHeaders(test_frame, output_headers)
+      if message:
+        print 'Something is wrong with this frame.'
+        if verbose >= 1:
+          print message
+        if verbose >= 5:
+          print 'It should be:'
+          for k,v in        request.iteritems(): print '\t%s: %s' % (k,v)
+          print 'but it was:'
+          for k,v in output_headers.iteritems(): print '\t%s: %s' % (k,v)
+
+  lines = []
+  for protocol_name, results in processing_results:
+    compressed_size = len(results['compressed'])
+    uncompressed_size = len(results['serialized_ops'])
+    accumulator[protocol_name][0] += compressed_size
+    accumulator[protocol_name][1] += uncompressed_size
+    if baseline_size is not None:
+      ratio = 1.0 * compressed_size / baseline_size
+    else:
+      ratio = 0
+    lines.append( ('%s %s' % (protocol_name, frametype_message),
+                  uncompressed_size,
+                  compressed_size,
+                  ratio) )
+  if verbose >= 1:
+    print ('\t%% %ds              UC  |  CM  | ratio' % (
+           protocol_name_field_width+10)) % ''
+    line_format = '\t%% %ds frame size: %%4d | %%4d | %%2.2f ' % (
+        protocol_name_field_width+10)
+    for line in sorted(lines):
+      print line_format % line
+    print
+
+
 
 if __name__ == "__main__":
   main()
