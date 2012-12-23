@@ -2,15 +2,21 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
+
+# FIXME: function to strip connection headers
+
+# FIXME: move to delta
 def ListToStr(val):
   """ Takes a list of ints and makes it into a string """
   return ''.join(['%c' % c for c in val])
 
+# FIXME: move to delta
 def StrToList(val):
   """ Takes a string and makes it into a list of ints (<= 8 bits each)"""
   return [ord(c) for c in val]
 
 
+# FIXME: move to delta
 def MakeReadableString(val):
   """ Takes a string and returns a normalized version which allows
   interpretation of nonprinting characters, but easier to read than just
@@ -24,6 +30,7 @@ def MakeReadableString(val):
       out.append('0x%02x ' % ord(c))
   return ''.join(out)
 
+# FIXME: move to delta
 def FormatAsBits(output_and_bits):
   """ Takes as input a tuple representing (array_of_bytes, number_of_bits),
   and formats it as binary, with byte-boundaries marked"""
@@ -49,20 +56,22 @@ def FormatAsBits(output_and_bits):
   retval.extend([' [%d]' % bits])
   return ''.join(retval)
 
-def FormatAsHTTP1(frame):
-  """Takes the frame and formats it as HTTP1"""
+
+def FormatAsHTTP1(frame, delimiter="\r\n"):
+  """Takes the frame and formats it as HTTP/1"""
   out_frame = []
   fl = ''
   avoid_list = []
   if ':method' in frame:
-    fl = '%s %s HTTP/%s\r\n' % (
-        frame[':method'],frame[':path'],frame[':version'])
+    fl = '%s %s HTTP/%s%s' % (
+        frame[':method'], frame[':path'], frame[':version'], delimiter)
     avoid_list = [':method', ':path', ':version']
   else:
-    fl = 'HTTP/%s %s %s\r\n' % (
-        frame[':version'],frame[':status'],frame[':status-text'])
+    fl = 'HTTP/%s %s %s%s' % (
+        frame[':version'], frame[':status'], frame[':status-text'], delimiter)
     avoid_list = [':version', ':status', ':status-text']
   out_frame.append(fl)
+  
   for (key, val) in frame.iteritems():
     if key in avoid_list:
       continue
@@ -72,10 +81,12 @@ def FormatAsHTTP1(frame):
       out_frame.append(key)
       out_frame.append(': ')
       out_frame.append(individual_val)
-      out_frame.append('\r\n')
-  out_frame.append('\r\n')
+      out_frame.append(delimiter)
+  out_frame.append(delimiter)
   return ''.join(out_frame)
 
+
+# FIXME: move to delta
 class IDStore(object):
   """ Manages a store of IDs"""
   def __init__(self):
