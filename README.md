@@ -20,8 +20,8 @@ Current codecs include:
 * delta - draft-rpeon-httpbis-header-compression implementation
 * fork - fork a process; see below
 
-Interpreting Results
---------------------
+Interpreting Text Results
+-------------------------
 
 Results will look something like:
 
@@ -43,6 +43,18 @@ The 'compressed' column shows how many bytes the compression algorithm
 outputs; 'ratio' shows the ratio to the baseline (http1, by default), and the
 'min', 'max' and 'std; columns show the minimum, maximum and standard
 deviations of the ratios, respectively.
+
+
+Showing Message Graphs
+----------------------
+
+When the "-t" option is used, TSV output is created. E.g.,
+
+    ./compare_compressors.py -t req my.har > req.tsv
+    ./compare_compressors.py -t res my.har > res.tsv
+
+This will create two TSV files that can then be displayed by the 
+display_tsv.html file.
 
 
 Adding New Compression Algorithms
