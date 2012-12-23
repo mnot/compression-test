@@ -46,7 +46,7 @@ class CompressionTester(object):
     "Return a list of (message_type, message, host)."
     messages = []
     for filename in self.args:
-      har_requests, har_responses = harfile.ReadHarFile(filename)
+      har_requests, har_responses = harfile.read_har_file(filename)
       both = zip(har_requests, har_responses)
       for req, res in both:
         messages.append(('req', req, req[':host']))
