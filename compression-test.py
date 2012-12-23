@@ -31,7 +31,7 @@ class CompressionTester(object):
     for msg_type in self.msg_types:
       self.print_results(self.ttls.get(msg_type, {}), msg_type, True)
 
-
+  
   def get_messages(self):
     "Return a list of (message_type, message, host)."
     messages = []
@@ -43,19 +43,19 @@ class CompressionTester(object):
         messages.append(('res', res, req[':host']))
     return messages
 
-
+  
   def process_messages(self, messages):
     "Let's do this thing."
     if len(messages) == 0:
       sys.stderr.write("Nothing to process.\n")
       return {}
-
+    
     ttls = dict([(msg_type, defaultdict(lambda:{
       'size': 0,
       'maxr': 0,
       'minr': 1e20
     })) for msg_type in self.msg_types])
-
+    
     for (message_type, message, host) in messages:
       results = self.process_message(message, message_type, host)
       for name, result in results.items():
@@ -64,25 +64,25 @@ class CompressionTester(object):
         target['maxr'] = max(target['maxr'], result['ratio'])
         target['minr'] = min(target['minr'], result['ratio'])
       ttls[message_type]['_num'] = len(messages)
-
+    
     for message_type in self.msg_types:
       baseline_ratio = ttls[message_type][self.options.baseline]['size']
       for name, result in ttls[message_type].items():
-        if name[0] == "_": 
+        if name[0] == "_":
           continue
         result['ratio'] = 1.0 * result['size'] / baseline_ratio
     return ttls
 
-
+  
   def process_message(self, message, message_type, host):
     """
-    message is a HTTP header dictionary in the format described in 
-    compression.BaseProcessor. 
+    message is a HTTP header dictionary in the format described in
+    compression.BaseProcessor.
     
     message_type is 'req' or 'res'.
     
     host is the host header of the associated request.
-
+    
     Returns a dictionary of processor names mapped to their results.
     """
     procs = [
@@ -105,7 +105,7 @@ class CompressionTester(object):
           sys.stderr.write('*** COMPRESSION ERROR in %s.\n' % name)
           if self.options.verbose >= 1:
             self.output(compare_result + "\n\n")
-
+      
       results[name] = {
         'compressed': compressed,
         'decompressed': decompressed,
@@ -120,20 +120,20 @@ class CompressionTester(object):
       self.print_results(results, message_type)
     return results
 
-
+  
   def print_results(self, results, message_type, stats=False):
     """
     Output a summary of the results. Expects results to be the dictionary
     format described in compression.BaseProcessor.
     """
-
+    
     if stats:
-      self.output("%i %s messages processed\n" % 
+      self.output("%i %s messages processed\n" %
         (results['_num'], message_type))
     
     codecs = results.keys()
     codecs.sort()
-
+    
     lines = []
     for name in codecs:
       if name[0] == "_":
@@ -147,7 +147,7 @@ class CompressionTester(object):
         lines.append((message_type, name, pretty_size, ratio, minr, maxr))
       else:
         lines.append((message_type, name, pretty_size, ratio))
-
+    
     if stats:
       self.output('%%%ds        compressed | ratio min   max\n' % self.lname % '')
       format = '%%s %%%ds %%s | %%2.2f  %%2.2f  %%2.2f\n' % self.lname
@@ -156,10 +156,10 @@ class CompressionTester(object):
       format = '%%s %%%ds %%s | %%2.2f\n' % self.lname
     for line in sorted(lines):
       self.output(format % line)
-
+    
     self.output("\n")
 
-
+  
   def get_codecs(self):
     """
     Get a hash of codec names to processors.
@@ -183,7 +183,7 @@ class CompressionTester(object):
       )
     return codec_processors
 
-
+  
   def parse_options(self):
     "Parse command-line options and return (options, args)."
     op = optparse.OptionParser()
@@ -208,7 +208,7 @@ class CompressionTester(object):
                   default='http1')
     return op.parse_args()
 
-
+  
   @staticmethod
   def compare_headers(a, b):
     """
