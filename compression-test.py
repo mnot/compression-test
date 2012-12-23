@@ -87,10 +87,17 @@ class CompressionTester(object):
     ]
     results = {}
     for name, processor in procs:
-      result = processor.compress(message, host)
+      compressed = processor.compress(message, host)
+#      try:
+#        decompressed = processor.decompress(compressed)
+#        same = self.compare_headers(message, decompressed)
+#        if not same:
+#          sys.stderr.write("*** COMPRESSION ERROR: %s\n" % name)
+#      except IOError:
+#        pass # FIXME
       results[name] = {
-        'compressed': result,
-        'size': len(result)      
+        'compressed': compressed,
+        'size': len(compressed)
       }
     if self.options.baseline in results.keys():
       baseline_size = results[self.options.baseline]['size']
@@ -220,19 +227,17 @@ class CompressionTester(object):
   def compare_headers(a, b):
     """
     Compares two sets of headers, and returns a message denoting any
-    differences. It ignores ordering differences in cookies, but tests that all
-    the content does exist in both.
+    differences. It ignores ordering differences in cookies, but tests that
+    all the content does exist in both.
     If nothing is different, it returns an empty string.
     """
     a = dict(a)
     b = dict(b)
     output = []
-    if 'cookie' in a:
-      splitvals = a['cookie'].split(';')
-      a['cookie'] = '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
-    if 'cookie' in b:
-      splitvals = b['cookie'].split(';')
-      b['cookie'] = '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
+    for d in [a,b]:
+      if 'cookie' in d.keys():
+        splitvals = d['cookie'].split(';')
+        d['cookie'] = '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
     for (k,v) in a.iteritems():
       if not k in b:
         output.append('\tkey: %s present in only one (A)' % k)
