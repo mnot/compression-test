@@ -1,14 +1,21 @@
 #!/usr/bin/env python
 
+"""
+compression_test.py
+
+Tests various HTTP header compression algorithms, to compare them.
+"""
+
 # Copyright (c) 2012 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+
+# pylint: disable=W0311
 
 from collections import defaultdict
 from importlib import import_module
 import locale
 import optparse
-import re
 import sys
 
 import harfile
@@ -16,6 +23,9 @@ import harfile
 locale.setlocale(locale.LC_ALL, 'en_US')
 
 class CompressionTester(object):
+  """
+  This is the thing.
+  """
   msg_types = ['req', 'res']
   
   def __init__(self):
@@ -149,13 +159,15 @@ class CompressionTester(object):
         lines.append((message_type, name, pretty_size, ratio))
     
     if stats:
-      self.output('%%%ds        compressed | ratio min   max\n' % self.lname % '')
-      format = '%%s %%%ds %%s | %%2.2f  %%2.2f  %%2.2f\n' % self.lname
+      self.output(
+        '%%%ds        compressed | ratio min   max\n' % self.lname % ''
+      )
+      fmt = '%%s %%%ds %%s | %%2.2f  %%2.2f  %%2.2f\n' % self.lname
     else:
       self.output('%%%ds        compressed | ratio\n' % self.lname % '')
-      format = '%%s %%%ds %%s | %%2.2f\n' % self.lname
+      fmt = '%%s %%%ds %%s | %%2.2f\n' % self.lname
     for line in sorted(lines):
-      self.output(format % line)
+      self.output(fmt % line)
     
     self.output("\n")
 
@@ -183,17 +195,17 @@ class CompressionTester(object):
       )
     return codec_processors
 
-  
-  def parse_options(self):
+  @staticmethod
+  def parse_options():
     "Parse command-line options and return (options, args)."
-    op = optparse.OptionParser()
-    op.add_option('-v', '--verbose',
+    optp = optparse.OptionParser()
+    optp.add_option('-v', '--verbose',
                   type='int',
                   dest='verbose',
                   help='set verbosity, 1-5 (default: %default)',
                   default=0,
                   metavar='VERBOSITY')
-    op.add_option('-c', '--codec',
+    optp.add_option('-c', '--codec',
                   action='append',
                   dest='codec',
                   help='compression modules to test, potentially with '
@@ -201,16 +213,16 @@ class CompressionTester(object):
                   'e.g. -c spdy3 -c fork="abc" '
                   '(default: %default)',
                   default=['http1'])
-    op.add_option('-b', '--baseline',
+    optp.add_option('-b', '--baseline',
                   dest='baseline',
                   help='baseline codec to base comparisons upon. '
                   '(default: %default)',
                   default='http1')
-    return op.parse_args()
+    return optp.parse_args()
 
   
   @staticmethod
-  def compare_headers(a, b):
+  def compare_headers(a_hdr, b_hdr):
     """
     Compares two dicts of headers, and returns a message denoting any
     differences. It ignores ordering differences in cookies, but tests that
@@ -218,21 +230,22 @@ class CompressionTester(object):
     If nothing is different, it returns an empty string.
     """
     output = []
-    for d in [a,b]:
-      if 'cookie' in d.keys():
-        splitvals = d['cookie'].split(';')
-        d['cookie'] = '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
-    for (k,v) in a.iteritems():
-      if not k in b:
-        output.append('\tkey: %s present in only one (A)' % k)
+    for d_hdr in [a_hdr, b_hdr]:
+      if 'cookie' in d_hdr.keys():
+        splitvals = d_hdr['cookie'].split(';')
+        d_hdr['cookie'] = \
+          '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
+    for (key, val) in a_hdr.iteritems():
+      if not key in b_hdr:
+        output.append('\tkey: %s present in only one (A)' % key)
         continue
-      if v.strip() != b[k].strip():
-        output.append('\tkey: %s has mismatched values:' % k)
-        output.append('\t  a -> %s' % v)
-        output.append('\t  b -> %s' % b[k])
-      del b[k]
-    for (k, v) in b.iteritems():
-        output.append('\tkey: %s present in only one (B)' % k)
+      if val.strip() != b_hdr[key].strip():
+        output.append('\tkey: %s has mismatched values:' % key)
+        output.append('\t  a -> %s' % val)
+        output.append('\t  b -> %s' % b_hdr[key])
+      del b_hdr[key]
+    for key in b_hdr.keys():
+        output.append('\tkey: %s present in only one (B)' % key)
     return '\n'.join(output)
 
 
