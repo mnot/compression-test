@@ -8,33 +8,6 @@ import re
 import json
 import sys
 
-def MakeDefaultHeaders(list_o_dicts, items_to_ignore=[]):
-  retval = {}
-  for kvdict in list_o_dicts:
-    key = kvdict["name"].lower()
-    val = kvdict["value"]
-    if key == "host":
-      key = ":host"
-    if key in items_to_ignore:
-      continue
-    if key in retval:
-      retval[key] = retval[key] + '\0' + val
-    else:
-      retval[key] = val
-  return retval
-
-def EncodeStringsAsUTF8(x):
-  retval = {}
-  for k,v in x.iteritems():
-    n_k = k
-    if isinstance(k, unicode):
-      n_k = k.encode("utf8")
-    n_v = v
-    if isinstance(v, unicode):
-      n_v = v.encode("utf8")
-    retval[n_k] = n_v
-  return retval
-
 def ReadHarFile(filename):
   f = open(filename)
   try:
@@ -67,5 +40,34 @@ def ReadHarFile(filename):
     header[":version"] = re.sub("^[^/]*/","", response["httpVersion"])
     response_headers.append(header)
   return (request_headers, response_headers)
+
+
+def MakeDefaultHeaders(list_o_dicts, items_to_ignore=[]):
+  retval = {}
+  for kvdict in list_o_dicts:
+    key = kvdict["name"].lower()
+    val = kvdict["value"]
+    if key == "host":
+      key = ":host"
+    if key in items_to_ignore:
+      continue
+    if key in retval:
+      retval[key] = retval[key] + '\0' + val
+    else:
+      retval[key] = val
+  return retval
+
+def EncodeStringsAsUTF8(x):
+  retval = {}
+  for k,v in x.iteritems():
+    n_k = k
+    if isinstance(k, unicode):
+      n_k = k.encode("utf8")
+    n_v = v
+    if isinstance(v, unicode):
+      n_v = v.encode("utf8")
+    retval[n_k] = n_v
+  return retval
+
 
 
