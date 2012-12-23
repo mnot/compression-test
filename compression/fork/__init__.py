@@ -7,14 +7,12 @@ import subprocess
 import struct
 import sys
 
-from .. import BaseProcessor, format_http1
+from .. import BaseProcessor, format_http1, strip_conn_headers
 
 class Processor(BaseProcessor):
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
     path = os.path.join(os.getcwd(), params[0])
-    if options.verbose > 0:
-      sys.stderr.write("CREATING FORK PROCESSOR FOR %s\n" % path)
     self.process = subprocess.Popen(path,
                                     #bufsize=-1,
                                     shell=False,
@@ -22,7 +20,7 @@ class Processor(BaseProcessor):
                                      stdin=subprocess.PIPE)
 
   def compress(self, in_headers, host):
-    http1_msg = format_http1(in_headers)
+    http1_msg = format_http1(strip_conn_headers(in_headers))
     self.process.stdin.write(http1_msg)
     output = self.process.stdout.read(8)
     size = struct.unpack("q", output)[0]

@@ -72,7 +72,10 @@ def strip_conn_headers(hdrs):
   if hdrs.has_key('connection'):
     hop_by_hop = [v.strip() for v in hdrs['connection'].split(None)]
     for hdr in hop_by_hop:
-      del hdrs[hdr]
+      try:
+        del hdrs[hdr]
+      except KeyError:
+        pass
     del hdrs['connection']
   return hdrs
 
