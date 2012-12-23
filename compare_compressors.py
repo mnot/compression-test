@@ -63,7 +63,8 @@ class CompressionTester(object):
     ttls = dict([(msg_type, defaultdict(lambda:{
       'size': 0,
       'maxr': 0,
-      'minr': 1e20
+      'minr': 1e20,
+      'ratio_list': [],
     })) for msg_type in self.msg_types])
     
     for (message_type, message, host) in messages:
@@ -73,6 +74,7 @@ class CompressionTester(object):
         target['size'] += result['size']
         target['maxr'] = max(target['maxr'], result['ratio'])
         target['minr'] = min(target['minr'], result['ratio'])
+        target['ratio_list'].append(result['ratio'])
       ttls[message_type]['_num'] = len(messages)
     
     for message_type in self.msg_types:
@@ -81,6 +83,8 @@ class CompressionTester(object):
         if name[0] == "_":
           continue
         result['ratio'] = 1.0 * result['size'] / baseline_ratio
+        result['std'] = self.meanstdv(result['ratio_list'])[1]
+
     return ttls
 
   
@@ -154,15 +158,18 @@ class CompressionTester(object):
       if stats:
         minr = results[name].get('minr', 0)
         maxr = results[name].get('maxr', 0)
-        lines.append((message_type, name, pretty_size, ratio, minr, maxr))
+        std = results[name]['std']
+        lines.append(
+          (message_type, name, pretty_size, ratio, minr, maxr, std)
+        )
       else:
         lines.append((message_type, name, pretty_size, ratio))
     
     if stats:
       self.output(
-        '%%%ds        compressed | ratio min   max\n' % self.lname % ''
+        '%%%ds        compressed | ratio min   max   std\n' % self.lname % ''
       )
-      fmt = '%%s %%%ds %%s | %%2.2f  %%2.2f  %%2.2f\n' % self.lname
+      fmt = '%%s %%%ds %%s | %%2.2f  %%2.2f  %%2.2f  %%2.2f\n' % self.lname
     else:
       self.output('%%%ds        compressed | ratio\n' % self.lname % '')
       fmt = '%%s %%%ds %%s | %%2.2f\n' % self.lname
@@ -247,6 +254,24 @@ class CompressionTester(object):
     for key in b_hdr.keys():
         output.append('\tkey: %s present in only one (B)' % key)
     return '\n'.join(output)
+
+
+  @staticmethod
+  def meanstdv(members):
+    """
+    Calculate mean and standard deviation of data x[]:
+        mean = {\sum_i x_i \over n}
+        std = sqrt(\sum_i (x_i - mean)^2 \over n-1)
+    """
+    from math import sqrt
+    num, mean, std = len(members), 0, 0
+    for item in members:
+      mean = mean + item
+    mean = mean / float(num)
+    for item in members:
+      std = std + (item - mean)**2
+    std = sqrt(std / float(num - 1))
+    return mean, std
 
 
 if __name__ == "__main__":

@@ -25,21 +25,24 @@ Interpreting Results
 
 Results will look something like:
 
-    1092 req messages processed
-                      compressed | ratio min   max
-    req      http1       291,628 | 1.00  1.00  1.00
-    req http1_gzip        25,855 | 0.09  0.02  0.61
-    req      spdy3        34,660 | 0.12  0.03  0.69
+    732 req messages processed
+                      compressed | ratio min   max   std
+    req       fork       195,386 | 1.00  1.00  1.00  0.00
+    req      http1       195,386 | 1.00  1.00  1.00  0.00
+    req http1_gzip        20,801 | 0.11  0.02  0.60  0.08
+    req      spdy3        27,238 | 0.14  0.04  0.71  0.08
 
-    1092 res messages processed
-                      compressed | ratio min   max
-    res      http1       190,650 | 1.00  1.00  1.00
-    res http1_gzip        27,964 | 0.15  0.03  0.57
-    res      spdy3        37,373 | 0.20  0.06  0.65
+    732 res messages processed
+                      compressed | ratio min   max   std
+    res       fork       161,029 | 1.00  1.00  1.00  0.00
+    res      http1       161,029 | 1.00  1.00  1.00  0.00
+    res http1_gzip        35,187 | 0.22  0.02  0.61  0.07
+    res      spdy3        41,468 | 0.26  0.04  0.67  0.08
 
-The 'compressed' column shows how many bytes the compression algorithm 
-outputs; 'ratio' shows the ratio to the baseline (http1, by default), and
-the 'min' and 'max' columns show the minimum and maximum ratios, respectively.
+The 'compressed' column shows how many bytes the compression algorithm
+outputs; 'ratio' shows the ratio to the baseline (http1, by default), and the
+'min', 'max' and 'std; columns show the minimum, maximum and standard
+deviations of the ratios, respectively.
 
 
 Adding New Compression Algorithms
