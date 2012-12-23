@@ -20,7 +20,7 @@ class CompressionTester(object):
   
   def __init__(self):
     self.output = sys.stdout.write
-    self.longest_name = 0
+    self.lname = 0
     self.options, self.args = self.parse_options()
     self.codec_processors = self.get_codecs()
     messages = self.get_messages()
@@ -28,7 +28,7 @@ class CompressionTester(object):
     if self.options.verbose >= 1:
       self.output("=" * 80 + "\n\n")
     for msg_type in self.msg_types:
-      self.print_results(self.ttls.get(msg_type, {}), msg_type)
+      self.print_results(self.ttls.get(msg_type, {}), msg_type, True)
 
 
   def get_messages(self):
@@ -51,11 +51,25 @@ class CompressionTester(object):
 
     ttls = dict([(msg_type, defaultdict(lambda:{
       'size': 0,
+      'maxr': 0,
+      'minr': 1e20
     })) for msg_type in self.msg_types])
+
     for (message_type, message, host) in messages:
       results = self.process_message(message, message_type, host)
       for name, result in results.items():
-        ttls[message_type][name]['size'] += result['size']
+        target = ttls[message_type][name]
+        target['size'] += result['size']
+        target['maxr'] = max(target['maxr'], result['ratio'])
+        target['minr'] = min(target['minr'], result['ratio'])
+      ttls[message_type]['_num'] = len(messages)
+
+    for message_type in self.msg_types:
+      baseline_ratio = ttls[message_type][self.options.baseline]['size']
+      for name, result in ttls[message_type].items():
+        if name[0] == "_": 
+          continue
+        result['ratio'] = 1.0 * result['size'] / baseline_ratio
     return ttls
 
 
@@ -78,6 +92,11 @@ class CompressionTester(object):
         'compressed': result,
         'size': len(result)      
       }
+    if self.options.baseline in results.keys():
+      baseline_size = results[self.options.baseline]['size']
+      if baseline_size > 0:
+        for name, result in results.items():
+          result['ratio'] = 1.0 * result['size'] / baseline_size
     if self.options.verbose >= 1:
       self.print_results(results, message_type)
     return results
@@ -87,9 +106,9 @@ class CompressionTester(object):
     "Print details of a singe message."
     if self.options.verbose >= 1:
       print ('\t%% %ds              UC  |  CM  | ratio' % (
-             self.longest_name + 10)) % ''
+             self.lname + 10)) % ''
       line_format = '\t%% %ds frame size: %%4d | %%4d | %%2.2f ' % (
-          self.longest_name + 10)
+          self.lname + 10)
       for line in sorted(lines):
         print line_format % line
       print
@@ -108,27 +127,41 @@ class CompressionTester(object):
             for k,v in output_headers.iteritems(): print '\t%s: %s' % (k,v)
 
 
-  def print_results(self, results, message_type):
-    "Output a summary of the results."
+  def print_results(self, results, message_type, stats=False):
+    """
+    Output a summary of the results. Expects results to be the dictionary
+    format described in compression.BaseProcessor.
+    """
 
     if self.options.verbose >= 2:
-      self.output("\n" + ("-" * 80) + "\n")
-
-    lines = []
+      self.output("\n" + ("-" * 80) + "\n")    
+    if stats:
+      self.output("%i %s messages processed\n" % 
+        (results['_num'], message_type))
+    
     codecs = results.keys()
     codecs.sort()
-    baseline = results.get(self.options.baseline, {})
-    baseline_size = baseline.get('size', 0)
-    for name in codecs:
-      compressed_size = results[name].get('size', 0)
-      ratio = 0
-      if baseline_size > 0:
-        ratio = 1.0 * compressed_size / baseline_size
-      pretty_size = locale.format("%13d", compressed_size, grouping=True)
-      lines.append((message_type, name, pretty_size, ratio))
 
-    self.output('%%%ds        compressed | ratio\n' % self.longest_name % '')
-    format = '%%s %%%ds %%s | %%2.2f\n' % self.longest_name
+    lines = []
+    for name in codecs:
+      if name[0] == "_":
+        continue
+      ratio = results[name].get('ratio', 0)
+      compressed_size = results[name].get('size', 0)
+      pretty_size = locale.format("%13d", compressed_size, grouping=True)
+      if stats:
+        minr = results[name].get('minr', 0)
+        maxr = results[name].get('maxr', 0)
+        lines.append((message_type, name, pretty_size, ratio, minr, maxr))
+      else:
+        lines.append((message_type, name, pretty_size, ratio))
+
+    if stats:
+      self.output('%%%ds        compressed | ratio min   max\n' % self.lname % '')
+      format = '%%s %%%ds %%s | %%2.2f  %%2.2f  %%2.2f\n' % self.lname
+    else:
+      self.output('%%%ds        compressed | ratio\n' % self.lname % '')
+      format = '%%s %%%ds %%s | %%2.2f\n' % self.lname
     for line in sorted(lines):
       self.output(format % line)
     self.output("\n")
@@ -148,8 +181,8 @@ class CompressionTester(object):
       else:
         module_name = codec
         params = []
-      if len(module_name) > self.longest_name:
-        self.longest_name = len(module_name)
+      if len(module_name) > self.lname:
+        self.lname = len(module_name)
       module = import_module("compression.%s" % module_name)
       codec_processors[module_name] = ( # same order as self.msg_types
         module.Processor(self.options, True, params),
