@@ -36,10 +36,10 @@ class CompressionTester(object):
     messages = []
     for filename in self.args:
       har_requests, har_responses = harfile.ReadHarFile(filename)
-      reqs = [('req', msg, msg[':host']) for msg in har_requests]
-      messages.extend(reqs)
-      #FIXME
-      messages.extend([('res', msg, 'foo') for msg in har_responses])
+      both = zip(har_requests, har_responses)
+      for req, res in both:
+        messages.append(('req', req, req[':host']))
+        messages.append(('res', res, req[':host']))
     return messages
 
 

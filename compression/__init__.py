@@ -24,7 +24,7 @@ class BaseProcessor(object):
     
     
 def format_http1(frame, delimiter="\r\n"):
-  """Takes the frame and formats it as HTTP/1"""
+  """Take the frame and format it as HTTP/1"""
   out_frame = []
   fl = ''
   avoid_list = []
