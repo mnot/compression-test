@@ -63,7 +63,7 @@ Adding New Compression Algorithms
 If you wish to implement a new codec, there are two easy approaches.
 
 1) Develop it in Python. New modules should be subdirectories of 
-'compressor'. 
+'compressor', and should inherit from BaseProcessor there.
 
 2) Develop it in another language, and use the 'fork' module to execute
 it in a separate process. See 'sample_exec_codec.py' for an example of this; 
