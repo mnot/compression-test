@@ -7,7 +7,7 @@ Usage
 
 The test can be run like this:
 
-  ./compression-test.py [options] list-of-har-files
+  ./compare_compressors.py [options] list-of-har-files
 
 See [the HAR specification](http://www.softwareishard.com/blog/har-12-spec/), 
 and our [collected sample HAR files](https://github.com/http2/http_samples).
@@ -48,12 +48,12 @@ Adding New Compression Algorithms
 If you wish to implement a new codec, there are two easy approaches.
 
 1) Develop it in Python. New modules should be subdirectories of 
-'compression'. 
+'compressor'. 
 
 2) Develop it in another language, and use the 'fork' module to execute
 it in a separate process. See 'sample_exec_codec.py' for an example of this; 
 it can be run like this:
 
-  ./compression-test.py -c fork="sample_exec_codec.py" file.har
+  ./compare_compressors.py -c fork="sample_exec_codec.py" file.har
 
 

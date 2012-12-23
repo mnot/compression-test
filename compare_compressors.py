@@ -33,7 +33,7 @@ class CompressionTester(object):
     self.warned = {'http1_gzip': True}  # procs with no decompress support
     self.lname = 0  # longest processor name
     self.options, self.args = self.parse_options()
-    self.codec_processors = self.get_codecs()
+    self.codec_processors = self.get_compressors()
     messages = self.get_messages()
     self.ttls = self.process_messages(messages)
     if self.options.verbose >= 1:
@@ -172,7 +172,7 @@ class CompressionTester(object):
     self.output("\n")
 
   
-  def get_codecs(self):
+  def get_compressors(self):
     """
     Get a hash of codec names to processors.
     """
@@ -188,7 +188,7 @@ class CompressionTester(object):
         params = []
       if len(module_name) > self.lname:
         self.lname = len(module_name)
-      module = import_module("compression.%s" % module_name)
+      module = import_module("compressor.%s" % module_name)
       codec_processors[module_name] = ( # same order as self.msg_types
         module.Processor(self.options, True, params),
         module.Processor(self.options, False, params)
