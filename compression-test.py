@@ -20,8 +20,8 @@ class CompressionTester(object):
   
   def __init__(self):
     self.output = sys.stdout.write
-    self.warned = {'http1_gzip': True}
-    self.lname = 0
+    self.warned = {'http1_gzip': True}  # procs with no decompress support
+    self.lname = 0  # longest processor name
     self.options, self.args = self.parse_options()
     self.codec_processors = self.get_codecs()
     messages = self.get_messages()
