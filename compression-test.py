@@ -226,7 +226,7 @@ class CompressionTester(object):
       if not k in b:
         output.append('\tkey: %s present in only one (A)' % k)
         continue
-      if v != b[k]:
+      if v.strip() != b[k].strip():
         output.append('\tkey: %s has mismatched values:' % k)
         output.append('\t  a -> %s' % v)
         output.append('\t  b -> %s' % b[k])
