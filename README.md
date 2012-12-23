@@ -54,7 +54,7 @@ When the "-t" option is used, TSV output is created. E.g.,
     ./compare_compressors.py -t res my.har > res.tsv
 
 This will create two TSV files that can then be displayed by the 
-display_tsv.html file.
+display_tsv.html file. See [an example](http://http2.github.com/compression-test/).
 
 
 Adding New Compression Algorithms
