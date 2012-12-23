@@ -20,6 +20,7 @@ class CompressionTester(object):
   
   def __init__(self):
     self.output = sys.stdout.write
+    self.warned = {}
     self.lname = 0
     self.options, self.args = self.parse_options()
     self.codec_processors = self.get_codecs()
@@ -91,8 +92,10 @@ class CompressionTester(object):
       decompressed = None
       try:
         decompressed = processor.decompress(compressed)
-      except AttributeError:
-        pass
+      except NotImplementedError:
+        if name not in self.warned.keys():
+          sys.stderr.write("WARNING: %s decompression not checked.\n" % name)
+          self.warned[name] = True
       if decompressed:
         compare_result = self.compare_headers(message, decompressed)
         if compare_result:

@@ -21,6 +21,14 @@ class BaseProcessor(object):
     }
     """
     raise NotImplementedError
+
+  def decompress(self, compressed):
+    """
+    'compressed' is the compressed headers.
+       
+    Return value is a header dictionary.
+    """
+    raise NotImplementedError
     
     
 def format_http1(frame, delimiter="\r\n"):
