@@ -29,11 +29,11 @@ def format_http1(frame, delimiter="\r\n"):
   fl = ''
   avoid_list = []
   if ':method' in frame:
-    fl = '%s %s HTTP/%s%s' % (
+    fl = '%s %s %s%s' % (
         frame[':method'], frame[':path'], frame[':version'], delimiter)
-    avoid_list = [':method', ':path', ':version']
+    avoid_list = [':method', ':path', ':version', ':scheme']
   else:
-    fl = 'HTTP/%s %s %s%s' % (
+    fl = '%s %s %s%s' % (
         frame[':version'], frame[':status'], frame[':status-text'], delimiter)
     avoid_list = [':version', ':status', ':status-text']
   out_frame.append(fl)
@@ -53,3 +53,29 @@ def format_http1(frame, delimiter="\r\n"):
   
 
 # FIXME: function to strip connection headers
+
+def parse_http1(message):
+  """Take a HTTP1 message and return the header structure for it."""
+  out = {}
+  lines = message.strip().split("\n")
+  top_line = lines.pop(0).split(None, 2)
+  for line in lines:
+    if not line: break
+    name, value = line.split(":", 1)
+    name = name.lower()
+    if out.has_key(name):
+      out[name] += "\0" + value.strip()
+    else:
+      out[name] = value.strip()
+  if "host" in out.keys():
+    out[":scheme"] = "http" # FIXME
+    out[':method'] = top_line[0]
+    out[':path'] = top_line[1]
+    out[':version'] = top_line[2].strip()
+    out[':host'] = out['host']
+    del out['host']
+  else:
+    out[':version'] = top_line[0]
+    out[':status'] = top_line[1]
+    out[':status-text'] = top_line[2].strip()
+  return out

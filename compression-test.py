@@ -88,15 +88,21 @@ class CompressionTester(object):
     results = {}
     for name, processor in procs:
       compressed = processor.compress(message, host)
-#      try:
-#        decompressed = processor.decompress(compressed)
-#        same = self.compare_headers(message, decompressed)
-#        if not same:
-#          sys.stderr.write("*** COMPRESSION ERROR: %s\n" % name)
-#      except IOError:
-#        pass # FIXME
+      decompressed = None
+      try:
+        decompressed = processor.decompress(compressed)
+      except AttributeError:
+        pass
+      if decompressed:
+        compare_result = self.compare_headers(message, decompressed)
+        if compare_result:
+          sys.stderr.write('*** COMPRESSION ERROR in %s.\n' % name)
+          if self.options.verbose >= 1:
+            self.output(compare_result + "\n\n")
+
       results[name] = {
         'compressed': compressed,
+        'decompressed': decompressed,
         'size': len(compressed)
       }
     if self.options.baseline in results.keys():
@@ -104,34 +110,9 @@ class CompressionTester(object):
       if baseline_size > 0:
         for name, result in results.items():
           result['ratio'] = 1.0 * result['size'] / baseline_size
-    if self.options.verbose >= 1:
+    if self.options.verbose >= 2:
       self.print_results(results, message_type)
     return results
-
-
-  def print_single(self, name, result):
-    "Print details of a singe message."
-    if self.options.verbose >= 1:
-      print ('\t%% %ds              UC  |  CM  | ratio' % (
-             self.lname + 10)) % ''
-      line_format = '\t%% %ds frame size: %%4d | %%4d | %%2.2f ' % (
-          self.lname + 10)
-      for line in sorted(lines):
-        print line_format % line
-      print
-
-      if 'output_headers' in result: #FIXME
-        output_headers = result['output_headers']
-        compare_result = self.compare_headers(message, output_headers)
-        if compare_result:
-          print 'Something is wrong with this frame.'
-          if self.options.verbose >= 1:
-            print compare_result
-          if self.options.verbose >= 5:
-            print 'It should be:'
-            for k,v in        request.iteritems(): print '\t%s: %s' % (k,v)
-            print 'but it was:'
-            for k,v in output_headers.iteritems(): print '\t%s: %s' % (k,v)
 
 
   def print_results(self, results, message_type, stats=False):
@@ -140,8 +121,6 @@ class CompressionTester(object):
     format described in compression.BaseProcessor.
     """
 
-    if self.options.verbose >= 2:
-      self.output("\n" + ("-" * 80) + "\n")    
     if stats:
       self.output("%i %s messages processed\n" % 
         (results['_num'], message_type))
@@ -171,6 +150,7 @@ class CompressionTester(object):
       format = '%%s %%%ds %%s | %%2.2f\n' % self.lname
     for line in sorted(lines):
       self.output(format % line)
+
     self.output("\n")
 
 
@@ -226,13 +206,11 @@ class CompressionTester(object):
   @staticmethod
   def compare_headers(a, b):
     """
-    Compares two sets of headers, and returns a message denoting any
+    Compares two dicts of headers, and returns a message denoting any
     differences. It ignores ordering differences in cookies, but tests that
     all the content does exist in both.
     If nothing is different, it returns an empty string.
     """
-    a = dict(a)
-    b = dict(b)
     output = []
     for d in [a,b]:
       if 'cookie' in d.keys():
@@ -244,8 +222,8 @@ class CompressionTester(object):
         continue
       if v != b[k]:
         output.append('\tkey: %s has mismatched values:' % k)
-        output.append('\t  -> %s' % v)
-        output.append('\t  -> %s' % b[k])
+        output.append('\t  a -> %s' % v)
+        output.append('\t  b -> %s' % b[k])
       del b[k]
     for (k, v) in b.iteritems():
         output.append('\tkey: %s present in only one (B)' % k)

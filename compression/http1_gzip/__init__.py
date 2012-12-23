@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 import zlib
-from .. import BaseProcessor, spdy_dictionary, format_http1
+from .. import BaseProcessor, spdy_dictionary, format_http1, parse_http1
 
 class Processor(BaseProcessor):
   def __init__(self, options, is_request, params):
@@ -15,11 +15,14 @@ class Processor(BaseProcessor):
 
   def compress(self, in_headers, host):
     http1_msg = format_http1(in_headers)
+    return zlib.compress(http1_msg)
     return ''.join([
                    self.compressor.compress(http1_msg),
                    self.compressor.flush(zlib.Z_SYNC_FLUSH)
                   ])
 
   def decompress(self, compressed):
-    return zlib.decompress(compressed)
+    msg = zlib.decompress(compressed)
+    return parse_http1(msg)
+
   
