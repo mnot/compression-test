@@ -14,7 +14,7 @@ from common_utils import *
 #from common_utils import IDStore
 from huffman import Huffman
 from optparse import OptionParser
-from spdy_dictionary import spdy_dict
+from ..spdy_dictionary import spdy_dict
 from word_freak import WordFreak
 
 options = {}

@@ -4,39 +4,23 @@
 
 import zlib
 import struct
-from .. import spdy_dictionary
+from .. import spdy_dictionary, BaseProcessor
 
-class Processor(object):
+class Processor(BaseProcessor):
   def __init__(self, options, is_request, params):
-    # 'is_request' and 'params' are ignored
-    self.options = options
+    BaseProcessor.__init__(self, options, is_request, params)
     self.compressor = zlib.compressobj(zlib.Z_DEFAULT_COMPRESSION,
                                        zlib.DEFLATED, 15)
     self.compressor.compress(spdy_dictionary.spdy_dict);
     self.compressor.flush(zlib.Z_SYNC_FLUSH)
 
-  def ProcessFrame(self, inp_headers, request_headers):
-    """
-    'inp_headers' are the headers that will be processed
-    'request_headers' are the request headers associated with this frame
-       the host is extracted from this data. For a response, this would be
-       the request that engendered the response. For a request, it is just
-       the request again.
-    It outputs: (spdy3_frame_compressed_with_gzip, uncompressed_spdy3_frame)
-    Note that compressing with an unmodified stream-compressor like gzip is
-    effective, however it is insecure.
-    """
-
-    raw_spdy3_frame = self.Spdy3HeadersFormat(inp_headers)
+  def compress(self, in_headers, host):
+    raw_spdy3_frame = self.Spdy3HeadersFormat(in_headers)
     compress_me_payload = raw_spdy3_frame[12:]
     final_frame = raw_spdy3_frame[:12]
     final_frame += self.compressor.compress(compress_me_payload)
     final_frame += self.compressor.flush(zlib.Z_SYNC_FLUSH)
-    retval = {
-      'compressed': final_frame,
-      'serialized_ops': raw_spdy3_frame
-    }
-    return retval
+    return final_frame
 
   def Spdy3HeadersFormat(self, request):
     """
