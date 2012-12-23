@@ -76,9 +76,12 @@ class CompressionTester(object):
 
   def process_message(self, message, message_type, host):
     """
-    This uses the various different processor classes to compress,
-    potentially report on the results of each, and then accumulates stats on
-    the effectiveness of each.
+    message is a HTTP header dictionary in the format described in 
+    compression.BaseProcessor. 
+    
+    message_type is 'req' or 'res'.
+    
+    host is the host header of the associated request.
 
     Returns a dictionary of processor names mapped to their results.
     """

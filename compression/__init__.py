@@ -9,7 +9,14 @@ class BaseProcessor(object):
 
   def compress(self, in_headers, host):
     """
-    'in_headers' are the headers that will be processed
+    'in_headers' are the headers that will be processed. They are expected
+    to be a dictionary whose keys are header names (all lowercase), and
+    whose values are strings. Multiple instances of a header field will
+    be delimited by \0 (null) characters.
+    
+    There are a number of special header names, indicated by ':' as the
+    first character in the name.
+
     'host' is the host header value for the request (or associated request,
     if it is a response).
        
@@ -59,8 +66,16 @@ def format_http1(frame, delimiter="\r\n"):
   out_frame.append(delimiter)
   return ''.join(out_frame)
   
+  
+def strip_conn_headers(hdrs):
+  """Remove hop-by-hop headers from a header dictionary."""  
+  if hdrs.has_key('connection'):
+    hop_by_hop = [v.strip() for v in hdrs['connection'].split(None)]
+    for hdr in hop_by_hop:
+      del hdrs[hdr]
+    del hdrs['connection']
+  return hdrs
 
-# FIXME: function to strip connection headers
 
 def parse_http1(message):
   """Take a HTTP1 message and return the header structure for it."""
