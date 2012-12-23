@@ -20,7 +20,7 @@ class CompressionTester(object):
   
   def __init__(self):
     self.output = sys.stdout.write
-    self.warned = {}
+    self.warned = {'http1_gzip': True}
     self.lname = 0
     self.options, self.args = self.parse_options()
     self.codec_processors = self.get_codecs()
