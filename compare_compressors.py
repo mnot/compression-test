@@ -34,16 +34,13 @@ class CompressionTester(object):
     self.lname = 0  # longest processor name
     self.options, self.args = self.parse_options()
     self.codec_processors = self.get_compressors()
-    messages = self.get_messages()
-    self.ttls = self.process_messages(messages)
-    if self.options.verbose >= 1:
-      self.output("=" * 80 + "\n\n")
-    for msg_type in self.msg_types:
-      self.print_results(self.ttls.get(msg_type, {}), msg_type, True)
+    if self.options.tsv:
+      self.run_tsv(self.options.tsv)
+    else:
+      self.run_text()
 
-  
-  def get_messages(self):
-    "Return a list of (message_type, message, host)."
+      
+  def run_text(self):
     messages = []
     for filename in self.args:
       har_requests, har_responses = harfile.read_har_file(filename)
@@ -51,9 +48,39 @@ class CompressionTester(object):
       for req, res in both:
         messages.append(('req', req, req[':host']))
         messages.append(('res', res, req[':host']))
-    return messages
+    self.ttls = self.process_messages(messages)
+    if self.options.verbose >= 1:
+      self.output("=" * 80 + "\n\n")
+    for msg_type in self.msg_types:
+      self.print_results(self.ttls.get(msg_type, {}), msg_type, True)
 
-  
+
+  def run_tsv(self, message_type):
+    requests = []
+    responses = []
+    for filename in self.args:
+      har_requests, har_responses = harfile.read_har_file(filename)
+      requests.extend(har_requests)
+      responses.extend(har_responses)
+    both = zip(requests, responses)
+    count = 0
+    for request, response in both:
+      count += 1
+      if message_type == 'req':
+        results = self.process_message(request, 'req', request[':host'])
+      elif message_type == 'res':
+        results = self.process_message(response, 'res', request[':host'])
+      else:
+        sys.stderr.write("Unknown message type; must be 'req' or 'res'.\n")
+        sys.exit(1)
+      if count == 1:
+        codecs = results.keys()
+        codecs.sort()
+        titles = [codec for codec in codecs if codec[0] != "_"]
+        self.output("num\t" + "\t".join(titles) + "\n")
+      self.tsv_results(count, [results])
+      
+    
   def process_messages(self, messages):
     "Let's do this thing."
     if len(messages) == 0:
@@ -130,7 +157,7 @@ class CompressionTester(object):
       if baseline_size > 0:
         for name, result in results.items():
           result['ratio'] = 1.0 * result['size'] / baseline_size
-    if self.options.verbose >= 2:
+    if self.options.verbose >= 2 and not self.options.tsv:
       self.print_results(results, message_type)
     return results
 
@@ -178,6 +205,21 @@ class CompressionTester(object):
     
     self.output("\n")
 
+
+  def tsv_results(self, num, results_list):
+    """
+    Output TSV; takes a record number and a list of results objects.
+    """
+    items = [num]
+    for results in results_list:
+      codecs = results.keys()
+      codecs.sort()
+      for name in codecs:
+        if name[0] == "_":
+          continue
+        items.append(results[name].get('size', 0))
+    self.output("%s\n" % "\t".join([str(item) for item in items]))
+      
   
   def get_compressors(self):
     """
@@ -225,6 +267,12 @@ class CompressionTester(object):
                   help='baseline codec to base comparisons upon. '
                   '(default: %default)',
                   default='http1')
+    optp.add_option('-t', '--tsv',
+                  action="store",
+                  dest="tsv",
+                  help="output in TSV. Requires an argument for the "
+                  "message type; 'req' or 'res'.",
+                  default=False)
     return optp.parse_args()
 
   
