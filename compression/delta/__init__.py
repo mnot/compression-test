@@ -8,7 +8,8 @@ import re
 import header_freq_tables
 import spdy4_codec_impl
 import huffman
-from .. import common_utils, BaseProcessor
+import common_utils
+from .. import BaseProcessor
 
 # There are a number of TODOS in the spdy4
 #      have near indices. Possibly renumber whever something is referenced)
