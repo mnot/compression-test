@@ -7,65 +7,81 @@
 import re
 import json
 import sys
+from urlparse import urlsplit
 
 def ReadHarFile(filename):
-  f = open(filename)
+  fh = open(filename)
   try:
-    o = json.loads(f.read(), object_hook=EncodeStringsAsUTF8)
+    har = json.loads(fh.read(), object_hook=encode_strings)
     # and now lets convert all strings to utf8.
   except Exception as x:
-    print x
-    sys.exit("unable to parse: " + filename)
+    sys.stderr.write("Unable to parse %s\n\n" % filename)
+    sys.stderr.write(x)
+    sys.exit(1)
+  finally: 
+    fh.close()
+  return har2hdrs(har)
 
+
+def har2hdrs(har):
+  """
+  Convert a har dictionary to two lists of header dictionaries for requests
+  and responses.
+  
+  Headers derived from other information are preceded by a ":" character.
+  """
   request_headers = []
   response_headers = []
-  for entry in o["log"]["entries"]:
+  for entry in har["log"]["entries"]:
     request = entry["request"]
-    header = MakeDefaultHeaders(request["headers"], ["connection"])
-    header[":method"] = request["method"].lower()
-    header[":path"] = re.sub("^[^:]*://[^/]*/","/", request["url"])
-    header[":version"] = re.sub("^[^/]*/","", request["httpVersion"])
-    header[":scheme"] = re.sub("^([^:]*):.*$", '\\1', request["url"]).lower()
+    headers = process_headers(request["headers"])
+    headers[":method"] = request["method"].lower()
+    url = urlsplit(request["url"])
+    headers[":path"] = url.path
+    if url.query:
+      headers[":path"] += "?%s" % url.query
+    headers[":scheme"] = url.scheme.lower()
+    headers[":version"] = request["httpVersion"]
     if not ":host" in request_headers:
-      header[":host"] = re.sub("^[^:]*://([^/]*)/.*$","\\1", request["url"])
-    if not header[":scheme"] in ["http", "https"]:
+      headers[":host"] = re.sub("^[^:]*://([^/]*)/.*$","\\1", request["url"])
+    if not headers[":scheme"] in ["http", "https"]:
       continue
-    request_headers.append(header)
+    request_headers.append(headers)
 
     response = entry["response"]
-    header = MakeDefaultHeaders(response["headers"],
-        ["connection", "status", "status-text", "version"])
-    header[":status"] = re.sub("^([0-9]*).*","\\1", str(response["status"]))
-    header[":status-text"] = response["statusText"]
-    header[":version"] = re.sub("^[^/]*/","", response["httpVersion"])
-    response_headers.append(header)
+    headers = process_headers(response["headers"])
+    headers[":status"] = re.sub("^([0-9]*).*","\\1", str(response["status"]))
+    headers[":status-text"] = response["statusText"]
+    headers[":version"] = response["httpVersion"]
+    response_headers.append(headers)
+
   return (request_headers, response_headers)
 
 
-def MakeDefaultHeaders(list_o_dicts, items_to_ignore=[]):
-  retval = {}
-  for kvdict in list_o_dicts:
-    key = kvdict["name"].lower()
-    val = kvdict["value"]
-    if key == "host":
+def process_headers(hdrdicts):
+  "Take a har header datastructure and return a normalised dictionary."
+  out = {}
+  for hdrdict in hdrdicts:
+    name = hdrdict["name"].lower()
+    val = hdrdict["value"]
+    if name == "host":
       key = ":host"
-    if key in items_to_ignore:
-      continue
-    if key in retval:
-      retval[key] = retval[key] + '\0' + val
+    if name in out:
+      out[name] = out[name] + ', ' + val
     else:
-      retval[key] = val
-  return retval
+      out[name] = val
+  return out
 
-def EncodeStringsAsUTF8(x):
+def encode_strings(x, encoding="latin-1"):
+  "Encode strings in objects. Latin-1 is the default encoding for HTTP/1.x."
   retval = {}
   for k,v in x.iteritems():
     n_k = k
     if isinstance(k, unicode):
-      n_k = k.encode("utf8")
+      n_k = k.encode(encoding)
     n_v = v
     if isinstance(v, unicode):
-      n_v = v.encode("utf8")
+      n_v = v.encode(encoding)
     retval[n_k] = n_v
   return retval
 
