@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 
+"""
+Base class and common functions for compressor implementations.
+"""
+
+# pylint: disable=W0311
+
 class BaseProcessor(object):
   "Base class for compression processors."
   def __init__(self, options, is_request, params):
@@ -41,17 +47,17 @@ class BaseProcessor(object):
 def format_http1(frame, delimiter="\r\n"):
   """Take the frame and format it as HTTP/1"""
   out_frame = []
-  fl = ''
+  top_line = ''
   avoid_list = []
   if ':method' in frame:
-    fl = '%s %s %s%s' % (
+    top_line = '%s %s %s%s' % (
         frame[':method'], frame[':path'], frame[':version'], delimiter)
     avoid_list = [':method', ':path', ':version', ':scheme']
   else:
-    fl = '%s %s %s%s' % (
+    top_line = '%s %s %s%s' % (
         frame[':version'], frame[':status'], frame[':status-text'], delimiter)
     avoid_list = [':version', ':status', ':status-text']
-  out_frame.append(fl)
+  out_frame.append(top_line)
   
   for (key, val) in frame.iteritems():
     if key in avoid_list:
@@ -86,7 +92,8 @@ def parse_http1(message):
   lines = message.strip().split("\n")
   top_line = lines.pop(0).split(None, 2)
   for line in lines:
-    if not line: break
+    if not line: 
+      break
     name, value = line.split(":", 1)
     name = name.lower()
     if out.has_key(name):
@@ -94,7 +101,7 @@ def parse_http1(message):
     else:
       out[name] = value.strip()
   if "host" in out.keys():
-    out[":scheme"] = "http" # FIXME
+    out[":scheme"] = "http" # FIXME: find https?
     out[':method'] = top_line[0]
     out[':path'] = top_line[1]
     out[':version'] = top_line[2].strip()
