@@ -12,17 +12,24 @@ class Processor(BaseProcessor):
                                        zlib.DEFLATED, 15)
     self.compressor.compress(spdy_dictionary.spdy_dict);
     self.compressor.flush(zlib.Z_SYNC_FLUSH)
+    self.decompressor = zlib.compressobj(zlib.Z_DEFAULT_COMPRESSION,
+                                       zlib.DEFLATED, 15)
+    self.decompressor.compress(spdy_dictionary.spdy_dict);
+    self.decompressor.flush(zlib.Z_SYNC_FLUSH)
 
   def compress(self, in_headers, host):
     http1_msg = format_http1(in_headers)
-    return zlib.compress(http1_msg)
+#    return zlib.compress(http1_msg)
     return ''.join([
                    self.compressor.compress(http1_msg),
                    self.compressor.flush(zlib.Z_SYNC_FLUSH)
                   ])
 
   def decompress(self, compressed):
-    msg = zlib.decompress(compressed)
+    msg = ''.join([
+                  self.decompressor.decompress(compressed),
+                  self.decompressor.flush(zlib.Z_SYNC_FLUSH)
+                  ])
     return parse_http1(msg)
 
   
