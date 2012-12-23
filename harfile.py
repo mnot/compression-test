@@ -67,7 +67,7 @@ def process_headers(hdrdicts):
     if name == "host":
       key = ":host"
     if name in out:
-      out[name] = out[name] + ', ' + val
+      out[name] = out[name] + '\0' + val
     else:
       out[name] = val
   return out

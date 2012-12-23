@@ -7,7 +7,7 @@ import subprocess
 import struct
 import sys
 
-from .. import common_utils, BaseProcessor
+from .. import BaseProcessor, format_http1
 
 class Processor(BaseProcessor):
   def __init__(self, options, is_request, params):
@@ -22,7 +22,7 @@ class Processor(BaseProcessor):
                                      stdin=subprocess.PIPE)
 
   def compress(self, in_headers, host):
-    http1_msg = common_utils.FormatAsHTTP1(in_headers)
+    http1_msg = format_http1(in_headers)
     self.process.stdin.write(http1_msg)
     output = self.process.stdout.read(8)
     size = struct.unpack("q", output)[0]
