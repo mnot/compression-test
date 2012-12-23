@@ -3,20 +3,16 @@
 # found in the LICENSE file.
 
 
-# FIXME: function to strip connection headers
 
-# FIXME: move to delta
 def ListToStr(val):
   """ Takes a list of ints and makes it into a string """
   return ''.join(['%c' % c for c in val])
 
-# FIXME: move to delta
 def StrToList(val):
   """ Takes a string and makes it into a list of ints (<= 8 bits each)"""
   return [ord(c) for c in val]
 
 
-# FIXME: move to delta
 def MakeReadableString(val):
   """ Takes a string and returns a normalized version which allows
   interpretation of nonprinting characters, but easier to read than just
@@ -30,7 +26,6 @@ def MakeReadableString(val):
       out.append('0x%02x ' % ord(c))
   return ''.join(out)
 
-# FIXME: move to delta
 def FormatAsBits(output_and_bits):
   """ Takes as input a tuple representing (array_of_bytes, number_of_bits),
   and formats it as binary, with byte-boundaries marked"""
@@ -57,7 +52,6 @@ def FormatAsBits(output_and_bits):
   return ''.join(retval)
 
 
-# FIXME: move to delta
 class IDStore(object):
   """ Manages a store of IDs"""
   def __init__(self):

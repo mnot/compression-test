@@ -50,3 +50,6 @@ def format_http1(frame, delimiter="\r\n"):
       out_frame.append(delimiter)
   out_frame.append(delimiter)
   return ''.join(out_frame)
+  
+
+# FIXME: function to strip connection headers
