@@ -44,7 +44,7 @@ class BaseProcessor(object):
     raise NotImplementedError
     
     
-def format_http1(frame, delimiter="\r\n"):
+def format_http1(frame, delimiter="\r\n", valsep=": ", host='host'):
   """Take the frame and format it as HTTP/1"""
   out_frame = []
   top_line = ''
@@ -63,10 +63,10 @@ def format_http1(frame, delimiter="\r\n"):
     if key in avoid_list:
       continue
     if key == ':host':
-      key = 'host'
+      key = host
     for individual_val in val.split('\x00'):
       out_frame.append(key)
-      out_frame.append(': ')
+      out_frame.append(valsep)
       out_frame.append(individual_val)
       out_frame.append(delimiter)
   out_frame.append(delimiter)
@@ -74,15 +74,16 @@ def format_http1(frame, delimiter="\r\n"):
   
   
 def strip_conn_headers(hdrs):
-  """Remove hop-by-hop headers from a header dictionary."""  
+  """Remove hop-by-hop headers from a header dictionary."""
+  hop_by_hop = ['transfer-encoding', 'te', 'keep-alive', 'trailers']
   if hdrs.has_key('connection'):
-    hop_by_hop = [v.strip() for v in hdrs['connection'].split(None)]
-    for hdr in hop_by_hop:
-      try:
-        del hdrs[hdr]
-      except KeyError:
-        pass
+    hop_by_hop.extend([v.strip() for v in hdrs['connection'].split(None)])
     del hdrs['connection']
+  for hdr in hop_by_hop:
+    try:
+      del hdrs[hdr]
+    except KeyError:
+      pass
   return hdrs
 
 
