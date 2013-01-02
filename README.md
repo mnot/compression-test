@@ -50,11 +50,11 @@ Showing Message Graphs
 
 When the "-t" option is used, TSV output is created. E.g.,
 
-    ./compare_compressors.py -t req my.har > req.tsv
-    ./compare_compressors.py -t res my.har > res.tsv
+    ./compare_compressors.py -t my.har
 
-This will create two TSV files that can then be displayed by the 
-display_tsv.html file. See [an example](http://http2.github.com/compression-test/).
+This will create two TSV files, req.tsv and res.tsv, that can then be
+displayed by the display_tsv.html file. See [an
+example](http://http2.github.com/compression-test/).
 
 
 Adding New Compression Algorithms

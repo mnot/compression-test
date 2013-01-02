@@ -31,16 +31,16 @@ class CompressionTester(object):
   def __init__(self):
     self.output = sys.stdout.write
     self.warned = {'http1_gzip': True}  # procs with no decompress support
+    self.tsv_out = defaultdict(list)  # accumulator for TSV output
+    self.ttls = None
     self.lname = 0  # longest processor name
     self.options, self.args = self.parse_options()
     self.codec_processors = self.get_compressors()
-    if self.options.tsv:
-      self.run_tsv(self.options.tsv)
-    else:
-      self.run_text()
+    self.run()
 
       
-  def run_text(self):
+  def run(self):
+    "Let's do this thing."
     messages = []
     for filename in self.args:
       har_requests, har_responses = harfile.read_har_file(filename)
@@ -51,36 +51,12 @@ class CompressionTester(object):
     self.ttls = self.process_messages(messages)
     for msg_type in self.msg_types:
       self.print_results(self.ttls.get(msg_type, {}), msg_type, True)
-
-
-  def run_tsv(self, message_type):
-    requests = []
-    responses = []
-    for filename in self.args:
-      har_requests, har_responses = harfile.read_har_file(filename)
-      requests.extend(har_requests)
-      responses.extend(har_responses)
-    both = zip(requests, responses)
-    count = 0
-    for request, response in both:
-      count += 1
-      if message_type == 'req':
-        results = self.process_message(request, 'req', request[':host'])
-      elif message_type == 'res':
-        results = self.process_message(response, 'res', request[':host'])
-      else:
-        sys.stderr.write("Unknown message type; must be 'req' or 'res'.\n")
-        sys.exit(1)
-      if count == 1:
-        codecs = results.keys()
-        codecs.sort()
-        titles = [codec for codec in codecs if codec[0] != "_"]
-        self.output("num\t" + "\t".join(titles) + "\n")
-      self.tsv_results(count, [results])
+    if self.options.tsv:
+      self.output_tsv()
       
     
   def process_messages(self, messages):
-    "Let's do this thing."
+    "Process some messages."
     if len(messages) == 0:
       sys.stderr.write("Nothing to process.\n")
       return {}
@@ -95,6 +71,8 @@ class CompressionTester(object):
     for (message_type, message, host) in messages:
       results = self.process_message(message, message_type, host)
       for name, result in results.items():
+        if name[0] == "_": 
+          continue
         target = ttls[message_type][name]
         target['size'] += result['size']
         target['maxr'] = max(target['maxr'], result['ratio'])
@@ -123,17 +101,19 @@ class CompressionTester(object):
     host is the host header of the associated request.
     
     Returns a dictionary of processor names mapped to their results.
+    Items in the dictionary whose names start with "_" are metadata.
     """
     procs = [
       (name, proc[self.msg_types.index(message_type)]) for name, proc in \
        self.codec_processors.items()
     ]
-    results = {}
+    results = {"_message_type": message_type}
     for name, processor in procs:
       compressed = processor.compress(message, host)
       if self.options.verbose > 2:
-        a = unicode(compressed, 'utf-8', 'replace').encode('utf-8', 'replace')
-        self.output("\n# %s\n%s\n\n" % (name, a)) 
+        txt = unicode(compressed, 'utf-8', 'replace') \
+              .encode('utf-8', 'replace')
+        self.output("\n# %s\n%s\n\n" % (name, txt)) 
       decompressed = None
       try:
         decompressed = processor.decompress(compressed)
@@ -153,13 +133,21 @@ class CompressionTester(object):
         'decompressed': decompressed,
         'size': len(compressed)
       }
+
     if self.options.baseline in results.keys():
       baseline_size = results[self.options.baseline]['size']
       if baseline_size > 0:
         for name, result in results.items():
+          if name[0] == "_": 
+            continue
           result['ratio'] = 1.0 * result['size'] / baseline_size
+
+    if self.options.tsv:
+      self.tsv_results(results)
+
     if self.options.verbose >= 2 and not self.options.tsv:
       self.print_results(results, message_type)
+
     return results
 
   
@@ -173,13 +161,10 @@ class CompressionTester(object):
       self.output("%i %s messages processed\n" %
         (results['_num'], message_type))
     
-    codecs = results.keys()
-    codecs.sort()
-    
+    codecs = [name for name in results.keys() if name[0] != "_"]
+    codecs.sort()    
     lines = []
     for name in codecs:
-      if name[0] == "_":
-        continue
       ratio = results[name].get('ratio', 0)
       compressed_size = results[name].get('size', 0)
       pretty_size = locale.format("%13d", compressed_size, grouping=True)
@@ -205,27 +190,43 @@ class CompressionTester(object):
       self.output(fmt % line)
 
     self.output("\n")
-
     if self.options.verbose > 1 and not stats:
       self.output("-" * 80 + "\n")
         
 
+  def tsv_results(self, results):
+    """
+    Store TSV; takes a record number and a results object.
+    """
+    items = ["%i"]
+    codecs = [name for name in results.keys() if name[0] != "_"]
+    codecs.sort()
+    for name in codecs:
+      items.append(results[name].get('size', 0))
+    message_type = results["_message_type"]
+    
+    if len(self.tsv_out[message_type]) == 0:
+      self.tsv_out[message_type].append("num\t" + "\t".join(codecs) + "\n")
+    
+    self.tsv_out[message_type].append(
+      "%s\n" % "\t".join([str(item) for item in items])
+    )
 
-  def tsv_results(self, num, results_list):
-    """
-    Output TSV; takes a record number and a list of results objects.
-    """
-    items = [num]
-    for results in results_list:
-      codecs = results.keys()
-      codecs.sort()
-      for name in codecs:
-        if name[0] == "_":
-          continue
-        items.append(results[name].get('size', 0))
-    self.output("%s\n" % "\t".join([str(item) for item in items]))
-      
-  
+
+  def output_tsv(self):
+    "Write stored TSV to files."
+    for message_type, lines in self.tsv_out.items():
+      tsvfh = open("%s.tsv" % message_type, 'w')
+      count = 0
+      for line in lines:
+        if count == 0:
+          tsvfh.write(line)
+        else:
+          tsvfh.write(line % count)
+        count += 1
+      tsvfh.close()
+
+
   def get_compressors(self):
     """
     Get a hash of codec names to processors.
@@ -273,10 +274,9 @@ class CompressionTester(object):
                   '(default: %default)',
                   default='http1')
     optp.add_option('-t', '--tsv',
-                  action="store",
+                  action="store_true",
                   dest="tsv",
-                  help="output in TSV. Requires an argument for the "
-                  "message type; 'req' or 'res'.",
+                  help="output TSV.",
                   default=False)
     return optp.parse_args()
 
