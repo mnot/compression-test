@@ -26,12 +26,7 @@ class BaseProcessor(object):
     'host' is the host header value for the request (or associated request,
     if it is a response).
        
-    Return value is a dictionary with the following contents:
-    
-    {
-      'contents': [compressed result],
-      'size': [size of the compressed contents],
-    }
+    Return value is the resulting compressed headers.
     """
     raise NotImplementedError
 
@@ -39,7 +34,7 @@ class BaseProcessor(object):
     """
     'compressed' is the compressed headers.
        
-    Return value is a header dictionary.
+    Return value is a header dictionary, as described above.
     """
     raise NotImplementedError
     
