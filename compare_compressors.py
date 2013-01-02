@@ -49,8 +49,6 @@ class CompressionTester(object):
         messages.append(('req', req, req[':host']))
         messages.append(('res', res, req[':host']))
     self.ttls = self.process_messages(messages)
-    if self.options.verbose >= 1:
-      self.output("=" * 80 + "\n\n")
     for msg_type in self.msg_types:
       self.print_results(self.ttls.get(msg_type, {}), msg_type, True)
 
@@ -133,6 +131,9 @@ class CompressionTester(object):
     results = {}
     for name, processor in procs:
       compressed = processor.compress(message, host)
+      if self.options.verbose > 2:
+        a = unicode(compressed, 'utf-8', 'replace').encode('utf-8', 'replace')
+        self.output("\n# %s\n%s\n\n" % (name, a)) 
       decompressed = None
       try:
         decompressed = processor.decompress(compressed)
@@ -202,8 +203,12 @@ class CompressionTester(object):
       fmt = '%%s %%%ds %%s | %%2.2f\n' % self.lname
     for line in sorted(lines):
       self.output(fmt % line)
-    
+
     self.output("\n")
+
+    if self.options.verbose > 1 and not stats:
+      self.output("-" * 80 + "\n")
+        
 
 
   def tsv_results(self, num, results_list):
