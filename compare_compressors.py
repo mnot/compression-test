@@ -305,10 +305,12 @@ class CompressionTester(object):
         d_hdr['cookie'] = \
           '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
     for (key, val) in a_hdr.iteritems():
-      if not key in b_hdr:
+      if key in [':version']:
+        pass
+      elif not key in b_hdr:
         output.append('\tkey: %s present in only one (A)' % key)
         continue
-      if val.strip() != b_hdr[key].strip():
+      elif val.strip() != b_hdr[key].strip():
         output.append('\tkey: %s has mismatched values:' % key)
         output.append('\t  a -> %s' % val)
         output.append('\t  b -> %s' % b_hdr[key])
