@@ -2,17 +2,19 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-from .. import BaseProcessor, strip_conn_headers, format_http1
+from .. import BaseProcessor, strip_conn_headers, format_http1, parse_http1
 from collections import defaultdict
 import re
 import calendar
 from email.utils import parsedate as lib_parsedate
+from email.utils import formatdate as lib_formatdate
 from urlparse import urlsplit
 import os.path  
+from copy import copy
 
 class Processor(BaseProcessor):
   """
-  This compressor does a few things:
+  This compressor does a few things, compared to HTTP/1:
 
   * It compares the current set of outgoing headers to the last set on
     the connection. If a header has the same value (character-for-character),
@@ -62,13 +64,12 @@ class Processor(BaseProcessor):
     'expires'
   ]
   
-  url_reqhdrs = [
-    'referer'
-  ]
-  
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
-    self.last = None
+    self.last_c = None
+    self.last_d = None
+    self.rev_lookups = {v:k for k, v in self.lookups.items()}
+    assert len(self.lookups) == len(self.rev_lookups)
 
   def compress(self, in_headers, host):
     headers = {}
@@ -78,34 +79,57 @@ class Processor(BaseProcessor):
         try:
           headers[self.hdr_name(name)] = "%x" % parse_date(value)
         except ValueError:
-          pass
-      elif self.last \
-      and (name[0] != ":" or name == ':host') \
-      and self.last.get(name, None) == value:
-        if name == ':host':
-          name = 'h'
+          headers[self.hdr_name(name)] = value
+      elif self.last_c \
+      and name[0] != ":" \
+      and self.last_c.get(name, None) == value:
+#      and (name[0] != ":" or name == ':host') \
+#        if name == ':host':
+#          name = 'h'
         refs.append(name)
-#      elif name in self.url_reqhdrs:
-#        url = urlsplit(value)
-#        if url.scheme.lower() == in_headers[':scheme'] \
-#        and url.netloc.lower() == in_headers[':host']:
-#          # hack hack hack
-#          prefix = os.path.commonprefix([url.path, in_headers[':path']]) 
-#          if prefix != "":
-#            l = len(prefix) + len(in_headers[':scheme']) + #len(in_headers[":host"]) + 3
-#            value = value[l:]
-#        headers[self.hdr_name(name)] = value
       else:
         headers[self.hdr_name(name)] = value
-    self.last = in_headers
+    self.last_c = in_headers
     if refs:
       headers["ref"] = ",".join([self.hdr_name(ref) for ref in refs])
     out = []
-    return format_http1(headers, delimiter="\n", valsep=":", host='h')
+    return format_http1(headers, delimiter="\n", valsep=":", host='host')
   
 
-#  def decompress(self, compressed):
-#    return compressed
+  def decompress(self, compressed):
+    headers = parse_http1(compressed)
+    out_headers = {}
+    for name in headers.keys():
+      if name == "ref":
+        continue
+      elif name[0] == ":":
+        out_headers[name] = headers[name]
+      elif name[0] == '!':
+        out_headers[name[1:]] = headers[name]
+      else:
+        expanded_name = self.rev_lookups[name]
+        if expanded_name in self.date_hdrs:
+          try:
+            out_headers[expanded_name] = format_date(int(headers[name], 16))
+          except ValueError:
+            out_headers[expanded_name] = headers[name]
+        else:
+          out_headers[expanded_name] = headers[name]
+    if headers.has_key('ref') and self.last_d:
+      refs = headers['ref'].split(",")
+      for ref in refs:
+        if ref[0] == "!":
+          name = ref[1:]
+        else:
+          name = self.rev_lookups[ref]
+        try:
+          out_headers[name] = self.last_d[name]
+        except KeyError:
+          import sys
+          sys.stdout.write("\n\n%s\n\n" % repr(self.last_d))
+          raise
+    self.last_d = copy(out_headers)
+    return out_headers
 
   def hdr_name(self, name):
     if name[0] == ":":
@@ -134,3 +158,7 @@ def parse_date(value):
             date_tuple = (date_tuple[0]+2000,)+date_tuple[1:]
     date = calendar.timegm(date_tuple)
     return date
+    
+def format_date(value):
+  """Format a HTTP date."""
+  return lib_formatdate(timeval=value, localtime=False, usegmt=True)
