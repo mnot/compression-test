@@ -217,18 +217,15 @@ class CompressionTester(object):
   def output_tsv(self):
     "Write stored TSV to files."
     for message_type, lines in self.tsv_out.items():
-      tsvfh = open(
-                os.path.join(self.options.prefix, "%s.tsv" % message_type), 
-                'w'
-      )
+      tfh = open("%s%s" % (self.options.prefix, "%s.tsv" % message_type), 'w')
       count = 0
       for line in lines:
         if count == 0:
-          tsvfh.write(line)
+          tfh.write(line)
         else:
-          tsvfh.write(line % count)
+          tfh.write(line % count)
         count += 1
-      tsvfh.close()
+      tfh.close()
 
 
   def get_compressors(self):
