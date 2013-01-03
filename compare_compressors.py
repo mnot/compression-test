@@ -17,6 +17,7 @@ from importlib import import_module
 import locale
 import optparse
 import sys
+import os.path
 
 import harfile
 
@@ -216,7 +217,10 @@ class CompressionTester(object):
   def output_tsv(self):
     "Write stored TSV to files."
     for message_type, lines in self.tsv_out.items():
-      tsvfh = open("%s.tsv" % message_type, 'w')
+      tsvfh = open(
+                os.path.join(self.options.prefix, "%s.tsv" % message_type), 
+                'w'
+      )
       count = 0
       for line in lines:
         if count == 0:
@@ -278,6 +282,11 @@ class CompressionTester(object):
                   dest="tsv",
                   help="output TSV.",
                   default=False)
+    optp.add_option('--prefix',
+                  action="store",
+                  dest="prefix",
+                  help="Prefix for TSV file output.",
+                  default="")
     return optp.parse_args()
 
   
