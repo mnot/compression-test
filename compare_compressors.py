@@ -308,15 +308,15 @@ class CompressionTester(object):
       if key in [':version']:
         pass
       elif not key in b_hdr:
-        output.append('\tkey: %s present in only one (A)' % key)
+        output.append('\t%s present in only one (A)' % key)
         continue
       elif val.strip() != b_hdr[key].strip():
-        output.append('\tkey: %s has mismatched values:' % key)
+        output.append('\t%s has mismatched values:' % key)
         output.append('\t  a -> %s' % val)
         output.append('\t  b -> %s' % b_hdr[key])
       del b_hdr[key]
     for key in b_hdr.keys():
-        output.append('\tkey: %s present in only one (B)' % key)
+        output.append('\t%s present in only one (B)' % key)
     return '\n'.join(output)
 
 
