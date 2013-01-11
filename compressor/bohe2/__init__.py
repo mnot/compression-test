@@ -12,19 +12,34 @@ import struct
 from .. import spdy_dictionary, BaseProcessor, strip_conn_headers
 
 #
-# The bohe sample is generally identical to bohe compression
-# but uses tokenization and binary values for the most common
-# header types. The compression profile should be fairly 
-# similar to bohe
+# This is an alternative bohe strategy that uses selective-header 
+# compression as an approach to dealing with CRIME. Specifically,
+# certain registered headers (like Cookie, Set-Cookie, etc) can 
+# be marked as "Do Not Compress". The header block is then split
+# into two sections, Compressed Headers and Uncompressed. 
+#  
+# +-------------+--------------------------+
+# | num_headers | comp block len (4 bytes) |
+# +-------------+--------------------------+
+# |        compressed header block         |
+# +----------------------------+-----------+
+# | uncomp block len (4 bytes) |           |
+# +----------------------------+           |
+# |       uncompressed header block        |
+# +----------------------------------------+
 #
-# headers are reorganized into an initial structure of 
-# binary-optimized headers followed by a list of 
-# text headers that are generally similar to bohe, tho 
-# there are some distinct differences.. the entire 
-# block is then compressed using the same scheme as 
-# bohe.. obviously this uses the gzip mechanism and 
-# is therefore open to CRIME attacks still. Will address
-# that in a future iteration
+# With this approach, headers that contain 
+# sensitive data (like Cookies) can be left 
+# uncompressed... this results in a compression
+# profile that is both more, and less efficient
+# than delta depending on the situation. Generating
+# the graph (-t) when running the tests is very
+# informative. 
+#
+# A key disadvantage of this approach is that 
+# the uncompressed data tends to be rather large
+# Cookie data, which often is the most repetitious
+# across requests.
 #
 
 def bin_encoder(obj,val):
@@ -205,8 +220,31 @@ opt_headers = {
   'warning': {
     'id': 0x1F,
     'enc':text_encoder
+  },
+  'cookie': {
+    'id': 0x20,
+    'enc': text_encoder,
+    'compress': False
+  },
+  'set-cookie': {
+    'id': 0x21,
+    'enc': text_encoder,
+    'compress': False
+  },
+  'cookie2': {
+    'id': 0x20,
+    'enc': text_encoder,
+    'compress': False
+  },
+  'set-cookie2': {
+    'id': 0x21,
+    'enc': text_encoder,
+    'compress': False
   }
 }
+
+def do_compress(obj):
+  return not('compress' in obj and not obj['compress'])
 
 class Processor(BaseProcessor):
   def __init__(self, options, is_request, params):
@@ -217,33 +255,40 @@ class Processor(BaseProcessor):
     self.compressor.flush(zlib.Z_SYNC_FLUSH)
 
   def compress(self, in_headers, host):
-    raw_bohe_frame = self.BoheHeadersFormat(strip_conn_headers(in_headers))
-    compress_me_payload = raw_bohe_frame[12:]
-    final_frame = raw_bohe_frame[:12]
-    final_frame += self.compressor.compress(compress_me_payload)
-    final_frame += self.compressor.flush(zlib.Z_SYNC_FLUSH)
-    return final_frame
+    frame = []
+    blocks = self.BoheHeadersFormat(strip_conn_headers(in_headers))
+    num_headers = blocks[0]
+    comp_headers = blocks[1]
+    nocomp_headers = blocks[2]
+    comp_block = self.compressor.compress(comp_headers);
+    comp_block += self.compressor.flush(zlib.Z_SYNC_FLUSH)
+    frame_len = len(comp_block) + len(nocomp_headers)
+    frame.append(struct.pack('!L', 0x1 << 31 | 0x11 << 15 | 0x8))
+    frame.append(struct.pack('!L', frame_len + 8))
+    frame.append(struct.pack('!L', 1))
+    frame.append(struct.pack('!B', num_headers))
+    frame.append(struct.pack('!L', len(comp_block)))
+    frame.append(comp_block)
+    frame.append(struct.pack('!L', len(nocomp_headers)))
+    frame.append(nocomp_headers)
+    return ''.join(frame)
 
   def BoheHeadersFormat(self, request):
-    out_frame = []
-    opt_block = ''
-    ext_block = ''
-    frame_len = 0
+    opt_block = []
+    ext_block = []
+    no_comp = []
     for (key, val) in request.iteritems():
       if key in opt_headers:
         obj = opt_headers[key]
         enc = obj['enc'](obj,val)
-        frame_len += len(enc)
-        opt_block += enc
+        if do_compress(obj):
+          opt_block.append(enc)
+        else:
+          no_comp.append(enc)
       else:
         enc = ext_encoder(key,val)
-        frame_len += len(enc)
-        ext_block += enc
-    out_frame.append(struct.pack('!L', 0x1 << 31 | 0x11 << 15 | 0x8))
-    out_frame.append(struct.pack('!L', frame_len))
-    out_frame.append(struct.pack('!L', 1))
-    out_frame.append(struct.pack('!B', len(request.keys())))
-    out_frame.append(opt_block)
-    out_frame.append(ext_block)
-    return ''.join(out_frame)
-
+        ext_block.append(enc)
+    opt_block = ''.join(opt_block)
+    ext_block = ''.join(ext_block)
+    no_comp = ''.join(no_comp)
+    return len(request.keys()), opt_block + ext_block, no_comp
