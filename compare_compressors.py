@@ -21,7 +21,10 @@ import os.path
 
 import harfile
 
-locale.setlocale(locale.LC_ALL, 'en_US')
+if os.name == "nt":
+  locale.setlocale(locale.LC_ALL, 'english-us')
+else:
+  locale.setlocale(locale.LC_ALL, 'en_US')
 
 class CompressionTester(object):
   """
