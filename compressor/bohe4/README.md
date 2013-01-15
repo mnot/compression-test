@@ -26,11 +26,11 @@ which bucket their input goes into and compression
 ratio varies for each bucket based on what goes 
 into it.
   
-It's not foolproof, obviously.. would just need 
-to run the guess scenario a sufficient number of 
-times and determine the guess that has the lowest
-average compression.. precisely how many times 
-depends on the length of the secret and how 
+It's not foolproof, obviously.. an attacker would 
+just need to run the guess scenario a sufficient 
+number of times and determine the guess that has 
+the lowest average compression.. precisely how many 
+times depends on the length of the secret and how 
 randomized it is.
   
 Within the SPDY frame, we cannot hide the length
