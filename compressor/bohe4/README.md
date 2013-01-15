@@ -26,11 +26,12 @@ which bucket their input goes into and compression
 ratio varies for each bucket based on what goes 
 into it.
   
-It's not foolproof, obviously.. an attacker could
-write code that tests every possible permutation
-based on the known set of headers, but testing those
-would take significantly longer than with the
-current CRIME mechanism.
+It's not foolproof, obviously.. would just need 
+to run the guess scenario a sufficient number of 
+times and determine the guess that has the lowest
+average compression.. precisely how many times 
+depends on the length of the secret and how 
+randomized it is.
   
 Within the SPDY frame, we cannot hide the length
 of the compressed header blocks, so that is still
@@ -49,7 +50,8 @@ CRIME algorithm:
   Correct guess is when length is different than usual.."
   
 The randomization short circuits this algorithm, to 
-a large degree, by causing length to become variable 
+some degree, by causing length to become variable 
 within a set range of permutations.
   
-  
+This approach makes it a bit more difficult to do a 
+CRIME attack but certainly not impossible.
