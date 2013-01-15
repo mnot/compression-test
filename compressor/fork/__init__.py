@@ -22,7 +22,10 @@ class Processor(BaseProcessor):
   def compress(self, in_headers, host):
     http1_msg = format_http1(strip_conn_headers(in_headers))
     self.process.stdin.write(http1_msg)
-    output = self.process.stdout.read(8)
-    size = struct.unpack("q", output)[0]
-    output = self.process.stdout.read(int(size))
+    output = ""
+    while True:
+      line = self.process.stdout.readline()
+      if line.strip() == "":
+        break
+      output += line
     return output
