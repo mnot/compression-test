@@ -30,10 +30,6 @@ from .. import spdy_dictionary, BaseProcessor, strip_conn_headers
 # +----------------------------+           |
 # |        compressed header block 2       |
 # +----------------------------+-----------+
-# |  block 3 len (4 bytes)     |           |
-# +----------------------------+           |
-# |        compressed header block 3       |
-# +----------------------------------------+
 #
 
 def bin_encoder(obj,val):
