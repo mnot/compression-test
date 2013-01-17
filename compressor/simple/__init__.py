@@ -55,6 +55,8 @@ class Processor(BaseProcessor):
     'via': 'vi',
     'set-cookie': 'sc',
     'p3p': 'p3',
+    'if-modified-since': 'ims',
+    'if-none-match': 'inm',
   }
   
   date_hdrs = [
