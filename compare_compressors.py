@@ -305,7 +305,7 @@ class CompressionTester(object):
         d_hdr['cookie'] = \
           '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
     for (key, val) in a_hdr.iteritems():
-      if key in [':version']:
+      if key in [':version', ':status-text']:
         pass
       elif not key in b_hdr:
         output.append('\t%s present in only one (A)' % key)

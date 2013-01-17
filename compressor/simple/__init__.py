@@ -107,7 +107,7 @@ class Processor(BaseProcessor):
 
   def decompress(self, compressed):
     headers = parse_http1(compressed)
-    out_headers = dict([(name, "") for name in self.ignore_hdrs])
+    out_headers = {}
     for name in headers.keys():
       if name == "ref":
         continue
