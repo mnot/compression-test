@@ -26,6 +26,7 @@ if os.name == "nt":
 else:
   locale.setlocale(locale.LC_ALL, 'en_US')
 
+
 class CompressionTester(object):
   """
   This is the thing.
@@ -36,31 +37,36 @@ class CompressionTester(object):
     self.output = sys.stdout.write
     self.warned = {'http1_gzip': True}  # procs with no decompress support
     self.tsv_out = defaultdict(list)  # accumulator for TSV output
-    self.ttls = None
     self.lname = 0  # longest processor name
     self.options, self.args = self.parse_options()
     self.codec_processors = self.get_compressors()
     self.run()
-
       
   def run(self):
     "Let's do this thing."
-    messages = []
+    streams = []
     for filename in self.args:
       har_requests, har_responses = harfile.read_har_file(filename)
-      both = zip(har_requests, har_responses)
-      for req, res in both:
-        messages.append(('req', req, req[':host']))
-        messages.append(('res', res, req[':host']))
-    self.ttls = self.process_messages(messages)
-    for msg_type in self.msg_types:
-      self.print_results(self.ttls.get(msg_type, {}), msg_type, True)
+      messages = zip(har_requests, har_responses)
+      for stream in self.streamify_messages(messages):
+        streams.append([])
+        this_stream = streams[-1]
+        for req, res in stream:
+          this_stream.append(('req', req, req[':host']))
+          this_stream.append(('res', res, req[':host']))
+    for stream in streams:
+      ttls = self.process_messages(stream)
+      for msg_type in self.msg_types:
+        self.print_results(ttls.get(msg_type, {}), msg_type, True)
     if self.options.tsv:
       self.output_tsv()
       
+  def streamify_messages(self, messages):
+    "Split a list of (req, res) messages into a list of streams of them."
+    return [messages]
     
   def process_messages(self, messages):
-    "Process some messages."
+    "Given a list of messages, process each and return the totals."
     if len(messages) == 0:
       sys.stderr.write("Nothing to process.\n")
       return {}
