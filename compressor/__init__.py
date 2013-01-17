@@ -46,11 +46,13 @@ def format_http1(frame, delimiter="\r\n", valsep=": ", host='host'):
   avoid_list = []
   if ':method' in frame:
     top_line = '%s %s %s%s' % (
-        frame[':method'], frame[':path'], frame[':version'], delimiter)
+        frame[':method'], frame[':path'], 
+        frame.get(':version', "HTTP/1.1"), delimiter)
     avoid_list = [':method', ':path', ':version', ':scheme']
   else:
     top_line = '%s %s %s%s' % (
-        frame[':version'], frame[':status'], frame[':status-text'], delimiter)
+        frame.get(':version', "HTTP/1.1"), frame[':status'], 
+        frame.get(':status-text', '?'), delimiter)
     avoid_list = [':version', ':status', ':status-text']
   out_frame.append(top_line)
   

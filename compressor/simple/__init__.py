@@ -28,6 +28,8 @@ class Processor(BaseProcessor):
   * "\n" is used as a line delimiter, instead of "\r\n".
   
   * No space is inserted between the ":" and the start of the header value.
+  
+  * The reason phrase is omitted.
   """
 
   lookups = {
@@ -67,6 +69,7 @@ class Processor(BaseProcessor):
   ]
 
   compress_dates = True
+  ignore_hdrs = [':status-text', ":version"]
   
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
@@ -79,7 +82,9 @@ class Processor(BaseProcessor):
     headers = {}
     refs = []
     for name, value in strip_conn_headers(in_headers).items():
-      if self.compress_dates and name in self.date_hdrs:
+      if name in self.ignore_hdrs:
+        continue
+      elif self.compress_dates and name in self.date_hdrs:
         try:
           headers[self.hdr_name(name)] = "%x" % parse_date(value)
         except ValueError:
@@ -102,7 +107,7 @@ class Processor(BaseProcessor):
 
   def decompress(self, compressed):
     headers = parse_http1(compressed)
-    out_headers = {}
+    out_headers = dict([(name, "") for name in self.ignore_hdrs])
     for name in headers.keys():
       if name == "ref":
         continue
