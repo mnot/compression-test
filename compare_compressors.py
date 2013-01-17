@@ -20,6 +20,8 @@ import sys
 import os.path
 
 import harfile
+from publicsuffix import PublicSuffixList
+
 
 if os.name == "nt":
   locale.setlocale(locale.LC_ALL, 'english-us')
@@ -40,6 +42,7 @@ class CompressionTester(object):
     self.lname = 0  # longest processor name
     self.options, self.args = self.parse_options()
     self.codec_processors = self.get_compressors()
+    self.psl = PublicSuffixList()
     self.run()
       
   def run(self):
@@ -62,8 +65,12 @@ class CompressionTester(object):
       self.output_tsv()
       
   def streamify_messages(self, messages):
-    "Split a list of (req, res) messages into a list of streams of them."
-    return [messages]
+    "Split a list of messages into a list of streams of them."
+    out = defaultdict(list)
+    for req, res in messages:
+      suffix = self.psl.get_public_suffix(req[':host'].split(":", 1)[0])
+      out[suffix].append((req, res))
+    return out.values()
     
   def process_messages(self, messages):
     "Given a list of messages, process each and return the totals."
@@ -96,7 +103,10 @@ class CompressionTester(object):
         if name[0] == "_":
           continue
         result['ratio'] = 1.0 * result['size'] / baseline_ratio
-        result['std'] = self.meanstdv(result['ratio_list'])[1]
+        try:
+          result['std'] = self.meanstdv(result['ratio_list'])[1]
+        except ZeroDivisionError:
+          result['std'] = 0
 
     return ttls
 
