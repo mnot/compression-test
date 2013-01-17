@@ -59,9 +59,12 @@ class Processor(BaseProcessor):
   
   date_hdrs = [
     'last-modified',
+    'if-modified-since',
     'date',
     'expires'
   ]
+
+  compress_dates = True
   
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
@@ -74,7 +77,7 @@ class Processor(BaseProcessor):
     headers = {}
     refs = []
     for name, value in strip_conn_headers(in_headers).items():
-      if name in self.date_hdrs:
+      if self.compress_dates and name in self.date_hdrs:
         try:
           headers[self.hdr_name(name)] = "%x" % parse_date(value)
         except ValueError:
@@ -107,7 +110,7 @@ class Processor(BaseProcessor):
         out_headers[name[1:]] = headers[name]
       else:
         expanded_name = self.rev_lookups[name]
-        if expanded_name in self.date_hdrs:
+        if self.compress_dates and expanded_name in self.date_hdrs:
           try:
             out_headers[expanded_name] = format_date(int(headers[name], 16))
           except ValueError:
