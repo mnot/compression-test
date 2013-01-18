@@ -9,6 +9,9 @@ import locale
 class Stream(object):
   """
   A one-way stream of sets of HTTP headers.
+  
+  For our purposes, a stream is the unit that gets compressed; i.e., the
+  headers in it have a shared context.
   """
   def __init__(self, name, messages, msg_type):
     self.name = name # identifier for the stream; e.g., "example.com reqs"
