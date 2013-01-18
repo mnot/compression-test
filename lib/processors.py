@@ -92,11 +92,10 @@ class Processors(object):
       if decompressed:
         compare_result = self.compare_headers(message, decompressed)
         if compare_result:
-          sys.stderr.write('  - mismatch in %s' % processor.name)
+          self.output('  - mismatch in %s' % processor.name)
           if self.options.verbose > 2:
             self.output(': ' + compare_result + "\n")
-          else:
-            self.output("\n")
+          self.output("\n")
     return results
 
   @staticmethod
