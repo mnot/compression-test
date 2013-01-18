@@ -52,14 +52,15 @@ class Stream(object):
     output("\n")
 
   def print_tsv_header(self, output):
-    header = "\t".join(["num"] + self.procs)
+    header = "\t".join(["num", "name"] + self.procs)
     output("%s\n" % header)
 
   def print_tsv(self, output, count = 0):
     lines = apply(zip, [self.sizes[proc] for proc in self.procs])
     for line in lines:
       count += 1
-      output("\t".join([str(count)] + [str(j) for j in line]) + "\n")
+      output("\t".join([str(count), self.name] + [str(j) for j in line]))
+      output("\n")
     return count
 
   def __add__(self, other):
