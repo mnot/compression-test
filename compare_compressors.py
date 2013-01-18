@@ -18,9 +18,9 @@ import optparse
 
 from publicsuffix import PublicSuffixList
 
-from harfile import read_har_file
-from processors import Processors
-from stream import Stream
+from lib.harfile import read_har_file
+from lib.processors import Processors
+from lib.stream import Stream
 
 
 class CompressionTester(object):
