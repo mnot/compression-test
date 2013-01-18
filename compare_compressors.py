@@ -13,10 +13,9 @@ Tests various HTTP header compression algorithms, to compare them.
 # pylint: disable=W0311
 
 from collections import defaultdict
+from importlib import import_module
 import locale
 import optparse
-
-from publicsuffix import PublicSuffixList
 
 from lib.harfile import read_har_file
 from lib.processors import Processors
@@ -28,13 +27,14 @@ class CompressionTester(object):
   This is the thing.
   """
   msg_types = ['req', 'res']
+  streamifier_dir = "lib.streamifiers"
 
   def __init__(self, output):
     self.options, self.args = self.parse_options()
     self.output = output
     self.tsv_out = defaultdict(list)  # accumulator for TSV output
-    self.psl = PublicSuffixList()
     self.processors = Processors(self.options, self.msg_types, output)
+    self.streamify = self.load_streamifier(self.options.streamifier)
     self.run()
 
   def run(self):
@@ -43,7 +43,7 @@ class CompressionTester(object):
     for filename in self.args:
       har_requests, har_responses = read_har_file(filename)
       messages = zip(har_requests, har_responses)
-      streams.extend(self.streamify_messages(messages))
+      streams.extend(self.streamify(messages))
     for stream in streams:
       stream.print_header(self.output)
       self.processors.process_stream(stream)
@@ -68,27 +68,10 @@ class CompressionTester(object):
       for fh, count in out.values():
         fh.close()
 
-  def streamify_messages(self, messages):
-    """
-    Given a list of messages (each a req, res tuple), return a list of
-    Stream objects.
-    """
-    reqs = defaultdict(list)
-    ress = defaultdict(list)
-    suffixes = []
-    for req, res in messages:
-      host = req[':host']
-      suffix = self.psl.get_public_suffix(host.split(":", 1)[0])
-      if suffix not in suffixes:
-        suffixes.append(suffix)
-      reqs[suffix].append((req, host))
-      ress[suffix].append((res, host))
-
-    streams = []
-    for suffix in suffixes:
-      streams.append(Stream(suffix, reqs[suffix], 'req'))
-      streams.append(Stream(suffix, ress[suffix], 'res'))
-    return streams
+  def load_streamifier(self, name):
+    return import_module("%s.%s" % (self.streamifier_dir, name)) \
+      .Streamifier() \
+      .streamify
 
   @staticmethod
   def parse_options():
@@ -118,6 +101,10 @@ class CompressionTester(object):
                   dest="tsv",
                   help="output TSV.",
                   default=False)
+    optp.add_option('-s', '--streamifier',
+                  dest="streamifier",
+                  help="streamifier module to use (default; %default).",
+                  default="public_suffix")
     optp.add_option('--prefix',
                   action="store",
                   dest="prefix",
