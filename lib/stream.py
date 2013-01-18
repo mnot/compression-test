@@ -18,8 +18,9 @@ class Stream(object):
     self.lname = 0 # longest processor name
     self.sizes = defaultdict(list)
     self.ratios = defaultdict(list)
+    self.times = defaultdict(list)
 
-  def record_result(self, proc_name, size, ratio):
+  def record_result(self, proc_name, size, ratio, time):
     "Record the results of processing, by proc_name."
     if proc_name not in self.procs:
       self.procs.append(proc_name) 
@@ -27,6 +28,7 @@ class Stream(object):
         self.lname = len(proc_name)
     self.sizes[proc_name].append(size)
     self.ratios[proc_name].append(ratio)
+    self.times[proc_name].append(time)
 
   def print_header(self, output):
     "Print a header for the summary to output."
@@ -39,6 +41,7 @@ class Stream(object):
     baseline_size = sum(self.sizes[baseline])
     for proc in self.procs:
       ttl_size = sum(self.sizes[proc])
+      ttl_time = sum(self.times[proc])
       pretty_size = locale.format("%13d", ttl_size, grouping=True)
       ratio = 1.0 * ttl_size / baseline_size
       try:
@@ -47,9 +50,9 @@ class Stream(object):
         std = 0
       min_ratio = min(self.ratios[proc])
       max_ratio = max(self.ratios[proc])
-      lines.append((proc, pretty_size, ratio, min_ratio, max_ratio, std))
-    output('  %%%ds size | ratio min   max   std\n' % (self.lname + 9) % '')
-    fmt = '  %%%ds %%s | %%2.2f  %%2.2f  %%2.2f  %%2.2f\n' % self.lname
+      lines.append((proc, pretty_size, ttl_time, ratio, min_ratio, max_ratio, std))
+    output('  %%%ds size  time | ratio min   max   std\n' % (self.lname + 9) % '')
+    fmt = '  %%%ds %%s %%5.2f | %%2.2f  %%2.2f  %%2.2f  %%2.2f\n' % self.lname
     for line in sorted(lines):
       output(fmt % line)
     output("\n")
@@ -74,6 +77,7 @@ class Stream(object):
     new.messages.extend(other.messages) # NB: not great for memory
     new.sizes = merge_dols(self.sizes, other.sizes)
     new.ratios = merge_dols(self.ratios, other.ratios)
+    new.times = merge_dols(self.times, other.times)
     new.procs = self.procs
     new.lname = self.lname
     return new
@@ -82,6 +86,7 @@ class Stream(object):
     new = Stream('', self.messages, self.msg_type)
     new.sizes = self.sizes
     new.ratios = self.ratios
+    new.times = self.times
     new.procs = self.procs
     new.lname = self.lname
     return new

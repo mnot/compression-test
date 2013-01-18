@@ -2,6 +2,7 @@
 
 from collections import defaultdict
 from importlib import import_module
+import os
 import sys
 
 # pylint: disable=W0311
@@ -46,12 +47,12 @@ class Processors(object):
     """
     for (message, host) in stream.messages:
       results = self.process_message(message, stream.msg_type, host)
-      for proc_name, size in results.items():
+      for proc_name, resu in results.items():
         if proc_name == self.options.baseline:
           ratio = 1.0
         else:
-          ratio = 1.0 * size / results[self.options.baseline]
-        stream.record_result(proc_name, size, ratio)
+          ratio = 1.0 * resu['size'] / results[self.options.baseline]['size']
+        stream.record_result(proc_name, resu['size'], ratio, resu['time'])
 
   def process_message(self, message, msg_type, host):
     """
@@ -66,8 +67,13 @@ class Processors(object):
     """
     results = {}
     for processor in self.processors[msg_type]:
+      start_time = sum(os.times()[:2])
       compressed = processor.compress(message, host)
-      results[processor.name] = len(compressed)
+      time = sum(os.times()[:2]) - start_time
+      results[processor.name] = {
+        'size': len(compressed),
+        'time': sum(os.times()[:2]) - start_time
+      }
       if self.options.verbose > 3:
         txt = unicode(compressed, 'utf-8', 'replace') \
               .encode('utf-8', 'replace')
