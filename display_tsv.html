@@ -79,7 +79,7 @@ function display_tsv(filename, title) {
 
   d3.tsv(filename, function(error, data) {
     var lines = d3.keys(data[0]).filter(function(key) {
-      return ["num", "name"].indexOf(key) !== 0;
+      return ["num", "name"].indexOf(key) === -1;
     })
     color.domain(lines);
 
