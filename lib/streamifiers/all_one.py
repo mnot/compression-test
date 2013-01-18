@@ -3,6 +3,9 @@
 from . import BaseStreamifier, Stream
 
 class Streamifier(BaseStreamifier):
+  """
+  Put all messages into two streams, requests and responses.
+  """
   def streamify(self, messages):
     reqs, ress = [], []
     for req, res in messages:

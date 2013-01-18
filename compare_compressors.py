@@ -19,7 +19,6 @@ import optparse
 
 from lib.harfile import read_har_file
 from lib.processors import Processors
-from lib.stream import Stream
 
 
 class CompressionTester(object):
@@ -63,12 +62,13 @@ class CompressionTester(object):
         ]
         streams[0].print_tsv_header(out[msg_type][0].write)
       for stream in streams:
-        fh, tsv_count = out[stream.msg_type]
-        out[stream.msg_type][1] = stream.print_tsv(fh.write, tsv_count)
+        tsvfh, tsv_count = out[stream.msg_type]
+        out[stream.msg_type][1] = stream.print_tsv(tsvfh.write, tsv_count)
       for fh, count in out.values():
         fh.close()
 
   def load_streamifier(self, name):
+    "Load the streamifier specified in the options."
     return import_module("%s.%s" % (self.streamifier_dir, name)) \
       .Streamifier() \
       .streamify

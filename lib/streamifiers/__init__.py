@@ -3,6 +3,9 @@
 from ..stream import Stream
 
 class BaseStreamifier(object):
+  """
+  Base class for a streamifier.
+  """
   def __init__(self):
     pass
     

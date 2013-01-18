@@ -8,6 +8,9 @@ import sys
 
 
 class Processors(object):
+  """
+  Contains the candidate processors that we want to compare.
+  """
   module_dir = "compressor"
 
   def __init__(self, options, msg_types, output):
@@ -37,6 +40,10 @@ class Processors(object):
     return procs
 
   def process_stream(self, stream):
+    """
+    Process the messages in the stream with all processors, and record
+    results.
+    """
     for (message, host) in stream.messages:
       results = self.process_message(message, stream.msg_type, host)
       for proc_name, size in results.items():
@@ -56,7 +63,6 @@ class Processors(object):
     host is the host header of the associated request.
 
     Returns a dictionary of processor names mapped to their results.
-    Items in the dictionary whose names start with "_" are metadata.
     """
     results = {}
     for processor in self.processors[msg_type]:

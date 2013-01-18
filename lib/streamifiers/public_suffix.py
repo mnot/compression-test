@@ -7,6 +7,10 @@ from . import BaseStreamifier, Stream
 from publicsuffix import PublicSuffixList
 
 class Streamifier(BaseStreamifier):
+  """
+  Use the Public Suffix List <http://publicsuffix.org> to split the messages
+  into streams, one per direction per suffix.
+  """
   def __init__(self):
     BaseStreamifier.__init__(self)
     self.psl = PublicSuffixList()

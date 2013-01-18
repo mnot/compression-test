@@ -20,6 +20,7 @@ class Stream(object):
     self.ratios = defaultdict(list)
 
   def record_result(self, proc_name, size, ratio):
+    "Record the results of processing, by proc_name."
     if proc_name not in self.procs:
       self.procs.append(proc_name) 
       if len(proc_name) > self.lname:
@@ -28,10 +29,12 @@ class Stream(object):
     self.ratios[proc_name].append(ratio)
 
   def print_header(self, output):
+    "Print a header for the summary to output."
     output("* %s: %i %s messages\n" %
       (self.name, len(self.messages), self.msg_type))
 
   def print_summary(self, output, baseline):
+    "Print a summary of the stream to output, compared to baseline."
     lines = []
     baseline_size = sum(self.sizes[baseline])
     for proc in self.procs:
@@ -52,10 +55,12 @@ class Stream(object):
     output("\n")
 
   def print_tsv_header(self, output):
+    "Print a TSV header to output."
     header = "\t".join(["num", "name"] + self.procs)
     output("%s\n" % header)
 
-  def print_tsv(self, output, count = 0):
+  def print_tsv(self, output, count=0):
+    "Print the stream as TSV to output, using count as a counter."
     lines = apply(zip, [self.sizes[proc] for proc in self.procs])
     for line in lines:
       count += 1
