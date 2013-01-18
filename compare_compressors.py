@@ -71,7 +71,7 @@ class CompressionTester(object):
   def load_streamifier(self, name):
     "Load the streamifier specified in the options."
     return import_module("%s.%s" % (self.streamifier_dir, name)) \
-      .Streamifier() \
+      .Streamifier(self.options.processor_names) \
       .streamify
 
   @staticmethod

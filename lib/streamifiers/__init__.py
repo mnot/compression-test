@@ -6,8 +6,8 @@ class BaseStreamifier(object):
   """
   Base class for a streamifier.
   """
-  def __init__(self):
-    pass
+  def __init__(self, procs):
+    self.procs = procs
     
   def streamify(self, messages):
     """

@@ -13,22 +13,18 @@ class Stream(object):
   For our purposes, a stream is the unit that gets compressed; i.e., the
   headers in it have a shared context.
   """
-  def __init__(self, name, messages, msg_type):
+  def __init__(self, name, messages, msg_type, procs):
     self.name = name # identifier for the stream; e.g., "example.com reqs"
     self.messages = messages
     self.msg_type = msg_type # "req" or "res"
-    self.procs = [] # order of processors
-    self.lname = 0 # longest processor name
+    self.procs = procs # order of processors
+    self.lname = max([len(p) for p in procs]) # longest processor name
     self.sizes = defaultdict(list)
     self.ratios = defaultdict(list)
     self.times = defaultdict(list)
 
   def record_result(self, proc_name, size, ratio, time):
     "Record the results of processing, by proc_name."
-    if proc_name not in self.procs:
-      self.procs.append(proc_name) 
-      if len(proc_name) > self.lname:
-        self.lname = len(proc_name)
     self.sizes[proc_name].append(size)
     self.ratios[proc_name].append(ratio)
     self.times[proc_name].append(time)
@@ -56,7 +52,7 @@ class Stream(object):
       lines.append((proc, pretty_size, ttl_time, ratio, min_ratio, max_ratio, std))
     output('  %%%ds size  time | ratio min   max   std\n' % (self.lname + 9) % '')
     fmt = '  %%%ds %%s %%5.2f | %%2.2f  %%2.2f  %%2.2f  %%2.2f\n' % self.lname
-    for line in sorted(lines):
+    for line in lines:
       output(fmt % line)
     output("\n")
 
@@ -76,7 +72,7 @@ class Stream(object):
 
   def __add__(self, other):
     assert self.msg_type == other.msg_type
-    new = Stream('', self.messages, self.msg_type)
+    new = Stream('', self.messages, self.msg_type, self.procs)
     new.messages.extend(other.messages) # NB: not great for memory
     new.sizes = merge_dols(self.sizes, other.sizes)
     new.ratios = merge_dols(self.ratios, other.ratios)
@@ -86,7 +82,7 @@ class Stream(object):
     return new
     
   def __radd__(self, other):
-    new = Stream('', self.messages, self.msg_type)
+    new = Stream('', self.messages, self.msg_type, self.procs)
     new.sizes = self.sizes
     new.ratios = self.ratios
     new.times = self.times

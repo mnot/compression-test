@@ -12,6 +12,6 @@ class Streamifier(BaseStreamifier):
       host = req[':host']
       reqs.append((req, host))
       ress.append((res, host))
-    req_stream = Stream('all', reqs, 'req')
-    res_stream = Stream('all', ress, 'res')
+    req_stream = Stream('all', reqs, 'req', self.procs)
+    res_stream = Stream('all', ress, 'res', self.procs)
     return [req_stream, res_stream]

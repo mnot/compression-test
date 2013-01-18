@@ -11,8 +11,8 @@ class Streamifier(BaseStreamifier):
   Use the Public Suffix List <http://publicsuffix.org> to split the messages
   into streams, one per direction per suffix.
   """
-  def __init__(self):
-    BaseStreamifier.__init__(self)
+  def __init__(self, procs):
+    BaseStreamifier.__init__(self, procs)
     self.psl = PublicSuffixList()
 
   def streamify(self, messages):
@@ -33,6 +33,6 @@ class Streamifier(BaseStreamifier):
 
     streams = []
     for suffix in suffixes:
-      streams.append(Stream(suffix, reqs[suffix], 'req'))
-      streams.append(Stream(suffix, ress[suffix], 'res'))
+      streams.append(Stream(suffix, reqs[suffix], 'req', self.procs))
+      streams.append(Stream(suffix, ress[suffix], 'res', self.procs))
     return streams
