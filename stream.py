@@ -11,20 +11,17 @@ class Stream(object):
   A one-way stream of sets of HTTP headers.
   """
   def __init__(self, name, messages, msg_type):
-    """
-    """
     self.name = name # identifier for the stream; e.g., "example.com reqs"
     self.messages = messages
     self.msg_type = msg_type # "req" or "res"
-    ## counters for totals
-    self.procs = []
-    self.lname = 0
+    self.procs = [] # order of processors
+    self.lname = 0 # longest processor name
     self.sizes = defaultdict(list)
     self.ratios = defaultdict(list)
 
   def record_result(self, proc_name, size, ratio):
     if proc_name not in self.procs:
-      self.procs.append(proc_name) # store order of processors
+      self.procs.append(proc_name) 
       if len(proc_name) > self.lname:
         self.lname = len(proc_name)
     self.sizes[proc_name].append(size)
@@ -67,13 +64,21 @@ class Stream(object):
 
   def __add__(self, other):
     assert self.msg_type == other.msg_type
-    self.messages.extend(other.messages) # NB: not great for memory
-    self.sizes = merge_dols(self.sizes, other.sizes)
-    self.ratios = merge_dols(self.ratios, other.ratios)
-    return self
+    new = Stream('', self.messages, self.msg_type)
+    new.messages.extend(other.messages) # NB: not great for memory
+    new.sizes = merge_dols(self.sizes, other.sizes)
+    new.ratios = merge_dols(self.ratios, other.ratios)
+    new.procs = self.procs
+    new.lname = self.lname
+    return new
     
   def __radd__(self, other):
-    return self
+    new = Stream('', self.messages, self.msg_type)
+    new.sizes = self.sizes
+    new.ratios = self.ratios
+    new.procs = self.procs
+    new.lname = self.lname
+    return new
 
 
 def merge_dols(dol1, dol2):
