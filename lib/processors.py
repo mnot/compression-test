@@ -93,7 +93,7 @@ class Processors(object):
         compare_result = self.compare_headers(message, decompressed)
         if compare_result:
           self.output('  - mismatch in %s' % processor.name)
-          if self.options.verbose > 2:
+          if self.options.verbose > 1:
             self.output(': ' + compare_result + "\n")
           self.output("\n")
     return results

@@ -44,7 +44,8 @@ class CompressionTester(object):
       messages = zip(har_requests, har_responses)
       streams.extend(self.streamify(messages))
     for stream in streams:
-      stream.print_header(self.output)
+      if self.options.verbose > 0:
+        stream.print_header(self.output)
       self.processors.process_stream(stream)
       if self.options.verbose > 0:
         stream.print_summary(self.output, self.options.baseline)
