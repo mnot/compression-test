@@ -82,22 +82,21 @@ class Processor(BaseProcessor):
     headers = {}
     refs = []
     for name, value in strip_conn_headers(in_headers).items():
-      if name in self.ignore_hdrs:
-        continue
-      elif self.compress_dates and name in self.date_hdrs:
-        try:
-          headers[self.hdr_name(name)] = "%x" % parse_date(value)
-        except ValueError:
-          headers[self.hdr_name(name)] = value
-      elif self.last_c \
+      # look for refs
+      if self.last_c \
       and name[0] != ":" \
       and self.last_c.get(name, None) == value:
-#      and (name[0] != ":" or name == ':host') \
-#        if name == ':host':
-#          name = 'h'
         refs.append(name)
-      else:
-        headers[self.hdr_name(name)] = value
+        continue
+      elif name in self.ignore_hdrs:
+        continue
+      # re-encoding
+      if self.compress_dates and name in self.date_hdrs:
+        try:
+          value = "%x" % parse_date(value)
+        except ValueError:
+          pass
+      headers[self.hdr_name(name)] = value
     self.last_c = in_headers
     if refs:
       headers["ref"] = ",".join([self.hdr_name(ref) for ref in refs])
