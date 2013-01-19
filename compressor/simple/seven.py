@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 
+"""
+Serialise ASCII as seven bits.
+
+Yes, I threw up a bit too.
+"""
+
 from bitarray import bitarray
 
 def encode(text):
