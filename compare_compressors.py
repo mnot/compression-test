@@ -27,6 +27,7 @@ class CompressionTester(object):
   """
   msg_types = ['req', 'res']
   streamifier_dir = "lib.streamifiers"
+  default_processor = "http1"
 
   def __init__(self, output):
     self.options, self.args = self.parse_options()
@@ -74,8 +75,7 @@ class CompressionTester(object):
       .Streamifier(self.options.processor_names) \
       .streamify
 
-  @staticmethod
-  def parse_options():
+  def parse_options(self):
     "Parse command-line options and return (options, args)."
     optp = optparse.OptionParser()
     optp.add_option('-v', '--verbose',
@@ -91,12 +91,12 @@ class CompressionTester(object):
                   'parameters. '
                   'e.g. -c spdy3 -c fork="abc" '
                   '(default: %default)',
-                  default=['http1'])
+                  default=[self.default_processor])
     optp.add_option('-b', '--baseline',
                   dest='baseline',
                   help='baseline codec to base comparisons upon. '
                   '(default: %default)',
-                  default='http1')
+                  default=self.default_processor)
     optp.add_option('-t', '--tsv',
                   action="store_true",
                   dest="tsv",
