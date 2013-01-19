@@ -32,6 +32,8 @@ class Processor(BaseProcessor):
   * No space is inserted between the ":" and the start of the header value.
   
   * The reason phrase is omitted.
+  
+  * All text is encoded using seven bits.
   """
 
   lookups = {
