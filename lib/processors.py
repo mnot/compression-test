@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from collections import defaultdict
+from copy import copy
 from importlib import import_module
 import os
 import sys
@@ -45,8 +46,8 @@ class Processors(object):
     Process the messages in the stream with all processors, and record
     results.
     """
-    for (message, host) in stream.messages:
-      results = self.process_message(message, stream.msg_type, host)
+    for (hdrs, host) in stream.messages:
+      results = self.process_message(hdrs, stream.msg_type, host)
       for proc_name, resu in results.items():
         if proc_name == self.options.baseline:
           ratio = 1.0
@@ -54,7 +55,7 @@ class Processors(object):
           ratio = 1.0 * resu['size'] / results[self.options.baseline]['size']
         stream.record_result(proc_name, resu['size'], ratio, resu['time'])
 
-  def process_message(self, message, msg_type, host):
+  def process_message(self, hdrs, msg_type, host):
     """
     message is a HTTP header dictionary in the format described in
     compression.BaseProcessor.
@@ -68,7 +69,7 @@ class Processors(object):
     results = {}
     for processor in self.processors[msg_type]:
       start_time = sum(os.times()[:2])
-      compressed = processor.compress(message, host)
+      compressed = processor.compress(copy(hdrs), host)
       results[processor.name] = {
         'size': len(compressed),
         'time': sum(os.times()[:2]) - start_time
@@ -79,7 +80,6 @@ class Processors(object):
         self.output("# %s\n%s" % (processor.name, txt))
         if txt[-1] != "\n":
           self.output("\n\n")
-      decompressed = None
       try:
         decompressed = processor.decompress(compressed)
       except NotImplementedError:
@@ -88,13 +88,13 @@ class Processors(object):
             "  WARNING: %s decompression not checked.\n" % processor.name
           )
           self.warned[processor.name] = True
-      if decompressed != None:
-        compare_result = self.compare_headers(message, decompressed)
-        if compare_result:
-          self.output('  - mismatch in %s' % processor.name)
-          if self.options.verbose > 1:
-            self.output(': ' + compare_result + "\n")
-          self.output("\n")
+        continue
+      compare_result = self.compare_headers(copy(hdrs), decompressed)
+      if compare_result:
+        self.output('  - mismatch in %s' % processor.name)
+        if self.options.verbose > 1:
+          self.output(': ' + compare_result + "\n")
+        self.output("\n")
     return results
 
   @staticmethod
