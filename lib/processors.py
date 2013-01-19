@@ -88,7 +88,7 @@ class Processors(object):
             "  WARNING: %s decompression not checked.\n" % processor.name
           )
           self.warned[processor.name] = True
-      if decompressed:
+      if decompressed != None:
         compare_result = self.compare_headers(message, decompressed)
         if compare_result:
           self.output('  - mismatch in %s' % processor.name)
