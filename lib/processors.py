@@ -102,9 +102,13 @@ class Processors(object):
   def compare_headers(a_hdr, b_hdr):
     """
     Compares two dicts of headers, and returns a message denoting any
-    differences. It ignores ordering differences in cookies, but tests that
-    all the content does exist in both.
-    If nothing is different, it returns an empty string.
+    differences. It ignores:
+     - ordering differences in cookies
+     - connection headers
+     - HTTP version
+     - HTTP status phrase
+    If nothing is different, it returns an empty string. If it is, it
+    returns a string explaining what is different.
     """
     output = []
     for d_hdr in [a_hdr, b_hdr]:
@@ -112,8 +116,11 @@ class Processors(object):
         splitvals = d_hdr['cookie'].split(';')
         d_hdr['cookie'] = \
           '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
+    conn = [v.strip().lower() for v in a_hdr.get("connection", "").split(",")]
     for (key, val) in a_hdr.iteritems():
-      if key in [':version', ':status-text']:
+      if key in "connection" or conn:
+        pass
+      elif key in [':version', ':status-text']:
         pass
       elif not key in b_hdr:
         output.append('%s present in only one (A)' % key)
@@ -122,7 +129,8 @@ class Processors(object):
         output.append('%s has mismatched values' % key)
         output.append('    a -> %s' % val)
         output.append('    b -> %s' % b_hdr[key])
-      del b_hdr[key]
+      if b_hdr.has_key(key):
+        del b_hdr[key]
     for key in b_hdr.keys():
         output.append('%s present in only one (B)' % key)
     return '\n'.join(output)
