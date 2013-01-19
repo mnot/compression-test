@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 import zlib
-from .. import BaseProcessor, spdy_dictionary, format_http1, parse_http1
+from .. import BaseProcessor, spdy_dictionary, format_http1
 
 class Processor(BaseProcessor):
   def __init__(self, options, is_request, params):
