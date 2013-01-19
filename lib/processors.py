@@ -69,7 +69,6 @@ class Processors(object):
     for processor in self.processors[msg_type]:
       start_time = sum(os.times()[:2])
       compressed = processor.compress(message, host)
-      time = sum(os.times()[:2]) - start_time
       results[processor.name] = {
         'size': len(compressed),
         'time': sum(os.times()[:2]) - start_time
