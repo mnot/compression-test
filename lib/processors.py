@@ -93,7 +93,7 @@ class Processors(object):
       if compare_result:
         self.output('  - mismatch in %s' % processor.name)
         if self.options.verbose > 1:
-          self.output(': ' + compare_result + "\n")
+          self.output(':\n' + compare_result + "\n")
         self.output("\n")
     return results
 
@@ -122,14 +122,14 @@ class Processors(object):
       elif key in [':version', ':status-text']:
         pass
       elif not key in b_hdr:
-        output.append('%s present in only one (A)' % key)
+        output.append('    %s present in only one (A)' % key)
         continue
       elif val.strip() != b_hdr[key].strip():
-        output.append('%s has mismatched values' % key)
-        output.append('    a -> %s' % val)
-        output.append('    b -> %s' % b_hdr[key])
+        output.append('    %s has mismatched values' % key)
+        output.append('      a -> %s' % val)
+        output.append('      b -> %s' % b_hdr[key])
       if b_hdr.has_key(key):
         del b_hdr[key]
     for key in b_hdr.keys():
-        output.append('%s present in only one (B)' % key)
+        output.append('    %s present in only one (B)' % key)
     return '\n'.join(output)
