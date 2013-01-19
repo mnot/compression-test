@@ -104,7 +104,7 @@ class CompressionTester(object):
                   default=False)
     optp.add_option('-s', '--streamifier',
                   dest="streamifier",
-                  help="streamifier module to use (default; %default).",
+                  help="streamifier module to use (default: %default).",
                   default="public_suffix")
     optp.add_option('--prefix',
                   action="store",
