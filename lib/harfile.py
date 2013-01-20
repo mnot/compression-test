@@ -92,11 +92,7 @@ def encode_strings(inobj, encoding="latin-1"):
         n_k = key.encode(encoding)
       n_v = val
       if isinstance(val, unicode):
-        try:
-          n_v = val.encode(encoding)
-        except UnicodeEncodeError:
-          print val
-          raise
+        n_v = val.encode(encoding)
       retval[n_k] = n_v
   return retval
 

@@ -11,6 +11,11 @@ class BaseProcessor(object):
   def __init__(self, options, is_request, params):
     self.options = options
     self.is_request = is_request
+    name = self.__module__.split(".")[-1]
+    if params:
+      self.name = name + " (" + ", ".join(params) + ")"
+    else:
+      self.name = name
     self.params = params
 
   def compress(self, in_headers, host):
@@ -39,19 +44,23 @@ class BaseProcessor(object):
     raise NotImplementedError
     
     
-def format_http1(frame, delimiter="\r\n", valsep=": ", host='host'):
-  """Take the frame and format it as HTTP/1"""
+def format_http1(frame, 
+                 delimiter="\r\n", 
+                 valsep=": ", 
+                 host='host', 
+                 version="HTTP/1.1"):
+  """Take the frame and format it as HTTP/1-ish"""
   out_frame = []
   top_line = ''
   avoid_list = []
   if ':method' in frame:
     top_line = '%s %s %s%s' % (
         frame[':method'], frame[':path'], 
-        frame.get(':version', "HTTP/1.1"), delimiter)
+        frame.get(':version', version), delimiter)
     avoid_list = [':method', ':path', ':version', ':scheme']
   else:
     top_line = '%s %s %s%s' % (
-        frame.get(':version', "HTTP/1.1"), frame[':status'], 
+        frame.get(':version', version), frame[':status'], 
         frame.get(':status-text', '?'), delimiter)
     avoid_list = [':version', ':status', ':status-text']
   out_frame.append(top_line)
@@ -84,7 +93,7 @@ def strip_conn_headers(hdrs):
   return hdrs
 
 
-def parse_http1(message):
+def parse_http1(message, is_request, host='host'):
   """Take a HTTP1 message and return the header structure for it."""
   out = {}
   lines = message.strip().split("\n")
@@ -98,13 +107,14 @@ def parse_http1(message):
       out[name] += "\0" + value.strip()
     else:
       out[name] = value.strip()
-  if "host" in out.keys():
+  if is_request:
     out[":scheme"] = "http" # FIXME: find https?
     out[':method'] = top_line[0]
     out[':path'] = top_line[1]
     out[':version'] = top_line[2].strip()
-    out[':host'] = out['host']
-    del out['host']
+    if out.has_key(host):
+      out[':host'] = out[host]
+      del out[host]
   else:
     out[':version'] = top_line[0]
     out[':status'] = top_line[1]

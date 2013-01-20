@@ -11,6 +11,8 @@ from urlparse import urlsplit
 import os.path  
 from copy import copy
 
+import seven
+
 class Processor(BaseProcessor):
   """
   This compressor does a few things, compared to HTTP/1:
@@ -30,6 +32,8 @@ class Processor(BaseProcessor):
   * No space is inserted between the ":" and the start of the header value.
   
   * The reason phrase is omitted.
+  
+  * All text is encoded using seven bits.
   """
 
   lookups = {
@@ -59,6 +63,7 @@ class Processor(BaseProcessor):
     'p3p': 'p3',
     'if-modified-since': 'ims',
     'if-none-match': 'inm',
+    ':host': 'h',
   }
   
   date_hdrs = [
@@ -69,6 +74,7 @@ class Processor(BaseProcessor):
   ]
 
   compress_dates = True
+  use_seven = True
   ignore_hdrs = [':status-text', ":version"]
   
   def __init__(self, options, is_request, params):
@@ -88,6 +94,11 @@ class Processor(BaseProcessor):
       and self.last_c.get(name, None) == value:
         refs.append(name)
         continue
+      elif self.last_c \
+      and name == ':host' \
+      and self.last_c.get(name, None) == value:
+          refs.append('h')
+          continue
       elif name in self.ignore_hdrs:
         continue
       # re-encoding
@@ -100,16 +111,30 @@ class Processor(BaseProcessor):
     self.last_c = in_headers
     if refs:
       headers["ref"] = ",".join([self.hdr_name(ref) for ref in refs])
-    out = []
-    return format_http1(headers, delimiter="\n", valsep=":", host='host')
+    if headers.has_key('h'):
+      headers[':host'] = headers['h']
+      del headers['h']
+    msg = format_http1(headers, 
+                       delimiter="\n", 
+                       valsep=":", 
+                       host='h', 
+                       version="H/2")
+    if self.use_seven:
+      return seven.encode(msg)
+    else:
+      return msg
   
 
   def decompress(self, compressed):
-    headers = parse_http1(compressed)
+    if self.use_seven:
+      compressed = seven.decode(compressed)
+    headers = parse_http1(compressed, self.is_request, 'h')
     out_headers = {}
     for name in headers.keys():
       if name == "ref":
         continue
+      elif name == ":host":
+        out_headers['h'] = headers[name]
       elif name[0] == ":":
         out_headers[name] = headers[name]
       elif name[0] == '!':
@@ -137,6 +162,9 @@ class Processor(BaseProcessor):
           sys.stdout.write("\n\n%s\n\n" % repr(self.last_d))
           raise
     self.last_d = copy(out_headers)
+    if out_headers.has_key('h'):
+      out_headers[':host'] = out_headers['h']
+      del out_headers['h']
     return out_headers
 
   def hdr_name(self, name):

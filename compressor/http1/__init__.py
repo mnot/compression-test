@@ -9,4 +9,4 @@ class Processor(BaseProcessor):
     return format_http1(in_headers)
 
   def decompress(self, compressed):
-    return parse_http1(compressed)
+    return parse_http1(compressed, self.is_request)

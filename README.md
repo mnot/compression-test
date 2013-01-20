@@ -25,24 +25,22 @@ Interpreting Text Results
 
 Results will look something like:
 
-    732 req messages processed
-                      compressed | ratio min   max   std
-    req       fork       195,386 | 1.00  1.00  1.00  0.00
-    req      http1       195,386 | 1.00  1.00  1.00  0.00
-    req http1_gzip        20,801 | 0.11  0.02  0.60  0.08
-    req      spdy3        27,238 | 0.14  0.04  0.71  0.08
+* TOTAL: 1012 req messages
+                  size  time | ratio min   max   std
+   http1       830,970  0.05 | 1.00  1.00  1.00  0.00
+  simple       320,883  0.05 | 0.39  0.07  0.92  0.24
+   spdy3        85,492  0.06 | 0.10  0.03  0.66  0.08
 
-    732 res messages processed
-                      compressed | ratio min   max   std
-    res       fork       161,029 | 1.00  1.00  1.00  0.00
-    res      http1       161,029 | 1.00  1.00  1.00  0.00
-    res http1_gzip        35,187 | 0.22  0.02  0.61  0.07
-    res      spdy3        41,468 | 0.26  0.04  0.67  0.08
+* TOTAL: 1012 res messages
+                  size  time | ratio min   max   std
+   http1       424,075  0.04 | 1.00  1.00  1.00  0.00
+  simple       176,216  0.12 | 0.42  0.11  0.95  0.12
+   spdy3        80,706  0.07 | 0.19  0.04  0.68  0.09
 
-The 'compressed' column shows how many bytes the compression algorithm
-outputs; 'ratio' shows the ratio to the baseline (http1, by default), and the
-'min', 'max' and 'std; columns show the minimum, maximum and standard
-deviations of the ratios, respectively.
+The 'size' column shows how many bytes the compression algorithm outputs;
+'time' shows how much CPU time it roughly took; 'ratio' shows the ratio to the
+baseline (http1, by default), and the 'min', 'max' and 'std; columns show the
+minimum, maximum and standard deviations of the ratios, respectively.
 
 
 Showing Message Graphs
