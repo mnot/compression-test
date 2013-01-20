@@ -11,7 +11,11 @@ class BaseProcessor(object):
   def __init__(self, options, is_request, params):
     self.options = options
     self.is_request = is_request
-    self.name = self.__module__.split(".")[-1]
+    name = self.__module__.split(".")[-1]
+    if params:
+      self.name = name + " (" + ", ".join(params) + ")"
+    else:
+      self.name = name
     self.params = params
 
   def compress(self, in_headers, host):
