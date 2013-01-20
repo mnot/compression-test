@@ -84,13 +84,20 @@ def encode_strings(inobj, encoding="latin-1"):
   "Encode strings in objects. Latin-1 is the default encoding for HTTP/1.x."
   retval = {}
   for key, val in inobj.iteritems():
-    n_k = key
-    if isinstance(key, unicode):
-      n_k = key.encode(encoding)
-    n_v = val
-    if isinstance(val, unicode):
-      n_v = val.encode(encoding)
-    retval[n_k] = n_v
+    if key in ['text', 'content']:
+      continue
+    else:
+      n_k = key
+      if isinstance(key, unicode):
+        n_k = key.encode(encoding)
+      n_v = val
+      if isinstance(val, unicode):
+        try:
+          n_v = val.encode(encoding)
+        except UnicodeEncodeError:
+          print val
+          raise
+      retval[n_k] = n_v
   return retval
 
 
