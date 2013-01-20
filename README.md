@@ -25,17 +25,17 @@ Interpreting Text Results
 
 Results will look something like:
 
-* TOTAL: 1012 req messages
-                  size  time | ratio min   max   std
-   http1       830,970  0.05 | 1.00  1.00  1.00  0.00
-  simple       320,883  0.05 | 0.39  0.07  0.92  0.24
-   spdy3        85,492  0.06 | 0.10  0.03  0.66  0.08
+    * TOTAL: 1012 req messages
+                      size  time | ratio min   max   std
+       http1       830,970  0.05 | 1.00  1.00  1.00  0.00
+      simple       320,883  0.05 | 0.39  0.07  0.92  0.24
+       spdy3        85,492  0.06 | 0.10  0.03  0.66  0.08
 
-* TOTAL: 1012 res messages
-                  size  time | ratio min   max   std
-   http1       424,075  0.04 | 1.00  1.00  1.00  0.00
-  simple       176,216  0.12 | 0.42  0.11  0.95  0.12
-   spdy3        80,706  0.07 | 0.19  0.04  0.68  0.09
+    * TOTAL: 1012 res messages
+                      size  time | ratio min   max   std
+       http1       424,075  0.04 | 1.00  1.00  1.00  0.00
+      simple       176,216  0.12 | 0.42  0.11  0.95  0.12
+       spdy3        80,706  0.07 | 0.19  0.04  0.68  0.09
 
 The 'size' column shows how many bytes the compression algorithm outputs;
 'time' shows how much CPU time it roughly took; 'ratio' shows the ratio to the
