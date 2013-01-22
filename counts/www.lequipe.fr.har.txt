@@ -1,0 +1,640 @@
+res: 
+TOTAL HEADER VALUE LENGTH: 342927
+NUMBER OF UNIQUE HEADERS:  40
+TOTAL NUMBER OF HEADERS:   20141
+TOTAL NUMBER OF MESSAGES:  1620
+set-cookie: 
+ Instances: 2
+ Total:     235
+ Average:   117.00
+ Low:       108
+ High:      127
+ Percent of Total Size: 0.068528
+ Percent of Total Count: 0.009930
+
+
+p3p: 
+ Instances: 46
+ Total:     3940
+ Average:   85.00
+ Low:       70
+ High:      93
+ Percent of Total Size: 1.148933
+ Percent of Total Count: 0.228390
+
+
+location: 
+ Instances: 42
+ Total:     2985
+ Average:   71.00
+ Low:       52
+ High:      171
+ Percent of Total Size: 0.870448
+ Percent of Total Count: 0.208530
+
+
+via: 
+ Instances: 1313
+ Total:     85469
+ Average:   65.00
+ Low:       25
+ High:      107
+ Percent of Total Size: 24.923380
+ Percent of Total Count: 6.519041
+
+
+x-amz-id-2: 
+ Instances: 4
+ Total:     256
+ Average:   64.00
+ Low:       64
+ High:      64
+ Percent of Total Size: 0.074651
+ Percent of Total Count: 0.019860
+
+
+x-fb-debug: 
+ Instances: 15
+ Total:     660
+ Average:   44.00
+ Low:       44
+ High:      44
+ Percent of Total Size: 0.192461
+ Percent of Total Count: 0.074475
+
+
+etag: 
+ Instances: 201
+ Total:     7242
+ Average:   36.00
+ Low:       9
+ High:      45
+ Percent of Total Size: 2.111820
+ Percent of Total Count: 0.997964
+
+
+date: 
+ Instances: 1397
+ Total:     40513
+ Average:   29.00
+ Low:       29
+ High:      29
+ Percent of Total Size: 11.813885
+ Percent of Total Count: 6.936100
+
+
+expires: 
+ Instances: 908
+ Total:     26336
+ Average:   29.00
+ Low:       29
+ High:      31
+ Percent of Total Size: 7.679769
+ Percent of Total Count: 4.508217
+
+
+last-modified: 
+ Instances: 863
+ Total:     25635
+ Average:   29.00
+ Low:       29
+ High:      31
+ Percent of Total Size: 7.475352
+ Percent of Total Count: 4.284792
+
+
+x-cache-lookup: 
+ Instances: 1279
+ Total:     30696
+ Average:   24.00
+ Low:       24
+ High:      24
+ Percent of Total Size: 8.951176
+ Percent of Total Count: 6.350231
+
+
+x-cache: 
+ Instances: 1279
+ Total:     24301
+ Average:   19.00
+ Low:       19
+ High:      19
+ Percent of Total Size: 7.086348
+ Percent of Total Count: 6.350231
+
+
+cache-control: 
+ Instances: 931
+ Total:     17582
+ Average:   18.00
+ Low:       8
+ High:      62
+ Percent of Total Size: 5.127039
+ Percent of Total Count: 4.622412
+
+
+x-ua-compatible: 
+ Instances: 31
+ Total:     527
+ Average:   17.00
+ Low:       17
+ High:      17
+ Percent of Total Size: 0.153677
+ Percent of Total Count: 0.153915
+
+
+x-transaction: 
+ Instances: 22
+ Total:     352
+ Average:   16.00
+ Low:       16
+ High:      16
+ Percent of Total Size: 0.102646
+ Percent of Total Count: 0.109230
+
+
+x-amz-request-id: 
+ Instances: 4
+ Total:     64
+ Average:   16.00
+ Low:       16
+ High:      16
+ Percent of Total Size: 0.018663
+ Percent of Total Count: 0.019860
+
+
+content-type: 
+ Instances: 1358
+ Total:     21249
+ Average:   15.00
+ Low:       8
+ High:      39
+ Percent of Total Size: 6.196362
+ Percent of Total Count: 6.742466
+
+
+vary: 
+ Instances: 325
+ Total:     4875
+ Average:   15.00
+ Low:       15
+ High:      15
+ Percent of Total Size: 1.421585
+ Percent of Total Count: 1.613624
+
+
+x-wr-modification: 
+ Instances: 51
+ Total:     714
+ Average:   14.00
+ Low:       14
+ High:      14
+ Percent of Total Size: 0.208208
+ Percent of Total Count: 0.253215
+
+
+x-xss-protection: 
+ Instances: 85
+ Total:     1105
+ Average:   13.00
+ Low:       13
+ High:      13
+ Percent of Total Size: 0.322226
+ Percent of Total Count: 0.422025
+
+
+x-cdn: 
+ Instances: 3
+ Total:     37
+ Average:   12.00
+ Low:       4
+ High:      19
+ Percent of Total Size: 0.010789
+ Percent of Total Count: 0.014895
+
+
+x-frame-options: 
+ Instances: 43
+ Total:     430
+ Average:   10.00
+ Low:       10
+ High:      10
+ Percent of Total Size: 0.125391
+ Percent of Total Count: 0.213495
+
+
+connection: 
+ Instances: 1
+ Total:     10
+ Average:   10.00
+ Low:       10
+ High:      10
+ Percent of Total Size: 0.002916
+ Percent of Total Count: 0.004965
+
+
+server: 
+ Instances: 912
+ Total:     8303
+ Average:   9.00
+ Low:       3
+ High:      26
+ Percent of Total Size: 2.421215
+ Percent of Total Count: 4.528077
+
+
+:version: 
+ Instances: 1620
+ Total:     12960
+ Average:   8.00
+ Low:       8
+ High:      8
+ Percent of Total Size: 3.779230
+ Percent of Total Count: 8.043295
+
+
+x-powered-by: 
+ Instances: 317
+ Total:     2833
+ Average:   8.00
+ Low:       7
+ High:      9
+ Percent of Total Size: 0.826123
+ Percent of Total Count: 1.573904
+
+
+x-content-type-options: 
+ Instances: 105
+ Total:     751
+ Average:   7.00
+ Low:       7
+ High:      15
+ Percent of Total Size: 0.218997
+ Percent of Total Count: 0.521325
+
+
+pragma: 
+ Instances: 68
+ Total:     528
+ Average:   7.00
+ Low:       0
+ High:      8
+ Percent of Total Size: 0.153969
+ Percent of Total Count: 0.337620
+
+
+transfer-encoding: 
+ Instances: 31
+ Total:     217
+ Average:   7.00
+ Low:       7
+ High:      7
+ Percent of Total Size: 0.063279
+ Percent of Total Count: 0.153915
+
+
+status: 
+ Instances: 11
+ Total:     66
+ Average:   6.00
+ Low:       6
+ High:      6
+ Percent of Total Size: 0.019246
+ Percent of Total Count: 0.054615
+
+
+x-fb-rev: 
+ Instances: 2
+ Total:     12
+ Average:   6.00
+ Low:       6
+ High:      6
+ Percent of Total Size: 0.003499
+ Percent of Total Count: 0.009930
+
+
+accept-ranges: 
+ Instances: 375
+ Total:     1875
+ Average:   5.00
+ Low:       5
+ High:      5
+ Percent of Total Size: 0.546764
+ Percent of Total Count: 1.861874
+
+
+proxy-connection: 
+ Instances: 183
+ Total:     915
+ Average:   5.00
+ Low:       5
+ High:      5
+ Percent of Total Size: 0.266821
+ Percent of Total Count: 0.908594
+
+
+content-encoding: 
+ Instances: 307
+ Total:     1378
+ Average:   4.00
+ Low:       4
+ High:      7
+ Percent of Total Size: 0.401835
+ Percent of Total Count: 1.524254
+
+
+content-length: 
+ Instances: 1336
+ Total:     5090
+ Average:   3.00
+ Low:       1
+ High:      6
+ Percent of Total Size: 1.484281
+ Percent of Total Count: 6.633236
+
+
+cf-cache-status: 
+ Instances: 109
+ Total:     327
+ Average:   3.00
+ Low:       3
+ High:      3
+ Percent of Total Size: 0.095356
+ Percent of Total Count: 0.541185
+
+
+:status-text: 
+ Instances: 1620
+ Total:     4105
+ Average:   2.00
+ Low:       2
+ High:      17
+ Percent of Total Size: 1.197048
+ Percent of Total Count: 8.043295
+
+
+:status: 
+ Instances: 1620
+ Total:     4786
+ Average:   2.00
+ Low:       1
+ High:      3
+ Percent of Total Size: 1.395632
+ Percent of Total Count: 8.043295
+
+
+age: 
+ Instances: 1320
+ Total:     3566
+ Average:   2.00
+ Low:       1
+ High:      7
+ Percent of Total Size: 1.039871
+ Percent of Total Count: 6.553796
+
+
+access-control-allow-origin: 
+ Instances: 2
+ Total:     2
+ Average:   1.00
+ Low:       1
+ High:      1
+ Percent of Total Size: 0.000583
+ Percent of Total Count: 0.009930
+
+
+req: 
+TOTAL HEADER VALUE LENGTH: 553732
+NUMBER OF UNIQUE HEADERS:  23
+TOTAL NUMBER OF HEADERS:   18947
+TOTAL NUMBER OF MESSAGES:  1620
+user-agent: 
+ Instances: 1434
+ Total:     152004
+ Average:   106.00
+ Low:       106
+ High:      106
+ Percent of Total Size: 27.450825
+ Percent of Total Count: 7.568480
+
+
+:path: 
+ Instances: 1620
+ Total:     119009
+ Average:   73.00
+ Low:       1
+ High:      883
+ Percent of Total Size: 21.492166
+ Percent of Total Count: 8.550166
+
+
+referer: 
+ Instances: 1434
+ Total:     83430
+ Average:   58.00
+ Low:       22
+ High:      353
+ Percent of Total Size: 15.066855
+ Percent of Total Count: 7.568480
+
+
+x-chrome-variations: 
+ Instances: 52
+ Total:     2912
+ Average:   56.00
+ Low:       56
+ High:      56
+ Percent of Total Size: 0.525886
+ Percent of Total Count: 0.274450
+
+
+cookie: 
+ Instances: 477
+ Total:     22187
+ Average:   46.00
+ Low:       31
+ High:      257
+ Percent of Total Size: 4.006812
+ Percent of Total Count: 2.517549
+
+
+content-type: 
+ Instances: 10
+ Total:     330
+ Average:   33.00
+ Low:       33
+ High:      33
+ Percent of Total Size: 0.059596
+ Percent of Total Count: 0.052779
+
+
+accept-charset: 
+ Instances: 1397
+ Total:     41910
+ Average:   30.00
+ Low:       30
+ High:      30
+ Percent of Total Size: 7.568643
+ Percent of Total Count: 7.373199
+
+
+if-modified-since: 
+ Instances: 5
+ Total:     145
+ Average:   29.00
+ Low:       29
+ High:      29
+ Percent of Total Size: 0.026186
+ Percent of Total Count: 0.026389
+
+
+x-kdorigin: 
+ Instances: 2
+ Total:     57
+ Average:   28.00
+ Low:       24
+ High:      33
+ Percent of Total Size: 0.010294
+ Percent of Total Count: 0.010556
+
+
+origin: 
+ Instances: 12
+ Total:     232
+ Average:   19.00
+ Low:       19
+ High:      21
+ Percent of Total Size: 0.041898
+ Percent of Total Count: 0.063335
+
+
+:host: 
+ Instances: 1620
+ Total:     29007
+ Average:   17.00
+ Low:       11
+ High:      24
+ Percent of Total Size: 5.238455
+ Percent of Total Count: 8.550166
+
+
+accept-encoding: 
+ Instances: 1397
+ Total:     23749
+ Average:   17.00
+ Low:       17
+ High:      17
+ Percent of Total Size: 4.288898
+ Percent of Total Count: 7.373199
+
+
+accept-language: 
+ Instances: 1397
+ Total:     19558
+ Average:   14.00
+ Low:       14
+ High:      14
+ Percent of Total Size: 3.532034
+ Percent of Total Count: 7.373199
+
+
+x-requested-with: 
+ Instances: 5
+ Total:     70
+ Average:   14.00
+ Low:       14
+ High:      14
+ Percent of Total Size: 0.012641
+ Percent of Total Count: 0.026389
+
+
+if-none-match: 
+ Instances: 1
+ Total:     12
+ Average:   12.00
+ Low:       12
+ High:      12
+ Percent of Total Size: 0.002167
+ Percent of Total Count: 0.005278
+
+
+accept: 
+ Instances: 1434
+ Total:     17203
+ Average:   11.00
+ Low:       3
+ High:      63
+ Percent of Total Size: 3.106738
+ Percent of Total Count: 7.568480
+
+
+proxy-connection: 
+ Instances: 1313
+ Total:     13130
+ Average:   10.00
+ Low:       10
+ High:      10
+ Percent of Total Size: 2.371183
+ Percent of Total Count: 6.929857
+
+
+connection: 
+ Instances: 84
+ Total:     840
+ Average:   10.00
+ Low:       10
+ High:      10
+ Percent of Total Size: 0.151698
+ Percent of Total Count: 0.443342
+
+
+cache-control: 
+ Instances: 383
+ Total:     3447
+ Average:   9.00
+ Low:       9
+ High:      9
+ Percent of Total Size: 0.622503
+ Percent of Total Count: 2.021428
+
+
+:version: 
+ Instances: 1620
+ Total:     12960
+ Average:   8.00
+ Low:       8
+ High:      8
+ Percent of Total Size: 2.340482
+ Percent of Total Count: 8.550166
+
+
+:scheme: 
+ Instances: 1620
+ Total:     6640
+ Average:   4.00
+ Low:       4
+ High:      5
+ Percent of Total Size: 1.199136
+ Percent of Total Count: 8.550166
+
+
+:method: 
+ Instances: 1620
+ Total:     4870
+ Average:   3.00
+ Low:       3
+ High:      4
+ Percent of Total Size: 0.879487
+ Percent of Total Count: 8.550166
+
+
+content-length: 
+ Instances: 10
+ Total:     30
+ Average:   3.00
+ Low:       3
+ High:      3
+ Percent of Total Size: 0.005418
+ Percent of Total Count: 0.052779
+
+
