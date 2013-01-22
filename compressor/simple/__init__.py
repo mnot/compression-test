@@ -11,6 +11,8 @@ from urlparse import urlsplit
 import os.path  
 from copy import copy
 
+import seven
+
 class Processor(BaseProcessor):
   """
   This compressor does a few things, compared to HTTP/1:
@@ -28,6 +30,10 @@ class Processor(BaseProcessor):
   * "\n" is used as a line delimiter, instead of "\r\n".
   
   * No space is inserted between the ":" and the start of the header value.
+  
+  * The reason phrase is omitted.
+  
+  * All text is encoded using seven bits.
   """
 
   lookups = {
@@ -55,13 +61,21 @@ class Processor(BaseProcessor):
     'via': 'vi',
     'set-cookie': 'sc',
     'p3p': 'p3',
+    'if-modified-since': 'ims',
+    'if-none-match': 'inm',
+    ':host': 'h',
   }
   
   date_hdrs = [
     'last-modified',
+    'if-modified-since',
     'date',
     'expires'
   ]
+
+  compress_dates = True
+  use_seven = True
+  ignore_hdrs = [':status-text', ":version"]
   
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
@@ -74,40 +88,60 @@ class Processor(BaseProcessor):
     headers = {}
     refs = []
     for name, value in strip_conn_headers(in_headers).items():
-      if name in self.date_hdrs:
-        try:
-          headers[self.hdr_name(name)] = "%x" % parse_date(value)
-        except ValueError:
-          headers[self.hdr_name(name)] = value
-      elif self.last_c \
+      # look for refs
+      if self.last_c \
       and name[0] != ":" \
       and self.last_c.get(name, None) == value:
-#      and (name[0] != ":" or name == ':host') \
-#        if name == ':host':
-#          name = 'h'
         refs.append(name)
-      else:
-        headers[self.hdr_name(name)] = value
+        continue
+      elif self.last_c \
+      and name == ':host' \
+      and self.last_c.get(name, None) == value:
+          refs.append('h')
+          continue
+      elif name in self.ignore_hdrs:
+        continue
+      # re-encoding
+      if self.compress_dates and name in self.date_hdrs:
+        try:
+          value = "%x" % parse_date(value)
+        except ValueError:
+          pass
+      headers[self.hdr_name(name)] = value
     self.last_c = in_headers
     if refs:
       headers["ref"] = ",".join([self.hdr_name(ref) for ref in refs])
-    out = []
-    return format_http1(headers, delimiter="\n", valsep=":", host='host')
+    if headers.has_key('h'):
+      headers[':host'] = headers['h']
+      del headers['h']
+    msg = format_http1(headers, 
+                       delimiter="\n", 
+                       valsep=":", 
+                       host='h', 
+                       version="H/2")
+    if self.use_seven:
+      return seven.encode(msg)
+    else:
+      return msg
   
 
   def decompress(self, compressed):
-    headers = parse_http1(compressed)
+    if self.use_seven:
+      compressed = seven.decode(compressed)
+    headers = parse_http1(compressed, self.is_request, 'h')
     out_headers = {}
     for name in headers.keys():
       if name == "ref":
         continue
+      elif name == ":host":
+        out_headers['h'] = headers[name]
       elif name[0] == ":":
         out_headers[name] = headers[name]
       elif name[0] == '!':
         out_headers[name[1:]] = headers[name]
       else:
         expanded_name = self.rev_lookups[name]
-        if expanded_name in self.date_hdrs:
+        if self.compress_dates and expanded_name in self.date_hdrs:
           try:
             out_headers[expanded_name] = format_date(int(headers[name], 16))
           except ValueError:
@@ -128,6 +162,9 @@ class Processor(BaseProcessor):
           sys.stdout.write("\n\n%s\n\n" % repr(self.last_d))
           raise
     self.last_d = copy(out_headers)
+    if out_headers.has_key('h'):
+      out_headers[':host'] = out_headers['h']
+      del out_headers['h']
     return out_headers
 
   def hdr_name(self, name):

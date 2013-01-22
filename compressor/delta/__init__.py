@@ -24,10 +24,10 @@ class Processor(BaseProcessor):
   can eventually be constructed for use with the Huffman encoder.
   """
   def __init__(self, options, is_request, params):
+    BaseProcessor.__init__(self, options, is_request, params)
     # 'params' is ignored
     self.compressor   = spdy4_codec_impl.Spdy4CoDe()
     self.decompressor = spdy4_codec_impl.Spdy4CoDe()
-    self.options = options
     self.hosts = {}
     self.group_ids = common_utils.IDStore()
     self.wf = self.compressor.wf

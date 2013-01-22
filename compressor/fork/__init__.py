@@ -12,6 +12,10 @@ from .. import BaseProcessor, format_http1, strip_conn_headers
 class Processor(BaseProcessor):
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
+    if "bin" in params[1:]:
+      self.delimit_binary = True
+    else:
+      self.delimit_binary = False
     path = os.path.join(os.getcwd(), params[0])
     self.process = subprocess.Popen(path,
                                     #bufsize=-1,
@@ -22,7 +26,15 @@ class Processor(BaseProcessor):
   def compress(self, in_headers, host):
     http1_msg = format_http1(strip_conn_headers(in_headers))
     self.process.stdin.write(http1_msg)
-    output = self.process.stdout.read(8)
-    size = struct.unpack("q", output)[0]
-    output = self.process.stdout.read(int(size))
+    if self.delimit_binary:
+      output = self.process.stdout.read(8)
+      size = struct.unpack("q", output)[0]
+      output = self.process.stdout.read(int(size))
+    else:
+      output = ""
+      while True:
+        line = self.process.stdout.readline()
+        if line.strip() == "":
+          break
+        output += line
     return output
