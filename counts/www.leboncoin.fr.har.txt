@@ -4,261 +4,287 @@ NUMBER OF UNIQUE HEADERS:  26
 TOTAL NUMBER OF HEADERS:   5850
 TOTAL NUMBER OF MESSAGES:  366
 location: 
- Instances: 1
- Total:     207
- Average:   207.00
- Low:       207
- High:      207
+ Instances:   1
+ Total:       207
+ Average:     207.00
+ Low:         207
+ High:        207
+ Variability: 1.0000
  Percent of Total Size: 0.180753
  Percent of Total Count: 0.017094
 
 
 set-cookie: 
- Instances: 11
- Total:     1490
- Average:   135.00
- Low:       86
- High:      363
+ Instances:   11
+ Total:       1490
+ Average:     135.00
+ Low:         86
+ High:        363
+ Variability: 1.0000
  Percent of Total Size: 1.301071
  Percent of Total Count: 0.188034
 
 
 via: 
- Instances: 353
- Total:     25777
- Average:   73.00
- Low:       66
- High:      79
+ Instances:   353
+ Total:       25777
+ Average:     73.00
+ Low:         66
+ High:        79
+ Variability: 0.0085
  Percent of Total Size: 22.508536
  Percent of Total Count: 6.034188
 
 
 p3p: 
- Instances: 74
- Total:     2773
- Average:   37.00
- Low:       26
- High:      93
+ Instances:   74
+ Total:       2773
+ Average:     37.00
+ Low:         26
+ High:        93
+ Variability: 0.0676
  Percent of Total Size: 2.421390
  Percent of Total Count: 1.264957
 
 
 x-cache-lookup: 
- Instances: 353
- Total:     12217
- Average:   34.00
- Low:       24
- High:      54
+ Instances:   353
+ Total:       12217
+ Average:     34.00
+ Low:         24
+ High:        54
+ Variability: 0.0085
  Percent of Total Size: 10.667912
  Percent of Total Count: 6.034188
 
 
 date: 
- Instances: 353
- Total:     10237
- Average:   29.00
- Low:       29
- High:      29
+ Instances:   353
+ Total:       10237
+ Average:     29.00
+ Low:         29
+ High:        29
+ Variability: 0.0652
  Percent of Total Size: 8.938972
  Percent of Total Count: 6.034188
 
 
 last-modified: 
- Instances: 315
- Total:     9135
- Average:   29.00
- Low:       29
- High:      29
+ Instances:   315
+ Total:       9135
+ Average:     29.00
+ Low:         29
+ High:        29
+ Variability: 0.6159
  Percent of Total Size: 7.976703
  Percent of Total Count: 5.384615
 
 
 expires: 
- Instances: 249
- Total:     7223
- Average:   29.00
- Low:       29
- High:      31
+ Instances:   249
+ Total:       7223
+ Average:     29.00
+ Low:         29
+ High:        31
+ Variability: 0.7631
  Percent of Total Size: 6.307140
  Percent of Total Count: 4.256410
 
 
 etag: 
- Instances: 315
- Total:     8285
- Average:   26.00
- Low:       19
- High:      30
+ Instances:   315
+ Total:       8285
+ Average:     26.00
+ Low:         19
+ High:        30
+ Variability: 0.7778
  Percent of Total Size: 7.234481
  Percent of Total Count: 5.384615
 
 
 vary: 
- Instances: 54
- Total:     1404
- Average:   26.00
- Low:       26
- High:      26
+ Instances:   54
+ Total:       1404
+ Average:     26.00
+ Low:         26
+ High:        26
+ Variability: 0.0185
  Percent of Total Size: 1.225976
  Percent of Total Count: 0.923077
 
 
 x-cache: 
- Instances: 353
- Total:     7792
- Average:   22.00
- Low:       19
- High:      24
+ Instances:   353
+ Total:       7792
+ Average:     22.00
+ Low:         19
+ High:        24
+ Variability: 0.0085
  Percent of Total Size: 6.803992
  Percent of Total Count: 6.034188
 
 
 x-varnish: 
- Instances: 271
- Total:     5680
- Average:   20.00
- Low:       10
- High:      21
+ Instances:   271
+ Total:       5680
+ Average:     20.00
+ Low:         10
+ High:        21
+ Variability: 0.8745
  Percent of Total Size: 4.959789
  Percent of Total Count: 4.632479
 
 
 server: 
- Instances: 352
- Total:     5173
- Average:   14.00
- Low:       3
- High:      22
+ Instances:   352
+ Total:       5173
+ Average:     14.00
+ Low:         3
+ High:        22
+ Variability: 0.0199
  Percent of Total Size: 4.517075
  Percent of Total Count: 6.017094
 
 
 cache-control: 
- Instances: 249
- Total:     3490
- Average:   14.00
- Low:       14
- High:      18
+ Instances:   249
+ Total:       3490
+ Average:     14.00
+ Low:         14
+ High:        18
+ Variability: 0.0080
  Percent of Total Size: 3.047476
  Percent of Total Count: 4.256410
 
 
 content-type: 
- Instances: 352
- Total:     4364
- Average:   12.00
- Low:       8
- High:      37
+ Instances:   352
+ Total:       4364
+ Average:     12.00
+ Low:         8
+ High:        37
+ Variability: 0.0256
  Percent of Total Size: 3.810655
  Percent of Total Count: 6.017094
 
 
 :version: 
- Instances: 366
- Total:     2928
- Average:   8.00
- Low:       8
- High:      8
+ Instances:   366
+ Total:       2928
+ Average:     8.00
+ Low:         8
+ High:        8
+ Variability: 0.0027
  Percent of Total Size: 2.556736
  Percent of Total Count: 6.256410
 
 
 pragma: 
- Instances: 2
- Total:     16
- Average:   8.00
- Low:       8
- High:      8
+ Instances:   2
+ Total:       16
+ Average:     8.00
+ Low:         8
+ High:        8
+ Variability: 0.5000
  Percent of Total Size: 0.013971
  Percent of Total Count: 0.034188
 
 
 x-powered-by: 
- Instances: 3
- Total:     21
- Average:   7.00
- Low:       7
- High:      7
+ Instances:   3
+ Total:       21
+ Average:     7.00
+ Low:         7
+ High:        7
+ Variability: 0.3333
  Percent of Total Size: 0.018337
  Percent of Total Count: 0.051282
 
 
 proxy-connection: 
- Instances: 34
- Total:     170
- Average:   5.00
- Low:       5
- High:      5
+ Instances:   34
+ Total:       170
+ Average:     5.00
+ Low:         5
+ High:        5
+ Variability: 0.0294
  Percent of Total Size: 0.148444
  Percent of Total Count: 0.581197
 
 
 accept-ranges: 
- Instances: 303
- Total:     1514
- Average:   4.00
- Low:       4
- High:      5
+ Instances:   303
+ Total:       1514
+ Average:     4.00
+ Low:         4
+ High:        5
+ Variability: 0.0066
  Percent of Total Size: 1.322028
  Percent of Total Count: 5.179487
 
 
 content-encoding: 
- Instances: 54
- Total:     216
- Average:   4.00
- Low:       4
- High:      4
+ Instances:   54
+ Total:       216
+ Average:     4.00
+ Low:         4
+ High:        4
+ Variability: 0.0185
  Percent of Total Size: 0.188612
  Percent of Total Count: 0.923077
 
 
 age: 
- Instances: 353
- Total:     1214
- Average:   3.00
- Low:       1
- High:      6
+ Instances:   353
+ Total:       1214
+ Average:     3.00
+ Low:         1
+ High:        6
+ Variability: 0.6431
  Percent of Total Size: 1.060068
  Percent of Total Count: 6.034188
 
 
 content-length: 
- Instances: 347
- Total:     1310
- Average:   3.00
- Low:       1
- High:      5
+ Instances:   347
+ Total:       1310
+ Average:     3.00
+ Low:         1
+ High:        5
+ Variability: 0.7522
  Percent of Total Size: 1.143895
  Percent of Total Count: 5.931624
 
 
 :status-text: 
- Instances: 366
- Total:     812
- Average:   2.00
- Low:       2
- High:      17
+ Instances:   366
+ Total:       812
+ Average:     2.00
+ Low:         2
+ High:        17
+ Variability: 0.0082
  Percent of Total Size: 0.709040
  Percent of Total Count: 6.256410
 
 
 :status: 
- Instances: 366
- Total:     1072
- Average:   2.00
- Low:       1
- High:      3
+ Instances:   366
+ Total:       1072
+ Average:     2.00
+ Low:         1
+ High:        3
+ Variability: 0.0082
  Percent of Total Size: 0.936073
  Percent of Total Count: 6.256410
 
 
 x-xss-protection: 
- Instances: 1
- Total:     1
- Average:   1.00
- Low:       1
- High:      1
+ Instances:   1
+ Total:       1
+ Average:     1.00
+ Low:         1
+ High:        1
+ Variability: 1.0000
  Percent of Total Size: 0.000873
  Percent of Total Count: 0.017094
 
@@ -269,142 +295,194 @@ NUMBER OF UNIQUE HEADERS:  14
 TOTAL NUMBER OF HEADERS:   4568
 TOTAL NUMBER OF MESSAGES:  366
 user-agent: 
- Instances: 366
- Total:     38796
- Average:   106.00
- Low:       106
- High:      106
+ Instances:   366
+ Total:       38796
+ Average:     106.00
+ Low:         106
+ High:        106
+ Variability: 0.0027
  Percent of Total Size: 33.541984
  Percent of Total Count: 8.012259
 
 
 referer: 
- Instances: 366
- Total:     18000
- Average:   49.00
- Low:       24
- High:      59
+ Instances:   366
+ Total:       18000
+ Average:     49.00
+ Low:         24
+ High:        59
+ Variability: 0.0301
  Percent of Total Size: 15.562318
  Percent of Total Count: 8.012259
 
 
 cookie: 
- Instances: 148
- Total:     6932
- Average:   46.00
- Low:       19
- High:      89
+ Instances:   148
+ Total:       6932
+ Average:     46.00
+ Low:         19
+ High:        89
+ Variability: 0.0676
  Percent of Total Size: 5.993222
  Percent of Total Count: 3.239930
 
 
 :path: 
- Instances: 366
- Total:     12990
- Average:   35.00
- Low:       1
- High:      331
+ Instances:   366
+ Total:       12990
+ Average:     35.00
+ Low:         1
+ High:        331
+ Variability: 0.7951
  Percent of Total Size: 11.230806
  Percent of Total Count: 8.012259
 
 
 accept-charset: 
- Instances: 353
- Total:     10590
- Average:   30.00
- Low:       30
- High:      30
+ Instances:   353
+ Total:       10590
+ Average:     30.00
+ Low:         30
+ High:        30
+ Variability: 0.0028
  Percent of Total Size: 9.155831
  Percent of Total Count: 7.727671
 
 
 accept-encoding: 
- Instances: 353
- Total:     6001
- Average:   17.00
- Low:       17
- High:      17
+ Instances:   353
+ Total:       6001
+ Average:     17.00
+ Low:         17
+ High:        17
+ Variability: 0.0028
  Percent of Total Size: 5.188304
  Percent of Total Count: 7.727671
 
 
 :host: 
- Instances: 366
- Total:     5702
- Average:   15.00
- Low:       14
- High:      23
+ Instances:   366
+ Total:       5702
+ Average:     15.00
+ Low:         14
+ High:        23
+ Variability: 0.0437
  Percent of Total Size: 4.929797
  Percent of Total Count: 8.012259
 
 
 accept-language: 
- Instances: 353
- Total:     4942
- Average:   14.00
- Low:       14
- High:      14
+ Instances:   353
+ Total:       4942
+ Average:     14.00
+ Low:         14
+ High:        14
+ Variability: 0.0028
  Percent of Total Size: 4.272721
  Percent of Total Count: 7.727671
 
 
 proxy-connection: 
- Instances: 353
- Total:     3530
- Average:   10.00
- Low:       10
- High:      10
+ Instances:   353
+ Total:       3530
+ Average:     10.00
+ Low:         10
+ High:        10
+ Variability: 0.0028
  Percent of Total Size: 3.051944
  Percent of Total Count: 7.727671
 
 
 cache-control: 
- Instances: 88
- Total:     792
- Average:   9.00
- Low:       9
- High:      9
+ Instances:   88
+ Total:       792
+ Average:     9.00
+ Low:         9
+ High:        9
+ Variability: 0.0114
  Percent of Total Size: 0.684742
  Percent of Total Count: 1.926445
 
 
 :version: 
- Instances: 366
- Total:     2928
- Average:   8.00
- Low:       8
- High:      8
+ Instances:   366
+ Total:       2928
+ Average:     8.00
+ Low:         8
+ High:        8
+ Variability: 0.0027
  Percent of Total Size: 2.531470
  Percent of Total Count: 8.012259
 
 
 accept: 
- Instances: 358
- Total:     1899
- Average:   5.00
- Low:       3
- High:      63
+ Instances:   358
+ Total:       1899
+ Average:     5.00
+ Low:         3
+ High:        63
+ Variability: 0.0084
  Percent of Total Size: 1.641825
  Percent of Total Count: 7.837128
 
 
 :scheme: 
- Instances: 366
- Total:     1464
- Average:   4.00
- Low:       4
- High:      4
+ Instances:   366
+ Total:       1464
+ Average:     4.00
+ Low:         4
+ High:        4
+ Variability: 0.0027
  Percent of Total Size: 1.265735
  Percent of Total Count: 8.012259
 
 
 :method: 
- Instances: 366
- Total:     1098
- Average:   3.00
- Low:       3
- High:      3
+ Instances:   366
+ Total:       1098
+ Average:     3.00
+ Low:         3
+ High:        3
+ Variability: 0.0027
  Percent of Total Size: 0.949301
  Percent of Total Count: 8.012259
 
 
+TOTAL VARIABILITY FOR ALL HEADERS:
+:version             0.00136612021858                                   732                 
+user-agent           0.00273224043716                                   366                 
+:method              0.00273224043716                                   366                 
+:scheme              0.00273224043716                                   366                 
+accept-language      0.0028328611898                                    353                 
+accept-charset       0.0028328611898                                    353                 
+accept-encoding      0.0028328611898                                    353                 
+proxy-connection     0.00516795865633                                   387                 
+accept-ranges        0.00660066006601                                   303                 
+:status-text         0.00819672131148                                   366                 
+:status              0.00819672131148                                   366                 
+accept               0.00837988826816                                   358                 
+via                  0.00849858356941                                   353                 
+x-cache-lookup       0.00849858356941                                   353                 
+x-cache              0.00849858356941                                   353                 
+cache-control        0.00890207715134                                   337                 
+vary                 0.0185185185185                                    54                  
+content-encoding     0.0185185185185                                    54                  
+server               0.0198863636364                                    352                 
+content-type         0.0255681818182                                    352                 
+referer              0.0300546448087                                    366                 
+:host                0.0437158469945                                    366                 
+date                 0.0651558073654                                    353                 
+p3p                  0.0675675675676                                    74                  
+cookie               0.0675675675676                                    148                 
+x-powered-by         0.333333333333                                     3                   
+pragma               0.5                                                2                   
+last-modified        0.615873015873                                     315                 
+age                  0.643059490085                                     353                 
+content-length       0.752161383285                                     347                 
+expires              0.763052208835                                     249                 
+etag                 0.777777777778                                     315                 
+:path                0.795081967213                                     366                 
+x-varnish            0.874538745387                                     271                 
+x-xss-protection     1.0                                                1                   
+location             1.0                                                1                   
+set-cookie           1.0                                                11                  

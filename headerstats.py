@@ -4,6 +4,8 @@
 compression_test.py
 
 Tests various HTTP header compression algorithms, to compare them.
+
+requires: https://github.com/axiak/pybloomfiltermmap
 """
 
 # Copyright (c) 2012 The Chromium Authors. All rights reserved.
@@ -12,6 +14,7 @@ Tests various HTTP header compression algorithms, to compare them.
 
 # pylint: disable=W0311
 
+from pybloomfilter import BloomFilter
 from collections import defaultdict
 from importlib import import_module
 import sys
@@ -21,6 +24,23 @@ import optparse
 from lib.harfile import read_har_file
 from lib.processors import Processors
 
+class Counter(object):
+  """
+  BloomFilter-based unique value count
+  """
+  uniques = 0
+  count = 0
+  
+  def __init__(self):
+    self.bloom = BloomFilter(10000,0.1)
+    
+  def inc(self,val):
+    self.count += 1
+    if not self.bloom.add(val):
+      self.uniques += 1
+      
+  def ratio(self):
+    return float(self.uniques)/float(self.count)
 
 class CompressionTester(object):
   """
@@ -41,6 +61,8 @@ class CompressionTester(object):
       '_TOTAL_HEADER_INSTANCES': 0
     }
   }
+  # tracks variability of all headers across all samples tested...
+  v = {}
 
   def __init__(self, output):
     self.options, self.args = self.parse_options()
@@ -62,8 +84,17 @@ class CompressionTester(object):
       for (hdrs, host) in stream.messages:
         section['_TOTAL_MESSAGES'] += 1
         for (key,val) in hdrs.iteritems():
+          if not key in self.v:
+            self.v[key] = Counter()
+          self.v[key].inc(val)
           if not key in section:
-            section[key] = {'C':0,'T':0,'A':0.0,'L':sys.maxint,'H':0}
+            section[key] = {
+              'C':0,
+              'T':0,
+              'A':0.0,
+              'L':sys.maxint,
+              'H':0,
+              'V': Counter()}
           l = len(val)
           section['_TOTAL_HEADER_VALUE_LEN'] += l
           section['_TOTAL_HEADER_INSTANCES'] += 1
@@ -73,23 +104,35 @@ class CompressionTester(object):
           k['A'] = k['T'] / k['C']
           k['L'] = min(k['L'], l)
           k['H'] = max(k['H'], l)
+          k['V'].inc(val)
     for section,data in self.c.iteritems():
       print '%s: ' % section
       print 'TOTAL HEADER VALUE LENGTH: %d' % data['_TOTAL_HEADER_VALUE_LEN']
       print 'NUMBER OF UNIQUE HEADERS:  %d' % (len(data) - 3)
       print 'TOTAL NUMBER OF HEADERS:   %d' % data['_TOTAL_HEADER_INSTANCES']
       print 'TOTAL NUMBER OF MESSAGES:  %d' % data['_TOTAL_MESSAGES']
+      
       for (key,value) in sorted(data.iteritems(), key=lambda(k,v): (v,k), reverse=True):
         if not key[0] == '_':
           print '%s: ' % key
-          print ' Instances: %d' % value['C']
-          print ' Total:     %d' % value['T']
-          print ' Average:   %.2f' % value['A']
-          print ' Low:       %d' % value['L']
-          print ' High:      %d' % value['H']
+          print ' Instances:   %d' % value['C']
+          print ' Total:       %d' % value['T']
+          print ' Average:     %.2f' % value['A']
+          print ' Low:         %d' % value['L']
+          print ' High:        %d' % value['H']
+          print ' Variability: %.4f' % value['V'].ratio()
           print ' Percent of Total Size: %.6f' % ((float(value['T']) / float(data['_TOTAL_HEADER_VALUE_LEN'])) * 100)
           print ' Percent of Total Count: %.6f' % ((float(value['C']) / float(data['_TOTAL_HEADER_INSTANCES'])) * 100)
           print '\n'
+ 
+    print 'TOTAL VARIABILITY FOR ALL HEADERS:'
+    tmp = {}
+    fmt = "{:<20} {:<50} {:<20}"
+    for (key,value) in self.v.iteritems():
+      tmp[key] = value.ratio()
+    ord = sorted(tmp,key=tmp.get)
+    for key in sorted(tmp,key=tmp.get):
+      print fmt.format(key,tmp[key],self.v[key].count)
 
     
   def load_streamifier(self, name):
