@@ -59,7 +59,7 @@ date:
  Percent of Total Count: 8.020833
  Encoded: 
   Total:      308
-  Average:    308.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -76,7 +76,7 @@ expires:
  Percent of Total Count: 6.354167
  Encoded: 
   Total:      244
-  Average:    244.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -93,7 +93,7 @@ last-modified:
  Percent of Total Count: 4.479167
  Encoded: 
   Total:      172
-  Average:    172.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -242,7 +242,7 @@ age:
  Percent of Total Count: 0.937500
  Encoded: 
   Total:      27
-  Average:    27.00
+  Average:    3.00
   Low:        3
   High:       3
   Ratio:      40.00
@@ -270,7 +270,7 @@ content-length:
  Percent of Total Count: 7.604167
  Encoded: 
   Total:      132
-  Average:    154.44
+  Average:    1.81
   Low:        1
   High:       3
   Ratio:      46.34
@@ -287,7 +287,7 @@ content-length:
  Percent of Total Count: 8.020833
  Encoded: 
   Total:      154
-  Average:    154.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -382,7 +382,7 @@ accept-charset:
  Average:     21.53
  Low:         11
  High:        24
- Variability: 0.1818
+ Variability: 0.1948
  Percent of Total Size: 5.291039
  Percent of Total Count: 8.306365
 
@@ -454,9 +454,9 @@ accept:
 
 
 TOTAL VARIABILITY FOR ALL HEADERS:
+accept-charset       0.0                                                77                  
 :version             0.00649350649351                                   154                 
 accept-language      0.012987012987                                     77                  
-accept-charset       0.012987012987                                     77                  
 user-agent           0.012987012987                                     77                  
 :method              0.012987012987                                     77                  
 accept-encoding      0.012987012987                                     77                  

@@ -81,7 +81,7 @@ date:
  Percent of Total Count: 6.265965
  Encoded: 
   Total:      1668
-  Average:    1668.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -98,7 +98,7 @@ last-modified:
  Percent of Total Count: 5.875282
  Encoded: 
   Total:      1564
-  Average:    1564.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -115,7 +115,7 @@ expires:
  Percent of Total Count: 1.487603
  Encoded: 
   Total:      396
-  Average:    396.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -275,7 +275,7 @@ content-length:
  Percent of Total Count: 6.235913
  Encoded: 
   Total:      808
-  Average:    774.52
+  Average:    1.95
   Low:        1
   High:       3
   Ratio:      46.95
@@ -292,7 +292,7 @@ age:
  Percent of Total Count: 6.265965
  Encoded: 
   Total:      719
-  Average:    613.31
+  Average:    1.72
   Low:        1
   High:       4
   Ratio:      41.21
@@ -320,7 +320,7 @@ age:
  Percent of Total Count: 8.444778
  Encoded: 
   Total:      1050
-  Average:    1059.83
+  Average:    1.87
   Low:        1
   High:       2
   Ratio:      31.73
@@ -398,7 +398,7 @@ if-modified-since:
  Percent of Total Count: 0.046919
  Encoded: 
   Total:      12
-  Average:    12.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21

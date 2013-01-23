@@ -98,12 +98,12 @@ expires:
  Average:     29.65
  Low:         2
  High:        59
- Variability: 0.5820
+ Variability: 0.5801
  Percent of Total Size: 11.487586
  Percent of Total Count: 5.588720
  Encoded: 
   Total:      2010
-  Average:    2071.03
+  Average:    3.70
   Low:        1
   High:       4
   Ratio:      87.52
@@ -120,7 +120,7 @@ last-modified:
  Percent of Total Count: 4.775628
  Encoded: 
   Total:      1847
-  Average:    1849.61
+  Average:    3.98
   Low:        1
   High:       4
   Ratio:      86.34
@@ -137,7 +137,7 @@ date:
  Percent of Total Count: 6.648827
  Encoded: 
   Total:      2584
-  Average:    2584.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -451,7 +451,7 @@ age:
  Percent of Total Count: 0.205846
  Encoded: 
   Total:      40
-  Average:    42.58
+  Average:    2.00
   Low:        1
   High:       3
   Ratio:      56.04
@@ -490,7 +490,7 @@ content-length:
  Percent of Total Count: 6.350350
  Encoded: 
   Total:      1172
-  Average:    1210.16
+  Average:    1.90
   Low:        1
   High:       3
   Ratio:      46.68
@@ -507,7 +507,7 @@ content-length:
  Percent of Total Count: 6.648827
  Encoded: 
   Total:      1292
-  Average:    1292.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -662,7 +662,7 @@ if-modified-since:
  Percent of Total Count: 0.025704
  Encoded: 
   Total:      8
-  Average:    8.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -839,7 +839,7 @@ via                  0.5                                                2
 access-control-allow-origin 0.5                                                2                   
 cache-control        0.53682487725                                      611                 
 expires              0.581952117864                                     543                 
-last-modified        0.629310344828                                     464                 
+last-modified        0.631465517241                                     464                 
 x-request-backend    0.666666666667                                     3                   
 x-age                0.666666666667                                     3                   
 x-cache-hits         0.666666666667                                     3                   

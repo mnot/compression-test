@@ -136,7 +136,7 @@ date:
  Percent of Total Count: 4.907778
  Encoded: 
   Total:      5492
-  Average:    5492.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -153,7 +153,7 @@ last-modified:
  Percent of Total Count: 4.586074
  Encoded: 
   Total:      5120
-  Average:    5131.69
+  Average:    3.99
   Low:        1
   High:       4
   Ratio:      86.24
@@ -170,7 +170,7 @@ expires:
  Percent of Total Count: 3.653131
  Encoded: 
   Total:      4073
-  Average:    4082.42
+  Average:    3.99
   Low:        1
   High:       4
   Ratio:      86.24
@@ -473,7 +473,7 @@ content-length:
  Percent of Total Count: 4.897055
  Encoded: 
   Total:      2848
-  Average:    2887.34
+  Average:    2.08
   Low:        1
   High:       3
   Ratio:      44.61
@@ -490,7 +490,7 @@ content-length:
  Percent of Total Count: 5.497569
  Encoded: 
   Total:      3015
-  Average:    3064.07
+  Average:    1.96
   Low:        1
   High:       2
   Ratio:      32.88
@@ -518,7 +518,7 @@ age:
  Percent of Total Count: 4.861310
  Encoded: 
   Total:      2018
-  Average:    1882.35
+  Average:    1.48
   Low:        1
   High:       4
   Ratio:      28.67
@@ -629,7 +629,7 @@ if-modified-since:
  Percent of Total Count: 0.032123
  Encoded: 
   Total:      6
-  Average:    6.00
+  Average:    1.00
   Low:        1
   High:       1
   Ratio:      96.55
@@ -780,7 +780,7 @@ access-control-allow-origin 0.04                                               2
 server               0.0408635312259                                    1297                
 x-content-type-options 0.0454545454545                                    44                  
 x-frame-options      0.0454545454545                                    22                  
-age                  0.0852941176471                                    1360                
+age                  0.0845588235294                                    1360                
 cookie               0.1125                                             160                 
 expires              0.12915851272                                      1022                
 if-none-match        0.142857142857                                     7                   

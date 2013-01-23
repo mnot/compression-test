@@ -81,7 +81,7 @@ date:
  Percent of Total Count: 6.867485
  Encoded: 
   Total:      2216
-  Average:    2216.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -98,7 +98,7 @@ last-modified:
  Percent of Total Count: 6.669146
  Encoded: 
   Total:      2152
-  Average:    2152.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -115,7 +115,7 @@ expires:
  Percent of Total Count: 6.483203
  Encoded: 
   Total:      2080
-  Average:    2091.92
+  Average:    3.98
   Low:        1
   High:       4
   Ratio:      86.29
@@ -297,7 +297,7 @@ content-length:
  Percent of Total Count: 6.793108
  Encoded: 
   Total:      1244
-  Average:    1222.96
+  Average:    2.27
   Low:        1
   High:       3
   Ratio:      47.97
@@ -336,7 +336,7 @@ x-cdn:
  Percent of Total Count: 6.867485
  Encoded: 
   Total:      1108
-  Average:    1108.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -398,7 +398,7 @@ user-agent:
  Average:     44.88
  Low:         1
  High:        890
- Variability: 0.9422
+ Variability: 0.9440
  Percent of Total Size: 7.183219
  Percent of Total Count: 8.226908
 
@@ -469,7 +469,7 @@ if-modified-since:
  Percent of Total Count: 0.519751
  Encoded: 
   Total:      140
-  Average:    140.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -590,7 +590,7 @@ vary                 0.0888888888889                                    45
 p3p                  0.1                                                10                  
 x-frame-options      0.142857142857                                     14                  
 if-modified-since    0.171428571429                                     35                  
-server               0.207792207792                                     539                 
+server               0.209647495362                                     539                 
 x-pinterest-referrer 0.214285714286                                     14                  
 if-none-match        0.228571428571                                     35                  
 pragma               0.25                                               4                   

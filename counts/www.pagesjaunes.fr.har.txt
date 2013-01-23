@@ -21,7 +21,7 @@ set-cookie:
  Average:     192.96
  Low:         18
  High:        816
- Variability: 0.7692
+ Variability: 0.8077
  Percent of Total Size: 5.318450
  Percent of Total Count: 0.471613
 
@@ -70,7 +70,7 @@ date:
  Percent of Total Count: 5.786323
  Encoded: 
   Total:      1276
-  Average:    1276.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -87,7 +87,7 @@ last-modified:
  Percent of Total Count: 5.260294
  Encoded: 
   Total:      1160
-  Average:    1160.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -104,7 +104,7 @@ expires:
  Percent of Total Count: 5.006349
  Encoded: 
   Total:      1104
-  Average:    1104.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -286,7 +286,7 @@ age:
  Percent of Total Count: 5.786323
  Encoded: 
   Total:      692
-  Average:    786.50
+  Average:    2.17
   Low:        1
   High:       4
   Ratio:      46.40
@@ -314,7 +314,7 @@ content-length:
  Percent of Total Count: 5.224016
  Encoded: 
   Total:      586
-  Average:    590.20
+  Average:    2.03
   Low:        1
   High:       3
   Ratio:      45.39
@@ -331,7 +331,7 @@ content-length:
  Percent of Total Count: 7.654635
  Encoded: 
   Total:      813
-  Average:    820.43
+  Average:    1.93
   Low:        1
   High:       2
   Ratio:      32.48
@@ -420,7 +420,7 @@ if-modified-since:
  Percent of Total Count: 0.041615
  Encoded: 
   Total:      8
-  Average:    8.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21

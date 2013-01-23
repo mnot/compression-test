@@ -81,7 +81,7 @@ date:
  Percent of Total Count: 7.575440
  Encoded: 
   Total:      2892
-  Average:    2892.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -98,7 +98,7 @@ last-modified:
  Percent of Total Count: 3.153814
  Encoded: 
   Total:      1204
-  Average:    1204.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -115,7 +115,7 @@ expires:
  Percent of Total Count: 1.948868
  Encoded: 
   Total:      660
-  Average:    610.89
+  Average:    3.55
   Low:        1
   High:       4
   Ratio:      87.76
@@ -363,7 +363,7 @@ content-length:
  Percent of Total Count: 7.323973
  Encoded: 
   Total:      1415
-  Average:    1453.87
+  Average:    2.02
   Low:        1
   High:       3
   Ratio:      46.48
@@ -380,7 +380,7 @@ content-length:
  Percent of Total Count: 8.298407
  Encoded: 
   Total:      1547
-  Average:    1547.26
+  Average:    1.95
   Low:        1
   High:       2
   Ratio:      32.80
@@ -397,7 +397,7 @@ age:
  Percent of Total Count: 7.020117
  Encoded: 
   Total:      1139
-  Average:    962.90
+  Average:    1.70
   Low:        1
   High:       4
   Ratio:      40.43
@@ -459,7 +459,7 @@ user-agent:
  Average:     92.27
  Low:         1
  High:        594
- Variability: 0.4242
+ Variability: 0.4255
  Percent of Total Size: 23.043813
  Percent of Total Count: 8.435403
 
@@ -647,8 +647,8 @@ content-length       0.20886981402                                      699
 expires              0.215053763441                                     186                 
 x-fb-debug           0.25                                               12                  
 last-modified        0.348837209302                                     301                 
-:path                0.421717171717                                     792                 
-etag                 0.441176470588                                     204                 
+:path                0.429292929293                                     792                 
+etag                 0.446078431373                                     204                 
 x-powered-by         0.5                                                2                   
 cookie               0.607142857143                                     28                  
 location             1.0                                                32                  

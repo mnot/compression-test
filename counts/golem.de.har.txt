@@ -81,7 +81,7 @@ date:
  Percent of Total Count: 6.558414
  Encoded: 
   Total:      1244
-  Average:    1244.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -98,7 +98,7 @@ expires:
  Percent of Total Count: 6.094475
  Encoded: 
   Total:      1150
-  Average:    1155.25
+  Average:    3.98
   Low:        1
   High:       4
   Ratio:      86.28
@@ -110,12 +110,12 @@ last-modified:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.8566
+ Variability: 0.8526
  Percent of Total Size: 9.799408
  Percent of Total Count: 5.293125
  Encoded: 
   Total:      1004
-  Average:    1004.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -407,7 +407,7 @@ age:
  Percent of Total Count: 0.674821
  Encoded: 
   Total:      84
-  Average:    82.61
+  Average:    2.62
   Low:        1
   High:       3
   Ratio:      43.62
@@ -424,7 +424,7 @@ content-length:
  Percent of Total Count: 6.157739
  Encoded: 
   Total:      626
-  Average:    649.18
+  Average:    2.14
   Low:        1
   High:       3
   Ratio:      47.17
@@ -452,7 +452,7 @@ content-encoding:
  Percent of Total Count: 6.558414
  Encoded: 
   Total:      622
-  Average:    622.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -536,7 +536,7 @@ user-agent:
  Average:     103.87
  Low:         1
  High:        634
- Variability: 0.9839
+ Variability: 0.9871
  Percent of Total Size: 19.529432
  Percent of Total Count: 7.821932
 
@@ -716,7 +716,7 @@ x-xss-protection     0.04                                               50
 server               0.0484429065744                                    289                 
 content-type         0.0641025641026                                    312                 
 cookie               0.0746887966805                                    241                 
-cache-control        0.0942760942761                                    297                 
+cache-control        0.0909090909091                                    297                 
 :host                0.106109324759                                     311                 
 date                 0.131832797428                                     311                 
 via                  0.166666666667                                     6                   

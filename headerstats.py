@@ -167,7 +167,7 @@ class CompressionTester(object):
           k['H'] = max(k['H'], l)
           
           k['ET'] += el
-          k['EA'] += float(k['ET']) / float(k['C'])
+          k['EA'] = float(k['ET']) / float(k['C'])
           k['EL'] = min(k['EL'],el)
           k['EH'] = max(k['EH'],el)
           

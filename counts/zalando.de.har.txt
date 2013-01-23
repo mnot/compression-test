@@ -103,7 +103,7 @@ date:
  Percent of Total Count: 7.209918
  Encoded: 
   Total:      2390
-  Average:    2394.67
+  Average:    3.99
   Low:        1
   High:       4
   Ratio:      86.24
@@ -120,7 +120,7 @@ last-modified:
  Percent of Total Count: 3.009148
  Encoded: 
   Total:      997
-  Average:    999.99
+  Average:    3.99
   Low:        1
   High:       4
   Ratio:      86.25
@@ -148,7 +148,7 @@ expires:
  Percent of Total Count: 6.114588
  Encoded: 
   Total:      1828
-  Average:    1878.42
+  Average:    3.60
   Low:        1
   High:       4
   Ratio:      86.41
@@ -528,7 +528,7 @@ age:
  Percent of Total Count: 0.806452
  Encoded: 
   Total:      143
-  Average:    173.04
+  Average:    2.13
   Low:        1
   High:       3
   Ratio:      36.44
@@ -545,7 +545,7 @@ age:
  Percent of Total Count: 7.282138
  Encoded: 
   Total:      1210
-  Average:    1210.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -562,7 +562,7 @@ content-length:
  Percent of Total Count: 6.800674
  Encoded: 
   Total:      892
-  Average:    1052.25
+  Average:    1.58
   Low:        1
   High:       3
   Ratio:      45.07
@@ -684,7 +684,7 @@ if-modified-since:
  Percent of Total Count: 0.039635
  Encoded: 
   Total:      12
-  Average:    12.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -835,7 +835,7 @@ referer              0.0662251655629                                    604
 x-frame-options      0.0714285714286                                    14                  
 content-disposition  0.0769230769231                                    13                  
 date                 0.0834724540902                                    599                 
-cache-control        0.0971962616822                                    535                 
+cache-control        0.0953271028037                                    535                 
 x-aspnet-version     0.1                                                10                  
 x-cdn                0.111111111111                                     9                   
 :host                0.120661157025                                     605                 
@@ -858,7 +858,7 @@ if-modified-since    0.666666666667                                     3
 last-modified        0.708                                              250                 
 x-blockid            0.818181818182                                     11                  
 x-backend            0.818181818182                                     11                  
-:path                0.82479338843                                      605                 
+:path                0.826446280992                                     605                 
 etag                 0.865497076023                                     171                 
 x-mrt                0.888888888889                                     9                   
 x-own                0.888888888889                                     9                   

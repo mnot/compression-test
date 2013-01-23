@@ -21,7 +21,7 @@ set-cookie:
  Average:     127.21
  Low:         77
  High:        392
- Variability: 0.9167
+ Variability: 0.9583
  Percent of Total Size: 6.201251
  Percent of Total Count: 0.787402
 
@@ -92,7 +92,7 @@ date:
  Percent of Total Count: 8.398950
  Encoded: 
   Total:      1024
-  Average:    1024.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -109,7 +109,7 @@ last-modified:
  Percent of Total Count: 7.742782
  Encoded: 
   Total:      944
-  Average:    944.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.20
@@ -126,7 +126,7 @@ expires:
  Percent of Total Count: 6.988189
  Encoded: 
   Total:      840
-  Average:    850.73
+  Average:    3.94
   Low:        1
   High:       4
   Ratio:      86.15
@@ -336,7 +336,7 @@ content-length:
  Percent of Total Count: 8.267717
  Encoded: 
   Total:      521
-  Average:    519.40
+  Average:    2.07
   Low:        1
   High:       3
   Ratio:      46.89
@@ -353,7 +353,7 @@ content-length:
  Percent of Total Count: 8.398950
  Encoded: 
   Total:      512
-  Average:    512.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -453,7 +453,7 @@ if-modified-since:
  Percent of Total Count: 0.175070
  Encoded: 
   Total:      20
-  Average:    20.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -593,9 +593,9 @@ rlogid               0.815789473684                                     38
 last-modified        0.830508474576                                     236                 
 expires              0.835680751174                                     213                 
 content-length       0.869047619048                                     252                 
-set-cookie           0.916666666667                                     24                  
 :path                0.91796875                                         256                 
 cookie               0.925925925926                                     27                  
+set-cookie           0.958333333333                                     24                  
 x-ebay-request-id    1.0                                                1                   
 x-xss-protection     1.0                                                1                   
 location             1.0                                                3                   

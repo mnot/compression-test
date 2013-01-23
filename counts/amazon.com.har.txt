@@ -120,12 +120,12 @@ date:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.6904
+ Variability: 0.6932
  Percent of Total Size: 9.558166
  Percent of Total Count: 6.791961
  Encoded: 
   Total:      1460
-  Average:    1460.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -142,7 +142,7 @@ last-modified:
  Percent of Total Count: 5.619650
  Encoded: 
   Total:      1208
-  Average:    1208.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -159,7 +159,7 @@ expires:
  Percent of Total Count: 5.842948
  Encoded: 
   Total:      1190
-  Average:    1121.96
+  Average:    3.79
   Low:        1
   High:       4
   Ratio:      86.44
@@ -396,7 +396,7 @@ age:
  Percent of Total Count: 4.447339
  Encoded: 
   Total:      818
-  Average:    811.60
+  Average:    3.42
   Low:        2
   High:       4
   Ratio:      49.00
@@ -490,7 +490,7 @@ content-length:
  Percent of Total Count: 6.382583
  Encoded: 
   Total:      692
-  Average:    696.74
+  Average:    2.02
   Low:        1
   High:       3
   Ratio:      46.06
@@ -507,7 +507,7 @@ content-length:
  Percent of Total Count: 6.810569
  Encoded: 
   Total:      732
-  Average:    732.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -618,7 +618,7 @@ if-modified-since:
  Percent of Total Count: 0.504444
  Encoded: 
   Total:      84
-  Average:    84.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -734,7 +734,7 @@ content-length:
  Percent of Total Count: 0.288254
  Encoded: 
   Total:      21
-  Average:    24.69
+  Average:    1.75
   Low:        1
   High:       3
   Ratio:      44.74
@@ -796,9 +796,9 @@ dl_s                 0.666666666667                                     3
 date                 0.693150684932                                     365                 
 x-amz-request-id     0.75                                               8                   
 x-amz-id-2           0.815789473684                                     38                  
-x-amz-id-1           0.833333333333                                     30                  
 x-amz-meta-md5-hash  0.833333333333                                     6                   
 x-amz-meta-jets3t-original-file-date-iso8601 0.833333333333                                     6                   
+x-amz-id-1           0.866666666667                                     30                  
 content-length       0.867605633803                                     355                 
 last-modified        0.880794701987                                     302                 
 age                  0.958158995816                                     239                 

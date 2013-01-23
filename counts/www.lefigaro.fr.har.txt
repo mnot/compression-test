@@ -114,7 +114,7 @@ last-modified:
  Percent of Total Count: 6.206199
  Encoded: 
   Total:      6555
-  Average:    6539.12
+  Average:    3.96
   Low:        1
   High:       4
   Ratio:      86.36
@@ -131,7 +131,7 @@ date:
  Percent of Total Count: 6.708391
  Encoded: 
   Total:      7160
-  Average:    7160.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -148,7 +148,7 @@ expires:
  Percent of Total Count: 0.438481
  Encoded: 
   Total:      444
-  Average:    459.20
+  Average:    3.79
   Low:        1
   High:       4
   Ratio:      86.91
@@ -523,12 +523,12 @@ content-length:
  Average:     3.98
  Low:         1
  High:        6
- Variability: 0.3617
+ Variability: 0.3612
  Percent of Total Size: 1.358634
  Percent of Total Count: 6.464790
  Encoded: 
   Total:      3684
-  Average:    3759.86
+  Average:    2.14
   Low:        1
   High:       3
   Ratio:      46.35
@@ -545,7 +545,7 @@ age:
  Percent of Total Count: 6.625942
  Encoded: 
   Total:      3464
-  Average:    3260.36
+  Average:    1.96
   Low:        1
   High:       4
   Ratio:      44.66
@@ -584,7 +584,7 @@ x-nginx-cache:
  Percent of Total Count: 7.694037
  Encoded: 
   Total:      4057
-  Average:    4102.03
+  Average:    1.98
   Low:        1
   High:       2
   Ratio:      33.06
@@ -684,7 +684,7 @@ if-modified-since:
  Percent of Total Count: 0.128046
  Encoded: 
   Total:      128
-  Average:    128.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -707,7 +707,7 @@ if-none-match:
  Average:     17.41
  Low:         11
  High:        20
- Variability: 0.9688
+ Variability: 1.0000
  Percent of Total Size: 0.065475
  Percent of Total Count: 0.128046
 
@@ -855,7 +855,7 @@ content-length:
  Percent of Total Count: 0.016006
  Encoded: 
   Total:      8
-  Average:    8.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33

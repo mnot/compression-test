@@ -37,7 +37,7 @@ date:
  Percent of Total Count: 6.688473
  Encoded: 
   Total:      2372
-  Average:    2372.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -49,12 +49,12 @@ last-modified:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.3069
+ Variability: 0.3086
  Percent of Total Size: 11.940039
  Percent of Total Count: 6.688473
  Encoded: 
   Total:      2372
-  Average:    2372.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -71,7 +71,7 @@ expires:
  Percent of Total Count: 0.214302
  Encoded: 
   Total:      76
-  Average:    76.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -220,7 +220,7 @@ content-length:
  Percent of Total Count: 6.665915
  Encoded: 
   Total:      1172
-  Average:    1209.12
+  Average:    1.98
   Low:        1
   High:       3
   Ratio:      45.56
@@ -237,7 +237,7 @@ content-length:
  Percent of Total Count: 7.071960
  Encoded: 
   Total:      1254
-  Average:    1254.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -265,7 +265,7 @@ age:
  Percent of Total Count: 6.688473
  Encoded: 
   Total:      789
-  Average:    728.89
+  Average:    1.33
   Low:        1
   High:       4
   Ratio:      27.48
@@ -305,7 +305,7 @@ user-agent:
  Average:     45.15
  Low:         6
  High:        593
- Variability: 0.5981
+ Variability: 0.5965
  Percent of Total Size: 10.883648
  Percent of Total Count: 7.966963
 
@@ -475,4 +475,4 @@ last-modified        0.308600337268                                     593
 x-requested-with     0.333333333333                                     3                   
 content-length       0.590524534687                                     591                 
 :path                0.598086124402                                     627                 
-etag                 0.627177700348                                     574                 
+etag                 0.628919860627                                     574                 

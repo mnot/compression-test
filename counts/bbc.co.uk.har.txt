@@ -81,7 +81,7 @@ date:
  Percent of Total Count: 7.708643
  Encoded: 
   Total:      1452
-  Average:    1452.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -98,7 +98,7 @@ last-modified:
  Percent of Total Count: 4.756849
  Encoded: 
   Total:      896
-  Average:    896.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -115,7 +115,7 @@ expires:
  Percent of Total Count: 5.754937
  Encoded: 
   Total:      1006
-  Average:    1077.56
+  Average:    3.71
   Low:        1
   High:       4
   Ratio:      86.43
@@ -429,7 +429,7 @@ age:
  Percent of Total Count: 0.509662
  Encoded: 
   Total:      65
-  Average:    55.25
+  Average:    2.71
   Low:        1
   High:       3
   Ratio:      42.48
@@ -468,7 +468,7 @@ content-length:
  Percent of Total Count: 7.538756
  Encoded: 
   Total:      704
-  Average:    720.07
+  Average:    1.98
   Low:        1
   High:       3
   Ratio:      44.70
@@ -485,7 +485,7 @@ content-length:
  Percent of Total Count: 7.708643
  Encoded: 
   Total:      726
-  Average:    726.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -733,7 +733,7 @@ set-cookie           0.857142857143                                     35
 last-modified        0.857142857143                                     224                 
 etag                 0.953846153846                                     65                  
 age                  0.958333333333                                     24                  
-:path                0.977961432507                                     363                 
+:path                0.97520661157                                      363                 
 via                  1.0                                                1                   
 xserver              1.0                                                5                   
 x-msadid             1.0                                                1                   

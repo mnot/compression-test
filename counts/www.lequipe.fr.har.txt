@@ -92,7 +92,7 @@ last-modified:
  Percent of Total Count: 4.284792
  Encoded: 
   Total:      2540
-  Average:    2232.46
+  Average:    2.94
   Low:        1
   High:       4
   Ratio:      90.09
@@ -109,7 +109,7 @@ expires:
  Percent of Total Count: 4.508217
  Encoded: 
   Total:      3524
-  Average:    3595.95
+  Average:    3.88
   Low:        1
   High:       4
   Ratio:      86.62
@@ -126,7 +126,7 @@ date:
  Percent of Total Count: 6.936100
  Encoded: 
   Total:      5588
-  Average:    5588.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -402,12 +402,12 @@ content-length:
  Average:     3.81
  Low:         1
  High:        6
- Variability: 0.3136
+ Variability: 0.3129
  Percent of Total Size: 1.484281
  Percent of Total Count: 6.633236
  Encoded: 
   Total:      2692
-  Average:    2771.14
+  Average:    2.01
   Low:        1
   High:       3
   Ratio:      47.11
@@ -435,7 +435,7 @@ cf-cache-status:
  Percent of Total Count: 8.043295
  Encoded: 
   Total:      3203
-  Average:    3204.69
+  Average:    1.98
   Low:        1
   High:       2
   Ratio:      33.08
@@ -452,7 +452,7 @@ age:
  Percent of Total Count: 6.553796
  Encoded: 
   Total:      2195
-  Average:    2279.75
+  Average:    1.66
   Low:        1
   High:       4
   Ratio:      38.45
@@ -503,7 +503,7 @@ user-agent:
  Average:     73.46
  Low:         1
  High:        883
- Variability: 0.4056
+ Variability: 0.4006
  Percent of Total Size: 21.492166
  Percent of Total Count: 8.550166
 
@@ -574,7 +574,7 @@ if-modified-since:
  Percent of Total Count: 0.026389
  Encoded: 
   Total:      20
-  Average:    20.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -745,7 +745,7 @@ content-length:
  Percent of Total Count: 0.052779
  Encoded: 
   Total:      18
-  Average:    16.43
+  Average:    1.80
   Low:        1
   High:       2
   Ratio:      40.00
@@ -797,7 +797,7 @@ content-length       0.315750371471                                     1346
 x-fb-debug           0.333333333333                                     15                  
 expires              0.349118942731                                     908                 
 last-modified        0.368482039397                                     863                 
-:path                0.401234567901                                     1620                
+:path                0.395061728395                                     1620                
 access-control-allow-origin 0.5                                                2                   
 x-fb-rev             0.5                                                2                   
 location             0.952380952381                                     42                  

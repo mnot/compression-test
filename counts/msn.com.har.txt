@@ -92,7 +92,7 @@ date:
  Percent of Total Count: 6.801165
  Encoded: 
   Total:      1308
-  Average:    1308.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -109,7 +109,7 @@ last-modified:
  Percent of Total Count: 3.099002
  Encoded: 
   Total:      593
-  Average:    595.98
+  Average:    3.98
   Low:        1
   High:       4
   Ratio:      86.27
@@ -148,7 +148,7 @@ expires:
  Percent of Total Count: 5.761231
  Encoded: 
   Total:      940
-  Average:    862.95
+  Average:    3.39
   Low:        1
   High:       4
   Ratio:      85.93
@@ -473,7 +473,7 @@ age:
  Percent of Total Count: 3.099002
  Encoded: 
   Total:      444
-  Average:    418.45
+  Average:    2.98
   Low:        1
   High:       4
   Ratio:      45.72
@@ -567,7 +567,7 @@ content-length:
  Percent of Total Count: 6.780366
  Encoded: 
   Total:      588
-  Average:    596.24
+  Average:    1.80
   Low:        1
   High:       3
   Ratio:      44.79
@@ -584,7 +584,7 @@ content-length:
  Percent of Total Count: 6.967554
  Encoded: 
   Total:      670
-  Average:    670.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -690,7 +690,7 @@ cookie:
  Average:     116.09
  Low:         1
  High:        1127
- Variability: 0.9403
+ Variability: 0.9373
  Percent of Total Size: 23.011881
  Percent of Total Count: 8.683256
 
@@ -838,7 +838,7 @@ content-length:
  Percent of Total Count: 0.077760
  Encoded: 
   Total:      3
-  Average:    3.00
+  Average:    1.00
   Low:        1
   High:       1
   Ratio:      66.67

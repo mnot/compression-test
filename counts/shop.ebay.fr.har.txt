@@ -81,7 +81,7 @@ date:
  Percent of Total Count: 6.662203
  Encoded: 
   Total:      2388
-  Average:    2388.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -98,7 +98,7 @@ last-modified:
  Percent of Total Count: 6.472492
  Encoded: 
   Total:      2320
-  Average:    2320.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -110,12 +110,12 @@ expires:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.8793
+ Variability: 0.8810
  Percent of Total Size: 10.073123
  Percent of Total Count: 6.472492
  Encoded: 
   Total:      2320
-  Average:    2320.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -286,7 +286,7 @@ content-length:
  Percent of Total Count: 6.651043
  Encoded: 
   Total:      1201
-  Average:    1228.02
+  Average:    2.02
   Low:        1
   High:       3
   Ratio:      50.54
@@ -325,7 +325,7 @@ ntcoent-length:
  Percent of Total Count: 7.242495
  Encoded: 
   Total:      1296
-  Average:    1289.97
+  Average:    2.00
   Low:        1
   High:       2
   Ratio:      33.30
@@ -353,7 +353,7 @@ age:
  Percent of Total Count: 6.662203
  Encoded: 
   Total:      738
-  Average:    828.19
+  Average:    1.24
   Low:        1
   High:       4
   Ratio:      23.84
@@ -549,9 +549,9 @@ warning              0.0909090909091                                    11
 p3p                  0.333333333333                                     3                   
 etag                 0.5                                                4                   
 cache-control        0.789230769231                                     650                 
-:path                0.807395993837                                     649                 
+:path                0.808936825886                                     649                 
 content-length       0.842281879195                                     596                 
-last-modified        0.858620689655                                     580                 
+last-modified        0.856896551724                                     580                 
 expires              0.881034482759                                     580                 
 cookie               0.923076923077                                     13                  
 nncoection           1.0                                                1                   

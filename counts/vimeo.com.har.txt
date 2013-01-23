@@ -59,7 +59,7 @@ date:
  Percent of Total Count: 6.819484
  Encoded: 
   Total:      476
-  Average:    476.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -76,7 +76,7 @@ expires:
  Percent of Total Count: 5.616046
  Encoded: 
   Total:      392
-  Average:    392.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -93,7 +93,7 @@ last-modified:
  Percent of Total Count: 5.501433
  Encoded: 
   Total:      384
-  Average:    384.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -341,7 +341,7 @@ age:
  Percent of Total Count: 1.432665
  Encoded: 
   Total:      61
-  Average:    55.35
+  Average:    2.44
   Low:        1
   High:       3
   Ratio:      42.99
@@ -369,7 +369,7 @@ content-length:
  Percent of Total Count: 6.303725
  Encoded: 
   Total:      226
-  Average:    219.96
+  Average:    2.05
   Low:        1
   High:       3
   Ratio:      45.15
@@ -386,7 +386,7 @@ content-length:
  Percent of Total Count: 6.819484
  Encoded: 
   Total:      238
-  Average:    238.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -655,7 +655,7 @@ p3p                  0.333333333333                                     6
 x-xss-protection     0.333333333333                                     3                   
 location             0.333333333333                                     9                   
 cookie               0.4                                                30                  
-cache-control        0.448275862069                                     116                 
+cache-control        0.439655172414                                     116                 
 last-modified        0.489583333333                                     96                  
 expires              0.602040816327                                     98                  
 content-length       0.781818181818                                     110                 

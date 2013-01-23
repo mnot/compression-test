@@ -109,12 +109,12 @@ expires:
  Average:     29.29
  Low:         29
  High:        31
- Variability: 0.7014
+ Variability: 0.7049
  Percent of Total Size: 8.414627
  Percent of Total Count: 5.705230
  Encoded: 
   Total:      1011
-  Average:    1092.52
+  Average:    3.51
   Low:        1
   High:       4
   Ratio:      88.02
@@ -131,7 +131,7 @@ date:
  Percent of Total Count: 7.072108
  Encoded: 
   Total:      1419
-  Average:    1427.06
+  Average:    3.97
   Low:        1
   High:       4
   Ratio:      86.30
@@ -148,7 +148,7 @@ last-modified:
  Percent of Total Count: 3.209192
  Encoded: 
   Total:      648
-  Average:    648.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -462,7 +462,7 @@ content-length:
  Percent of Total Count: 6.022187
  Encoded: 
   Total:      591
-  Average:    594.57
+  Average:    1.94
   Low:        1
   High:       3
   Ratio:      45.28
@@ -479,7 +479,7 @@ age:
  Percent of Total Count: 2.278130
  Encoded: 
   Total:      226
-  Average:    208.47
+  Average:    1.97
   Low:        1
   High:       3
   Ratio:      43.78
@@ -496,7 +496,7 @@ age:
  Percent of Total Count: 7.072108
  Encoded: 
   Total:      714
-  Average:    714.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -558,7 +558,7 @@ user-agent:
  Average:     93.63
  Low:         6
  High:        607
- Variability: 0.9524
+ Variability: 0.9552
  Percent of Total Size: 18.752490
  Percent of Total Count: 7.837541
 

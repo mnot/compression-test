@@ -81,7 +81,7 @@ date:
  Percent of Total Count: 7.183178
  Encoded: 
   Total:      4072
-  Average:    4072.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -98,7 +98,7 @@ last-modified:
  Percent of Total Count: 6.731583
  Encoded: 
   Total:      3816
-  Average:    3816.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -137,7 +137,7 @@ expires:
  Percent of Total Count: 5.165114
  Encoded: 
   Total:      2865
-  Average:    2876.43
+  Average:    3.91
   Low:        1
   High:       4
   Ratio:      86.31
@@ -429,7 +429,7 @@ content-length:
  Percent of Total Count: 7.027942
  Encoded: 
   Total:      2080
-  Average:    2134.60
+  Average:    2.09
   Low:        1
   High:       3
   Ratio:      47.36
@@ -446,7 +446,7 @@ content-length:
  Percent of Total Count: 7.458369
  Encoded: 
   Total:      2098
-  Average:    2097.91
+  Average:    1.98
   Low:        1
   High:       2
   Ratio:      33.16
@@ -474,7 +474,7 @@ age:
  Percent of Total Count: 6.484618
  Encoded: 
   Total:      1083
-  Average:    966.01
+  Average:    1.18
   Low:        1
   High:       4
   Ratio:      39.93
@@ -563,7 +563,7 @@ if-modified-since:
  Percent of Total Count: 0.058793
  Encoded: 
   Total:      32
-  Average:    32.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -739,7 +739,7 @@ x-cache-lookup       0.00108813928183                                   919
 :method              0.00189214758751                                   1057                
 :scheme              0.00189214758751                                   1057                
 proxy-connection     0.00192307692308                                   1040                
-accept               0.00290697674419                                   1032                
+accept               0.00193798449612                                   1032                
 x-cache              0.00326441784548                                   919                 
 accept-ranges        0.00378787878788                                   264                 
 :status              0.00473036896878                                   1057                

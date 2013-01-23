@@ -59,7 +59,7 @@ date:
  Percent of Total Count: 6.859009
  Encoded: 
   Total:      504
-  Average:    504.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -76,7 +76,7 @@ last-modified:
  Percent of Total Count: 4.409363
  Encoded: 
   Total:      321
-  Average:    323.39
+  Average:    3.96
   Low:        1
   High:       4
   Ratio:      86.33
@@ -104,7 +104,7 @@ expires:
  Percent of Total Count: 5.606968
  Encoded: 
   Total:      331
-  Average:    275.71
+  Average:    3.21
   Low:        1
   High:       4
   Ratio:      87.24
@@ -363,7 +363,7 @@ age:
  Percent of Total Count: 2.014154
  Encoded: 
   Total:      71
-  Average:    46.85
+  Average:    1.92
   Low:        1
   High:       3
   Ratio:      39.83
@@ -380,7 +380,7 @@ content-length:
  Percent of Total Count: 6.096897
  Encoded: 
   Total:      187
-  Average:    197.88
+  Average:    1.67
   Low:        1
   High:       3
   Ratio:      45.32
@@ -397,7 +397,7 @@ content-length:
  Percent of Total Count: 6.967882
  Encoded: 
   Total:      256
-  Average:    256.00
+  Average:    2.00
   Low:        2
   High:       2
   Ratio:      33.33
@@ -486,7 +486,7 @@ if-modified-since:
  Percent of Total Count: 0.134048
  Encoded: 
   Total:      8
-  Average:    8.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -613,7 +613,7 @@ content-length:
  Percent of Total Count: 0.134048
  Encoded: 
   Total:      2
-  Average:    2.00
+  Average:    1.00
   Low:        1
   High:       1
   Ratio:      66.67
@@ -663,7 +663,7 @@ location             0.666666666667                                     3
 last-modified        0.666666666667                                     81                  
 etag                 0.705882352941                                     34                  
 x-li-uuid            0.709677419355                                     31                  
-:path                0.9375                                             128                 
+:path                0.9296875                                          128                 
 content-transfer-encoding 1.0                                                1                   
 nncoection           1.0                                                1                   
 x-ocsp-reponder-id   1.0                                                1                   

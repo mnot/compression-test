@@ -81,7 +81,7 @@ date:
  Percent of Total Count: 6.500790
  Encoded: 
   Total:      3292
-  Average:    3292.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -98,7 +98,7 @@ last-modified:
  Percent of Total Count: 6.342812
  Encoded: 
   Total:      3212
-  Average:    3212.00
+  Average:    4.00
   Low:        4
   High:       4
   Ratio:      86.21
@@ -115,7 +115,7 @@ expires:
  Percent of Total Count: 6.129542
  Encoded: 
   Total:      3080
-  Average:    2971.66
+  Average:    3.97
   Low:        1
   High:       4
   Ratio:      86.18
@@ -226,12 +226,12 @@ age:
  Average:     6.93
  Low:         1
  High:        8
- Variability: 0.6431
+ Variability: 0.6443
  Percent of Total Size: 1.723303
  Percent of Total Count: 6.484992
  Encoded: 
   Total:      2968
-  Average:    2736.70
+  Average:    3.62
   Low:        1
   High:       4
   Ratio:      47.85
@@ -303,7 +303,7 @@ content-length:
  Percent of Total Count: 6.358610
  Encoded: 
   Total:      1604
-  Average:    1585.77
+  Average:    1.99
   Low:        1
   High:       3
   Ratio:      47.74
@@ -320,7 +320,7 @@ content-length:
  Percent of Total Count: 6.895735
  Encoded: 
   Total:      1703
-  Average:    1632.64
+  Average:    1.95
   Low:        1
   High:       2
   Ratio:      32.77
@@ -552,7 +552,7 @@ content-length:
  Percent of Total Count: 0.019198
  Encoded: 
   Total:      2
-  Average:    2.00
+  Average:    1.00
   Low:        1
   High:       1
   Ratio:      50.00
@@ -594,7 +594,7 @@ date                 0.654921020656                                     823
 last-modified        0.667496886675                                     803                 
 etag                 0.692307692308                                     39                  
 content-length       0.693928128872                                     807                 
-:path                0.729667812142                                     873                 
+:path                0.730813287514                                     873                 
 x-amz-cf-id          0.814352574103                                     641                 
 cookie               0.842105263158                                     19                  
 x-amzn-requestid     1.0                                                1                   
