@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     33089
 NUMBER OF UNIQUE HEADERS:      28
 TOTAL NUMBER OF HEADERS:       1840
 TOTAL NUMBER OF MESSAGES:      120
-TOTAL BYTES SAVED BY ENCODING: 9209
+TOTAL BYTES SAVED BY ENCODING: 10629
 google-delayed-impression: 
  Instances:   5
  Total:       1885
@@ -136,6 +136,12 @@ cache-control:
  Variability: 0.1491
  Percent of Total Size: 6.817976
  Percent of Total Count: 6.195652
+ Encoded: 
+  Total:      836
+  Average:    7.33
+  Low:        6
+  High:       9
+  Ratio:      62.94
 
 
 vary: 

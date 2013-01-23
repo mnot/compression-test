@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     23099
 NUMBER OF UNIQUE HEADERS:      24
 TOTAL NUMBER OF HEADERS:       1556
 TOTAL NUMBER OF MESSAGES:      117
-TOTAL BYTES SAVED BY ENCODING: 8142
+TOTAL BYTES SAVED BY ENCODING: 10288
 x-fb-debug: 
  Instances:   74
  Total:       3256
@@ -55,7 +55,7 @@ expires:
  Average:     28.87
  Low:         28
  High:        29
- Variability: 0.6951
+ Variability: 0.7073
  Percent of Total Size: 10.247197
  Percent of Total Count: 5.269923
  Encoded: 
@@ -86,6 +86,12 @@ cache-control:
  Variability: 0.5304
  Percent of Total Size: 13.424824
  Percent of Total Count: 7.390746
+ Encoded: 
+  Total:      955
+  Average:    8.30
+  Low:        6
+  High:       9
+  Ratio:      69.20
 
 
 content-type: 
@@ -321,7 +327,7 @@ user-agent:
  Average:     54.81
  Low:         1
  High:        147
- Variability: 0.9829
+ Variability: 0.9915
  Percent of Total Size: 19.197150
  Percent of Total Count: 9.076804
 
@@ -485,7 +491,7 @@ pragma               0.0833333333333                                    12
 content-type         0.0847457627119                                    118                 
 :host                0.0854700854701                                    117                 
 referer              0.0948275862069                                    116                 
-date                 0.196581196581                                     117                 
+date                 0.188034188034                                     117                 
 cache-control        0.530434782609                                     115                 
 expires              0.707317073171                                     82                  
 x-fb-metrics         0.818181818182                                     11                  

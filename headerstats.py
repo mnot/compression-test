@@ -34,7 +34,7 @@ def epoch(dt):
 NEW_EPOCH = epoch(datetime(1990,1,1,0,0,0,0))
 
 # Optimized date encoding based on NEW_EPOCH VALUE
-def enc_date(val):
+def enc_date(val, typ='req'):
   try:
     _v = epoch(datetime.strptime(val, '%a, %d %b %Y %H:%M:%S GMT')) - NEW_EPOCH 
     return struct.pack('!I',_v)
@@ -48,13 +48,13 @@ def enc_date(val):
     return enc_uvarint(val)
     
 # Encode a number as a uvarint (unsigned variable length int)
-def enc_uvarint(val):
+def enc_uvarint(val, typ='req'):
   if '' == val:
     val = 0
   # on the offchance there are multiple values... TODO: handle this better...
   if hasattr(val,'split'):
     val = val.split('\x00')[0]
-  val = int(val) 
+  val = max(0,int(val)) 
   v = ''
   shift = True
   while shift:
@@ -64,7 +64,7 @@ def enc_uvarint(val):
   return v
   
 # Encoding a Set-Cookie header value.. basic encoding (no extensions supported beyond HttpOnly and Secure)
-def enc_setcookie(val):
+def enc_setcookie(val, typ='req'):
   vals = val.split('\x00');
   encoded = ''
   for v in vals:
@@ -90,6 +90,46 @@ def enc_setcookie(val):
         encoded += enc_date(morsel['expires'])
   return encoded
 
+# Encoding Cache-Control...
+
+# adapted from httplib2 (https://code.google.com/p/httplib2/source/browse/python3/httplib2/__init__.py)
+def _parse_cache_control(cc):
+    cc = cc.replace('\x00', ',')
+    retval = {}
+    parts =  cc.split(',')
+    parts_with_args = [tuple([x.strip().lower() for x in part.split("=", 1)]) for part in parts if -1 != part.find("=")]
+    parts_wo_args = [(name.strip().lower(), 1) for name in parts if -1 == name.find("=")]
+    retval = dict(parts_with_args + parts_wo_args)
+    return retval
+
+def valOrZero(parts,m):
+  if m in parts:
+    return parts[m]
+  else: 
+    return 0
+
+def enc_cachecontrol(val, typ='req'):
+  parts = _parse_cache_control(val)
+  encoded = '_'; #represent first flags bit.. easier this way
+  encoded += enc_uvarint(valOrZero(parts,'max-age'))
+  if typ == 'req':
+    encoded += enc_uvarint(valOrZero(parts,'max-stale'))
+    encoded += enc_uvarint(valOrZero(parts,'min-fresh'))
+    encoded += enc_uvarint(0) # num exts
+  else:
+    encoded += enc_uvarint(valOrZero(parts,'s-maxage'))
+    if 'no-cache' in parts and hasattr(parts,'len') and len(parts['no-cache']) > 0:
+      encoded += enc_uvarint(1)
+      encoded += struct.pack('!B',len(parts['no-cache']))
+      encoded += parts['no-cache']
+    else:
+      encoded += enc_uvarint(0) # num_no_cache_headers
+    encoded += enc_uvarint(0) # num_private_headers
+    encoded += enc_uvarint(0) # num exts
+  return encoded
+
+
+
 encoders = {
   'last-modified': enc_date,
   'date': enc_date,
@@ -99,8 +139,12 @@ encoders = {
   ':status': enc_uvarint,
   'content-length': enc_uvarint,
   'age': enc_uvarint,
-  'set-cookie': enc_setcookie
+  'set-cookie': enc_setcookie,
+  'cache-control': enc_cachecontrol
 }
+
+
+
 
 class Counter(object):
   """
@@ -183,7 +227,7 @@ class CompressionTester(object):
           
           encoded = val
           if key in encoders:
-            encoded = encoders[key](val)
+            encoded = encoders[key](val, stream.msg_type)
           
           if not key in section:
             section[key] = {

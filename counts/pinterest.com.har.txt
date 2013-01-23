@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     143441
 NUMBER OF UNIQUE HEADERS:      30
 TOTAL NUMBER OF HEADERS:       8067
 TOTAL NUMBER OF MESSAGES:      554
-TOTAL BYTES SAVED BY ENCODING: 42371
+TOTAL BYTES SAVED BY ENCODING: 45604
 p3p: 
  Instances:   10
  Total:       840
@@ -147,6 +147,12 @@ cache-control:
  Variability: 0.0236
  Percent of Total Size: 4.594921
  Percent of Total Count: 4.735342
+ Encoded: 
+  Total:      3358
+  Average:    8.79
+  Low:        6
+  High:       9
+  Ratio:      49.05
 
 
 vary: 
@@ -298,7 +304,7 @@ content-length:
  Average:     4.36
  Low:         1
  High:        6
- Variability: 0.8960
+ Variability: 0.8978
  Percent of Total Size: 1.666887
  Percent of Total Count: 6.793108
  Encoded: 
@@ -404,7 +410,7 @@ user-agent:
  Average:     44.88
  Low:         1
  High:        890
- Variability: 0.9422
+ Variability: 0.9440
  Percent of Total Size: 7.183219
  Percent of Total Count: 8.226908
 
@@ -426,7 +432,7 @@ referer:
  Average:     39.58
  Low:         21
  High:        64
- Variability: 0.0222
+ Variability: 0.0240
  Percent of Total Size: 6.185686
  Percent of Total Count: 8.033858
 

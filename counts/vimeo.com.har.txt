@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     27504
 NUMBER OF UNIQUE HEADERS:      36
 TOTAL NUMBER OF HEADERS:       1745
 TOTAL NUMBER OF MESSAGES:      119
-TOTAL BYTES SAVED BY ENCODING: 9002
+TOTAL BYTES SAVED BY ENCODING: 11136
 location: 
  Instances:   9
  Total:       1271
@@ -114,6 +114,12 @@ cache-control:
  Variability: 0.4483
  Percent of Total Size: 11.045666
  Percent of Total Count: 6.647564
+ Encoded: 
+  Total:      904
+  Average:    7.79
+  Low:        6
+  High:       10
+  Ratio:      70.24
 
 
 content-range: 

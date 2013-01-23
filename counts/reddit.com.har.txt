@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     15090
 NUMBER OF UNIQUE HEADERS:      24
 TOTAL NUMBER OF HEADERS:       960
 TOTAL NUMBER OF MESSAGES:      77
-TOTAL BYTES SAVED BY ENCODING: 5248
+TOTAL BYTES SAVED BY ENCODING: 5647
 set-cookie: 
  Instances:   6
  Total:       733
@@ -114,6 +114,12 @@ cache-control:
  Variability: 0.2258
  Percent of Total Size: 3.936382
  Percent of Total Count: 3.229167
+ Encoded: 
+  Total:      195
+  Average:    6.29
+  Low:        6
+  High:       9
+  Ratio:      67.17
 
 
 x-amz-request-id: 
@@ -421,7 +427,7 @@ accept:
  Average:     8.84
  Low:         3
  High:        63
- Variability: 0.0390
+ Variability: 0.0260
  Percent of Total Size: 2.173219
  Percent of Total Count: 8.306365
 
@@ -469,8 +475,8 @@ accept-encoding      0.012987012987                                     77
 :status-text         0.012987012987                                     77                  
 :status              0.012987012987                                     77                  
 :scheme              0.012987012987                                     77                  
-connection           0.0166666666667                                    120                 
 accept-ranges        0.0212765957447                                    47                  
+connection           0.025                                              120                 
 accept               0.038961038961                                     77                  
 content-encoding     0.04                                               25                  
 vary                 0.0454545454545                                    22                  
@@ -488,7 +494,7 @@ p3p                  0.333333333333                                     3
 x-xss-protection     0.333333333333                                     3                   
 set-cookie           0.5                                                6                   
 content-length       0.630136986301                                     73                  
-last-modified        0.860465116279                                     43                  
+last-modified        0.883720930233                                     43                  
 :path                0.974025974026                                     77                  
 x-amz-id-2           1.0                                                32                  
 etag                 1.0                                                32                  

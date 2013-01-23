@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     71396
 NUMBER OF UNIQUE HEADERS:      39
 TOTAL NUMBER OF HEADERS:       4201
 TOTAL NUMBER OF MESSAGES:      309
-TOTAL BYTES SAVED BY ENCODING: 25454
+TOTAL BYTES SAVED BY ENCODING: 29306
 x-webkit-csp: 
  Instances:   3
  Total:       1686
@@ -147,6 +147,12 @@ cache-control:
  Variability: 0.1271
  Percent of Total Size: 8.798812
  Percent of Total Count: 7.117353
+ Encoded: 
+  Total:      2430
+  Average:    8.13
+  Low:        6
+  High:       10
+  Ratio:      61.32
 
 
 x-powered-by: 
@@ -509,7 +515,7 @@ user-agent:
  Average:     96.83
  Low:         1
  High:        1108
- Variability: 0.9968
+ Variability: 1.0000
  Percent of Total Size: 19.807368
  Percent of Total Count: 7.908881
 
@@ -684,7 +690,7 @@ x-webkit-csp         0.333333333333                                     3
 location             0.4                                                5                   
 keep-alive           0.666666666667                                     9                   
 x-appserver          0.666666666667                                     3                   
-expires              0.692307692308                                     286                 
+expires              0.695804195804                                     286                 
 last-modified        0.727626459144                                     257                 
 x-appserverhostname  0.75                                               4                   
 x-uim-debuginfo      0.761904761905                                     21                  
