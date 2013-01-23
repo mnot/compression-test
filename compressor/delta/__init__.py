@@ -64,31 +64,23 @@ class Processor(BaseProcessor):
     Note that compressing with an unmodified stream-compressor like gzip is
     effective, however it is insecure.
     """
-    normalized_host = re.sub('[0-1a-zA-Z-\.]*\.([^.]*\.[^.]*)', '\\1',
-                             host)
-    if normalized_host in self.hosts:
-      header_group = self.hosts[normalized_host]
-    else:
-      header_group = self.group_ids.GetNext()
-      self.hosts[normalized_host] = header_group
-#    if self.options.f:
-#      header_group = 0
+    header_group = 0
     inp_ops = self.compressor.MakeOperations(inp_headers, header_group)
 
     inp_real_ops = self.compressor.OpsToRealOps(inp_ops)
     compressed_blob = self.compressor.Compress(inp_real_ops)
-    out_real_ops = self.decompressor.Decompress(compressed_blob)
-    out_ops = self.decompressor.RealOpsToOpAndExecute(
-        out_real_ops, header_group)
-    out_headers = self.decompressor.GenerateAllHeaders(header_group)
     retval = {
       'compressed': compressed_blob,
       'serialized_ops': inp_real_ops,                    # should be equal \
-      'serialized_ops_post_decompression': out_real_ops, # should be equal /
       'input_headers': inp_headers,                   # should be equal \
-      'output_headers': out_headers,                  # should be equal /
       'interpretable_ops': inp_ops,               # should be equal \
-      'decompressed_interpretable_ops': out_ops,  # should be equal /
       'header_group': header_group
     }
     return compressed_blob
+
+  def decompress(self, compressed):
+    header_group = 0
+    out_real_ops = self.decompressor.Decompress(compressed)
+    out_ops = self.decompressor.RealOpsToOpAndExecute(
+        out_real_ops, header_group)
+    return self.decompressor.GenerateAllHeaders(header_group)
