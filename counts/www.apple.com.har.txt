@@ -637,3 +637,1567 @@ x-server             0.777777777778                                     9
 etag                 0.925925925926                                     27                  
 xserver              1.0                                                11                  
 location             1.0                                                4                   
+
+
+Header Frequencies:
+  content-length: 
+    0.24 - 9077
+    0.24 - 1306
+    0.24 - 1967
+    0.71 - 1144
+    0.24 - 211
+    0.24 - 30907
+    0.24 - 12202
+    0.24 - 1782
+    0.24 - 3929
+    2.13 - 8383
+    0.24 - 19544
+    0.95 - 10699
+    0.47 - 4478
+    0.24 - 135
+    0.47 - 19794
+    0.24 - 4471
+    2.36 - 37451
+    0.24 - 3043
+    0.24 - 23446
+    0.24 - 4221
+    0.24 - 4028
+    0.24 - 7958
+    0.24 - 249784
+    0.24 - 7455
+    0.71 - 20
+    0.24 - 3798
+    0.24 - 1541
+    0.24 - 3794
+    0.24 - 1072
+    0.47 - 1944
+    0.95 - 0
+    0.24 - 2404
+    0.24 - 5906
+    0.24 - 1679
+    0.24 - 9685
+    0.24 - 2923
+    0.47 - 4387
+    0.24 - 2213
+    0.24 - 5384
+    0.24 - 356
+    0.24 - 54606
+    0.24 - 1697
+    0.47 - 28258
+    0.24 - 1151
+    0.24 - 4885
+    0.24 - 672
+    0.24 - 2856
+    0.24 - 6150
+    0.47 - 121
+    2.36 - 6916
+    0.24 - 1552
+    0.24 - 265
+    0.24 - 123445
+    0.24 - 3642
+    0.24 - 3987
+    0.24 - 9674
+    0.24 - 6794
+    0.24 - 4876
+    0.47 - 11674
+    2.36 - 4872
+    2.36 - 7316
+    0.24 - 117309
+    0.24 - 12305
+    0.24 - 36051
+    0.24 - 10808
+    0.24 - 1389
+    0.24 - 413
+    0.24 - 7947
+    0.24 - 2418
+    0.24 - 7723
+    0.24 - 13399
+    0.24 - 2065
+    1.89 - 6254
+    0.47 - 2476
+    0.24 - 8464
+    0.24 - 16665
+    0.24 - 195
+    0.24 - 1088
+    0.24 - 271
+    0.24 - 273
+    2.36 - 1485
+    0.24 - 4579
+    0.24 - 8320
+    0.24 - 1864
+    0.47 - 2541
+    0.47 - 2786
+    0.24 - 793
+    0.24 - 39630
+    0.24 - 9552
+    0.47 - 2982
+    0.24 - 7363
+    0.24 - 1855
+    0.24 - 7520
+    0.24 - 4493
+    0.24 - 8785
+    0.24 - 522
+    0.24 - 425
+    0.24 - 1258
+    0.24 - 3452
+    0.24 - 35598
+    0.24 - 582
+    0.24 - 68941
+    0.24 - 442
+    0.24 - 2714
+    0.24 - 1135
+    0.24 - 60084
+    0.24 - 3260
+    0.24 - 3263
+    0.24 - 46956
+    0.24 - 48163
+    0.24 - 103
+    0.24 - 33862
+    2.36 - 27988
+    0.24 - 4940
+    0.24 - 905
+    0.24 - 292
+    0.24 - 2572
+    0.24 - 13533
+    0.24 - 2357
+    0.24 - 74
+    0.24 - 10635
+    0.24 - 2148
+    0.24 - 11296
+    0.24 - 24767
+    0.95 - 1539
+    0.24 - 1224
+    0.47 - 14275
+    2.36 - 21625
+    0.24 - 451
+    0.24 - 5034
+    0.24 - 615
+    0.24 - 576
+    0.47 - 574
+    0.24 - 61
+    0.24 - 27992
+    0.24 - 2196
+    0.24 - 13323
+    0.24 - 2198
+    0.24 - 4345
+    0.24 - 1905
+    0.24 - 173
+    0.24 - 54157
+    0.24 - 1208
+    0.24 - 1630
+    0.24 - 2050
+    0.24 - 1985
+    0.24 - 3211
+    0.24 - 4065
+    0.24 - 2561
+    0.24 - 1733
+    0.24 - 5701
+    0.24 - 1737
+    0.24 - 9976
+    0.24 - 180
+    0.24 - 655
+    0.24 - 28923
+    0.24 - 18260
+    0.24 - 8617
+    0.24 - 6208
+    0.24 - 1207
+    0.24 - 3894
+    0.24 - 341
+    0.24 - 753
+    0.24 - 6468
+    0.24 - 469
+    0.24 - 9330
+    0.24 - 111586
+    0.24 - 402
+    0.24 - 19624
+    0.24 - 8596
+    0.24 - 4717
+    0.24 - 1865
+    0.24 - 21306
+    1.89 - 7644
+    0.47 - 1869
+    0.24 - 166
+    0.24 - 2777
+    0.24 - 160
+    0.24 - 221
+    0.24 - 6356
+    0.24 - 2094
+    2.36 - 2216
+    0.24 - 1996
+    0.24 - 1629
+    0.24 - 2218
+    0.24 - 5225
+    0.24 - 3442
+    0.24 - 3965
+    1.65 - 3116
+    0.24 - 2693
+    0.24 - 26044
+    0.24 - 8105
+    0.24 - 607
+    0.24 - 56308
+    0.24 - 3158
+    0.24 - 4983
+    0.24 - 2636
+    0.24 - 10980
+    0.24 - 4763
+    0.24 - 6892
+    0.24 - 4457
+    0.24 - 5238
+    0.24 - 10472
+    0.24 - 8400
+    0.24 - 2004
+    0.24 - 5643
+    0.24 - 5654
+    0.24 - 13542
+    0.24 - 4695
+    0.24 - 4162
+    0.47 - 11175
+    0.24 - 4999
+    0.24 - 10086
+    0.24 - 4068
+    2.36 - 43
+    2.13 - 3344
+    0.24 - 1111
+    0.47 - 8849
+    0.24 - 1758
+    0.24 - 1293
+    2.36 - 328
+    0.24 - 5807
+    0.24 - 4093
+    0.24 - 2872
+    0.24 - 677
+    0.24 - 351
+    0.24 - 206
+    0.47 - 2399
+    0.24 - 9620
+    0.24 - 148
+    0.24 - 671
+    0.24 - 5200
+    0.24 - 6669
+    0.47 - 117474
+    0.24 - 111683
+    0.24 - 2376
+    0.24 - 1881
+    0.24 - 6418
+    0.47 - 97939
+    0.24 - 2331
+    0.24 - 1866
+    0.24 - 3428
+    1.18 - 1635
+    0.24 - 1556
+    0.24 - 1976
+    0.24 - 13573
+    0.24 - 36560
+    0.24 - 1911
+    0.24 - 2003
+    0.24 - 355
+    0.24 - 260
+    0.24 - 476
+    0.24 - 352
+    0.24 - 1687
+    0.24 - 4416
+    0.24 - 3074
+    0.24 - 2800
+    0.24 - 800
+    0.24 - 1766
+    0.24 - 123945
+    0.24 - 2186
+  via: 
+    5.58 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain, 1.0 sorga-msr:3128 (squid/2.6.STABLE21)
+    0.64 - 1.1 localhost.localdomain
+    93.78 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+  accept-language: 
+    100.00 - en-US,en;q=0.8
+  proxy-connection: 
+    19.93 - close
+    80.07 - keep-alive
+  xserver: 
+    9.09 - www80
+    9.09 - www20
+    9.09 - www14
+    9.09 - www73
+    9.09 - www72
+    9.09 - www41
+    9.09 - www144
+    9.09 - www2
+    9.09 - www186
+    9.09 - www121
+    9.09 - www153
+  x-cache-lookup: 
+    100.00 - MISS from sorga-msr:3128
+  vary: 
+    4.74 - *
+    95.26 - Accept-Encoding
+  accept: 
+    81.80 - */*
+    3.85 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    13.70 - text/css,*/*;q=0.1
+    0.64 - text/javascript, text/html, application/xml, text/xml, */*
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  p3p: 
+    100.00 - policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSA OUR IND COM NAV STA"
+  x-c: 
+    100.00 - ms-4.4.7
+  :version: 
+    100.00 - HTTP/1.1
+  x-prototype-version: 
+    100.00 - 1.7
+  user-agent: 
+    100.00 - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.56 Safari/537.4
+  etag: 
+    3.70 - "50586C83-0EF4-61A4A822"
+    3.70 - "2594-4c2c6b3e0a600"
+    3.70 - "dbf4-4c8e32b621e08"
+    7.41 - "17e93-4c85f223ee48c"
+    3.70 - "50586C7E-7897-11012597"
+    3.70 - "eab4-4c7e121e43470"
+    3.70 - "50586C84-4AFA-3D782842"
+    3.70 - "1e429-4c8bebee6607f"
+    3.70 - "50586C85-3D02-2322A765"
+    3.70 - "2251-4af35bd7c2580"
+    3.70 - "91cd5bebd6a9e0762d50a696d00003ee:1347911204"
+    3.70 - "1ca3d-4c86c4ee822d8"
+    3.70 - "2550-4c42efa511480"
+    3.70 - "1315-4beede8235980"
+    3.70 - "50586C80-62B5-5AC4B5F2"
+    3.70 - "50586C7F-47B7-790EAEFB"
+    3.70 - "50586C7E-5E64-7D86D60E"
+    3.70 - "6de-4beede8235980"
+    3.70 - "50586C81-5CEB-1C525AE9"
+    3.70 - "20d0-4c73d79f6ea00"
+    7.41 - "1cae2-4c86c215f41cc"
+    3.70 - "10d4d-4c8b0c88149e6"
+    3.70 - "50586C82-06D0-050D9B30"
+    3.70 - "1d60-4c1eaf3f0df80"
+    3.70 - "50586C85-2A42-46C88EC0"
+  location: 
+    25.00 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=4227879455
+    25.00 - http://metrics.apple.com/b/ss/appleglobal,applehome/1/H.22.1/s2133624691516?AQB=1&pccr=true&vidn=282C363E85013281-6000010920115864&&ndh=1&t=18%2F8%2F2012%2014%3A43%3A41%202%20-120&cl=63072000&pageName=apple%20-%20index%2Ftab%20(us)&g=http%3A%2F%2Fwww.apple.com%2F&r=http%3A%2F%2Fwww.apple.com%2F&cc=USD&ch=www.us.homepage&server=new%20approach&h1=www.us.homepage&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c15=no%20zip&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&v43=windows&v44=670&c48=1&c49=D%3Ds_vi&c50=homepage%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    25.00 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=3741340193
+    25.00 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2667598368
+  :method: 
+    100.00 - get
+  cache-control: 
+    0.16 - max-age=2390
+    0.32 - max-age=485
+    0.16 - max-age=2827
+    0.16 - max-age=2826
+    0.32 - max-age=2717
+    0.16 - max-age=2681
+    0.16 - max-age=550
+    0.32 - max-age=322
+    0.16 - max-age=1846
+    0.16 - max-age=2751
+    0.16 - max-age=1955
+    1.61 - max-age=408
+    0.16 - max-age=2071
+    0.16 - max-age=241
+    0.16 - max-age=2907
+    0.32 - max-age=400
+    0.16 - max-age=403
+    0.16 - max-age=404
+    0.32 - max-age=2095
+    0.64 - max-age=406
+    0.16 - max-age=2158
+    0.16 - max-age=1972
+    0.16 - max-age=1736
+    1.61 - max-age=504
+    0.16 - max-age=2151
+    0.16 - max-age=2150
+    0.16 - max-age=2152
+    0.16 - max-age=2986
+    0.16 - max-age=2157
+    0.16 - max-age=2267
+    0.16 - max-age=2011
+    0.16 - max-age=2786
+    0.16 - max-age=3228
+    0.32 - max-age=399
+    0.16 - max-age=394
+    0.32 - max-age=3225
+    0.16 - max-age=238
+    0.48 - max-age=390
+    0.16 - max-age=2789
+    0.16 - max-age=1856
+    0.16 - max-age=2525
+    0.32 - max-age=136
+    0.16 - max-age=137
+    0.16 - max-age=337
+    0.16 - max-age=2721
+    0.16 - max-age=1990
+    0.16 - max-age=1858
+    0.16 - max-age=330
+    0.16 - max-age=1993
+    0.16 - max-age=1400
+    0.16 - max-age=2857
+    0.16 - max-age=232
+    0.16 - max-age=437
+    0.32 - max-age=432
+    0.32 - max-age=2319
+    0.16 - max-age=2318
+    0.16 - max-age=1727
+    0.16 - max-age=1967
+    0.16 - max-age=1966
+    0.48 - max-age=2313
+    0.16 - max-age=2002
+    0.16 - max-age=2129
+    0.16 - max-age=2412
+    0.16 - max-age=2220
+    0.16 - max-age=1295
+    1.61 - max-age=465
+    0.16 - max-age=3231
+    0.16 - max-age=3230
+    0.16 - max-age=2735
+    0.16 - max-age=1797
+    0.16 - max-age=2523
+    0.16 - max-age=2771
+    0.16 - max-age=1989
+    0.16 - max-age=102
+    0.16 - max-age=2634
+    0.16 - max-age=2963
+    0.16 - max-age=1867
+    0.16 - max-age=1982
+    0.32 - max-age=349
+    0.16 - max-age=5
+    0.16 - max-age=426
+    0.16 - max-age=188
+    28.99 - max-age=0
+    0.16 - max-age=1553
+    0.16 - max-age=342
+    0.16 - max-age=340
+    0.48 - max-age=2745
+    0.16 - max-age=3138
+    0.16 - max-age=2249
+    0.16 - max-age=3034
+    0.16 - max-age=1659
+    0.16 - max-age=2039
+    0.16 - max-age=361
+    0.16 - max-age=1834
+    0.16 - max-age=2241
+    0.16 - max-age=2243
+    0.32 - max-age=449
+    0.32 - max-age=2648
+    0.16 - max-age=1917
+    0.16 - max-age=2402
+    0.16 - max-age=1913
+    0.16 - max-age=3203
+    0.16 - max-age=2643
+    0.32 - max-age=503
+    0.16 - max-age=502
+    0.16 - max-age=505
+    0.16 - max-age=3456
+    0.16 - max-age=3455
+    0.16 - max-age=2747
+    0.16 - max-age=509
+    0.16 - max-age=2972
+    0.16 - max-age=1464
+    0.16 - max-age=2229
+    0.16 - max-age=216
+    0.16 - max-age=454
+    0.16 - max-age=3299
+    0.48 - max-age=581
+    1.61 - max-age=351
+    0.16 - max-age=198
+    0.16 - max-age=355
+    0.16 - max-age=356
+    3.22 - max-age=357
+    0.16 - max-age=2331
+    0.16 - max-age=3129
+    0.16 - max-age=2044
+    0.16 - max-age=2022
+    0.16 - max-age=2024
+    0.16 - max-age=1664
+    0.16 - max-age=3214
+    0.16 - max-age=1902
+    0.16 - max-age=2040
+    0.32 - max-age=2106
+    0.16 - max-age=2753
+    1.77 - max-age=517
+    0.16 - max-age=514
+    0.16 - max-age=1478
+    0.16 - max-age=513
+    0.16 - max-age=2940
+    0.16 - max-age=511
+    0.16 - max-age=202
+    0.48 - max-age=518
+    1.45 - max-age=519
+    0.16 - max-age=1399
+    0.16 - max-age=440
+    0.16 - max-age=368
+    1.61 - max-age=598
+    1.13 - max-age=596
+    0.16 - max-age=2194
+    0.16 - max-age=2196
+    0.16 - max-age=2191
+    0.16 - max-age=593
+    0.16 - max-age=1454
+    0.16 - max-age=3116
+    0.16 - max-age=1325
+    0.16 - max-age=1819
+    0.16 - max-age=2582
+    0.16 - max-age=3111
+    0.32 - max-age=2732
+    0.16 - max-age=2421
+    0.16 - max-age=2115
+    0.16 - max-age=2345
+    0.16 - max-age=1930
+    0.16 - max-age=3054
+    0.16 - max-age=1936
+    0.16 - max-age=3293
+    0.16 - max-age=3268
+    0.16 - max-age=2014
+    0.16 - max-age=2051
+    0.16 - max-age=479
+    0.16 - max-age=3573
+    0.16 - max-age=2568
+    0.16 - max-age=2569
+    0.16 - max-age=2565
+    0.48 - max-age=600
+    0.16 - max-age=2560
+    0.16 - max-age=2815
+    0.16 - max-age=2631
+    0.16 - max-age=372
+    0.16 - max-age=376
+    0.16 - max-age=3269
+    1.77 - no-cache, no-store, max-age=0, no-transform, private
+    0.16 - max-age=1310
+    0.16 - max-age=3102
+    0.16 - max-age=1881
+    0.16 - max-age=1925
+    0.16 - max-age=1931
+    0.16 - max-age=1926
+    0.16 - max-age=420
+    0.16 - max-age=1922
+    0.16 - max-age=2160
+    0.16 - max-age=285
+    0.16 - max-age=2353
+    0.16 - max-age=2049
+    0.16 - max-age=2169
+    0.16 - max-age=1805
+    0.16 - max-age=163
+    0.16 - max-age=2042
+    0.16 - max-age=1800
+    0.16 - max-age=3186
+    0.16 - max-age=1868
+    0.16 - max-age=2841
+    0.16 - max-age=3565
+    0.16 - max-age=1
+    0.16 - max-age=3401
+    0.32 - max-age=2926
+    0.16 - max-age=2952
+    0.16 - max-age=574
+    0.16 - max-age=526
+    0.16 - max-age=2923
+    0.16 - max-age=260
+    0.16 - max-age=425
+    0.16 - max-age=3307
+    0.16 - max-age=2883
+    0.32 - max-age=1592
+    1.45 - public, max-age=2592000
+    0.16 - max-age=2689
+    0.16 - max-age=2041
+    0.16 - max-age=2207
+    0.16 - max-age=1896
+    0.16 - max-age=1898
+    0.16 - max-age=68
+    0.16 - max-age=1068
+    0.16 - max-age=2680
+    0.16 - max-age=128
+    0.16 - max-age=2288
+    0.16 - max-age=3313
+    0.32 - max-age=2958
+    0.16 - max-age=2073
+    0.16 - max-age=1812
+    0.16 - max-age=3179
+    0.16 - max-age=3329
+    1.61 - max-age=2834
+    0.16 - max-age=335
+    0.16 - max-age=2709
+    0.16 - max-age=2664
+    0.16 - max-age=2704
+    0.16 - max-age=1684
+    0.16 - max-age=2669
+    1.61 - max-age=303
+    0.16 - max-age=1870
+    1.29 - max-age=315
+    1.61 - max-age=316
+    0.16 - max-age=2448
+    0.16 - max-age=552
+    0.16 - max-age=312
+    0.32 - max-age=417
+    0.16 - max-age=253
+    0.16 - max-age=2248
+    0.16 - max-age=1841
+    0.16 - max-age=2174
+    0.16 - max-age=2470
+    0.16 - max-age=2147
+    0.16 - max-age=3002
+    0.16 - max-age=2142
+    0.16 - max-age=2478
+    0.16 - max-age=2778
+    0.16 - max-age=143
+    0.16 - max-age=2277
+    0.16 - max-age=2365
+    0.16 - max-age=2273
+    0.16 - max-age=387
+    0.16 - max-age=386
+    0.16 - max-age=1309
+    0.16 - max-age=384
+    0.32 - max-age=383
+    0.16 - max-age=2889
+  cneonction: 
+    100.00 - close
+  x-server: 
+    11.11 - nk11p00it-web016
+    11.11 - nk11p00it-web012
+    11.11 - nk11p00it-web013
+    22.22 - nk11p00it-web010
+    22.22 - nk11p00it-web005
+    11.11 - nk11p00it-web007
+    11.11 - nk11p00it-web006
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  x-cache: 
+    100.00 - MISS from sorga-msr
+  set-cookie: 
+    5.71 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:42 GMT; Domain=.apple.com; Path=/
+    28.57 - ccl=irLlOXWGPlryGGFAh0gJHA==; path=/; domain=.apple.com geo=FR; path=/; domain=.apple.com
+    2.86 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:48 GMT; Domain=.apple.com; Path=/
+    28.57 - ccl=MwpEuvWoh5/VWbVnvAGFPA==; path=/; domain=.apple.com geo=FR; path=/; domain=.apple.com
+    2.86 - ccl=zjv0EBBS06PWMCJxO+CQCw==; path=/; domain=.apple.com geo=FR; path=/; domain=.apple.com
+    2.86 - ccl=6M+uqYNk1LXa5t1P7gCZkQ==; path=/; domain=.apple.com geo=FR; path=/; domain=.apple.com
+    2.86 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:41 GMT; Domain=.apple.com; Path=/
+    2.86 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:45 GMT; Domain=.apple.com; Path=/
+    5.71 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:49 GMT; Domain=.apple.com; Path=/
+    2.86 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:44 GMT; Domain=.apple.com; Path=/
+    2.86 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:43 GMT; Domain=.apple.com; Path=/
+    5.71 - geo=FR; path=/; domain=.apple.com
+    2.86 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:47 GMT; Domain=.apple.com; Path=/
+    2.86 - s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; Expires=Thu, 18 Sep 2014 12:43:46 GMT; Domain=.apple.com; Path=/
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    0.23 - Thu, 13 Sep 2012 08:55:02 GMT
+    0.23 - Thu, 19 Jul 2012 09:48:35 GMT
+    2.31 - Tue, 18 Sep 2012 12:51:19 GMT
+    2.31 - Tue, 18 Sep 2012 12:51:58 GMT
+    0.23 - Thu, 13 Sep 2012 08:56:48 GMT
+    0.23 - Tue, 18 Sep 2012 13:17:51 GMT
+    0.23 - Tue, 18 Sep 2012 13:31:05 GMT
+    0.23 - Tue, 18 Sep 2012 12:53:29 GMT
+    0.23 - Tue, 18 Sep 2012 13:20:18 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:30 GMT
+    0.23 - Thu, 13 Sep 2012 08:50:20 GMT
+    0.23 - Tue, 18 Sep 2012 13:38:41 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:28 GMT
+    0.69 - Tue, 18 Sep 2012 12:50:23 GMT
+    0.23 - Tue, 18 Sep 2012 13:35:26 GMT
+    0.23 - Tue, 18 Sep 2012 12:47:21 GMT
+    0.23 - Thu, 13 Sep 2012 08:56:02 GMT
+    0.46 - Mon, 17 Sep 2012 11:31:02 GMT
+    0.23 - Tue, 18 Sep 2012 12:52:17 GMT
+    0.23 - Mon, 17 Sep 2012 12:43:44 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:03 GMT
+    0.23 - Tue, 18 Sep 2012 12:47:41 GMT
+    0.23 - Tue, 18 Sep 2012 13:19:51 GMT
+    0.23 - Thu, 13 Sep 2012 10:45:46 GMT
+    0.23 - Tue, 18 Sep 2012 13:28:25 GMT
+    0.23 - Thu, 13 Sep 2012 08:53:31 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:47 GMT
+    0.23 - Tue, 18 Sep 2012 13:37:27 GMT
+    0.23 - Thu, 13 Sep 2012 08:55:36 GMT
+    0.46 - Tue, 18 Sep 2012 12:49:24 GMT
+    0.23 - Tue, 18 Sep 2012 13:30:13 GMT
+    0.46 - Mon, 17 Sep 2012 11:31:29 GMT
+    0.23 - Thu, 19 Jul 2012 10:07:40 GMT
+    0.23 - Tue, 18 Sep 2012 13:27:35 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:24 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:09 GMT
+    0.23 - Tue, 18 Sep 2012 13:19:16 GMT
+    0.23 - Tue, 18 Sep 2012 13:43:10 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:12 GMT
+    0.23 - Tue, 18 Sep 2012 13:27:47 GMT
+    0.23 - Tue, 18 Sep 2012 13:20:56 GMT
+    0.23 - Mon, 17 Sep 2012 12:15:24 GMT
+    0.23 - Tue, 18 Sep 2012 13:07:02 GMT
+    0.23 - Tue, 18 Sep 2012 13:05:22 GMT
+    0.23 - Tue, 18 Sep 2012 13:38:02 GMT
+    0.23 - Tue, 18 Sep 2012 12:49:21 GMT
+    0.23 - Mon, 17 Sep 2012 12:43:43 GMT
+    0.23 - Thu, 13 Sep 2012 08:54:07 GMT
+    0.23 - Tue, 18 Sep 2012 13:19:32 GMT
+    2.55 - Tue, 18 Sep 2012 13:30:48 GMT
+    0.46 - Tue, 18 Sep 2012 13:10:20 GMT
+    0.23 - Fri, 14 Sep 2012 08:05:00 GMT
+    0.23 - Tue, 18 Sep 2012 13:32:31 GMT
+    0.23 - Tue, 18 Sep 2012 12:53:30 GMT
+    0.23 - Thu, 13 Sep 2012 10:52:14 GMT
+    0.23 - Tue, 18 Sep 2012 13:24:03 GMT
+    0.23 - Mon, 17 Sep 2012 11:56:27 GMT
+    0.23 - Fri, 14 Sep 2012 09:12:11 GMT
+    0.23 - Tue, 18 Sep 2012 12:48:54 GMT
+    0.46 - Tue, 18 Sep 2012 13:22:26 GMT
+    0.23 - Tue, 18 Sep 2012 13:31:45 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:08 GMT
+    0.23 - Tue, 18 Sep 2012 13:27:56 GMT
+    0.23 - Tue, 18 Sep 2012 13:14:38 GMT
+    0.23 - Tue, 18 Sep 2012 12:46:00 GMT
+    0.23 - Mon, 17 Sep 2012 12:03:09 GMT
+    0.69 - Tue, 18 Sep 2012 12:52:06 GMT
+    0.23 - Tue, 18 Sep 2012 13:14:55 GMT
+    0.23 - Tue, 18 Sep 2012 13:30:37 GMT
+    0.23 - Mon, 17 Sep 2012 13:59:41 GMT
+    0.69 - Tue, 18 Sep 2012 13:22:20 GMT
+    0.69 - Tue, 18 Sep 2012 12:52:20 GMT
+    0.23 - Tue, 18 Sep 2012 12:52:21 GMT
+    0.23 - Tue, 18 Sep 2012 13:05:53 GMT
+    0.23 - Mon, 17 Sep 2012 12:43:41 GMT
+    2.31 - Tue, 18 Sep 2012 12:53:39 GMT
+    0.46 - Tue, 18 Sep 2012 13:29:16 GMT
+    2.55 - Tue, 18 Sep 2012 12:49:38 GMT
+    0.23 - Fri, 14 Sep 2012 07:57:28 GMT
+    0.23 - Tue, 18 Sep 2012 13:15:20 GMT
+    0.46 - Tue, 18 Sep 2012 12:50:13 GMT
+    0.23 - Tue, 18 Sep 2012 12:48:27 GMT
+    0.23 - Thu, 13 Sep 2012 08:53:10 GMT
+    0.23 - Tue, 18 Sep 2012 13:35:38 GMT
+    0.23 - Tue, 18 Sep 2012 13:36:00 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:37 GMT
+    0.23 - Mon, 17 Sep 2012 12:43:48 GMT
+    0.23 - Thu, 13 Sep 2012 11:01:05 GMT
+    0.23 - Tue, 18 Sep 2012 13:14:03 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:45 GMT
+    0.23 - Mon, 17 Sep 2012 14:17:31 GMT
+    0.23 - Tue, 18 Sep 2012 13:36:41 GMT
+    0.23 - Tue, 18 Sep 2012 13:27:52 GMT
+    0.23 - Tue, 18 Sep 2012 13:18:18 GMT
+    0.23 - Thu, 13 Sep 2012 08:50:17 GMT
+    0.23 - Tue, 18 Sep 2012 13:22:47 GMT
+    0.23 - Tue, 18 Sep 2012 13:14:25 GMT
+    0.23 - Tue, 18 Sep 2012 13:18:37 GMT
+    0.23 - Thu, 13 Sep 2012 08:49:26 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:25 GMT
+    0.23 - Thu, 13 Sep 2012 08:53:57 GMT
+    0.23 - Tue, 18 Sep 2012 12:47:42 GMT
+    0.23 - Tue, 18 Sep 2012 13:38:51 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:46 GMT
+    1.62 - Mon, 17 Sep 2012 11:35:33 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:53 GMT
+    0.23 - Tue, 18 Sep 2012 12:51:49 GMT
+    0.23 - Tue, 18 Sep 2012 12:53:00 GMT
+    0.46 - Mon, 17 Sep 2012 12:43:42 GMT
+    0.46 - Mon, 17 Sep 2012 11:32:03 GMT
+    0.23 - Tue, 18 Sep 2012 12:45:50 GMT
+    0.23 - Tue, 18 Sep 2012 13:37:40 GMT
+    0.23 - Mon, 17 Sep 2012 14:01:38 GMT
+    0.23 - Tue, 18 Sep 2012 12:51:01 GMT
+    0.23 - Tue, 18 Sep 2012 13:17:48 GMT
+    0.23 - Thu, 13 Sep 2012 08:49:22 GMT
+    0.23 - Tue, 03 Jul 2012 10:30:53 GMT
+    0.23 - Tue, 18 Sep 2012 13:34:16 GMT
+    0.23 - Tue, 18 Sep 2012 12:53:22 GMT
+    0.23 - Tue, 24 Jul 2012 12:28:09 GMT
+    0.23 - Tue, 18 Sep 2012 13:33:06 GMT
+    0.23 - Thu, 13 Sep 2012 08:54:29 GMT
+    0.46 - Tue, 18 Sep 2012 12:50:21 GMT
+    0.23 - Tue, 18 Sep 2012 13:37:08 GMT
+    0.23 - Fri, 14 Sep 2012 08:05:42 GMT
+    0.23 - Thu, 19 Jul 2012 10:06:24 GMT
+    0.23 - Tue, 03 Jul 2012 10:48:47 GMT
+    0.23 - Tue, 18 Sep 2012 13:28:59 GMT
+    0.23 - Tue, 18 Sep 2012 12:44:55 GMT
+    0.23 - Tue, 18 Sep 2012 13:23:07 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:17 GMT
+    1.85 - Tue, 18 Sep 2012 12:48:49 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:36 GMT
+    0.23 - Tue, 18 Sep 2012 13:13:53 GMT
+    0.23 - Tue, 18 Sep 2012 12:46:11 GMT
+    0.23 - Tue, 18 Sep 2012 12:52:33 GMT
+    2.08 - Mon, 17 Sep 2012 11:34:14 GMT
+    0.23 - Thu, 13 Sep 2012 08:50:25 GMT
+    0.23 - Tue, 18 Sep 2012 13:26:36 GMT
+    0.23 - Tue, 18 Sep 2012 12:53:27 GMT
+    0.46 - Tue, 18 Sep 2012 12:49:34 GMT
+    0.23 - Tue, 18 Sep 2012 13:13:44 GMT
+    0.23 - Mon, 17 Sep 2012 12:06:51 GMT
+    0.23 - Tue, 18 Sep 2012 13:28:33 GMT
+    0.23 - Tue, 18 Sep 2012 13:28:23 GMT
+    0.23 - Tue, 18 Sep 2012 13:15:56 GMT
+    0.23 - Tue, 18 Sep 2012 13:38:55 GMT
+    0.23 - Tue, 18 Sep 2012 12:52:16 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:35 GMT
+    0.23 - Tue, 18 Sep 2012 13:43:22 GMT
+    0.23 - Tue, 18 Sep 2012 13:28:49 GMT
+    0.23 - Mon, 17 Sep 2012 12:03:49 GMT
+    2.31 - Tue, 18 Sep 2012 12:48:37 GMT
+    0.46 - Tue, 18 Sep 2012 12:47:06 GMT
+    0.23 - Tue, 18 Sep 2012 12:49:23 GMT
+    0.23 - Tue, 18 Sep 2012 13:14:43 GMT
+    0.23 - Tue, 18 Sep 2012 13:37:19 GMT
+    0.46 - Mon, 17 Sep 2012 12:43:49 GMT
+    0.23 - Tue, 18 Sep 2012 13:13:45 GMT
+    0.23 - Tue, 18 Sep 2012 12:52:11 GMT
+    0.23 - Tue, 18 Sep 2012 13:12:38 GMT
+    0.23 - Fri, 14 Sep 2012 09:11:09 GMT
+    0.23 - Mon, 17 Sep 2012 12:05:53 GMT
+    0.23 - Tue, 18 Sep 2012 12:46:30 GMT
+    0.23 - Tue, 18 Sep 2012 13:37:29 GMT
+    2.78 - Tue, 18 Sep 2012 12:50:29 GMT
+    0.23 - Mon, 17 Sep 2012 12:23:17 GMT
+    0.23 - Thu, 13 Sep 2012 08:54:12 GMT
+    0.23 - Tue, 18 Sep 2012 13:32:57 GMT
+    0.23 - Tue, 18 Sep 2012 13:11:48 GMT
+    0.23 - Mon, 17 Sep 2012 12:14:27 GMT
+    0.23 - Tue, 18 Sep 2012 12:49:11 GMT
+    0.23 - Tue, 18 Sep 2012 13:30:08 GMT
+    0.23 - Thu, 13 Sep 2012 10:42:26 GMT
+    0.23 - Tue, 18 Sep 2012 12:46:55 GMT
+    0.23 - Tue, 18 Sep 2012 13:31:53 GMT
+    0.23 - Tue, 18 Sep 2012 13:16:04 GMT
+    0.23 - Tue, 18 Sep 2012 13:17:26 GMT
+    2.31 - Tue, 18 Sep 2012 12:48:50 GMT
+    0.23 - Thu, 19 Jul 2012 09:46:16 GMT
+    0.23 - Thu, 13 Sep 2012 08:50:51 GMT
+    0.23 - Tue, 18 Sep 2012 12:49:50 GMT
+    0.23 - Tue, 18 Sep 2012 12:49:53 GMT
+    0.23 - Thu, 13 Sep 2012 08:52:15 GMT
+    0.23 - Tue, 18 Sep 2012 13:25:06 GMT
+    0.23 - Tue, 18 Sep 2012 13:23:32 GMT
+    0.23 - Tue, 04 Sep 2012 16:03:48 GMT
+    0.23 - Tue, 18 Sep 2012 13:05:37 GMT
+    0.23 - Tue, 18 Sep 2012 13:32:25 GMT
+    0.23 - Mon, 17 Sep 2012 12:43:47 GMT
+    0.23 - Tue, 18 Sep 2012 12:51:13 GMT
+    0.23 - Mon, 17 Sep 2012 12:43:45 GMT
+    0.23 - Tue, 18 Sep 2012 13:19:46 GMT
+    0.23 - Tue, 18 Sep 2012 13:20:45 GMT
+    0.23 - Tue, 18 Sep 2012 13:30:52 GMT
+    0.23 - Thu, 19 Jul 2012 10:10:02 GMT
+    0.23 - Tue, 18 Sep 2012 13:37:39 GMT
+    0.23 - Tue, 18 Sep 2012 13:41:24 GMT
+    0.23 - Tue, 18 Sep 2012 12:43:53 GMT
+    0.46 - Mon, 17 Sep 2012 11:32:26 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:29 GMT
+    0.23 - Tue, 18 Sep 2012 13:14:00 GMT
+    0.23 - Thu, 13 Sep 2012 08:54:06 GMT
+    0.23 - Tue, 18 Sep 2012 13:31:11 GMT
+    0.23 - Thu, 13 Sep 2012 08:54:02 GMT
+    0.23 - Fri, 14 Sep 2012 09:37:06 GMT
+    0.23 - Tue, 18 Sep 2012 13:20:16 GMT
+    0.23 - Thu, 13 Sep 2012 08:56:12 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:01 GMT
+    0.23 - Mon, 17 Sep 2012 11:33:10 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:49 GMT
+    2.08 - Mon, 17 Sep 2012 11:34:16 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:42 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:27 GMT
+    0.23 - Thu, 13 Sep 2012 09:00:55 GMT
+    0.23 - Tue, 18 Sep 2012 13:28:51 GMT
+    0.23 - Tue, 18 Sep 2012 13:21:17 GMT
+    0.23 - Mon, 17 Sep 2012 12:17:50 GMT
+    0.46 - Tue, 18 Sep 2012 12:50:54 GMT
+    0.23 - Tue, 18 Sep 2012 13:11:21 GMT
+    0.23 - Mon, 17 Sep 2012 12:43:46 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:31 GMT
+    0.69 - Tue, 18 Sep 2012 12:53:47 GMT
+    0.23 - Mon, 17 Sep 2012 12:10:55 GMT
+    0.23 - Tue, 18 Sep 2012 13:01:36 GMT
+    0.23 - Tue, 18 Sep 2012 13:27:38 GMT
+    0.23 - Thu, 13 Sep 2012 09:12:03 GMT
+    0.23 - Tue, 18 Sep 2012 12:43:48 GMT
+    0.23 - Tue, 18 Sep 2012 13:38:38 GMT
+    0.23 - Thu, 13 Sep 2012 10:58:07 GMT
+    0.23 - Tue, 18 Sep 2012 13:28:06 GMT
+    0.23 - Tue, 18 Sep 2012 13:38:03 GMT
+    0.46 - Tue, 18 Sep 2012 12:46:04 GMT
+    0.46 - Tue, 18 Sep 2012 13:17:44 GMT
+    0.23 - Fri, 14 Sep 2012 09:43:48 GMT
+    0.23 - Tue, 18 Sep 2012 12:51:16 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:07 GMT
+    0.23 - Tue, 18 Sep 2012 13:07:01 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:59 GMT
+    0.23 - Thu, 13 Sep 2012 08:49:36 GMT
+    0.23 - Tue, 18 Sep 2012 13:09:35 GMT
+    0.23 - Fri, 14 Sep 2012 06:48:10 GMT
+    0.23 - Tue, 18 Sep 2012 13:07:56 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:37 GMT
+    0.23 - Thu, 13 Sep 2012 08:51:01 GMT
+    0.23 - Tue, 18 Sep 2012 13:30:03 GMT
+    0.23 - Tue, 18 Sep 2012 13:21:41 GMT
+    0.23 - Tue, 18 Sep 2012 13:32:42 GMT
+    0.23 - Thu, 13 Sep 2012 10:39:51 GMT
+    0.23 - Thu, 13 Sep 2012 08:55:38 GMT
+    0.23 - Thu, 19 Jul 2012 09:51:07 GMT
+    0.23 - Mon, 17 Sep 2012 11:33:45 GMT
+    0.23 - Thu, 13 Sep 2012 09:09:09 GMT
+    0.23 - Tue, 18 Sep 2012 13:14:18 GMT
+    0.23 - Tue, 18 Sep 2012 12:52:58 GMT
+    0.23 - Tue, 18 Sep 2012 13:12:29 GMT
+    0.23 - Tue, 18 Sep 2012 13:29:25 GMT
+    0.23 - Tue, 18 Sep 2012 12:49:29 GMT
+    0.23 - Thu, 19 Jul 2012 10:03:56 GMT
+    0.46 - Tue, 18 Sep 2012 13:18:54 GMT
+    0.23 - Tue, 18 Sep 2012 12:52:18 GMT
+    0.23 - Mon, 17 Sep 2012 11:34:05 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:59 GMT
+    0.23 - Tue, 18 Sep 2012 12:47:59 GMT
+    1.85 - Tue, 18 Sep 2012 12:49:25 GMT
+    0.23 - Tue, 18 Sep 2012 12:53:40 GMT
+    0.23 - Tue, 18 Sep 2012 13:15:40 GMT
+    0.23 - Tue, 18 Sep 2012 12:49:45 GMT
+    0.23 - Fri, 14 Sep 2012 09:11:17 GMT
+    0.23 - Thu, 19 Jul 2012 09:46:27 GMT
+    0.23 - Tue, 18 Sep 2012 12:48:05 GMT
+    0.23 - Tue, 18 Sep 2012 13:33:49 GMT
+    0.23 - Tue, 18 Sep 2012 12:50:19 GMT
+    0.23 - Tue, 18 Sep 2012 13:32:01 GMT
+    0.23 - Fri, 14 Sep 2012 09:10:39 GMT
+    2.31 - Tue, 18 Sep 2012 12:49:31 GMT
+    0.23 - Thu, 13 Sep 2012 10:42:40 GMT
+    0.23 - Tue, 18 Sep 2012 12:52:23 GMT
+    0.23 - Tue, 18 Sep 2012 12:47:46 GMT
+    0.23 - Tue, 18 Sep 2012 13:25:39 GMT
+    0.23 - Thu, 19 Jul 2012 09:46:31 GMT
+    0.23 - Tue, 18 Sep 2012 12:45:30 GMT
+    0.23 - Tue, 18 Sep 2012 13:22:55 GMT
+  x-n: 
+    100.00 - S
+  last-modified: 
+    2.55 - Sun, 09 Sep 2012 00:25:47 GMT
+    0.23 - Tue, 03 Aug 2010 01:15:10 GMT
+    0.46 - Wed, 12 Sep 2012 01:00:49 GMT
+    0.23 - Wed, 19 Sep 2012 12:43:46 GMT
+    0.69 - Mon, 30 Apr 2012 23:47:33 GMT
+    0.23 - Sun, 09 Sep 2012 02:12:41 GMT
+    0.23 - Tue, 24 Nov 2009 00:16:22 GMT
+    0.23 - Tue, 28 Jun 2011 21:32:52 GMT
+    1.62 - Sun, 09 Sep 2012 00:23:36 GMT
+    1.85 - Tue, 11 Sep 2012 21:38:55 GMT
+    0.23 - Wed, 19 Sep 2012 12:43:41 GMT
+    0.93 - Wed, 18 Jul 2012 18:41:53 GMT
+    2.31 - Thu, 21 Apr 2011 20:13:41 GMT
+    0.23 - Wed, 29 Aug 2012 19:10:12 GMT
+    2.78 - Sun, 09 Sep 2012 00:25:48 GMT
+    0.23 - Wed, 19 Sep 2012 12:43:45 GMT
+    0.23 - Sun, 09 Sep 2012 02:11:27 GMT
+    0.23 - Wed, 19 Sep 2012 12:43:43 GMT
+    0.93 - Sun, 09 Sep 2012 00:21:43 GMT
+    0.23 - Mon, 11 Jun 2007 06:46:16 GMT
+    0.23 - Wed, 01 Sep 2010 07:46:43 GMT
+    0.23 - Tue, 03 Apr 2012 00:41:04 GMT
+    0.23 - Tue, 09 Sep 2008 13:22:06 GMT
+    0.23 - Fri, 08 Jul 2011 18:11:35 GMT
+    0.46 - Wed, 29 Aug 2012 03:27:08 GMT
+    0.23 - Wed, 19 Sep 2012 12:43:47 GMT
+    0.23 - Fri, 03 Aug 2012 00:19:51 GMT
+    0.23 - Sun, 02 Oct 2011 06:03:38 GMT
+    0.46 - Tue, 11 Sep 2012 08:05:26 GMT
+    0.23 - Fri, 23 Sep 2011 19:44:37 GMT
+    0.46 - Wed, 18 Jul 2012 18:37:13 GMT
+    0.23 - Tue, 14 Aug 2012 17:52:40 GMT
+    0.23 - Fri, 03 Aug 2012 00:19:50 GMT
+    0.23 - Fri, 08 Jul 2011 18:11:31 GMT
+    0.69 - Fri, 11 Jul 2008 11:54:18 GMT
+    2.31 - Tue, 11 Sep 2012 21:38:54 GMT
+    2.55 - Tue, 03 Apr 2012 00:40:59 GMT
+    0.46 - Sun, 09 Sep 2012 00:25:32 GMT
+    0.23 - Mon, 21 May 2012 01:28:18 GMT
+    1.85 - Tue, 27 Sep 2011 19:37:01 GMT
+    0.93 - Sun, 09 Sep 2012 00:24:53 GMT
+    0.46 - Wed, 19 Sep 2012 12:43:49 GMT
+    0.46 - Sun, 09 Sep 2012 01:04:02 GMT
+    1.85 - Fri, 10 Aug 2012 00:24:30 GMT
+    0.23 - Sat, 09 Jun 2012 05:00:16 GMT
+    4.63 - Wed, 11 May 2011 19:48:16 GMT
+    0.46 - Wed, 12 Sep 2012 01:02:03 GMT
+    0.23 - Fri, 21 Jan 2011 21:03:44 GMT
+    0.46 - Mon, 11 Jun 2007 01:53:00 GMT
+    0.23 - Wed, 12 Sep 2012 01:03:40 GMT
+    0.93 - Sun, 09 Sep 2012 00:21:41 GMT
+    0.23 - Tue, 24 Jul 2012 22:44:23 GMT
+    0.23 - Tue, 11 Sep 2012 19:39:21 GMT
+    2.31 - Thu, 22 Dec 2011 01:44:20 GMT
+    0.23 - Tue, 11 Sep 2012 08:14:05 GMT
+    2.31 - Tue, 13 May 2008 05:05:45 GMT
+    0.23 - Mon, 14 Mar 2011 17:19:57 GMT
+    0.46 - Fri, 14 Sep 2012 08:12:55 GMT
+    0.46 - Wed, 21 Dec 2011 17:46:53 GMT
+    0.23 - Sun, 02 Oct 2011 06:07:38 GMT
+    0.23 - Fri, 06 Jul 2012 20:19:14 GMT
+    0.46 - Thu, 16 Feb 2012 18:38:57 GMT
+    0.23 - Thu, 13 Sep 2012 22:10:30 GMT
+    0.23 - Tue, 24 Jul 2012 23:22:42 GMT
+    2.31 - Sun, 09 Sep 2012 02:12:38 GMT
+    0.46 - Sun, 09 Sep 2012 02:13:41 GMT
+    0.46 - Thu, 13 Sep 2012 21:29:26 GMT
+    0.23 - Sun, 02 Oct 2011 06:07:39 GMT
+    0.23 - Wed, 02 Mar 2011 23:09:39 GMT
+    0.23 - Fri, 08 Jul 2011 18:25:31 GMT
+    0.23 - Mon, 11 Jun 2007 01:53:01 GMT
+    0.23 - Mon, 27 Aug 2012 21:23:03 GMT
+    0.46 - Wed, 12 Sep 2012 01:03:03 GMT
+    1.39 - Sun, 09 Sep 2012 00:23:37 GMT
+    0.23 - Mon, 12 May 2008 19:42:53 GMT
+    0.23 - Sun, 02 Sep 2012 04:51:50 GMT
+    2.31 - Thu, 07 Apr 2011 22:41:13 GMT
+    0.23 - Fri, 08 Jul 2011 18:11:33 GMT
+    0.69 - Sun, 09 Sep 2012 00:23:44 GMT
+    0.46 - Tue, 11 Sep 2012 08:27:11 GMT
+    0.23 - Wed, 19 Sep 2012 12:43:44 GMT
+    0.23 - Sat, 10 Dec 2011 01:06:15 GMT
+    0.23 - Sat, 29 Jan 2011 00:26:09 GMT
+    1.85 - Sun, 09 Sep 2012 00:25:50 GMT
+    0.46 - Sun, 09 Sep 2012 00:23:46 GMT
+    0.23 - Fri, 29 Jun 2007 05:28:05 GMT
+    0.23 - Tue, 07 Aug 2012 15:37:04 GMT
+    2.78 - Sun, 09 Sep 2012 00:25:49 GMT
+    0.23 - Tue, 22 May 2012 23:41:40 GMT
+    2.31 - Fri, 08 Jun 2012 17:55:16 GMT
+    2.08 - Mon, 30 Apr 2012 23:35:18 GMT
+    0.46 - Sun, 09 Sep 2012 00:16:52 GMT
+    0.23 - Thu, 14 Jun 2012 23:45:56 GMT
+    0.23 - Thu, 14 Jun 2012 23:45:17 GMT
+    2.31 - Thu, 31 Mar 2011 00:21:09 GMT
+    1.16 - Tue, 27 Sep 2011 19:37:00 GMT
+    0.23 - Thu, 13 Oct 2011 22:34:14 GMT
+    0.23 - Tue, 24 Jul 2012 22:21:17 GMT
+    0.23 - Tue, 01 Mar 2011 22:28:25 GMT
+    0.46 - Tue, 04 Sep 2012 19:06:19 GMT
+    0.23 - Fri, 08 Jun 2012 17:53:39 GMT
+    0.46 - Wed, 29 Aug 2012 18:57:28 GMT
+    0.23 - Fri, 08 Jun 2012 00:19:26 GMT
+    0.23 - Thu, 19 Jul 2012 00:11:59 GMT
+    0.23 - Thu, 08 Dec 2011 22:59:38 GMT
+    0.23 - Mon, 17 Sep 2012 12:15:27 GMT
+    0.69 - Sat, 17 Dec 2011 00:28:45 GMT
+    0.46 - Wed, 02 Mar 2011 23:09:38 GMT
+    1.62 - Fri, 21 Jan 2011 21:03:28 GMT
+    0.23 - Fri, 12 Aug 2011 02:17:04 GMT
+    0.23 - Tue, 01 Nov 2011 14:29:31 GMT
+    0.23 - Wed, 05 Nov 1997 16:24:58 GMT
+    0.23 - Tue, 11 Sep 2012 08:23:05 GMT
+    0.23 - Fri, 08 Jun 2012 17:47:41 GMT
+    0.23 - Sun, 09 Sep 2012 00:23:41 GMT
+    1.39 - Sun, 09 Sep 2012 00:21:42 GMT
+    0.23 - Mon, 17 Sep 2012 19:46:43 GMT
+    0.23 - Sun, 09 Sep 2012 01:10:04 GMT
+    0.23 - Mon, 21 May 2012 01:28:19 GMT
+    0.23 - Sun, 11 Dec 2011 19:27:26 GMT
+    0.46 - Sun, 09 Sep 2012 00:23:42 GMT
+    0.46 - Sun, 02 Oct 2011 06:07:33 GMT
+    0.23 - Fri, 14 Sep 2012 07:59:55 GMT
+    0.93 - Fri, 14 Sep 2012 07:59:56 GMT
+    0.69 - Tue, 03 Apr 2012 00:41:02 GMT
+    0.23 - Mon, 11 Aug 2008 22:53:51 GMT
+    0.46 - Fri, 08 Jul 2011 18:11:32 GMT
+    0.23 - Sun, 02 Sep 2012 21:31:18 GMT
+    0.23 - Wed, 14 Mar 2012 00:22:42 GMT
+    0.23 - Sun, 02 Oct 2011 06:02:12 GMT
+    0.23 - Sun, 09 Sep 2012 02:14:53 GMT
+    0.46 - Tue, 14 Aug 2012 22:22:44 GMT
+    0.23 - Wed, 09 Sep 2009 18:30:01 GMT
+    0.23 - Sat, 09 Jun 2012 05:00:17 GMT
+    2.31 - Thu, 15 Sep 2011 17:09:16 GMT
+    0.23 - Thu, 19 Jun 2008 22:12:56 GMT
+    0.23 - Tue, 04 Sep 2012 16:58:37 GMT
+    0.23 - Mon, 18 Jun 2012 22:29:44 GMT
+    0.23 - Wed, 19 Sep 2012 12:43:48 GMT
+    0.23 - Thu, 03 Nov 2011 19:14:56 GMT
+    0.46 - Sun, 09 Sep 2012 01:16:58 GMT
+    0.23 - Wed, 22 Aug 2012 21:07:37 GMT
+    0.23 - Sat, 28 Jul 2012 02:41:22 GMT
+    0.23 - Tue, 11 Sep 2012 19:24:35 GMT
+    0.23 - Wed, 18 Jul 2012 18:37:11 GMT
+    0.69 - Sat, 04 Jun 2011 18:36:31 GMT
+    0.69 - Fri, 08 Jun 2012 19:23:48 GMT
+    0.23 - Tue, 04 Sep 2012 19:11:44 GMT
+    0.93 - Tue, 24 Jul 2012 23:04:27 GMT
+    0.23 - Sat, 30 Apr 2011 04:23:11 GMT
+    0.69 - Fri, 08 Jun 2012 17:55:15 GMT
+    0.46 - Wed, 19 Sep 2012 12:43:42 GMT
+    0.23 - Thu, 13 Sep 2012 21:31:42 GMT
+    2.31 - Sun, 09 Sep 2012 00:16:30 GMT
+    0.23 - Fri, 27 Apr 2012 22:45:02 GMT
+    0.23 - Mon, 12 May 2008 19:42:54 GMT
+    0.23 - Tue, 20 Mar 2012 05:48:10 GMT
+    0.23 - Sun, 09 Sep 2012 00:24:04 GMT
+  referer: 
+    13.16 - http://www.apple.com/mac/
+    10.83 - http://www.apple.com/itunes/
+    32.91 - http://www.apple.com/
+    2.76 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2667598368
+    2.97 - http://www.apple.com/pr/
+    0.21 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=2667598368
+    0.64 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=4227879455
+    4.25 - http://www.apple.com/apple-events/september-2012/
+    0.64 - http://www.apple.com/legal/
+    20.59 - http://www.apple.com/iphone/
+    0.21 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=4227879455
+    1.91 - http://www.apple.com/buy/
+    8.70 - http://www.apple.com/hotnews/
+    0.21 - http://www.apple.com/jobs/
+  pragma: 
+    100.00 - no-cache
+  if-modified-since: 
+    3.85 - Sun, 09 Sep 2012 00:25:47 GMT
+    3.85 - Tue, 11 Sep 2012 21:38:55 GMT
+    3.85 - Sun, 09 Sep 2012 00:25:49 GMT
+    11.54 - Sun, 09 Sep 2012 00:21:42 GMT
+    11.54 - Sun, 09 Sep 2012 00:25:50 GMT
+    7.69 - Sun, 09 Sep 2012 00:21:41 GMT
+    3.85 - Wed, 12 Sep 2012 01:00:49 GMT
+    3.85 - Sat, 17 Dec 2011 00:28:45 GMT
+    3.85 - Thu, 21 Apr 2011 20:13:41 GMT
+    11.54 - Sun, 09 Sep 2012 00:25:48 GMT
+    3.85 - Fri, 08 Jun 2012 19:23:48 GMT
+    3.85 - Mon, 30 Apr 2012 23:47:33 GMT
+    3.85 - Fri, 14 Sep 2012 07:59:56 GMT
+    7.69 - Sun, 09 Sep 2012 00:21:43 GMT
+    3.85 - Fri, 11 Jul 2008 11:54:18 GMT
+    3.85 - Thu, 22 Dec 2011 01:44:20 GMT
+    3.85 - Tue, 11 Sep 2012 21:38:54 GMT
+    3.85 - Wed, 12 Sep 2012 01:02:03 GMT
+  date: 
+    2.15 - Mon, 17 Sep 2012 11:25:40 GMT
+    0.21 - Tue, 24 Jul 2012 11:52:11 GMT
+    6.87 - Thu, 13 Sep 2012 08:18:15 GMT
+    18.24 - Tue, 18 Sep 2012 12:43:34 GMT
+    5.36 - Mon, 17 Sep 2012 11:25:37 GMT
+    0.43 - Mon, 17 Sep 2012 11:25:38 GMT
+    0.86 - Fri, 14 Sep 2012 09:04:12 GMT
+    5.15 - Tue, 18 Sep 2012 12:43:45 GMT
+    6.65 - Tue, 18 Sep 2012 12:43:48 GMT
+    2.58 - Tue, 18 Sep 2012 12:25:34 GMT
+    0.64 - Fri, 14 Sep 2012 07:22:57 GMT
+    5.15 - Tue, 18 Sep 2012 12:43:47 GMT
+    0.21 - Tue, 18 Sep 2012 12:43:50 GMT
+    0.21 - Tue, 18 Sep 2012 12:29:47 GMT
+    1.93 - Mon, 17 Sep 2012 11:25:41 GMT
+    0.21 - Thu, 13 Sep 2012 10:18:05 GMT
+    1.07 - Tue, 18 Sep 2012 12:43:46 GMT
+    0.21 - Fri, 14 Sep 2012 08:54:30 GMT
+    0.86 - Thu, 13 Sep 2012 10:18:02 GMT
+    2.15 - Tue, 18 Sep 2012 12:43:49 GMT
+    0.64 - Thu, 13 Sep 2012 08:18:16 GMT
+    0.86 - Thu, 19 Jul 2012 09:14:33 GMT
+    0.43 - Tue, 03 Jul 2012 09:59:15 GMT
+    0.64 - Mon, 17 Sep 2012 13:20:50 GMT
+    7.73 - Tue, 18 Sep 2012 12:43:41 GMT
+    0.21 - Fri, 14 Sep 2012 06:03:41 GMT
+    1.07 - Thu, 19 Jul 2012 09:14:34 GMT
+    4.72 - Tue, 18 Sep 2012 12:43:43 GMT
+    0.21 - Tue, 18 Sep 2012 12:31:26 GMT
+    0.21 - Fri, 14 Sep 2012 08:54:18 GMT
+    9.01 - Tue, 18 Sep 2012 12:43:44 GMT
+    0.43 - Thu, 13 Sep 2012 10:18:03 GMT
+    0.21 - Tue, 04 Sep 2012 15:31:01 GMT
+    12.45 - Tue, 18 Sep 2012 12:43:42 GMT
+  access-control-allow-origin: 
+    100.00 - *
+  x-serial: 
+    100.00 - 199
+  :path: 
+    1.69 - /global/ac_base/ac_base.js
+    0.21 - /iphone/home/images/gallery_display_title_large.png
+    0.21 - /hotnews/images/featured/appleintroducesiphone5201209131429.jpg
+    0.21 - /iphone/home/images/gallery_wireless_title_large.png
+    0.21 - /global/nav/images/globalsearch_bg.png
+    0.21 - /itunes/styles/itunes.css
+    0.21 - /pr/images/element-title-20090909us.png
+    0.21 - /mac/home/images/promo_macbook_pro.png
+    0.21 - /hotnews/
+    0.21 - /mac/home/images/productbrowser/magictrackpad.jpg
+    0.21 - /global/ac_media_player/elements/quicktime/ac_media_regular_controls.png
+    0.42 - /hotnews/promos/images/ipod_touch_promotile.jpg
+    0.21 - /itunes/home/images/hero_gallery_1.png
+    0.21 - /iphone/home/images/gallery_fallback_ios6.jpg
+    0.21 - /global/elements/icons/external10x10_ccc999.gif
+    0.21 - /main/rss/retail/stores.xml
+    0.21 - /hotnews/images/boxtop_linkarrow20080313.gif
+    0.42 - /iphone/images/buystrip_aos.png
+    0.21 - /mac/home/images/buystrip_extra_icon_appstore.png
+    0.21 - /hotnews/feeds/all.json
+    0.21 - /mac/home/images/productbrowser/apple_remote_desktop.jpg
+    0.21 - /iphone/home/images/gallery_camera_title_small.png
+    0.42 - /iphone/images/product_title.png
+    0.21 - /itunes/home/images/bucket_itunes_match.png
+    0.21 - /v/iphone/c/images/productheader_divider.jpg
+    0.21 - /iphone/home/images/gallery_wireless.jpg
+    0.21 - /pr/images/element-bg-contact-20090909.gif
+    0.21 - /mac/home/images/productbrowser/magicmouse.jpg
+    0.42 - /iphone/home/images/wireless_title.png
+    0.21 - /home/images/hero_fallback.jpg
+    0.21 - /iphone/home/images/gallery_display_title_small.png
+    0.21 - /global/scripts/pagingview.js
+    0.21 - /global/styles/slider.css
+    0.21 - /global/elements/buttons/preorders.png
+    0.21 - /mac/home/styles/promos.css
+    1.69 - /global/ac_retina/ac_retina.js
+    0.21 - /iphone/home/images/gallery_a6_title_small.png
+    0.21 - /global/elements/itunesmodule/background.jpg
+    0.64 - /global/scripts/swap_view.js
+    0.42 - /iphone/images/buystrip_compare.jpg
+    2.12 - /global/scripts/apple_core.js
+    0.42 - /iphone/home/images/wireless_hero.jpg
+    0.21 - /us/r30/Features/v4/6d/f6/92/6df69278-9d9a-ba58-e7bf-d57ed1c6c25c/mza_2014829189027181487.png
+    0.21 - /iphone/home/images/gallery_wireless_title_small.png
+    0.21 - /global/elements/itunesmodule/background_bottom.jpg
+    0.21 - /b/ss/appleglobal,appleusappleevents/1/H.22.1/s23507853522896?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A46%202%20-120&cl=63072000&pageName=apple%20events%20-%20wwdc%202012%20keynote%20(us)&g=http%3A%2F%2Fwww.apple.com%2Fapple-events%2Fseptember-2012%2F&r=http%3A%2F%2Fwww.apple.com%2Fiphone%2F&cc=USD&ch=www.us.apple-events&server=new%20approach&h1=www.us.apple-events&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c14=iphone%20-%20index%2Ftab%20(us)&c15=no%20zip&c17=21%3A21&c18=quicktime%207.x&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&c48=1&c49=D%3Ds_vi&c50=apple-events%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /mac/home/images/promo_mountain_lion.png
+    0.42 - /iphone/images/buystrip_retail.png
+    0.21 - /cgi-bin/blockpage.cgi?ws-session=4227879455
+    2.12 - /global/styles/base.css
+    0.21 - /iphone/home/images/gallery_design.jpg
+    0.21 - /iphone/home/images/gallery_fallback_design.jpg
+    0.21 - /pr/images/iconrss27x15.gif
+    0.21 - /buy/images/shopretail.jpg
+    0.21 - /hotnews/images/box_236_bg20080313.png
+    0.21 - /global/nav/images/globalnav_text.svg
+    0.21 - /en/Default/blockStyle.css
+    0.42 - /iphone/images/buystrip_applestoreapp_icon.png
+    0.21 - /mac/home/images/morearrow_green.gif
+    0.21 - /mac/home/images/why_mac_learning.jpg
+    0.64 - /global/scripts/view_master_tracker.js
+    0.21 - /b/ss/appleglobal,applehome/1/H.22.1/s2133624691516?AQB=1&pccr=true&vidn=282C363E85013281-6000010920115864&&ndh=1&t=18%2F8%2F2012%2014%3A43%3A41%202%20-120&cl=63072000&pageName=apple%20-%20index%2Ftab%20(us)&g=http%3A%2F%2Fwww.apple.com%2F&r=http%3A%2F%2Fwww.apple.com%2F&cc=USD&ch=www.us.homepage&server=new%20approach&h1=www.us.homepage&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c15=no%20zip&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&v43=windows&v44=670&c48=1&c49=D%3Ds_vi&c50=homepage%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /global/elements/breadory/breadcrumb_separator.svg
+    0.21 - /mac/home/images/productbrowser/macmini.jpg
+    0.21 - /v/mac/home/c/images/showcase_divider.jpg
+    0.21 - /global/ac_media_player/scripts/ac_media_languages/en-US.json
+    0.64 - /global/scripts/promomanager.js
+    0.21 - /mac/home/images/productbrowser/macmini_server.jpg
+    0.42 - /startpage/images/promo_iphone5.jpg
+    0.21 - /hotnews/scripts/hotnewspromos.js
+    0.21 - /apple-events/september-2012/images/september_2012_posterframe.jpg
+    0.21 - /Images/block.png
+    2.12 - /global/nav/styles/enhanced.css
+    0.21 - /itunes/home/images/bucket_itunes_match_title.png
+    0.21 - /v/mac/home/c/styles/promos.css
+    0.21 - /mac/home/images/productbrowser/macpro_server.jpg
+    0.21 - /iphone/home/images/gallery_fallback_display.jpg
+    0.21 - /global/elements/breadory/breadcrumb_home.svg
+    0.42 - /iphone/home/images/video_thumb_iphone.jpg
+    0.21 - /v/itunes/home/a/styles/home.css
+    0.21 - /global/nav/images/globalnav_text.png
+    2.12 - /global/scripts/search_decorator.js
+    0.21 - /cgi-bin/block_message.cgi?ws-session=4227879455
+    0.21 - /global/elements/productbrowser/carat_active.png
+    0.21 - /mac/home/images/productbrowser/airportextreme.jpg
+    0.21 - /v/itunes/a/images/gradient_texture.jpg
+    0.21 - /mac/home/images/college_student_sept_2012.jpg
+    0.21 - /mac/home/images/productbrowser/timecapsule.jpg
+    0.21 - /v/mac/home/c/styles/mac.css
+    0.21 - /v/iphone/home/c/images/overview_divider_down.jpg
+    0.21 - /mac/home/images/productbrowser/macosx_mountainlion.jpg
+    0.21 - /v/iphone/home/c/images/overview_divider_up.jpg
+    0.42 - /v/iphone/c/styles/iphone.css
+    0.21 - /legal/legal.css
+    0.64 - /global/scripts/ac_autogallery.js
+    0.21 - /mac/home/images/productbrowser/display.jpg
+    1.06 - /en/Default/security.js
+    0.21 - /home/styles/home.css
+    0.21 - /iphone/home/images/gallery_ios6_title_large.png
+    0.21 - /global/elements/icons/globaliconpdf12x12.gif
+    0.21 - /global/scripts/itmsCheck.js
+    0.21 - /trailers/home/promos/images/itunes-movie-trailers-app_134x193.jpg
+    0.21 - /v/mac/home/c/images/dividerup.jpg
+    0.42 - /iphone/home/images/a6_hero.png
+    0.21 - /mac/home/images/buystrip_title_visit.png
+    0.21 - /mac/home/images/productbrowser/aperture.jpg
+    0.21 - /v/apple-events/a/styles/apple-events.css
+    0.21 - /mac/home/images/why_mac_upgrade.png
+    0.42 - /global/styles/ac_media.css
+    0.21 - /us/r30/Features/v4/51/af/fa/51affa41-f10e-42b9-9349-86a57708c4a9/mza_7193320592437240517.png
+    0.21 - /iphone/home/images/gallery_ios6_small.jpg
+    0.21 - /pr/images/element-bg-boxtitle-20090909.gif
+    0.21 - /iphone/home/images/gallery_design_title_small.png
+    0.21 - /cgi-bin/block_message.cgi?ws-session=2667598368
+    0.21 - /b/ss/appleglobal,appleusbuy/1/H.22.1/s22204146129079?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A47%202%20-120&cl=63072000&pageName=where%20to%20buy%20-%20index%20(us)&g=http%3A%2F%2Fwww.apple.com%2Fbuy%2F&r=http%3A%2F%2Fwww.apple.com%2Fapple-events%2Fseptember-2012%2F&cc=USD&ch=www.us.buy&server=new%20approach&h1=www.us.buy&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c14=v%40s%3A%20quicktime%20-%20september%202012%20keynote&c15=no%20zip&c17=60%3A60&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&c48=1&c49=D%3Ds_vi&c50=buy%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /apple-events/images/product_title_20100525.gif
+    0.21 - /cgi-bin/blockpage.cgi?ws-session=3741340193
+    0.21 - /global/elements/quicktime/loading.gif
+    0.21 - /global/scripts/store_selector.js
+    0.21 - /global/ac_media_player/elements/quicktime/qt_loading848x480.gif
+    0.21 - /trailers/independent/safetynotguaranteed/images/poster.jpg
+    0.21 - /trailers/home/promos/images/swath-itunespage2.jpg
+    0.21 - /global/elements/breadory/directory_capbg.png
+    0.42 - /iphone/home/images/design_title.png
+    0.21 - /mac/home/images/buystrip_title_buy.png
+    0.21 - /apple-events/september-2012/images/september_2012_title.gif
+    0.21 - /us/r30/Features/v4/27/73/a3/2773a303-7351-b303-69cd-70f0b684e6f5/mza_8051892492970025998.png
+    0.21 - /mac/home/images/productbrowser/iwork.jpg
+    0.21 - /us/r30/Features/v4/60/37/7b/60377b3c-5ec8-3edc-3b5d-521612563721/mza_1194175774285440849.png
+    0.21 - /global/elements/itunesmodule/twitter_icon.png
+    0.21 - /mac/home/images/buystrip_title_call.png
+    0.21 - /global/elements/itunesmodule/facebook_appstore_title.png
+    0.21 - /v/itunes/home/a/images/download_bg.jpg
+    0.42 - /startpage/images/promo_backtoschool_sept_2012.jpg
+    0.21 - /global/nav/images/globalsearch_spinner.gif
+    0.21 - /global/nav/images/globalheader.png
+    0.21 - /iphone/home/images/gallery_a6_title_medium.png
+    0.21 - /mac/home/images/productbrowser/airportexpress.jpg
+    0.21 - /v/iphone/c/images/buystrip_gradient_up.png
+    0.42 - /iphone/home/images/design_hero.jpg
+    0.21 - /global/elements/itunesmodule/facebook_itunes_icon.png
+    0.21 - /v/home/l/images/video_thumb_keynote.jpg
+    0.21 - /global/elements/arrows/paddle_prev.png
+    0.21 - /itunes/home/images/hero_title.png
+    0.21 - /home/images/title.png
+    0.21 - /buy/images/shoponline_20110811.jpg
+    0.21 - /hotnews/styles/hotnews.css
+    0.21 - /mac/home/images/productbrowser/logic_pro.jpg
+    0.42 - /global/ac_media_player/styles/ac_media.css
+    0.21 - /mac/home/images/productbrowser/macbookair.jpg
+    0.21 - /apple-events/september-2012/
+    0.21 - /pr/feeds/all.json
+    0.21 - /v/home/l/styles/billboard.css
+    0.21 - /global/ac_media_player/elements/quicktime/snow_leopard_controller_settings_controls.png
+    0.42 - /global/scripts/ac_media.js
+    0.21 - /mac/home/images/college_title_sept_2012.png
+    0.21 - /main/elements/spacer.gif
+    0.21 - /mac/home/images/promo_macbook_air.png
+    0.21 - /trailers/dreamworks/riseoftheguardians/images/poster.jpg
+    0.21 - /b/ss/appleglobal,appleusmac/1/H.22.1/s28823103266768?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A42%202%20-120&cl=63072000&pageName=mac%20-%20index%2Ftab%20(us)&g=http%3A%2F%2Fwww.apple.com%2Fmac%2F&r=http%3A%2F%2Fwww.apple.com%2F&cc=USD&ch=www.us.mac&server=new%20approach&c1=www.us.mac.index&h1=www.us.mac&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c14=apple%20-%20index%2Ftab%20(us)&c15=no%20zip&c17=75%3A75&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&c48=1&c49=D%3Ds_vi&c50=mac%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /plugins/like.php?app_id=116556461780510&href=http%3A%2F%2Fwww.facebook.com%2FAppStore&send=false&layout=box_count&width=85&show_faces=false&action=like&colorscheme=light&font=lucida+grande&height=90&locale=en_US
+    0.21 - /global/ac_media_player/elements/quicktime/ac_media_regular_background.png
+    0.21 - /itunes/images/product_title.png
+    0.21 - /v/itunes/b/styles/itunes.css
+    0.21 - /global/elements/itunesmodule/twitter_title.png
+    0.21 - /global/elements/buttons/buynows_arrow.png
+    0.21 - /cgi-bin/blockOptions.cgi?ws-session=4227879455
+    0.21 - /hotnews/images/featured/appleintroducesnewipodtou201209131429.jpg
+    2.12 - /global/elements/flags/22x22/usa.png
+    0.21 - /iphone/home/images/gallery_camera_title_large.png
+    0.21 - /itunes/home/images/comingsoon_violator.png
+    0.21 - /about/images/loading20080701.gif
+    0.21 - /buy/images/shopnow.gif
+    0.21 - /iphone/home/images/gallery_fallback_camera.jpg
+    0.21 - /buy/
+    0.21 - /v/mac/home/c/styles/reveal.css
+    0.21 - /iphone/home/images/gallery_design_title_large.png
+    0.42 - /iphone/
+    0.21 - /itunespromos/scripts/tracking.js
+    0.42 - /iphone/images/buystrip_phone.png
+    2.12 - /global/scripts/browserdetect.js
+    0.21 - /Images/wslogo_block_page.png
+    0.21 - /hotnews/images/productheader_title20110823.gif
+    0.21 - /legal/
+    0.21 - /iphone/home/images/gallery_display.jpg
+    0.21 - /hotnews/images/contentheading_bgtop20080313.gif
+    0.21 - /itunes/home/images/bucket_apple_tv_title.png
+    2.12 - /global/nav/scripts/globalnav.js
+    0.42 - /iphone/home/styles/home.css
+    0.21 - /mac/home/images/productbrowser/macbookpro.jpg
+    0.21 - /mac/home/images/productbrowser/safari.jpg
+    0.42 - /iphone/styles/iphone.css
+    0.21 - /iphone/home/images/gallery_fallback_hero.jpg
+    0.42 - /startpage/images/promo_ios6_preview.jpg
+    2.12 - /global/scripts/lib/scriptaculous.js
+    0.21 - /global/nav/images/globalnav.png
+    0.21 - /buy/images/findareseller.jpg
+    0.21 - /hotnews/images/boxtopblue20080313.gif
+    0.21 - /global/scripts/reveal.js
+    0.21 - /mac/
+    0.21 - /en/Default/master.js
+    0.21 - /v/iphone/c/images/video_play_medium.svg
+    0.21 - /itunes/home/images/bucket_gift_cards_title.png
+    0.21 - /jobs/
+    2.12 - /metrics/scripts/s_code_h.js
+    0.21 - /mac/home/images/promo_lead_macbook_pro.jpg
+    0.21 - /hotnews/scripts/pr_feed.js
+    0.42 - /us/r30/Features/v4/d8/a7/af/d8a7afd5-451b-0584-b6ad-cdd57dc80602/mza_8909748069048884844.png
+    2.12 - /global/nav/styles/navigation.css
+    0.42 - /v/iphone/home/c/styles/home.css
+    0.21 - /global/elements/buttons/downloadituness.png
+    0.42 - /v/iphone/home/c/images/video_thumb_keynote.jpg
+    0.21 - /iphone/home/images/gallery_hero_title_large.png
+    0.85 - /en/Default/base64.js
+    0.21 - /itunes/home/images/bucket_gift_card.png
+    0.21 - /mac/home/images/productbrowser/macpro.jpg
+    0.64 - /global/scripts/lib/event_mixins.js
+    0.21 - /mac/home/images/productbrowser/imac.jpg
+    0.21 - /pr/
+    0.42 - /hotnews/promos/images/ipod_nano_promotile.jpg
+    0.21 - /apple-events/images/events_button_hd_20100525.gif
+    0.21 - /b/ss/appleglobal,appleuscorporate/1/H.22.1/s24214079135563?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A50%202%20-120&cl=63072000&pageName=legal%20(us)&g=http%3A%2F%2Fwww.apple.com%2Flegal%2F&r=http%3A%2F%2Fwww.apple.com%2Fjobs%2F&cc=USD&ch=www.us.legal&server=new%20approach&h1=www.us.legal&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c14=pr%20-%20index%20(us)&c15=no%20zip&c17=57%3A57&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&c48=1&c49=D%3Ds_vi&c50=legal%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /global/elements/itunesmodule/title.png
+    0.21 - /iphone/home/images/gallery_hero_title_small.png
+    0.21 - /v/home/l/scripts/hero_resize.js
+    0.21 - /iphone/home/images/gallery_fallback_wireless.jpg
+    0.21 - /hotnews/images/contentheading_bgbottom20080313.gif
+    0.42 - /iphone/home/images/display_hero.png
+    0.21 - /pr/images/element-bg-titlebar-20090909.gif
+    0.21 - /iphone/home/images/gallery_fallback_a6.jpg
+    0.21 - /plugins/like.php?app_id=161583840592879&href=http%3A%2F%2Fwww.facebook.com%2FiTunes&send=false&layout=box_count&width=85&show_faces=false&action=like&colorscheme=light&font=lucida+grande&height=90&locale=en_US
+    0.42 - /us/r30/Features/v4/33/ce/86/33ce86d3-f27c-ab68-e1b8-771bad8188b4/mza_5465862106522302253.png
+    0.42 - /iphone/home/images/a6_title.png
+    0.21 - /b/ss/appleglobal,appleushotnews/1/H.22.1/s22657285369932?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A48%202%20-120&cl=63072000&pageName=hot%20news%20-%20index%20(us)&g=http%3A%2F%2Fwww.apple.com%2Fhotnews%2F&r=http%3A%2F%2Fwww.apple.com%2Fbuy%2F&cc=USD&ch=www.us.hotnews&server=new%20approach&h1=www.us.hotnews&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c12=no%20itunes&c14=where%20to%20buy%20-%20index%20(us)&c15=no%20zip&c17=48%3A48&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&c48=1&c49=D%3Ds_vi&c50=hotnews%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /en/Default/master.css
+    0.21 - /hotnews/scripts/promotracker.js
+    0.21 - /cgi-bin/blockpage.cgi?ws-session=2667598368
+    0.21 - /hotnews/images/box_236_capbottom20080313.png
+    0.21 - /b/ss/appleglobal,appleuspr/1/H.22.1/s24702871767804?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A49%202%20-120&cl=63072000&pageName=pr%20-%20index%20(us)&g=http%3A%2F%2Fwww.apple.com%2Fpr%2F&r=http%3A%2F%2Fwww.apple.com%2Fhotnews%2F&cc=USD&ch=www.us.pr&server=new%20approach&h1=www.us.pr&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c14=hot%20news%20-%20index%20(us)&c15=no%20zip&c17=18%3A18&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&c48=1&c49=D%3Ds_vi&c50=pr%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /iphone/home/images/gallery_a6.jpg
+    0.21 - /home/images/hero.jpg
+    0.21 - /trailers/wb/darkshadows/images/poster.jpg
+    0.21 - /pr/images/resources-products-20120216.png
+    0.21 - /v/home/l/images/video_play_small.png
+    0.21 - /buy/images/index_title.gif
+    0.21 - /hotnews/images/rss_icon20080313.gif
+    0.21 - /b/ss/appleglobal,applehome/1/H.22.1/s2133624691516?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A41%202%20-120&cl=63072000&pageName=apple%20-%20index%2Ftab%20(us)&g=http%3A%2F%2Fwww.apple.com%2F&r=http%3A%2F%2Fwww.apple.com%2F&cc=USD&ch=www.us.homepage&server=new%20approach&h1=www.us.homepage&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c15=no%20zip&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&v43=windows&v44=670&c48=1&c49=D%3Ds_vi&c50=homepage%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /129opiygabsdvibsdfobsd/event/url.js
+    0.42 - /iphone/images/buystrip_compare_title.png
+    2.12 - /global/scripts/lib/prototype.js
+    0.21 - /itunes/home/images/bucket_apple_tv.png
+    0.21 - /global/elements/arrows/paddle_next.png
+    0.21 - /
+    0.21 - /global/ac_media_player/elements/quicktime/settings-menu-arrow-down.png
+    0.21 - /global/scripts/productbrowser.js
+    0.21 - /pr/scripts/prpromos.js
+    0.21 - /global/elements/itunesmodule/facebook_itunes_title.png
+    0.21 - /v/home/l/images/video_thumb_iphone.jpg
+    0.21 - /v/apple-events/a/scripts/apple-events.js
+    0.21 - /b/ss/appleglobal,appleitunes,applewwevents/1/H.22.1/s22394176162779?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A44%202%20-120&cl=63072000&pageName=itunes%20-%20index%2Ftab%20(us)&g=http%3A%2F%2Fwww.apple.com%2Fitunes%2F&r=http%3A%2F%2Fwww.apple.com%2Fiphone%2F&cc=USD&ch=www.us.itunes&server=new%20approach&c1=e%3Aseptember%20special%20event%20-%202012%20(us)&h1=www.us.itunes&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c14=iphone%20-%20index%2Ftab%20(us)&c15=no%20zip&c17=21%3A21&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&c48=1&c49=D%3Ds_vi&c50=itunes%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /b/ss/appleglobal,appleusip,applewwevents/1/H.22.1/s27144910895731?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A45%202%20-120&cl=63072000&pageName=iphone%20-%20index%2Ftab%20(us)&g=http%3A%2F%2Fwww.apple.com%2Fiphone%2F&r=http%3A%2F%2Fwww.apple.com%2Fitunes%2F&cc=USD&ch=www.us.ip&server=new%20approach&c1=e%3Aseptember%20special%20event%20-%202012%20(us)&h1=www.us.ip&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c14=itunes%20-%20index%2Ftab%20(us)&c15=no%20zip&c17=28%3A28&c18=quicktime%207.x&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&v43=windows&v44=670&c48=2&c49=D%3Ds_vi&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /itunes/home/images/bucket_itunes_preview.png
+    0.21 - /trailers/universal/battleship/images/poster.jpg
+    0.21 - /global/styles/productbrowser.css
+    0.21 - /us/r30/Features/v4/78/95/4e/78954e8f-2c2f-76c5-3034-39b587e6c8f8/mza_1909257939776422891.png
+    0.21 - /v/home/l/styles/home.css
+    0.21 - /itunes/home/images/bucket_itunes_preview_title.png
+    0.21 - /itunes/home/images/download_title.png
+    0.21 - /mac/home/images/buystrip_hero.png
+    0.21 - /apple-events/images/events_button_quicktime_20100525.gif
+    0.42 - /iphone/home/images/display_title.png
+    0.21 - /global/nav/images/globalsearch_field.png
+    0.21 - /b/ss/appleglobal,appleusip,applewwevents/1/H.22.1/s23723802806343?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A43%202%20-120&cl=63072000&pageName=iphone%20-%20index%2Ftab%20(us)&g=http%3A%2F%2Fwww.apple.com%2Fiphone%2F&r=http%3A%2F%2Fwww.apple.com%2Fmac%2F&cc=USD&ch=www.us.ip&server=new%20approach&c1=e%3Aseptember%20special%20event%20-%202012%20(us)&h1=www.us.ip&c4=D%3Dg&c5=win32&c6=D%3D%22%3A%20%22%2BpageName&c9=windows&c14=mac%20-%20index%2Ftab%20(us)&c15=no%20zip&c17=34%3A34&c18=quicktime%207.x&c19=flash%2011&c20=non-store%20kiosk&c25=other%20nav%20or%20none&c28=670&v43=windows&v44=670&c48=1&c49=D%3Ds_vi&c50=ip%3D1&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&AQE=1
+    0.21 - /apple-events/september-2012/scripts/ac_media.js
+    0.21 - /mac/home/images/productbrowser/final_cut_pro.jpg
+    0.21 - /global/styles/blackout.css
+    0.21 - /global/elements/itunesmodule/facebook_appstore_icon.png
+    0.21 - /itunes/
+    0.21 - /itunes/home/images/download_icon.png
+    0.21 - /global/elements/arrows/morearrow_08c.svg
+    0.21 - /pr/images/120216mba_frontpagehero.png
+    0.21 - /home/styles/billboard.css
+    1.69 - /global/scripts/lib/sizzle.js
+    0.21 - /iphone/home/images/gallery_ios6_title_small.png
+    0.21 - /global/styles/itunesmodule.css
+    0.21 - /b/ss/appleglobal,appleusappleevents/1/H.22.1/s26159024422522?AQB=1&ndh=1&t=18%2F8%2F2012%2014%3A43%3A46%202%20-120&cl=63072000&pageName=v%40s%3A%20quicktime%20-%20september%202012%20keynote&g=http%3A%2F%2Fwww.apple.com%2Fapple-events%2Fseptember-2012%2F&cc=USD&events=event2&h1=www.us.apple-events&c13=v%40s%3A%20quicktime%20-%20september%202012%20keynote&c16=video%20plays&v16=video%20plays&s=1920x1200&c=32&j=1.6&v=Y&k=Y&bw=930&bh=670&p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BAdobe%20Acrobat%3BQuickTime%20Plug-in%207.7.2%3BMicrosoft%20Office%202010%3BJava(TM)%20Platform%20SE%207%20U7%3BJava%20Deployment%20Toolkit%207.0.70.10%3BGoogle%20Update%3BSilverlight%20Plug-In%3B&pe=lnk_o&pev2=V%40S%3A%20QuickTime%20-%20September%202012%20Keynote&AQE=1
+    0.21 - /mac/home/images/productbrowser/ilife.jpg
+    0.21 - /mac/home/images/productbrowser/macosx_server.jpg
+    0.21 - /pr/styles/releases.css
+    0.21 - /iphone/home/images/gallery_camera.jpg
+    0.21 - /legal/images/title_legal20070611.gif
+    0.21 - /itunes/home/styles/home.css
+    0.21 - /hotnews/images/box_236_captop20080313.png
+    0.21 - /global/scripts/crossfade.js
+    0.21 - /iphone/home/images/gallery_hero.jpg
+    0.21 - /global/nav/images/globalsearch_reset.gif
+    0.21 - /v/iphone/c/images/buystrip_gradient.png
+    0.21 - /cgi-bin/blockOptions.cgi?ws-session=2667598368
+    0.21 - /mac/home/images/productbrowser/keyboard.jpg
+    0.21 - /us/r30/Features/v4/b7/1a/d0/b71ad0db-e453-ca27-dc48-e4b829427986/mza_3048771348335619125.png
+    0.42 - /v/iphone/home/c/scripts/overview.js
+    0.21 - /hotnews/scripts/hotnews_feed.js
+  content-encoding: 
+    100.00 - gzip
+  :status-text: 
+    5.51 - Not Modified
+    92.58 - OK
+    0.85 - Moved Temporarily
+    1.06 - unknown
+  age: 
+    0.22 - 1199562
+    0.22 - 358770
+    2.59 - 1089
+    0.22 - 358773
+    3.67 - 447928
+    0.43 - 440742
+    0.22 - 359363
+    0.22 - 4841494
+    5.40 - 91083
+    3.89 - 447927
+    0.22 - 836
+    0.86 - 5282949
+    50.97 - 0
+    3.02 - 1
+    3.02 - 91082
+    1.51 - 91081
+    18.36 - 6
+    0.22 - 738
+    0.22 - 359352
+    0.65 - 84170
+    0.43 - 358768
+    0.43 - 364845
+    0.22 - 364844
+    0.22 - 369604
+    0.22 - 440740
+    0.86 - 440743
+    0.43 - 6662668
+    0.86 - 5282950
+    0.22 - 5282951
+  :status: 
+    92.58 - 200
+    0.85 - 302
+    5.51 - 304
+    1.06 - 0
+  server: 
+    0.25 - Apache
+    97.05 - Apache/2.2.3 (Oracle)
+    2.70 - Omniture DC/2.0.0
+  :scheme: 
+    100.00 - http
+  x-requested-with: 
+    100.00 - XMLHttpRequest
+  x-check-cacheable: 
+    100.00 - YES
+  cookie: 
+    6.67 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_pv=mac%20-%20index%2Ftab%20(us); s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2C; s_invisit_n2_us=3%2C14; s_vnum_n2_us=3%7C1%2C14%7C1; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_ppv=mac%2520-%2520index%2Ftab%2520%2528us%2529%2C34%2C34%2C670%2C; s_orientationHeight=670
+    1.27 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_invisit_n2_us=3%2C14%2C8%2C5; s_vnum_n2_us=3|1,14|1,8|1,5|1; s_pv=iphone%20-%20index%2Ftab%20(us); s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2C; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_ppv=iphone%2520-%2520index%2Ftab%2520%2528us%2529%2C21%2C21%2C670%2C; s_orientationHeight=670
+    3.81 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_pv=iphone%20-%20index%2Ftab%20(us); s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D1%2C; s_invisit_n2_us=3%2C14%2C8; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_ppv=iphone%2520-%2520index%2Ftab%2520%2528us%2529%2C21%2C21%2C670%2C; s_orientationHeight=670
+    4.76 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_pv=apple%20-%20index%2Ftab%20(us); s_orientation=%5B%5BB%5D%5D; s_cc=true; s_ria=Flash%2011%7C; s_pathLength=homepage%3D1%2C; s_invisit_n2_us=3; s_vnum_n2_us=3%7C1; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_ppv=apple%2520-%2520index%2Ftab%2520%2528us%2529%2C75%2C75%2C670%2C; s_orientationHeight=670
+    0.32 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_sq=%5B%5BB%5D%5D; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=iphone%20-%20index%2Ftab%20(us); s_ppv=iphone%2520-%2520index%2Ftab%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D1%2C; s_invisit_n2_us=3%2C14%2C8; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1
+    17.14 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=iphone%20-%20index%2Ftab%20(us); s_ppv=iphone%2520-%2520index%2Ftab%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D1%2C; s_invisit_n2_us=3%2C14%2C8; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1; s_sq=%5B%5BB%5D%5D
+    8.57 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=itunes%20-%20index%2Ftab%20(us); s_ppv=itunes%2520-%2520index%2Ftab%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D1%2Citunes%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1; s_sq=%5B%5BB%5D%5D
+    0.32 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_pv=apple%20-%20index%2Ftab%20(us); s_ppv=apple%2520-%2520index%2Ftab%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_ria=Flash%2011%7C; s_pathLength=homepage%3D1%2C; s_invisit_n2_us=3; s_vnum_n2_us=3%7C1; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]
+    0.63 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_pv=itunes%20-%20index%2Ftab%20(us); s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D1%2Citunes%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_ppv=itunes%2520-%2520index%2Ftab%2520%2528us%2529%2C28%2C28%2C670%2C; s_orientationHeight=670
+    1.90 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_pv=apple%20-%20index%2Ftab%20(us); s_ppv=apple%2520-%2520index%2Ftab%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_ria=Flash%2011%7C; s_pathLength=homepage%3D1%2C; s_invisit_n2_us=3; s_vnum_n2_us=3%7C1; s_sq=%5B%5BB%5D%5D
+    1.59 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_pv=hot%20news%20-%20index%20(us); s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2Cbuy%3D1%2Chotnews%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97%2C62%2C39; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1%2C62%7C1%2C39%7C1; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_ppv=hot%2520news%2520-%2520index%2520%2528us%2529%2C18%2C18%2C670%2C; s_orientationHeight=670
+    2.86 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=pr%20-%20index%20(us); s_ppv=pr%2520-%2520index%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2Cbuy%3D1%2Chotnews%3D1%2Cpr%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97%2C62%2C39%2C49; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1%2C62%7C1%2C39%7C1%2C49%7C1; s_sq=%5B%5BB%5D%5D
+    9.52 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR
+    9.84 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=hot%20news%20-%20index%20(us); s_ppv=hot%2520news%2520-%2520index%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2Cbuy%3D1%2Chotnews%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97%2C62%2C39; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1%2C62%7C1%2C39%7C1; s_sq=%5B%5BB%5D%5D
+    5.71 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_invisit_n2_us=3%2C14%2C8%2C5; s_orientationHeight=670; s_vnum_n2_us=3|1,14|1,8|1,5|1; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=iphone%20-%20index%2Ftab%20(us); s_ppv=iphone%2520-%2520index%2Ftab%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2C; s_sq=%5B%5BB%5D%5D
+    0.32 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_sq=%5B%5BB%5D%5D; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=legal%20(us); s_ppv=legal%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2Cbuy%3D1%2Chotnews%3D1%2Cpr%3D1%2Clegal%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97%2C62%2C39%2C49%2C13; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1%2C62%7C1%2C39%7C1%2C49%7C1%2C13%7C1
+    0.95 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_pv=pr%20-%20index%20(us); s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2Cbuy%3D1%2Chotnews%3D1%2Cpr%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97%2C62%2C39%2C49; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1%2C62%7C1%2C39%7C1%2C49%7C1; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_ppv=pr%2520-%2520index%2520%2528us%2529%2C57%2C57%2C670%2C; s_orientationHeight=670
+    2.54 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=apple%20events%20-%20wwdc%202012%20keynote%20(us); s_ppv=apple%2520events%2520-%2520wwdc%25202012%2520keynote%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1; s_sq=%5B%5BB%5D%5D
+    1.59 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientation=%5B%5BB%5D%5D; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=V%40S%3A%20QuickTime%20-%20September%202012%20Keynote; s_cc=true; s_sq=%5B%5BB%5D%5D; s_ppv=apple%2520events%2520-%2520wwdc%25202012%2520keynote%2520%2528us%2529%2C60%2C60%2C670%2C; s_orientationHeight=670
+    0.32 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=legal%20(us); s_ppv=legal%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2Cbuy%3D1%2Chotnews%3D1%2Cpr%3D1%2Clegal%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97%2C62%2C39%2C49%2C13; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1%2C62%7C1%2C39%7C1%2C49%7C1%2C13%7C1; s_sq=%5B%5BB%5D%5D
+    14.92 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=mac%20-%20index%2Ftab%20(us); s_ppv=mac%2520-%2520index%2Ftab%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2C; s_invisit_n2_us=3%2C14; s_vnum_n2_us=3%7C1%2C14%7C1; s_sq=%5B%5BB%5D%5D
+    2.54 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_pv=where%20to%20buy%20-%20index%20(us); s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2Cbuy%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97%2C62; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1%2C62%7C1; s_sq=%5B%5BB%5D%5D; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_ppv=where%2520to%2520buy%2520-%2520index%2520%2528us%2529%2C48%2C48%2C670%2C; s_orientationHeight=670
+    1.90 - ccl=irLlOXWGPlryGGFAh0gJHA==; geo=FR; s_ria=Flash%2011%7C; s_orientationHeight=670; s_vi=[CS]v1|282C363E85013281-6000010920115864[CE]; s_pv=where%20to%20buy%20-%20index%20(us); s_ppv=where%2520to%2520buy%2520-%2520index%2520%2528us%2529; s_orientation=%5B%5BB%5D%5D; s_cc=true; s_pathLength=homepage%3D1%2Cmac%3D1%2Cip%3D2%2Citunes%3D1%2Capple-events%3D1%2Cbuy%3D1%2C; s_invisit_n2_us=3%2C14%2C8%2C5%2C97%2C62; s_vnum_n2_us=3%7C1%2C14%7C1%2C8%7C1%2C5%7C1%2C97%7C1%2C62%7C1; s_sq=%5B%5BB%5D%5D
+  content-type: 
+    0.22 - undefined
+    18.32 - image/jpeg
+    1.08 - image/svg+xml
+    3.45 - text/html; charset=UTF-8
+    24.78 - image/png
+    7.76 - image/gif
+    29.96 - application/x-javascript
+    0.43 - application/json
+    13.79 - text/css
+    0.22 - text/plain
+  :host: 
+    4.45 - 172.19.77.100:15871
+    0.42 - www.facebook.com
+    1.27 - trailers.apple.com
+    0.64 - a4.mzstatic.com
+    2.54 - metrics.apple.com
+    0.21 - events.apple.com.edgesuite.net
+    3.18 - www.apple.com
+    85.81 - images.apple.com
+    0.21 - a1.mzstatic.com
+    0.64 - a3.mzstatic.com
+    0.21 - a2.mzstatic.com
+    0.42 - a5.mzstatic.com
+
+

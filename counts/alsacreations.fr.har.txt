@@ -547,3 +547,713 @@ last-modified        0.518987341772                                     158
 age                  0.615384615385                                     13                  
 content-length       0.821596244131                                     213                 
 :path                0.867346938776                                     196                 
+
+
+Header Frequencies:
+  content-length: 
+    0.47 - 1306
+    0.47 - 665
+    0.94 - 219
+    0.47 - 164
+    0.47 - 495
+    1.88 - 20
+    0.47 - 6000
+    0.94 - 6001
+    0.47 - 3251
+    0.47 - 5623
+    7.04 - 29
+    0.47 - 938
+    0.47 - 284
+    0.47 - 1312
+    0.47 - 33929
+    1.41 - 3482
+    0.47 - 120
+    0.47 - 478
+    0.47 - 3137
+    0.47 - 3402
+    0.47 - 5990
+    0.94 - 129
+    0.47 - 9984
+    0.47 - 1958
+    0.47 - 2498
+    0.47 - 1553
+    0.47 - 329
+    0.47 - 6569
+    0.47 - 425
+    0.47 - 2493
+    0.47 - 7313
+    0.94 - 379
+    0.47 - 1384
+    0.94 - 827
+    0.47 - 1415
+    0.47 - 377
+    0.47 - 10803
+    0.47 - 319
+    0.47 - 2474
+    0.47 - 8236
+    0.47 - 596
+    0.47 - 598
+    0.47 - 315
+    0.47 - 4326
+    0.47 - 270
+    0.47 - 114
+    0.47 - 391
+    0.47 - 113
+    0.47 - 3672
+    0.47 - 6266
+    0.47 - 537
+    0.47 - 39630
+    0.47 - 4807
+    0.47 - 172
+    0.47 - 2268
+    0.47 - 2387
+    0.47 - 5684
+    0.47 - 5130
+    0.47 - 1528
+    0.94 - 910
+    0.47 - 309
+    0.47 - 3584
+    0.47 - 15880
+    0.47 - 6588
+    0.47 - 304
+    0.47 - 27900
+    0.47 - 380
+    0.47 - 7864
+    0.47 - 8453
+    0.47 - 19680
+    0.47 - 386
+    0.47 - 4627
+    0.47 - 103
+    0.47 - 100
+    0.47 - 16712
+    0.47 - 7722
+    0.47 - 12720
+    0.47 - 3390
+    0.47 - 1844
+    0.47 - 35123
+    0.47 - 147
+    0.47 - 5978
+    0.47 - 7421
+    2.35 - 3313
+    0.47 - 32415
+    0.47 - 22621
+    0.47 - 17633
+    0.47 - 200
+    0.47 - 6830
+    0.94 - 243
+    0.47 - 65052
+    0.47 - 1347
+    0.47 - 7919
+    0.47 - 1321
+    0.47 - 66
+    0.47 - 389
+    0.47 - 1713
+    0.47 - 9647
+    0.47 - 7010
+    0.47 - 255
+    0.47 - 8354
+    0.94 - 1580
+    0.47 - 858
+    1.41 - 3293
+    0.47 - 655
+    0.47 - 652
+    0.47 - 569
+    0.47 - 3703
+    0.47 - 9130
+    0.47 - 469
+    0.47 - 1599
+    0.47 - 639
+    0.47 - 467
+    0.47 - 40060
+    0.47 - 463
+    0.47 - 3916
+    0.47 - 22122
+    0.47 - 95
+    0.47 - 12973
+    0.47 - 96
+    0.47 - 4170
+    0.47 - 15015
+    0.47 - 27436
+    0.47 - 4524
+    0.94 - 117
+    0.47 - 1454
+    0.47 - 1749
+    0.47 - 11257
+    0.47 - 1516
+    0.47 - 728
+    0.47 - 2586
+    0.47 - 159
+    0.47 - 4369
+    0.47 - 608
+    0.47 - 6893
+    0.47 - 32111
+    0.47 - 2947
+    0.47 - 236
+    0.47 - 15666
+    0.47 - 233
+    0.94 - 57
+    0.47 - 473
+    1.41 - 42
+    0.47 - 4591
+    0.47 - 1444
+    0.47 - 1118
+    0.47 - 1563
+    0.47 - 6025
+    0.47 - 1279
+    0.47 - 18303
+    0.47 - 143
+    0.47 - 140
+    0.47 - 2649
+    0.47 - 4504
+    0.47 - 6734
+    0.47 - 3350
+    0.47 - 35093
+    0.47 - 484
+    0.47 - 8794
+    0.94 - 2376
+    0.47 - 3428
+    0.47 - 3228
+    0.47 - 7069
+    0.47 - 2337
+    0.47 - 1600
+    0.47 - 266
+    0.47 - 472
+    0.47 - 28752
+    0.47 - 260
+    0.47 - 6331
+    0.47 - 48883
+    0.47 - 1765
+    0.47 - 7508
+    0.47 - 61009
+    0.47 - 246
+  accept-language: 
+    100.00 - fr,fr-fr;q=0.8,en-us;q=0.5,en;q=0.3
+  vary: 
+    36.67 - Host
+    58.33 - Host,Accept-Encoding
+    5.00 - Accept-Encoding
+  accept: 
+    15.82 - */*
+    12.76 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    2.55 - text/css,*/*;q=0.1
+    68.88 - image/png,image/*;q=0.8,*/*;q=0.5
+  :status: 
+    88.78 - 200
+    2.04 - 302
+    9.18 - 304
+  :version: 
+    100.00 - HTTP/1.1
+  x-xss-protection: 
+    100.00 - 1; mode=block
+  content-language: 
+    100.00 - fr
+  keep-alive: 
+    4.68 - timeout=15, max=94
+    1.17 - timeout=15, max=88
+    23.39 - timeout=15, max=100
+    3.51 - timeout=15, max=90
+    4.68 - timeout=15, max=92
+    4.68 - timeout=15, max=93
+    1.17 - timeout=15, max=83
+    4.09 - timeout=15, max=91
+    1.17 - timeout=15, max=85
+    7.60 - timeout=15, max=97
+    1.17 - timeout=15, max=87
+    1.17 - timeout=15, max=86
+    2.92 - timeout=15, max=89
+    6.43 - timeout=15, max=96
+    5.26 - timeout=15, max=95
+    16.37 - timeout=15, max=99
+    9.36 - timeout=15, max=98
+    1.17 - timeout=15, max=84
+  user-agent: 
+    100.00 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:18.0) Gecko/20100101 Firefox/18.0
+  location: 
+    5.26 - http://www.alsacreations.com/
+    94.74 - forum.php
+  :method: 
+    2.04 - post
+    97.96 - get
+  cache-control: 
+    18.97 - max-age=604800
+    4.10 - private, max-age=31536000
+    11.79 - max-age=0
+    2.56 - max-age=5184000
+    0.51 - max-age=15552000
+    6.15 - public, max-age=22222222
+    29.23 - max-age=7776000
+    0.51 - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    9.74 - no-cache, must-revalidate, post-check=0, pre-check=0
+    1.54 - private
+    0.51 - private, max-age=0
+    0.51 - max-age=86400
+    13.33 - max-age=31536000
+    0.51 - public, max-age=31536000
+  accept-encoding: 
+    100.00 - gzip, deflate
+  content-disposition: 
+    100.00 - attachment
+  set-cookie: 
+    9.68 - lv18=1358630889; expires=Fri, 19-Apr-2013 21:28:09 GMT; path=/; domain=.alsacreations.com
+    16.13 - lv=1358630783; expires=Fri, 19-Apr-2013 21:26:23 GMT; path=/; domain=.alsacreations.com
+    38.71 - PHPSESSID=ka8rf57ivkhok1mcmo6fvl3d26; path=/
+    9.68 - lv2=1358630793; expires=Fri, 19-Apr-2013 21:26:33 GMT; path=/; domain=.alsacreations.com
+    19.35 - lv=1358630864; expires=Fri, 19-Apr-2013 21:27:44 GMT; path=/; domain=.alsacreations.com
+    6.45 - lv=1358630884; expires=Fri, 19-Apr-2013 21:28:04 GMT; path=/; domain=.alsacreations.com
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    5.15 - Sun, 19 Jan 2014 21:24:09 GMT
+    1.55 - Fri, 19 Apr 2013 21:24:35 GMT
+    0.52 - Sat, 26 Jan 2013 21:24:25 GMT
+    1.03 - Sat, 19 Jan 2013 21:26:51 GMT
+    8.25 - Fri, 19 Apr 2013 21:24:09 GMT
+    1.03 - Wed, 20 Mar 2013 21:25:53 GMT
+    1.03 - Sat, 19 Jan 2013 21:27:33 GMT
+    1.03 - Sat, 19 Jan 2013 21:26:34 GMT
+    0.52 - Sun, 20 Jan 2013 21:26:24 GMT
+    1.03 - Sat, 26 Jan 2013 21:24:24 GMT
+    0.52 - Sat, 19 Jan 2013 21:26:23 GMT
+    1.03 - Sat, 19 Jan 2013 21:28:10 GMT
+    10.31 - Thu, 19 Nov 1981 08:52:00 GMT
+    1.55 - Thu, 03 Oct 2013 01:22:08 GMT
+    1.03 - Sat, 19 Jan 2013 21:26:24 GMT
+    2.58 - Sat, 19 Jan 2013 21:24:41 GMT
+    2.06 - Fri, 19 Apr 2013 21:24:24 GMT
+    6.19 - Sat, 26 Jan 2013 21:25:53 GMT
+    1.03 - Fri, 19 Apr 2013 21:25:42 GMT
+    1.03 - Fri, 19 Apr 2013 21:25:27 GMT
+    4.12 - Sat, 26 Jan 2013 21:28:28 GMT
+    1.03 - Sat, 19 Jan 2013 21:28:28 GMT
+    0.52 - Fri, 19 Apr 2013 21:24:45 GMT
+    0.52 - Fri, 19 Apr 2013 21:24:36 GMT
+    1.03 - Sat, 26 Jan 2013 21:28:10 GMT
+    1.03 - Sat, 19 Jan 2013 21:28:04 GMT
+    9.28 - Fri, 19 Apr 2013 21:24:11 GMT
+    0.52 - Sun, 19 Jan 2014 00:47:48 GMT
+    1.55 - Fri, 19 Apr 2013 21:24:34 GMT
+    1.03 - Thu, 03 Oct 2013 01:21:25 GMT
+    2.06 - Thu, 03 Oct 2013 01:23:00 GMT
+    0.52 - Wed, 20 Mar 2013 21:24:09 GMT
+    0.52 - Sat, 26 Jan 2013 21:27:45 GMT
+    3.09 - Sun, 19 Jan 2014 21:25:27 GMT
+    0.52 - Sat, 19 Jan 2013 21:28:03 GMT
+    0.52 - Sun, 19 Jan 2014 21:25:11 GMT
+    0.52 - Sat, 19 Jan 2013 21:24:39 GMT
+    0.52 - Sat, 19 Jan 2013 21:24:36 GMT
+    0.52 - Sun, 19 Jan 2014 21:26:18 GMT
+    1.03 - Thu, 03 Oct 2013 01:22:17 GMT
+    1.03 - Sat, 19 Jan 2013 21:27:53 GMT
+    0.52 - Sat, 26 Jan 2013 21:24:34 GMT
+    0.52 - Sun, 19 Jan 2014 21:24:34 GMT
+    2.06 - Fri, 19 Apr 2013 21:24:26 GMT
+    2.06 - Sat, 26 Jan 2013 21:26:24 GMT
+    3.09 - Sat, 26 Jan 2013 21:26:34 GMT
+    1.03 - Fri, 19 Apr 2013 21:26:25 GMT
+    0.52 - Thu, 18 Jul 2013 21:24:09 GMT
+    1.03 - Sat, 19 Jan 2013 21:27:20 GMT
+    0.52 - Sun, 19 Jan 2014 21:24:24 GMT
+    0.52 - Thu, 03 Oct 2013 01:21:26 GMT
+    0.52 - Fri, 19 Apr 2013 21:24:43 GMT
+    0.52 - Sat, 19 Jan 2013 21:27:44 GMT
+    1.03 - Sun, 19 Jan 2014 21:25:53 GMT
+    1.55 - -1
+    0.52 - Wed, 20 Mar 2013 21:24:34 GMT
+    0.52 - Wed, 20 Mar 2013 21:25:27 GMT
+    2.06 - Sun, 19 Jan 2014 21:24:25 GMT
+    1.03 - Sat, 19 Jan 2013 21:27:45 GMT
+    0.52 - Sat, 19 Jan 2013 21:24:35 GMT
+  last-modified: 
+    3.16 - Sat, 01 Dec 2012 14:51:48 GMT
+    0.63 - Mon, 03 Dec 2012 10:20:24 GMT
+    0.63 - Wed, 27 Apr 2005 08:16:50 GMT
+    0.63 - Sat, 01 Dec 2012 14:13:56 GMT
+    0.63 - Mon, 03 Dec 2012 11:27:16 GMT
+    0.63 - Thu, 20 Jan 2011 19:06:07 GMT
+    3.80 - Sat, 01 Dec 2012 14:13:27 GMT
+    0.63 - Mon, 02 Apr 2012 18:24:28 GMT
+    2.53 - Sat, 01 Dec 2012 14:13:29 GMT
+    0.63 - Fri, 02 Apr 2010 07:55:05 GMT
+    0.63 - Fri, 04 Jan 2013 01:20:40 GMT
+    1.90 - Sat, 01 Dec 2012 14:51:44 GMT
+    4.43 - Sat, 01 Dec 2012 14:13:18 GMT
+    0.63 - Sat, 01 Dec 2012 14:51:52 GMT
+    0.63 - Sat, 01 Dec 2012 14:51:45 GMT
+    4.43 - Sat, 01 Dec 2012 14:13:17 GMT
+    0.63 - Tue, 08 Jan 2013 11:35:13 GMT
+    0.63 - Sat, 01 Dec 2012 14:51:51 GMT
+    0.63 - Mon, 25 Jul 2011 08:28:40 GMT
+    1.27 - Sat, 01 Dec 2012 14:11:56 GMT
+    0.63 - Sat, 01 Dec 2012 14:13:10 GMT
+    0.63 - Fri, 25 Jun 2010 16:32:34 GMT
+    0.63 - Wed, 27 Apr 2005 08:16:47 GMT
+    1.27 - Thu, 03 Jan 2013 16:45:56 GMT
+    0.63 - Sat, 01 Dec 2012 14:14:32 GMT
+    0.63 - Fri, 20 Jan 2012 16:07:17 GMT
+    1.27 - Sun, 08 May 2011 11:06:06 GMT
+    1.27 - Sat, 01 Dec 2012 14:51:43 GMT
+    0.63 - Sat, 01 Dec 2012 14:13:42 GMT
+    0.63 - Fri, 28 Dec 2012 19:51:09 GMT
+    1.90 - Wed, 01 Feb 2006 15:25:47 GMT
+    1.90 - Sat, 01 Dec 2012 14:13:20 GMT
+    1.27 - Sat, 01 Dec 2012 14:13:23 GMT
+    3.80 - Sun, 01 Apr 2012 21:37:22 GMT
+    0.63 - Wed, 26 Nov 2008 17:38:18 GMT
+    0.63 - Sat, 01 Dec 2012 14:51:47 GMT
+    1.27 - Sat, 01 Dec 2012 14:13:28 GMT
+    0.63 - Tue, 08 Jan 2013 11:06:25 GMT
+    0.63 - Wed, 27 Apr 2005 08:17:13 GMT
+    0.63 - Fri, 21 Dec 2012 09:20:05 GMT
+    3.16 - Sat, 01 Dec 2012 14:13:30 GMT
+    0.63 - Sat, 01 Dec 2012 14:13:19 GMT
+    0.63 - Mon, 09 Feb 2009 04:37:03 GMT
+    0.63 - Sat, 01 Dec 2012 14:13:45 GMT
+    5.70 - Sat, 01 Dec 2012 13:55:15 GMT
+    2.53 - Sat, 01 Dec 2012 14:13:22 GMT
+    1.90 - Sat, 01 Dec 2012 14:13:25 GMT
+    0.63 - Tue, 15 Jan 2013 10:37:18 GMT
+    0.63 - Tue, 05 Oct 2010 05:56:10 GMT
+    1.27 - Wed, 01 Feb 2006 15:25:53 GMT
+    1.27 - Mon, 19 Nov 2012 21:25:55 GMT
+    0.63 - Thu, 03 Jan 2013 16:27:31 GMT
+    0.63 - Sat, 01 Dec 2012 14:13:41 GMT
+    0.63 - Tue, 14 Dec 2010 13:11:34 GMT
+    1.27 - Wed, 01 Feb 2006 15:25:45 GMT
+    0.63 - Fri, 20 Aug 2010 14:45:18 GMT
+    0.63 - Sat, 18 Nov 2006 23:08:16 GMT
+    0.63 - Sat, 01 Dec 2012 14:51:49 GMT
+    2.53 - Sat, 01 Dec 2012 14:13:14 GMT
+    0.63 - Sat, 01 Dec 2012 14:51:46 GMT
+    1.90 - Sat, 01 Dec 2012 14:13:24 GMT
+    0.63 - Tue, 11 Oct 2011 08:54:33 GMT
+    1.90 - Sat, 01 Dec 2012 14:13:26 GMT
+    1.90 - Wed, 01 Feb 2006 15:25:54 GMT
+    0.63 - Mon, 03 Dec 2012 10:33:46 GMT
+    1.27 - Wed, 01 Feb 2006 15:25:48 GMT
+    0.63 - Sat, 08 Sep 2012 11:55:04 GMT
+    0.63 - Sat, 01 Dec 2012 14:16:43 GMT
+    0.63 - Sat, 01 Dec 2012 14:41:13 GMT
+    0.63 - Sat, 01 Dec 2012 13:55:14 GMT
+    0.63 - Wed, 27 Apr 2005 08:17:15 GMT
+    0.63 - Wed, 26 Nov 2008 12:53:55 GMT
+    0.63 - Thu, 27 Dec 2012 12:33:39 GMT
+    0.63 - Sat, 29 Nov 2008 21:41:44 GMT
+    0.63 - Sun, 02 Dec 2012 21:20:39 GMT
+    1.90 - Sat, 01 Dec 2012 14:13:16 GMT
+    1.90 - Fri, 02 Jan 2009 16:50:04 GMT
+    0.63 - Wed, 26 Nov 2008 12:55:43 GMT
+    0.63 - Fri, 10 Jun 2011 13:44:03 GMT
+    0.63 - Wed, 27 Apr 2005 08:17:20 GMT
+    1.27 - Mon, 14 May 2012 22:40:08 GMT
+    0.63 - Sat, 07 Feb 2009 23:45:18 GMT
+  referer: 
+    13.92 - http://www.alsacreations.com/css/styles20120827.min.css
+    15.46 - http://www.alsacreations.com/
+    2.06 - http://www.alsacreations.com/page/about/
+    16.49 - http://www.alsacreations.com/profil/lire/1-raphael.html
+    5.15 - http://www.alsacreations.com/apprendre/
+    6.70 - http://www.alsacreations.com/outils/lire/1528-mobitestme.html
+    4.12 - http://forum.alsacreations.com/search.php
+    1.03 - http://www.alsacreations.com/quiz/lire/18-jquery-moyen.html
+    1.55 - http://www.alsacreations.com/astuces/
+    1.55 - http://forum.alsacreations.com/forum.php?action=login
+    0.52 - http://www.alsacreations.com/css/quiz.css
+    1.03 - http://www.alsacreations.com/quiz/resultat/18
+    2.58 - http://forum.alsacreations.com/list-18-Critiques-de-vos-sites-code-et-design.html
+    5.15 - http://forum.alsacreations.com/topic-18-65172-1-Amateur-Le-WebHub.html
+    9.28 - http://forum.alsacreations.com/forum.php
+    8.76 - http://www.alsacreations.com/astuce/lire/1110-html5-boilerplate-un-template-puissant-et-complet.html
+    4.64 - http://forum.alsacreations.com/list-2-Semantique-web-et-HTML-XHTML-HTML5.html
+  pragma: 
+    100.00 - no-cache
+  if-modified-since: 
+    48.28 - Mon, 14 May 2012 22:40:08 GMT
+    51.72 - Mon, 25 Jul 2011 08:28:40 GMT
+  date: 
+    1.02 - Fri, 18 Jan 2013 20:31:55 GMT
+    0.51 - Sat, 19 Jan 2013 21:25:26 GMT
+    9.18 - Sat, 19 Jan 2013 21:24:11 GMT
+    1.02 - Sat, 19 Jan 2013 21:26:51 GMT
+    1.02 - Sat, 19 Jan 2013 21:26:18 GMT
+    1.53 - Sat, 19 Jan 2013 21:27:33 GMT
+    0.51 - Sat, 19 Jan 2013 21:24:45 GMT
+    2.55 - Sat, 19 Jan 2013 21:24:25 GMT
+    2.04 - Fri, 18 Jan 2013 20:32:38 GMT
+    14.29 - Sat, 19 Jan 2013 21:24:09 GMT
+    4.08 - Sat, 19 Jan 2013 21:26:34 GMT
+    2.04 - Sat, 19 Jan 2013 21:28:10 GMT
+    0.51 - Sat, 19 Jan 2013 21:26:50 GMT
+    0.51 - Sat, 19 Jan 2013 21:24:32 GMT
+    0.51 - Fri, 18 Jan 2013 20:31:04 GMT
+    3.57 - Sat, 19 Jan 2013 21:26:24 GMT
+    0.51 - Sat, 19 Jan 2013 21:25:11 GMT
+    1.02 - Fri, 18 Jan 2013 20:31:03 GMT
+    0.51 - Sat, 19 Jan 2013 21:27:19 GMT
+    1.02 - Sat, 19 Jan 2013 21:24:08 GMT
+    5.10 - Sat, 19 Jan 2013 21:28:28 GMT
+    1.53 - Sat, 19 Jan 2013 21:27:45 GMT
+    8.16 - Sat, 19 Jan 2013 21:25:53 GMT
+    1.02 - Sat, 19 Jan 2013 21:26:25 GMT
+    1.53 - Sat, 19 Jan 2013 21:28:04 GMT
+    1.53 - Sat, 19 Jan 2013 21:24:43 GMT
+    0.51 - Sat, 19 Jan 2013 21:25:51 GMT
+    3.57 - Sat, 19 Jan 2013 21:24:34 GMT
+    1.02 - Sat, 19 Jan 2013 21:25:42 GMT
+    0.51 - Sat, 19 Jan 2013 21:25:41 GMT
+    1.53 - Sat, 19 Jan 2013 21:27:53 GMT
+    0.51 - Sat, 19 Jan 2013 21:28:03 GMT
+    0.51 - Sat, 19 Jan 2013 21:26:17 GMT
+    1.02 - Sat, 19 Jan 2013 21:24:39 GMT
+    1.02 - Sat, 19 Jan 2013 21:26:23 GMT
+    4.59 - Sat, 19 Jan 2013 21:25:27 GMT
+    3.06 - Sat, 19 Jan 2013 21:24:41 GMT
+    1.02 - Sat, 19 Jan 2013 21:24:36 GMT
+    4.08 - Sat, 19 Jan 2013 21:24:24 GMT
+    1.53 - Fri, 18 Jan 2013 20:31:46 GMT
+    0.51 - Sat, 19 Jan 2013 21:28:09 GMT
+    0.51 - Sat, 19 Jan 2013 21:25:10 GMT
+    1.02 - Sat, 19 Jan 2013 21:27:20 GMT
+    0.51 - Sat, 19 Jan 2013 21:28:27 GMT
+    1.02 - Sat, 19 Jan 2013 21:27:44 GMT
+    0.51 - Sat, 19 Jan 2013 21:26:33 GMT
+    2.04 - Sat, 19 Jan 2013 21:24:26 GMT
+    0.51 - Sat, 19 Jan 2013 00:47:48 GMT
+    2.04 - Sat, 19 Jan 2013 21:24:35 GMT
+  access-control-allow-origin: 
+    100.00 - *
+  :path: 
+    0.51 - /css/img/menu-a-forum.png
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=18&y=12&z=5&s=Ga
+    2.55 - /
+    0.51 - /topic-18-65172-1-Amateur-Le-WebHub.html
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=16&y=11&z=5&s=Gal
+    0.51 - /avatars/small/27602-kavatar.jpg
+    0.51 - /css/img/footer-acco-start.png
+    0.51 - /css/img/ico-puce.png
+    0.51 - /xmedia/doc/medium/accedeweb.PNG
+    0.51 - /apprendre/
+    0.51 - /css/concours.css
+    0.51 - /intl/fr_ALL/mapfiles/poweredby.png
+    0.51 - /list-2-Semantique-web-et-HTML-XHTML-HTML5.html
+    0.51 - /page/about/
+    1.02 - /search.php
+    0.51 - /css/img/sous-menu-bg.png
+    0.51 - /avatars/small/2-riskav.jpg
+    0.51 - /xmedia/pages/outil-squelettor.png
+    0.51 - /css/img/doc-actu.png
+    0.51 - /xmedia/doc/medium/mobitest.JPG
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=15&y=10&z=5&s=Galileo
+    0.51 - /avatars/small/7613-img0853-cut.jpg
+    0.51 - /xmedia/pictos/apprendre/webmobile.png
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=18&y=10&z=5&s=
+    0.51 - /cat_js/intl/fr_ALL/mapfiles/441c/maps2.api/%7Bmod_drag,mod_ctrapi%7D.js
+    0.51 - /smilies/post.gif
+    0.51 - /css/img/picto-aide.png
+    0.51 - /icos/dossieron.png
+    0.51 - /intl/fr_ALL/mapfiles/markerTransparent.png
+    0.51 - /xmedia/doc/medium/seminaire-logo.png
+    0.51 - /avatars/42009-muchos-201.jpg
+    0.51 - /intl/fr_ALL/mapfiles/transparent.png
+    0.51 - /avatars/small/29464-logo-150x1.png
+    0.51 - /js/global20120111.js
+    0.51 - /avatars/small/19373-daftpunk.jpg
+    0.51 - /skins/alsacreations/p_www.gif
+    0.51 - /maps/api/jsv2/AuthenticationService.Authenticate?1shttp%3A%2F%2Fwww.alsacreations.com%2Fprofil%2Flire%2F1-raphael.html&5e0&callback=_xdc_._1hc59mn49&token=93523
+    0.51 - /icos/dossier.png
+    0.51 - /skins/alsacreations/theme.min.css
+    2.04 - /forum.php
+    0.51 - /css/img/menu-li-apprendre.png
+    0.51 - /xmedia/pages/outil-gabarits.jpg
+    0.51 - /css/img/blockquote2.png
+    0.51 - /list-18-Critiques-de-vos-sites-code-et-design.html
+    0.51 - /avatars/small/1-raphaelgoetter.jpg
+    0.51 - /css/img/sous-menu-search-ok.png
+    0.51 - /skins/alsacreations/p_up.gif
+    0.51 - /css/quiz.css
+    0.51 - /css/img/avatar.png
+    0.51 - /skins/alsacreations/p_quote.gif
+    0.51 - /css/img/comms.png
+    0.51 - /icos/beeron.png
+    0.51 - /css/img/doc-tuto.png
+    0.51 - /css/img/coma.png
+    0.51 - /css/img/sous-menu-search-input.png
+    0.51 - /avatars/small/1641-bluescreen.gif
+    0.51 - /intl/fr_ALL/mapfiles/441c/maps2.api/main.js
+    0.51 - /xmedia/pictos/apprendre/html5-css3.png
+    0.51 - /css/img/doc_level_1.png
+    0.51 - /css/img/menu-li-emploi.png
+    0.51 - /css/img/sous-menu-li.png
+    0.51 - /xmedia/pictos/apprendre/debut.png
+    0.51 - /css/img/doc-article.png
+    0.51 - /xmedia/pubs/mementomysql.png
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=15&y=11&z=5&s=
+    0.51 - /css/img/overlay.png
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=17&y=11&z=5&s=Galile
+    0.51 - /xmedia/doc/medium/memento-wordpress.png
+    0.51 - /css/img/ico-tweeter.png
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=17&y=12&z=5&s=Galileo
+    0.51 - /avatars/small/39-Miro.jpg
+    0.51 - /xmedia/doc/medium/height2.PNG
+    0.51 - /xmedia/pictos/5.png
+    0.51 - /skins/common/rss.gif
+    0.51 - /css/img/menu-a-emploi.png
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=15&y=12&z=5&s=G
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=16&y=12&z=5&s=Gali
+    0.51 - /smilies/cligne.gif
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=18&y=11&z=5&s=G
+    0.51 - /js/highlight/highlight.pack.js
+    0.51 - /xmedia/pages/twitter.gif
+    0.51 - /favicon.ico
+    0.51 - /avatars/1-raphaelgoetter.jpg
+    0.51 - /smilies/decu.gif
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=17&y=10&z=5&s=Galil
+    5.10 - /js/prettify/prettify.js
+    0.51 - /css/img/picto-star.png
+    0.51 - /css/img/doc-astuce.png
+    0.51 - /css/img/menu-li-forum.png
+    0.51 - /js/profil2011.js
+    0.51 - /css/img/sous-menu-bg-full.png
+    0.51 - /css/img/doc_level_0.png
+    0.51 - /skins/common/flag.png
+    0.51 - /css/img/footer-bg-2012.png
+    0.51 - /css/img/logo-alsacreations-com.png
+    0.51 - /intl/fr_ALL/mapfiles/smc.png
+    0.51 - /css/img/sous-menu-rss.png
+    0.51 - /xmedia/pages/nikozen.gif
+    0.51 - /xmedia/doc/full/html5-boilerplate-code.png
+    0.51 - /xmedia/pages/outil-schnapsum.jpg
+    0.51 - /avatars/small/30494-logo.png
+    0.51 - /skins/alsacreations/foldernewlock.gif
+    0.51 - /quiz/lire/18-jquery-moyen.html
+    0.51 - /css/img/footer-logo.png
+    0.51 - /css/img/footer-bottom.png
+    0.51 - /vt/lyrs=m@206000000&hl=fr&src=api&x=16&y=10&z=5&s=Ga
+    0.51 - /css/img/picto-home.png
+    0.51 - /css/img/picto-quiz.png
+    0.51 - /xmedia/doc/full/mobitest.JPG
+    0.51 - /astuce/lire/1110-html5-boilerplate-un-template-puissant-et-complet.html
+    0.51 - /css/img/bloc-bg.png
+    0.51 - /css/img/ico-facebook.png
+    0.51 - /quiz/resultat/18
+    0.51 - /css/styles20120827.min.css
+    0.51 - /avatars/38902-g3ronim0.jpg
+    0.51 - /avatars/small/14196-14196-avat.png
+    0.51 - /css/img/blockquote1.png
+    0.51 - /xmedia/pictos/apprendre/positionnement.png
+    0.51 - /css/img/page-bg.png
+    0.51 - /css/img/quiz-numero.jpg
+    0.51 - /css/img/sous-menu-search-bg.png
+    0.51 - /avatars/small/8518-avatarglass.jpg
+    0.51 - /xmedia/doc/medium/html-css-jon-duckett.png
+    0.51 - /skins/alsacreations/t_new.gif
+    0.51 - /xmedia/pubs/css2-avancees.png
+    0.51 - /css/img/footer-links-2012.png
+    0.51 - /xmedia/pages/outil-rendu.jpg
+    0.51 - /skins/alsacreations/down.gif
+    0.51 - /outils/lire/1528-mobitestme.html
+    0.51 - /maps/api/jsv2/QuotaService.RecordEvent?1shttp%3A%2F%2Fwww.alsacreations.com%2Fprofil%2Flire%2F1-raphael.html&4e0&5e0&6u1&7s59moz3&callback=_xdc_._2hc59moz5&token=20561
+    0.51 - /astuces/
+    0.51 - /js/highlight/styles/zenburn.css
+    0.51 - /css/img/doc_level_2.png
+    0.51 - /css/img/doc_level_3.png
+    0.51 - /ajax/libs/jquery/1.6.2/jquery.min.js
+    0.51 - /avatars/small/12878-avatardmsr.gif
+    0.51 - /static/logo/logo-medium-gray.png
+    0.51 - /avatars/small/22164-dcf.jpg
+    0.51 - /skins/alsacreations/foldernew.gif
+    0.51 - /xmedia/pictos/apprendre/resoudre.png
+    0.51 - /css/img/picto-edit.png
+    0.51 - /favicon.png
+    0.51 - /smilies/question.gif
+    0.51 - /intl/fr_ALL/mapfiles/shadow50.png
+    0.51 - /forum.php?action=login
+    0.51 - /css/img/ico-star.png
+    0.51 - /css/img/menu-a-apprendre.png
+    0.51 - /avatars/small/31939-lau-by-mhc.png
+    0.51 - /css/img/page-bg-full.png
+    0.51 - /css/img/sous-menu-li-actif.png
+    0.51 - /profil/lire/1-raphael.html
+    0.51 - /css/img/picto-chat.png
+    0.51 - /js/apprendre.js
+    0.51 - /css/img/commentaires.png
+    0.51 - /css/img/footer-acco-end.png
+    5.10 - /js/forum.js
+    0.51 - /skins/alsacreations/foldernewhot.gif
+    0.51 - /skins/alsacreations/p_new.gif
+    0.51 - /xmedia/doc/full/html5boilerplate.png
+    0.51 - /avatars/small/2043-avatar2011.jpg
+    0.51 - /maps/vp?spn=8.720174,23.730469&z=5&key=ABQIAAAA2zNwGYqN73b7z2A20ORLkhT1cfEpIHIASTy38Z1Ppu17PZSOphSW3rhtyoD47mb0vfaZJcPIGIX68Q&sensor=false&mapclient=jsapi&vp=48.613576,7.567906
+    0.51 - /smilies/smile.gif
+    0.51 - /css/img/ico-ajax.gif
+    0.51 - /intl/fr_ALL/mapfiles/marker.png
+    0.51 - /xmedia/doc/medium/pratique-de-css3.jpg
+    0.51 - /xmedia/doc/medium/microformats-microscope.jpg
+    0.51 - /css/img/picto-emploi.png
+    0.51 - /css/img/ico-up.png
+    0.51 - /maps?file=api&v=2&key=ABQIAAAA2zNwGYqN73b7z2A20ORLkhT1cfEpIHIASTy38Z1Ppu17PZSOphSW3rhtyoD47mb0vfaZJcPIGIX68Q&sensor=false
+    0.51 - /xmedia/quiz/quiz-hiro.jpg
+  x-content-type-options: 
+    100.00 - nosniff
+  content-encoding: 
+    100.00 - gzip
+  :status-text: 
+    2.04 - Found
+    88.78 - OK
+    9.18 - Not Modified
+  age: 
+    7.69 - 89618
+    7.69 - 89617
+    7.69 - 89616
+    7.69 - 74181
+    15.38 - 89523
+    15.38 - 89522
+    23.08 - 89575
+    15.38 - 89566
+  x-powered-by: 
+    100.00 - PHP/5.3.3-7+squeeze14
+  server: 
+    4.59 - sffe
+    87.24 - Apache/2.2.16 (Debian)
+    6.12 - paintfe
+    1.02 - mfe
+    1.02 - mafe
+  :scheme: 
+    100.00 - http
+  connection: 
+    53.41 - keep-alive
+    46.59 - Keep-Alive
+  cookie: 
+    61.94 - PHPSESSID=ka8rf57ivkhok1mcmo6fvl3d26
+    1.29 - PHPSESSID=ka8rf57ivkhok1mcmo6fvl3d26; lv=1358630783
+    9.68 - PHPSESSID=qbfo7c1gomj6k6ul3nnjc2lsf3; lv=1358630884; lv2=1358630793; lv18=1358630889
+    5.16 - PHPSESSID=qbfo7c1gomj6k6ul3nnjc2lsf3; lv=1358630783
+    1.94 - PHPSESSID=qbfo7c1gomj6k6ul3nnjc2lsf3; lv=1358630884; lv2=1358630793
+    5.16 - PHPSESSID=qbfo7c1gomj6k6ul3nnjc2lsf3; lv=1358630864; lv2=1358630793
+    12.26 - PHPSESSID=qbfo7c1gomj6k6ul3nnjc2lsf3; lv=1358630783; lv2=1358630793
+    2.58 - PREF=ID=b5ef8b62a09a041d:U=969128c144cd01a1:FF=0:TM=1350339667:LM=1353338127:S=g2i2Ct6CrdyPeP0j; NID=66=emlGjySj9Hl5XjjSSLc05QJkhedldJ77l7P2WNORrmU0yIxj7MBYAgtWXeqN_Sd9OFOxpxUDgnb8tWBxBt65fE1LK-zXeI746HBWYLV8-Hj_kLWqDYqjX02vf6wMl94J
+  x-frame-options: 
+    100.00 - SAMEORIGIN
+  content-type: 
+    1.41 - text/html
+    9.86 - image/jpeg
+    9.39 - application/x-www-form-urlencoded
+    4.69 - text/html; charset=UTF-8
+    45.07 - image/png
+    0.47 - image/x-icon
+    2.35 - text/css
+    12.21 - image/gif
+    2.82 - application/javascript
+    8.45 - text/html; charset=iso-8859-1
+    0.94 - text/javascript
+    2.35 - text/javascript; charset=UTF-8
+  :host: 
+    36.22 - forum.alsacreations.com
+    4.08 - maps.gstatic.com
+    0.51 - ajax.googleapis.com
+    2.04 - maps.google.com
+    0.51 - www.xn--alsacrations-geb.com
+    50.51 - www.alsacreations.com
+    3.06 - mt1.googleapis.com
+    3.06 - mt0.googleapis.com
+
+

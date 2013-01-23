@@ -399,3 +399,215 @@ expires              0.958333333333                                     24
 last-modified        0.958333333333                                     24                  
 location             1.0                                                1                   
 set-cookie           1.0                                                1                   
+
+
+Header Frequencies:
+  content-length: 
+    4.17 - 10400
+    4.17 - 10344
+    8.33 - 6344
+    4.17 - 40353
+    4.17 - 473
+    4.17 - 9660
+    4.17 - 1099
+    4.17 - 2857
+    8.33 - 28017
+    4.17 - 727
+    4.17 - 1480
+    4.17 - 6047
+    4.17 - 10780
+    4.17 - 1398
+    4.17 - 5733
+    4.17 - 2245
+    4.17 - 225
+    4.17 - 4861
+    4.17 - 6245
+    8.33 - 1150
+    4.17 - 2458
+  accept-language: 
+    100.00 - en-US,en;q=0.5
+  vary: 
+    100.00 - Accept-Encoding
+  accept: 
+    30.30 - */*
+    30.30 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    9.09 - text/css,*/*;q=0.1
+    30.30 - image/png,image/*;q=0.8,*/*;q=0.5
+  :version: 
+    100.00 - HTTP/1.1
+  user-agent: 
+    100.00 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0
+  location: 
+    100.00 - http://www.craigslist.org/about/sites/
+  :method: 
+    100.00 - get
+  cache-control: 
+    6.25 - public, max-age=600
+    6.25 - public, max-age=315360000
+    12.50 - public, max-age=14400
+    3.12 - max-age=3600, public
+    25.00 - public, max-age=2592000
+    3.12 - max-age=15, public
+    43.75 - max-age=2592000, public
+  accept-encoding: 
+    100.00 - gzip, deflate
+  transfer-encoding: 
+    100.00 - chunked
+  set-cookie: 
+    100.00 - cl_def_hp=shoals; domain=.craigslist.org; path=/; expires=Sun, 03-Nov-13 12:36:54 GMT
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    4.17 - Thu, 08 Nov 2012 06:01:55 GMT
+    4.17 - Thu, 08 Nov 2012 06:01:47 GMT
+    4.17 - Mon, 03 Dec 2012 12:53:23 GMT
+    4.17 - Thu, 08 Nov 2012 06:01:51 GMT
+    4.17 - Thu, 08 Nov 2012 06:13:28 GMT
+    4.17 - Sat, 01 Dec 2012 21:26:48 GMT
+    4.17 - Sat, 03 Nov 2012 13:49:21 GMT
+    4.17 - Sat, 01 Dec 2012 20:53:17 GMT
+    4.17 - Mon, 03 Dec 2012 10:03:45 GMT
+    4.17 - Wed, 14 Nov 2012 22:07:17 GMT
+    4.17 - Mon, 03 Dec 2012 10:58:55 GMT
+    4.17 - Sat, 03 Nov 2012 13:36:54 GMT
+    4.17 - Sat, 03 Nov 2012 13:34:14 GMT
+    4.17 - Mon, 03 Dec 2012 09:53:38 GMT
+    4.17 - Sat, 01 Dec 2012 20:53:37 GMT
+    8.33 - Fri, 07 Oct 2022 05:33:00 GMT
+    4.17 - Thu, 29 Nov 2012 21:50:50 GMT
+    4.17 - Sat, 03 Nov 2012 13:49:18 GMT
+    4.17 - Sun, 02 Dec 2012 21:46:27 GMT
+    4.17 - Thu, 08 Nov 2012 07:20:18 GMT
+    4.17 - Mon, 03 Dec 2012 13:17:50 GMT
+    4.17 - Thu, 08 Nov 2012 06:21:38 GMT
+    4.17 - Thu, 15 Nov 2012 22:03:00 GMT
+  last-modified: 
+    4.17 - Sat, 03 Nov 2012 12:53:23 GMT
+    4.17 - Sat, 03 Nov 2012 10:03:45 GMT
+    4.17 - Sat, 03 Nov 2012 13:34:21 GMT
+    4.17 - Sat, 03 Nov 2012 13:34:18 GMT
+    4.17 - Sat, 03 Nov 2012 09:53:38 GMT
+    4.17 - Sat, 03 Nov 2012 10:58:55 GMT
+    4.17 - Mon, 15 Oct 2012 22:07:17 GMT
+    4.17 - Tue, 09 Oct 2012 06:01:55 GMT
+    4.17 - Tue, 09 Oct 2012 07:20:18 GMT
+    4.17 - Thu, 01 Nov 2012 21:26:48 GMT
+    4.17 - Thu, 01 Nov 2012 20:53:17 GMT
+    4.17 - Tue, 30 Oct 2012 21:50:50 GMT
+    4.17 - Sat, 03 Nov 2012 13:17:50 GMT
+    4.17 - Sat, 03 Nov 2012 13:33:59 GMT
+    4.17 - Tue, 16 Oct 2012 22:03:00 GMT
+    4.17 - Fri, 02 Nov 2012 21:46:27 GMT
+    4.17 - Tue, 09 Oct 2012 06:01:47 GMT
+    4.17 - Tue, 09 Oct 2012 06:21:38 GMT
+    8.33 - Mon, 23 Jun 2008 23:06:11 GMT
+    4.17 - Thu, 01 Nov 2012 20:53:37 GMT
+    4.17 - Tue, 09 Oct 2012 06:13:28 GMT
+    4.17 - Sat, 03 Nov 2012 12:36:54 GMT
+    4.17 - Tue, 09 Oct 2012 06:01:51 GMT
+  cookie: 
+    78.79 - cl_b=AB2BKbsl4hGM7M4nH5PYWghTM5A; cl_def_lang=en; cl_def_hp=shoals
+    21.21 - cl_b=AB2BKbsl4hGM7M4nH5PYWghTM5A
+  date: 
+    3.03 - Sat, 03 Nov 2012 12:53:23 GMT
+    3.03 - Sat, 03 Nov 2012 10:03:45 GMT
+    3.03 - Sat, 03 Nov 2012 13:34:21 GMT
+    3.03 - Sat, 27 Oct 2012 07:36:12 GMT
+    3.03 - Mon, 22 Oct 2012 22:00:12 GMT
+    3.03 - Mon, 22 Oct 2012 22:00:11 GMT
+    3.03 - Sat, 03 Nov 2012 13:34:17 GMT
+    3.03 - Sat, 03 Nov 2012 09:53:38 GMT
+    3.03 - Sat, 03 Nov 2012 13:34:16 GMT
+    3.03 - Sat, 03 Nov 2012 10:58:55 GMT
+    3.03 - Mon, 15 Oct 2012 22:07:17 GMT
+    3.03 - Tue, 09 Oct 2012 06:01:55 GMT
+    3.03 - Tue, 09 Oct 2012 07:20:18 GMT
+    3.03 - Thu, 01 Nov 2012 21:26:48 GMT
+    3.03 - Thu, 01 Nov 2012 20:53:17 GMT
+    3.03 - Tue, 30 Oct 2012 21:50:50 GMT
+    3.03 - Sat, 03 Nov 2012 13:17:50 GMT
+    3.03 - Sat, 03 Nov 2012 13:33:59 GMT
+    3.03 - Tue, 16 Oct 2012 22:03:00 GMT
+    3.03 - Sat, 27 Oct 2012 12:09:05 GMT
+    9.09 - Fri, 02 Nov 2012 21:46:27 GMT
+    3.03 - Tue, 09 Oct 2012 06:01:47 GMT
+    6.06 - Tue, 09 Oct 2012 05:33:00 GMT
+    3.03 - Tue, 09 Oct 2012 06:21:38 GMT
+    3.03 - Thu, 01 Nov 2012 20:53:37 GMT
+    6.06 - Fri, 02 Nov 2012 21:46:28 GMT
+    3.03 - Tue, 09 Oct 2012 06:13:28 GMT
+    3.03 - Sat, 03 Nov 2012 12:36:54 GMT
+    3.03 - Tue, 09 Oct 2012 06:01:51 GMT
+  :path: 
+    3.03 - /js/jquery.form-defaults.js?v=421648d06bad2f29bbfc2f66c5205aeb
+    3.03 - /js/jquery-1.4.2.js
+    6.06 - /favicon.ico
+    3.03 - /3k13K63Le5I15G35Kbcb188ec9bcdb40c1d4a.jpg
+    3.03 - /js/formats.js?v=ebedf6724349de11b767e96db1e9e3a0
+    3.03 - /sss/
+    3.03 - /bab/3382474383.html
+    3.03 - /thumb/3I43Jb3N35F85Ha5M9camde5271f5509f1146.jpg
+    3.03 - /styles/craigslist.css
+    3.03 - /styles/countries.css
+    3.03 - /js/jquery-1.7.2.js?v=89700834f1601ac3ebc3e5fb3302c040
+    3.03 - /js/homepage.js?v=d37f06372bfdfded536c9655fb1d32d7
+    3.03 - /about/
+    3.03 - /js/postings.js?v=42d5f549b28c48a0ee73c31c45a6ae70
+    3.03 - /thumb/3N73o13l25Hb5Md5Jacb1ce51d7da9f4c1e5d.jpg
+    3.03 - /about/terms.of.use
+    3.03 - /styles/craigslist.css?v=f871385982e5b6af8a3a07b9c26ba897
+    6.06 - /
+    3.03 - /thumb/3L13M33N55I75N35Jbcama4ccd798ed3a1e8d.jpg
+    3.03 - /about/sites/
+    3.03 - /thumb/3k13K63Le5I15G35Kbcb188ec9bcdb40c1d4a.jpg
+    3.03 - /js/formats.js?v=2
+    3.03 - /baa/
+    3.03 - /js/tocs.js?v=2cf3867d0da64c6d980ac4c9f2377c62
+    3.03 - /3L13M33N55I75N35Jbcama4ccd798ed3a1e8d.jpg
+    3.03 - /js/jquery-1.4.2.js?v=24440aceff001a5f841b2d13677cd043
+    3.03 - /thumb/3Fc3L93Ib5N35O05Kfcam76ae66a641411dda.jpg
+    3.03 - /cto/3357656005.html
+    3.03 - /thumb/3F23Jc3N45Nd5Id5Fccb197063cf67e0f1098.jpg
+    3.03 - /js/toChecklist.js?v=b163a7aa23a6dad79076f92e56c622f7
+    3.03 - /about/scams
+  :status: 
+    96.97 - 200
+    3.03 - 302
+  :status-text: 
+    3.03 - Found
+    96.97 - OK
+  content-encoding: 
+    100.00 - gzip
+  server: 
+    100.00 - Apache
+  :scheme: 
+    100.00 - http
+  connection: 
+    50.00 - close
+    50.00 - keep-alive
+  referer: 
+    3.45 - http://shoals.craigslist.org/sss/
+    17.24 - http://shoals.craigslist.org/cto/3357656005.html
+    3.45 - http://www.craigslist.org/about/terms.of.use
+    3.45 - http://www.craigslist.org/about/
+    20.69 - http://shoals.craigslist.org/bab/3382474383.html
+    17.24 - http://shoals.craigslist.org/
+    17.24 - http://shoals.craigslist.org/baa/
+    13.79 - http://www.craigslist.org/about/sites/
+    3.45 - http://www.craigslist.org/about/scams
+  x-frame-options: 
+    100.00 - Allow-From https://forums.craigslist.org
+  content-type: 
+    24.24 - image/jpeg
+    6.06 - text/html; charset=utf-8
+    24.24 - text/html; charset=iso-8859-1
+    9.09 - text/css; charset=iso-8859-1
+    30.30 - text/javascript; charset=iso-8859-1
+    6.06 - text/plain
+  :host: 
+    54.55 - www.craigslist.org
+    24.24 - images.craigslist.org
+    3.03 - geo.craigslist.org
+    18.18 - shoals.craigslist.org
+
+

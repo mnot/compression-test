@@ -599,3 +599,575 @@ etag                 0.963636363636                                     55
 :path                0.977611940299                                     134                 
 x-xrds-location      1.0                                                1                   
 slovari-title        1.0                                                3                   
+
+
+Header Frequencies:
+  content-length: 
+    0.82 - 21481
+    0.82 - 59004
+    0.82 - 20274
+    0.82 - 9778
+    0.82 - 3411
+    0.82 - 12075
+    1.64 - 22
+    0.82 - 23
+    0.82 - 698
+    0.82 - 5621
+    5.74 - 0
+    0.82 - 546
+    0.82 - 19409
+    0.82 - 349
+    0.82 - 1311
+    0.82 - 37253
+    0.82 - 33881
+    0.82 - 3183
+    2.46 - 1150
+    0.82 - 101712
+    0.82 - 25519
+    0.82 - 266
+    0.82 - 3334
+    2.46 - 74
+    0.82 - 13090
+    0.82 - 299
+    0.82 - 3658
+    0.82 - 26253
+    0.82 - 15983
+    0.82 - 4524
+    0.82 - 52793
+    0.82 - 394
+    0.82 - 9991
+    0.82 - 3477
+    0.82 - 4808
+    0.82 - 916
+    0.82 - 2074
+    0.82 - 448
+    0.82 - 581
+    0.82 - 8754
+    0.82 - 8518
+    0.82 - 73411
+    0.82 - 247
+    0.82 - 383
+    0.82 - 76999
+    0.82 - 106
+    0.82 - 1635
+    0.82 - 45680
+    0.82 - 24440
+    0.82 - 1248
+    0.82 - 431
+    0.82 - 20483
+    0.82 - 628
+    0.82 - 62467
+    0.82 - 8192
+    0.82 - 3450
+    0.82 - 54957
+    0.82 - 1587
+    3.28 - 184
+    0.82 - 45078
+    0.82 - 8107
+    0.82 - 74618
+    0.82 - 1352
+    0.82 - 2588
+    0.82 - 99
+    0.82 - 32107
+    0.82 - 3073
+    0.82 - 72512
+    0.82 - 3729
+    0.82 - 2212
+    0.82 - 5180
+    0.82 - 2895
+    0.82 - 18843
+    0.82 - 33673
+    0.82 - 2861
+    0.82 - 743
+    0.82 - 15878
+    0.82 - 33857
+    0.82 - 749
+    0.82 - 4457
+    0.82 - 32111
+    0.82 - 4513
+    9.02 - 43
+    0.82 - 4595
+    0.82 - 19741
+    0.82 - 329
+    0.82 - 1271
+    0.82 - 2642
+    0.82 - 47193
+    0.82 - 21713
+    0.82 - 60168
+    0.82 - 1688
+    0.82 - 1600
+    0.82 - 944
+    0.82 - 1970
+    0.82 - 34370
+    0.82 - 4585
+    0.82 - 62798
+  accept-language: 
+    97.01 - en-US,en;q=0.5
+    2.99 - en-us
+  vary: 
+    100.00 - Accept-Encoding
+  accept: 
+    64.18 - image/png,image/*;q=0.8,*/*;q=0.5
+    2.99 - text/css,*/*;q=0.1
+    12.69 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    20.15 - */*
+  slovari-version: 
+    100.00 - 2.0-53
+  p3p: 
+    3.45 - policyref="/w3c/p3p.xml", CP="NOI DSP COR NID CUR OUR NOR"
+    93.10 - CP="NOI DEVa TAIa OUR BUS UNI STA"
+    3.45 - policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
+  :version: 
+    100.00 - HTTP/1.1
+  x-xrds-location: 
+    100.00 - http://openid.yandex.ru/server_xrds/
+  x-xss-protection: 
+    100.00 - 1; mode=block
+  x-content-type-options: 
+    100.00 - nosniff
+  keep-alive: 
+    4.35 - timeout=75
+    95.65 - timeout=60
+  user-agent: 
+    2.99 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Version/6.0.1 Safari/536.26.14
+    97.01 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0
+  slovari-title: 
+    33.33 - %D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%E2%80%94%20%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8
+    33.33 - %22%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B0%22%20%E2%80%94%20%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8
+    33.33 - %D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8
+  etag: 
+    1.82 - "1697184991"
+    1.82 - "3030962389"
+    1.82 - "2010661953"
+    1.82 - "626542613"
+    1.82 - "1876673717"
+    1.82 - "1985496186"
+    1.82 - "4197233761"
+    1.82 - "2374776804"
+    1.82 - "651707457"
+    1.82 - "3786995988"
+    1.82 - "631820511"
+    1.82 - "1984675543"
+    1.82 - "1160302661"
+    1.82 - "3389797986"
+    1.82 - "2116695648"
+    1.82 - "3064516701"
+    1.82 - "358107417"
+    1.82 - "296284177"
+    1.82 - "3039351125"
+    1.82 - "2072818914"
+    1.82 - "3047742493"
+    1.82 - "1820939690"
+    1.82 - "984276573"
+    1.82 - "299385951"
+    5.45 - "2078000277"
+    1.82 - "290178270"
+    1.82 - "1898503199"
+    1.82 - "2972242011"
+    1.82 - "1431849157"
+    1.82 - "3081294109"
+    1.82 - "1294654999"
+    1.82 - "1507574898"
+    1.82 - "2913679204"
+    1.82 - "2856973782"
+    1.82 - "2832028559"
+    1.82 - "2804472849"
+    1.82 - "1906891793"
+    1.82 - "3126488152"
+    1.82 - "1478031637"
+    1.82 - "1445518355"
+    1.82 - "875051960"
+    1.82 - "1925854816"
+    1.82 - "2812858503"
+    1.82 - "1868286204"
+    1.82 - "941161849"
+    1.82 - "987481206"
+    1.82 - "1951941682"
+    1.82 - "1791621469"
+    1.82 - "2949249371"
+    1.82 - "908652565"
+    1.82 - "1784400053"
+    1.82 - "1982389277"
+    1.82 - "1747646618"
+  location: 
+    8.33 - http://www.yandex.ru/
+    8.33 - http://yabs.yandex.ru/resource/oP5vYroCY4oT1mtUjfZw7g.png
+    33.33 - http://yandex.st/lego/_/gdtS6a0b5ZRt_6PIn1MCYzp2mNI.ico
+    16.67 - http://mc.yandex.ru/watch/722545/1
+    8.33 - http://kiks.yandex.ru/system/fc07.swf
+    25.00 - http://kiks.yandex.ru/system/fc06.html
+  :method: 
+    2.99 - post
+    97.01 - get
+  cache-control: 
+    0.92 - max-age=315360000
+    0.92 - no-cache, private, no-cache, no-store, must-revalidate, max-age=0
+    35.78 - max-age=311040000
+    0.92 - public, max-age=36000000, s-maxage=36000000, must-revalidate
+    20.18 - max-age=5184000
+    0.92 - no-cache,no-store,max-age=0,must-revalidate
+    0.92 - no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-cache=Set-Cookie, max-age=0, proxy-revalidate
+    1.83 - no-cache, no-store, must-revalidate, max-age=5
+    15.60 - private, no-cache, no-store, must-revalidate, max-age=0
+    1.83 - max-age=691200
+    11.93 - no-cache
+    2.75 - public,max-age=172800
+    4.59 - max-age=0, proxy-revalidate
+    0.92 - public
+  accept-encoding: 
+    100.00 - gzip, deflate
+  transfer-encoding: 
+    100.00 - chunked
+  set-cookie: 
+    7.69 - fuid01=50951c8d0253c112.VDyfZuaglS8VO4Gom4dj0yi9ybWYTcBOJKVqn5iEq865cz9yNbCd2h3AKpjRQBwMhrhn4Ajnhu9KsOQIIfkop4xoJpSbSiqQOFJNXcPgZE9Mb7CR5YQ_9ZYTZQo1OJyx; domain=.yandex.ru; path=/; expires=Sat, 04 Jun 2022 13:30:53 GMT
+    15.38 - yabs-sid=824271211351949452; path=/
+    15.38 - aw=2_; domain=.yandex.ru; path=/; expires=Sat, 17-Nov-2012 12:57:29 GMT
+    38.46 - slovari-state=%2Cundefined; path=/
+    7.69 - yandexuid=6410453771351949451; Expires=Tue, 01-Nov-2022 13:30:51 GMT; Domain=.yandex.ru; Path=/
+    15.38 - yabs-vdrf=A0; domain=an.yandex.ru; path=/; expires=Sat, 10-Nov-2012 13:31:17 GMT
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    0.98 - Sat, 03 Nov 2012 13:31:00 GMT
+    0.98 - Mon, 12 Sep 2022 13:30:54 GMT
+    0.98 - Sat, 03 Nov 2012 13:36:07 GMT
+    0.98 - Mon, 12 Sep 2022 13:31:16 GMT
+    0.98 - Sat, 03 Nov 2012 13:36:20 GMT
+    0.98 - Sat, 03 Nov 2012 14:30:59 GMT
+    1.96 - Thu, 31 Dec 2037 23:55:55 GMT
+    0.98 - Sat, 03 Nov 2012 13:31:20 GMT
+    1.96 - Sat, 03 Nov 2012 13:31:17 GMT
+    0.98 - Sat, 03 Nov 2012 13:30:51 GMT
+    0.98 - Sat, 03 Nov 2012 13:31:08 GMT
+    0.98 - Sat, 19 Oct 2013 13:31:12 GMT
+    9.80 - Wed, 02 Jan 2013 13:31:08 GMT
+    1.96 - Mon, 12 Sep 2022 13:30:58 GMT
+    6.86 - Mon, 12 Sep 2022 13:31:12 GMT
+    0.98 - Sat, 19 Oct 2013 13:30:52 GMT
+    0.98 - Sat, 03 Nov 2012 13:36:22 GMT
+    2.94 - Sat, 03 Nov 2012 13:35:58 GMT
+    1.96 - Sat, 03 Nov 2012 13:31:11 GMT
+    1.96 - Sat, 10 Nov 2012 13:30:59 GMT
+    1.96 - Sun, 11 Nov 2012 13:30:59 GMT
+    1.96 - Sat, 03 Nov 2012 13:31:13 GMT
+    0.98 - Sat, 03 Nov 2012 13:31:23 GMT
+    1.96 - Sat, 10 Nov 2012 13:30:53 GMT
+    5.88 - Wed, 02 Jan 2013 13:30:59 GMT
+    23.53 - Mon, 12 Sep 2022 13:30:52 GMT
+    3.92 - Sat, 03 Nov 2012 13:30:52 GMT
+    0.98 - Sat, 03 Nov 2012 13:31:12 GMT
+    0.98 - Sat, 03 Nov 2012 13:31:19 GMT
+    4.90 - Wed, 02 Jan 2013 13:31:00 GMT
+    0.98 - Tue, 01 Jan 2013 20:05:06 GMT
+    0.98 - Mon, 12 Sep 2022 13:30:57 GMT
+    2.94 - Mon, 12 Sep 2022 13:31:11 GMT
+    0.98 - Sat, 03 Nov 2012 13:36:17 GMT
+    0.98 - Sat, 03 Nov 2012 14:31:11 GMT
+    1.96 - Fri, 29 Oct 2015 14:19:41 GMT
+    1.96 - Thu, 01 Jan 1970 00:00:01 GMT
+    0.98 - Sat, 03 Nov 2012 13:31:14 GMT
+  last-modified: 
+    0.96 - Sat, 03 Nov 2012 13:31:00 GMT
+    3.85 - Sat, 03 Nov 2012 13:30:52 GMT
+    0.96 - Fri, 02 Nov 2012 16:11:51 GMT
+    21.15 - Thu, 31 May 2007 09:03:47 GMT
+    0.96 - Sat, 03 Nov 2012 09:28:12 GMT
+    1.92 - Thu, 01 Nov 2012 13:10:52 GMT
+    2.88 - Fri, 02 Nov 2012 16:11:45 GMT
+    0.96 - Thu, 01 Nov 2012 13:10:49 GMT
+    15.38 - Thu, 01 Nov 2012 15:37:50 GMT
+    0.96 - Fri, 19 Oct 2012 12:23:05 GMT
+    0.96 - Sat, 03 Nov 2012 13:31:20 GMT
+    0.96 - Fri, 16 Oct 2009 10:15:19 GMT
+    1.92 - Sat, 03 Nov 2012 13:31:17 GMT
+    0.96 - Sat, 03 Nov 2012 13:30:51 GMT
+    0.96 - Sat, 03 Nov 2012 09:29:04 GMT
+    3.85 - Thu, 01 Nov 2012 13:10:54 GMT
+    1.92 - Thu, 03 Dec 2009 15:22:16 GMT
+    2.88 - Thu, 01 Nov 2012 13:08:01 GMT
+    0.96 - Fri, 05 Oct 2012 14:10:41 GMT
+    0.96 - Thu, 01 Nov 2012 09:39:37 GMT
+    0.96 - Fri, 05 Oct 2012 13:40:12 GMT
+    1.92 - Fri, 09 Dec 2011 13:35:00 GMT
+    0.96 - Mon, 24 Sep 2012 13:54:33 GMT
+    1.92 - Sat, 03 Nov 2012 13:31:13 GMT
+    0.96 - Sat, 03 Nov 2012 13:31:08 GMT
+    0.96 - Sat, 03 Nov 2012 09:08:36 GMT
+    0.96 - Sat, 03 Nov 2012 13:31:23 GMT
+    0.96 - Fri, 02 Nov 2012 16:11:46 GMT
+    0.96 - Thu, 01 Nov 2012 15:49:48 GMT
+    2.88 - Thu, 01 Nov 2012 15:49:30 GMT
+    0.96 - Tue, 02 Oct 2012 12:15:52 GMT
+    0.96 - Sat, 03 Nov 2012 13:31:19 GMT
+    2.88 - Mon, 08 Oct 2012 08:34:09 GMT
+    0.96 - Sat, 03 Nov 2012 13:31:12 GMT
+    0.96 - Tue, 02 Oct 2012 12:15:54 GMT
+    1.92 - Fri, 02 Nov 2012 14:34:56 GMT
+    0.96 - Fri, 02 Nov 2012 16:11:52 GMT
+    0.96 - Sat, 03 Nov 2012 13:31:14 GMT
+    2.88 - Fri, 02 Nov 2012 16:11:50 GMT
+    0.96 - Thu, 01 Nov 2012 15:49:52 GMT
+    0.96 - Fri, 02 Nov 2012 14:34:57 GMT
+    0.96 - Fri, 02 Nov 2012 12:56:04 GMT
+    0.96 - Tue, 19 Jun 2012 15:23:40 GMT
+    0.96 - Tue, 02 Oct 2012 12:26:51 GMT
+    0.96 - Mon, 26 Apr 2010 08:00:35 GMT
+    0.96 - Thu, 01 Nov 2012 13:10:55 GMT
+  referer: 
+    13.49 - http://slovari.yandex.ru/
+    0.79 - http://suggest.yandex.ru/jquery.crossframeajax.html
+    3.17 - http://slovari.yandex.ru/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80/
+    0.79 - http://slovari.yandex.ru/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/
+    3.97 - http://slovari.yandex.ru/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%22%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B0%22/
+    7.14 - http://yaca.yandex.ru/_static/r149/css/_rubric.css
+    11.90 - http://yaca.yandex.ru/yca/cat/Entertainment/Introduction_Agencies/
+    28.57 - http://www.yandex.ru/
+    23.81 - http://yaca.yandex.ru/yca/cat/Entertainment/
+    6.35 - http://yandex.st/slovari2/2.0-53/pages/cssjs/_cssjs.css
+  pragma: 
+    100.00 - no-cache
+  date: 
+    4.84 - Sat, 03 Nov 2012 13:31:00 GMT
+    25.81 - Sat, 03 Nov 2012 13:30:52 GMT
+    3.23 - Sat, 03 Nov 2012 13:30:53 GMT
+    0.81 - Sat, 03 Nov 2012 13:30:50 GMT
+    0.81 - Sat, 03 Nov 2012 13:30:57 GMT
+    0.81 - Sat, 03 Nov 2012 13:31:16 GMT
+    1.61 - Sat, 03 Nov 2012 13:31:20 GMT
+    0.81 - Sat, 03 Nov 2012 13:31:07 GMT
+    3.23 - Sat, 03 Nov 2012 13:31:17 GMT
+    0.81 - Sat, 03 Nov 2012 13:30:51 GMT
+    9.68 - Sat, 03 Nov 2012 13:31:08 GMT
+    4.84 - Sat, 03 Nov 2012 13:31:11 GMT
+    3.23 - Sat, 03 Nov 2012 13:31:13 GMT
+    0.81 - Sat, 03 Nov 2012 13:31:23 GMT
+    2.42 - Sat, 03 Nov 2012 13:27:05 GMT
+    0.81 - Sat, 03 Nov 2012 13:30:54 GMT
+    8.87 - Sat, 03 Nov 2012 13:31:12 GMT
+    6.45 - Sat, 03 Nov 2012 13:30:58 GMT
+    0.81 - Sat, 03 Nov 2012 13:31:19 GMT
+    0.81 - Sat, 03 Nov 2012 13:31:14 GMT
+    1.61 - Sat, 03 Nov 2012 13:31:22 GMT
+    16.94 - Sat, 03 Nov 2012 13:30:59 GMT
+  access-control-allow-origin: 
+    100.00 - *
+  :path: 
+    0.75 - /cat-get/3901/92c9ab26ce5511de996dc1afc15d2acd.png
+    0.75 - /lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif
+    1.49 - /su/
+    0.75 - /www/_/ec89RWGwOWo4f_5Q_AbwqzX8ZpY.gif
+    0.75 - /cat-get/4107/34a40f24ce3111de996dc1afc15d2acd.png
+    0.75 - /cat-get/4006/f05611e2ce4311de996dc1afc15d2acd.png
+    0.75 - /system/fc06.html
+    0.75 - /cat-get/4005/e1d59580ce6011de996dc1afc15d2acd.png
+    0.75 - /V13b**d732161c7d004ea8c476633cdf6a41ca**yandex_ru/ru/CP1251/tmsec=yandex_main/0
+    0.75 - /_static/r149/css/_yaca.css
+    0.75 - /slovari2/_/GmuuqScQg_T2z-IWfxxSJMnZoF0.png
+    0.75 - /lego/_/pDu9OWAQKB0s2J9IojKpiS_Eho.ico
+    0.75 - /0/s09924a82814p1v8/0.js
+    0.75 - /watch/58508?rn=182017&cnt-class=1&page-ref=http%3A%2F%2Fyaca.yandex.ru%2Fyca%2Fcat%2FEntertainment%2FIntroduction_Agencies%2F&page-url=http%3A%2F%2Fslovari.yandex.ru%2F&browser-info=j:1:s:1366x768x24:w:979x649:z:-240:i:20121103093112:en:utf-8:v:1:c:1:la:en-us:ad:1:hid:755291366:t:%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8&ut=noindex
+    0.75 - /click/dtype=stred/pid=20/cid=71883/path=page-article-content/*http://slovari.yandex.ru/~p/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/
+    0.75 - /safebrowsing/downloads?pver=2.2&client=Safari&appver=6.0.1
+    0.75 - /cat-get/4100/93f649a0cdd311de996dc1afc15d2acd.png
+    0.75 - /click/dtype=stred/pid=20/cid=71883/path=page-article-content/*http://slovari.yandex.ru/~p/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80/
+    0.75 - /slovari2/2.0-53/pages/cssjs/_cssjs.css
+    0.75 - /click/dtype=stred/pid=16/cid=71291/path=watch.Yaca.counts.1/*http://yaca.yandex.ru/yca/cat/Entertainment/
+    0.75 - /resource/context_static_r581.js
+    0.75 - /cat-get/3903/99AFDD38-E413-11DE-B402-043188CD8BBC
+    0.75 - /lego/_/jfkhFjXwsaQXfRaJVuispW0-RF8.png
+    0.75 - /www/1.359/www/blocks-desktop/b-weather/images/wizn7.png
+    0.75 - /favicon/www.satirograd.ru
+    0.75 - /get/6514/118170406.18/0_STATIC7df82_d66c24ca_teaser
+    0.75 - /click/dtype=stred/pid=16/cid=71291/path=pda.Yaca.counts.3/*http://yaca.yandex.ru/yca/cat/Entertainment/Introduction_Agencies/
+    0.75 - /jquery/1.7.2/jquery.min.js
+    0.75 - /blocks/b-hub-site/b-hub-site__new.gif
+    0.75 - /illustrations/vlasov/pictures/05/540_.jpg
+    0.75 - /cat-get/3903/aa9e828ece1511de996dc1afc15d2acd.png
+    0.75 - /www/_/GcG_EnD7gh0TfphhFg6t-T8sV60.png
+    0.75 - /metrika/watch.js
+    0.75 - /99/c1/tgFtaeLDK0ya43AvjS329vkQxTGb-gEgoXDdPkzyp8eKKR966J14ulqdZt4Ie_talVDTRg+sAvrQgOsSTwb3h9+ohfAr56r9ubwqXZ507mJCj7i90mRC6gaUXbj_t68yWklEK3nZwrLaKVSj6sTVSqzodmKl5Zgl3FLuBniTd5qI4Wv8USRUaNWhg_tBY1soGJsmj2eMXHuVrfcNfWuEtm-E-9ZqJC6h1oKbIWpEmq9ONPOJRsM1JpU_M7K6Mmk2Duirpa4w5_A_.gif
+    0.75 - /yca/cat/Entertainment/Introduction_Agencies/
+    0.75 - /jquery.crossframeajax.html
+    0.75 - /_static/r149/js/_rubric.js
+    0.75 - /slovari2/_/eE4BPXfIS9sHe5rzF03TTPeGcZ0.png
+    0.75 - /watch/722545
+    0.75 - /rtbcount/11Kiyx61d4WE8p64xuDIls3eAyPHYVjvD8KVH9VD18hxUJI57qINpGIBiSfH2GMDW7sEd0K8ZuW-R0O0
+    0.75 - /blocks/b-result/__screen/b-result__screen.png
+    0.75 - /jclck/dtype=stred/pid=132/cid=70262/path=1000.650/rnd=1351949452703/*data=url%3Dhttp%253A%252F%252Fwww.yandex.ru%252F
+    0.75 - /~p/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%22%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B0%22/
+    0.75 - /watch/115079?rn=778037&wmode=5&callback=_ymjsp168789&page-ref=http%3A%2F%2Fyaca.yandex.ru%2Fyca%2Fcat%2FEntertainment%2FIntroduction_Agencies%2F&page-url=http%3A%2F%2Fslovari.yandex.ru%2F&browser-info=j:1:s:1366x768x24:w:979x649:z:-240:i:20121103093112:en:utf-8:v:1825:c:1:la:en-us:wh:1:hid:552952815:ds:0,213,293,2,0:t:%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8&ut=noindex
+    0.75 - /www/1.359/www/pages-desktop/www/_www.js
+    0.75 - /www/_/teML5S6rVSBLp5nHdxbF-Y0r2fw.png
+    0.75 - /www/_/_r7pp-b-hKoDbgyGYy0IB3wlkno.png
+    0.75 - /illustrations/vlasov/pictures/08/541_.jpg
+    2.24 - /
+    0.75 - /www/_/ozDF4tTHM16IEcqGiOpVLdCTtjA.png
+    0.75 - /watch/722622?rn=515404&wmode=5&callback=_ymjsp485287&page-ref=http%3A%2F%2Fwww.yandex.ru%2F&page-url=http%3A%2F%2Fyaca.yandex.ru%2Fyca%2Fcat%2FEntertainment%2F&browser-info=j:1:s:1366x768x24:w:979x649:z:-240:i:20121103093059:en:utf-8:v:1825:c:1:la:en-us:hid:389845473:ds:0,0,1045,212,0:t:%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%3A%20%D0%A0%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F&ut=noindex
+    0.75 - /click/dtype=stred/pid=16/cid=71291/path=widget-banner.Yaca.counts.1/*http://yaca.yandex.ru/yca/cat/Entertainment/
+    0.75 - /safebrowsing/rd/ChFnb29nLXBoaXNoLXNoYXZhchAAGKGGDyDAhw8qFjfDAwD______________________wMyByHDAwD__z8
+    0.75 - /safebrowsing/rd/ChNnb29nLW1hbHdhcmUtc2hhdmFyEAEYt44GIMCOBjIGN4cBAP8D
+    0.75 - /blocks/b-hub-widget-banner/b-hub-widget-banner__img_n_4.png
+    0.75 - /cat-get/4101/aafc823ccdcd11de996dc1afc15d2acd.png
+    0.75 - /cat-get/4001/0eadbdd6cda211de996dc1afc15d2acd.png
+    0.75 - /watch/722545/1
+    0.75 - /blocks/b-result/__button/_type/b-result__button_type_watch.png
+    0.75 - /page/58508?callback=Ya%5B1351949477255%5D&target-ref=http%3A%2F%2Fslovari.yandex.ru%2F~%25D0%25BA%25D0%25BD%25D0%25B8%25D0%25B3%25D0%25B8%2F%25D0%25A1%25D0%25BB%25D0%25BE%25D0%25B2%25D0%25B0%25D1%2580%25D1%258C%2520%25D0%25B8%25D0%25B7%25D0%25BE%25D0%25B1%25D1%2580%25D0%25B0%25D0%25B7%25D0%25B8%25D1%2582%25D0%25B5%25D0%25BB%25D1%258C%25D0%25BD%25D0%25BE%25D0%25B3%25D0%25BE%2520%25D0%25B8%25D1%2581%25D0%25BA%25D1%2583%25D1%2581%25D1%2581%25D1%2582%25D0%25B2%25D0%25B0%2F%2522%25D0%25A1%25D0%25B5%25D0%25B2%25D0%25B5%25D1%2580%25D0%25BD%25D1%258B%25D0%25B5%2520%25D0%25BF%25D0%25B8%25D1%2581%25D1%258C%25D0%25BC%25D0%25B0%2522%2F&page-ref=http%3A%2F%2Fyaca.yandex.ru%2Fyca%2Fcat%2FEntertainment%2FIntroduction_Agencies%2F&rnd=596943&charset=utf-8&stat-id=1917985&grab=dCLQodC10LLQtdGA0L3Ri9C1INC_0LjRgdGM0LzQsCIg4oCUINCh0LvQvtCy0LDRgNGMINC40LfQvtCx0YDQsNC30LjRgtC10LvRjNC90L7Qs9C-INC40YHQutGD0YHRgdGC0LLQsCDigJQg0K_QvdC00LXQutGBLtCh0LvQvtCy0LDRgNC4CjIi0KHQtdCy0LXRgNC90YvQtSDQv9C40YHRjNC80LAiIA==
+    0.75 - /resource/oP5vYroCY4oT1mtUjfZw7g.png
+    0.75 - /watch/722622?rn=909079&wmode=5&callback=_ymjsp372210&page-ref=http%3A%2F%2Fyaca.yandex.ru%2Fyca%2Fcat%2FEntertainment%2F&page-url=http%3A%2F%2Fyaca.yandex.ru%2Fyca%2Fcat%2FEntertainment%2FIntroduction_Agencies%2F&browser-info=j:1:s:1366x768x24:w:979x649:z:-240:i:20121103093108:en:utf-8:v:1825:c:1:la:en-us:hid:241094499:ds:0,212,599,212,1:t:%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%3A%20%D0%97%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D1%81%D1%82%D0%B2%D0%B0&ut=noindex
+    0.75 - /www/1.359/www/pages-desktop/www-css/_www-css.css
+    0.75 - /jquery/1.6.3/jquery.min.js
+    0.75 - /click/dtype=stred/pid=20/cid=71883/path=page-index/*http://slovari.yandex.ru/
+    0.75 - /cat-get/5006/7F504124-7E4C-11E0-8EEF-9C04A1606514
+    0.75 - /lego/_/gdtS6a0b5ZRt_6PIn1MCYzp2mNI.ico
+    0.75 - /cat-get/4107/fcd3d5dccdb011de996dc1afc15d2acd.png
+    0.75 - /slovari2/2.0-53/pages/cssjs/_cssjs.ru.js
+    0.75 - /cat-get/4002/803002ccce2211de996dc1afc15d2acd.png
+    0.75 - /_static/r149/css/_rubric.css
+    0.75 - /illustrations/vlasov/pictures/08/541-95x96.jpg
+    0.75 - /favicon.ico
+    0.75 - /lego/_/HczJ5d0z3M_IBTU2ggXom2YZwIo.png
+    0.75 - /lego/_/04geUuGuuh8Vqfcqds2CEAxWnA0.ico
+    0.75 - /safebrowsing/rd/ChNnb29nLW1hbHdhcmUtc2hhdmFyEAAY6fUFIJD2BSoI83oBAP___z8yBul6AQD_Aw
+    0.75 - /tv/i/stv/1012412.jpg
+    0.75 - /click/dtype=stred/pid=20/cid=71883/path=page-article-content/*http://slovari.yandex.ru/~p/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%22%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B0%22/
+    0.75 - /~p/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/
+    0.75 - /www/_/WSpvlJ4KVhml4NPSb73RE5ovMww.png
+    0.75 - /watch/115079?rn=523766&page-ref=http%3A%2F%2Fslovari.yandex.ru%2F&page-url=http%3A%2F%2Fslovari.yandex.ru%2F~%25D0%25BA%25D0%25BD%25D0%25B8%25D0%25B3%25D0%25B8%2F%25D0%25A1%25D0%25BB%25D0%25BE%25D0%25B2%25D0%25B0%25D1%2580%25D1%258C%2520%25D0%25B8%25D0%25B7%25D0%25BE%25D0%25B1%25D1%2580%25D0%25B0%25D0%25B7%25D0%25B8%25D1%2582%25D0%25B5%25D0%25BB%25D1%258C%25D0%25BD%25D0%25BE%25D0%25B3%25D0%25BE%2520%25D0%25B8%25D1%2581%25D0%25BA%25D1%2583%25D1%2581%25D1%2581%25D1%2582%25D0%25B2%25D0%25B0%2F%25D0%259C%25D0%25B0%25D1%2581%25D1%2582%25D0%25B5%25D1%2580%2F&browser-info=j:1:s:1366x768x24:w:979x649:z:-240:i:20121103093120:en:utf-8:v:1825:c:1:la:en-us:ar:1:hid:473515576:t:%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%E2%80%94%20%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8&ut=noindex
+    0.75 - /cat-get/3905/c97d4566cd9611de996dc1afc15d2acd.png
+    0.75 - /i/media/stars-new-small.png
+    0.75 - /click/dtype=stred/pid=16/cid=71291/path=pda.Yaca.counts.2/*http://yaca.yandex.ru/yca/cat/Entertainment/
+    0.75 - /www/_/99V6ppzKTP_SkYzH6zgyUHzU420.png
+    0.75 - /www/_/gi6usoxknMCPUeGGI-8b80GvRRY.png
+    0.75 - /slovari2/_/lklUJxoxb8lnezkyS_jRctGNrzs.png
+    0.75 - /watch/115079?rn=984121&page-ref=http%3A%2F%2Fslovari.yandex.ru%2F&page-url=http%3A%2F%2Fslovari.yandex.ru%2F~%25D0%25BA%25D0%25BD%25D0%25B8%25D0%25B3%25D0%25B8%2F%25D0%25A1%25D0%25BB%25D0%25BE%25D0%25B2%25D0%25B0%25D1%2580%25D1%258C%2520%25D0%25B8%25D0%25B7%25D0%25BE%25D0%25B1%25D1%2580%25D0%25B0%25D0%25B7%25D0%25B8%25D1%2582%25D0%25B5%25D0%25BB%25D1%258C%25D0%25BD%25D0%25BE%25D0%25B3%25D0%25BE%2520%25D0%25B8%25D1%2581%25D0%25BA%25D1%2583%25D1%2581%25D1%2581%25D1%2582%25D0%25B2%25D0%25B0%2F%2522%25D0%25A1%25D0%25B5%25D0%25B2%25D0%25B5%25D1%2580%25D0%25BD%25D1%258B%25D0%25B5%2520%25D0%25BF%25D0%25B8%25D1%2581%25D1%258C%25D0%25BC%25D0%25B0%2522%2F&browser-info=j:1:s:1366x768x24:w:979x649:z:-240:i:20121103093117:en:utf-8:v:1825:c:1:la:en-us:ar:1:hid:992704934:t:%22%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B0%22%20%E2%80%94%20%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8&ut=noindex
+    0.75 - /lego/_/EPFG3VHMCG-afACIdhTuxfO_Xrs.png
+    0.75 - /system/fc07.swf
+    0.75 - /lego/_/X31pO5JJJKEifJ7sfvuf3mGeD_8.png
+    0.75 - /lego/_/EP16-imfbmEXN9qT950XIlh-TjA.png
+    0.75 - /lego/_/LT5RwXfJfm_sTCuMKY2UyMGaoKI.png
+    0.75 - /cat-get/4103/219dc5becdb411de996dc1afc15d2acd.png
+    0.75 - /watch/115079?rn=936809&page-ref=http%3A%2F%2Fslovari.yandex.ru%2F&page-url=http%3A%2F%2Fslovari.yandex.ru%2F~%25D0%25BA%25D0%25BD%25D0%25B8%25D0%25B3%25D0%25B8%2F%25D0%25A1%25D0%25BB%25D0%25BE%25D0%25B2%25D0%25B0%25D1%2580%25D1%258C%2520%25D0%25B8%25D0%25B7%25D0%25BE%25D0%25B1%25D1%2580%25D0%25B0%25D0%25B7%25D0%25B8%25D1%2582%25D0%25B5%25D0%25BB%25D1%258C%25D0%25BD%25D0%25BE%25D0%25B3%25D0%25BE%2520%25D0%25B8%25D1%2581%25D0%25BA%25D1%2583%25D1%2581%25D1%2581%25D1%2582%25D0%25B2%25D0%25B0%2F%25D0%259C%25D0%25BE%25D1%2580%25D1%2584%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D0%25B8%25D1%258F%2520%25D0%25B8%25D0%25B7%25D0%25BE%25D0%25B1%25D1%2580%25D0%25B0%25D0%25B7%25D0%25B8%25D1%2582%25D0%25B5%25D0%25BB%25D1%258C%25D0%25BD%25D0%25BE%25D0%25B3%25D0%25BE%2520%25D0%25B8%25D1%2581%25D0%25BA%25D1%2583%25D1%2581%25D1%2581%25D1%2582%25D0%25B2%25D0%25B0%2F&browser-info=j:1:s:1366x768x24:w:979x649:z:-240:i:20121103093123:en:utf-8:v:1825:c:1:la:en-us:ar:1:hid:287524159:t:%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0%20%E2%80%94%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8&ut=noindex
+    0.75 - /cat-get/4005/5dfb438ecdb811de996dc1afc15d2acd.png
+    0.75 - /lego/_/prMix8U1OlZR3A38J5ZPD7KJhBw.png
+    0.75 - /blocks/b-result/__button/_type/b-result__button_type_wdgt.png
+    0.75 - /blocks/b-site-counter/b-site-counter.gif
+    0.75 - /cat-get/3903/55803d7cce7111de996dc1afc15d2acd.png
+    0.75 - /meta/58508?callback=Ya%5B1351949472974%5D&target-ref=http%3A%2F%2Fslovari.yandex.ru%2F&page-ref=http%3A%2F%2Fyaca.yandex.ru%2Fyca%2Fcat%2FEntertainment%2FIntroduction_Agencies%2F&rnd=101772&charset=UTF-8&skip-token=yabs.&imp-id=1&grab=dNCv0L3QtNC10LrRgS7QodC70L7QstCw0YDQuAoxINCh0LXQs9C-0LTQvdGPINCyINGB0LvQvtCy0LDRgNGP0YUKICAgICAgICAgCjLQrdC90YbQuNC60LvQvtC_0LXQtNC40LggCjLQoNGD0YHRgdC60LjQuSDRj9C30YvQuiAKMiDQn9C10YDQtdCy0L7QtAogICAgICAgICAgICAgCjIg0J_RgNC-0LLQtdGA0YzRgtC1INGB0LXQsdGPCiAgICAgICAgICAgICAKMyLQodC10LLQtdGA0L3Ri9C1INC_0LjRgdGM0LzQsCIgCjPQsNC70LvQtdGPIAoz0L_Qvi3QsNC90LPQu9C40LnRgdC60LggCjPQv9C-LdC90LXQvNC10YbQutC4IAoz0L_Qvi3RhNGA0LDQvdGG0YPQt9GB0LrQuCAKM9C_0L4t0LjRgdC_0LDQvdGB0LrQuCAKM9C_0L4t0LjRgtCw0LvRjNGP0L3RgdC60LggCjPQv9C-LdGD0LrRgNCw0LjQvdGB0LrQuCAKM9C_0L4t0LrQsNC30LDRhdGB0LrQuCA=
+    0.75 - /blocks/b-hub-video/b-hub-video_bg.jpg
+    0.75 - /count/Vnw_3mft8wq40000Zhl8KGa5KP6yq4ba1fDKhlDVeQN8GfVD17a3=qcOn49K2cmPfMcbQagXZWgYAgoA2KAMM66IcD7W3?wmode=0
+    0.75 - /cat-get/3906/1c18b294ce8a11de996dc1afc15d2acd.png
+    0.75 - /social/current/sprites/ico-16.png
+    0.75 - /cat-get/4001/3c7e0a8acddf11de996dc1afc15d2acd.png
+    0.75 - /tv/i/stv/999518.jpg
+    0.75 - /favicon/flash-igrok.ru
+    0.75 - /click/dtype=stred/pid=16/cid=71291/path=widget.Yaca.counts.2/*http://yaca.yandex.ru/yca/cat/Entertainment/
+    0.75 - /cat-get/4005/5a01a40ccdaa11de996dc1afc15d2acd.png
+    0.75 - /fu
+    0.75 - /jquery/1.6.2/jquery.min.js
+    0.75 - /lego/_/JzHLySJ7_5x3szgyUiPwI8Q_eh4.png
+    0.75 - /morda-logo/i/logo.png
+    0.75 - /services?callback=jQuery172007370419030842368_1351949471856&locale=ru&login=yes&current-login=&yu=6410453771351949451&_=1351949472212
+    0.75 - /www/_/cIpIZcnyG-X9ToL-hUXTRLSXS4w.png
+    0.75 - /blocks/b-result/__button/_type/b-result__button_type_pda.png
+    0.75 - /~p/~%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0/%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80/
+    0.75 - /count/CffiU11HKWi40000ZhNAKGa5XPn83fwXGjG1aR9Y8Ee1arIai0000A6k_uMYDLj4byq4VmG0=2ySOSgcW0002bGAR0Mv3RaCpYPNe0fAbwSGZYg-vpXMbgS010QP6dQLEF0AFiLQQhmcVkOsnRGMPSQ2G-HMla1SHfuKYgB50MNC7GNW9=4fR3bQcW0002bGAR0Mv3RaCqYPi-0PAkINTuYgN5fosbcjBUfaETemu81O-u0-9B2f-yInNm2fbne90N4Q-G5n6dYnwee048445-2000=YwtxjAcW0002bGAR0Mv3RaCrYPEl19Al6xnkYgFw8IcbhwTF0QOfdPzY0u-mKFE239-y_i4F2fbne93R6g-GsngKa_GAfuuJgB50MNC7GNi9?stat-id=1917986&test-tag=13434961&wmode=3
+    0.75 - /0/c1/tInCXxmKqgW4tiFaxhUscGkuKwefV0vJsUJEYYm+QQw82PTBsdBJdQWbSMbG9_tUG3QYsP2j8bcfbuCWtsXDqIE8olbD1KUNXQpLbBZBZI3yR3s1RYkCLI2rT4o_tZ0gSdzz5IKOqsIEop26bhvi77OXYOyjt7QAYHl7zI3pvfliQPO-pFw8stirF_t0u1VyFRB5qD6+V88np16COxoDbKWb4LlTBrYRcG6aggAPRKclt-4gGPy+wcl_tTNzmmdRV4SDcx29r2PCnABAORuZMNs91ktf0iKKMWFLJ3NMg2eB8nR0D-NK1_tQ5JKhEulMDTQkTM6EeSqNjOmhsWUCS6kAabXtgj1Ip8bSuM7u4ms7EuqMOpl_iaBxQfdHKLMw0jcGGlMWiPkoqUmt3ClLD1cl0hCiWEpWOFQAA_A_.gif?bttr_a=5537585043516639131&bttr_b=892485159108290623&bttr_i=1&bttr_p=200?flash=0
+    0.75 - /system/context.js
+    0.75 - /cat-get/4105/5c04b48cce6411de996dc1afc15d2acd.png
+    0.75 - /count/Vnw_3zF2dkO40002Zhl8KGa5KPK2cmPfMeYpO2zG0vAeOuAefZIAgoA2KAe2fPOOP96yq4ba1fDKGQC1hlDVeQN8GfVD17e7
+    0.75 - /www/1.359/www/i/yandex3.png
+    0.75 - /www/_/t_9pYHjhzjFPyu8hVldteFojhB4.png
+    0.75 - /www/_/dnLVcH-xjEKbp45pKvJpFEY5nTY.png
+    0.75 - /www/_/_2SzwDeNOkaArI_txkVFOZgyV7U.png
+    0.75 - /yca/cat/Entertainment/
+    0.75 - /jquery/1.3.2/_jquery.js
+    0.75 - /i?id=617579124-00
+    0.75 - /cat-get/4004/987b60a4cdf711de996dc1afc15d2acd.png
+  content-encoding: 
+    100.00 - gzip
+  content-type: 
+    2.22 - application/x-www-form-urlencoded; charset=UTF-8
+    1.48 - text/html
+    3.70 - text/javascript
+    0.74 - application/x-www-form-urlencoded
+    6.67 - text/html; charset=UTF-8
+    41.48 - image/png
+    2.22 - image/x-icon
+    2.22 - text/javascript; charset=utf-8
+    0.74 - application/x-javascript; charset=utf-8
+    16.30 - image/gif
+    0.74 - application/vnd.google.safebrowsing-update
+    5.93 - image/jpeg
+    2.22 - application/vnd.google.safebrowsing-chunk
+    0.74 - text/html; charset=iso-8859-1
+    1.48 - application/x-shockwave-flash
+    2.96 - text/css
+    8.15 - application/x-javascript
+  age: 
+    100.00 - 227
+  :status: 
+    1.49 - 301
+    3.73 - 302
+    94.78 - 200
+  server: 
+    4.07 - nginx/1.2.1
+    19.51 - Phantom/0.0.0
+    3.25 - HTTP server (unknown)
+    46.34 - lighttpd/1.4.26
+    25.20 - nginx
+    0.81 - tns-counter.0.5.3
+    0.81 - nginx/1.0.4
+  :scheme: 
+    100.00 - http
+  connection: 
+    2.33 - close
+    97.67 - keep-alive
+  x-requested-with: 
+    100.00 - XMLHttpRequest
+  cookie: 
+    1.61 - t=p; yandexuid=6410453771351949451; yabs-sid=824271211351949452
+    12.90 - t=p; yandexuid=6410453771351949451
+    1.61 - guid=1D13100250951B90X1351949200
+    4.84 - t=p; yandexuid=6410453771351949451; fuid01=50951c8d0253c112.VDyfZuaglS8VO4Gom4dj0yi9ybWYTcBOJKVqn5iEq865cz9yNbCd2h3AKpjRQBwMhrhn4Ajnhu9KsOQIIfkop4xoJpSbSiqQOFJNXcPgZE9Mb7CR5YQ_9ZYTZQo1OJyx; slovari-state=translation%2C; aw=2_
+    46.77 - t=p; yandexuid=6410453771351949451; fuid01=50951c8d0253c112.VDyfZuaglS8VO4Gom4dj0yi9ybWYTcBOJKVqn5iEq865cz9yNbCd2h3AKpjRQBwMhrhn4Ajnhu9KsOQIIfkop4xoJpSbSiqQOFJNXcPgZE9Mb7CR5YQ_9ZYTZQo1OJyx
+    9.68 - t=p; yandexuid=6410453771351949451; fuid01=50951c8d0253c112.VDyfZuaglS8VO4Gom4dj0yi9ybWYTcBOJKVqn5iEq865cz9yNbCd2h3AKpjRQBwMhrhn4Ajnhu9KsOQIIfkop4xoJpSbSiqQOFJNXcPgZE9Mb7CR5YQ_9ZYTZQo1OJyx; aw=2_
+    8.06 - t=p; yandexuid=6410453771351949451; yabs-sid=824271211351949452; fuid01=50951c8d0253c112.VDyfZuaglS8VO4Gom4dj0yi9ybWYTcBOJKVqn5iEq865cz9yNbCd2h3AKpjRQBwMhrhn4Ajnhu9KsOQIIfkop4xoJpSbSiqQOFJNXcPgZE9Mb7CR5YQ_9ZYTZQo1OJyx
+    1.61 - t=p; yandexuid=6410453771351949451; fuid01=50951c8d0253c112.VDyfZuaglS8VO4Gom4dj0yi9ybWYTcBOJKVqn5iEq865cz9yNbCd2h3AKpjRQBwMhrhn4Ajnhu9KsOQIIfkop4xoJpSbSiqQOFJNXcPgZE9Mb7CR5YQ_9ZYTZQo1OJyx; slovari-state=translation%2C
+    4.84 - t=p; yandexuid=6410453771351949451; yabs-sid=824271211351949452; fuid01=50951c8d0253c112.VDyfZuaglS8VO4Gom4dj0yi9ybWYTcBOJKVqn5iEq865cz9yNbCd2h3AKpjRQBwMhrhn4Ajnhu9KsOQIIfkop4xoJpSbSiqQOFJNXcPgZE9Mb7CR5YQ_9ZYTZQo1OJyx; aw=2_
+    6.45 - PREF=ID=6957bcc8cc046ca7:TM=1350356636:LM=1350356636:S=pKKz7stk0U9GsHCz
+    1.61 - t=p; yandexuid=6410453771351949451; fuid01=50951c8d0253c112.VDyfZuaglS8VO4Gom4dj0yi9ybWYTcBOJKVqn5iEq865cz9yNbCd2h3AKpjRQBwMhrhn4Ajnhu9KsOQIIfkop4xoJpSbSiqQOFJNXcPgZE9Mb7CR5YQ_9ZYTZQo1OJyx; aw=2_; yabs-vdrf=A0
+  x-frame-options: 
+    20.00 - DENY
+    80.00 - SAMEORIGIN
+  :status-text: 
+    3.73 - Found
+    94.78 - OK
+    1.49 - Moved Permanently
+  :host: 
+    9.70 - yaca.yandex.ru
+    2.24 - safebrowsing-cache.google.com
+    0.75 - video-tub-f-ru.yandex.net
+    1.49 - static.yandex.net
+    1.49 - bs-meta.yandex.ru
+    3.73 - slovari.yandex.ru
+    0.75 - yandex.ru
+    15.67 - cards2.yandex.net
+    0.75 - img.yandex.net
+    0.75 - suggest.yandex.ru
+    0.75 - safebrowsing.clients.google.com
+    2.24 - awaps.yandex.ru
+    0.75 - www.yandex.ru
+    2.99 - an.yandex.ru
+    7.46 - mc.yandex.ru
+    7.46 - clck.yandex.ru
+    2.24 - yabs.yandex.ru
+    0.75 - www.tns-counter.ru
+    28.36 - yandex.st
+    1.49 - favicon.yandex.net
+    0.75 - pass.yandex.ru
+    0.75 - img2-fotki.yandex.net
+    3.73 - kiks.yandex.ru
+    2.24 - img.encyc.yandex.net
+    0.75 - js.static.yandex.net
+
+

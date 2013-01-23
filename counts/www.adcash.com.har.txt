@@ -536,3 +536,342 @@ etag                 0.333333333333                                     3
 :path                0.416149068323                                     161                 
 location             1.0                                                3                   
 set-cookie           1.0                                                2                   
+
+
+Header Frequencies:
+  content-length: 
+    1.35 - 2865
+    0.68 - 2293
+    6.08 - 34779
+    6.08 - 33186
+    2.03 - 5476
+    0.68 - 25019
+    0.68 - 42462
+    0.68 - 2893
+    0.68 - 12638
+    0.68 - 22719
+    0.68 - 8542
+    0.68 - 3214
+    2.03 - 2050
+    0.68 - 3385
+    6.08 - 1635
+    2.03 - 1944
+    2.03 - 0
+    2.03 - 2171
+    6.08 - 14804
+    2.03 - 451
+    2.03 - 421
+    2.70 - 1033
+    2.03 - 4546
+    0.68 - 427
+    0.68 - 18166
+    0.68 - 14041
+    6.08 - 45879
+    2.03 - 442
+    6.08 - 1158
+    0.68 - 3333
+    0.68 - 21096
+    0.68 - 24520
+    0.68 - 24486
+    0.68 - 3284
+    2.03 - 55962
+    2.03 - 20475
+    6.08 - 1861
+    2.03 - 5186
+    2.03 - 1556
+    0.68 - 1977
+    0.68 - 3113
+    6.08 - 35
+    0.68 - 2518
+    0.68 - 4954
+    2.03 - 1687
+    0.68 - 2357
+    4.05 - 1539
+  via: 
+    2.19 - 1.1 localhost.localdomain
+    97.81 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+  accept-language: 
+    100.00 - en-US,en;q=0.8
+  proxy-connection: 
+    15.95 - close
+    84.05 - keep-alive
+  x-cache-lookup: 
+    100.00 - MISS from sorga-msr:3128
+  vary: 
+    100.00 - Accept-Encoding
+  accept: 
+    13.04 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    9.32 - text/css,*/*;q=0.1
+    77.64 - */*
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  p3p: 
+    10.00 - CP="This is not a P3P policy! See //support.google.com/accounts/bin/answer.py?answer=151657&hl=en-US for more info."
+    90.00 - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+  :version: 
+    100.00 - HTTP/1.1
+  x-xss-protection: 
+    100.00 - 1; mode=block
+  x-content-type-options: 
+    76.92 - nosniff
+    23.08 - nosniff nosniff
+  user-agent: 
+    100.00 - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.56 Safari/537.4
+  etag: 
+    100.00 - "1878734771"
+  location: 
+    33.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2432717598
+    33.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=3405796125
+    33.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2801816348
+  :method: 
+    100.00 - get
+  cache-control: 
+    4.33 - private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+    4.33 - no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0
+    1.44 - no-cache
+    43.27 - max-age=0
+    32.21 - max-age=86400
+    8.65 - public, max-age=31536000
+    4.33 - max-age=43200, public
+    1.44 - public, max-age=31104000
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  x-cache: 
+    100.00 - MISS from sorga-msr
+  set-cookie: 
+    50.00 - VISITOR_INFO1_LIVE=7w2oBEPw1xs; path=/; domain=.youtube.com; expires=Thu, 16-May-2013 12:57:54 GMT VISITOR_INFO1_LIVE=7w2oBEPw1xs; path=/; domain=.youtube.com; expires=Thu, 16-May-2013 12:57:54 GMT
+    50.00 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; expires=Wed, 19-Sep-2012 14:57:53 CEST; path=/; HttpOnly
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    26.27 - Wed, 19 Sep 2012 12:44:08 GMT
+    7.63 - Tue, 18 Sep 2012 20:44:37 GMT
+    5.08 - Wed, 19 Sep 2012 12:44:44 GMT
+    0.85 - Wed, 19 Sep 2012 12:44:09 GMT
+    7.63 - Wed, 19 Apr 2000 11:43:00 GMT
+    2.54 - Tue, 27 Apr 1971 19:44:06 EST
+    2.54 - Sun, 26 Dec 2032 06:12:01 GMT
+    7.63 - Sat, 26 Jul 1997 05:00:00 GMT
+    4.24 - Wed, 19 Sep 2012 12:44:45 GMT
+    7.63 - Thu, 12 Sep 2013 18:46:46 GMT
+    7.63 - Thu, 12 Sep 2013 18:46:56 GMT
+    12.71 - Wed, 19 Sep 2012 12:44:07 GMT
+    7.63 - Wed, 19 Sep 2012 12:57:53 GMT
+  last-modified: 
+    8.49 - Mon, 17 Sep 2012 12:38:06 GMT
+    2.83 - Fri, 31 Aug 2012 14:33:41 GMT
+    16.98 - Mon, 02 Apr 2012 18:24:28 GMT
+    2.83 - Fri, 31 Aug 2012 14:34:27 GMT
+    8.49 - Wed, 21 Jan 2004 19:51:30 GMT
+    2.83 - Tue, 21 Aug 2012 08:25:51 GMT
+    2.83 - Fri, 31 Aug 2012 14:34:07 GMT
+    8.49 - Tue, 11 Sep 2012 03:20:09 GMT
+    0.94 - Fri, 31 Aug 2012 14:36:18 GMT
+    2.83 - Fri, 31 Aug 2012 14:34:15 GMT
+    0.94 - Fri, 31 Aug 2012 14:36:16 GMT
+    21.70 - Fri, 03 Aug 2012 11:05:03 GMT
+    0.94 - Fri, 31 Aug 2012 14:36:17 GMT
+    2.83 - Fri, 31 Aug 2012 14:33:49 GMT
+    13.21 - Fri, 03 Aug 2012 11:05:04 GMT
+    2.83 - Wed, 05 Sep 2012 15:33:45 GMT
+  referer: 
+    6.21 - http://www.adcash.com/index.php
+    1.24 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=3405796125
+    4.97 - http://www.adcash.com/advertisers.php
+    0.62 - http://www.adcash.com/legal.php
+    6.21 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2801816348
+    4.35 - http://www.adcash.com/publishers.php
+    6.21 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2432717598
+    6.21 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=3405796125
+    2.48 - http://www.adcash.com/login.php
+    1.24 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=2801816348
+    1.24 - http://www.adcash.com/contact.php
+    1.24 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=2432717598
+    57.76 - http://www.adcash.com/
+  pragma: 
+    100.00 - no-cache
+  date: 
+    1.24 - Tue, 18 Sep 2012 12:57:56 GMT
+    1.86 - Tue, 18 Sep 2012 12:57:55 GMT
+    1.24 - Tue, 18 Sep 2012 12:57:54 GMT
+    3.11 - Tue, 18 Sep 2012 12:44:45 GMT
+    14.91 - Tue, 18 Sep 2012 12:25:34 GMT
+    3.73 - Tue, 18 Sep 2012 12:44:44 GMT
+    9.32 - Tue, 18 Sep 2012 12:44:07 GMT
+    19.25 - Tue, 18 Sep 2012 12:44:08 GMT
+    0.62 - Tue, 18 Sep 2012 12:57:59 GMT
+    5.59 - Tue, 18 Sep 2012 08:44:37 GMT
+    8.70 - Tue, 18 Sep 2012 12:57:53 GMT
+    5.59 - Wed, 12 Sep 2012 18:46:56 GMT
+    0.62 - Tue, 18 Sep 2012 12:44:09 GMT
+    5.59 - Wed, 12 Sep 2012 20:44:37 GMT
+    1.86 - Tue, 18 Sep 2012 12:29:47 GMT
+    3.73 - Tue, 18 Sep 2012 12:57:58 GMT
+    3.73 - Tue, 18 Sep 2012 12:57:57 GMT
+    1.86 - Tue, 18 Sep 2012 12:31:26 GMT
+    5.59 - Wed, 12 Sep 2012 18:46:46 GMT
+    1.86 - Sat, 08 Sep 2012 13:26:25 GMT
+  :path: 
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=7&utmn=1848029908&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=913x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=433458184&utmr=0&utmp=%2Findex.php&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.62 - /contact.php
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=8&utmn=65194638&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=913x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=2083920373&utmr=0&utmp=%2Findex.php&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    1.86 - /player_api
+    1.86 - /imgv3/carrusel_5_en.jpg
+    1.24 - /index.php
+    0.62 - /imgv3/background_header.png
+    0.62 - /imgv3/adcash_logo.png
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=1&utmn=400220514&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=913x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=1610635283&utmr=0&utmp=%2F&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    5.59 - /en/Default/security.js
+    0.62 - /
+    5.59 - /ajax/libs/jquery/1.7.1/jquery.min.js
+    0.62 - /cgi-bin/block_message.cgi?ws-session=2801816348
+    0.62 - /imgv3/pub_dcpm_box.png
+    1.86 - /js/slides.jquery-adcash.v1.js
+    0.62 - /cgi-bin/blockOptions.cgi?ws-session=2432717598
+    0.62 - /cgi-bin/block_message.cgi?ws-session=3405796125
+    0.62 - /imgv3/pub_formats_box.png
+    0.62 - /imgv3/pub_payments_box.png
+    0.62 - /cgi-bin/blockOptions.cgi?ws-session=2801816348
+    0.62 - /advertisers.php
+    5.59 - /ga.js
+    0.62 - /imgv3/pub_statistics_box.png
+    0.62 - /imgv3/background.jpg
+    1.86 - /imgv3/carrusel_4_en.jpg
+    0.62 - /publishers.php
+    0.62 - /imgv3/features_icon_5.png
+    0.62 - /imgv3/cpm_block.jpg
+    5.59 - /ajax/libs/jqueryui/1.7.2/jquery-ui.min.js
+    1.86 - /imgv3/carrusel_2_en.jpg
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=3&utmn=197412536&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=930x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=939737263&utmr=0&utmp=%2Flogin.php&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    1.86 - /en/Default/master.css
+    5.59 - /cssv3/index.css
+    1.86 - /imgv3/carrusel_1_en.jpg
+    1.86 - /en/Default/master.js
+    0.62 - /imgv3/world_block.jpg
+    0.62 - /imgv3/carrusel_pager_bg.png
+    5.59 - /imgv3/map.png
+    0.62 - /imgv3/footer_city.png
+    0.62 - /imgv3/features_icon_6.png
+    1.86 - /yt/jsbin/www-widgetapi-vflU5wlSl.js
+    1.86 - /Images/wslogo_block_page.png
+    0.62 - /imgv3/features_icon_3.png
+    0.62 - /imgv3/features_icon_1.png
+    2.48 - /imgv3/grey_bot_base.png
+    0.62 - /imgv3/pub_customer_box.png
+    0.62 - /cgi-bin/blockpage.cgi?ws-session=3405796125
+    3.73 - /en/Default/base64.js
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=5&utmn=1085126629&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=913x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=1156886409&utmr=0&utmp=%2Fadvertisers.php&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    1.24 - /login.php
+    1.86 - /en/Default/blockStyle.css
+    1.86 - /imgv3/carrusel_6_en.jpg
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=2&utmn=1535534097&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=930x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=246509512&utmr=0&utmp=%2Flogin.php&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.62 - /cgi-bin/block_message.cgi?ws-session=2432717598
+    0.62 - /legal.php
+    0.62 - /cgi-bin/blockpage.cgi?ws-session=2432717598
+    1.86 - /Images/block.png
+    0.62 - /imgv3/signup_block.jpg
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=4&utmn=1288695032&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=913x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=1984915282&utmr=0&utmp=%2Fcontact.php&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    1.86 - /embed/r6H2_7Bv8vc?modestbranding=1&rel=0&controls=1&fs=1&egm=1&theme=dark&color=white&version=3&autohide=1&showinfo=0&hd=1&enablejsapi=1&origin=http%3A%2F%2Fwww.adcash.com
+    5.59 - /imgv3/arrow.png
+    0.62 - /imgv3/features_icon_4.png
+    0.62 - /cgi-bin/blockpage.cgi?ws-session=2801816348
+    0.62 - /imgv3/features_icon_2.png
+    0.62 - /cgi-bin/blockOptions.cgi?ws-session=3405796125
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=9&utmn=125274922&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=913x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=1827840933&utmr=0&utmp=%2Flegal.php&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.62 - /__utm.gif?utmwv=5.3.5&utms=6&utmn=996756254&utmhn=www.adcash.com&utmcs=UTF-8&utmsr=1920x1080&utmvp=913x654&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Adcash%20-%20Advertising%20network&utmhid=1620633108&utmr=0&utmp=%2Fpublishers.php&utmac=UA-1437035-22&utmcc=__utma%3D54583931.391048009.1347973074.1347973074.1347973074.1%3B%2B__utmz%3D54583931.1347973074.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+  content-encoding: 
+    100.00 - gzip
+  content-type: 
+    12.03 - image/jpeg
+    0.63 - text/html
+    5.70 - text/html; charset=utf-8
+    26.58 - image/png
+    9.49 - text/css
+    5.70 - image/gif
+    1.90 - application/javascript
+    15.19 - application/x-javascript
+    5.70 - text/html; charset=UTF-8
+    5.70 - text/javascript
+    11.39 - text/javascript; charset=UTF-8
+  age: 
+    0.65 - 1592
+    7.10 - 792
+    5.16 - 1943
+    0.65 - 1587
+    5.16 - 1944
+    1.29 - 1
+    16.77 - 0
+    5.81 - 497457
+    0.65 - 1690
+    0.65 - 1691
+    0.65 - 1686
+    1.94 - 862289
+    0.65 - 1591
+    0.65 - 490402
+    0.65 - 490401
+    1.29 - 490400
+    5.16 - 1939
+    5.81 - 15196
+    1.29 - 490399
+    1.29 - 490398
+    0.65 - 490397
+    5.81 - 497467
+    21.94 - 825
+    0.65 - 824
+    7.74 - 826
+  :status: 
+    97.52 - 200
+    1.86 - 302
+    0.62 - 404
+  server: 
+    15.13 - sffe
+    15.13 - GFE/2.0
+    5.88 - 417
+    0.84 - 411
+    10.92 - 415
+    0.84 - 413
+    0.84 - 407
+    2.52 - 405
+    1.68 - 414
+    4.20 - 406
+    3.36 - 416
+    0.84 - 404
+    4.20 - 403
+    4.20 - 402
+    2.52 - lighttpd-yt/1.4.18
+    13.45 - 410
+    7.56 - 418
+    2.52 - gwiseguy/2.0
+    0.84 - 409
+    2.52 - 408
+  :scheme: 
+    85.09 - http
+    14.91 - https
+  connection: 
+    100.00 - keep-alive
+  cookie: 
+    6.17 - VISITOR_INFO1_LIVE=7w2oBEPw1xs
+    1.23 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; __utma=54583931.391048009.1347973074.1347973074.1347973074.1; __utmb=54583931.2.10.1347973074; __utmc=54583931; __utmz=54583931.1347973074.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    8.64 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; __utma=54583931.391048009.1347973074.1347973074.1347973074.1; __utmb=54583931.4.10.1347973074; __utmc=54583931; __utmz=54583931.1347973074.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    1.23 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; __utma=54583931.391048009.1347973074.1347973074.1347973074.1; __utmb=54583931.6.10.1347973074; __utmc=54583931; __utmz=54583931.1347973074.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    70.37 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373
+    7.41 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; __utma=54583931.391048009.1347973074.1347973074.1347973074.1; __utmb=54583931.5.10.1347973074; __utmc=54583931; __utmz=54583931.1347973074.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    1.23 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; __utma=54583931.391048009.1347973074.1347973074.1347973074.1; __utmb=54583931.8.10.1347973074; __utmc=54583931; __utmz=54583931.1347973074.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    1.23 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; __utma=54583931.391048009.1347973074.1347973074.1347973074.1; __utmb=54583931.1.10.1347973074; __utmc=54583931; __utmz=54583931.1347973074.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    1.23 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; __utma=54583931.391048009.1347973074.1347973074.1347973074.1; __utmb=54583931.7.10.1347973074; __utmc=54583931; __utmz=54583931.1347973074.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    1.23 - adcash_panel=5603038323636343562666134373264313662626231343732616564616730373; __utma=54583931.391048009.1347973074.1347973074.1347973074.1; __utmb=54583931.3.10.1347973074; __utmc=54583931; __utmz=54583931.1347973074.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+  x-frame-options: 
+    100.00 - SAMEORIGIN
+  :status-text: 
+    97.52 - OK
+    1.86 - Moved Temporarily
+    0.62 - Not Found
+  :host: 
+    24.22 - 172.19.77.100:15871
+    11.18 - ajax.googleapis.com
+    3.73 - www.youtube.com
+    1.86 - s.ytimg.com
+    11.18 - www.google-analytics.com
+    47.83 - www.adcash.com
+
+

@@ -435,7 +435,7 @@ content-length:
  Average:     3.86
  Low:         1
  High:        6
- Variability: 0.5914
+ Variability: 0.5934
  Percent of Total Size: 1.110063
  Percent of Total Count: 5.189132
  Encoded: 
@@ -769,3 +769,1984 @@ if-none-match        1.0                                                1
 x-blockid            1.0                                                1                   
 x-transaction        1.0                                                1                   
 x-fb-rev             1.0                                                1                   
+
+
+Header Frequencies:
+  content-length: 
+    0.21 - 22504
+    0.82 - 1140
+    0.21 - 3711
+    0.21 - 2963
+    0.21 - 32704
+    0.41 - 18556
+    0.21 - 4048
+    0.21 - 16764
+    2.26 - 1308
+    2.26 - 1787
+    0.21 - 4027
+    0.62 - 4024
+    0.21 - 7227
+    0.21 - 3654
+    0.21 - 4226
+    0.21 - 10106
+    0.62 - 2099
+    0.21 - 23616
+    0.21 - 198
+    0.21 - 2741
+    0.41 - 3128
+    0.21 - 2521
+    0.21 - 5271
+    0.21 - 1942
+    0.21 - 2487
+    0.62 - 65450
+    0.21 - 4387
+    0.41 - 2480
+    0.21 - 3257
+    0.21 - 3054
+    3.70 - 0
+    0.21 - 12799
+    0.21 - 28748
+    0.21 - 2249
+    0.21 - 3850
+    0.21 - 10748
+    0.21 - 2956
+    0.21 - 4988
+    0.21 - 3723
+    0.21 - 7698
+    0.21 - 3944
+    0.21 - 4492
+    0.21 - 2859
+    0.21 - 16670
+    0.21 - 5382
+    0.21 - 7396
+    0.21 - 1691
+    0.21 - 7399
+    0.21 - 5141
+    0.21 - 2476
+    0.21 - 15424
+    0.21 - 6443
+    0.21 - 4037
+    0.21 - 127
+    0.41 - 3203
+    0.21 - 13418
+    0.21 - 22673
+    0.21 - 3202
+    0.21 - 4875
+    0.82 - 32277
+    0.21 - 4737
+    0.21 - 1556
+    0.21 - 5300
+    0.21 - 2333
+    0.82 - 7604
+    0.21 - 3031
+    0.62 - 4402
+    0.21 - 31587
+    0.21 - 3841
+    0.21 - 3840
+    0.21 - 6311
+    0.21 - 4830
+    0.21 - 1663
+    0.41 - 2252
+    0.21 - 2148
+    0.62 - 3826
+    0.21 - 5396
+    0.21 - 3943
+    0.21 - 5155
+    0.21 - 3140
+    0.21 - 7031
+    0.21 - 5607
+    0.21 - 25689
+    0.21 - 4558
+    0.21 - 144217
+    0.21 - 2877
+    0.21 - 14617
+    0.21 - 3677
+    0.21 - 3301
+    0.21 - 32795
+    0.21 - 4802
+    0.41 - 7242
+    0.21 - 4418
+    0.21 - 8578
+    0.21 - 2982
+    0.21 - 4121
+    0.41 - 2987
+    0.21 - 3022
+    0.21 - 3020
+    0.21 - 2665
+    0.21 - 8800
+    0.21 - 24473
+    0.21 - 58823
+    0.21 - 364
+    0.21 - 7737
+    0.21 - 363
+    0.21 - 22656
+    0.21 - 8043
+    0.21 - 2601
+    0.21 - 3749
+    0.62 - 3953
+    0.21 - 442
+    0.41 - 440
+    0.21 - 3741
+    0.21 - 13530
+    0.21 - 11211
+    0.21 - 4358
+    0.21 - 5676
+    0.21 - 6672
+    0.21 - 53633
+    0.21 - 7029
+    0.21 - 1987
+    3.08 - 21459
+    0.21 - 3508
+    0.21 - 8952
+    0.21 - 5248
+    0.21 - 3260
+    0.21 - 4422
+    0.21 - 3502
+    0.41 - 1840
+    0.21 - 2278
+    2.05 - 35
+    0.21 - 4425
+    0.21 - 7688
+    0.21 - 15138
+    0.21 - 4973
+    0.41 - 1539
+    0.21 - 5204
+    0.21 - 16886
+    0.21 - 5673
+    0.21 - 21043
+    0.21 - 2455
+    0.82 - 4180
+    0.21 - 6534
+    0.21 - 4630
+    0.21 - 3000
+    0.21 - 49260
+    0.21 - 8299
+    0.21 - 4343
+    0.21 - 7916
+    0.21 - 22567
+    0.21 - 2050
+    0.21 - 2052
+    0.62 - 1635
+    0.21 - 5434
+    0.41 - 970
+    0.62 - 49707
+    0.82 - 12567
+    0.21 - 50128
+    0.21 - 31022
+    0.21 - 37659
+    0.21 - 8377
+    0.21 - 59930
+    0.41 - 4325
+    0.21 - 144384
+    0.62 - 62648
+    0.82 - 5893
+    0.21 - 3523
+    0.41 - 1867
+    0.21 - 1711
+    0.21 - 3171
+    0.21 - 3079
+    0.21 - 14147
+    0.62 - 4376
+    0.21 - 2365
+    0.62 - 3529
+    0.21 - 6356
+    0.21 - 4175
+    0.21 - 960
+    0.21 - 4078
+    0.21 - 5718
+    0.21 - 11533
+    0.21 - 4866
+    0.21 - 4525
+    0.21 - 12247
+    0.21 - 2891
+    0.21 - 969
+    0.21 - 4689
+    0.21 - 10308
+    0.21 - 5794
+    0.21 - 7408
+    0.21 - 13079
+    0.21 - 8668
+    0.21 - 3375
+    0.21 - 2360
+    0.21 - 2106
+    0.21 - 6740
+    0.21 - 3931
+    0.41 - 2862
+    0.82 - 50434
+    0.21 - 2009
+    0.21 - 1205
+    0.21 - 3309
+    0.21 - 4242
+    0.21 - 3866
+    0.41 - 29485
+    0.21 - 2065
+    0.21 - 4761
+    0.21 - 5717
+    0.21 - 3061
+    0.21 - 3837
+    0.21 - 5058
+    0.21 - 2048
+    0.21 - 3739
+    0.21 - 5527
+    0.21 - 6624
+    0.21 - 5642
+    0.62 - 21259
+    0.21 - 4614
+    0.21 - 14495
+    0.21 - 4616
+    0.21 - 959
+    0.21 - 3439
+    0.21 - 4518
+    0.21 - 5199
+    0.21 - 7848
+    0.21 - 4924
+    0.21 - 6415
+    0.21 - 2224
+    2.26 - 45
+    0.21 - 7207
+    4.72 - 43
+    0.21 - 1197
+    0.21 - 2942
+    0.21 - 7777
+    0.21 - 3185
+    0.21 - 3973
+    0.21 - 4591
+    0.62 - 14804
+    1.44 - 5647
+    0.21 - 3009
+    0.21 - 18528
+    0.62 - 34322
+    0.21 - 1561
+    0.21 - 3730
+    0.62 - 9688
+    0.21 - 4588
+    0.21 - 4258
+    0.21 - 2725
+    0.21 - 12572
+    0.21 - 204
+    0.41 - 59527
+    0.21 - 3485
+    1.44 - 58820
+    0.21 - 3476
+    0.21 - 6039
+    0.21 - 4256
+    0.21 - 37683
+    0.21 - 4504
+    0.21 - 5737
+    0.21 - 34706
+    0.21 - 25369
+    0.21 - 4828
+    0.21 - 3059
+    0.21 - 1418
+    0.21 - 3867
+    0.41 - 3972
+    0.21 - 5362
+    0.41 - 1804
+    0.21 - 65
+    0.21 - 3438
+    0.21 - 2127
+    0.21 - 1693
+    0.21 - 2128
+    0.21 - 4666
+    0.21 - 3114
+    0.21 - 451
+    0.21 - 3111
+    0.21 - 5633
+    0.21 - 472
+    0.21 - 4473
+    2.46 - 2078
+    0.21 - 1687
+    0.21 - 3190
+    2.26 - 802
+    0.21 - 1932
+    0.21 - 3542
+    1.03 - 2534
+    0.21 - 1642
+  via: 
+    0.42 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain, 1.0 sorga-msr:3128 (squid/2.6.STABLE21)
+    0.85 - 1.1 localhost.localdomain
+    0.21 - 1.1 localhost.localdomain, 1.0 sorga-msr:3128 (squid/2.6.STABLE21)
+    98.52 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+  accept-language: 
+    100.00 - en-US,en;q=0.8
+  proxy-connection: 
+    14.95 - close
+    85.05 - keep-alive
+  x-fb-debug: 
+    42.86 - bLPT/3DM9NJbYZc2NrP2/E5JRMg/iitX11cOmAQNqpU=
+    14.29 - ZnjEBsQZKi7vAg91gkaLzeRLX96mofIEqeP9A9vHMz8=
+    14.29 - YfVqXGigSsRSfuDRZccvj+mg20ttcwnyhag1nCUwl5c=
+    28.57 - M1CMvL1W1Db9Ad5Ko8WnvEfzHhLv0iLcSpr4PsSjxfc=
+  x-cache-lookup: 
+    100.00 - MISS from sorga-msr:3128
+  vary: 
+    100.00 - Accept-Encoding
+  accept: 
+    9.23 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    5.08 - text/css,*/*;q=0.1
+    85.69 - */*
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  x-object-type: 
+    100.00 - PHOTO_PROFILE
+  x-backend: 
+    100.00 - hs478.snc6
+  p3p: 
+    0.78 - policyref="/w3c/p3p.xml",CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+    76.56 - CP="CAO PSA OUR"
+    0.78 - policyref="http://logc188.xiti.com/w3c/p3p.xml",CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+    17.19 - policyref="/w3c/p3p.xml",CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA", policyref="/w3c/p3p.xml",CP="NOI DSP COR CURa DEVa PSAa STP UNI COM NAV OUR INT"
+    4.69 - CP="CAO DSP LAW CURa ADMa DEVa TAIa PSAa PSDa IVAa IVDa OUR BUS IND UNI COM NAV INT"
+  access-control-allow-methods: 
+    100.00 - GET,POST,PUT,DELETE,OPTIONS
+  :version: 
+    100.00 - HTTP/1.1
+  x-chrome-variations: 
+    100.00 - CLG1yQEIibbJAQiZtskBCKa2yQEIqLbJAQiptskBCLC2yQEIv4PKAQ==
+  x-kompressorname: 
+    24.00 - kompressor8
+    51.00 - kompressor6
+    20.00 - kompressor7
+    5.00 - kompressor5
+  content-disposition: 
+    0.43 - inline; filename=20254305.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20187062.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20136815.jpg-r_120_160-f_jpg-q_x-20120613_103904.jpg
+    0.43 - inline; filename=20063503.jpg-r_120_160-f_jpg-q_x-20120322_053707.jpg
+    0.43 - inline; filename=20254447.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19860692.jpg-r_120_160-f_jpg-q_x-20111202_031530.jpg
+    0.43 - inline; filename=20247106.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19370850_fa3_vost.jpg-cx_75_60_0-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=12071215333060.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19750372.jpg-r_75_x-f_jpg-q_x-20110530_025404.jpg
+    0.43 - inline; filename=19365732_ex1_vost.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20186919.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20247285.jpg-r_190_76-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=18410838.jpg-r_120_x-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19571450.jpg-cx_120_160_0-b_1_D6D6D6-f_jpg-q_x-20101027_051909.jpg
+    1.73 - inline; filename=20184118.jpg-r_75_x-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20208588.jpg-c_75_100_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20091993.jpg-r_120_160-b_1_D6D6D6-f_jpg-q_x-20120426_115713.jpg
+    0.43 - inline; filename=19398878_itw1.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=odakbljj.i1t.jpg-c_60_65_0-f_jpg-q_x-20100820_093729.jpg
+    0.43 - inline; filename=19693261.gif-r_120_160-f_jpg-q_x-20110311_032147.jpg
+    0.43 - inline; filename=20246114.jpg-r_190_76-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19376685_fanzone_2012_07_28.jpg-cx_120_110_0-o_overlayEmissions-Fanzone-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=120913154048407.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20072089.jpg-r_120_160-f_jpg-q_x-20120403_121623.jpg
+    0.43 - inline; filename=20189963.jpg-cx_120_160_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20244727.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=120822174955667.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20210097.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19381849_ex1_vo.jpg-cx_120_90_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19365731_fa1_vost.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20071063.jpg-c_80_80_0-f_jpg-q_x-20120402_120459.jpg
+    0.43 - inline; filename=19393438_skyfall7.jpg-cx_120_110_0-o_vignettesEmissions-120-skyfall.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19635858.jpg-r_120_160-b_1_D6D6D6-f_jpg-q_x-20110112_124538.jpg
+    0.43 - inline; filename=19361376_te2.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=634830470777916395-173338432.js
+    0.43 - inline; filename=20169197.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19229664.jpg-r_120_160-f_jpg-q_x-20100121_115726.jpg
+    0.43 - inline; filename=20254268.jpg-c_120_120_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20186918.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20254217.jpg-r_190_76-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=l0zbdo4q.pjc.jpg-c_60_65_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20140274.jpg-r_120_160-b_1_D6D6D6-f_jpg-q_x-20120615_044219.jpg
+    0.43 - inline; filename=19396422_le_son_de_cine_juillet_2012_1.jpg-cx_120_110_0-o_overlay-lsdc-160x150.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=18375783.jpg-cx_120_160_0-b_1_D6D6D6-f_jpg-q_x-20040319_064209.jpg
+    0.43 - inline; filename=gygasye1.bd0.jpg-c_60_65_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19666852.jpg-r_120_160-f_jpg-q_x-20110210_092339.jpg
+    0.43 - inline; filename=18798044.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20200597.jpg-c_120_160_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20129657.jpg-r_120_160-f_jpg-q_x-20120605_040407.jpg
+    0.43 - inline; filename=120917063445130.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20175421.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19377231_msp_nadia_fares.jpg-cx_120_110_0-o_overlayEmissions-Mascene-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20254358.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19809513.jpg-r_120_160-f_jpg-q_x-20110909_103545.jpg
+    0.43 - inline; filename=120915091019490.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20254382.jpg-c_120_120_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19399524_fanzone_2012_09_15.jpg-cx_120_110_0-o_overlayEmissions-Fanzone-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20170633.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19767004.jpg-r_75_x-f_jpg-q_x-20110627_115545.jpg
+    0.87 - inline; filename=20240141.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20071065.jpg-c_80_80_0-f_jpg-q_x-20120402_120459.jpg
+    0.43 - inline; filename=12091217493428.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20214044.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20169197.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20170597.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19792332.gif-r_120_160-f_jpg-q_x-20110808_123248.jpg
+    0.43 - inline; filename=20254381.jpg-c_120_120_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20148010.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    1.30 - inline; filename=20196843.jpg-c_75_100_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19868929.jpg-r_120_160-f_jpg-q_x-20111215_105831.jpg
+    0.43 - inline; filename=19399602_direct2dvd_septembre2012_2.jpg-cx_120_110_0-o_overlayEmissions-D2DVD-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19490952.jpg-r_120_160-b_1_D6D6D6-f_jpg-q_x-20100809_023933.jpg
+    0.43 - inline; filename=19376986_fanzone_2012_08_10.jpg-cx_120_110_0-b_4_FFCC00-o_overlayEmissions-Fanzone-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20148007.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19337840_fa1_vost.jpg-cx_75_60_0-o_play.png_SE_5-f_jpg-q_x-20120503_060813.jpg
+    0.43 - inline; filename=18898781.jpg-r_75_x-f_jpg-q_x-xxyxx.jpg
+    1.30 - inline; filename=20200597.jpg-c_75_100_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19376122_msp_Michel_Hazanavicius.jpg-cx_120_110_0-o_overlayEmissions-Mascene-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19397403_tueurs_en_series_07_09_2012.jpg-cx_120_110_0-o_overlayEmissions-TES-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20254229.jpg-r_360_144-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19866267.jpg-c_80_80_0-f_jpg-q_x-20111212_103140.jpg
+    0.87 - inline; filename=20254083.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.87 - inline; filename=19825955.jpg-c_75_100_0-f_jpg-q_x-20111009_041903.jpg
+    0.43 - inline; filename=20186915.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19398698_GIC_2012_09_12.jpg-cx_120_110_0-o_overlayEmissions-GIC-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19623285.jpg-r_120_160-b_1_D6D6D6-f_jpg-q_x-20101217_111303.jpg
+    0.43 - inline; filename=19369949_fa1.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20175421.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20219642.jpg-r_190_76-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20075805.jpg-r_120_160-f_jpg-q_x-20120406_053334.jpg
+    0.87 - inline; filename=634830470777916395--1516970836.js
+    0.43 - inline; filename=20172090.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20148011.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19779942.jpg-r_120_160-b_1_D6D6D6-f_jpg-q_x-20110718_011230.jpg
+    0.43 - inline; filename=18370240.jpg-cx_120_160_0-b_1_D6D6D6-f_jpg-q_x-20031222_041332.jpg
+    0.43 - inline; filename=19365733_ex2_vost.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20108181.jpg-r_120_160-f_jpg-q_x-20120516_110246.jpg
+    0.43 - inline; filename=20174000.jpg-c_120_160_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.87 - inline; filename=20254072.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20254243.jpg-c_120_120_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20104363.jpg-r_120_160-f_jpg-q_x-20120511_123354.jpg
+    0.43 - inline; filename=20132702.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19351590_fa1_vost.jpg-cx_75_60_0-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=634830470777916395-1847624993.js
+    0.43 - inline; filename=20186916.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=120106121412940.jpg-r_640_300-f_jpg-q_x-20120106_121411.jpg
+    0.43 - inline; filename=20169197.jpg-r_160_240-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=jxbwkulm.mbg.jpg-c_60_65_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19846340.jpg-cx_120_160_0-b_1_D6D6D6-f_jpg-q_x-20111110_125430.jpg
+    0.43 - inline; filename=20058688.jpg-r_120_160-f_jpg-q_x-20120316_040808.jpg
+    0.43 - inline; filename=19378918_fa1.jpg-cx_75_60_0-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=yaxcg2ea.3zr.jpg-c_60_65_0-f_jpg-q_x-20120611_111520.jpg
+    0.43 - inline; filename=20186917.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19866266.jpg-c_80_80_0-f_jpg-q_x-20111212_103139.jpg
+    0.43 - inline; filename=20127801.jpg-c_75_100_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20254230.jpg-r_190_76-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19820335.jpg-r_120_160-f_jpg-q_x-20110928_113214.jpg
+    0.43 - inline; filename=20252945.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20205330.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    1.30 - inline; filename=20184118.jpg-c_75_100_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20148009.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20148291.jpg-r_75_x-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=18768327.jpg-r_120_x-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20254201.jpg-c_120_120_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20211367.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19477882.jpg-r_120_x-f_jpg-q_x-20100716_041226.jpg
+    0.43 - inline; filename=19395356_nanarland_2012_09_07.jpg-cx_120_110_0-o_overlayEmission-nanarland-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=120912164308649.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=18972221.jpg-r_120_160-b_1_D6D6D6-f_jpg-q_x-20080818_120831.jpg
+    0.43 - inline; filename=20254394.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19376223_msp_patton_oswalt.jpg-cx_120_110_0-o_overlayEmissions-Mascene-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=120106122451897.jpg-r_640_300-f_jpg-q_x-20120106_122450.jpg
+    0.43 - inline; filename=20145552.jpg-r_75_x-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20148291.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19355508_te1.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-20120614_124645.jpg
+    0.43 - inline; filename=12091216593957.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20245451.jpg-r_297_120-f_jpg-q_x-xxyxx.jpg
+    1.30 - inline; filename=20244217.jpg-c_75_100_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19365734_ex3_vost.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20184118.jpg-c_120_160_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    1.30 - inline; filename=20174000.jpg-c_75_100_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20196843.jpg-c_120_160_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20244217.jpg-c_120_160_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19365257_te3.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20071064.jpg-c_80_80_0-f_jpg-q_x-20120402_120459.jpg
+    0.43 - inline; filename=20253559.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20148532.jpg-r_190_76-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    1.30 - inline; filename=634830470777916395-165886936.js
+    0.43 - inline; filename=20220323.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20182376.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=empty_photo.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19396044_thehobbit7.jpg-cx_120_110_0-o_overlay-Hobbit-160x150.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20172630.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19378227_msp_garfield.jpg-cx_120_110_0-o_overlayEmissions-Mascene-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=091015081207311.jpg-r_640_300-f_jpg-q_x-20091015_081207.jpg
+    0.43 - inline; filename=20200389.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19375218_fa1.jpg-cx_75_60_0-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=634830470777916395--2026141422.js
+    0.43 - inline; filename=20252333.jpg-r_190_76-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20249116.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20148008.jpg-c_100_100_0-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19851378.jpg-r_120_160-f_jpg-q_x-20111118_113252.jpg
+    0.43 - inline; filename=20236914.jpg-r_297_120-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19956661.jpg-r_120_160-f_jpg-q_x-20111228_063235.jpg
+    0.43 - inline; filename=20145552.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20251873.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=18687277.jpg-r_160_214-b_1_CFD7E1-f_jpg-q_x-20061108_030220.jpg
+    0.87 - inline; filename=20254239.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20182266.jpg-c_120_160_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=18657516.jpg-r_75_x-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19828422.jpg-cx_120_160_0-b_1_D6D6D6-f_jpg-q_x-20111012_053748.jpg
+    0.43 - inline; filename=18744096.jpg-cx_120_160_0-b_1_D6D6D6-f_jpg-q_x-20070221_064121.jpg
+    0.43 - inline; filename=120912113716281.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20092026.jpg-r_120_160-b_1_D6D6D6-f_jpg-q_x-20120426_121507.jpg
+    0.43 - inline; filename=18416453.jpg-r_120_160-f_jpg-q_x-20050404_073004.jpg
+    0.43 - inline; filename=20175421.jpg-r_160_240-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19342542_fa1_vo.jpg-cx_75_60_0-o_play.png_SE_5-f_jpg-q_x-20120516_064632.jpg
+    0.43 - inline; filename=18390574.jpg-r_120_x-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20253302.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20253165.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=AvatarAllocineMr.gif-c_60_65_0-f_jpg-q_x-20090821_032407.jpg
+    0.43 - inline; filename=20159308.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20250415.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - attachment; filename=BookingSetupHandler.jQuery.js
+    0.43 - inline; filename=120106122629390.jpg-r_640_300-f_jpg-q_x-20120106_122628.jpg
+    0.43 - inline; filename=19945379.jpg-r_120_160-f_jpg-q_x-20111222_023929.jpg
+    0.43 - inline; filename=18475887.jpg-cx_120_160_0-b_1_D6D6D6-f_jpg-q_x-20060214_032728.jpg
+    0.43 - inline; filename=AvatarAllocineMrs.gif-c_60_65_0-f_jpg-q_x-20090821_032422.jpg
+    0.43 - inline; filename=634830470777916395-70994801.js
+    0.43 - inline; filename=20254217.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    1.30 - inline; filename=634830470777916395--193175181.js
+    0.43 - inline; filename=19401897_thehobbit8.jpg-cx_120_110_0-o_overlay-Hobbit-160x150.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20254319.jpg-cx_100_54_0-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19364659_fa1.jpg-cx_75_60_0-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19378918_fa1.jpg-cx_120_96_0-b_1_D6D6D6-o_overplay.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19400947_cdv_deauville_2012.jpg-cx_120_110_0-o_overlayEmissions-CarnetsDeVoyage-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    1.30 - inline; filename=20182266.jpg-c_75_100_0-b_1_x-o_play.png_SE_5-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19399491_faux_raccord_topgun_unstoppable.jpg-cx_120_110_0-o_overlayEmissions-FauxR-120.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=120912145040461.jpg-r_640_300-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19390480_cinetrip_venise__.jpg-cx_120_110_0-o_overlay-Cinetrip-120x113.png_C_1-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=19736674.gif-r_120_160-f_jpg-q_x-20110512_034940.jpg
+    0.43 - inline; filename=2nycvxpz.2pk.jpg-c_60_65_0-f_jpg-q_x-20120619_010922.jpg
+    0.43 - inline; filename=19236758.jpg-r_120_x-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20234327.jpg-r_75_100-f_jpg-q_x-xxyxx.jpg
+    0.43 - inline; filename=20169197.jpg-r_75_x-f_jpg-q_x-xxyxx.jpg
+  x-content-type-options: 
+    93.75 - nosniff
+    6.25 - nosniff nosniff
+  user-agent: 
+    100.00 - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.56 Safari/537.4
+  etag: 
+    0.73 - "377d257f2d2e294916143c069141c1c5:1328738114"
+    8.03 - "dda587eecfacc1:26c9"
+    0.73 - "835a4ea72c5cc1:223c"
+    0.73 - "7249aff16ec5cc1:223c"
+    2.19 - "1612152784"
+    0.73 - "09bdb797db7c91:6282"
+    8.03 - "3d8bbffa353dc21:53c2"
+    0.73 - "1411999884f419ea8219bf9b531a9c66"
+    7.30 - "ba362424c8b5c41:0"
+    0.73 - "1CD6F688AD35500"
+    3.65 - "1CD6F6896BF1700"
+    0.73 - "815af485b6cfcc1:223c"
+    0.73 - "6b4176fee84bca1:26c2"
+    0.73 - "934b345ad66bcd1:6298"
+    2.19 - "1177826152"
+    0.73 - "1da3fe7bf996cb1:5510"
+    0.73 - "ba362424c8b5c41:a0e8"
+    8.03 - "1CD90C948557A00"
+    0.73 - "b16b95e8b594cd1:2708"
+    0.73 - "7f96b79c4acb1:26cf"
+    0.73 - "e4127024807fcd1:2708"
+    0.73 - "048fbfdf5bca1:6224"
+    0.73 - "e1686f86c3aacc1:62c4"
+    11.68 - "1CD6F6899217100"
+    0.73 - "b22a15dbfdcc1:2546"
+    0.73 - "874d68dc1a47ca1:6224"
+    1.46 - "f7c5fd67b6cc1:21f9"
+    1.46 - "b036a791811effc968bfcb43fa6d6910"
+    0.73 - "6c8d99174c5cc1:54cc"
+    0.73 - "7bf68fe310c3b0bd0ac87d7c9e9d4c94"
+    3.65 - "838e5fac048ca1:5a4c"
+    2.92 - "1CD6F688C048200"
+    1.46 - "1CD6F6889A22800"
+    0.73 - "4f3357d743dca1:26dd"
+    0.73 - "f8b7f3707c95cd1:2708"
+    0.73 - "c74b6afb277cd1:6298"
+    0.73 - "e225dad0dafdcc1:2546"
+    1.46 - "9b0993b5616e2bc77e85ac0be4f856e1"
+    2.19 - "7cf9fe2e518ebdf5f1cb779c1b45d217"
+    0.73 - "30b4664c54d0cc1:2555"
+    0.73 - "e0a94982ffc8cb1:5510"
+    5.84 - "1CD6F6896268080"
+    0.73 - "ed529969264cb1:5510"
+    2.19 - "9bf98c363b58cc1:53bf"
+    1.46 - "-1996181613"
+    1.46 - "-1531893309"
+    1.46 - "dfaf6adc1a47ca1:6224"
+    0.73 - "6170228970c5cc1:223c"
+    0.73 - "466126c932f7c1afe8219c04876406a8"
+    0.73 - "e7991d89686fcd1:0"
+  x-ua-compatible: 
+    90.91 - edge
+    9.09 - IE=edge, chrome=1
+  :method: 
+    100.00 - get
+  cache-control: 
+    0.16 - public, max-age=31422154
+    7.36 - public, max-age=0
+    0.16 - public, max-age=31502213
+    0.16 - public, max-age=29048451
+    0.16 - public, max-age=14321
+    0.16 - public, max-age=31255500
+    0.16 - public, max-age=30395630
+    0.16 - public, max-age=31245768
+    0.16 - public, max-age=30217831
+    0.16 - public, max-age=31241432
+    0.16 - public, max-age=31241433
+    0.16 - public, max-age=29833062
+    0.16 - public, max-age=30598866
+    0.16 - public, max-age=26458258
+    0.16 - public, max-age=29741880
+    0.16 - public, max-age=22227
+    0.16 - public, max-age=31490570
+    0.16 - public, max-age=31102967
+    0.16 - public, max-age=29833129
+    0.49 - public, max-age=7606
+    0.16 - public, max-age=26353155
+    0.16 - public, max-age=7874
+    0.16 - public, max-age=31527069
+    0.16 - public, max-age=31459860
+    0.16 - public, max-age=31493711
+    0.16 - public, max-age=26023218
+    0.49 - public, max-age=1118
+    0.16 - public, max-age=27653715
+    0.16 - public, max-age=31227756
+    0.16 - public, max-age=30916150
+    0.98 - public, max-age=31516560
+    0.49 - public, max-age=25063911
+    0.33 - public, max-age=31509869
+    0.16 - public, max-age=31027709
+    0.65 - public, max-age=39821
+    0.33 - public, max-age=31528608
+    0.16 - public, max-age=27800229
+    0.16 - public, max-age=26040305
+    0.16 - public, max-age=28861558
+    0.16 - public, max-age=31180505
+    0.16 - public, max-age=31526726
+    0.16 - public, max-age=23876380
+    0.33 - public, max-age=31399483
+    0.16 - public, max-age=31528480
+    0.16 - public, max-age=31047676
+    30.44 - max-age=0
+    1.80 - max-age=1
+    0.16 - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+    1.64 - public, max-age=2592000
+    0.33 - public, max-age=7947
+    0.33 - public, max-age=31528012
+    0.33 - public, max-age=42801
+    0.16 - public, max-age=9883
+    0.16 - public, max-age=31219272
+    0.16 - public, max-age=7865
+    0.16 - public, max-age=31400445
+    0.16 - public, max-age=30953105
+    0.16 - public, max-age=6169
+    0.16 - public, max-age=13419
+    0.16 - public, max-age=31337032
+    0.16 - private, max-age=3552
+    0.49 - public, max-age=28941346
+    0.16 - public, max-age=9280
+    0.33 - public, max-age=31509415
+    0.16 - public, max-age=31398304
+    0.65 - public, max-age=31509416
+    0.16 - public, max-age=29906234
+    0.16 - public, max-age=31454523
+    0.65 - public, max-age=5960
+    0.16 - public, max-age=24359594
+    0.16 - public, max-age=31526454
+    0.16 - public, max-age=31015231
+    1.15 - public, max-age=18401
+    0.16 - public, max-age=4275
+    0.16 - public, max-age=28772908
+    0.16 - public, max-age=7702
+    0.16 - public, max-age=31483479
+    0.16 - public, max-age=28609056
+    0.16 - public, max-age=26551050
+    0.33 - public, max-age=31527766
+    0.16 - public, max-age=27663931
+    0.16 - public, max-age=30486747
+    0.16 - public, max-age=31512023
+    0.16 - public, max-age=31435529
+    0.16 - public, max-age=27337060
+    0.16 - public, max-age=31497106
+    0.16 - public, max-age=28102886
+    0.33 - public, max-age=31236114
+    0.16 - public, max-age=4775
+    0.16 - public, max-age=30885894
+    0.16 - public, max-age=15694
+    0.16 - public, max-age=31529205
+    0.16 - public, max-age=31480371
+    0.16 - public, max-age=31084613
+    0.16 - public, max-age=27864232
+    1.80 - public, max-age=20146
+    0.16 - public, max-age=31410957
+    0.16 - public, max-age=31190502
+    0.49 - public, max-age=31398299
+    0.16 - public, max-age=31444144
+    0.49 - public, max-age=7715
+    0.16 - public, max-age=31111046
+    1.80 - public, max-age=19868
+    0.49 - public, max-age=31448199
+    0.16 - public, max-age=28135968
+    0.16 - max-age=27217867
+    1.64 - private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+    0.49 - public, max-age=26258403
+    0.16 - public, max-age=27363099
+    0.16 - public, max-age=315569260
+    0.16 - public, max-age=30331686
+    0.16 - public, max-age=32665
+    0.16 - public, max-age=28518838
+    0.49 - public, max-age=1800
+    0.33 - public, max-age=33200
+    1.80 - max-age=3600, public
+    0.16 - private, no-cache, no-store, must-revalidate
+    0.16 - public, max-age=31523510
+    0.16 - public, max-age=170
+    0.16 - public, max-age=31527335
+    0.16 - public, max-age=1171813
+    0.16 - public, max-age=27840745
+    0.16 - public, max-age=31113847
+    0.16 - public, max-age=30960987
+    0.16 - public, max-age=31475408
+    0.65 - public, max-age=19050
+    0.33 - public, max-age=31509296
+    0.16 - public, max-age=31335757
+    0.16 - public, max-age=30827517
+    0.16 - public, max-age=31465716
+    0.33 - max-age=31536000
+    0.65 - public, max-age=28357492
+    0.65 - public, max-age=19871
+    0.16 - public, max-age=28357491
+    0.33 - public, max-age=13313
+    0.65 - public, max-age=28431103
+    0.33 - public, max-age=31505020
+    0.16 - public, max-age=40657
+    0.16 - public, max-age=26012101
+    0.16 - public, max-age=26023496
+    0.16 - public, max-age=30978190
+    1.96 - private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+    0.16 - public, max-age=28244121
+    0.16 - public, max-age=31279843
+    0.16 - no-cache
+    0.49 - public, max-age=31392769
+    0.16 - public, max-age=30930145
+    0.16 - max-age=1209600
+    0.16 - public, max-age=27915015
+    0.16 - public, max-age=31533669
+    0.16 - public, max-age=29833131
+    0.16 - public, max-age=25154699
+    0.16 - public, max-age=31425304
+    0.16 - public, max-age=31004219
+    0.16 - public, max-age=27802773
+    0.33 - private, no-store
+    0.33 - public, max-age=31509295
+    0.16 - public, max-age=24657392
+    0.16 - public, max-age=11083
+    0.33 - public, max-age=31535643
+    0.65 - public, max-age=31529183
+    0.49 - public, max-age=31374995
+    0.33 - public, max-age=31000
+    0.16 - must-revalidate, max-age=329
+    0.16 - public, max-age=28626766
+    0.65 - public, max-age=39545
+    0.16 - public, max-age=26280148
+    0.16 - public, max-age=28063782
+    0.16 - public, max-age=31530060
+    0.16 - public, max-age=31433583
+    0.16 - public, max-age=30423157
+    0.16 - public, max-age=8095
+    0.65 - private, no-transform, max-age=1209600
+    0.16 - public, max-age=30189351
+    0.33 - private, max-age=1800
+    0.16 - public, max-age=25448148
+    0.16 - public, max-age=31533659
+    0.16 - public, max-age=28012651
+    0.16 - public, max-age=627
+    0.16 - public, max-age=30536438
+    1.15 - public, max-age=19070
+    0.16 - public, max-age=2131
+    0.16 - public, max-age=15029
+    0.16 - public, max-age=31530777
+    2.45 - public, max-age=31536000
+    0.49 - max-age=43200, public
+    0.16 - public, max-age=31461066
+    0.16 - private, max-age=18300
+    0.16 - public, max-age=30459209
+    0.16 - public, max-age=31206179
+    0.65 - public, max-age=39789
+    0.16 - public, max-age=29041430
+    0.16 - public, max-age=8608
+    0.16 - public, max-age=31508985
+    1.31 - no-cache, no-store, max-age=0, must-revalidate
+    0.16 - public, max-age=31484640
+    0.16 - public, max-age=31234507
+    0.16 - public, max-age=31500169
+    0.16 - public, max-age=31087442
+  location: 
+    12.50 - http://b.scorecardresearch.com/b2?c1=2&c2=6035191&ns__t=1347971989838&ns_c=UTF-8&c8=AlloCin%C3%A9%20%3A%20Cin%C3%A9ma%2C%20S%C3%A9ries%20TV%2C%20Stars%2C%20Vid%C3%A9os%2C%20DVD%20et%20VOD&c7=http%3A%2F%2Fwww.allocine.fr%2F&c9=http%3A%2F%2Fwww.allocine.fr%2F
+    12.50 - http://profile.ak.fbcdn.net/hprofile-ak-ash4/186165_100000494204066_1096804650_q.jpg
+    12.50 - http://images.allocine.fr/commons/player/AcV3/AcPlayer_v3.2.swf?&allowfullscreen=true&blog=true&cmedia=19352267&ref=1975&typeRef=film&refererUrl=http://www.allocine.fr/article/dossiers/cinema/dossier-18413421/&host=http://www.allocine.fr&autoPlay=false&adVast=true&canHideNav=true&lg=fr&smartIdPrerollSet=171792
+    12.50 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=738218333
+    12.50 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=520114538
+    12.50 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=4076884304
+    12.50 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=201347409
+    12.50 - /hit.xiti?s=427117&s2=7&p=homepage&hl=14x39x49&vrn=1&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439497630578&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/&Rdt=On
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  x-cache: 
+    100.00 - MISS from sorga-msr
+  x-aspnet-version: 
+    68.77 - 2.0.50727
+    31.23 - 4.0.30319
+  transfer-encoding: 
+    100.00 - chunked
+  set-cookie: 
+    25.00 - geocode=115755; domain=allocine.fr; expires=Wed, 18-Sep-2013 12:39:49 GMT; path=/ geolevel1=73072; domain=allocine.fr; expires=Wed, 18-Sep-2013 12:39:49 GMT; path=/ geolevel2=83093; domain=allocine.fr; expires=Wed, 18-Sep-2013 12:39:49 GMT; path=/ geolevel3=83165; domain=allocine.fr; expires=Wed, 18-Sep-2013 12:39:49 GMT; path=/
+    25.00 - e=UFhrlcCoAMEAAGKCYaYAAAIL; path=/; expires=Fri, 16-Sep-22 12:39:49 GMT; domain=.estat.com
+    25.00 - idrxvr=D8CF3A95-A573-4C13-8D85-9AC040522106; expires=Fri, 16-Sep-2022 12:39:49 GMT; domain=xiti.com; path=/;
+    25.00 - UID=a6b962-88.221.14.248-1347971989; expires=Mon, 08-Sep-2014 12:39:49 GMT; path=/; domain=.scorecardresearch.com UIDR=1347971989; expires=Mon, 08-Sep-2014 12:39:49 GMT; path=/; domain=.scorecardresearch.com
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    1.10 - Tue, 18 Sep 2012 17:57:22 GMT
+    1.10 - Mon, 27 Aug 2012 12:34:51 GMT
+    0.28 - Tue, 16 Jul 2013 15:15:59 GMT
+    0.83 - Tue, 18 Sep 2012 12:44:07 GMT
+    0.55 - Thu, 18 Oct 2012 02:45:09 GMT
+    0.28 - Tue, 18 Sep 2012 23:57:34 GMT
+    0.55 - Mon, 17 Sep 2012 16:11:42 GMT
+    0.28 - Wed, 10 Jul 2013 01:35:48 GMT
+    0.28 - Sun, 15 Sep 2013 13:30:19 GMT
+    0.28 - Mon, 01 Jul 2013 11:40:40 GMT
+    0.28 - Fri, 06 Sep 2013 23:00:28 GMT
+    0.55 - Wed, 19 Sep 2012 00:32:57 GMT
+    0.28 - Tue, 17 Sep 2013 22:04:39 GMT
+    3.03 - Tue, 18 Sep 2012 13:39:36 GMT
+    0.28 - Sat, 13 Jul 2013 11:54:55 GMT
+    0.28 - Thu, 05 Sep 2013 07:53:44 GMT
+    0.28 - Sun, 15 Sep 2013 07:12:12 GMT
+    0.28 - Sat, 06 Jul 2013 16:04:57 GMT
+    0.28 - Thu, 05 Sep 2013 00:28:06 GMT
+    0.28 - Thu, 22 Aug 2013 07:40:57 GMT
+    1.10 - Tue, 18 Sep 2012 23:38:41 GMT
+    0.28 - Tue, 21 Aug 2012 10:48:47 GMT
+    0.28 - Sat, 14 Sep 2013 03:04:41 GMT
+    0.83 - Sun, 18 Aug 2013 11:45:34 GMT
+    0.28 - Fri, 13 Sep 2013 07:16:51 GMT
+    0.28 - Fri, 30 Aug 2013 15:57:04 GMT
+    0.28 - Tue, 16 Jul 2013 14:14:58 GMT
+    0.28 - Tue, 17 Sep 2013 22:23:36 GMT
+    0.28 - Wed, 22 Aug 2012 16:43:54 GMT
+    0.83 - Wed, 14 Aug 2013 16:39:18 GMT
+    0.28 - Thu, 11 Jul 2013 04:29:05 GMT
+    0.28 - Sat, 07 Sep 2013 16:20:56 GMT
+    0.28 - Tue, 17 Sep 2013 05:55:04 GMT
+    0.28 - Sat, 27 Jul 2013 14:36:12 GMT
+    0.28 - Thu, 05 Sep 2013 15:32:27 GMT
+    0.28 - Fri, 07 Sep 2012 12:17:19 GMT
+    0.28 - Thu, 12 Jul 2012 11:39:58 GMT
+    0.55 - Thu, 12 Sep 2013 00:32:50 GMT
+    0.55 - Thu, 12 Sep 2013 00:30:50 GMT
+    0.55 - Wed, 18 Sep 2013 10:22:22 GMT
+    0.28 - Fri, 02 Aug 2013 20:05:57 GMT
+    1.10 - Tue, 02 Oct 2012 12:39:49 GMT
+    0.55 - Wed, 18 Sep 2013 10:26:28 GMT
+    0.28 - Tue, 17 Sep 2013 04:52:24 GMT
+    0.55 - Thu, 12 Sep 2013 00:30:51 GMT
+    0.28 - Wed, 22 Aug 2012 12:22:12 GMT
+    0.83 - Fri, 05 Jul 2013 14:51:45 GMT
+    0.28 - Thu, 29 Aug 2013 19:37:33 GMT
+    0.28 - Sun, 15 Sep 2013 02:50:32 GMT
+    0.28 - Tue, 09 Jul 2013 15:19:46 GMT
+    0.28 - Fri, 06 Sep 2013 16:17:11 GMT
+    0.28 - Sun, 30 Jun 2013 21:56:32 GMT
+    0.28 - Tue, 18 Sep 2012 12:39:36 GMT
+    0.28 - Fri, 13 Sep 2013 21:59:29 GMT
+    0.28 - Sat, 14 Sep 2013 09:54:41 GMT
+    0.28 - Tue, 16 Jul 2013 15:46:55 GMT
+    0.55 - Wed, 18 Sep 2013 10:36:24 GMT
+    0.55 - Sat, 31 Aug 2013 22:00:08 GMT
+    0.28 - Wed, 18 Sep 2013 10:05:25 GMT
+    1.10 - Thu, 12 Sep 2013 00:32:51 GMT
+    0.55 - Tue, 10 Sep 2013 18:00:38 GMT
+    0.28 - Sat, 03 Aug 2013 21:19:42 GMT
+    0.28 - Sat, 31 Aug 2013 15:07:46 GMT
+    0.28 - Wed, 18 Sep 2013 10:15:33 GMT
+    0.28 - Mon, 09 Jul 2012 12:21:02 GMT
+    0.28 - Fri, 12 Jul 2013 14:12:19 GMT
+    0.28 - Sun, 08 Sep 2013 20:11:10 GMT
+    0.28 - Fri, 13 Sep 2013 15:24:07 GMT
+    0.28 - Tue, 17 Sep 2013 08:13:02 GMT
+    0.28 - Tue, 16 Jul 2013 22:05:02 GMT
+    1.65 - Tue, 17 Sep 2013 07:05:48 GMT
+    0.28 - Sat, 20 Jul 2013 16:56:07 GMT
+    0.28 - Tue, 18 Sep 2012 12:39:59 GMT
+    0.28 - Mon, 16 Sep 2013 04:05:32 GMT
+    0.28 - Thu, 15 Aug 2013 16:46:05 GMT
+    0.28 - Wed, 18 Sep 2013 11:00:36 GMT
+    0.28 - Tue, 17 Sep 2013 02:12:37 GMT
+    0.55 - Thu, 18 Oct 2012 02:45:20 GMT
+    0.28 - Thu, 22 Aug 2013 00:38:53 GMT
+    1.10 - Tue, 18 Sep 2012 23:43:33 GMT
+    0.28 - Wed, 24 Jul 2013 16:26:16 GMT
+    0.28 - Tue, 17 Sep 2013 14:01:53 GMT
+    0.28 - Wed, 11 Sep 2013 16:31:20 GMT
+    0.28 - Tue, 17 Sep 2013 15:51:02 GMT
+    1.10 - Wed, 18 Sep 2013 10:46:24 GMT
+    0.28 - Sat, 14 Sep 2013 12:41:32 GMT
+    0.28 - Tue, 17 Sep 2013 07:19:20 GMT
+    0.55 - Tue, 18 Sep 2012 12:39:53 GMT
+    0.28 - Tue, 10 Sep 2013 20:54:40 GMT
+    0.28 - Sat, 14 Sep 2013 23:02:35 GMT
+    0.28 - Thu, 01 Aug 2013 14:25:15 GMT
+    0.83 - Thu, 18 Oct 2012 02:44:48 GMT
+    0.28 - Tue, 10 Sep 2013 07:51:47 GMT
+    0.28 - Wed, 18 Sep 2013 10:34:16 GMT
+    0.83 - Tue, 03 Sep 2013 08:55:37 GMT
+    0.28 - Tue, 18 Sep 2012 12:45:28 GMT
+    0.83 - Thu, 18 Oct 2012 02:44:46 GMT
+    0.28 - Thu, 12 Sep 2013 08:56:52 GMT
+    0.55 - Wed, 18 Sep 2013 12:34:04 GMT
+    0.28 - Wed, 18 Sep 2013 10:11:06 GMT
+    0.28 - Fri, 05 Jul 2013 09:16:52 GMT
+    0.28 - Thu, 12 Sep 2013 04:27:45 GMT
+    0.28 - Wed, 18 Sep 2013 10:00:54 GMT
+    0.83 - Tue, 18 Sep 2012 12:40:00 GMT
+    0.55 - Tue, 18 Sep 2012 21:53:16 GMT
+    0.28 - Thu, 27 Jun 2013 11:13:11 GMT
+    0.28 - Thu, 01 Aug 2013 16:40:19 GMT
+    0.28 - Tue, 16 Jul 2013 17:20:19 GMT
+    0.28 - Tue, 16 Jul 2013 12:56:40 GMT
+    0.55 - Wed, 18 Sep 2013 04:03:16 GMT
+    0.55 - Tue, 18 Sep 2012 12:39:55 GMT
+    3.31 - Mon, 01 Jan 1990 00:00:00 GMT
+    0.28 - Tue, 31 Mar 1981 05:00:00 GMT
+    0.28 - Tue, 18 Sep 2012 21:44:01 GMT
+    0.28 - Thu, 15 Aug 2013 21:32:48 GMT
+    0.28 - Tue, 02 Oct 2012 12:39:58 GMT
+    0.83 - Mon, 27 Aug 2012 12:34:52 GMT
+    1.10 - Tue, 18 Sep 2012 14:18:56 GMT
+    1.10 - Tue, 18 Sep 2012 23:42:46 GMT
+    0.28 - Tue, 17 Sep 2013 04:01:21 GMT
+    0.28 - Mon, 16 Sep 2013 21:59:43 GMT
+    0.28 - Tue, 18 Sep 2012 14:22:50 GMT
+    0.28 - Wed, 18 Sep 2013 10:46:21 GMT
+    0.28 - Sat, 14 Sep 2013 20:41:02 GMT
+    1.10 - Wed, 24 Jul 2013 16:26:17 GMT
+    1.93 - Tue, 18 Sep 2012 17:46:17 GMT
+    0.83 - Tue, 18 Sep 2012 12:39:50 GMT
+    0.28 - Tue, 17 Sep 2013 17:08:32 GMT
+    0.28 - Wed, 07 Aug 2013 14:50:12 GMT
+    1.93 - Tue, 18 Sep 2012 17:57:26 GMT
+    0.28 - Wed, 18 Sep 2013 12:00:35 GMT
+    0.28 - Tue, 17 Sep 2013 11:09:03 GMT
+    4.13 - Tue, 10 Sep 2013 00:11:00 GMT
+    0.28 - Tue, 03 Sep 2013 06:30:21 GMT
+    0.28 - Sat, 22 Jun 2013 12:39:55 GMT
+    0.28 - Tue, 27 Aug 2013 06:02:32 GMT
+    0.28 - Wed, 10 Jul 2013 11:24:46 GMT
+    3.86 - Tue, 18 Sep 2012 12:40:01 GMT
+    2.20 - Tue, 18 Sep 2012 12:40:02 GMT
+    0.28 - Wed, 17 Jul 2013 18:55:54 GMT
+    0.83 - Sat, 22 Jun 2013 14:25:16 GMT
+    0.28 - Tue, 17 Sep 2013 15:30:56 GMT
+    1.10 - Tue, 13 Aug 2013 14:11:32 GMT
+    0.28 - Thu, 12 Sep 2013 15:28:22 GMT
+    0.83 - Thu, 05 Sep 2013 00:28:01 GMT
+    0.28 - Sun, 15 Sep 2013 07:33:27 GMT
+    0.28 - Fri, 21 Jun 2013 20:59:37 GMT
+    1.38 - Tue, 18 Sep 2012 12:39:57 GMT
+    0.28 - Wed, 18 Sep 2013 11:12:33 GMT
+    0.28 - Tue, 16 Jul 2013 17:24:50 GMT
+    0.28 - Sun, 15 Sep 2013 02:50:33 GMT
+    0.28 - Wed, 18 Sep 2013 03:16:53 GMT
+    0.28 - Tue, 17 Sep 2013 05:02:24 GMT
+    0.28 - Tue, 23 Jul 2013 09:14:32 GMT
+    0.28 - Thu, 22 Aug 2013 07:58:53 GMT
+    0.28 - Wed, 18 Jul 2012 23:09:48 GMT
+    0.55 - Thu, 30 Aug 2012 11:21:25 GMT
+    0.28 - Tue, 17 Sep 2013 14:10:44 GMT
+    0.28 - Fri, 06 Sep 2013 09:12:17 GMT
+    0.28 - Thu, 05 Sep 2013 07:38:20 GMT
+    0.28 - Sat, 14 Sep 2013 17:02:59 GMT
+    0.28 - Tue, 30 Jul 2013 13:03:30 GMT
+    0.28 - Sun, 15 Sep 2013 04:02:38 GMT
+    2.20 - Fri, 01 Jan 1990 00:00:00 GMT
+    0.28 - Sat, 10 Aug 2013 04:12:38 GMT
+    2.75 - Wed, 19 Apr 2000 11:43:00 GMT
+    0.28 - Wed, 10 Jul 2013 21:57:38 GMT
+    0.28 - Wed, 10 Jul 2013 10:42:22 GMT
+    0.55 - Tue, 18 Sep 2012 21:16:32 GMT
+    0.83 - Tue, 18 Sep 2012 18:51:59 GMT
+    0.28 - Thu, 12 Sep 2013 12:00:21 GMT
+    0.28 - Wed, 04 Sep 2013 14:07:56 GMT
+    0.28 - Wed, 28 Aug 2013 18:17:57 GMT
+    0.28 - Wed, 11 Sep 2013 00:04:53 GMT
+    0.28 - Mon, 16 Sep 2013 23:00:35 GMT
+    0.28 - Sun, 21 Jul 2013 18:10:55 GMT
+    0.28 - Sat, 22 Jun 2013 15:42:14 GMT
+    0.28 - Tue, 18 Sep 2012 12:39:58 GMT
+    0.83 - Sun, 15 Sep 2013 15:46:23 GMT
+    0.28 - Wed, 12 Sep 2012 07:58:29 GMT
+    0.28 - Tue, 18 Sep 2012 12:39:52 GMT
+    0.28 - Tue, 18 Sep 2012 12:39:51 GMT
+    0.28 - Tue, 18 Sep 2012 12:39:56 GMT
+    0.28 - Thu, 15 Aug 2013 04:18:48 GMT
+    0.28 - Sat, 01 Jan 2000 00:00:00 GMT
+    0.28 - Mon, 24 Jun 2013 09:07:07 GMT
+    0.55 - Thu, 29 Aug 2013 19:38:40 GMT
+    0.28 - Tue, 18 Sep 2012 18:50:20 GMT
+    0.55 - Thu, 12 Sep 2013 00:40:24 GMT
+  last-modified: 
+    0.22 - Tue, 14 Aug 2012 17:15:29 GMT
+    0.45 - Fri, 21 Aug 2009 16:13:04 GMT
+    0.22 - Thu, 21 Jun 2012 20:42:21 GMT
+    0.45 - Thu, 06 Sep 2012 16:22:26 GMT
+    0.22 - Fri, 10 Aug 2012 04:12:27 GMT
+    0.22 - Tue, 18 Sep 2012 12:22:02 GMT
+    2.47 - Mon, 05 Mar 2012 16:24:52 GMT
+    0.22 - Thu, 21 Jun 2012 09:40:53 GMT
+    0.22 - Tue, 18 Sep 2012 12:31:46 GMT
+    0.22 - Sun, 16 Sep 2012 21:59:40 GMT
+    0.22 - Wed, 12 Sep 2012 14:24:36 GMT
+    1.12 - Fri, 09 Oct 2009 09:15:01 GMT
+    0.22 - Fri, 27 Jul 2012 14:26:11 GMT
+    0.67 - Tue, 18 Sep 2012 09:48:24 GMT
+    0.22 - Sat, 15 Sep 2012 07:29:14 GMT
+    0.45 - Sat, 15 Sep 2012 02:33:42 GMT
+    0.22 - Mon, 06 Aug 2012 12:14:19 GMT
+    0.22 - Wed, 09 Nov 2011 17:32:40 GMT
+    0.22 - Fri, 13 Jul 2012 09:32:27 GMT
+    0.90 - Thu, 05 Jul 2012 14:12:15 GMT
+    0.22 - Fri, 07 Sep 2012 09:04:22 GMT
+    0.22 - Sat, 30 Jun 2012 17:01:36 GMT
+    0.22 - Thu, 10 Nov 2011 02:11:45 GMT
+    1.57 - Tue, 18 Sep 2012 05:47:03 GMT
+    0.45 - Tue, 18 Sep 2012 09:52:06 GMT
+    0.22 - Tue, 11 Sep 2012 10:52:35 GMT
+    0.90 - Wed, 25 Jul 2012 17:01:31 GMT
+    0.22 - Mon, 04 Jun 2012 08:03:55 GMT
+    0.22 - Fri, 14 Sep 2012 03:04:04 GMT
+    0.22 - Mon, 02 Nov 2009 17:13:07 GMT
+    0.22 - Mon, 19 Mar 2012 16:31:06 GMT
+    0.45 - Fri, 07 Sep 2012 09:17:43 GMT
+    0.22 - Fri, 14 Sep 2012 12:41:29 GMT
+    0.22 - Fri, 13 Jul 2012 16:57:03 GMT
+    0.22 - Tue, 18 Sep 2012 11:39:27 GMT
+    0.67 - Thu, 11 Aug 2011 15:27:42 GMT
+    0.22 - Fri, 22 Jun 2012 10:52:29 GMT
+    0.22 - Sat, 23 Jun 2012 23:01:37 GMT
+    0.22 - Thu, 26 Apr 2012 11:37:43 GMT
+    0.22 - Fri, 10 Aug 2012 16:41:33 GMT
+    0.22 - Tue, 18 Sep 2012 09:50:41 GMT
+    0.22 - Mon, 24 Jul 2006 09:26:13 GMT
+    0.22 - Tue, 24 Jul 2012 22:06:11 GMT
+    0.45 - Tue, 18 Sep 2012 10:21:32 GMT
+    0.22 - Fri, 18 May 2012 16:46:26 GMT
+    0.67 - Tue, 22 May 2012 14:24:14 GMT
+    0.22 - Fri, 07 Sep 2012 14:35:29 GMT
+    0.22 - Wed, 12 Sep 2012 15:08:50 GMT
+    0.45 - Tue, 18 Sep 2012 09:16:40 GMT
+    0.22 - Wed, 01 Aug 2012 16:27:14 GMT
+    0.22 - Tue, 18 Sep 2012 08:58:38 GMT
+    0.22 - Fri, 13 Jul 2012 15:12:49 GMT
+    0.22 - Fri, 27 Jul 2012 01:08:43 GMT
+    0.22 - Tue, 18 Sep 2012 10:43:57 GMT
+    0.22 - Tue, 18 Sep 2012 09:59:29 GMT
+    0.22 - Tue, 10 Jul 2012 19:39:09 GMT
+    0.22 - Tue, 18 Sep 2012 10:26:37 GMT
+    0.22 - Thu, 26 Jul 2012 10:12:10 GMT
+    0.22 - Wed, 22 Aug 2012 15:49:31 GMT
+    0.22 - Wed, 12 Oct 2011 23:59:54 GMT
+    0.22 - Thu, 12 Jul 2012 13:47:50 GMT
+    0.22 - Tue, 03 Apr 2012 13:43:03 GMT
+    0.22 - Wed, 05 Sep 2012 07:47:42 GMT
+    2.47 - Tue, 19 Oct 2004 10:41:07 GMT
+    0.22 - Tue, 18 Sep 2012 10:14:18 GMT
+    0.22 - Tue, 18 Sep 2012 12:39:50 GMT
+    0.22 - Mon, 16 Jul 2012 11:22:44 GMT
+    0.22 - Mon, 23 Jul 2012 09:13:56 GMT
+    0.22 - Fri, 14 Sep 2012 20:40:54 GMT
+    0.22 - Tue, 10 Jul 2012 13:52:58 GMT
+    0.22 - Fri, 03 Aug 2012 20:50:45 GMT
+    0.22 - Tue, 18 Sep 2012 08:16:31 GMT
+    0.22 - Wed, 28 Dec 2011 14:42:37 GMT
+    0.22 - Tue, 26 Jun 2012 16:06:25 GMT
+    0.22 - Tue, 04 Sep 2012 13:35:09 GMT
+    0.22 - Wed, 12 Sep 2012 00:30:51 GMT
+    0.45 - Thu, 10 Nov 2011 02:13:32 GMT
+    0.22 - Wed, 08 Dec 2010 17:00:58 GMT
+    0.22 - Tue, 10 Jan 2012 16:40:12 GMT
+    0.22 - Fri, 14 Sep 2012 09:54:30 GMT
+    0.22 - Tue, 18 Sep 2012 12:39:49 GMT
+    0.22 - Tue, 18 Sep 2012 12:02:26 GMT
+    0.22 - Wed, 28 Dec 2011 20:00:56 GMT
+    0.22 - Tue, 18 Sep 2012 04:01:53 GMT
+    0.22 - Sat, 21 Jul 2012 15:43:56 GMT
+    0.22 - Wed, 18 Jul 2012 20:04:52 GMT
+    0.22 - Mon, 17 Sep 2012 17:04:22 GMT
+    0.22 - Mon, 31 Aug 2009 08:15:24 GMT
+    0.22 - Tue, 05 Feb 2008 16:36:38 GMT
+    0.22 - Thu, 24 Sep 2009 10:50:33 GMT
+    0.22 - Fri, 13 Jul 2012 11:47:36 GMT
+    0.22 - Thu, 24 Nov 2011 16:10:03 GMT
+    0.22 - Fri, 14 Sep 2012 17:12:58 GMT
+    0.22 - Wed, 11 Jan 2012 07:32:47 GMT
+    0.22 - Thu, 02 Sep 2010 12:40:30 GMT
+    1.57 - Tue, 18 Sep 2012 05:57:35 GMT
+    0.22 - Tue, 18 Sep 2012 12:39:59 GMT
+    0.22 - Tue, 07 Aug 2012 13:07:49 GMT
+    0.22 - Tue, 18 Sep 2012 02:23:57 GMT
+    0.22 - Tue, 18 Sep 2012 11:57:28 GMT
+    0.22 - Thu, 06 Sep 2012 09:02:50 GMT
+    0.22 - Tue, 18 Sep 2012 09:55:36 GMT
+    0.22 - Wed, 22 Aug 2012 23:46:23 GMT
+    0.22 - Mon, 11 Jun 2012 09:41:10 GMT
+    0.90 - Fri, 20 Jul 2012 09:26:33 GMT
+    0.22 - Wed, 11 Jul 2012 02:07:43 GMT
+    0.22 - Fri, 22 Jun 2012 10:52:42 GMT
+    0.22 - Fri, 27 Jul 2012 14:54:34 GMT
+    0.22 - Wed, 22 Aug 2012 10:21:33 GMT
+    0.22 - Wed, 28 Dec 2011 14:54:01 GMT
+    0.22 - Wed, 05 Sep 2012 06:29:15 GMT
+    0.22 - Thu, 10 Nov 2011 02:32:03 GMT
+    0.45 - Wed, 18 Jan 2012 03:39:25 GMT
+    0.45 - Tue, 18 Sep 2012 09:08:38 GMT
+    0.22 - Thu, 17 May 2012 09:02:10 GMT
+    0.22 - Tue, 21 Aug 2012 13:43:46 GMT
+    0.22 - Wed, 11 Jul 2012 16:11:53 GMT
+    0.22 - Fri, 20 Aug 2010 08:02:23 GMT
+    0.22 - Tue, 18 Sep 2012 11:48:29 GMT
+    0.22 - Thu, 12 Jul 2012 13:47:20 GMT
+    0.90 - Tue, 18 Sep 2012 11:38:29 GMT
+    0.22 - Tue, 18 Sep 2012 09:47:49 GMT
+    0.22 - Thu, 24 Feb 2011 15:34:24 GMT
+    0.22 - Fri, 14 Sep 2012 17:07:14 GMT
+    0.22 - Thu, 12 Jul 2012 12:48:49 GMT
+    0.67 - Wed, 01 Aug 2012 14:28:36 GMT
+    0.22 - Thu, 14 Jun 2012 13:36:58 GMT
+    0.22 - Sat, 15 Oct 2011 03:52:23 GMT
+    0.22 - Fri, 09 Mar 2012 09:57:47 GMT
+    0.22 - Tue, 18 Sep 2012 09:43:52 GMT
+    0.22 - Wed, 27 Jun 2012 11:12:18 GMT
+    0.22 - Tue, 18 Sep 2012 10:46:36 GMT
+    0.22 - Wed, 08 Feb 2012 21:55:14 GMT
+    0.22 - Wed, 22 Aug 2012 07:40:44 GMT
+    0.22 - Fri, 24 Aug 2012 23:36:17 GMT
+    0.22 - Tue, 18 Sep 2012 09:45:12 GMT
+    0.22 - Mon, 17 Sep 2012 22:17:27 GMT
+    0.22 - Fri, 22 Jun 2012 16:06:27 GMT
+    0.22 - Fri, 01 Jan 2010 00:00:00 GMT
+    0.22 - Thu, 10 Sep 2009 14:01:17 GMT
+    0.45 - Tue, 18 Sep 2012 12:32:28 GMT
+    0.22 - Mon, 17 Sep 2012 09:22:07 GMT
+    0.45 - Fri, 09 Dec 2011 11:45:04 GMT
+    0.22 - Tue, 18 Sep 2012 09:51:41 GMT
+    0.90 - Tue, 18 Sep 2012 02:19:27 GMT
+    0.22 - Fri, 15 Jun 2012 16:46:55 GMT
+    0.22 - Fri, 09 Mar 2012 09:55:53 GMT
+    0.22 - Wed, 18 Jan 2012 08:37:51 GMT
+    0.22 - Fri, 22 Jun 2012 12:39:52 GMT
+    0.22 - Thu, 22 Mar 2012 19:37:34 GMT
+    0.22 - Fri, 22 Jun 2012 12:39:55 GMT
+    0.22 - Tue, 21 Aug 2012 09:34:20 GMT
+    0.22 - Wed, 11 Jan 2012 11:29:36 GMT
+    0.22 - Tue, 18 Sep 2012 10:02:20 GMT
+    0.22 - Mon, 17 Sep 2012 15:30:53 GMT
+    0.22 - Tue, 05 Jun 2012 14:39:07 GMT
+    0.22 - Wed, 28 Dec 2011 15:22:54 GMT
+    0.22 - Tue, 25 Oct 2011 16:45:16 GMT
+    0.22 - Tue, 31 Jul 2012 12:26:17 GMT
+    0.22 - Fri, 27 Jul 2012 09:01:04 GMT
+    2.47 - Tue, 18 Sep 2012 06:10:31 GMT
+    0.22 - Tue, 18 Sep 2012 04:01:52 GMT
+    0.22 - Tue, 11 Sep 2012 15:29:37 GMT
+    0.22 - Thu, 27 Oct 2011 09:15:11 GMT
+    0.22 - Wed, 01 Aug 2012 14:03:24 GMT
+    0.67 - Tue, 24 Jul 2012 15:04:01 GMT
+    0.22 - Wed, 28 Sep 2011 16:26:55 GMT
+    0.22 - Mon, 10 Sep 2012 20:43:58 GMT
+    0.22 - Wed, 04 Jul 2012 15:13:29 GMT
+    0.22 - Thu, 12 May 2011 16:37:36 GMT
+    0.22 - Mon, 02 Nov 2009 11:03:38 GMT
+    0.22 - Tue, 11 Sep 2012 00:02:51 GMT
+    0.22 - Fri, 29 Jun 2012 19:16:16 GMT
+    0.22 - Wed, 22 Aug 2012 13:00:19 GMT
+    0.22 - Fri, 11 Mar 2011 14:49:55 GMT
+    0.22 - Tue, 18 Sep 2012 11:08:33 GMT
+    0.22 - Mon, 17 Sep 2012 04:53:35 GMT
+    0.22 - Tue, 18 Sep 2012 10:07:33 GMT
+    0.67 - Sun, 02 Sep 2012 14:34:52 GMT
+    0.22 - Fri, 11 May 2012 19:20:19 GMT
+    0.22 - Sun, 15 Jul 2012 13:11:03 GMT
+    0.22 - Wed, 12 Sep 2012 09:44:38 GMT
+    0.22 - Tue, 18 Sep 2012 10:49:34 GMT
+    0.22 - Sat, 15 Sep 2012 07:10:13 GMT
+    0.22 - Tue, 04 Sep 2012 14:03:28 GMT
+    0.22 - Tue, 05 Oct 2010 13:38:25 GMT
+    0.22 - Mon, 12 Dec 2011 10:37:19 GMT
+    0.22 - Fri, 03 Aug 2012 21:46:39 GMT
+    0.22 - Thu, 30 Aug 2012 15:56:28 GMT
+    0.90 - Tue, 18 Sep 2012 06:10:34 GMT
+    0.22 - Wed, 05 Sep 2012 14:05:48 GMT
+    0.22 - Mon, 08 Aug 2011 14:28:27 GMT
+    0.22 - Tue, 18 Sep 2012 09:59:30 GMT
+    0.67 - Fri, 27 Jul 2012 07:08:13 GMT
+    0.22 - Tue, 24 Jul 2012 15:27:11 GMT
+    0.22 - Fri, 09 Sep 2011 13:50:58 GMT
+    0.22 - Wed, 12 Sep 2012 14:59:17 GMT
+    0.22 - Thu, 10 Nov 2011 03:25:56 GMT
+    0.22 - Mon, 17 Sep 2012 11:08:52 GMT
+    0.67 - Wed, 07 Oct 2009 06:53:22 GMT
+    0.67 - Tue, 18 Sep 2012 09:03:16 GMT
+    0.22 - Thu, 26 Jul 2012 08:53:55 GMT
+    0.67 - Fri, 03 Aug 2012 16:24:36 GMT
+    0.22 - Tue, 18 Sep 2012 11:51:38 GMT
+    0.22 - Thu, 10 Feb 2011 08:50:03 GMT
+    0.22 - Thu, 26 Apr 2012 14:45:12 GMT
+    0.67 - Mon, 02 Apr 2012 12:34:05 GMT
+    0.22 - Fri, 22 Jun 2012 13:20:59 GMT
+    0.22 - Fri, 02 Dec 2011 17:20:55 GMT
+    0.22 - Mon, 16 Jul 2012 11:49:07 GMT
+    0.22 - Tue, 13 Oct 2009 09:39:00 GMT
+    0.22 - Mon, 09 Jul 2012 09:01:09 GMT
+    0.22 - Wed, 28 Dec 2011 15:04:47 GMT
+    0.22 - Fri, 07 Sep 2012 09:05:04 GMT
+    0.22 - Wed, 18 Jul 2012 16:06:22 GMT
+    0.22 - Mon, 17 Sep 2012 15:48:51 GMT
+    0.22 - Tue, 18 Sep 2012 10:12:55 GMT
+    0.22 - Mon, 12 Dec 2011 10:36:15 GMT
+    0.22 - Fri, 10 Aug 2012 14:18:15 GMT
+    0.22 - Tue, 24 Jul 2012 15:31:42 GMT
+    0.22 - Tue, 11 Sep 2012 16:30:50 GMT
+    0.22 - Wed, 12 Sep 2012 08:31:20 GMT
+    0.22 - Fri, 07 Sep 2012 09:17:40 GMT
+    0.22 - Mon, 17 Sep 2012 02:39:30 GMT
+    0.22 - Tue, 18 Sep 2012 10:24:53 GMT
+    0.22 - Mon, 18 Jun 2012 23:09:48 GMT
+    0.22 - Sat, 15 Sep 2012 13:21:17 GMT
+    0.67 - Tue, 18 Sep 2012 09:47:23 GMT
+    0.22 - Thu, 22 Dec 2011 17:01:30 GMT
+    2.47 - Tue, 06 Aug 2002 10:42:36 GMT
+    0.22 - Mon, 16 Jul 2012 14:48:25 GMT
+    0.22 - Mon, 17 Sep 2012 14:10:43 GMT
+    0.22 - Fri, 22 Jun 2012 13:16:44 GMT
+    0.22 - Tue, 10 Jul 2012 03:13:48 GMT
+    3.36 - Thu, 01 Mar 2012 16:13:22 GMT
+    0.90 - Wed, 12 Sep 2012 09:30:44 GMT
+    0.67 - Tue, 31 Jul 2012 22:05:26 GMT
+    0.90 - Tue, 31 Jul 2012 22:05:08 GMT
+    0.67 - Tue, 11 Sep 2012 03:20:09 GMT
+    0.22 - Tue, 07 Apr 2009 12:36:30 GMT
+    0.22 - Tue, 18 Sep 2012 12:31:31 GMT
+    0.22 - Fri, 18 Nov 2011 11:23:56 GMT
+    0.22 - Wed, 16 Feb 2011 13:52:02 GMT
+    0.22 - Thu, 13 Sep 2012 07:12:15 GMT
+    0.22 - Tue, 18 Sep 2012 09:50:56 GMT
+    0.22 - Tue, 22 May 2012 14:24:17 GMT
+    0.22 - Fri, 06 Apr 2012 19:20:29 GMT
+    0.67 - Mon, 10 Sep 2012 16:41:19 GMT
+    0.22 - Tue, 18 Sep 2012 12:30:53 GMT
+    0.22 - Thu, 15 Dec 2011 15:37:40 GMT
+    0.22 - Thu, 10 Nov 2011 02:22:45 GMT
+    0.22 - Thu, 26 Jul 2012 13:04:41 GMT
+    2.47 - Mon, 14 Feb 2000 17:43:24 GMT
+    0.90 - Tue, 18 Sep 2012 11:41:12 GMT
+    0.22 - Fri, 14 Sep 2012 23:00:29 GMT
+    0.22 - Mon, 17 Sep 2012 14:01:55 GMT
+    0.22 - Wed, 16 May 2012 10:33:00 GMT
+    0.45 - Tue, 18 Sep 2012 09:53:31 GMT
+    0.22 - Tue, 18 Sep 2012 11:02:43 GMT
+    0.22 - Thu, 10 Nov 2011 08:32:30 GMT
+    0.22 - Tue, 18 Sep 2012 10:05:00 GMT
+    0.22 - Wed, 12 Sep 2012 12:50:23 GMT
+    0.22 - Wed, 28 Jul 2010 16:59:36 GMT
+    2.47 - Tue, 18 Sep 2012 06:16:19 GMT
+    0.22 - Wed, 13 Jun 2012 10:08:03 GMT
+    2.24 - Wed, 21 Jan 2004 19:51:30 GMT
+    2.47 - Mon, 25 Jun 2012 09:56:07 GMT
+  x-xss-protection: 
+    100.00 - 1; mode=block
+  referer: 
+    0.37 - https://plusone.google.com/_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D189370.html&size=medium&count=false&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr-FR&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    2.94 - http://www.allocine.fr/salle/cinemas-pres-de-96373/
+    0.37 - https://plusone.google.com/_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D194854.html&size=medium&count=false&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr-FR&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    6.99 - http://www.allocine.fr/video/emissions/fanzone/episode/?cmedia=19376986
+    4.04 - http://www.allocine.fr/video/player_gen_cmedia=19365731&cfilm=186644.html
+    0.37 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=520114538
+    4.96 - http://www.allocine.fr/personne/
+    5.88 - http://www.allocine.fr/series/ficheserie_gen_cserie=3064.html
+    0.37 - https://plusone.google.com/_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Fdossiers%2Fcinema%2Fdossier-18413421%2F&size=medium&count=true&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    3.86 - https://plusone.google.com/_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Femissions%2Ffanzone%2Fepisode%2F%3Fcmedia%3D19376986&size=medium&count=true&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    0.55 - http://platform.twitter.com/widgets/tweet_button.1347008535.html
+    5.70 - http://www.allocine.fr/film/fichefilm_gen_cfilm=194854.html
+    0.37 - https://plusone.google.com/_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19365731%26cfilm%3D186644.html&size=medium&count=false&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr-FR&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    4.78 - http://www.allocine.fr/festivals/
+    12.68 - http://www.allocine.fr/film/fichefilm_gen_cfilm=189370.html
+    1.84 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=520114538
+    34.38 - http://www.allocine.fr/
+    0.37 - https://plusone.google.com/_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Fseries%2Fficheserie_gen_cserie%3D3064.html&size=medium&count=true&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    4.23 - http://www.allocine.fr/article/dossiers/cinema/dossier-18413421/
+    4.96 - http://www.allocine.fr/article/fichearticle_gen_carticle=18616834.html
+  pragma: 
+    100.00 - no-cache
+  if-modified-since: 
+    33.33 - Tue, 31 Jul 2012 22:05:26 GMT
+    66.67 - Fri, 21 Aug 2009 16:13:04 GMT
+  date: 
+    0.20 - Tue, 21 Aug 2012 15:35:46 GMT
+    2.16 - Mon, 27 Aug 2012 14:40:08 GMT
+    0.20 - Tue, 28 Aug 2012 16:50:58 GMT
+    0.39 - Mon, 17 Sep 2012 12:29:49 GMT
+    0.59 - Thu, 12 Jul 2012 14:27:23 GMT
+    0.59 - Tue, 04 Sep 2012 09:18:58 GMT
+    0.98 - Mon, 27 Aug 2012 12:34:51 GMT
+    5.70 - Tue, 18 Sep 2012 12:39:50 GMT
+    1.96 - Wed, 12 Sep 2012 14:02:35 GMT
+    0.20 - Tue, 17 Jul 2012 14:29:32 GMT
+    14.34 - Tue, 18 Sep 2012 12:39:36 GMT
+    1.77 - Mon, 17 Sep 2012 14:49:35 GMT
+    2.36 - Mon, 17 Sep 2012 12:29:48 GMT
+    0.20 - Thu, 05 Jul 2012 09:39:35 GMT
+    0.20 - Wed, 25 Jul 2012 11:42:08 GMT
+    0.39 - Thu, 30 Aug 2012 11:38:36 GMT
+    0.20 - Thu, 30 Aug 2012 11:39:11 GMT
+    3.34 - Wed, 12 Sep 2012 07:55:55 GMT
+    0.59 - Tue, 18 Sep 2012 02:44:48 GMT
+    3.54 - Tue, 18 Sep 2012 12:39:57 GMT
+    2.95 - Mon, 10 Sep 2012 00:11:00 GMT
+    0.59 - Tue, 04 Sep 2012 09:18:14 GMT
+    3.14 - Tue, 18 Sep 2012 12:40:00 GMT
+    0.59 - Mon, 27 Aug 2012 14:41:07 GMT
+    0.20 - Fri, 22 Jun 2012 12:13:02 GMT
+    0.20 - Thu, 26 Jul 2012 08:38:39 GMT
+    0.20 - Wed, 12 Sep 2012 07:56:03 GMT
+    0.20 - Wed, 01 Aug 2012 09:20:48 GMT
+    0.20 - Mon, 09 Jul 2012 12:21:02 GMT
+    0.20 - Mon, 17 Sep 2012 14:49:47 GMT
+    0.98 - Thu, 12 Jul 2012 11:33:59 GMT
+    0.20 - Wed, 22 Aug 2012 08:37:27 GMT
+    0.98 - Tue, 18 Sep 2012 12:39:55 GMT
+    0.39 - Thu, 30 Aug 2012 11:57:32 GMT
+    0.20 - Wed, 05 Sep 2012 13:10:20 GMT
+    0.20 - Thu, 06 Sep 2012 07:38:17 GMT
+    0.39 - Tue, 18 Sep 2012 02:45:09 GMT
+    0.20 - Tue, 18 Sep 2012 12:29:47 GMT
+    0.20 - Tue, 04 Sep 2012 09:17:38 GMT
+    1.96 - Tue, 18 Sep 2012 12:39:54 GMT
+    0.20 - Tue, 21 Aug 2012 10:48:47 GMT
+    0.20 - Wed, 22 Aug 2012 16:43:54 GMT
+    0.59 - Tue, 18 Sep 2012 02:44:46 GMT
+    0.59 - Wed, 22 Aug 2012 08:29:38 GMT
+    2.36 - Tue, 18 Sep 2012 12:39:59 GMT
+    0.59 - Tue, 18 Sep 2012 06:51:59 GMT
+    0.20 - Thu, 26 Jul 2012 11:13:06 GMT
+    0.59 - Mon, 27 Aug 2012 12:34:52 GMT
+    0.39 - Tue, 18 Sep 2012 02:45:20 GMT
+    1.96 - Thu, 30 Aug 2012 11:21:25 GMT
+    0.59 - Wed, 12 Sep 2012 07:58:29 GMT
+    0.20 - Wed, 05 Sep 2012 12:13:11 GMT
+    0.79 - Tue, 18 Sep 2012 12:39:37 GMT
+    0.20 - Thu, 12 Jul 2012 11:33:33 GMT
+    0.20 - Fri, 07 Sep 2012 12:17:29 GMT
+    0.79 - Tue, 18 Sep 2012 12:22:52 GMT
+    0.39 - Fri, 14 Sep 2012 09:44:18 GMT
+    0.59 - Thu, 16 Aug 2012 08:26:29 GMT
+    0.20 - Thu, 16 Aug 2012 08:26:13 GMT
+    0.20 - Thu, 12 Jul 2012 14:27:24 GMT
+    0.20 - Thu, 30 Aug 2012 11:21:24 GMT
+    0.20 - Fri, 07 Sep 2012 12:17:19 GMT
+    3.54 - Tue, 18 Sep 2012 12:39:49 GMT
+    0.20 - Thu, 12 Jul 2012 11:39:58 GMT
+    3.14 - Tue, 18 Sep 2012 12:39:48 GMT
+    1.57 - Tue, 18 Sep 2012 12:25:34 GMT
+    2.16 - Tue, 18 Sep 2012 12:39:53 GMT
+    0.20 - Thu, 30 Aug 2012 11:39:28 GMT
+    3.54 - Tue, 18 Sep 2012 12:39:52 GMT
+    1.96 - Tue, 18 Sep 2012 12:39:51 GMT
+    1.96 - Tue, 18 Sep 2012 12:39:56 GMT
+    0.98 - Thu, 06 Sep 2012 14:43:02 GMT
+    0.20 - Tue, 18 Sep 2012 12:31:26 GMT
+    0.20 - Wed, 22 Aug 2012 08:38:33 GMT
+    2.55 - Tue, 18 Sep 2012 12:39:58 GMT
+    1.77 - Wed, 22 Aug 2012 16:25:13 GMT
+    5.11 - Tue, 18 Sep 2012 12:40:01 GMT
+    0.20 - Mon, 13 Aug 2012 13:25:48 GMT
+    0.20 - Thu, 23 Aug 2012 11:35:28 GMT
+    2.16 - Thu, 06 Sep 2012 13:32:10 GMT
+    0.20 - Fri, 07 Sep 2012 12:18:23 GMT
+    0.59 - Tue, 18 Sep 2012 12:25:29 GMT
+    1.38 - Tue, 18 Sep 2012 12:40:02 GMT
+  if-none-match: 
+    100.00 - "1CD6F6896BF1700"
+  access-control-allow-origin: 
+    100.00 - *
+  content-type: 
+    5.09 - text/css
+    0.20 - text/xml
+    49.69 - image/jpeg
+    3.05 - text/javascript
+    12.02 - image/gif
+    0.41 - text/css; charset=UTF-8
+    0.61 - text/html; charset=UTF-8
+    0.20 - application/javascript;charset=utf-8
+    3.46 - application/octet-stream
+    5.70 - text/javascript; charset=utf-8
+    0.61 - application/x-javascript; charset=utf-8
+    0.20 - image/GIF
+    2.24 - application/javascript
+    3.05 - application/x-javascript
+    5.30 - text/html; charset=utf-8
+    1.63 - text/javascript; charset=UTF-8
+    0.41 - application/x-shockwave-flash
+    0.20 - text/xml; charset=utf-8
+    5.09 - image/png
+    0.81 - application/javascript; charset=utf-8
+  :path: 
+    0.16 - /t.gif?_=1347971999775&count=vertical&id=twitter-widget-0&lang=fr&original_referer=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&size=m&text=Laura%20Prepon%20de%20%22That%20%2770s%20Show%22%20dans%20la%20nouvelle%20s%C3%A9rie%20de%20la%20cr%C3%A9atrice%20de%20%22Weeds%22%20-%20News%20S%C3%A9rie%20Tournages%20-%20AlloCin%C3%A9&url=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&via=allocine&type=share&twttr_referrer=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&twttr_widget=1&twttr_hask=0&twttr_li=0&twttr_pid=
+    0.16 - /video/player_gen_cmedia=19365731&cfilm=186644.html
+    0.16 - /commons/allocineeverywhere/services_Home_podcast.jpg
+    0.16 - /plugins/like.php?api_key=99197768694&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Dfb0abddc4%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ffd9bd1a04%26domain%3Dwww.allocine.fr%26relation%3Dparent.parent&extended_social_context=false&href=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19365731%26cfilm%3D186644.html&layout=button_count&locale=fr_FR&node_type=link&sdk=joey&send=false&show_faces=false&width=90
+    0.16 - /skin/background/emissions/bandeau_zonePlayer_Fanzone_760x90.jpg
+    0.16 - /r_75_x/medias/nmedia/18/85/83/20/20169197.jpg
+    0.16 - /c_120_160/b_1_x/o_play.png_5_se/medias/nmedia/18/71/10/97/20174000.jpg
+    0.16 - /blogvision/19352267
+    0.16 - /hit.xiti?s=427117&s2=6&p=cinema::dossiers::18413421-blade_runner_30_ans_30_secrets_saviez_vous&hl=14x39x51&ac=&an=&lng=en-US&vtag=42001-31010&idp=143951424837&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/video/emissions/fanzone/episode/?cmedia=19376986
+    0.16 - /cx_120_160/b_1_d6d6d6/medias/nmedia/18/90/27/72/20189963.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/37/20254319.jpg
+    0.16 - /en/Default/master.css
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/92/63/51/20210097.jpg
+    0.32 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/04/20254083.jpg
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/91/78/27/19365733_ex2_vost.jpg
+    0.16 - /c_120_120/medias/nmedia/18/77/53/84/20254268.jpg
+    0.16 - /cx_120_110/o_overlayEmissions-Fanzone-120.png_1_c/medias/nmedia/18/91/87/19/19399524_fanzone_2012_09_15.jpg
+    0.16 - /m/web/800000206993?n=90348168&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Femissions%2Ffanzone%2Fepisode%2F%3Fcmedia%3D19376986&v=0.10
+    0.16 - /cx_120_160/b_1_d6d6d6/medias/nmedia/18/36/10/85/18475887.jpg
+    0.16 - /r_75_100/medias/nmedia/18/91/16/97/20132702.jpg
+    0.32 - /commons/Leparisien.png
+    0.16 - /plugins/like.php?action=recommend&api_key=99197768694&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df28553e5c%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff3a2d51c38%26domain%3Dwww.allocine.fr%26relation%3Dparent.parent&extended_social_context=false&href=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&layout=standard&locale=fr_FR&node_type=link&sdk=joey&send=true&show_faces=true&width=450
+    0.16 - /r_75_100/commons/emptymedia/empty_photo.jpg
+    0.16 - /r_120_160/medias/nmedia/18/62/57/78/20136815.jpg
+    0.16 - /r_75_100/medias/nmedia/18/90/33/24/20175421.jpg
+    0.16 - /commons/allocineeverywhere/services_Home_mobile.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=9&utmn=1304230118&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=AlloCin%C3%A9%20%3A%20Stars%20-%20Actualit%C3%A9s%2C%20Photos%2C%20Interviews%2C%20Anniversaires%2C%20Base%20de%20donn%C3%A9es&utmhid=1326135428&utmr=0&utmp=%2Fpersonne%2F&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /cx_120_160/b_1_d6d6d6/medias/nmedia/18/86/32/75/19846340.jpg
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/91/78/27/19365731_fa1_vost.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/33/97/20250415.jpg
+    0.16 - /call2/pubjall/10936/82937/1572,47,192,46,5137,62,6709,7292,54/2437848535/video%3D19376986%3Bmediagroup%3D18918719%3Bkids%3D0%3Bgeolevel1%3D73072%3Bgeolevel2%3D83093%3Bgeolevel3%3D83165
+    0.16 - /c_60_65/users/02/4/1/3/Z20120621223732077117314/img/gygasye1.bd0.jpg
+    0.16 - /_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D194854.html&size=medium&count=false&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr-FR&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    0.16 - /r_297_120/medias/nmedia/18/93/25/36/20245451.jpg
+    0.16 - /js/acScriptHandlerEx.ashx?p=173338432&acjsversion=634830470777916395
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971999397&ns_c=UTF-8&c8=Laura%20Prepon%20de%20%22That%20'70s%20Show%22%20dans%20la%20nouvelle%20s%C3%A9rie%20de%20la%20cr%C3%A9atrice%20de%20%22Weeds%22%20-%20News%20S%C3%A9rie%20Tournages%20-%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&c9=http%3A%2F%2Fwww.allocine.fr%2Fseries%2Fficheserie_gen_cserie%3D3064.html
+    0.16 - /commons/btn_link_twt.png
+    0.16 - /r_75_100/medias/nmedia/18/36/21/19/18798044.jpg
+    0.16 - /r_640_300/carouselblocks/120912113716281.jpg
+    0.16 - /commons/logos/home_allocineshows/Hobbit.jpg
+    0.16 - /_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Femissions%2Ffanzone%2Fepisode%2F%3Fcmedia%3D19376986&size=medium&count=true&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    0.16 - /commons/logos/home_allocineshows/Mascene.jpg
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/85/83/20/20148009.jpg
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Dfe80ad04c%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff3a2d51c38%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /c_75_100/medias/nmedia/18/90/57/08/20127801.jpg
+    0.16 - /commons/framework_6_5/HP-VOD/btn_vod_discover.png
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971993582&ns_c=UTF-8&c8=Camille%20Redouble%20-%20film%202011%20-%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D189370.html&c9=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Fdossiers%2Fcinema%2Fdossier-18413421%2F
+    0.16 - /cx_120_110/b_4_FFCC00/o_overlayEmissions-Fanzone-120.png_1_c/medias/nmedia/18/91/87/19/19376986_fanzone_2012_08_10.jpg
+    0.16 - /cx_120_160/b_1_d6d6d6/medias/nmedia/18/79/75/58/19571450.jpg
+    0.32 - /skin_v7/core/img/bg_page.jpg
+    0.32 - /_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Fdossiers%2Fcinema%2Fdossier-18413421%2F&size=medium&count=true&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    0.16 - /cx_120_110/o_overlay-Hobbit-160x150.png_1_c/medias/nmedia/18/85/31/76/19401897_thehobbit8.jpg
+    0.16 - /r_120_160/medias/nmedia/18/63/91/47/19792332.gif
+    0.16 - /cx_120_110/o_overlayEmissions-Mascene-120.png_1_c/medias/nmedia/18/72/77/07/19377231_msp_nadia_fares.jpg
+    0.16 - /medias/nmedia/18/72/66/89/19173980.jpg
+    0.16 - /commons/AlloFamille/tpl_bloc_pub2.gif
+    0.16 - /Images/wslogo_block_page.png
+    1.77 - /js634830470777916395/aspx/js/7.1/assets/resources.js
+    2.41 - /s2/oz/images/stars/po/Publisher/sprite4-a67f741843ffc4220554c34bd01bb0bb.png
+    0.16 - /r_160_240/b_1_d6d6d6/medias/nmedia/18/90/33/24/20175421.jpg
+    0.16 - /c_120_120/medias/nmedia/18/74/41/07/20254201.jpg
+    0.16 - /commons/allocineeverywhere/home_socialNetwork.jpg
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/90/33/24/20186919.jpg
+    0.16 - /hit.xiti?s=427117&s2=3&p=homepage&hl=14x40x0&ac=&an=&lng=en-US&vtag=42001-31010&idp=1440003693028&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/article/fichearticle_gen_carticle=18616834.html
+    0.16 - /r_640_300/carouselblocks/12091217493428.jpg
+    0.16 - /n/69/10688/v1/img5.allocine.fr/acmedia/skin/allocinev5/acvision2/background.jpg
+    1.77 - /js634830470777916395/aspx/js/7.1/assets/environment.js
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971998433&ns_c=UTF-8&c8=American%20Dad!%20-%20Serie%20TV%20-%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Fseries%2Fficheserie_gen_cserie%3D3064.html&c9=http%3A%2F%2Fwww.allocine.fr%2Fsalle%2Fcinemas-pres-de-96373%2F
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/36/60/20251873.jpg
+    0.16 - /call2/pubjall/10936/83760/1572,47,192,46,5137,54,5370,5371,13141,62/8669242447/feature%3D18413421%3Bkids%3D0%3Bgeolevel1%3D73072%3Bgeolevel2%3D83093%3Bgeolevel3%3D83165
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df27814b158%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ffd0080c0%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /cx_120_110/o_overlayEmissions-FauxR-120.png_1_c/medias/nmedia/18/73/95/29/19399491_faux_raccord_topgun_unstoppable.jpg
+    0.64 - /skin_v7/core/img/sprite_picto.png
+    0.16 - /c_80_80/medias/nmedia/18/85/80/96/20071063.jpg
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/91/78/27/19365734_ex3_vost.jpg
+    0.16 - /r_120_160/b_1_d6d6d6/medias/nmedia/18/35/20/00/20140274.jpg
+    0.16 - /n/69/10688/v1/img5.allocine.fr/acmedia/medias/nmedia/18/92/79/12/20217889.jpg
+    0.16 - /r_190_76/b_1_d6d6d6/medias/nmedia/18/93/40/16/20254217.jpg
+    0.16 - /en/Default/master.js
+    0.16 - /_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19365731%26cfilm%3D186644.html&size=medium&count=false&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr-FR&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    0.16 - /commons/player/AcV3/skin/skin_fr.swf
+    1.77 - /commons/empty.gif
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/90/33/24/20186916.jpg
+    0.16 - /cgi-bin/blockpage.cgi?ws-session=4076884304
+    0.32 - /js/acScriptHandlerEx.ashx?p=1847624993&acjsversion=634830470777916395
+    0.16 - /r_120_160/medias/nmedia/18/36/29/26/19868929.jpg
+    0.32 - /_/apps-static/_/ss/plusone/ver=103ot4lswtf5w/am=!HJuTl-3W6TSNgfHMRhc/bf=BA/r=O/rs=AItRSTMv6lE8a2yhjxCsjWOqWR_uGVFInA
+    1.13 - /js/acScriptHandlerEx.ashx?p=-193175181&acjsversion=634830470777916395
+    0.16 - /salle/cinemas-pres-de-96373/
+    0.16 - /m/web/800000206993?n=611017937&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D194854.html&v=0.10
+    0.16 - /js/acScriptHandlerEx.ashx?p=70994801&acjsversion=634830470777916395
+    0.16 - /widgets.js
+    0.16 - /r_120_x/medias/nmedia/18/35/38/35/19236758.jpg
+    1.61 - /js/plusone.js
+    0.16 - /cx_120_110/o_overlayEmission-nanarland-120.png_1_c/medias/nmedia/18/79/96/29/19395356_nanarland_2012_09_07.jpg
+    0.16 - /r_120_160/medias/nmedia/18/60/02/47/20072089.jpg
+    0.16 - /r_120_160/medias/nmedia/18/36/32/14/19666852.jpg
+    0.16 - /plugins/like.php?api_key=99197768694&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df16171b1ec%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff4ec2eca%26domain%3Dwww.allocine.fr%26relation%3Dparent.parent&extended_social_context=false&href=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D189370.html&layout=button_count&locale=fr_FR&node_type=link&sdk=joey&send=false&show_faces=false&width=90
+    0.16 - /personne/
+    0.16 - /r_120_160/medias/nmedia/18/63/88/45/19736674.gif
+    0.16 - /plugins/recommendations.php?site=www.allocine.fr&width=300&height=650&header=false&colorscheme=light&font=tahoma&border_color=%23FFFFFF&max-age=30
+    0.16 - /r_120_160/b_1_d6d6d6/medias/nmedia/18/82/32/11/19635858.jpg
+    0.16 - /cx_120_110/o_overlayEmissions-TES-120.png_1_c/medias/nmedia/18/66/68/06/19397403_tueurs_en_series_07_09_2012.jpg
+    0.16 - /article/dossiers/cinema/dossier-18413421/
+    0.16 - /r_640_300/carouselblocks/120915091019490.jpg
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/90/33/24/20186917.jpg
+    0.16 - /r_190_76/b_1_d6d6d6/medias/nmedia/18/93/28/16/20247285.jpg
+    0.16 - /m/web/800000206993?n=811393071&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D189370.html&v=0.10
+    0.48 - /skin/default/img/acsprite.png
+    0.16 - /cgi-bin/block_message.cgi?ws-session=520114538
+    0.16 - /jot?l=%7B%22_category_%22%3A%22tfw_widgets%22%2C%22event_name%22%3A%22tweetbutton%3Aimpression%22%2C%22dnt%22%3Afalse%2C%22_%22%3A%221347971999775%22%2C%22count%22%3A%22vertical%22%2C%22id%22%3A%22twitter-widget-0%22%2C%22lang%22%3A%22fr%22%2C%22original_referer%22%3A%22http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html%22%2C%22size%22%3A%22m%22%2C%22text%22%3A%22Laura%20Prepon%20de%20%5C%22That%20%2770s%20Show%5C%22%20dans%20la%20nouvelle%20s%C3%A9rie%20de%20la%20cr%C3%A9atrice%20de%20%5C%22Weeds%5C%22%20-%20News%20S%C3%A9rie%20Tournages%20-%20AlloCin%C3%A9%22%2C%22url%22%3A%22http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html%22%2C%22via%22%3A%22allocine%22%2C%22type%22%3A%22share%22%2C%22logged_in%22%3Afalse%2C%22referrer%22%3A%22http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html%22%2C%22widget%22%3Atrue%2C%22pid%22%3A%22%22%7D
+    0.16 - /r_75_100/medias/nmedia/18/90/40/03/20200389.jpg
+    0.16 - /en/Default/blockStyle.css
+    0.16 - /m/web/800000206993?n=394491051&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Fdossiers%2Fcinema%2Fdossier-18413421%2F&v=0.10
+    0.16 - /skin/hp_leparisien.png
+    0.16 - /r_120_160/medias/nmedia/18/89/62/68/20058688.jpg
+    0.16 - /r_75_x/medias/nmedia/18/35/29/00/19750372.jpg
+    0.16 - /c_120_160/b_1_x/o_play.png_5_se/medias/nmedia/18/90/27/79/20244217.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/38/76/20253302.jpg
+    0.16 - /m/web/800000206993?n=934418949&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19365731%26cfilm%3D186644.html&v=0.10
+    0.16 - /skin/default/img/acflags.png
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df2be82534%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff2090007c%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /hit.xiti?s=427117&s2=1&p=film_page::189370-camille_redouble::main_page&hl=14x39x53&ac=&an=&lng=en-US&vtag=42001-31010&idp=143953823930&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/article/dossiers/cinema/dossier-18413421/
+    0.64 - /skin_v7/core/core.css
+    0.16 - /cx_120_110/o_overlay-Cinetrip-120x113.png_1_c/medias/nmedia/18/90/57/27/19390480_cinetrip_venise__.jpg
+    0.16 - /r_190_76/b_1_d6d6d6/medias/nmedia/18/93/40/22/20254230.jpg
+    0.16 - /r_75_100/medias/nmedia/18/91/97/16/20172630.jpg
+    0.16 - /r_120_160/b_1_d6d6d6/medias/nmedia/18/35/39/36/18972221.jpg
+    0.48 - /en/Default/security.js
+    0.16 - /plugins/like.php?action=recommend&api_key=99197768694&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df126df0b14%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff3ff91ce58%26domain%3Dwww.allocine.fr%26relation%3Dparent.parent&extended_social_context=false&font=tahoma&href=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Fdossiers%2Fcinema%2Fdossier-18413421%2F&layout=button_count&locale=fr_FR&node_type=link&sdk=joey&send=true&show_faces=false&width=200
+    0.16 - /m/web/800000206993?n=874994648&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&v=0.10
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Dff7ec3%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Fff44f8ad4%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /r_190_76/b_1_d6d6d6/medias/nmedia/18/92/48/43/20219642.jpg
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df1e1e31f4%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ffd9bd1a04%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /cx_120_110/o_overlayEmissions-Mascene-120.png_1_c/medias/nmedia/18/72/77/07/19376223_msp_patton_oswalt.jpg
+    0.16 - /cx_120_110/o_overlayEmissions-CarnetsDeVoyage-120.png_1_c/medias/nmedia/18/83/80/45/19400947_cdv_deauville_2012.jpg
+    0.16 - /cx_120_110/o_vignettesEmissions-120-skyfall.png_1_c/medias/nmedia/18/89/81/57/19393438_skyfall7.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/38/56/20253165.jpg
+    0.32 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/25/20254239.jpg
+    0.16 - /ws/geocoding.ashx
+    0.16 - /c_80_80/medias/nmedia/18/85/80/96/20071065.jpg
+    0.16 - /100000494204066/picture
+    0.48 - /c_75_100/b_1_x/o_play.png_5_se/medias/nmedia/18/85/36/32/20184118.jpg
+    3.22 - /connect/xd_arbiter.php?version=11
+    0.16 - /commons/community/sprite_hp_mod_com.jpg
+    0.16 - /cgi-bin/blockpage.cgi?ws-session=520114538
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/85/83/20/20148008.jpg
+    0.16 - /r_75_100/medias/nmedia/18/92/23/21/20214044.jpg
+    1.29 - /_/apps-static/_/js/plusone/p1b,p1p/rt=j/ver=-cYzL4qw-e4.fr./sv=1/am=!HJuTl-3W6TSNgfHMRhc/d=1/rs=AItRSTNOtF8f5c9E2nnjhnkg5-vPvr6H9w/cb=gapi.loaded_1
+    0.16 - /c_60_65/users/02/4/8/2/Z20120627131243753337284/img/l0zbdo4q.pjc.jpg
+    1.61 - /ga.js
+    0.16 - /r_75_100/medias/nmedia/18/92/00/74/20187062.jpg
+    0.16 - /c_75_100/medias/nmedia/18/84/43/52/20208588.jpg
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/85/83/20/20148007.jpg
+    0.16 - /_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D189370.html&size=medium&count=false&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr-FR&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    0.64 - /js/acScriptHandlerEx.ashx?p=-1516970836&acjsversion=634830470777916395
+    1.61 - /fr_FR/all.js
+    0.16 - /js/tfw/widget/hubclient.js
+    0.16 - /video/emissions/fanzone/episode/?cmedia=19376986
+    0.16 - /commons/webui/shared/poster_overlay.png
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971997100&ns_c=UTF-8&c8=Salles%20de%20cin%C3%A9ma%20%C3%A0%20Toulouse%20(31000)%20-%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Fsalle%2Fcinemas-pres-de-96373%2F&c9=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D194854.html
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/90/33/24/20175421.jpg
+    0.16 - /cx_120_110/o_overlay-Hobbit-160x150.png_1_c/medias/nmedia/18/85/31/76/19396044_thehobbit7.jpg
+    0.16 - /r_120_160/medias/nmedia/18/89/71/46/20063503.jpg
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df1d9f3f2a%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff3ff91ce58%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971994754&ns_c=UTF-8&c8=Bande-annonce%20Boy%20-%20Boy%20Bande-annonce%20VO%20-%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19365731%26cfilm%3D186644.html&c9=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D189370.html
+    1.13 - /skin/default/ac-core_7.1.css
+    0.16 - /cx_120_110/o_overlayEmissions-Mascene-120.png_1_c/medias/nmedia/18/72/77/07/19378227_msp_garfield.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/34/20254305.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=4&utmn=953230351&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Bande-annonce%20Boy%20-%20Boy%20Bande-annonce%20VO%20-%20AlloCin%C3%A9&utmhid=1863906679&utmr=0&utmp=%2Fvideo%2Fplayer_gen_cmedia%3D19365731%26cfilm%3D186644.html&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /r_75_100/medias/nmedia/18/91/43/95/20145552.jpg
+    0.16 - /r_160_240/b_1_d6d6d6/medias/nmedia/18/85/83/20/20169197.jpg
+    1.45 - /_/apps-static/_/js/gapi/plusone/rt=j/ver=z8WtJkkFnOs.fr./sv=1/am=!qJoTPiXYHR-YY0x1eg/d=1/rs=AItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ/cb=gapi.loaded_0
+    0.80 - /commons/Leparisien.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/92/80/33/20247106.jpg
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df90a1684c%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ffbf166918%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /r_120_160/medias/nmedia/18/35/24/57/18416453.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=10&utmn=1964491994&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Festivals%20de%20films%20-%20AlloCin%C3%A9&utmhid=1922851438&utmr=0&utmp=%2Ffestivals%2F&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/91/78/27/19365732_ex1_vost.jpg
+    0.16 - /r_640_300/carouselblocks/120913154048407.jpg
+    0.16 - /cx_120_110/o_overlayEmissions-D2DVD-120.png_1_c/medias/nmedia/18/72/85/68/19399602_direct2dvd_septembre2012_2.jpg
+    0.16 - /c_60_65/users/02/6/4/6/Z20060520180021477247646/img/odakbljj.i1t.jpg
+    0.16 - /r_75_100/medias/nmedia/18/89/37/89/20211367.jpg
+    0.16 - /r_75_100/medias/nmedia/18/86/92/56/20148291.jpg
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/90/33/24/19378918_fa1.jpg
+    0.16 - /r_120_160/medias/nmedia/18/83/24/54/19851378.jpg
+    0.64 - /js/acScriptHandlerEx.ashx?p=165886936&acjsversion=634830470777916395
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df23aa45508%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff4ec2eca%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /cx_120_160/b_1_d6d6d6/medias/nmedia/18/35/18/16/18370240.jpg
+    0.16 - /r_160_214/b_1_cfd7e1/medias/nmedia/18/63/32/19/18687277.jpg
+    0.16 - /r_120_x/medias/nmedia/18/35/96/09/18768327.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=7&utmn=2029494081&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=American%20Dad!%20-%20Serie%20TV%20-%20AlloCin%C3%A9&utmhid=982124792&utmr=0&utmp=%2Fseries%2Fficheserie_gen_cserie%3D3064.html&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /widgets/tweet_button.1347008535.html
+    0.16 - /cgi-bin/blockpage.cgi?ws-session=738218333
+    0.16 - /article/fichearticle_gen_carticle=18616834.html
+    0.16 - /cx_75_60/o_play.png_5_se/medias/nmedia/18/91/93/87/19375218_fa1.jpg
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/85/83/20/19369949_fa1.jpg
+    0.16 - /plugins/like.php?api_key=99197768694&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df134fe28f8%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff3a2d51c38%26domain%3Dwww.allocine.fr%26relation%3Dparent.parent&colorscheme=light&extended_social_context=false&font=tahoma&href=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&layout=box_count&locale=fr_FR&node_type=link&sdk=joey&send=false&show_faces=false&width=55
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/85/83/20/19365257_te3.jpg
+    0.16 - /c_80_80/medias/nmedia/18/85/80/96/20071064.jpg
+    0.16 - /_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&size=tall&count=true&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr-FR&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    0.32 - /cx_100_54/b_x_x/medias/nmedia/18/93/17/72/20240141.jpg
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971989838&ns_c=UTF-8&c8=AlloCin%C3%A9%20%3A%20Cin%C3%A9ma%2C%20S%C3%A9ries%20TV%2C%20Stars%2C%20Vid%C3%A9os%2C%20DVD%20et%20VOD&c7=http%3A%2F%2Fwww.allocine.fr%2F&c9=http%3A%2F%2Fwww.allocine.fr%2F
+    0.16 - /r_640_300/carouselblocks/120917063445130.jpg
+    0.16 - /r_120_160/medias/nmedia/18/64/89/05/19820335.jpg
+    0.16 - /c_120_120/medias/nmedia/18/92/42/05/20254381.jpg
+    0.32 - /img/gmap/iconeMarker.png
+    0.48 - /crossdomain.xml
+    0.16 - /plugins/like.php?api_key=99197768694&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Dfecd3395%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Fff44f8ad4%26domain%3Dwww.allocine.fr%26relation%3Dparent.parent&extended_social_context=false&font=tahoma&href=http%3A%2F%2Fwww.allocine.fr%2Fseries%2Fficheserie_gen_cserie%3D3064.html&layout=button_count&locale=fr_FR&node_type=link&sdk=joey&send=false&show_faces=false&width=90
+    0.16 - /r_297_120/medias/nmedia/18/93/11/15/20236914.jpg
+    0.16 - /m/web/800000206993?n=921549584&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Fsalle%2Fcinemas-pres-de-96373%2F&v=0.10
+    0.16 - /r_75_100/medias/nmedia/18/91/93/87/20170597.jpg
+    0.16 - /r_120_x/medias/nmedia/18/35/88/80/19477882.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/24/00/20244727.jpg
+    0.16 - /r_120_160/b_1_d6d6d6/medias/nmedia/18/35/56/78/19779942.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=8&utmn=557897906&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Laura%20Prepon%20de%20%22That%20'70s%20Show%22%20dans%20la%20nouvelle%20s%C3%A9rie%20de%20la%20cr%C3%A9atrice%20de%20%22Weeds%22%20-%20News%20S%C3%A9rie%20Tournages%20-%20AlloCin%C3%A9&utmhid=1366550113&utmr=0&utmp=%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=1&utmn=1410928&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=AlloCin%C3%A9%20%3A%20Cin%C3%A9ma%2C%20S%C3%A9ries%20TV%2C%20Stars%2C%20Vid%C3%A9os%2C%20DVD%20et%20VOD&utmhid=1187560195&utmr=0&utmp=%2F&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /1/urls/count.json?url=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html&callback=twttr.receiveCount
+    0.64 - /skin_v7/local/FR/local_7.1.css
+    0.16 - /r_640_300/carouselblocks/12091216593957.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=5&utmn=1714898856&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Du%20Vent%20dans%20mes%20mollets%20-%20film%202011%20-%20AlloCin%C3%A9&utmhid=1535839446&utmr=0&utmp=%2Ffilm%2Ffichefilm_gen_cfilm%3D194854.html&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /Images/block.png
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/43/20254358.jpg
+    0.16 - /r_640_300/carouselblocks/120912145040461.jpg
+    0.16 - /n/69/10688/v1/img5.allocine.fr/acmedia/medias/nmedia/18/93/40/00/20254072.jpg
+    0.16 - /hprofile-ak-ash4/186165_100000494204066_1096804650_q.jpg
+    0.16 - /cx_120_160/b_1_d6d6d6/medias/nmedia/18/63/99/20/18744096.jpg
+    0.16 - /r_640_300/carouselblocks/120822174955667.jpg
+    0.64 - /skin_v7/core/img/sprite_core.png
+    0.48 - /c_75_100/b_1_x/o_play.png_5_se/medias/nmedia/18/92/38/64/20196843.jpg
+    0.16 - /c_120_120/medias/nmedia/18/77/53/84/20254243.jpg
+    0.16 - /m/web/800000206993?n=250132121&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Fpersonne%2F&v=0.10
+    0.16 - /b2?c1=2&c2=6035191&ns__t=1347971989838&ns_c=UTF-8&c8=AlloCin%C3%A9%20%3A%20Cin%C3%A9ma%2C%20S%C3%A9ries%20TV%2C%20Stars%2C%20Vid%C3%A9os%2C%20DVD%20et%20VOD&c7=http%3A%2F%2Fwww.allocine.fr%2F&c9=http%3A%2F%2Fwww.allocine.fr%2F
+    0.16 - /c_120_160/b_1_x/o_play.png_5_se/medias/nmedia/18/92/38/64/20196843.jpg
+    1.77 - /js634830470777916395/aspx/js/7.1/assets/third_parties.js
+    0.48 - /c_60_65/commons/emptymedia/AvatarAllocineMr.gif
+    0.16 - /cx_75_60/o_play.png_5_se/medias/nmedia/18/90/40/03/19342542_fa1_vo.jpg
+    0.16 - /film/fichefilm_gen_cfilm=194854.html
+    0.16 - /r_120_160/medias/nmedia/18/70/06/08/19693261.gif
+    0.16 - /cx_75_60/o_play.png_5_se/medias/nmedia/18/90/46/07/19337840_fa1_vost.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/47/20254394.jpg
+    0.16 - /r_120_160/medias/nmedia/18/60/15/80/20108181.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=2&utmn=2003656932&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=%22Blade%20Runner%22%20%3A%2030%20ans%2C%2030%20secrets%20-%20Saviez-vous%20...%20-%20Dossier%20Cin%C3%A9ma%20-%20AlloCin%C3%A9&utmhid=860832516&utmr=0&utmp=%2Farticle%2Fdossiers%2Fcinema%2Fdossier-18413421%2F&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.48 - /c_75_100/b_1_x/o_play.png_5_se/medias/nmedia/18/83/31/95/20200597.jpg
+    1.77 - /js/xiti/xtcore.js
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df5056bba%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ffa4b8d344%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /r_190_76/b_1_d6d6d6/medias/nmedia/18/93/37/72/20252333.jpg
+    0.16 - /r_190_76/b_1_d6d6d6/medias/nmedia/18/91/36/39/20148532.jpg
+    0.16 - /r_75_100/medias/nmedia/18/91/71/02/20159308.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/39/17/20253559.jpg
+    0.16 - /r_640_300/carouselblocks/120106122629390.jpg
+    0.16 - /r_75_x/medias/nmedia/18/62/88/90/18657516.jpg
+    0.16 - /r_120_160/medias/nmedia/18/36/32/33/19956661.jpg
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/90/33/24/19398878_itw1.jpg
+    0.16 - /js/ac/ac.ui.Tabs.js
+    0.16 - /commons/player/AcV3/AcPlayer_v3.2.swf?&allowfullscreen=true&blog=true&cmedia=19352267&ref=1975&typeRef=film&refererUrl=http://www.allocine.fr/article/dossiers/cinema/dossier-18413421/&host=http://www.allocine.fr&autoPlay=false&adVast=true&canHideNav=true&lg=fr&smartIdPrerollSet=171792
+    0.16 - /commons/framework_6_5/HP-VOD/vod_visu03c.jpg
+    0.16 - /cx_75_60/o_play.png_5_se/medias/nmedia/18/89/37/89/19370850_fa3_vost.jpg
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347972002070&ns_c=UTF-8&c8=Festivals%20de%20films%20-%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Ffestivals%2F&c9=http%3A%2F%2Fwww.allocine.fr%2Fpersonne%2F
+    0.16 - /commons/logos/home_allocineshows/d2dvd.jpg
+    0.16 - /cx_120_110/o_overlayEmissions-GIC-120.png_1_c/medias/nmedia/18/78/57/09/19398698_GIC_2012_09_12.jpg
+    0.16 - /cx_120_110/o_overlayEmissions-Fanzone-120.png_1_c/medias/nmedia/18/91/87/19/19376685_fanzone_2012_07_28.jpg
+    0.16 - /cx_75_60/o_play.png_5_se/medias/nmedia/18/91/71/02/19364659_fa1.jpg
+    0.16 - /r_120_x/medias/nmedia/18/35/42/09/18390574.jpg
+    0.16 - /c_60_65/commons/emptymedia/AvatarAllocineMrs.gif
+    0.16 - /cx_120_110/o_overlay-lsdc-160x150.png_1_c/medias/nmedia/18/86/25/75/19396422_le_son_de_cine_juillet_2012_1.jpg
+    0.16 - /cgi-bin/blockpage.cgi?ws-session=201347409
+    0.16 - /r_75_100/medias/nmedia/18/91/69/92/20170633.jpg
+    0.16 - /hit.xiti?s=427117&s2=1&p=film_page::186644-boy::videos::19365731-boy_bande_annonce_vo-bande_annonce&hl=14x39x54&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439544837301&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/film/fichefilm_gen_cfilm=189370.html
+    0.16 - /r_120_160/b_1_d6d6d6/medias/nmedia/18/90/33/32/20092026.jpg
+    0.32 - /c_75_100/medias/nmedia/18/84/07/92/19825955.jpg
+    0.16 - /festivals/
+    0.16 - /r_640_300/carouselblocks/120912164308649.jpg
+    0.16 - /r_75_x/medias/nmedia/18/35/25/86/19767004.jpg
+    0.16 - /c_60_65/users/02/7/4/6/Z20120611202837927567647/img/jxbwkulm.mbg.jpg
+    0.64 - /js/acScriptHandlerEx.ashx?p=-2026141422&acjsversion=634830470777916395
+    1.13 - /skin/default/ac-flags.css
+    0.16 - /hit.xiti?s=427117&s2=1&p=film_page::194854-du_vent_dans_mes_mollets::main_page&hl=14x39x56&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439566201838&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/video/player_gen_cmedia=19365731$cfilm=186644.html
+    0.16 - /c_80_80/medias/nmedia/18/85/80/96/19866266.jpg
+    0.16 - /hit.xiti?s=427117&s2=7&p=homepage&hl=14x39x49&vrn=1&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439497630578&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/&Rdt=On
+    0.16 - /m/web/800000206993?n=773436327&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2F&v=0.10
+    0.16 - /cx_120_160/b_1_d6d6d6/medias/nmedia/18/84/55/85/19828422.jpg
+    0.16 - /r_120_160/medias/nmedia/18/36/25/47/19945379.jpg
+    0.16 - /r_640_300/carouselblocks/120106122451897.jpg
+    0.16 - /r_120_160/medias/nmedia/18/63/86/72/19229664.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=3&utmn=506133291&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Camille%20Redouble%20-%20film%202011%20-%20AlloCin%C3%A9&utmhid=877179631&utmr=0&utmp=%2Ffilm%2Ffichefilm_gen_cfilm%3D189370.html&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /dialog/oauth/?client_id=99197768694&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.allocine.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df3fac2cda4%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff3ec79014%26domain%3Dwww.allocine.fr%26relation%3Dparent&sdk=joey
+    0.16 - /r_75_x/medias/nmedia/18/86/92/56/20148291.jpg
+    0.16 - /skin/default/img/acsprite_h.png
+    0.16 - /cx_75_60/o_play.png_5_se/medias/nmedia/18/79/32/70/19351590_fa1_vost.jpg
+    0.48 - /c_75_100/b_1_x/o_play.png_5_se/medias/nmedia/18/89/06/02/20182266.jpg
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/85/83/20/19361376_te2.jpg
+    0.16 - /call2/pubjall/10936/81687/1572,47,192,12448,5197,54,5370,5371,13141,62,46,5137,107/296398157/movie%3D194854%3Bkids%3D0%3Bgenre%3D13005%3Bgeolevel1%3D73072%3Bgeolevel2%3D83093%3Bgeolevel3%3D83165
+    0.16 - /r_640_300/carouselblocks/091015081207311.jpg
+    0.48 - /c_75_100/b_1_x/o_play.png_5_se/medias/nmedia/18/90/27/79/20244217.jpg
+    0.16 - /m/web/800000206993?n=1139785&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2F&v=0.10
+    1.77 - /beacon.js
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971990880&ns_c=UTF-8&c8=Fanzone%20%3E%20Fanzone%20N%C2%B02%20-%20Vendredi%2010%20ao%C3%BBt%202012%20-%20une%20%C3%A9mission%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Femissions%2Ffanzone%2Fepisode%2F%3Fcmedia%3D19376986&c9=http%3A%2F%2Fwww.allocine.fr%2F
+    0.16 - /commons/allocineeverywhere/services_Home_rss.jpg
+    0.16 - /r_640_300/carouselblocks/12071215333060.jpg
+    0.16 - /js634830470777916395/jqproxy/ws/BookingSetupHandler.js
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/90/33/24/20186915.jpg
+    0.16 - /r_640_300/carouselblocks/120106121412940.jpg
+    0.16 - /_/+1/fastbutton?bsv=pr&url=http%3A%2F%2Fwww.allocine.fr%2Fseries%2Fficheserie_gen_cserie%3D3064.html&size=medium&count=true&origin=http%3A%2F%2Fwww.allocine.fr&hl=fr&ic=1&jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3Dz8WtJkkFnOs.fr.%2Fsv%3D1%2Fam%3D!qJoTPiXYHR-YY0x1eg%2Fd%3D1%2Frs%3DAItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ
+    0.16 - /cgi-bin/blockOptions.cgi?ws-session=520114538
+    0.16 - /cx_120_110/o_overlayEmissions-Mascene-120.png_1_c/medias/nmedia/18/72/77/07/19376122_msp_Michel_Hazanavicius.jpg
+    0.48 - /skin/loader_green.gif
+    0.16 - /hit.xiti?s=427117&s2=4&p=tv_series_page::3064-american_dad::the_essential::main_page&hl=14x39x58&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439584262359&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/salle/cinemas-pres-de-96373/
+    0.16 - /c_120_120/medias/nmedia/18/92/42/05/20254382.jpg
+    0.16 - /r_120_160/b_1_d6d6d6/medias/nmedia/18/35/36/15/20091993.jpg
+    0.16 - /c_120_160/b_1_x/o_play.png_5_se/medias/nmedia/18/89/06/02/20182266.jpg
+    0.16 - /r_75_100/medias/nmedia/18/92/85/71/20234327.jpg
+    0.16 - /r_75_100/medias/nmedia/18/92/44/62/20205330.jpg
+    0.16 - /r_120_160/medias/nmedia/18/60/02/54/20129657.jpg
+    0.16 - /cx_75_60/o_play.png_5_se/medias/nmedia/18/90/33/24/19378918_fa1.jpg
+    0.16 - /hit.xiti?s=427117&s2=2&p=show::18918719-fanzone::video_fanzone::19376986-strong_fanzone_strong_n_2_vendredi_10_aout_2012&hl=14x39x50&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439505528314&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/90/33/24/20186918.jpg
+    0.16 - /hit.xiti?s=427117&s2=1&p=theater_ranking::by_area&hl=14x39x57&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439578120090&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/film/fichefilm_gen_cfilm=194854.html
+    0.16 - /ws/AcVisiondata.ashx?media=19376986&ref=18918719&typeref=mediatheme
+    0.16 - /m/web/800000206993?n=699737233&type=whap&r=http%3A%2F%2Fwww.allocine.fr%2Fseries%2Fficheserie_gen_cserie%3D3064.html&v=0.10
+    0.16 - /
+    1.77 - /commons/webui/shared/loader_blue.gif
+    0.16 - /r_120_160/medias/nmedia/18/62/91/47/19809513.jpg
+    0.16 - /r_120_160/medias/nmedia/18/36/34/59/20104363.jpg
+    0.16 - /c_60_65/users/02/9/2/6/Z20120619010936193104629/img/2nycvxpz.2pk.jpg
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971996124&ns_c=UTF-8&c8=Du%20Vent%20dans%20mes%20mollets%20-%20film%202011%20-%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D194854.html&c9=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19365731%26cfilm%3D186644.html
+    0.16 - /r_120_160/b_1_d6d6d6/medias/nmedia/18/35/27/39/19623285.jpg
+    0.16 - /cx_120_160/b_1_d6d6d6/medias/nmedia/18/35/23/38/18375783.jpg
+    0.16 - /c_60_65/users/02/9/2/7/Z20120611111326840631729/img/yaxcg2ea.3zr.jpg
+    0.32 - /widgets/hub.html
+    0.16 - /c_120_160/b_1_x/o_play.png_5_se/medias/nmedia/18/83/31/95/20200597.jpg
+    0.16 - /skin/default/ac-festival.css
+    0.16 - /r_75_100/medias/nmedia/18/91/78/27/20172090.jpg
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347972000981&ns_c=UTF-8&c8=AlloCin%C3%A9%20%3A%20Stars%20-%20Actualit%C3%A9s%2C%20Photos%2C%20Interviews%2C%20Anniversaires%2C%20Base%20de%20donn%C3%A9es&c7=http%3A%2F%2Fwww.allocine.fr%2Fpersonne%2F&c9=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Ffichearticle_gen_carticle%3D18616834.html
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/85/83/20/20148011.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/16/20254217.jpg
+    0.16 - /film/fichefilm_gen_cfilm=189370.html
+    0.16 - /cx_120_96/b_1_d6d6d6/o_overplay.png_5_se/medias/nmedia/18/85/83/20/19355508_te1.jpg
+    0.16 - /hit.xiti?s=427117&s2=8&p=series::tournages::18616834-laura_prepon_de_that_70s_show_dans_la_nouvelle_serie_de_la_creatrice_de_weeds&hl=14x39x59&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439599975087&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/series/ficheserie_gen_cserie=3064.html
+    1.29 - /_/apps-static/_/js/gapi/googleapis_client,iframes_styles_bubble_internal/rt=j/ver=z8WtJkkFnOs.fr./sv=1/am=!qJoTPiXYHR-YY0x1eg/d=1/rs=AItRSTOm95OfzqgLOFVr2TCgMlHdktieSQ/cb=gapi.loaded_0
+    0.16 - /hit.xiti?s=427117&s2=1&p=homepage_festivals::home&hl=14x40x2&ac=&an=&lng=en-US&vtag=42001-31010&idp=1440027426205&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/personne/
+    0.16 - /call2/pubjall/10936/81732/1572,47,192,46,5137,54,5370,5371,13141,62,6709/5392040820/series%3D3064%3Bkids%3D0%3Bgenre%3D13026%3Bgeolevel1%3D73072%3Bgeolevel2%3D83093%3Bgeolevel3%3D83165
+    0.16 - /commons/framework_6_5/HP-VOD/vod_visu02b.jpg
+    0.32 - /commons/player/AcV3/AcPlayer_v3.2.swf
+    0.16 - /r_120_160/medias/nmedia/18/60/02/44/20075805.jpg
+    0.16 - /r_120_160/medias/nmedia/18/36/32/32/19860692.jpg
+    0.16 - /r_75_100/medias/nmedia/18/85/83/20/20169197.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/31/66/20249116.jpg
+    0.16 - /commons/allocineeverywhere/services_Home_email.jpg
+    0.32 - /en/Default/base64.js
+    1.77 - /js/whap.js
+    0.16 - /r_120_160/b_1_d6d6d6/medias/nmedia/18/62/93/93/19490952.jpg
+    0.48 - /c_75_100/b_1_x/o_play.png_5_se/medias/nmedia/18/71/10/97/20174000.jpg
+    0.16 - /r_75_x/medias/nmedia/18/91/43/95/20145552.jpg
+    0.32 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/00/20254072.jpg
+    0.16 - /r_190_76/b_1_d6d6d6/medias/nmedia/18/93/26/25/20246114.jpg
+    0.16 - /r_360_144/medias/nmedia/18/93/40/21/20254229.jpg
+    0.16 - /c_80_80/medias/nmedia/18/85/80/96/19866267.jpg
+    0.16 - /c_120_160/b_1_x/o_play.png_5_se/medias/nmedia/18/85/36/32/20184118.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/40/60/20254447.jpg
+    0.16 - /r_120_x/medias/nmedia/18/35/59/79/18410838.jpg
+    0.16 - /commons/framework_6_5/HP-VOD/vod_visu01b.png
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/85/83/20/20169197.jpg
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/93/38/32/20252945.jpg
+    0.64 - /r_75_x/medias/nmedia/18/85/36/32/20184118.jpg
+    0.32 - /skin_v7/local/FR/img/sprite_local_7.1.png
+    0.16 - /c_100_100/b_1_d6d6d6/medias/nmedia/18/85/83/20/20148010.jpg
+    0.16 - /cx_120_90/b_1_x/o_play.png_5_se/medias/nmedia/18/85/80/96/19381849_ex1_vo.jpg
+    0.16 - /r_75_100/medias/nmedia/18/90/46/07/20182376.jpg
+    0.16 - /__utm.gif?utmwv=5.3.5&utms=6&utmn=44856278&utmhn=www.allocine.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Salles%20de%20cin%C3%A9ma%20%C3%A0%20Toulouse%20(31000)%20-%20AlloCin%C3%A9&utmhid=1950896573&utmr=0&utmp=%2Fsalle%2Fcinemas-pres-de-96373%2F&utmac=UA-597605-13&utmcc=__utma%3D88199499.362512085.1347971990.1347971990.1347971990.1%3B%2B__utmz%3D88199499.1347971990.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=q~
+    0.16 - /commons/webui/shared/btn_link_twt.png
+    0.16 - /b?c1=2&c2=6035191&ns__t=1347971991835&ns_c=UTF-8&c8=%22Blade%20Runner%22%20%3A%2030%20ans%2C%2030%20secrets%20-%20Saviez-vous%20...%20-%20Dossier%20Cin%C3%A9ma%20-%20AlloCin%C3%A9&c7=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Fdossiers%2Fcinema%2Fdossier-18413421%2F&c9=http%3A%2F%2Fwww.allocine.fr%2Fvideo%2Femissions%2Ffanzone%2Fepisode%2F%3Fcmedia%3D19376986
+    0.16 - /series/ficheserie_gen_cserie=3064.html
+    0.16 - /r_75_x/medias/nmedia/18/35/50/41/18898781.jpg
+    0.16 - /plugins/like.php?action=recommend&api_key=99197768694&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df1d304b2b%26origin%3Dhttp%253A%252F%252Fwww.allocine.fr%252Ff3ff91ce58%26domain%3Dwww.allocine.fr%26relation%3Dparent.parent&extended_social_context=false&font=tahoma&href=http%3A%2F%2Fwww.allocine.fr%2Farticle%2Fdossiers%2Fcinema%2Fdossier-18413421%2F&layout=button_count&locale=fr_FR&node_type=link&sdk=joey&send=true&show_faces=false&width=200
+    0.16 - /hit.xiti?s=427117&s2=7&p=homepage&hl=14x39x49&vrn=1&ac=&an=&lng=en-US&vtag=42001-31010&idp=1439497630578&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.allocine.fr/
+    0.16 - /cx_100_54/b_x_x/medias/nmedia/18/92/84/04/20220323.jpg
+  x-transaction: 
+    100.00 - 5da6d7b93a8d5e68
+  x-blockid: 
+    100.00 - 186165
+  content-encoding: 
+    100.00 - gzip
+  x-servername: 
+    1.07 - WEBF1-04
+    2.95 - WEBF1-05
+    1.61 - WEBF1-02
+    5.09 - WEBF1-03
+    2.95 - WEBF1-01
+    36.19 - WMEDIAS1
+    3.22 - WEBF2-03
+    0.27 - WEBF2-02
+    37.53 - WMEDIAS2
+    5.36 - WEBF2-01
+    1.07 - WEBF2-05
+    2.68 - WEBF2-04
+  age: 
+    1.42 - 78613
+    0.41 - 1644138
+    0.20 - 2866415
+    0.41 - 1221694
+    0.20 - 513444
+    0.20 - 513447
+    0.20 - 513446
+    0.20 - 2250266
+    0.20 - 1799335
+    0.20 - 513443
+    0.20 - 1645220
+    2.24 - 1033657
+    0.20 - 1121373
+    0.61 - 1646307
+    0.20 - 1221730
+    1.63 - 1646308
+    0.20 - 2425865
+    0.61 - 1221655
+    1.02 - 5879151
+    0.20 - 5436627
+    0.20 - 951753
+    0.61 - 535283
+    0.20 - 4670803
+    0.20 - 4755460
+    3.46 - 535433
+    0.61 - 1893525
+    0.20 - 78621
+    0.61 - 859
+    0.20 - 4680077
+    2.44 - 1
+    38.62 - 0
+    0.41 - 1645272
+    0.20 - 356141
+    0.20 - 513439
+    0.20 - 951742
+    0.20 - 6135534
+    0.20 - 513434
+    0.20 - 513438
+    0.61 - 20869
+    0.61 - 5868745
+    0.20 - 7604806
+    0.61 - 35704
+    0.20 - 4159148
+    0.61 - 2866405
+    0.41 - 78612
+    0.20 - 1124805
+    0.20 - 1645237
+    1.02 - 1901103
+    0.61 - 1901102
+    0.20 - 2408644
+    1.02 - 1029411
+    2.24 - 1893580
+    0.41 - 86999
+    1.83 - 2319282
+    0.20 - 513440
+    0.20 - 5879175
+    0.41 - 35671
+    0.20 - 2347348
+    0.20 - 513442
+    0.20 - 1221702
+    0.61 - 2347810
+    0.20 - 611
+    0.20 - 2347285
+    8.94 - 11
+    0.20 - 951693
+    0.81 - 1027
+    6.71 - 12
+    0.20 - 356130
+    0.20 - 1054891
+    0.20 - 5878794
+    3.05 - 736130
+    0.20 - 513436
+    1.63 - 864
+    0.20 - 2318160
+    0.20 - 3107648
+    2.44 - 87005
+    0.41 - 35681
+    0.20 - 513
+    0.20 - 5868744
+    0.20 - 535435
+    0.61 - 35702
+    0.20 - 6490821
+  :status: 
+    90.84 - 200
+    1.29 - 302
+    0.48 - 304
+    1.77 - 204
+    5.63 - 0
+  x-fb-rev: 
+    100.00 - 628839
+  server: 
+    2.84 - GFE/2.0
+    60.26 - Microsoft-IIS/6.0
+    0.44 - tfe
+    2.18 - Microsoft-IIS/7.5
+    3.28 - sffe
+    4.37 - GSE
+    4.80 - Apache
+    21.83 - nginx/0.6.32
+  :scheme: 
+    87.14 - http
+    12.86 - https
+  connection: 
+    100.00 - keep-alive
+  cookie: 
+    24.58 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.2.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    8.33 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.4.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    4.58 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.5.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    8.33 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.6.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    9.17 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.1.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    4.17 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.7.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    2.08 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755
+    8.33 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.8.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    4.17 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.3.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    8.75 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; xtan427117=-; xtant427117=1; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.9.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    4.17 - e=UFhrlcCoAMEAAGKCYaYAAAIL
+    4.17 - geolevel1=73072; geolevel2=83093; geolevel3=83165; country_code=FR; geocode=115755; xtvrn=$427117$; __utma=88199499.362512085.1347971990.1347971990.1347971990.1; __utmb=88199499.1.10.1347971990; __utmc=88199499; __utmz=88199499.1347971990.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xtan427117=-; xtant427117=1
+    4.58 - idrxvr=D8CF3A95-A573-4C13-8D85-9AC040522106
+    4.58 - UID=a6b962-88.221.14.248-1347971989; UIDR=1347971989
+  x-frame-options: 
+    100.00 - SAMEORIGIN
+  x-powered-by: 
+    100.00 - ASP.NET
+  :status-text: 
+    90.84 - OK
+    5.63 - unknown
+    0.48 - Not Modified
+    1.77 - No Content
+    1.29 - Moved Temporarily
+  :host: 
+    39.71 - images.allocine.fr
+    2.57 - 172.19.77.100:15871
+    0.64 - smart2.allocine.fr
+    4.18 - plusone.google.com
+    4.66 - fr.web.img1.acsta.net
+    1.61 - connect.facebook.net
+    0.80 - platform.twitter.com
+    20.58 - www.allocine.fr
+    3.70 - b.scorecardresearch.com
+    0.16 - cdn.api.twitter.com
+    1.61 - s-static.ak.facebook.com
+    0.48 - a69.g.akamai.net
+    2.41 - ssl.gstatic.com
+    0.16 - p.twitter.com
+    3.54 - w.estat.com
+    3.05 - apis.google.com
+    1.93 - logc188.xiti.com
+    0.16 - graph.facebook.com
+    2.89 - www.facebook.com
+    1.61 - static.ak.facebook.com
+    0.16 - profile.ak.fbcdn.net
+    1.61 - www.google-analytics.com
+    0.16 - r.twimg.com
+    1.61 - google-analytics.com
+
+

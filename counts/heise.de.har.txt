@@ -650,3 +650,1073 @@ etag                 1.0                                                143
 x-webobjects-loadaverage 1.0                                                1                   
 x-cache              1.0                                                1                   
 x-webobjects-servlet 1.0                                                1                   
+
+
+Header Frequencies:
+  content-length: 
+    0.41 - 1301
+    0.82 - 211
+    0.41 - 1267
+    0.41 - 7819
+    0.41 - 136
+    0.41 - 2093
+    0.41 - 495
+    0.41 - 4785
+    0.41 - 41661
+    0.41 - 3046
+    0.41 - 4908
+    0.41 - 29209
+    0.41 - 7306
+    0.41 - 1079
+    0.41 - 3856
+    0.41 - 19640
+    0.41 - 1372
+    0.41 - 342
+    0.41 - 2401
+    0.41 - 29504
+    0.41 - 3995
+    0.41 - 5383
+    0.41 - 679
+    0.41 - 5388
+    0.41 - 675
+    0.41 - 8635
+    0.41 - 714
+    0.41 - 7927
+    0.41 - 1152
+    0.41 - 5463
+    0.41 - 41715
+    0.41 - 265
+    0.41 - 53161
+    0.41 - 1550
+    0.41 - 6658
+    0.41 - 1559
+    0.41 - 4640
+    0.41 - 537
+    0.41 - 10759
+    0.41 - 825
+    0.41 - 7724
+    0.41 - 12264
+    0.41 - 291
+    0.41 - 2778
+    0.41 - 37694
+    1.22 - 599
+    0.41 - 4892
+    0.41 - 4324
+    0.41 - 47713
+    0.41 - 397
+    0.41 - 4551
+    0.41 - 21507
+    0.41 - 4806
+    0.41 - 536
+    0.41 - 4289
+    0.41 - 1855
+    0.41 - 78100
+    0.41 - 366
+    0.82 - 528
+    0.41 - 529
+    0.41 - 19842
+    0.41 - 580
+    0.41 - 9088
+    0.41 - 17038
+    0.41 - 4255
+    0.41 - 1337
+    0.41 - 304
+    0.41 - 1330
+    0.41 - 27987
+    0.41 - 22389
+    0.41 - 243
+    0.41 - 4354
+    0.41 - 20
+    0.41 - 12725
+    0.41 - 4547
+    0.41 - 6171
+    1.63 - 39
+    0.41 - 783
+    0.41 - 1726
+    0.41 - 13985
+    0.41 - 5246
+    0.41 - 5087
+    0.41 - 1648
+    0.41 - 11616
+    0.41 - 5913
+    0.41 - 9195
+    0.41 - 1001
+    0.41 - 1223
+    0.41 - 2611
+    0.41 - 570
+    0.41 - 47065
+    0.82 - 68
+    0.41 - 25433
+    0.41 - 170
+    0.41 - 289
+    0.41 - 856
+    0.41 - 3638
+    5.31 - 0
+    0.41 - 7490
+    0.41 - 2564
+    0.41 - 183
+    0.41 - 13124
+    0.41 - 509
+    0.41 - 18508
+    0.41 - 12337
+    0.41 - 658
+    0.41 - 753
+    0.41 - 1213
+    0.41 - 635
+    0.41 - 2421
+    0.41 - 1351
+    0.41 - 9138
+    0.41 - 93868
+    0.41 - 7353
+    0.41 - 12023
+    0.41 - 166
+    0.41 - 95
+    0.41 - 13884
+    0.41 - 1021
+    0.41 - 830
+    0.41 - 7165
+    0.41 - 6216
+    0.41 - 5794
+    0.41 - 1450
+    0.41 - 519
+    0.82 - 151
+    0.41 - 4421
+    0.41 - 6493
+    0.41 - 602
+    0.41 - 9456
+    0.41 - 5884
+    0.41 - 2436
+    0.41 - 4761
+    0.41 - 10368
+    0.41 - 6896
+    0.41 - 5056
+    0.41 - 14362
+    0.41 - 51419
+    0.82 - 3765
+    1.63 - 1537
+    0.41 - 3354
+    0.41 - 1053
+    0.41 - 4994
+    0.41 - 9750
+    10.20 - 43
+    0.41 - 957
+    5.31 - 1
+    0.82 - 2035
+    0.41 - 4591
+    0.41 - 18441
+    0.41 - 18442
+    0.41 - 1119
+    0.41 - 23571
+    0.41 - 7474
+    0.41 - 775
+    0.41 - 4258
+    0.41 - 144
+    0.41 - 677
+    0.41 - 141
+    0.41 - 612
+    0.41 - 2644
+    0.82 - 617
+    0.41 - 76
+    0.41 - 87793
+    0.41 - 20263
+    0.41 - 25042
+    0.41 - 485
+    0.41 - 6635
+    0.41 - 4793
+    0.41 - 5520
+    0.41 - 12689
+    0.41 - 30923
+    0.41 - 4667
+    0.41 - 8330
+    0.41 - 1971
+    0.41 - 9928
+    0.41 - 1579
+    0.41 - 4859
+    0.41 - 5300
+    0.41 - 4855
+    0.41 - 2009
+    0.41 - 12203
+  via: 
+    100.00 - 1.0 sunwebeshop04-3:81 (squid)
+  accept-language: 
+    100.00 - de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4
+  google-creative-id: 
+    20.00 - 
+    10.00 - 6070731470
+    5.00 - 14173018550
+    5.00 - 28031962790
+    5.00 - 29014796030
+    5.00 - 28762927190
+    15.00 - 14172581990
+    10.00 - 28761755870
+    5.00 - 29082925190
+    15.00 - 12325989470
+    5.00 - 15564838137
+  vary: 
+    16.13 - Accept-Encoding,User-Agent
+    74.19 - Accept-Encoding
+    9.68 - User-Agent,Accept-Encoding
+  accept: 
+    1.95 - text/css,*/*;q=0.1
+    13.67 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    84.38 - */*
+  google-lineitem-id: 
+    20.00 - 
+    15.00 - 2897630
+    10.00 - 22585310
+    5.00 - 1381070
+    10.00 - 1386110
+    5.00 - 9037070
+    5.00 - 0
+    5.00 - 1379390
+    10.00 - 22577510
+    15.00 - 9036950
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  p3p: 
+    3.12 - CP="NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA"
+    1.56 - policyref="/eshop/policy.xml", CP=" NOI NID PSAa OUR BUS COM NAV STA"
+    6.25 - policyref=http://p3p.infonline.de/p3p.xml, CP=NOI DSP NID PSAa OUR NOR UNI COM NAV
+    1.56 - policyref="/w3c/policy.xml" , CP="NOI DSP CURa ADMa DEVa TAIa OUR BUS UNI"
+    3.12 - policyref="http://ad.zanox.com/w3c/p3p.xml", CP="NOI CUR OUR STP"
+    15.62 - policyref="http://www.ivwbox.de/p3p.xml", CP="NOI DSP PSAo OUR NOR UNI"
+    3.12 - CP="NOI DEVa OUR BUS UNI"
+    3.12 - CP="ALL CUR DEV PSA OUR IND STA"
+    1.56 - policyref="/w3c/p3p.xml", CP="NOI CUR OUR STP"
+    7.81 - CP="NOI DSP LAW CURa OUR NOR PUR COM NAV INT STA"
+    1.56 - CP=NOI DSP COR CUR OUR STP NAV STA
+    3.12 - policyref=http://www.met.vgwort.de/p3p.xml, CP=NOI DSP PSAo OUR NOR UNI
+    31.25 - policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+    9.38 - policyref="http://imagesrv.adition.com/w3c/p3p.xml",CP="NON DSP ADM DEV PSD IVDo OTPi OUR IND STP PHY PRE NAV UNI"
+    6.25 - policyref="http://www.googleadservices.com/pagead/p3p.xml", CP="NOI DEV PSA PSD IVA IVD OTP OUR OTR IND OTC"
+    1.56 - policyref="http://www.zanox-affiliate.de/w3c/p3p.xml", CP="NOI CUR OUR STP"
+  x-webobjects-servlet: 
+    100.00 - YES
+  :version: 
+    0.20 - HTTP/1.0
+    99.80 - HTTP/1.1
+  x-webobjects-loadaverage: 
+    100.00 - 10
+  x-xss-protection: 
+    100.00 - 1; mode=block
+  x-cache: 
+    100.00 - MISS from sunwebeshop04-3
+  x-content-type-options: 
+    100.00 - nosniff
+  keep-alive: 
+    28.57 - timeout=4, max=100
+    14.29 - timeout=2, max=199
+    42.86 - timeout=2, max=200
+    14.29 - timeout=2, max=100
+  user-agent: 
+    100.00 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.101 Safari/537.11
+  etag: 
+    0.70 - "ffffffff7a475eae-4f27-4d2731bf5acc0"
+    0.70 - "82d-4d2d8c5ac1280"
+    0.70 - "fffffffffa0b6423-1299-4c620a710ecc0"
+    0.70 - "7d9-4d2d73858fc00"
+    0.70 - 4335273662036569856
+    0.70 - "123b-4c0dda981bcc0"
+    0.70 - "ba61-4d2d8fe88f500"
+    0.70 - "5aa-45248ee7af0c0"
+    0.70 - "2380-4d2c75852f840"
+    0.70 - 5831432326496780578
+    0.70 - "3011128140"
+    0.70 - "ffffffff795c320c-a54-4d14b037b3080"
+    0.70 - "480-4a1488866d340"
+    0.70 - "292-4abdd3d375080"
+    0.70 - "fffffffff48f6af8-eb5-4c3d95c051880"
+    0.70 - 4788932393305995376
+    0.70 - "11ef-4d2d730f4e500"
+    0.70 - "1590-4d1f8623b7140"
+    0.70 - "fffffffff252a1fd-11c3-4d13089e58b40"
+    0.70 - "150c-4d16dc5527ac0"
+    0.70 - "2882013604"
+    0.70 - "16fc-4be24c25fc900"
+    0.70 - "55c-4d1c2af321c00"
+    0.70 - "109-459c2f737cf40"
+    0.70 - "10e4-4d2d770bbcc80"
+    0.70 - "59792-5f-4b668545bd0c0"
+    0.70 - "e27-4b6a3dbe53a00"
+    0.70 - "761835049"
+    0.70 - "1a02-4d2d9a61569c0"
+    0.70 - "12b9-4d2d8fe88f500"
+    0.70 - "26c8-4d2d8dbf6dc00"
+    0.70 - "2616-4d1d23ec0c240"
+    0.70 - "ffffffffcd226305-eb5-4c48c8aae8000"
+    0.70 - "515-4abdd3d375080"
+    0.70 - "21bb-4c957272645c0"
+    0.70 - "181b-4c99685ecab00"
+    0.70 - "c6a1785-1102-4ce8868200954"
+    0.70 - "1848-4d22728541840"
+    0.70 - "156-47503161a0bc0"
+    0.70 - "975-4d084fab0e4c0"
+    0.70 - "1e2c-4d2d8fe88f500"
+    0.70 - "4bd-4be06f1397b40"
+    0.70 - 5831432326494421260
+    0.70 - "547-4655048804ec0"
+    0.70 - "4cb8-4cdbcd7a05f80"
+    0.70 - "156f1-4bdf39c8c8500"
+    0.70 - "1af0-4d12365b0f8c0"
+    0.70 - "1e5-4bbd7456d5b00"
+    0.70 - "3bd-49413c426a8c0"
+    0.70 - "1ab86dc-f9b-4abdd31889780"
+    0.70 - "d1a-4d2d851bdba40"
+    0.70 - "480a-4a02dad0b1600"
+    0.70 - "33e-4cbc72c0fb540"
+    0.70 - "e559dd-f3-49aac7c66b1c0"
+    0.70 - "1382-4d2c79b241280"
+    0.70 - "7219-4d24de0f044c0"
+    0.70 - "339-3a3ae52fbc280"
+    0.70 - "a6-4abdd3d375080"
+    0.70 - "1ab86e0-a04-4abdd31889780"
+    0.70 - "984-4d090ce9b60c0"
+    0.70 - "2983926635"
+    0.70 - "12f7-4d0e0ad349a00"
+    0.70 - "19eb-4cfb8369c7d00"
+    0.70 - "13c0-4d0e0ad349a00"
+    0.70 - "4c-489c888987540"
+    0.70 - "1667902382"
+    0.70 - "24f0-4d2c494feeb80"
+    0.70 - "a2f3-4cff16bb5ff00"
+    0.70 - "2143924862"
+    0.70 - 43657403843198983
+    0.70 - "1d32-4d2d6e1dc7b40"
+    0.70 - "1697257043"
+    0.70 - "1ab86df-7b3-4abdd31889780"
+    0.70 - "2228140-1145-4c86396e8cf80"
+    0.70 - "2fe8-4d2d8bf886ac0"
+    0.70 - "1719-4d0e0ad349a00"
+    0.70 - "131c-4d2d8759f84c0"
+    0.70 - "ffffffffc0907e72-12fb-4d131c6b20200"
+    0.70 - "c2003e-121-49aacb6df9100"
+    0.70 - "307-4bba825727300"
+    0.70 - "f10-4d2d6aee63780"
+    0.70 - "2880-4d14c37755a40"
+    0.70 - "1507-4bbe812240580"
+    0.70 - "36a1-4bb0fcd2ca000"
+    0.70 - "c8db-4cf67e451f480"
+    0.70 - "16eac-4bb4569ae22c0"
+    0.70 - "195d-4d0e0ad349a00"
+    0.70 - "4809-4d2d8fe88f500"
+    0.70 - "132c-4d0e0ad349a00"
+    0.70 - "1c8a-4d14c37755a40"
+    0.70 - "2a07-4d2d6c2178c00"
+    0.70 - "18d-4bc239f84cb40"
+    0.70 - "2fab-4cca68fdb6440"
+    0.70 - "3674749699"
+    0.70 - "437-4c736362e2d80"
+    0.70 - "10c1-4d2d94834d200"
+    0.70 - "218-4c3482aaec100"
+    0.70 - "ffffffff6d5c985b-b7d9-4d2b0121fe5c0"
+    0.70 - "428e-4d27384af5e00"
+    0.70 - "1d42-4d2d5b14811c0"
+    0.70 - "1cb9-4d22728541840"
+    0.70 - 102026046
+    0.70 - "22cae-4d2b4f1971800"
+    0.70 - "8b5a-4cd3100c75e40"
+    0.70 - "3982465213"
+    0.70 - "23eb-4d22728541840"
+    0.70 - "2d60-4b0c59b655d40"
+    0.70 - "ffffffffdbd47ead-1220-4c48c8a06a740"
+    0.70 - "363c-4a2877defe100"
+    0.70 - "ffffffffd90c3d48-13df-4d24ddbd00340"
+    0.70 - 5831432309318418722
+    0.70 - "10a2-4d0e0ad349a00"
+    0.70 - "2ef7-4d2d9736b7140"
+    0.70 - "4f3-4c73635b41b80"
+    0.70 - "16ef-4b876b37fee00"
+    0.70 - "16a2-4d2d867cb7ac0"
+    0.70 - "358-455fce0886f80"
+    0.70 - "147e-4d2d722884480"
+    0.70 - "23b2-4d1f8623b7140"
+    0.70 - "27b-4c15337980a80"
+    0.70 - "660180771"
+    0.70 - "45f-4a1488866d340"
+    0.70 - "ffffffff7f733ebe-11c7-4d12076416b00"
+    0.70 - "3031-4d2d8a95c25c0"
+    0.70 - "c201d-12c6-4d24ddeac6f40"
+    0.70 - "3e9-4d2d7c2274e00"
+    0.70 - "cfa9-4d2d8fe88f500"
+    0.70 - "2437457471"
+    0.70 - "4c7-455fd270b9540"
+    0.70 - "1557-4d2d5a3558340"
+    0.70 - "12b1-4d2d8356dcd80"
+    0.70 - "b7-4bcc5669d32c0"
+    0.70 - "78cb-4d2d8fe88f500"
+    0.70 - "5ff-49e8542005680"
+    0.70 - "4251594658"
+    0.70 - "539-4ac33c8062c80"
+    0.70 - 102026468
+    0.70 - "208a-4d2cc92bf1400"
+    0.70 - "1e8b-4d22728541840"
+    0.70 - 5831432309319205132
+    0.70 - "e36-3e77627fa3c40"
+    0.70 - "109f-4ac33c8062c80"
+    0.70 - 4145769798363924168
+  location: 
+    40.62 - /blank.gif
+    3.12 - http://www.zanox-affiliate.de/tpv/bin/z_ct_tpv.dll/?12187901C1783310713&RedirectID=[[1724074287759285256]]&zpar0=[[AI0V.Ay6a.Aqp-.uVx0V_qqw48sS_29Y-iakg.CvQ.2]]
+    3.12 - http://www.active-srv02.de/werbemittel/WebObjects/werbemittel.woa/wa/ads?apid=1198bf95-a2d2-4954-bf8c-6a476a8fb377&zanpid=12187901C1783310713T1724074288346460160&zanpartner=1027069
+    31.25 - http://sb.scorecardresearch.com/p2?c1=8&c2=9950536&c3=1&c4=&c5=&c6=&c15=&cv=2.0&cj=1
+    6.25 - http://www.strato.de/asis/mediacom.de.asis
+    3.12 - https://googleads.g.doubleclick.net/pagead/drt/si?p=CAA&ut=AFAKxlQAAAAAUO1sT9c0LNN6WYCGStx5ElQV1gnD2etI
+    3.12 - http://views.herrenausstatter.de/php/partner/index.php?afnr=2772&zanpid=16340183C298833819SV1yqFV8q59y4eq54n24y58HzkNqbGsrUq49qmMecAzgnyaf5lswSbfly90ZmDy980ycbycdT1724074271137258502&zanusr=1027069
+    3.12 - http://sync.mathtag.com/sync/img?mt_exid=4&google_gid=CAESELHcNdhY3Jvn30he0P23cUc&google_cver=1&google_push=&mm_bnc
+    3.12 - http://shop.vodafone.de/micropages/cookie-setting-page.htm?B_ID=667&S_ID=770&I_BOOL=1&tsID=za1027069&c_id=affl_cco_affiliate_za_1027069
+    3.12 - http://cm.g.doubleclick.net/pixel?google_nid=mediamath&google_hm=UO1oyYMzYEcv8OIvAO_ckA&google_push
+  :method: 
+    100.00 - get
+  cache-control: 
+    0.44 - max-age=604800
+    9.33 - max-age=14400
+    0.44 - public, max-age=3600
+    0.89 - no-cache, no-store
+    8.00 - no-cache, must-revalidate
+    34.67 - max-age=2592000
+    0.44 - no-cache, no-store, must-revalidate, max-age=0
+    1.33 - max-age=900
+    9.33 - private
+    0.44 - max-age=300, public
+    8.00 - max-age=172800
+    6.67 - max-age=0, no-cache, must-revalidate
+    5.33 - private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+    1.78 - max-age=0
+    0.89 - max-age=300
+    2.67 - no-cache
+    1.78 - public, max-age=86400
+    0.89 - public, max-age=31536000
+    4.89 - max-age=600
+    0.44 - max-age=1800
+    1.33 - no-store
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  content-disposition: 
+    100.00 - attachment
+  transfer-encoding: 
+    100.00 - chunked
+  set-cookie: 
+    5.26 - LIG_TKP="45337:1357736137:1"; Version=1; Domain=.ligatus.com; Max-Age=604800; Expires=Wed, 16-Jan-2013 12:55:41 GMT; Path=/
+    1.75 - i00=179150ed68c239a20000; path=/; domain=.ivwbox.de; expires=Thursday, 09-Jan-2014 12:55:30 GMT  
+    1.75 - lv_391552=w=126732|t=1357736141; expires=Wed, 09-Jan-2013 14:25:41 GMT; path=/; domain=.adfarm1.adition.com
+    1.75 - mt_mop=4:1357736137; domain=.mathtag.com; path=/; expires=Fri, 08-Feb-2013 12:55:37 GMT
+    1.75 - lv_396965=w=2527687|t=1357736141; expires=Wed, 09-Jan-2013 14:25:41 GMT; path=/; domain=.adfarm1.adition.com
+    1.75 - u2=db033b81-7aab-4c38-9980-3f95c566c34b3Ry020; expires=Tue, 09-Apr-2013 07:55:31 GMT; domain=.serving-sys.com; path=/
+    1.75 - uuid=50ed68c9-8333-6047-2ff0-e22f00efdc90; domain=.mathtag.com; path=/; expires=Thu, 09-Jan-2014 12:55:37 GMT
+    1.75 - bs=p; path=/
+    1.75 - PV=97444194; Domain=.vodafone.de; Expires=Thu, 24-Jan-2013 12:55:42 GMT; Path=/
+    1.75 - test_cookie=CheckForPermission; expires=Wed, 09-Jan-2013 13:10:31 GMT; path=/; domain=.doubleclick.net
+    1.75 - lv_375325=w=2527686|t=1357736137; expires=Wed, 09-Jan-2013 14:25:37 GMT; path=/; domain=.adfarm1.adition.com
+    1.75 - LIG_TKP="45337:1357736137:1-47159:1357736141:1"; Version=1; Domain=.ligatus.com; Max-Age=604800; Expires=Wed, 16-Jan-2013 12:55:41 GMT; Path=/
+    1.75 - zptpvc=5C48556S1724074271137258502T3II5C138337S1724074271162424320T3II12187901C0SV1yqFV8q59y4eq54n3xy58Hzcy5fqbq74q59e0Wy9fnrb52jFyaf43Ry85bxlly90ZmDy980ycbycdT1724074287759285256I16340183C0SV1yqFV8q59y4eq54n24y58HzkNqbGsrUq49qmMecAzgnyaf5lswSbfly90ZmDy980ycbycdT1724074271137258502; expires=Tue, 09-Apr-2013 12:55:41 GMT; domain=.zanox.com; path=/
+    3.51 - VIEW=MEDIACOM; domain=.strato.de; path=/; expires=Fri, 08-Feb-2013 00:00:00 GMT
+    1.75 - i00=03ef50ed68cca8800001; path=/; domain=.met.vgwort.de; expires=Friday, 09-Jan-2015 12:55:40 GMT    
+    1.75 - zptpvc=5C307977S1724074271137258502T0II5C138334S1724074271162424320T0II16340183C0SV1yqFV8q59y4eq54n24y58HzkNqbGsrUq49qmMecAzgnyaf5lswSbfly90ZmDy980ycbycdT1724074271137258502; expires=Tue, 09-Apr-2013 12:55:37 GMT; domain=.zanox.com; path=/
+    1.75 - affiliate=750-PACS_2527686_1497183_pv; path=/; domain=.1822direkt.com; expires=Wed, 16-Jan-2013 12:55:38 GMT
+    1.75 - UserID1=5831432305018143032; expires=Mon, 08-Jul-2013 14:55:37 GMT; path=/; domain=.adfarm1.adition.com
+    1.75 - lv_391552=w=126732|t=1357736137; expires=Wed, 09-Jan-2013 14:25:37 GMT; path=/; domain=.adfarm1.adition.com
+    1.75 - zptpvc=5C254194S1724074288346460160T0II5C211160S1724074288346460160T0II12187901C0SV1yqFV8q59y4eq54n3xy58Hzcy5fqbq74q59e0Wy9fnrb52jFyaf43Ry85bxlly90ZmDy980ycbycdT1724074288346460160; expires=Tue, 09-Apr-2013 12:55:42 GMT; domain=.zanox-affiliate.de; path=/
+    1.75 - apv_1=1198bf95-a2d2-4954-bf8c-6a476a8fb377|za|B_ID=667&S_ID=770&I_BOOL=1&tsID=za1027069; version="1"; expires=Sun, 10-Mar-2013 12:55:42 GMT; path=/; domain=.active-srv02.de
+    17.54 - UIDR=1357736138; expires=Tue, 30-Dec-2014 12:55:38 GMT; path=/; domain=.scorecardresearch.com
+    33.33 - test_cookie=; domain=.doubleclick.net; path=/; Max-Age=0; expires=Mon, 21 Jul 2008 23:59:00 GMT
+    1.75 - UserID1=5831432305018143032; expires=Mon, 08-Jul-2013 14:55:41 GMT; path=/; domain=.adfarm1.adition.com
+    1.75 - postview_ppid=16340183C298833819SV1yqFV8q59y4eq54n24y58HzkNqbGsrUq49qmMecAzgnyaf5lswSbfly90ZmDy980ycbycdT1724074271137258502; expires=Tue, 09-Apr-2013 13:01:07 GMT; path=/; domain=.herrenausstatter.de
+    1.75 - u2=db033b81-7aab-4c38-9980-3f95c566c34b3Ry02g; expires=Tue, 09-Apr-2013 07:55:41 GMT; domain=.serving-sys.com; path=/
+    1.75 - LIG_TKP="45337:1357736137:1"; Version=1; Domain=.ligatus.com; Max-Age=604800; Expires=Wed, 16-Jan-2013 12:55:37 GMT; Path=/
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    0.47 - Sun, 06 Jan 2013 06:11:44 GMT
+    0.47 - Fri, 11 Jan 2013 08:21:19 GMT
+    0.47 - Fri, 11 Jan 2013 07:06:26 GMT
+    0.94 - Wed, 09 Jan 2013 16:29:23 GMT
+    0.47 - Tue, 08 Jan 2013 20:06:02 GMT
+    0.47 - Sat, 05 Jan 2013 09:31:06 GMT
+    0.47 - Tue, 08 Jan 2013 08:37:29 GMT
+    0.47 - Wed, 09 Jan 2013 12:55:42 GMT
+    0.47 - Wed, 16 Jan 2013 12:55:32 GMT
+    0.47 - Wed, 09 Jan 2013 16:01:40 GMT
+    0.47 - Fri, 11 Jan 2013 08:14:06 GMT
+    0.47 - Fri, 11 Jan 2013 08:02:00 GMT
+    0.47 - Fri, 11 Jan 2013 08:21:14 GMT
+    0.47 - Wed, 09 Jan 2013 16:55:31 GMT
+    0.47 - Fri, 11 Jan 2013 09:11:40 GMT
+    0.47 - Wed, 09 Jan 2013 16:55:36 GMT
+    0.47 - Wed, 09 Jan 2013 01:59:25 GMT
+    7.51 - Fri, 08 Feb 2013 12:55:37 GMT
+    0.47 - Tue, 08 Jan 2013 13:24:39 GMT
+    2.35 - Fri, 08 Feb 2013 12:55:36 GMT
+    5.63 - Fri, 08 Feb 2013 12:55:32 GMT
+    2.35 - Wed, 09 Jan 2013 12:55:32 GMT
+    1.41 - 0
+    18.31 - Fri, 08 Feb 2013 12:55:31 GMT
+    0.47 - Fri, 11 Jan 2013 07:01:04 GMT
+    1.88 - Wed, 09 Jan 2013 12:55:37 GMT
+    5.63 - Mon, 01 Jan 1990 00:00:00 GMT
+    0.47 - Wed, 09 Jan 2013 06:46:52 GMT
+    0.47 - Fri, 11 Jan 2013 07:46:28 GMT
+    0.47 - Thu, 09 Jan 2014 08:02:01 GMT
+    1.41 - Wed, 09 Jan 2013 13:10:42 GMT
+    0.94 - Sun, 05-Jun-2005 22:00:00 GMT
+    2.82 - Fri, 08 Feb 2013 12:55:41 GMT
+    0.47 - Wed, 09 Jan 2013 10:06:24 GMT
+    0.47 - Wed, 09 Jan 2013 13:25:32 GMT
+    0.47 - Thu, 09 Jan 2014 05:37:27 GMT
+    0.47 - Wed, 09 Jan 2013 15:55:52 GMT
+    0.47 - Wed, 09 Jan 2013 13:00:30 GMT
+    9.39 - Wed, 09 Jan 2013 12:55:31 GMT
+    0.94 - Wed, 09 Jan 2013 16:55:32 GMT
+    0.47 - Wed, 09 Jan 2013 13:00:36 GMT
+    0.47 - Fri, 11 Jan 2013 07:30:18 GMT
+    6.10 - Tue, 22 Aug 2000 15:05:01 GMT
+    0.47 - Wed, 09 Jan 2013 12:55:38 GMT
+    2.82 - Wed, 09 Jan 2013 16:55:42 GMT
+    0.94 - Fri, 01 Jan 1990 00:00:00 GMT
+    0.94 - Sun, 06 Jan 2013 06:11:14 GMT
+    0.47 - Fri, 11 Jan 2013 07:00:08 GMT
+    0.47 - Wed, 09 Jan 2013 12:57:24 GMT
+    0.47 - Tue, 08 Jan 2013 19:46:56 GMT
+    2.82 - Sat, 01 Jan 2000 00:00:00 GMT
+    1.88 - Wed, 09 Jan 2013 12:55:41 GMT
+    0.47 - Sun, 06 Jan 2013 07:20:45 GMT
+    0.47 - Fri, 11 Jan 2013 04:12:51 GMT
+    5.16 - Wed, 09 Jan 2013 16:55:30 GMT
+    0.47 - Tue, 08 Jan 2013 18:23:14 GMT
+    0.47 - Wed, 09 Jan 2013 11:07:30 GMT
+    0.47 - Fri, 11 Jan 2013 09:07:06 GMT
+    0.47 - Tue, 08 Jan 2013 18:53:25 GMT
+  last-modified: 
+    0.59 - Wed, 11 Jul 2012 11:56:48 GMT
+    0.59 - Wed, 08 Feb 2012 16:51:04 GMT
+    0.59 - Fri, 20 Apr 2012 23:36:36 GMT
+    0.59 - Wed, 11 Jul 2012 11:56:37 GMT
+    0.59 - Mon, 12 Mar 2012 18:20:48 GMT
+    0.59 - Thu, 15 Nov 2012 13:12:44 GMT
+    0.59 - Tue, 02 Nov 2010 15:42:03 GMT
+    0.59 - Wed, 09 Jan 2013 10:38:23 GMT
+    0.59 - Wed, 09 Jan 2013 08:22:08 GMT
+    0.59 - Thu, 22 Mar 2012 16:19:24 GMT
+    0.59 - Thu, 05 May 2011 13:38:44 GMT
+    0.59 - Fri, 09 Nov 2012 11:11:52 GMT
+    0.59 - Wed, 09 Jan 2013 10:23:55 GMT
+    0.59 - Wed, 09 Jan 2013 11:22:48 GMT
+    0.59 - Mon, 03 Dec 2012 11:55:08 GMT
+    0.59 - Fri, 30 Nov 2012 11:53:38 GMT
+    0.59 - Wed, 09 Jan 2013 10:05:58 GMT
+    0.59 - Mon, 02 Jul 2012 14:10:26 GMT
+    0.59 - Mon, 16 Jan 2012 11:53:12 GMT
+    0.59 - Wed, 09 Jan 2013 08:49:06 GMT
+    0.59 - Fri, 23 Mar 2012 12:21:58 GMT
+    0.59 - Wed, 09 Jan 2013 07:01:57 GMT
+    0.59 - Mon, 22 Oct 2012 14:20:57 GMT
+    0.59 - Mon, 19 Nov 2012 16:02:12 GMT
+    0.59 - Fri, 25 May 2012 15:02:51 GMT
+    0.59 - Fri, 18 Jul 2008 09:24:59 GMT
+    0.59 - Wed, 09 Jan 2013 07:05:51 GMT
+    0.59 - Thu, 03 Jan 2013 08:25:26 GMT
+    0.59 - Mon, 07 Jan 2013 16:01:36 GMT
+    0.59 - Tue, 31 Jul 2012 14:04:11 GMT
+    0.59 - Tue, 18 Dec 2012 16:57:47 GMT
+    0.59 - Tue, 14 Aug 2012 09:12:30 GMT
+    0.59 - Wed, 09 Jan 2013 11:34:53 GMT
+    0.59 - Wed, 09 Jan 2013 08:53:08 GMT
+    0.59 - Wed, 09 Jan 2013 11:49:03 GMT
+    0.59 - Tue, 20 Mar 2012 08:06:04 GMT
+    0.59 - Wed, 09 Jan 2013 10:46:18 GMT
+    0.59 - Wed, 09 Jan 2013 08:16:46 GMT
+    0.59 - Wed, 27 Oct 2004 23:26:33 GMT
+    0.59 - Thu, 11 Oct 2012 11:50:05 GMT
+    0.59 - Mon, 10 Sep 2012 11:21:03 GMT
+    0.59 - Mon, 25 Jun 2012 08:57:08 GMT
+    0.59 - Wed, 02 Jan 2013 13:03:55 GMT
+    0.59 - Tue, 14 Aug 2012 09:12:38 GMT
+    1.18 - Fri, 15 Apr 2011 07:22:48 GMT
+    0.59 - Fri, 04 Jan 2013 09:58:16 GMT
+    1.18 - Sat, 29 Dec 2012 07:03:57 GMT
+    2.37 - Mon, 31 Dec 2012 14:52:09 GMT
+    0.59 - Wed, 07 Nov 2012 11:18:35 GMT
+    0.59 - Mon, 26 Mar 2012 11:24:53 GMT
+    0.59 - Tue, 15 Mar 2011 13:18:02 GMT
+    0.59 - Tue, 25 Jan 2011 14:25:19 GMT
+    1.18 - Mon, 05 Sep 2011 15:58:26 GMT
+    0.59 - Wed, 09 Jan 2013 09:33:44 GMT
+    1.78 - Thu, 01 Sep 2011 08:43:30 GMT
+    0.59 - Tue, 18 Dec 2012 15:15:25 GMT
+    0.59 - Tue, 17 Mar 2009 13:09:55 GMT
+    0.59 - Thu, 27 Dec 2012 09:33:53 GMT
+    1.78 - Tue, 03 Nov 2009 09:57:34 GMT
+    0.59 - Tue, 21 Oct 2008 12:56:53 GMT
+    0.59 - Wed, 09 Jan 2013 08:31:01 GMT
+    0.59 - Wed, 02 Jan 2013 13:02:29 GMT
+    0.59 - Tue, 08 Jan 2013 10:41:02 GMT
+    0.59 - Wed, 03 Sep 2008 12:41:17 GMT
+    0.59 - Fri, 04 Jan 2013 17:59:07 GMT
+    0.59 - Tue, 03 Apr 2012 12:25:23 GMT
+    0.59 - Thu, 19 Apr 2012 12:02:13 GMT
+    0.59 - Wed, 09 Jan 2013 10:52:32 GMT
+    0.59 - Mon, 30 Apr 2012 09:53:27 GMT
+    0.59 - Tue, 18 Dec 2012 13:27:40 GMT
+    0.59 - Wed, 19 Dec 2012 08:38:29 GMT
+    1.18 - Tue, 19 Apr 2011 17:06:45 GMT
+    0.59 - Mon, 29 Oct 2012 11:30:57 GMT
+    0.59 - Fri, 30 Nov 2012 15:40:04 GMT
+    0.59 - Tue, 08 Jan 2013 14:17:30 GMT
+    0.59 - Wed, 03 Sep 2008 12:21:34 GMT
+    0.59 - Thu, 13 Sep 2012 14:57:16 GMT
+    0.59 - Wed, 09 Jan 2013 10:44:35 GMT
+    0.59 - Tue, 08 Jan 2013 13:58:49 GMT
+    0.59 - Tue, 25 Jan 2011 14:41:40 GMT
+    0.59 - Tue, 18 Jun 2002 09:54:02 GMT
+    9.47 - Tue, 22 Aug 2000 15:05:01 GMT
+    0.59 - Wed, 09 Jan 2013 09:10:58 GMT
+    0.59 - Fri, 24 Jul 2009 13:46:10 GMT
+    6.51 - Thu, 20 Jan 2011 15:58:20 GMT
+    0.59 - Wed, 19 Dec 2012 10:07:04 GMT
+    0.59 - Wed, 26 Dec 2012 15:00:00 GMT
+    0.59 - Thu, 20 Dec 2012 16:13:38 GMT
+    0.59 - Thu, 27 Dec 2012 18:03:50 GMT
+    0.59 - Wed, 09 Jan 2013 08:55:12 GMT
+    0.59 - Thu, 15 Mar 2012 10:18:27 GMT
+    0.59 - Tue, 08 Jan 2013 20:13:04 GMT
+    0.59 - Wed, 18 Apr 2012 12:58:28 GMT
+    0.59 - Sat, 03 Oct 2009 07:47:03 GMT
+    0.59 - Mon, 26 Nov 2012 15:50:26 GMT
+    0.59 - Fri, 04 Jan 2013 09:28:59 GMT
+    1.18 - Thu, 20 Dec 2012 17:39:45 GMT
+    1.18 - Mon, 05 Mar 2012 11:58:45 GMT
+    0.59 - Thu, 03 Jan 2013 15:54:26 GMT
+    0.59 - Mon, 10 Dec 2012 19:57:47 GMT
+    0.59 - Wed, 09 Jan 2013 10:20:03 GMT
+    0.59 - Thu, 27 Dec 2012 17:41:37 GMT
+    0.59 - Wed, 09 Jan 2013 10:13:53 GMT
+    0.59 - Wed, 02 Nov 2011 19:37:49 GMT
+    0.59 - Mon, 05 Nov 2012 10:21:02 GMT
+    0.59 - Wed, 29 Aug 2012 08:46:06 GMT
+    0.59 - Tue, 05 Apr 2011 15:39:04 GMT
+    0.59 - Thu, 24 Jun 2010 15:44:45 GMT
+    0.59 - Wed, 19 Dec 2012 14:40:53 GMT
+    0.59 - Mon, 07 Jan 2013 10:12:47 GMT
+    0.59 - Mon, 22 Oct 2012 13:38:44 GMT
+    0.59 - Thu, 31 May 2012 11:17:46 GMT
+    0.59 - Wed, 02 Jan 2013 13:03:17 GMT
+    0.59 - Tue, 11 Dec 2012 10:04:27 GMT
+    3.55 - Sat, 15 Dec 2012 09:21:44 GMT
+    1.78 - Thu, 01 Sep 2011 08:40:14 GMT
+    0.59 - Sat, 22 Dec 2012 09:41:39 GMT
+    3.55 - Wed, 09 Jan 2013 11:02:12 GMT
+    0.59 - Fri, 13 Jan 2012 12:51:55 GMT
+  referer: 
+    6.83 - http://a.ligatus.com/timeout.php?ids=26269&e=1
+    1.20 - http://ad2.adfarm1.adition.com/banner?sid=126732&kid=391552&bid=1472359&wpt=H&ts=5831432309319270668
+    3.61 - http://a.ligatus.com/timeout.php?ids=25505&e=1
+    1.20 - http://cm.g.doubleclick.net/push
+    2.01 - http://a.ligatus.com/timeout.php?ids=26267&e=1
+    0.40 - http://googleads.g.doubleclick.net/pagead/drt/s?v=r20120211
+    18.07 - http://www.heise.de/newsticker/classic/
+    0.40 - http://ad2.adfarm1.adition.com/banner?sid=126732&kid=391552&bid=1472359&wpt=H&ts=5831432326494617868
+    2.81 - http://ad4.adfarm1.adition.com/banner?sid=2527684&adjsver=2&co=1&fvers=11&iframe=0&ref=http%3A//www.heise.de/newsticker/classic/&os=5&browser=11&h5=&h5s=1&wi=929729553&ac=1&screen_res=190&wpt=H&clickurl=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DBRcwbzWjtUKakOc22sQa25IHIDuaPmNkEAAAAEAEgADgAWN6h1pJrYJWagYKYB4IBF2NhLXB1Yi01MTIxNjkwNDIxMzM3NTA2sgEMd3d3LmhlaXNlLmRlugEJZ2ZwX2ltYWdlyAEJ2gFkaHR0cDovL3d3dy5oZWlzZS5kZS9uZXdzdGlja2VyL21lbGR1bmcvS2luZGVzbWlzc2JyYXVjaC10cm90ei1lbGVrdHJvbmlzY2hlci1GdXNzZmVzc2VsLTE3ODAwODUuaHRtbJgC2ASpAqTDkMup7LU-wAIC4AIA6gIdNjUxNC9uZXdzdGlja2VyL25ld3MtaGFyZHdhcmX4AoHSHpADjAaYA4wGqAMB4AQBoAYW%26num%3D0%26sig%3DAOD64_28zM_LAhYzovPolB03z5RpP8xy9Q%26client%3Dca-pub-5121690421337506%26adurl%3D
+    4.82 - http://a.ligatus.com/timeout.php?ids=36117
+    5.62 - http://ad4.adfarm1.adition.com/banner?sid=2527684&adjsver=2&co=1&fvers=11&iframe=0&ref=http%3A//www.heise.de/&os=5&browser=11&h5=-1&h5s=0&wi=1943187882&ac=1&screen_res=190&wpt=H&clickurl=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DB02ywyWjtUJ27N8e_sQbLyICwDOaPmNkEAAAAEAEgADgAWN6h1pJrYJWagYKYB4IBF2NhLXB1Yi01MTIxNjkwNDIxMzM3NTA2sgEMd3d3LmhlaXNlLmRlugEJZ2ZwX2ltYWdlyAEJ2gEnaHR0cDovL3d3dy5oZWlzZS5kZS9uZXdzdGlja2VyL2NsYXNzaWMvmALYBKkCpMOQy6nstT7AAgLgAgDqAhc2NTE0L25ld3N0aWNrZXIvY2xhc3NpY_gCgdIekAOMBpgDjAaoAwHgBAGgBhY%26num%3D0%26sig%3DAOD64_2sCpfhtGxO9G4JIZG_zqaiASDUNQ%26client%3Dca-pub-5121690421337506%26adurl%3D
+    37.35 - http://www.heise.de/
+    2.01 - http://shop.vodafone.de/micropages/cookie-setting-page.htm?B_ID=667&S_ID=770&I_BOOL=1&tsID=za1027069&c_id=affl_cco_affiliate_za_1027069
+    13.65 - http://www.heise.de/newsticker/meldung/Kindesmissbrauch-trotz-elektronischer-Fussfessel-1780085.html
+  pragma: 
+    100.00 - no-cache
+  if-modified-since: 
+    100.00 - Thu, 20 Jan 2011 15:58:20 GMT
+  date: 
+    5.08 - Wed, 09 Jan 2013 12:55:36 GMT
+    0.39 - Wed, 09 Jan 2013 05:37:27 GMT
+    0.39 - Wed, 09 Jan 2013 13:01:07 GMT
+    0.78 - Tue, 08 Jan 2013 16:29:23 GMT
+    8.98 - Wed, 09 Jan 2013 12:55:42 GMT
+    12.89 - Wed, 09 Jan 2013 12:55:41 GMT
+    0.39 - Wed, 09 Jan 2013 12:29:22 GMT
+    0.39 - Wed, 09 Jan 2013 08:02:01 GMT
+    15.62 - Wed, 09 Jan 2013 12:55:37 GMT
+    1.17 - Wed, 09 Jan 2013 13:55:42 +0100
+    23.83 - Wed, 09 Jan 2013 12:55:31 GMT
+    5.08 - Wed, 09 Jan 2013 12:55:30 GMT
+    0.39 - Tue, 08 Jan 2013 16:01:40 GMT
+    1.17 - Wed, 09 Jan 2013 13:55:38 +0100
+    0.39 - Wed, 09 Jan 2013 12:55:34 GMT
+    8.59 - Wed, 09 Jan 2013 12:55:38 GMT
+    1.17 - Wed, 09 Jan 2013 12:55:28 GMT
+    1.56 - Wed, 09 Jan 2013 12:55:40 GMT
+    0.39 - Wed, 09 Jan 2013 12:55:29 GMT
+    0.39 - Wed, 09 Jan 2013 12:55:39 GMT
+    0.39 - Wed, 09 Jan 2013 12:55:35 GMT
+    0.39 - Tue, 08 Jan 2013 15:55:52 GMT
+    10.16 - Wed, 09 Jan 2013 12:55:32 GMT
+  access-control-allow-origin: 
+    100.00 - *
+  :path: 
+    0.39 - /ivw-bin/ivw/CP/
+    0.39 - /imgs/18/9/6/7/4/3/8/ZZ55B537E8.jpg-0c9e861b5ef6ad3a.jpeg
+    0.39 - /?t=js&ids=26269&e=1&bce=true&ts=1357736131685
+    0.39 - /imgs/71/9/6/7/5/5/1/5060d0c6d68d04a2.jpeg
+    0.39 - /imgs/02/6/5/1/8/0/9/netalyzr_100x100-a9f0245062ae0555.png
+    0.39 - /imgs/02/8/4/5/0/0/1/5224c2d452a23218.jpeg
+    0.39 - /js/ho/webtrekk-v3-bundle-heise.js
+    0.39 - /?t=js&ids=36117&bce=true&ts=1357736137925
+    0.39 - /1x1.gif
+    0.39 - /avw-bin/ivw/CP/mbe/newsticker/homepage
+    0.39 - /support/lib/jquery/socialshareprivacy/images/dummy_gplus.png
+    0.39 - /support/lib/teaser_linking.js
+    0.39 - /favicon.ico
+    0.39 - /icons/ho/dpunktfoto.gif
+    0.39 - /imgs/18/9/6/7/1/3/9/vert.x_80-387016ad5dfaf5b5-a7e809c77a9114d0.png
+    0.39 - /N6514/adj/newsticker/classic;sz=4x4;tile=1;ord=1777966343
+    0.39 - /tpv/?16340183C298833819T&zpar0=[[AI0V.Ay44.AqxI.LpkBH-VdxLmps_4ehhJeeg.CvQ.2]]
+    0.39 - /images/pic.gif?r=;tp=1073741824%7C1073827193;m=Heise;tid=1073838799;random=30834.165355190635;con=1;json=1;tc=1073741824%7C1073827193%7C1073838799;c=20;b=16;sep=%7C;tce=1;tn=News;tpn=heise%20online%7CRedaktioneller%20Content%7CNews;url=http%3A%2F%2Fwww.heise.de%2F;tit=Startseite;tpu=1;sz=2560x1440x24;con=1;cs=1
+    0.39 - /imgs/02/8/4/5/0/0/1/a2590d211300718b.jpeg
+    0.39 - /ms/finanzen/global_src/Ligatus-Logo.gif
+    0.39 - /dmu/4/8/1/8/4/1355911624.jpg
+    0.39 - /BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=6045690&PluID=0&ord=648952527&rtu=-1
+    0.39 - /newsticker/meldung/Kindesmissbrauch-trotz-elektronischer-Fussfessel-1780085.html
+    0.39 - /sync/img?mt_exid=4&google_gid=CAESELHcNdhY3Jvn30he0P23cUc&google_cver=1&google_push=&mm_bnc
+    0.39 - /imgs/18/9/6/7/3/6/4/ca4287f13b4cb7fe-722d3593a0ded850.jpeg
+    0.39 - /avw-bin/ivw/CP/barfoo/ho/1741618/62.gif?d=1730672114
+    0.39 - /software/screenshots/sps88.jpg
+    0.39 - /imgs/02/6/6/0/1/8/3/38312_0-aa9bd620f1c94733.gif
+    0.39 - /imgs/18/9/6/7/1/7/3/MX-1_front_SILVER.jpg-ba1263efe9d50e1f.jpeg
+    0.39 - /eshop/pv/97444194?B_ID=667&S_ID=770
+    0.39 - /icons/ho/heise_online_logo_top.gif
+    0.39 - /icons/ho/mittelstandswiki.gif
+    0.39 - /imgs/18/9/6/7/5/4/5/nt-manning-anr.jpg-7da5cef4fa1bf5b7.jpeg
+    0.39 - /N6514/adj/newsticker/news-hardware;sz=500x500;kw=Elektronische%20Fu%DFfessel,Kriminalit%E4t;tile=1;ord=1681095572
+    0.39 - /js/plugins/jquery.equalheights.min.js
+    0.39 - /N6514/adj/newsticker/classic;sz=336x200;tile=5;ord=1777966343
+    0.39 - /imgs/18/9/6/7/4/0/6/DP3_Merrill_Front.jpg-e15cb03a050244e1.jpeg
+    0.39 - /timeout.php?ids=26269&e=1
+    0.39 - /icons/ho/vorlesen_download.gif
+    0.39 - /imgs/02/9/6/3/8/1/7/bild1.jpg-576ce2b4d0e7ceb4.jpeg
+    0.39 - /werbemittel/WebObjects/werbemittel.woa/wa/ads?apid=1198bf95-a2d2-4954-bf8c-6a476a8fb377&zanpid=12187901C1783310713T1724074288346460160&zanpartner=1027069
+    0.39 - /pagead/abglogo/abg-de-100c-ffffff.png
+    0.39 - /avw-bin/ivw/CP/mbe/newsticker/news-hardware
+    0.39 - /cgi-bin/ivw/CP/36117-2804/90-1586/208538-174718-//
+    0.39 - /?t=js&ids=25505&e=1&bce=true&ts=1357736141812
+    0.39 - /dmu/4/8/2/6/2/1356020018.jpg
+    0.39 - /banners/270/files/00/01/04/bb/000000066747.gif
+    0.39 - /dmu/4/8/1/7/6/1355906309.jpg
+    0.39 - /js/jquery/jquery-1.7.1.min.js
+    0.39 - /avw-bin/ivw/CP/hp-dc-pre
+    0.39 - /ivw-bin/ivw/CP/newsticker/classic/
+    0.39 - /imgs/18/9/6/7/4/5/5/DIN_4844-2_Warnung_vor_Laserstrahl_D-W010.svg-deb8832baf571347.png
+    0.39 - /imgs/02/9/6/5/4/8/2/ubuntu-phone4-bf07997c106d414f.png
+    0.39 - /imgs/18/9/6/7/2/8/7/w8pflaster-2bb0a5242cb8e056.png
+    0.39 - /wissen/images/Fotolia_36790770_75x50.jpg
+    0.39 - /imgs/02/9/5/4/5/7/3/Titel-9498778ba274a3c1.jpeg
+    0.39 - /N6514/adj/newsticker/classic;sz=500x500;tile=2;ord=1777966343
+    0.39 - /js/acb/uid.html
+    0.39 - /banners/270/files/00/01/11/da/000000070106.jpg
+    0.39 - /banners/270/files/00/00/56/26/000000022054.jpg
+    0.39 - /imgs/71/9/6/7/5/5/1/2587a9e0fdfb15a8.jpeg
+    0.39 - /N6514/adj/newsticker/news-hardware;sz=120x600,120x800,160x600,160x800;kw=Elektronische%20Fu%DFfessel,Kriminalit%E4t;tile=6;ord=1681095572
+    0.39 - /push
+    0.39 - /icons/ho/bilderstrecke.png
+    0.39 - /imgs/18/9/6/7/4/2/7/sportiiiis_klein.JPG-fa4b5804e3306fb7.jpeg
+    0.39 - /N6514/adj/newsticker/homepage;sz=4x4;tile=1;ord=1000412622
+    0.39 - /stil/drucken.css
+    0.39 - /imgs/71/9/6/7/5/5/1/5eede0aa198e58fc.png
+    0.39 - /cgi-bin/ivw/CP/homepage;%2F?r=&d=23490.52249919623
+    0.39 - /banner?sid=2527684&adjsver=2&co=1&fvers=11&iframe=0&ref=http%3A//www.heise.de/&os=5&browser=11&h5=-1&h5s=0&wi=1943187882&ac=1&screen_res=190&wpt=H&clickurl=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DB02ywyWjtUJ27N8e_sQbLyICwDOaPmNkEAAAAEAEgADgAWN6h1pJrYJWagYKYB4IBF2NhLXB1Yi01MTIxNjkwNDIxMzM3NTA2sgEMd3d3LmhlaXNlLmRlugEJZ2ZwX2ltYWdlyAEJ2gEnaHR0cDovL3d3dy5oZWlzZS5kZS9uZXdzdGlja2VyL2NsYXNzaWMvmALYBKkCpMOQy6nstT7AAgLgAgDqAhc2NTE0L25ld3N0aWNrZXIvY2xhc3NpY_gCgdIekAOMBpgDjAaoAwHgBAGgBhY%26num%3D0%26sig%3DAOD64_2sCpfhtGxO9G4JIZG_zqaiASDUNQ%26client%3Dca-pub-5121690421337506%26adurl%3D
+    0.39 - /icons/ho/icon_kommentare_klein.png
+    0.39 - /js/ho/login.min.js
+    0.39 - /cgi-bin/ivw/CP/36117-2804/90-1586/208440-175176-//
+    0.39 - /scripts/vodafone.global.js
+    0.39 - /imgs/02/8/4/5/0/0/1/51e4871730d101bd.jpeg
+    0.39 - /imgs/02/4/1/8/6/0/3/TN_52535925_86c11a1f97-519e6d0f99f07010.png
+    0.39 - /imgs/18/9/6/7/5/3/8/Netz11_StockXchng_mike_gieson-8615926ef1b6aebb.png
+    0.39 - /icons/ho/bg_pfeilspitze_links.png
+    0.39 - /support/lib/external.js
+    0.39 - /cgi-bin/ivw/CP/26269-365/90-1586/207154-173910-_208996-174268-_207292-174122-//
+    0.39 - /avw-bin/ivw/CP/mbe/newsticker/classic
+    0.39 - /imgs/18/9/6/7/4/7/3/nt-uejf-460bfd104f8ee138.gif
+    0.39 - /imgs/02/8/4/5/0/0/1/67a8385706985cb9.jpeg
+    0.39 - /imgs/18/9/6/7/5/1/4/6c8bfe69b6b50fdf-b7a3c2c40e2f852e-ca4a89d584e9715d-3bbf08842c4d7e44.png
+    0.39 - /imgs/71/9/6/7/5/5/1/83308b04771de314.jpeg
+    0.39 - /icons/ho/low_link.gif
+    0.78 - /asis/mediacom.de.asis
+    0.39 - /support/lib/jquery/socialshareprivacy/images/socialshareprivacy_info.png
+    0.39 - /cgi-bin/ivw/CP/newstick_hw;%2Fnewsticker%2Fmeldungen%2Fhardware%2F1780085?r=http%3A%2F%2Fwww.heise.de%2Fnewsticker%2Fclassic%2F&d=20334.049337543547
+    0.39 - /
+    0.39 - /imgs/18/9/6/7/1/1/3/raubkopien_vernichtung_kartons_teaser.jpg-eb3bcac17f5cbe25.jpeg
+    0.39 - /dmu/4/1/3/4/6/1342007808.jpg
+    0.39 - /N6514/adj/newsticker/homepage;sz=120x600,120x800,160x600,160x800;tile=7;ord=1000412622
+    0.39 - /setapix.png/750/PACS_2527686_1497183_pv
+    0.39 - /?t=js&ids=26269&e=1&bce=true&ts=1357736137048
+    0.39 - /N6514/adj/newsticker/homepage;sz=300x250,336x280;tile=3;ord=1000412622
+    0.39 - /BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=6063161&PluID=0&ord=1079279899&rtu=-1
+    0.39 - /N6514/adj/newsticker/classic;sz=120x600,120x800,160x600,160x800;tile=7;ord=1777966343
+    0.39 - /banner?sid=126732&kid=391552&bid=1472359&wpt=H&ts=5831432309319270668
+    0.39 - /php/partner/index.php?afnr=2772&zanpid=16340183C298833819SV1yqFV8q59y4eq54n24y58HzkNqbGsrUq49qmMecAzgnyaf5lswSbfly90ZmDy980ycbycdT1724074271137258502&zanusr=1027069
+    0.39 - /imgs/02/3/9/8/2/3/9/2-694f0267d34feaff.jpeg
+    0.39 - /?t=js&ids=25505&e=1&bce=true&ts=1357736131942
+    0.39 - /stil/ho/heiseonline2012.css
+    0.39 - /imgs/02/8/4/5/0/0/1/8279975c4b957ead.jpeg
+    0.39 - /icons/ho/video.png
+    0.39 - /imgs/18/9/6/7/5/6/0/001-6d180672797034b9.png
+    0.39 - /imgs/02/8/4/5/0/0/1/5c7a3f4cd46f80bf.jpeg
+    0.39 - /imgs/18/9/6/7/4/9/5/smarttv_37121486_original.large-4-3-800-297-0-2624-1745.jpg-81b077483d143feb.jpeg
+    0.39 - /cgi-bin/ivw/CP/25505-1206/90-1586/207154-173910-//
+    0.39 - /js/ho/bilderstrecke.js
+    0.39 - /index.php?ids=36117&t=js
+    0.39 - /N6514/adj/newsticker/news-hardware;sz=300x250,336x280;kw=Elektronische%20Fu%DFfessel,Kriminalit%E4t;tile=2;ord=1681095572
+    0.39 - /icons/ho/heise_online_angebote_button.gif
+    0.39 - /?t=js&ids=26269&e=1&bce=true&ts=1357736141464
+    0.39 - /imgs/18/9/6/4/4/9/2/nt-3d.jpg-76d3ba32ce9c871c.jpeg
+    0.39 - /imgs/02/8/4/5/0/0/1/1723aa3c92105221.jpeg
+    0.39 - /imgs/18/9/6/7/3/1/3/MakerBot_Replicator2X_high_1.jpg-1e6c93f2c26638c2.jpeg
+    0.39 - /stil/navi_top2008.css
+    0.39 - /N6514/adj/newsticker/classic;sz=300x250,336x280;tile=3;ord=1777966343
+    0.39 - /dmu/4/5/3/3/7/1357553567.gif
+    0.39 - /?t=js&ids=26267&e=1&bce=true&ts=1357736141740
+    0.39 - /?ids=26269&t=js&e=1
+    0.39 - /imgs/02/9/4/0/9/4/8/121210_DG_bildText_336x200_03.jpg-9ede49ab40917d6e.jpeg
+    0.39 - /imgs/02/9/6/3/8/1/4/titel0213-7cb46d80a32ffb03.gif
+    0.39 - /js/adition.js
+    0.39 - /dmu/4/1/3/4/6/1342007797.jpg
+    0.39 - /micropages/cookie-setting-page.htm?B_ID=667&S_ID=770&I_BOOL=1&tsID=za1027069&c_id=affl_cco_affiliate_za_1027069
+    0.39 - /btn/761856/heise/de/de
+    0.39 - /ivw-bin/ivw/CP/newsticker/meldungen/hardware/1780085
+    0.39 - /icons/ho/heise_online_angebote_logo.png
+    0.39 - /adyard_js.php?ida=246&t=js
+    0.39 - /imgs/18/9/6/7/6/1/4/6266fda69a1b2c52-65dc8f0e6c1d2609.jpeg
+    0.39 - /?t=js&ids=25505&e=1&bce=true&ts=1357736137408
+    0.39 - /imgs/02/6/6/5/7/4/9/38309_0-e04cb40b33657a47.gif
+    0.39 - /js/plugins/jquery-ui-1.8.18_cycle.custom.min.js
+    0.39 - /de_ads/3/2/2/4/1/72x60.jpg
+    0.39 - /banners/270/files/00/00/b5/a7/000000046503.png
+    0.39 - /?ids=26267&t=js&e=1
+    0.39 - /simgad/9379240096091771153
+    0.39 - /imgs/02/9/5/8/2/4/0/MacPc_75813-thk-jg_PR-a2a427d993f90763.jpeg
+    0.39 - /cgi-bin/ivw/CP/25505-1206/90-1586/208994-172026-//
+    0.39 - /images/pic.gif?r=http%3A//www.heise.de/;tp=1073741824%7C1073827193%7C1073838799;m=Heise;tid=1073843184;random=56634.99941583723;con=1;json=1;tc=1073741824%7C1073827193%7C1073838799%7C1073843184;c=62;b=16;sep=%7C;tce=1;tn=Newsticker;tpn=heise%20online%7CRedaktioneller%20Content%7CNews%7CNewsticker;url=http%3A%2F%2Fwww.heise.de%2Fnewsticker%2Fclassic%2F;tit=Newsticker%20Classic;tpu=1;sz=2560x1440x24;con=1;cs=1
+    0.39 - /imgs/02/3/9/9/2/9/0/nexus-7-137-d62ef79c4116a6f8.gif
+    0.39 - /imgs/02/8/0/9/1/0/0/first_email_at_BBN_raytheon_130x75-6add11d98d9baedd.png
+    0.39 - /newsticker/classic/
+    0.39 - /banners/270/00/16/fb/fa/image.jpg
+    0.39 - /imgs/02/8/4/5/0/0/1/816323501ca447e7.jpeg
+    0.39 - /timeout.php?ids=26267&e=1
+    0.39 - /icons/ho/00on.gif
+    0.39 - /scripts/jquery.js
+    0.39 - /imgs/18/9/6/7/4/2/2/jpeg-1480AC00D0886FF9-20120222-img_38624300_original.large-4-3-800-346-0-2076-1300.jpg-ac05064fbf346f31.jpeg
+    0.39 - /de_ads/3/2/2/4/1/138x115.jpg
+    0.39 - /imgs/02/4/0/2/8/7/8/Allrad_630.jpg-20414fd4318daeeb.jpeg
+    0.39 - /cookie-setting-page.html?B_ID=667&S_ID=770
+    0.39 - /imgs/18/9/6/7/5/2/2/Verizon.jpg-0ec0f0ad7b428a0a.jpeg
+    0.39 - /imgs/02/8/8/4/9/6/3/cc0212Kamerates_72301-pen-A-ccbbcbf1d17a649e.jpeg
+    0.39 - /N6514/adj/newsticker/news-hardware;sz=336x200;kw=Elektronische%20Fu%DFfessel,Kriminalit%E4t;tile=4;ord=1681095572
+    0.39 - /support/lib/jquery/socialshareprivacy/images/dummy_facebook.png
+    1.56 - /p2?c1=8&c2=9950536&c3=1&c4=&c5=&c6=&c15=&cv=2.0&cj=1
+    0.39 - /imgs/02/9/3/6/2/7/8/special0612.jpg-19af662c16d9d6d0-ff41a706d78914f2.jpeg
+    0.39 - /banners/270/files/00/00/d9/42/000000055618.jpg
+    0.39 - /banners/270/files/00/01/11/dc/000000070108.gif
+    0.39 - /?ids=25505&t=js&e=1
+    0.39 - /dmu/4/7/9/8/2/1357131797.jpg
+    0.39 - /icons/ho/related-items.gif
+    0.39 - /N6514/adj/newsticker/classic;sz=728x90,468x60;tile=6;ord=1777966343
+    0.39 - /pixel?google_nid=mediamath&google_hm=UO1oyYMzYEcv8OIvAO_ckA&google_push
+    0.39 - /timeout.php?ids=36117
+    0.39 - /imgs/02/8/4/5/0/0/1/heisevideo_black-6b55eead5a512b8f.png
+    0.39 - /N6514/adj/newsticker/homepage;sz=336x200;tile=5;ord=1000412622
+    0.39 - /pagead/drt/ui
+    0.39 - /simgad/1792915889388966350
+    0.39 - /imgs/02/8/4/5/0/0/1/3140dd4c607e2d02.jpeg
+    0.39 - /N6514/adj/newsticker/news-hardware;sz=728x90,468x60;kw=Elektronische%20Fu%DFfessel,Kriminalit%E4t;tile=5;ord=1681095572
+    0.39 - /support/lib/social_bookmarks.js
+    0.39 - /cgi-bin/ivw/CP/25505-1206/90-1586/208996-174268-//
+    0.39 - /imgs/02/8/4/5/0/0/1/937a9553ae896333.jpeg
+    0.39 - /pagead/js/abg.js
+    0.39 - /dmu/4/8/0/2/0/1355837260.jpg
+    0.39 - /images/pic.gif?r=http%3A//www.heise.de/newsticker/classic/;tp=1073741824%7C1073827193%7C1073838799%7C1075179657%7C1075179658;m=Heise;tid=1075196972;random=52715.309080667794;con=1;json=1;tc=1073741824%7C1073827193%7C1073838799%7C1075179657%7C1075179658%7C1075196972;c=1780085;b=967614;sep=%7C;tce=1;tn=09;tpn=heise%20online%7CRedaktioneller%20Content%7CNews%7C2013%7C01%7C09;url=http%3A%2F%2Fwww.heise.de%2Fnewsticker%2Fmeldung%2FKindesmissbrauch-trotz-elektronischer-Fussfessel-1780085.html;tit=Kindesmissbrauch%20trotz%20elektronischer%20Fu%DFfessel;tpu=1;sz=2560x1440x24;con=1;cs=1
+    1.17 - /avw-bin/ivw/CP/difftest/jorge
+    0.39 - /N6514/adj/newsticker/news-hardware;sz=2x1;kw=Elektronische%20Fu%DFfessel,Kriminalit%E4t;tile=3;ord=1681095572
+    0.39 - /dmu/4/1/8/1/2/1343743451.jpg
+    0.39 - /imgs/02/4/7/8/8/3/7/Titel_Programmieren-SH.jpg-040c251944854be8.jpeg
+    0.39 - /N6514/adj/newsticker/homepage;sz=2x1;tile=4;ord=1000412622
+    0.39 - /banners/270/files/00/01/07/1b/000000067355.png
+    0.39 - /icons/ho/bg_pfeilspitze_rechts.png
+    0.39 - /stil/standard2008.css
+    0.39 - /tpv/?12187901C1783310713&zpar0=[[AI0V.Ay6a.Aqp-.uVx0V_qqw48sS_29Y-iakg.CvQ.2]]
+    0.39 - /N6514/adj/newsticker/homepage;sz=728x90,468x60;tile=6;ord=1000412622
+    0.39 - /imgs/02/8/4/5/0/0/1/594bc9331c95bb36.jpeg
+    0.39 - /cgi-bin/ivw/CP/26269-365/90-1586/208942-173296-_207838-172164-_210372-172288-//
+    0.39 - /support/lib/mclient/mclient-1.0.js
+    0.39 - /imgs/71/9/6/7/5/5/1/06315f72aaf90b53.jpeg
+    0.39 - /js?wp_id=2527684&clickurl=http://adclick.g.doubleclick.net/aclk?sa=L&ai=B02ywyWjtUJ27N8e_sQbLyICwDOaPmNkEAAAAEAEgADgAWN6h1pJrYJWagYKYB4IBF2NhLXB1Yi01MTIxNjkwNDIxMzM3NTA2sgEMd3d3LmhlaXNlLmRlugEJZ2ZwX2ltYWdlyAEJ2gEnaHR0cDovL3d3dy5oZWlzZS5kZS9uZXdzdGlja2VyL2NsYXNzaWMvmALYBKkCpMOQy6nstT7AAgLgAgDqAhc2NTE0L25ld3N0aWNrZXIvY2xhc3NpY_gCgdIekAOMBpgDjAaoAwHgBAGgBhY&num=0&sig=AOD64_2sCpfhtGxO9G4JIZG_zqaiASDUNQ&client=ca-pub-5121690421337506&adurl=
+    0.39 - /dmu/4/1/1/0/4/1341238226.jpg
+    0.39 - /?t=js&ids=36117&bce=true&ts=1357736141912
+    0.39 - /N6514/adj/newsticker/homepage;sz=500x500;tile=2;ord=1000412622
+    0.39 - /banners/268/files/00/00/02/c5/000000000709.gif
+    0.39 - /timeout.php?ids=25505&e=1
+    0.39 - /icons/ho/heise_online_lupe.png
+    3.12 - /p?c1=8&c2=9950536&c3=1&c4=&c5=&c6=&c15=&cv=2.0&cj=1
+    0.39 - /cgi-bin/ivw/CP/news_classic;%2Fnewsticker%2Fclassic%2F?r=http%3A%2F%2Fwww.heise.de%2F&d=21402.978291735053
+    0.39 - /pagead/images/i.png
+    0.39 - /support/lib/jquery/socialshareprivacy/images/dummy_twitter.png
+    0.39 - /cgi-bin/ivw/CP/26267-611/90-1586/207292-174122-_205482-172252-_207154-173910-//
+    0.39 - /icons/ho/seen_by_banner.gif
+    0.39 - /imgs/02/8/4/5/0/0/1/a297e3785372cef8.jpeg
+    0.39 - /de_ads/3/2/2/4/1/90x75.jpg
+    0.39 - /com_global_img/logo-ligatus_frei_58x15.gif
+    0.39 - /de_ads/4/2/3/5/0/90x75_tahira.jpg
+    0.39 - /pagead/js/graphics.js
+    0.39 - /icons/ho/heise_min.gif
+    0.39 - /imgs/18/9/6/7/5/9/5/c1c436de8ede7696-503a6a0abe84ab53.jpeg
+    0.39 - /pagead/drt/s?v=r20120211
+    0.39 - /support/lib/jquery/socialshareprivacy/images/socialshareprivacy_on_off.png
+    0.39 - /banner?sid=126732&kid=391552&bid=1472359&wpt=H&ts=5831432326494617868
+    0.39 - /js?wp_id=2527684&clickurl=http://adclick.g.doubleclick.net/aclk?sa=L&ai=BRcwbzWjtUKakOc22sQa25IHIDuaPmNkEAAAAEAEgADgAWN6h1pJrYJWagYKYB4IBF2NhLXB1Yi01MTIxNjkwNDIxMzM3NTA2sgEMd3d3LmhlaXNlLmRlugEJZ2ZwX2ltYWdlyAEJ2gFkaHR0cDovL3d3dy5oZWlzZS5kZS9uZXdzdGlja2VyL21lbGR1bmcvS2luZGVzbWlzc2JyYXVjaC10cm90ei1lbGVrdHJvbmlzY2hlci1GdXNzZmVzc2VsLTE3ODAwODUuaHRtbJgC2ASpAqTDkMup7LU-wAIC4AIA6gIdNjUxNC9uZXdzdGlja2VyL25ld3MtaGFyZHdhcmX4AoHSHpADjAaYA4wGqAMB4AQBoAYW&num=0&sig=AOD64_28zM_LAhYzovPolB03z5RpP8xy9Q&client=ca-pub-5121690421337506&adurl=
+    0.39 - /icons/ho/heise_online_lupe.gif
+    0.39 - /avw-bin/ivw/CP/barfoo/ho/1741618/1780085.gif?d=1053663710
+    1.17 - /blank.gif
+    0.39 - /scripts/jquery.cookie.pack.js
+    0.39 - /tpv/bin/z_ct_tpv.dll/?12187901C1783310713&RedirectID=[[1724074287759285256]]&zpar0=[[AI0V.Ay6a.Aqp-.uVx0V_qqw48sS_29Y-iakg.CvQ.2]]
+    0.39 - /dmu/4/7/9/8/2/1357131749.jpg
+    0.39 - /icons/ho/link_list_bullet.png
+    0.78 - /ad/121/246
+    0.39 - /N6514/adj/newsticker/classic;sz=2x1;tile=4;ord=1777966343
+    0.39 - /support/lib/jquery/socialshareprivacy/images/settings.png
+    0.39 - /dmu/4/7/1/5/9/1357291739.gif
+    0.39 - /support/lib/jquery/socialshareprivacy/socialshareprivacy.css
+    1.17 - /avw-bin/ivw/CP/difftest/casey
+    0.39 - /imgs/18/9/6/7/3/5/7/imwatch_klein.jpg-4c68dd2c0d8e14b9.jpeg
+    0.39 - /cgi-bin/ivw/CP/26269-365/90-1586/209288-174966-_207154-173910-_207826-172984-//
+    0.39 - /na/c2650579548e4177aabae8ca4fa9c889
+    0.39 - /banner?sid=2527684&adjsver=2&co=1&fvers=11&iframe=0&ref=http%3A//www.heise.de/newsticker/classic/&os=5&browser=11&h5=&h5s=1&wi=929729553&ac=1&screen_res=190&wpt=H&clickurl=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DBRcwbzWjtUKakOc22sQa25IHIDuaPmNkEAAAAEAEgADgAWN6h1pJrYJWagYKYB4IBF2NhLXB1Yi01MTIxNjkwNDIxMzM3NTA2sgEMd3d3LmhlaXNlLmRlugEJZ2ZwX2ltYWdlyAEJ2gFkaHR0cDovL3d3dy5oZWlzZS5kZS9uZXdzdGlja2VyL21lbGR1bmcvS2luZGVzbWlzc2JyYXVjaC10cm90ei1lbGVrdHJvbmlzY2hlci1GdXNzZmVzc2VsLTE3ODAwODUuaHRtbJgC2ASpAqTDkMup7LU-wAIC4AIA6gIdNjUxNC9uZXdzdGlja2VyL25ld3MtaGFyZHdhcmX4AoHSHpADjAaYA4wGqAMB4AQBoAYW%26num%3D0%26sig%3DAOD64_28zM_LAhYzovPolB03z5RpP8xy9Q%26client%3Dca-pub-5121690421337506%26adurl%3D
+    0.39 - /sync/img?mt_exid=4&google_gid=CAESELHcNdhY3Jvn30he0P23cUc&google_cver=1&google_push=
+    0.39 - /imgs/02/7/8/4/7/8/5/ct1311-IPv6_Day1_69566-je-A.jpg.jpg-465800fc40eced54.jpeg
+    0.39 - /icons/ho/background_weitere.gif
+  content-language: 
+    100.00 - de
+  content-encoding: 
+    100.00 - gzip
+  content-type: 
+    6.50 - text/javascript
+    5.28 - text/html
+    25.20 - image/jpeg
+    2.03 - text/css; charset=utf-8
+    1.22 - text/html; charset=utf-8
+    0.41 - text/html; charset=ISO-8859-1
+    0.41 - image/x-icon
+    1.63 - application/javascript
+    8.94 - text/javascript; charset=UTF-8
+    21.95 - image/gif
+    0.41 - text/html;charset=UTF-8
+    0.81 - application/x-javascript
+    0.81 - text/html; charset=UTF-8
+    4.07 - text/javascript; charset=utf-8
+    0.41 - text/plain; charset=ISO-8859-1
+    13.41 - image/png
+    6.50 - text/plain
+  age: 
+    28.57 - 73574
+    14.29 - 17611
+    14.29 - 75237
+    14.29 - 75585
+    14.29 - 26290
+    14.29 - 1575
+  :status: 
+    88.28 - 200
+    10.16 - 302
+    1.56 - 304
+  server: 
+    0.82 - safe
+    0.82 - Apache/1.3.41 (Unix) mod_deflate/1.0.21 mod_perl/1.31 mod_ssl/2.8.31 OpenSSL/0.9.8o
+    0.41 - nginx/0.7.67
+    0.41 - mt2/2.6.2.2465 Sep 24 2012 22:21:34 zrh-pixel-x5 pid 0x13bc 5052
+    0.82 - s2.33.2
+    4.10 - s2.33.3
+    9.84 - cafe
+    2.05 - Microsoft-IIS/7.5
+    0.82 - sffe
+    1.23 - Apache/2.2.16
+    0.82 - Apache/2.2.22 (Amazon)
+    0.41 - mt2/2.6.2.2465 Sep 24 2012 22:21:34 zrh-pixel-x5 pid 0x13a3 5027
+    4.92 - lighttpd/1.4.19
+    66.39 - Apache
+    0.41 - nginx/0.8.33
+    0.41 - Apache/2.2.16 (Debian)
+    1.64 - s2.31.1
+    2.46 - ADITIONSERVER v1.0
+    0.82 - Cookie Matcher
+    0.41 - GH
+  :scheme: 
+    100.00 - http
+  connection: 
+    32.54 - close
+    65.79 - keep-alive
+    1.67 - Keep-Alive
+  cookie: 
+    1.69 - LIG_TKP="45337:1357736137:1-47159:1357736141:1"
+    5.08 - UID=1b97af33-2.18.203.120-1357736138; UIDR=1357736138
+    0.85 - lv_395093=w=327988|t=1357736136; fc5=1010cxQocAAFKuu5Q0k0dAAFKuu5QHboFQALUaO1Q; lv_394586=w=2527685|t=1357736137; lv_375325=w=2527686|t=1357736137; lv_391552=w=126732|t=1357736137; UserID1=5831432305018143032
+    28.81 - wt3_sample=%3B777509609504040%7C5%7C0
+    0.85 - S_6045690=6540666550585055729; A3=LhMte5TX0j8N00000; B4=n3.W0000000000000000E5; u2=db033b81-7aab-4c38-9980-3f95c566c34b3Ry020
+    0.85 - fc3=10138; lv_395093=w=327988|t=1357736136; UserID1=5831432305018143032; lv_394586=w=2527685|t=1357736137; lv_375325=w=2527686|t=1357736137
+    0.85 - uuid=50ed68c9-8333-6047-2ff0-e22f00efdc90
+    0.85 - UserID1=5831432305018143032; lv_395093=w=327988|t=1357736136
+    0.85 - UID=fd9fef6-2.18.203.120-1357736138; UIDR=1357736138
+    0.85 - srp=179150ed68c239a20000; i00=179150ed68c239a20007
+    1.69 - srp=179150ed68c239a20000; i00=179150ed68c239a20000
+    12.71 - id=2223bd0f6b010097||t=1357736131|et=730|cs=002213fd48fa5a27f740810cd7
+    0.85 - test_cookie=CheckForPermission
+    15.25 - wt3_sample=%3B777509609504040%7C5%7C0; POPUPCHECK=1357822538566
+    1.69 - oshop=queryparams||b_id||667||queryparams||shopid||770
+    0.85 - VIEW=MEDIACOM
+    0.85 - srp=03ef50ed68cca8800001; i00=03ef50ed68cca8800001
+    1.69 - UID=fd9fef4-2.18.203.120-1357736138; UIDR=1357736138
+    0.85 - lv_395093=w=327988|t=1357736136; lv_375325=w=2527686|t=1357736137; fc3=10122; lv_391552=w=126732|t=1357736137; UserID1=5831432305018143032; lv_394586=w=2527685|t=1357736141; lv_387420=w=2527686|t=1357736141; lv_396965=w=2527687|t=1357736141
+    14.41 - LIG_TKP="45337:1357736137:1"
+    0.85 - zttpvc=5C307977S1724074271137258502T0II5C138334S1724074271162424320T0II16340183C0SV1yqFV8q59y4eq54n24y58HzkNqbGsrUq49qmMecAzgnyaf5lswSbfly90ZmDy980ycbycdT1724074271137258502; zptpvc=5C307977S1724074271137258502T0II5C138334S1724074271162424320T0II16340183C0SV1yqFV8q59y4eq54n24y58HzkNqbGsrUq49qmMecAzgnyaf5lswSbfly90ZmDy980ycbycdT1724074271137258502
+    0.85 - lv_395093=w=327988|t=1357736136; fc5=1010cxQocAAFKuu5Q0k0dAAFKuu5QHboFQALUaO1Q; lv_394586=w=2527685|t=1357736137; lv_375325=w=2527686|t=1357736137; UserID1=5831432305018143032; lv_391552=w=126732|t=1357736137
+    5.08 - id=2223bd0f6b010097||t=1357736131|et=730|cs=002213fd48fa5a27f740810cd7; _drt_=NO_DATA
+    0.85 - lv_395093=w=327988|t=1357736136; UserID1=5831432305018143032
+  x-frame-options: 
+    100.00 - ALLOWALL
+  x-powered-by: 
+    55.56 - ASP.NET
+    11.11 - Mojolicious (Perl)
+    22.22 - PHP/5.3.15
+    11.11 - PHP/5.3.1
+  :status-text: 
+    88.28 - OK
+    1.56 - Not Modified
+    10.16 - Found
+  :host: 
+    1.56 - shop.vodafone.de
+    0.78 - adfarm.adyard.de
+    0.78 - cm.g.doubleclick.net
+    0.78 - ad2.adfarm1.adition.com
+    1.56 - heise.ivwbox.de
+    0.78 - heise.met.vgwort.de
+    0.39 - www.mittelstandswiki.de
+    4.69 - imagesrv.adition.com
+    0.39 - dslshop.vodafone.de
+    0.39 - adyard-adfarm.ligatus.com
+    1.17 - rl.heise.de
+    0.39 - www.active-srv02.de
+    4.69 - sb.scorecardresearch.com
+    0.78 - ad.zanox.com
+    0.39 - googleads.g.doubleclick.net
+    0.39 - www.vodafone.de
+    0.39 - gzhls.at
+    7.03 - i.ligatus.com
+    3.91 - x.ligatus.com
+    2.34 - pagead2.googlesyndication.com
+    1.56 - ad4.adfarm1.adition.com
+    3.52 - d.ligatus.com
+    46.48 - www.heise.de
+    7.81 - ad-emea.doubleclick.net
+    0.78 - bs.serving-sys.com
+    0.39 - www.zanox-affiliate.de
+    0.39 - www.google.com
+    3.12 - a.ligatus.com
+    0.78 - sync.mathtag.com
+    0.39 - views.herrenausstatter.de
+    0.39 - www-2.1822direkt.com
+    0.78 - www.strato.de
+
+

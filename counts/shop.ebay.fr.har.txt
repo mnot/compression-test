@@ -551,8 +551,8 @@ etag                 0.5                                                4
 cache-control        0.789230769231                                     650                 
 :path                0.808936825886                                     649                 
 content-length       0.842281879195                                     596                 
-last-modified        0.856896551724                                     580                 
-expires              0.881034482759                                     580                 
+last-modified        0.858620689655                                     580                 
+expires              0.879310344828                                     580                 
 cookie               0.923076923077                                     13                  
 nncoection           1.0                                                1                   
 location             1.0                                                1                   
@@ -560,3 +560,2769 @@ set-cookie           1.0                                                14
 cneonction           1.0                                                1                   
 ntcoent-length       1.0                                                1                   
 rlogid               1.0                                                15                  
+
+
+Header Frequencies:
+  content-length: 
+    0.34 - 3715
+    0.17 - 3927
+    0.17 - 10297
+    0.17 - 10452
+    0.17 - 11549
+    0.17 - 4144
+    0.17 - 5987
+    0.17 - 5984
+    0.17 - 3558
+    0.17 - 0
+    0.17 - 7515
+    0.17 - 8909
+    0.17 - 3999
+    0.34 - 5951
+    0.17 - 11181
+    0.17 - 2918
+    0.17 - 2919
+    0.17 - 2855
+    0.17 - 6151
+    0.17 - 6154
+    0.17 - 7043
+    0.17 - 10870
+    0.17 - 6844
+    0.17 - 6796
+    0.17 - 6797
+    0.17 - 5261
+    0.17 - 2316
+    0.17 - 14185
+    0.17 - 5269
+    0.17 - 6650
+    0.17 - 5855
+    0.17 - 5857
+    0.17 - 5851
+    0.17 - 5912
+    0.17 - 4329
+    0.17 - 8603
+    0.17 - 3779
+    0.17 - 4322
+    0.17 - 3142
+    0.17 - 2825
+    0.17 - 3670
+    0.17 - 5417
+    0.17 - 5411
+    0.17 - 11686
+    0.17 - 25593
+    0.17 - 2266
+    0.50 - 1406
+    0.34 - 3580
+    0.34 - 4214
+    0.17 - 3583
+    0.17 - 10703
+    0.17 - 2449
+    0.17 - 2766
+    0.17 - 4190
+    0.17 - 5775
+    0.17 - 8358
+    0.17 - 6273
+    0.17 - 16811
+    0.17 - 11009
+    0.17 - 3090
+    0.17 - 4695
+    0.17 - 3251
+    0.17 - 6370
+    0.17 - 4110
+    0.17 - 10896
+    0.17 - 10387
+    0.17 - 4143
+    0.17 - 10028
+    0.17 - 5138
+    0.17 - 11227
+    0.17 - 2730
+    0.17 - 4142
+    0.17 - 23712
+    0.17 - 3291
+    0.17 - 10021
+    0.17 - 9042
+    0.17 - 3451
+    0.17 - 3458
+    0.17 - 5700
+    0.17 - 5702
+    0.17 - 6438
+    0.17 - 7410
+    0.17 - 7553
+    0.17 - 6208
+    0.17 - 25659
+    0.17 - 9535
+    0.17 - 4770
+    0.17 - 5182
+    0.17 - 1625
+    0.17 - 5223
+    0.17 - 4074
+    0.17 - 8837
+    0.17 - 5798
+    0.17 - 2861
+    0.17 - 5080
+    0.17 - 2869
+    0.17 - 4183
+    0.17 - 3631
+    0.17 - 6890
+    0.17 - 15785
+    0.17 - 2940
+    0.17 - 5458
+    0.17 - 3342
+    0.17 - 12752
+    0.17 - 11409
+    0.17 - 5457
+    0.17 - 5921
+    0.17 - 5928
+    0.17 - 9119
+    0.17 - 7571
+    0.17 - 9113
+    0.17 - 5533
+    0.17 - 4464
+    0.34 - 4795
+    0.17 - 3118
+    0.17 - 14404
+    0.17 - 945
+    0.17 - 7185
+    0.67 - 23201
+    0.17 - 2658
+    0.17 - 9200
+    0.17 - 9369
+    0.17 - 49739
+    0.17 - 7389
+    0.17 - 4229
+    0.17 - 8983
+    0.17 - 8017
+    0.17 - 7383
+    0.17 - 8546
+    0.17 - 5628
+    0.17 - 3795
+    0.17 - 4382
+    0.17 - 6248
+    0.17 - 3187
+    0.17 - 7691
+    0.17 - 12171
+    0.17 - 4860
+    0.17 - 7751
+    0.17 - 7699
+    0.17 - 18568
+    0.17 - 3830
+    0.17 - 12215
+    0.17 - 11838
+    0.17 - 3935
+    0.17 - 10650
+    0.17 - 12219
+    0.17 - 8873
+    0.17 - 3244
+    0.17 - 7526
+    0.17 - 25052
+    0.17 - 6142
+    0.17 - 6147
+    0.17 - 6563
+    0.17 - 5338
+    0.17 - 5268
+    0.17 - 10971
+    0.17 - 7859
+    0.17 - 1717
+    0.17 - 1715
+    0.17 - 4043
+    0.17 - 4724
+    0.17 - 2303
+    0.17 - 5968
+    0.17 - 8803
+    0.17 - 5961
+    0.17 - 8808
+    0.17 - 3664
+    0.17 - 6581
+    0.17 - 3749
+    0.17 - 2282
+    0.17 - 7624
+    0.17 - 246
+    0.50 - 3155
+    0.17 - 4975
+    0.17 - 7787
+    0.17 - 2834
+    0.34 - 4545
+    0.17 - 25437
+    0.17 - 7140
+    0.17 - 8728
+    0.50 - 510
+    0.17 - 6269
+    0.17 - 3592
+    0.17 - 4262
+    0.17 - 4263
+    0.50 - 5038
+    0.17 - 4267
+    0.17 - 2457
+    0.17 - 8058
+    0.34 - 4184
+    0.17 - 5030
+    0.17 - 4186
+    0.50 - 4349
+    0.17 - 5664
+    0.17 - 4344
+    0.17 - 6538
+    0.17 - 5542
+    0.17 - 4823
+    0.17 - 3697
+    0.17 - 1502
+    0.17 - 24298
+    0.17 - 6041
+    0.34 - 8613
+    0.17 - 5780
+    0.17 - 6360
+    0.17 - 5868
+    0.17 - 9330
+    0.17 - 7350
+    0.17 - 7128
+    0.17 - 3523
+    0.17 - 5101
+    1.51 - 10200
+    0.17 - 9626
+    0.17 - 3528
+    0.17 - 9624
+    0.17 - 7219
+    0.17 - 3448
+    0.17 - 4919
+    0.17 - 7216
+    0.17 - 24245
+    0.17 - 2026
+    0.17 - 10498
+    0.17 - 7407
+    0.17 - 2759
+    0.17 - 3906
+    0.17 - 5216
+    0.17 - 4762
+    0.17 - 5212
+    0.17 - 6628
+    0.34 - 6622
+    0.17 - 6621
+    0.17 - 7321
+    0.17 - 4000
+    0.17 - 9717
+    0.17 - 4169
+    0.17 - 3979
+    0.17 - 8917
+    0.17 - 3620
+    0.17 - 76
+    0.17 - 2978
+    0.17 - 3477
+    0.17 - 15771
+    0.17 - 6862
+    0.17 - 5367
+    0.17 - 5364
+    0.17 - 12767
+    1.85 - 4719
+    0.17 - 2537
+    0.17 - 1768
+    0.17 - 7352
+    0.17 - 1687
+    0.17 - 5938
+    0.17 - 4303
+    0.17 - 6963
+    0.17 - 4305
+    0.17 - 3494
+    0.17 - 3495
+    0.17 - 2486
+    0.17 - 7611
+    0.17 - 4670
+    0.17 - 7198
+    0.17 - 2245
+    0.17 - 8655
+    0.17 - 2241
+    0.17 - 4889
+    0.17 - 5060
+    0.17 - 5063
+    0.17 - 4886
+    0.17 - 6915
+    0.17 - 6916
+    0.17 - 6910
+    0.17 - 9173
+    0.17 - 14501
+    0.17 - 4404
+    0.17 - 13316
+    0.17 - 4400
+    0.17 - 5617
+    0.17 - 4402
+    0.17 - 5615
+    0.17 - 7954
+    0.17 - 6316
+    0.17 - 10617
+    0.17 - 2416
+    0.17 - 2418
+    0.17 - 9579
+    0.17 - 6256
+    0.17 - 5390
+    0.17 - 5658
+    0.17 - 3829
+    0.17 - 3947
+    0.17 - 10128
+    0.17 - 7568
+    0.17 - 8321
+    0.17 - 10434
+    0.17 - 10436
+    0.17 - 3475
+    0.17 - 15220
+    0.34 - 3472
+    0.17 - 4121
+    0.17 - 18409
+    0.17 - 12315
+    0.17 - 9787
+    0.17 - 7439
+    0.17 - 4498
+    0.17 - 6820
+    0.17 - 2934
+    0.17 - 19215
+    0.17 - 5325
+    0.17 - 5323
+    0.50 - 386
+    0.17 - 6179
+    0.17 - 5486
+    0.17 - 10549
+    0.17 - 3314
+    0.50 - 4757
+    0.17 - 5876
+    0.17 - 5976
+    0.17 - 9001
+    0.17 - 2190
+    0.17 - 7651
+    0.17 - 7654
+    0.17 - 12967
+    0.17 - 4638
+    0.17 - 2568
+    0.17 - 7937
+    0.17 - 2561
+    0.17 - 12030
+    0.17 - 6688
+    0.17 - 13962
+    0.17 - 8106
+    0.17 - 7298
+    0.17 - 17448
+    0.17 - 7849
+    0.17 - 5550
+    0.17 - 4446
+    0.17 - 5656
+    0.17 - 6487
+    0.17 - 5651
+    0.17 - 4938
+    0.17 - 6294
+    0.17 - 6291
+    0.17 - 6359
+    0.17 - 6746
+    0.17 - 7072
+    0.17 - 9437
+    0.17 - 10006
+    0.17 - 10000
+    0.17 - 5110
+    0.34 - 5113
+    0.17 - 4087
+    0.17 - 3867
+    0.34 - 2630
+    0.17 - 9186
+    0.17 - 5886
+    0.17 - 13180
+    0.17 - 3534
+    0.17 - 5054
+    0.17 - 9220
+    0.17 - 3438
+    0.17 - 7573
+    0.17 - 4958
+    0.17 - 7777
+    0.17 - 7479
+    0.34 - 6221
+    0.17 - 6226
+    0.17 - 4849
+    0.17 - 6224
+    0.17 - 4595
+    0.17 - 4845
+    0.17 - 4846
+    0.17 - 4847
+    0.17 - 4842
+    0.17 - 10657
+    0.17 - 10638
+    0.17 - 11550
+    0.17 - 11553
+    0.17 - 10465
+    0.17 - 10500
+    0.17 - 5837
+    0.17 - 11393
+    0.17 - 3227
+    3.36 - 49
+    0.17 - 3989
+    0.17 - 5194
+    0.17 - 2960
+    0.17 - 2849
+    0.17 - 5476
+    0.17 - 3041
+    0.17 - 5276
+    0.17 - 6648
+    0.17 - 4700
+    0.17 - 5278
+    0.17 - 5902
+    0.17 - 5903
+    0.17 - 25771
+    0.17 - 4339
+    0.17 - 7809
+    0.17 - 3483
+    0.17 - 6997
+    0.17 - 6992
+    0.17 - 6393
+    0.17 - 6395
+    0.17 - 4643
+    0.34 - 4899
+    0.17 - 5139
+    0.17 - 5155
+    0.17 - 9855
+    1.51 - 27706
+    0.17 - 4203
+    0.17 - 5608
+    0.34 - 5760
+    0.34 - 6515
+    0.17 - 6517
+    0.50 - 1526
+    0.17 - 6308
+    0.17 - 2073
+    0.17 - 10130
+    0.17 - 3818
+    0.17 - 2391
+    0.17 - 3957
+    0.17 - 3955
+    0.17 - 1933
+    0.17 - 3263
+    0.17 - 3267
+    0.17 - 5125
+    0.17 - 5121
+    0.17 - 3464
+    0.17 - 18864
+    0.17 - 4295
+    0.17 - 4297
+    0.17 - 7370
+    0.17 - 6429
+    0.17 - 15233
+    0.17 - 24768
+    0.17 - 2672
+    0.17 - 2675
+    0.17 - 7232
+    0.17 - 7543
+    0.17 - 2921
+    0.17 - 23956
+    0.17 - 7017
+    0.34 - 5947
+    0.17 - 1635
+    0.17 - 10999
+    0.17 - 3218
+    0.17 - 4744
+    0.17 - 5785
+    0.17 - 5869
+    0.17 - 5781
+    0.17 - 13046
+    0.17 - 15097
+    1.51 - 3179
+    0.34 - 3074
+    0.17 - 2215
+    0.17 - 7031
+    0.17 - 5425
+    0.17 - 13561
+    0.17 - 6112
+    0.17 - 5422
+    0.17 - 3016
+    0.17 - 6496
+    0.17 - 9459
+    0.17 - 4363
+    0.17 - 9456
+    0.17 - 9453
+    0.17 - 5521
+    0.17 - 17442
+    0.50 - 5526
+    0.17 - 5767
+    0.34 - 6943
+    0.17 - 3733
+    0.17 - 8272
+    0.17 - 2136
+    0.17 - 13469
+    0.17 - 13584
+    0.17 - 25094
+    0.34 - 42
+    0.17 - 3102
+    0.17 - 4515
+    0.17 - 6187
+    0.17 - 6029
+    0.17 - 6183
+    0.17 - 8067
+    0.17 - 6188
+    0.17 - 10077
+    0.17 - 2641
+    0.17 - 5743
+    0.17 - 8419
+    0.17 - 17171
+    0.17 - 9216
+    0.17 - 7949
+    0.17 - 3783
+    0.17 - 13753
+    0.17 - 3784
+    0.17 - 5631
+    0.17 - 3425
+    0.17 - 8480
+    0.17 - 7747
+    0.17 - 7744
+    0.17 - 4857
+    0.17 - 7749
+    0.17 - 6524
+  via: 
+    100.00 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+  accept-language: 
+    100.00 - en-US,en;q=0.8
+  proxy-connection: 
+    28.25 - close
+    71.75 - keep-alive
+  x-cache-lookup: 
+    100.00 - MISS from sorga-msr:3128
+  vary: 
+    100.00 - Accept-Encoding
+  accept: 
+    3.69 - text/css,*/*;q=0.1
+    1.84 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    94.47 - */*
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  warning: 
+    100.00 - 110 squid "Response is stale" 111 squid "Revalidation failed"
+  p3p: 
+    100.00 - policyref="/w3c/p3p.xml", CP="NOI CURa ADMa DEVa PSDo PSAa OUR SAMo IND UNI COM NAV INT STA DEM PRE"
+  nncoection: 
+    100.00 - close
+  :version: 
+    100.00 - HTTP/1.1
+  content-language: 
+    100.00 - fr-FR
+  user-agent: 
+    100.00 - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.56 Safari/537.4
+  etag: 
+    25.00 - "8078637d589bcc1:890"
+    75.00 - "807025c8c30ca1:682"
+  location: 
+    100.00 - http://rover.ebay.fr/roversync/?site=71&stg=0&cguid=d970bdb61390a54c2621af61fee054a4&mpt=1347972808118
+  :method: 
+    100.00 - get
+  cache-control: 
+    0.15 - max-age=24415144
+    0.15 - max-age=28367983
+    0.15 - max-age=28203759
+    0.15 - max-age=25574471
+    0.15 - max-age=23425118
+    0.15 - max-age=23280145
+    0.15 - max-age=30952870
+    0.15 - max-age=29013109
+    0.15 - max-age=30329623
+    0.15 - max-age=24287211
+    0.15 - max-age=23546660
+    0.15 - max-age=30955586
+    0.15 - max-age=22998505
+    0.15 - max-age=31284234
+    0.15 - max-age=26865995
+    0.15 - max-age=20185185
+    0.15 - max-age=29510776
+    0.15 - max-age=30613179
+    0.15 - max-age=30931540
+    0.15 - max-age=28590039
+    0.15 - max-age=27052939
+    0.15 - max-age=28614168
+    0.15 - max-age=30937526
+    0.15 - max-age=29689126
+    0.15 - max-age=23687218
+    0.15 - max-age=28405987
+    0.15 - max-age=23664958
+    0.15 - max-age=30501875
+    0.15 - max-age=30925852
+    0.15 - max-age=20573807
+    0.15 - max-age=24687806
+    0.15 - max-age=20291046
+    0.15 - max-age=31401377
+    0.15 - max-age=29315829
+    0.15 - max-age=30143958
+    0.15 - max-age=27985595
+    0.15 - max-age=30920719
+    0.15 - max-age=30936083
+    0.15 - max-age=24781236
+    0.15 - max-age=24884892
+    0.15 - max-age=25715084
+    0.15 - max-age=30675499
+    0.15 - max-age=26675199
+    0.15 - max-age=30569297
+    0.15 - max-age=30935757
+    0.15 - max-age=31348907
+    0.15 - max-age=30052734
+    0.15 - max-age=29893303
+    0.15 - max-age=26249752
+    0.15 - max-age=25613453
+    0.15 - max-age=31038265
+    0.15 - max-age=31080867
+    0.15 - max-age=30140774
+    0.15 - max-age=19607370
+    0.15 - max-age=28074075
+    0.15 - max-age=22452843
+    0.15 - max-age=25005549
+    0.15 - private
+    0.15 - max-age=21917997
+    0.15 - max-age=30544895
+    0.15 - max-age=30535394
+    0.15 - max-age=27907345
+    0.15 - max-age=30148596
+    0.15 - max-age=20526138
+    0.15 - max-age=24320751
+    0.15 - max-age=30667486
+    0.15 - max-age=29232030
+    0.15 - max-age=26354140
+    0.15 - max-age=29580369
+    0.15 - max-age=12620466
+    0.15 - max-age=29679690
+    0.15 - max-age=29191395
+    0.15 - max-age=30983514
+    0.15 - max-age=23670878
+    0.15 - max-age=22598359
+    0.15 - max-age=20532430
+    0.15 - max-age=30863432
+    0.15 - max-age=18236676
+    0.15 - max-age=30436683
+    0.15 - max-age=31110037
+    0.15 - max-age=22701700
+    0.15 - max-age=23182702
+    0.15 - max-age=23652005
+    0.15 - max-age=22477644
+    0.15 - max-age=30931027
+    0.15 - max-age=31106711
+    0.15 - max-age=20537692
+    0.15 - max-age=27626424
+    0.15 - max-age=28105192
+    0.15 - max-age=30676807
+    0.15 - max-age=30690943
+    0.15 - max-age=28195784
+    0.15 - max-age=25419194
+    0.15 - max-age=22313098
+    0.15 - max-age=30854419
+    0.15 - max-age=29880393
+    0.15 - max-age=30931501
+    0.15 - max-age=28219517
+    0.15 - max-age=29213735
+    0.15 - max-age=21916455
+    0.15 - max-age=30931595
+    0.15 - max-age=30675950
+    0.15 - max-age=23868686
+    0.15 - max-age=27187202
+    0.15 - max-age=28669097
+    0.15 - max-age=30424976
+    0.15 - max-age=20476486
+    0.15 - max-age=30675875
+    0.15 - max-age=21421648
+    0.15 - max-age=23331397
+    0.15 - max-age=28189053
+    0.15 - max-age=31336545
+    0.15 - max-age=26356099
+    0.15 - max-age=29075833
+    0.15 - max-age=28203338
+    0.15 - max-age=31110818
+    0.15 - max-age=31190972
+    0.15 - max-age=30673414
+    0.15 - max-age=28196259
+    0.15 - max-age=23313124
+    0.15 - max-age=30677388
+    0.15 - max-age=30674205
+    0.15 - max-age=30156352
+    0.15 - max-age=25818115
+    0.15 - max-age=20578380
+    0.15 - max-age=27937721
+    0.15 - max-age=30696130
+    0.15 - max-age=21912012
+    0.15 - max-age=29905838
+    0.15 - max-age=29691165
+    0.15 - max-age=27930011
+    0.15 - max-age=31038125
+    0.15 - max-age=27907380
+    0.46 - max-age=18622279
+    0.15 - max-age=29230576
+    0.15 - max-age=23011672
+    0.15 - max-age=27770469
+    0.15 - max-age=30940873
+    0.15 - max-age=29761720
+    0.15 - max-age=29920235
+    0.15 - max-age=23666830
+    0.15 - max-age=23345011
+    0.15 - max-age=30746717
+    0.15 - max-age=29998344
+    0.15 - max-age=29490270
+    0.15 - max-age=18063330
+    0.15 - max-age=30576188
+    0.15 - max-age=24653421
+    0.15 - max-age=30931469
+    0.15 - max-age=20720451
+    0.15 - max-age=26685964
+    8.77 - max-age=0
+    0.15 - max-age=20425637
+    0.15 - max-age=30383192
+    0.15 - max-age=28891564
+    0.15 - max-age=10715376
+    0.15 - max-age=26441724
+    0.15 - max-age=21915236
+    0.15 - max-age=29392130
+    0.15 - max-age=31276715
+    0.15 - max-age=21637364
+    0.15 - max-age=28859949
+    1.38 - max-age=30537410
+    0.15 - max-age=17291354
+    0.62 - max-age=23201910
+    0.15 - max-age=30321277
+    0.15 - max-age=27009590
+    0.15 - max-age=24982209
+    0.15 - max-age=9490406
+    0.15 - max-age=30931556
+    0.15 - max-age=30935915
+    0.15 - max-age=25304231
+    0.15 - max-age=28191908
+    0.15 - max-age=28231450
+    0.15 - max-age=31031430
+    0.15 - max-age=21923617
+    0.15 - max-age=30669477
+    0.15 - max-age=29022006
+    0.15 - max-age=29228447
+    0.15 - max-age=28196293
+    0.15 - max-age=28215057
+    0.15 - max-age=28096527
+    0.15 - max-age=20516053
+    0.15 - max-age=21191412
+    0.15 - max-age=30383474
+    0.15 - max-age=15959544
+    0.15 - max-age=2307053
+    0.15 - max-age=20529784
+    0.15 - max-age=31096460
+    0.15 - max-age=30424939
+    0.15 - max-age=28289798
+    0.15 - max-age=20535789
+    0.15 - max-age=20581254
+    0.15 - max-age=22731242
+    0.15 - max-age=30921195
+    0.15 - max-age=23291975
+    0.15 - max-age=30316952
+    0.15 - max-age=29249488
+    0.15 - max-age=28431490
+    0.15 - max-age=20607871
+    0.15 - max-age=25422107
+    0.15 - max-age=29033783
+    2.00 - max-age=3888000
+    0.15 - max-age=28094833
+    0.15 - max-age=21230154
+    0.15 - max-age=30314600
+    0.15 - max-age=25177089
+    0.15 - max-age=16446632
+    0.15 - max-age=27938746
+    0.15 - max-age=31439759
+    0.15 - max-age=26210713
+    0.15 - max-age=31279546
+    0.46 - max-age=19831299
+    0.15 - max-age=29394682
+    0.15 - max-age=28278843
+    0.15 - max-age=30677560
+    0.15 - max-age=30673313
+    0.15 - max-age=30673314
+    0.15 - max-age=28817331
+    0.15 - max-age=30951043
+    0.15 - max-age=30832974
+    0.15 - max-age=30409329
+    0.15 - max-age=26705833
+    0.15 - max-age=23660728
+    0.15 - max-age=30674548
+    0.15 - max-age=30686599
+    0.15 - max-age=26274389
+    0.15 - max-age=24227680
+    0.15 - max-age=30940620
+    0.15 - max-age=30323654
+    0.15 - max-age=25394927
+    0.15 - max-age=30944665
+    0.15 - max-age=27225976
+    0.15 - max-age=28918333
+    0.15 - max-age=31275640
+    0.15 - max-age=20542733
+    0.15 - max-age=26657575
+    1.38 - max-age=26919449
+    0.15 - max-age=24490505
+    0.15 - max-age=30255119
+    0.15 - max-age=4388529
+    0.15 - max-age=31415770
+    0.15 - max-age=20531138
+    0.15 - max-age=30935640
+    0.15 - max-age=29837869
+    0.15 - max-age=21830939
+    0.15 - max-age=23299363
+    0.15 - max-age=27840284
+    0.15 - max-age=22888211
+    0.15 - max-age=23905681
+    0.15 - max-age=7480490
+    0.15 - max-age=28197940
+    0.15 - max-age=30876119
+    0.15 - max-age=30232217
+    0.15 - max-age=21432658
+    0.15 - max-age=28744883
+    0.15 - max-age=29533957
+    0.15 - max-age=24366515
+    0.15 - max-age=30932280
+    0.15 - max-age=30932284
+    0.15 - max-age=30781137
+    0.15 - max-age=12737276
+    0.15 - max-age=29564059
+    0.15 - max-age=26470975
+    0.46 - max-age=29249458
+    0.15 - max-age=25137046
+    0.15 - max-age=28228289
+    0.15 - max-age=22390336
+    0.31 - max-age=26840118
+    0.15 - max-age=31104473
+    0.15 - max-age=23160486
+    0.15 - max-age=30751364
+    0.15 - max-age=21015637
+    0.15 - max-age=28860942
+    0.15 - max-age=27911447
+    0.15 - max-age=28974506
+    0.15 - max-age=26473550
+    0.15 - max-age=24882255
+    0.15 - max-age=30937421
+    0.15 - max-age=23424840
+    0.15 - max-age=30253449
+    0.15 - max-age=30652416
+    0.15 - max-age=30837143
+    0.15 - max-age=28635101
+    0.15 - max-age=28152582
+    0.15 - max-age=26578304
+    0.15 - max-age=29290867
+    0.15 - max-age=15024771
+    0.15 - max-age=26113501
+    0.15 - max-age=28172088
+    0.15 - max-age=25772615
+    0.15 - max-age=30849232
+    0.15 - max-age=30923760
+    0.15 - max-age=28847300
+    0.15 - max-age=31008274
+    1.69 - max-age=8987925
+    0.15 - max-age=31290974
+    0.15 - max-age=30938247
+    0.15 - max-age=28136897
+    0.15 - max-age=31279457
+    0.15 - max-age=30929240
+    0.15 - max-age=29374800
+    0.15 - max-age=30330227
+    0.15 - max-age=15167085
+    0.15 - max-age=20535737
+    0.15 - max-age=18146645
+    0.15 - private,no-cache,no-store
+    0.15 - max-age=16669283
+    0.15 - max-age=30674718
+    0.15 - max-age=21741475
+    0.15 - max-age=26451323
+    0.15 - max-age=22152321
+    0.31 - max-age=21848873
+    0.46 - private, no-cache
+    0.15 - max-age=24607824
+    0.15 - max-age=31016997
+    0.15 - max-age=28844600
+    0.15 - max-age=29675541
+    0.15 - max-age=29227770
+    0.15 - max-age=30668567
+    0.15 - max-age=30193167
+    0.15 - max-age=30930698
+    0.15 - max-age=28180772
+    0.15 - max-age=24598636
+    0.15 - max-age=30940485
+    0.15 - max-age=18110952
+    0.15 - max-age=29230151
+    0.15 - max-age=30930600
+    0.15 - max-age=27132250
+    0.15 - max-age=31347661
+    1.69 - no-cache
+    0.15 - max-age=13982119
+    0.15 - max-age=30991985
+    0.15 - max-age=30527932
+    0.15 - max-age=31114106
+    0.15 - max-age=27946273
+    0.15 - max-age=26881041
+    0.15 - max-age=14526140
+    0.15 - max-age=28571311
+    0.15 - max-age=19893478
+    0.15 - max-age=22753164
+    0.15 - max-age=28182870
+    0.15 - max-age=30413531
+    0.15 - max-age=30678701
+    0.15 - max-age=29580260
+    1.38 - max-age=29241969
+    0.15 - max-age=23589310
+    0.15 - max-age=29644746
+    0.15 - max-age=28874806
+    0.15 - max-age=23765012
+    0.15 - max-age=19197735
+    0.15 - max-age=18892872
+    0.15 - max-age=23439607
+    0.15 - max-age=28452186
+    0.15 - max-age=28186137
+    0.15 - max-age=30588916
+    0.15 - max-age=29666319
+    0.15 - max-age=29642390
+    0.15 - max-age=14395889
+    0.15 - max-age=20034281
+    0.15 - max-age=30674484
+    0.15 - max-age=31281658
+    0.15 - max-age=21917357
+    0.15 - max-age=20578697
+    0.15 - max-age=27183878
+    0.15 - max-age=20540338
+    0.15 - max-age=17390919
+    0.15 - max-age=30673822
+    0.15 - max-age=29707552
+    0.15 - max-age=31058018
+    0.15 - max-age=27031544
+    0.15 - max-age=28136569
+    0.15 - max-age=30652847
+    0.15 - max-age=31036131
+    0.15 - max-age=30931575
+    0.15 - max-age=30656723
+    0.15 - max-age=30708303
+    0.15 - max-age=30933656
+    0.15 - max-age=20537773
+    0.15 - max-age=26109398
+    0.15 - max-age=30432085
+    0.15 - max-age=30933790
+    0.15 - max-age=29818530
+    0.15 - max-age=5414112
+    0.15 - max-age=21916536
+    0.15 - max-age=25906833
+    0.15 - max-age=31451889
+    0.15 - max-age=27911503
+    0.31 - max-age=18498968
+    0.15 - max-age=28212146
+    0.15 - max-age=30927628
+    0.15 - max-age=30927091
+    0.15 - max-age=24657030
+    0.15 - max-age=27539546
+    0.15 - max-age=30936133
+    0.15 - max-age=27991943
+    0.15 - max-age=21037565
+    0.15 - max-age=29540499
+    0.15 - max-age=26751096
+    0.15 - max-age=19981308
+    0.15 - max-age=30935932
+    0.15 - max-age=30574532
+    0.15 - max-age=30343181
+    0.15 - max-age=29149695
+    0.15 - max-age=30672632
+    0.15 - max-age=20599914
+    0.15 - max-age=29586692
+    0.15 - max-age=30080707
+    0.15 - max-age=21918020
+    0.15 - max-age=20998214
+    0.15 - max-age=20531194
+    0.15 - max-age=30936000
+    0.15 - max-age=29378679
+    0.15 - max-age=23637089
+    0.15 - max-age=30932355
+    0.15 - max-age=26683711
+    0.15 - max-age=20330575
+    0.15 - max-age=25670513
+    0.15 - max-age=29249445
+    0.15 - max-age=28063939
+    0.15 - max-age=30645728
+    0.15 - max-age=20867090
+    0.15 - max-age=20545097
+    0.15 - max-age=29723400
+    0.15 - max-age=30916843
+    0.15 - max-age=29250742
+    0.15 - max-age=25238161
+    0.15 - max-age=29230417
+    0.15 - max-age=20543256
+    0.15 - max-age=30472519
+    0.15 - max-age=20559290
+    0.15 - max-age=30934345
+    0.15 - max-age=18594897
+    0.15 - max-age=26922432
+    0.15 - max-age=29875879
+    1.85 - private, max-age=31536000
+    0.15 - max-age=21937807
+    0.15 - max-age=30952764
+    0.15 - max-age=28325590
+    0.15 - max-age=27174999
+    0.15 - max-age=30100468
+    0.15 - max-age=21916866
+    0.15 - max-age=21943270
+    0.15 - max-age=30780909
+    0.15 - max-age=28925233
+    0.15 - max-age=29913397
+    0.15 - max-age=25820612
+    0.15 - max-age=28676440
+    0.15 - max-age=21924197
+    0.15 - max-age=31004492
+    0.15 - max-age=22180760
+    0.15 - max-age=30480022
+    0.15 - max-age=23878626
+    0.15 - max-age=30246531
+    0.15 - max-age=21646945
+    0.15 - max-age=27911423
+    0.15 - max-age=30680435
+    0.15 - max-age=27536896
+    0.15 - max-age=28690853
+    0.15 - max-age=31090171
+    0.15 - max-age=29760366
+    0.15 - max-age=30822665
+    0.15 - max-age=29231542
+    0.15 - max-age=28185010
+    0.15 - max-age=23767652
+    0.15 - max-age=30676814
+    0.15 - max-age=30931584
+    0.15 - max-age=30935949
+    0.15 - max-age=29110176
+    0.15 - max-age=31403
+    0.15 - max-age=30096240
+    0.15 - max-age=28587208
+    0.15 - max-age=28145300
+    0.15 - max-age=29656685
+    0.15 - max-age=31105150
+    0.15 - max-age=30674070
+    0.15 - max-age=31173940
+    0.15 - max-age=27331716
+    0.15 - max-age=28270992
+    0.15 - max-age=28188295
+    0.15 - max-age=30554031
+    0.15 - max-age=23538313
+    0.15 - max-age=30329568
+    0.15 - max-age=30881025
+    0.15 - max-age=30397602
+    0.15 - max-age=31186476
+    0.15 - max-age=30681245
+    0.15 - max-age=29031957
+    0.15 - max-age=30612441
+    0.15 - max-age=28200347
+    0.15 - max-age=19323712
+    0.15 - max-age=24217677
+    0.15 - max-age=31113334
+    0.15 - max-age=25817036
+    0.15 - max-age=24544971
+    0.15 - max-age=30415734
+    0.15 - max-age=21918783
+    0.15 - max-age=19332657
+    0.15 - max-age=29461796
+    0.15 - max-age=31401404
+    0.15 - max-age=30671166
+    0.15 - max-age=30674591
+    0.15 - max-age=31003277
+    0.15 - max-age=20534760
+    0.15 - max-age=27676643
+    0.15 - max-age=31364984
+    0.15 - max-age=30934936
+    0.15 - max-age=7415253
+    0.15 - max-age=28688772
+    0.15 - max-age=13091937
+    0.15 - max-age=23657512
+    0.15 - max-age=28934115
+    0.15 - max-age=24765548
+  cneonction: 
+    100.00 - close
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  x-cache: 
+    100.00 - MISS from sorga-msr
+  set-cookie: 
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:35 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5ok9jNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzGq4lwFOJg3HpPH2ujhnVBnlq0Gvg**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:35 GMT; Path=/ s=CgAD4ACBQWcBPZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBTUFnAT2h0dHA6Ly9zaG9wLmViYXkuZnIvSW5mb3JtYXRpcXVlLVJlc2VhdXgtL2kuaHRtbD9fc3JjPWFsbENhdCZfc2FjYXQ9NTgwNTgmY21kPUJsZW5kvGQKWA**; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBPZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh11zazUTdo; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:35 GMT; Path=/
+    7.14 - ebay=%5Ecv%3D15555%5E; Domain=.ebay.fr; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5okdjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzGo/T6p7ie2d+J2ZSg/Kiu4gDXvRA**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:27 GMT; Path=/ s=CgAD4ACBQWcBHZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQWVCZV; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBHZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh1zzGmtQ4l; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:27 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:31 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5oktjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzF6Z5msOPmbCaUsp7P+8PTYAMGMaw**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:31 GMT; Path=/ s=CgAD4ACBQWcBLZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBeUFnAS2h0dHA6Ly9iaWpvdXgtbW9udHJlcy5zaG9wLmViYXkuZnIvUGVybGVzLWF1LWRldGFpbC0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD0xMDI0NCZjbWQ9QmxlbmR7fRHn; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBLZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh10zTQRoo7; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:31 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; Domain=.ebay.fr; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:30 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5okpjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFOzu1XgojTFFlaVPso6BXabeqbeA**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:30 GMT; Path=/ s=CgAD4ACBQWcBKZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBqUFnASmh0dHA6Ly9iYXRlYXUtbmF1dGlzbWUuc2hvcC5lYmF5LmZyL0FjY2FzdGlsbGFnZS1Nb3RldXItUGllY2VzLS9pLmh0bWw/X3NyYz1hbGxDYXQmX3NhY2F0PTEyODg1MCZjbWQ9QmxlbmSaSHJt; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBKZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh10jP2AKo3; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:30 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:29 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5okljNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFMOYJetpAN+9blUESfwfenZoi2hg**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:29 GMT; Path=/ s=CgAD4ACBQWcBJZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gA9UFnASWh0dHA6Ly9zaG9wLmViYXkuZnIvZWJheWFkdnNlYXJjaC9fP19yZGM9MSZfc2FjYXQ9MCZjbWQ9QmxlbmRXOcY9; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBJZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh10TKSEUIR; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:29 GMT; Path=/
+    7.14 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:29 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:38 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5olFjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFIJrprcklZUMFmnjA3SBIA1+bECQ**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:38 GMT; Path=/ s=CgAD4ACBQWcBRZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBgUFnAUWh0dHA6Ly9sb2lzaXIuc2hvcC5lYmF5LmZyL0FydHMtQXJ0aXNhbmF0LURlY29yYXRpb24tL2kuaHRtbD9fc3JjPWFsbENhdCZfc2FjYXQ9MTIwNjQxJmNtZD1CbGVuZNyjvV4*; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBRZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh12TigsHze; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:38 GMT; Path=/
+    7.14 - npii=bcguid/d970bdb61390a54c2621af61fee054a45239a248^; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:28 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:32 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5okxjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzEwAUNk+U9eseBF/k4qZD23scOt6Q**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:32 GMT; Path=/ s=CgAD4ACBQWcBMZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBVUFnATGh0dHA6Ly9jb2xsZWN0aW9ucy5zaG9wLmViYXkuZnIvUG9ydGUtY2xlcy0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD03NzgyMCZjbWQ9QmxlbmTZ6Mu4; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBMZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh11DU5Tr5i; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:32 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:40 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5olNjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzEbZ4WRLb5SkXKLhD5IZe0psBnujA**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:40 GMT; Path=/ s=CgAD4ACBQWcBTZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBnUFnAU2h0dHA6Ly9hY2Nlc3NvaXJlcy1tb3RvLnNob3AuZWJheS5mci9Nb3RvLVBpZWNlcy1BY2Nlc3NvaXJlcy0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD0xNDc4MCZjbWQ9QmxlbmQJmr6V; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBTZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh12zl8gyFX; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:40 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:41 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5olVjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzGYQ1xdc8ghmS6AiN2fObTPNfaxFA**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:41 GMT; Path=/ s=CgAD4ACBQWcBVZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBuUFnAVWh0dHA6Ly9tYXRlcmllbC1wcm9mZXNzaW9ubmVsLnNob3AuZWJheS5mci9PdXRpbGxhZ2UtUHJvZmVzc2lvbm5lbC0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD0xMTg1NzAmY21kPUJsZW5kYbCzoA**; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBVZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywACUFh13TEwtQ1EKw**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:41 GMT; Path=/
+    7.14 - npii=bcguid/d970bdb61390a54c2621af61fee054a45239a248^; Domain=.ebay.com; Expires=Wed, 18-Sep-2013 12:53:28 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:42 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5olVjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzGYQ1xdc8ghmS6AiN2fObTPNfaxFA**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:42 GMT; Path=/ s=CgAD4ACBQWcBVZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBZUFnAVWh0dHA6Ly90ZWxlcGhvbmUuc2hvcC5lYmF5LmZyL0dQUy1hY2Nlc3NvaXJlcy0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD0xNDAyMzEmY21kPUJsZW5kD/ep4w**; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBVZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywACUFh13TExwgp0vQ**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:42 GMT; Path=/
+    7.14 - ds2=; Domain=.ebay.fr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ dp1=bidm/15059c048^; Domain=.ebay.fr; Expires=Thu, 18-Sep-2014 12:53:37 GMT; Path=/ ns1=BAQAAATnRhjnoAAaAANgASFI5olFjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFIJrprcklZUMFmnjA3SBIA1+bECQ**; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:37 GMT; Path=/ s=CgAD4ACBQWcBRZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBiUFnAUWh0dHA6Ly9qb3VldHMtZmlndXJpbmUuc2hvcC5lYmF5LmZyL0pvdWV0cy1KZXV4LWFuY2llbnMtL2kuaHRtbD9fc3JjPWFsbENhdCZfc2FjYXQ9NjY1OTkmY21kPUJsZW5kXVtnFg**; Domain=.ebay.fr; Path=/ nonsession=CgADKACBZvnBRZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh12TcwD2FP; Domain=.ebay.fr; Expires=Wed, 18-Sep-2013 12:53:37 GMT; Path=/
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    0.17 - Tue, 03 Sep 2013 16:37:45 GMT
+    0.17 - Sun, 15 Sep 2013 13:39:26 GMT
+    0.17 - Thu, 15 Aug 2013 10:34:10 GMT
+    0.17 - Sat, 10 Aug 2013 14:28:20 GMT
+    0.17 - Mon, 01 Jul 2013 06:37:02 GMT
+    0.17 - Mon, 16 Sep 2013 13:23:21 GMT
+    0.17 - Fri, 30 Aug 2013 12:35:16 GMT
+    0.17 - Tue, 14 May 2013 07:12:34 GMT
+    0.17 - Sun, 08 Sep 2013 13:59:26 GMT
+    0.17 - Thu, 12 Sep 2013 03:25:30 GMT
+    0.17 - Sat, 31 Aug 2013 17:46:01 GMT
+    0.17 - Thu, 22 Aug 2013 22:59:41 GMT
+    0.17 - Mon, 02 Sep 2013 23:53:03 GMT
+    0.17 - Tue, 20 Aug 2013 10:33:46 GMT
+    0.17 - Sat, 10 Aug 2013 23:09:09 GMT
+    0.17 - Thu, 30 May 2013 04:27:38 GMT
+    0.17 - Wed, 11 Sep 2013 12:58:33 GMT
+    0.17 - Thu, 30 May 2013 04:47:53 GMT
+    0.17 - Thu, 25 Apr 2013 04:54:54 GMT
+    0.17 - Fri, 13 Sep 2013 13:38:49 GMT
+    0.17 - Thu, 05 Sep 2013 13:42:36 GMT
+    0.17 - Wed, 22 May 2013 06:09:30 GMT
+    0.17 - Mon, 12 Aug 2013 09:06:50 GMT
+    0.17 - Wed, 11 Sep 2013 18:54:40 GMT
+    0.17 - Sun, 21 Jul 2013 22:39:32 GMT
+    0.17 - Wed, 19 Jun 2013 16:40:38 GMT
+    0.17 - Sun, 11 Aug 2013 03:38:48 GMT
+    0.17 - Wed, 24 Jul 2013 01:46:25 GMT
+    0.17 - Thu, 15 Aug 2013 23:05:17 GMT
+    0.17 - Fri, 13 Sep 2013 14:47:19 GMT
+    0.17 - Fri, 13 Sep 2013 13:01:33 GMT
+    0.17 - Tue, 14 May 2013 03:59:08 GMT
+    0.17 - Sun, 15 Sep 2013 16:49:47 GMT
+    0.17 - Sun, 20 Jan 2013 13:23:12 GMT
+    0.17 - Thu, 05 Sep 2013 16:15:57 GMT
+    0.17 - Wed, 28 Aug 2013 08:59:34 GMT
+    0.17 - Sun, 08 Sep 2013 22:58:34 GMT
+    0.17 - Tue, 03 Sep 2013 10:43:55 GMT
+    0.17 - Sun, 08 Sep 2013 16:57:01 GMT
+    0.17 - Sun, 08 Sep 2013 18:09:13 GMT
+    0.17 - Sun, 08 Sep 2013 13:17:10 GMT
+    0.17 - Sun, 19 May 2013 13:43:50 GMT
+    0.17 - Mon, 16 Sep 2013 20:45:44 GMT
+    0.17 - Wed, 04 Sep 2013 17:33:23 GMT
+    0.17 - Sun, 11 Aug 2013 02:24:29 GMT
+    0.17 - Sat, 15 Jun 2013 08:45:35 GMT
+    0.17 - Sun, 08 Sep 2013 13:23:59 GMT
+    0.17 - Wed, 11 Sep 2013 12:59:12 GMT
+    0.17 - Wed, 11 Sep 2013 12:59:48 GMT
+    0.17 - Wed, 05 Jun 2013 09:47:33 GMT
+    0.17 - Sat, 10 Aug 2013 18:03:41 GMT
+    0.17 - Sun, 08 Sep 2013 13:04:13 GMT
+    0.17 - Wed, 28 Aug 2013 03:52:17 GMT
+    0.17 - Sun, 01 Sep 2013 22:07:58 GMT
+    0.17 - Tue, 13 Aug 2013 20:16:37 GMT
+    0.17 - Sun, 08 Sep 2013 11:56:23 GMT
+    0.17 - Wed, 07 Aug 2013 14:05:19 GMT
+    0.17 - Tue, 25 Jun 2013 20:01:28 GMT
+    0.17 - Tue, 14 May 2013 11:48:22 GMT
+    0.17 - Mon, 16 Sep 2013 08:34:32 GMT
+    0.17 - Fri, 14 Dec 2012 02:48:28 GMT
+    0.17 - Sat, 17 Aug 2013 05:35:00 GMT
+    0.17 - Fri, 09 Aug 2013 11:14:56 GMT
+    0.17 - Sun, 21 Jul 2013 21:56:28 GMT
+    0.17 - Wed, 07 Aug 2013 12:56:41 GMT
+    0.17 - Sun, 08 Sep 2013 14:13:45 GMT
+    0.17 - Thu, 30 May 2013 06:47:15 GMT
+    0.17 - Thu, 18 Jul 2013 21:38:45 GMT
+    0.17 - Sat, 15 Jun 2013 04:56:21 GMT
+    0.17 - Sun, 19 May 2013 18:34:07 GMT
+    0.17 - Wed, 26 Jun 2013 15:20:22 GMT
+    0.17 - Sat, 24 Aug 2013 17:22:28 GMT
+    0.17 - Fri, 05 Jul 2013 22:59:53 GMT
+    0.17 - Sun, 30 Jun 2013 21:03:57 GMT
+    0.17 - Sat, 06 Jul 2013 22:31:42 GMT
+    0.17 - Tue, 10 Sep 2013 15:33:56 GMT
+    0.17 - Sun, 08 Sep 2013 12:11:37 GMT
+    0.17 - Tue, 13 Aug 2013 07:26:49 GMT
+    0.17 - Sun, 01 Sep 2013 16:38:44 GMT
+    0.17 - Wed, 04 Sep 2013 10:16:09 GMT
+    0.17 - Fri, 30 Aug 2013 20:04:17 GMT
+    0.17 - Sun, 11 Aug 2013 23:10:08 GMT
+    0.17 - Wed, 21 Aug 2013 22:01:46 GMT
+    0.17 - Fri, 21 Jun 2013 21:50:36 GMT
+    1.55 - Fri, 24 May 2013 21:38:29 GMT
+    0.17 - Sat, 20 Jul 2013 14:01:51 GMT
+    0.17 - Wed, 07 Aug 2013 14:04:05 GMT
+    0.17 - Wed, 11 Sep 2013 12:58:01 GMT
+    0.17 - Sun, 07 Jul 2013 15:29:41 GMT
+    0.17 - Tue, 04 Jun 2013 16:25:53 GMT
+    0.17 - Sun, 25 Aug 2013 12:43:36 GMT
+    0.17 - Tue, 27 Aug 2013 21:32:19 GMT
+    1.55 - Fri, 06 Sep 2013 22:50:18 GMT
+    0.17 - Sat, 10 Aug 2013 07:02:00 GMT
+    0.17 - Wed, 11 Sep 2013 12:43:36 GMT
+    0.17 - Wed, 19 Jun 2013 08:25:23 GMT
+    0.17 - Wed, 11 Sep 2013 14:37:18 GMT
+    0.17 - Tue, 30 Jul 2013 01:30:10 GMT
+    0.17 - Wed, 11 Sep 2013 08:54:21 GMT
+    0.17 - Sun, 14 Jul 2013 08:17:32 GMT
+    0.17 - Mon, 02 Sep 2013 11:30:13 GMT
+    0.17 - Thu, 04 Jul 2013 22:52:45 GMT
+    0.17 - Tue, 10 Sep 2013 06:44:35 GMT
+    0.17 - Mon, 27 May 2013 01:56:06 GMT
+    0.17 - Sat, 10 Aug 2013 22:19:19 GMT
+    0.17 - Wed, 11 Sep 2013 13:45:55 GMT
+    0.17 - Wed, 31 Jul 2013 21:02:12 GMT
+    0.17 - Mon, 15 Oct 2012 05:44:33 GMT
+    0.17 - Thu, 11 Jul 2013 12:54:43 GMT
+    0.17 - Fri, 13 Sep 2013 15:29:12 GMT
+    0.17 - Fri, 16 Aug 2013 13:59:44 GMT
+    0.17 - Wed, 11 Sep 2013 11:45:03 GMT
+    0.17 - Fri, 09 Aug 2013 17:00:53 GMT
+    0.17 - Thu, 30 May 2013 04:54:42 GMT
+    0.17 - Wed, 05 Jun 2013 16:41:00 GMT
+    0.17 - Wed, 27 Feb 2013 08:49:00 GMT
+    0.17 - Thu, 22 Aug 2013 19:54:17 GMT
+    0.17 - Mon, 02 Sep 2013 10:12:54 GMT
+    0.17 - Tue, 10 Sep 2013 09:36:24 GMT
+    0.17 - Tue, 23 Jul 2013 03:45:24 GMT
+    0.17 - Tue, 14 May 2013 04:20:46 GMT
+    0.17 - Sun, 08 Sep 2013 15:14:05 GMT
+    0.17 - Wed, 11 Sep 2013 15:34:50 GMT
+    0.17 - Sun, 11 Aug 2013 17:56:49 GMT
+    0.17 - Mon, 02 Sep 2013 13:39:24 GMT
+    0.17 - Sun, 28 Jul 2013 09:39:16 GMT
+    0.17 - Fri, 03 May 2013 11:23:12 GMT
+    0.17 - Tue, 18 Jun 2013 13:28:47 GMT
+    0.17 - Wed, 11 Sep 2013 19:40:02 GMT
+    0.17 - Mon, 16 Sep 2013 20:46:11 GMT
+    0.34 - Sat, 20 Apr 2013 15:29:38 GMT
+    0.17 - Mon, 08 Jul 2013 09:50:51 GMT
+    0.17 - Wed, 11 Sep 2013 12:59:56 GMT
+    0.17 - Sun, 21 Jul 2013 16:28:53 GMT
+    0.17 - Thu, 22 Aug 2013 23:21:46 GMT
+    0.17 - Wed, 11 Sep 2013 13:36:43 GMT
+    0.17 - Mon, 26 Aug 2013 21:37:57 GMT
+    0.17 - Sat, 22 Dec 2012 23:34:08 GMT
+    0.17 - Thu, 05 Sep 2013 16:16:34 GMT
+    0.17 - Wed, 11 Sep 2013 14:12:12 GMT
+    0.17 - Sun, 11 Aug 2013 06:05:06 GMT
+    0.17 - Wed, 11 Sep 2013 18:52:55 GMT
+    0.17 - Sun, 08 Sep 2013 08:39:04 GMT
+    0.17 - Thu, 12 Sep 2013 09:15:04 GMT
+    0.17 - Tue, 14 May 2013 02:35:58 GMT
+    0.17 - Sat, 10 Aug 2013 04:36:20 GMT
+    0.17 - Sat, 20 Jul 2013 13:29:16 GMT
+    0.17 - Sat, 10 Aug 2013 18:58:26 GMT
+    0.17 - Sun, 11 Aug 2013 01:35:58 GMT
+    0.17 - Thu, 30 May 2013 05:13:33 GMT
+    1.55 - Mon, 15 Oct 2012 23:56:23 GMT
+    0.17 - Wed, 07 Aug 2013 21:39:22 GMT
+    0.17 - Wed, 04 Sep 2013 13:57:19 GMT
+    0.17 - Sun, 02 Jun 2013 06:12:56 GMT
+    0.17 - Sat, 07 Sep 2013 13:48:49 GMT
+    0.17 - Tue, 30 Jul 2013 15:39:53 GMT
+    0.17 - Wed, 28 Aug 2013 04:26:27 GMT
+    0.17 - Wed, 11 Sep 2013 11:54:01 GMT
+    0.17 - Sat, 15 Jun 2013 13:50:18 GMT
+    0.17 - Sun, 07 Apr 2013 19:42:17 GMT
+    0.17 - Tue, 14 May 2013 05:15:55 GMT
+    0.17 - Fri, 06 Sep 2013 05:28:56 GMT
+    0.17 - Thu, 13 Jun 2013 20:32:02 GMT
+    0.17 - Fri, 30 Aug 2013 16:04:20 GMT
+    0.52 - Sun, 07 Apr 2013 00:09:51 GMT
+    0.17 - Tue, 20 Aug 2013 13:19:27 GMT
+    0.17 - Tue, 06 Aug 2013 18:18:20 GMT
+    0.17 - Wed, 04 Sep 2013 12:07:51 GMT
+    0.17 - Fri, 06 Sep 2013 22:50:59 GMT
+    0.17 - Fri, 14 Jun 2013 23:36:06 GMT
+    0.17 - Sun, 15 Sep 2013 12:34:20 GMT
+    0.17 - Sun, 08 Sep 2013 13:34:57 GMT
+    0.17 - Sun, 30 Jun 2013 05:50:54 GMT
+    1.90 - Mon, 31 Dec 2012 10:48:08 GMT
+    0.17 - Wed, 11 Sep 2013 12:45:11 GMT
+    0.17 - Fri, 12 Jul 2013 15:35:29 GMT
+    0.17 - Sun, 28 Jul 2013 03:33:31 GMT
+    0.17 - Sun, 08 Sep 2013 11:38:22 GMT
+    0.17 - Thu, 05 Sep 2013 11:55:46 GMT
+    0.17 - Wed, 24 Jul 2013 09:02:12 GMT
+    0.17 - Wed, 11 Sep 2013 15:30:32 GMT
+    0.17 - Thu, 29 Aug 2013 21:11:27 GMT
+    0.17 - Thu, 20 Jun 2013 15:01:02 GMT
+    0.17 - Sun, 26 May 2013 23:16:26 GMT
+    0.17 - Fri, 24 May 2013 22:22:24 GMT
+    0.17 - Fri, 13 Sep 2013 10:47:58 GMT
+    0.17 - Tue, 14 May 2013 04:59:33 GMT
+    0.17 - Tue, 18 Sep 2012 18:52:19 GMT
+    0.17 - Sat, 18 May 2013 01:18:22 GMT
+    0.17 - Sat, 24 Aug 2013 18:04:52 GMT
+    0.17 - Tue, 10 Sep 2013 22:57:21 GMT
+    0.17 - Sun, 18 Aug 2013 22:19:41 GMT
+    0.17 - Sat, 15 Jun 2013 17:37:04 GMT
+    0.17 - Sun, 28 Apr 2013 17:35:56 GMT
+    0.17 - Mon, 02 Sep 2013 09:19:51 GMT
+    0.17 - Fri, 28 Sep 2012 05:32:54 GMT
+    0.17 - Sun, 30 Jun 2013 08:24:04 GMT
+    0.17 - Fri, 30 Aug 2013 18:10:14 GMT
+    0.17 - Wed, 24 Jul 2013 15:10:46 GMT
+    0.17 - Mon, 26 Aug 2013 10:35:20 GMT
+    0.17 - Wed, 24 Jul 2013 06:40:17 GMT
+    0.17 - Sat, 07 Sep 2013 04:07:24 GMT
+    0.17 - Wed, 11 Sep 2013 11:24:25 GMT
+    0.17 - Tue, 30 Apr 2013 04:35:32 GMT
+    0.17 - Mon, 13 May 2013 12:48:18 GMT
+    0.17 - Sun, 08 Sep 2013 19:35:52 GMT
+    0.17 - Wed, 19 Jun 2013 09:18:59 GMT
+    0.17 - Sat, 10 Aug 2013 23:16:11 GMT
+    0.17 - Thu, 05 Sep 2013 04:40:05 GMT
+    0.17 - Thu, 12 Sep 2013 08:54:48 GMT
+    0.17 - Tue, 09 Jul 2013 11:02:24 GMT
+    0.17 - Thu, 12 Sep 2013 16:44:07 GMT
+    0.17 - Thu, 30 May 2013 05:02:58 GMT
+    0.17 - Tue, 10 Sep 2013 10:45:53 GMT
+    0.17 - Tue, 14 May 2013 05:49:51 GMT
+    0.52 - Sat, 06 Apr 2013 23:10:50 GMT
+    0.17 - Tue, 14 May 2013 06:32:40 GMT
+    0.17 - Mon, 26 Aug 2013 23:25:12 GMT
+    0.17 - Wed, 19 Jun 2013 11:00:48 GMT
+    0.17 - Wed, 04 Sep 2013 09:36:52 GMT
+    0.17 - Sat, 22 Jun 2013 05:21:43 GMT
+    0.17 - Thu, 13 Dec 2012 08:41:06 GMT
+    0.17 - Wed, 11 Sep 2013 13:34:33 GMT
+    0.17 - Wed, 11 Sep 2013 14:13:40 GMT
+    0.17 - Thu, 13 Jun 2013 14:21:39 GMT
+    0.17 - Tue, 11 Jun 2013 21:01:30 GMT
+    0.17 - Sat, 14 Sep 2013 08:19:21 GMT
+    0.17 - Tue, 25 Jun 2013 22:48:18 GMT
+    0.17 - Wed, 11 Sep 2013 15:28:26 GMT
+    0.17 - Tue, 14 May 2013 17:54:32 GMT
+    0.17 - Wed, 11 Sep 2013 13:00:08 GMT
+    0.17 - Sun, 08 Sep 2013 13:51:57 GMT
+    0.17 - Sun, 08 Sep 2013 13:36:44 GMT
+    0.17 - Wed, 28 Aug 2013 13:23:37 GMT
+    0.17 - Tue, 30 Apr 2013 07:04:37 GMT
+    0.17 - Thu, 08 Aug 2013 10:40:13 GMT
+    0.17 - Tue, 14 May 2013 07:51:47 GMT
+    0.17 - Thu, 05 Sep 2013 19:31:41 GMT
+    0.17 - Sat, 07 Sep 2013 20:33:17 GMT
+    0.17 - Sun, 08 Sep 2013 07:34:27 GMT
+    0.17 - Sun, 21 Apr 2013 18:08:34 GMT
+    0.17 - Wed, 19 Jun 2013 12:08:10 GMT
+    0.17 - Sat, 10 Aug 2013 18:22:29 GMT
+    0.17 - Mon, 11 Mar 2013 10:26:29 GMT
+    0.17 - Sun, 14 Jul 2013 09:17:14 GMT
+    0.17 - Mon, 09 Sep 2013 09:38:59 GMT
+    0.17 - Thu, 22 Aug 2013 20:29:46 GMT
+    0.17 - Sat, 24 Aug 2013 12:33:36 GMT
+    0.17 - Sun, 11 Aug 2013 20:07:43 GMT
+    0.17 - Fri, 19 Jul 2013 15:20:02 GMT
+    0.17 - Fri, 07 Jun 2013 02:13:01 GMT
+    0.17 - Fri, 13 Sep 2013 13:12:51 GMT
+    0.17 - Sat, 15 Jun 2013 02:53:11 GMT
+    0.17 - Wed, 11 Sep 2013 14:07:32 GMT
+    0.17 - Sat, 10 Aug 2013 21:03:16 GMT
+    0.17 - Fri, 13 Sep 2013 15:42:03 GMT
+    0.17 - Wed, 11 Sep 2013 14:12:50 GMT
+    0.17 - Tue, 14 May 2013 15:50:24 GMT
+    0.17 - Thu, 20 Jun 2013 14:17:08 GMT
+    0.52 - Wed, 31 Oct 2012 13:30:07 GMT
+    0.17 - Tue, 28 May 2013 04:11:33 GMT
+    0.17 - Fri, 16 Aug 2013 08:31:58 GMT
+    0.17 - Thu, 16 May 2013 08:34:21 GMT
+    0.17 - Sat, 06 Apr 2013 16:02:55 GMT
+    0.52 - Thu, 04 Oct 2012 11:30:16 GMT
+    0.17 - Wed, 13 Mar 2013 01:58:21 GMT
+    0.17 - Tue, 14 May 2013 23:05:32 GMT
+    0.17 - Mon, 09 Sep 2013 19:12:39 GMT
+    0.17 - Wed, 18 Sep 2013 12:53:28 GMT
+    0.17 - Mon, 10 Jun 2013 14:38:34 GMT
+    0.17 - Wed, 28 Aug 2013 00:05:57 GMT
+    0.17 - Wed, 11 Sep 2013 14:51:07 GMT
+    0.17 - Tue, 18 Jun 2013 01:37:51 GMT
+    0.17 - Mon, 19 Aug 2013 07:40:54 GMT
+    0.17 - Tue, 10 Sep 2013 21:35:37 GMT
+    0.17 - Mon, 06 May 2013 18:51:30 GMT
+    0.17 - Wed, 11 Sep 2013 18:24:14 GMT
+    0.17 - Tue, 09 Jul 2013 18:35:29 GMT
+    0.17 - Thu, 12 Sep 2013 18:35:47 GMT
+    0.17 - Thu, 27 Jun 2013 13:22:13 GMT
+    0.17 - Sat, 14 Sep 2013 11:48:13 GMT
+    0.17 - Sun, 08 Sep 2013 13:28:10 GMT
+    0.17 - Thu, 22 Aug 2013 15:49:07 GMT
+    0.17 - Tue, 05 Mar 2013 15:55:50 GMT
+    0.17 - Mon, 19 Aug 2013 10:08:53 GMT
+    0.17 - Sun, 18 Aug 2013 01:42:21 GMT
+    0.17 - Wed, 08 May 2013 09:58:13 GMT
+    0.17 - Tue, 14 May 2013 07:21:14 GMT
+    0.17 - Sat, 13 Jul 2013 03:58:26 GMT
+    0.17 - Fri, 28 Jun 2013 02:52:34 GMT
+    0.17 - Thu, 12 Sep 2013 18:02:33 GMT
+    0.17 - Tue, 27 Aug 2013 18:51:35 GMT
+    0.17 - Mon, 19 Aug 2013 05:45:50 GMT
+    0.17 - Sat, 10 Aug 2013 19:58:39 GMT
+    0.17 - Tue, 10 Sep 2013 14:07:28 GMT
+    0.17 - Sat, 01 Jun 2013 22:18:57 GMT
+    0.17 - Tue, 20 Nov 2012 04:48:50 GMT
+    0.17 - Thu, 12 Sep 2013 05:46:47 GMT
+    0.17 - Sat, 11 May 2013 09:17:42 GMT
+    0.17 - Sat, 10 Aug 2013 17:28:01 GMT
+    0.17 - Wed, 24 Jul 2013 09:39:34 GMT
+    0.17 - Thu, 05 Sep 2013 04:44:47 GMT
+    0.17 - Fri, 16 Aug 2013 10:34:16 GMT
+    0.17 - Tue, 14 May 2013 17:06:41 GMT
+    0.17 - Wed, 11 Sep 2013 14:12:29 GMT
+    0.17 - Mon, 03 Jun 2013 18:58:39 GMT
+    0.17 - Wed, 11 Sep 2013 14:09:34 GMT
+    0.17 - Sat, 10 Aug 2013 04:41:57 GMT
+    0.17 - Tue, 17 Sep 2013 10:09:37 GMT
+    0.17 - Mon, 16 Sep 2013 05:29:22 GMT
+    0.17 - Thu, 30 May 2013 05:26:36 GMT
+    0.17 - Wed, 11 Sep 2013 16:38:06 GMT
+    0.17 - Sun, 18 Aug 2013 10:02:00 GMT
+    0.17 - Mon, 26 Aug 2013 17:08:00 GMT
+    0.17 - Thu, 11 Jul 2013 23:44:29 GMT
+    0.17 - Fri, 06 Sep 2013 07:34:00 GMT
+    0.17 - Mon, 19 Aug 2013 21:22:06 GMT
+    0.17 - Tue, 30 Jul 2013 04:53:42 GMT
+    0.17 - Sun, 18 Aug 2013 13:49:19 GMT
+    0.17 - Thu, 04 Jul 2013 16:23:49 GMT
+    0.17 - Thu, 27 Jun 2013 00:39:21 GMT
+    0.17 - Thu, 05 Sep 2013 08:40:23 GMT
+    0.34 - Fri, 26 Jul 2013 04:28:51 GMT
+    0.17 - Sun, 08 Sep 2013 13:58:13 GMT
+    0.17 - Fri, 16 Aug 2013 14:34:30 GMT
+    0.17 - Fri, 13 Sep 2013 14:34:15 GMT
+    0.17 - Tue, 03 Sep 2013 17:05:39 GMT
+    0.17 - Thu, 05 Sep 2013 18:15:06 GMT
+    0.17 - Sun, 08 Sep 2013 13:30:17 GMT
+    0.17 - Mon, 11 Feb 2013 14:34:42 GMT
+    0.17 - Sat, 07 Sep 2013 09:49:08 GMT
+    0.17 - Thu, 30 May 2013 06:56:49 GMT
+    0.17 - Sun, 11 Aug 2013 06:57:41 GMT
+    0.17 - Sun, 16 Jun 2013 19:53:47 GMT
+    0.17 - Sat, 27 Jul 2013 03:20:49 GMT
+    0.17 - Sat, 13 Jul 2013 19:57:13 GMT
+    0.17 - Sun, 08 Sep 2013 13:38:55 GMT
+    0.17 - Tue, 09 Jul 2013 17:46:56 GMT
+    0.17 - Fri, 09 Aug 2013 19:53:33 GMT
+    0.17 - Wed, 11 Sep 2013 09:58:56 GMT
+    0.17 - Sun, 04 Aug 2013 20:51:05 GMT
+    0.17 - Thu, 12 Sep 2013 12:43:34 GMT
+    0.17 - Tue, 16 Apr 2013 03:42:50 GMT
+    0.17 - Wed, 04 Sep 2013 13:47:20 GMT
+    0.17 - Tue, 20 Aug 2013 08:05:21 GMT
+    0.17 - Wed, 19 Jun 2013 02:04:57 GMT
+    0.17 - Wed, 11 Sep 2013 14:38:57 GMT
+    0.17 - Wed, 07 Aug 2013 14:04:23 GMT
+    0.17 - Wed, 21 Aug 2013 01:30:53 GMT
+    0.17 - Thu, 22 Aug 2013 20:27:07 GMT
+    0.17 - Thu, 15 Aug 2013 09:46:59 GMT
+    0.17 - Thu, 30 May 2013 10:43:49 GMT
+    0.17 - Sat, 10 Aug 2013 21:11:45 GMT
+    0.17 - Tue, 14 May 2013 03:36:44 GMT
+    0.17 - Mon, 05 Aug 2013 22:54:49 GMT
+    0.17 - Mon, 10 Jun 2013 10:43:53 GMT
+    0.17 - Sun, 08 Sep 2013 14:26:20 GMT
+    0.17 - Tue, 17 Sep 2013 13:31:45 GMT
+    0.17 - Mon, 09 Sep 2013 19:08:51 GMT
+    0.17 - Wed, 11 Sep 2013 10:06:57 GMT
+    0.17 - Sun, 08 Sep 2013 13:36:01 GMT
+    0.17 - Tue, 27 Aug 2013 15:32:47 GMT
+    0.17 - Wed, 11 Sep 2013 13:12:52 GMT
+    0.17 - Fri, 21 Jun 2013 19:05:07 GMT
+    0.17 - Tue, 14 May 2013 04:00:04 GMT
+    0.17 - Thu, 12 Sep 2013 10:18:16 GMT
+    0.17 - Sun, 08 Sep 2013 14:13:52 GMT
+    0.17 - Thu, 30 May 2013 03:33:48 GMT
+    0.17 - Wed, 19 Jun 2013 06:53:46 GMT
+    0.17 - Sun, 30 Jun 2013 22:04:08 GMT
+    0.17 - Wed, 17 Jul 2013 18:38:37 GMT
+    0.17 - Sun, 17 Feb 2013 01:32:35 GMT
+    0.17 - Fri, 13 Sep 2013 00:07:18 GMT
+    0.17 - Sun, 15 Sep 2013 12:52:16 GMT
+    0.17 - Fri, 24 May 2013 20:13:54 GMT
+    0.17 - Wed, 04 Sep 2013 11:28:14 GMT
+    0.17 - Fri, 30 Aug 2013 07:44:50 GMT
+    0.17 - Thu, 22 Aug 2013 20:22:41 GMT
+    0.17 - Tue, 07 May 2013 19:15:30 GMT
+    0.17 - Fri, 10 May 2013 03:53:23 GMT
+    0.17 - Fri, 19 Jul 2013 08:29:32 GMT
+    0.17 - Sun, 01 Sep 2013 20:57:30 GMT
+    0.17 - Sat, 03 Aug 2013 06:01:54 GMT
+    0.17 - Wed, 11 Sep 2013 12:20:52 GMT
+    0.17 - Wed, 28 Aug 2013 23:39:48 GMT
+    0.17 - Sat, 07 Sep 2013 10:16:41 GMT
+    0.17 - Mon, 15 Apr 2013 14:29:06 GMT
+    0.17 - Wed, 15 May 2013 01:18:12 GMT
+    0.17 - Mon, 15 Jul 2013 09:14:14 GMT
+    0.17 - Sat, 10 Aug 2013 21:39:20 GMT
+    0.17 - Sun, 08 Sep 2013 14:45:22 GMT
+    0.34 - Sun, 08 Sep 2013 13:15:34 GMT
+    0.17 - Mon, 12 Aug 2013 20:53:25 GMT
+    0.17 - Thu, 05 Sep 2013 13:05:41 GMT
+    0.17 - Wed, 29 May 2013 05:02:39 GMT
+    0.17 - Wed, 11 Sep 2013 12:50:44 GMT
+    0.17 - Fri, 09 Aug 2013 17:28:58 GMT
+    0.17 - Sun, 18 Aug 2013 17:40:17 GMT
+    0.17 - Sun, 14 Jul 2013 08:35:37 GMT
+    0.17 - Wed, 11 Sep 2013 13:11:37 GMT
+    0.17 - Wed, 17 Jul 2013 17:30:16 GMT
+    0.17 - Sun, 16 Jun 2013 15:52:08 GMT
+    0.17 - Fri, 30 Aug 2013 09:00:15 GMT
+    0.17 - Sun, 15 Sep 2013 14:57:35 GMT
+    0.17 - Wed, 03 Jul 2013 12:37:56 GMT
+    0.17 - Thu, 29 Aug 2013 15:49:08 GMT
+    0.17 - Fri, 24 May 2013 11:21:08 GMT
+    0.17 - Thu, 08 Aug 2013 12:26:05 GMT
+    0.17 - Fri, 06 Sep 2013 20:52:28 GMT
+    0.17 - Thu, 30 May 2013 12:14:40 GMT
+    0.17 - Sun, 18 Aug 2013 13:32:39 GMT
+    0.17 - Sun, 15 Sep 2013 14:14:28 GMT
+    1.90 - Wed, 18 Sep 2013 12:53:27 GMT
+    0.17 - Fri, 13 Sep 2013 09:03:08 GMT
+    0.17 - Mon, 13 May 2013 23:47:55 GMT
+    0.17 - Fri, 26 Jul 2013 11:40:08 GMT
+    0.17 - Sat, 08 Jun 2013 15:07:38 GMT
+    0.17 - Mon, 17 Jun 2013 23:18:54 GMT
+    0.17 - Thu, 30 May 2013 05:14:00 GMT
+    0.17 - Sat, 10 Aug 2013 09:03:14 GMT
+    0.17 - Sat, 29 Jun 2013 14:56:31 GMT
+    0.17 - Tue, 16 Apr 2013 13:37:45 GMT
+    0.69 - Sat, 25 May 2013 04:02:35 GMT
+    0.17 - Thu, 08 Nov 2012 07:55:50 GMT
+    0.17 - Tue, 02 Jul 2013 08:34:18 GMT
+    0.17 - Wed, 19 Jun 2013 10:29:29 GMT
+    0.17 - Thu, 15 Aug 2013 17:16:24 GMT
+    0.17 - Wed, 21 Aug 2013 11:03:17 GMT
+    0.17 - Sun, 08 Sep 2013 14:23:28 GMT
+    0.17 - Wed, 11 Sep 2013 13:55:54 GMT
+    0.17 - Tue, 27 Aug 2013 14:53:31 GMT
+    0.17 - Sun, 08 Sep 2013 12:39:38 GMT
+    0.17 - Thu, 22 Aug 2013 09:36:56 GMT
+    0.17 - Sun, 01 Sep 2013 08:52:35 GMT
+    0.17 - Sun, 18 Aug 2013 09:16:56 GMT
+    0.17 - Tue, 30 Jul 2013 03:58:20 GMT
+    0.17 - Thu, 22 Aug 2013 19:43:07 GMT
+    0.17 - Mon, 26 Aug 2013 02:19:58 GMT
+    0.17 - Tue, 14 May 2013 05:16:47 GMT
+    0.17 - Sat, 14 Sep 2013 13:03:04 GMT
+    0.17 - Sat, 08 Jun 2013 21:13:05 GMT
+    0.17 - Fri, 13 Sep 2013 06:28:09 GMT
+    0.17 - Fri, 06 Sep 2013 22:56:54 GMT
+    0.17 - Thu, 22 Aug 2013 23:00:24 GMT
+    0.17 - Sat, 30 Mar 2013 11:15:04 GMT
+    0.17 - Sat, 10 Aug 2013 16:53:03 GMT
+    0.17 - Tue, 14 May 2013 05:48:28 GMT
+    0.17 - Sun, 04 Aug 2013 06:53:56 GMT
+    0.17 - Wed, 11 Sep 2013 10:49:33 GMT
+    0.17 - Sat, 10 Aug 2013 19:11:04 GMT
+    0.17 - Tue, 11 Jun 2013 17:21:55 GMT
+    0.17 - Wed, 07 Aug 2013 23:44:44 GMT
+    0.17 - Fri, 28 Jun 2013 21:04:01 GMT
+    0.52 - Thu, 22 Aug 2013 23:00:27 GMT
+    0.17 - Sun, 06 Jan 2013 09:07:08 GMT
+    0.17 - Sun, 12 May 2013 22:40:57 GMT
+    0.17 - Thu, 22 Aug 2013 20:54:00 GMT
+    0.17 - Sun, 08 Sep 2013 15:27:46 GMT
+    0.17 - Wed, 11 Sep 2013 14:15:50 GMT
+    0.17 - Tue, 03 Sep 2013 14:42:23 GMT
+    0.17 - Sat, 06 Jul 2013 11:24:18 GMT
+    0.17 - Sun, 08 Sep 2013 07:27:17 GMT
+    0.17 - Thu, 30 May 2013 04:49:06 GMT
+    0.17 - Sun, 25 Aug 2013 20:38:11 GMT
+    0.17 - Fri, 06 Sep 2013 13:38:11 GMT
+    0.17 - Mon, 26 Aug 2013 21:39:49 GMT
+    0.17 - Thu, 22 Aug 2013 20:45:52 GMT
+    0.17 - Sun, 21 Jul 2013 13:49:04 GMT
+    0.17 - Thu, 15 Aug 2013 05:22:11 GMT
+    0.17 - Wed, 04 Sep 2013 13:46:20 GMT
+    0.17 - Sun, 16 Jun 2013 15:47:30 GMT
+    0.17 - Mon, 26 Aug 2013 08:46:17 GMT
+    0.17 - Sat, 10 Aug 2013 21:11:10 GMT
+    0.17 - Sun, 08 Sep 2013 05:35:38 GMT
+    0.17 - Wed, 11 Sep 2013 14:15:00 GMT
+    0.17 - Fri, 09 Aug 2013 08:25:55 GMT
+    0.17 - Fri, 26 Jul 2013 15:51:03 GMT
+    0.17 - Wed, 28 Aug 2013 01:15:11 GMT
+    0.17 - Tue, 12 Feb 2013 23:01:38 GMT
+    0.17 - Tue, 13 Aug 2013 14:31:51 GMT
+    0.17 - Wed, 17 Apr 2013 14:38:18 GMT
+    0.17 - Wed, 11 Sep 2013 12:59:28 GMT
+    0.17 - Fri, 23 Aug 2013 13:14:37 GMT
+    0.17 - Wed, 03 Jul 2013 13:21:42 GMT
+    0.17 - Wed, 28 Aug 2013 05:48:15 GMT
+    0.17 - Wed, 27 Mar 2013 21:24:14 GMT
+    0.17 - Sat, 03 Aug 2013 06:46:04 GMT
+    0.34 - Wed, 29 May 2013 10:01:35 GMT
+    0.17 - Thu, 29 Aug 2013 00:02:18 GMT
+    0.17 - Sun, 28 Jul 2013 15:35:52 GMT
+    0.17 - Sat, 11 May 2013 20:16:36 GMT
+    0.17 - Tue, 14 May 2013 17:11:49 GMT
+    0.17 - Mon, 09 Sep 2013 10:56:26 GMT
+    0.17 - Fri, 23 Aug 2013 20:10:47 GMT
+    0.17 - Mon, 29 Jul 2013 13:37:47 GMT
+    0.17 - Thu, 29 Aug 2013 00:22:38 GMT
+    0.17 - Fri, 24 May 2013 09:33:37 GMT
+    0.17 - Wed, 11 Sep 2013 13:11:41 GMT
+    0.17 - Sat, 07 Sep 2013 08:21:54 GMT
+    0.17 - Sun, 15 Sep 2013 13:37:57 GMT
+    0.17 - Fri, 22 Mar 2013 06:06:04 GMT
+    0.17 - Fri, 24 May 2013 14:24:40 GMT
+    0.17 - Mon, 20 May 2013 00:39:42 GMT
+    0.17 - Tue, 02 Jul 2013 04:12:48 GMT
+    0.17 - Wed, 07 Aug 2013 12:56:06 GMT
+    0.17 - Tue, 20 Aug 2013 13:49:53 GMT
+    1.55 - Thu, 22 Aug 2013 22:59:37 GMT
+    0.17 - Sat, 07 Sep 2013 20:20:53 GMT
+    0.17 - Tue, 10 Sep 2013 18:04:14 GMT
+    0.17 - Thu, 12 Sep 2013 18:38:01 GMT
+    0.17 - Tue, 21 May 2013 19:23:50 GMT
+  last-modified: 
+    0.17 - Thu, 09 Sep 2010 03:40:20 GMT
+    0.17 - Thu, 30 Aug 2012 08:26:09 GMT
+    0.17 - Wed, 18 Apr 2012 08:26:27 GMT
+    0.17 - Fri, 10 Aug 2012 18:56:53 GMT
+    0.17 - Thu, 24 May 2012 09:16:23 GMT
+    0.17 - Sat, 15 Sep 2012 13:23:12 GMT
+    0.17 - Sat, 08 Sep 2012 16:04:36 GMT
+    2.76 - Wed, 22 Aug 2012 19:06:15 GMT
+    0.17 - Tue, 28 Aug 2012 07:02:19 GMT
+    0.17 - Sat, 15 Sep 2012 14:06:20 GMT
+    0.17 - Sat, 08 Sep 2012 13:34:26 GMT
+    0.17 - Thu, 02 Aug 2012 13:43:30 GMT
+    0.17 - Tue, 07 Aug 2012 14:25:21 GMT
+    0.17 - Wed, 04 Jul 2012 09:47:43 GMT
+    0.17 - Fri, 10 Aug 2012 18:17:23 GMT
+    0.17 - Wed, 05 Sep 2012 13:05:38 GMT
+    0.17 - Fri, 25 May 2012 00:11:37 GMT
+    0.17 - Sat, 15 Sep 2012 13:33:45 GMT
+    0.17 - Sat, 15 Sep 2012 12:59:38 GMT
+    0.17 - Sat, 08 Sep 2012 13:47:18 GMT
+    0.17 - Fri, 10 Aug 2012 22:08:04 GMT
+    0.17 - Mon, 09 Jul 2012 17:19:26 GMT
+    0.17 - Thu, 23 Aug 2012 14:32:34 GMT
+    0.17 - Tue, 29 May 2012 11:35:37 GMT
+    0.17 - Thu, 02 Aug 2012 17:43:13 GMT
+    0.17 - Sun, 22 Jul 2012 11:08:34 GMT
+    0.17 - Thu, 06 Sep 2012 17:18:07 GMT
+    0.17 - Fri, 08 Jun 2012 20:26:46 GMT
+    0.17 - Sat, 11 Aug 2012 01:37:23 GMT
+    0.34 - Mon, 16 Jul 2012 19:34:53 GMT
+    0.17 - Wed, 01 Aug 2012 10:09:41 GMT
+    0.17 - Sun, 20 May 2012 13:54:02 GMT
+    0.17 - Thu, 13 Sep 2012 11:22:22 GMT
+    0.17 - Sat, 21 Jul 2012 14:04:01 GMT
+    0.17 - Wed, 12 Sep 2012 00:48:02 GMT
+    0.17 - Fri, 25 May 2012 08:46:55 GMT
+    0.17 - Sat, 08 Sep 2012 13:55:22 GMT
+    0.17 - Tue, 04 Sep 2012 00:04:47 GMT
+    0.17 - Tue, 24 Jul 2012 22:45:12 GMT
+    0.17 - Sun, 09 Sep 2012 19:48:52 GMT
+    0.17 - Sat, 01 Sep 2012 21:05:00 GMT
+    0.17 - Mon, 10 Sep 2012 23:57:28 GMT
+    0.17 - Tue, 03 Jul 2012 22:23:40 GMT
+    0.17 - Tue, 11 Sep 2012 14:08:18 GMT
+    0.17 - Tue, 11 Sep 2012 13:34:43 GMT
+    0.17 - Sat, 08 Sep 2012 13:13:11 GMT
+    0.17 - Fri, 07 Sep 2012 06:50:33 GMT
+    0.34 - Sun, 20 May 2012 18:05:37 GMT
+    0.17 - Tue, 11 Sep 2012 14:03:00 GMT
+    0.17 - Mon, 28 May 2012 16:11:47 GMT
+    0.17 - Thu, 08 Mar 2012 15:49:38 GMT
+    0.17 - Sat, 11 Aug 2012 11:49:08 GMT
+    0.17 - Tue, 19 Jun 2012 14:22:56 GMT
+    0.17 - Mon, 20 Aug 2012 10:33:20 GMT
+    0.17 - Wed, 15 Aug 2012 09:53:42 GMT
+    0.17 - Tue, 11 Sep 2012 14:05:34 GMT
+    0.34 - Mon, 02 Jul 2012 18:43:28 GMT
+    0.17 - Sat, 08 Sep 2012 13:02:22 GMT
+    0.17 - Sat, 05 May 2012 12:29:38 GMT
+    0.17 - Tue, 11 Sep 2012 13:00:28 GMT
+    0.17 - Tue, 11 Sep 2012 14:13:57 GMT
+    0.17 - Sat, 08 Sep 2012 13:36:13 GMT
+    0.17 - Tue, 11 Sep 2012 14:10:39 GMT
+    0.17 - Sun, 13 May 2012 14:36:35 GMT
+    0.17 - Fri, 06 Jul 2012 08:37:10 GMT
+    0.17 - Tue, 11 Sep 2012 13:42:42 GMT
+    0.17 - Sat, 08 Sep 2012 14:17:54 GMT
+    0.17 - Tue, 21 Aug 2012 13:53:30 GMT
+    0.17 - Mon, 27 Aug 2012 18:48:07 GMT
+    0.17 - Tue, 12 Jun 2012 07:33:52 GMT
+    0.17 - Tue, 24 Jul 2012 13:39:21 GMT
+    0.17 - Wed, 12 Sep 2012 13:29:51 GMT
+    0.17 - Fri, 03 Aug 2012 08:02:06 GMT
+    0.17 - Tue, 29 May 2012 18:37:26 GMT
+    0.17 - Thu, 13 Sep 2012 13:20:40 GMT
+    0.17 - Tue, 11 Sep 2012 21:44:43 GMT
+    0.17 - Sat, 11 Aug 2012 01:50:37 GMT
+    0.17 - Sat, 19 May 2012 07:18:37 GMT
+    1.90 - Thu, 06 Sep 2012 22:41:25 GMT
+    0.17 - Tue, 28 Aug 2012 23:38:20 GMT
+    0.17 - Tue, 28 Aug 2012 04:36:42 GMT
+    0.17 - Sat, 11 Aug 2012 10:33:34 GMT
+    0.17 - Mon, 21 May 2012 11:52:02 GMT
+    0.17 - Tue, 11 Sep 2012 13:14:24 GMT
+    0.17 - Thu, 07 Jun 2012 15:47:24 GMT
+    0.17 - Thu, 09 Aug 2012 13:46:31 GMT
+    0.17 - Tue, 11 Sep 2012 13:32:41 GMT
+    0.17 - Tue, 11 Sep 2012 14:34:07 GMT
+    0.17 - Sun, 10 Jun 2012 12:52:37 GMT
+    0.34 - Tue, 15 May 2012 15:09:35 GMT
+    0.17 - Sat, 08 Sep 2012 13:52:02 GMT
+    0.17 - Tue, 22 May 2012 11:42:27 GMT
+    0.17 - Thu, 16 Aug 2012 18:53:04 GMT
+    0.17 - Mon, 03 Sep 2012 19:40:36 GMT
+    0.17 - Tue, 11 Sep 2012 12:57:20 GMT
+    0.17 - Wed, 12 Sep 2012 21:09:46 GMT
+    0.17 - Sun, 08 Jul 2012 08:34:06 GMT
+    0.17 - Tue, 15 May 2012 18:40:55 GMT
+    0.17 - Wed, 25 Jul 2012 07:50:50 GMT
+    0.17 - Sun, 20 May 2012 20:47:12 GMT
+    0.17 - Wed, 15 Aug 2012 10:30:21 GMT
+    0.17 - Tue, 19 Jun 2012 06:52:38 GMT
+    0.17 - Thu, 21 Jun 2012 06:38:13 GMT
+    0.17 - Fri, 13 Apr 2012 07:05:57 GMT
+    0.17 - Sat, 08 Sep 2012 15:06:32 GMT
+    0.17 - Tue, 14 Aug 2012 16:03:51 GMT
+    0.17 - Tue, 11 Sep 2012 12:58:35 GMT
+    0.17 - Sat, 26 May 2012 13:49:52 GMT
+    0.17 - Sat, 08 Sep 2012 13:53:34 GMT
+    0.17 - Tue, 05 Jun 2012 15:43:05 GMT
+    0.17 - Fri, 10 Aug 2012 07:56:39 GMT
+    0.17 - Mon, 03 Sep 2012 10:34:50 GMT
+    0.17 - Sat, 23 Jun 2012 18:07:59 GMT
+    0.17 - Sun, 12 Aug 2012 20:44:32 GMT
+    0.17 - Tue, 11 Sep 2012 10:12:05 GMT
+    0.17 - Mon, 20 Aug 2012 08:04:34 GMT
+    0.17 - Sat, 15 Sep 2012 13:32:59 GMT
+    0.17 - Wed, 12 Sep 2012 00:49:13 GMT
+    0.17 - Sat, 11 Aug 2012 17:52:22 GMT
+    0.17 - Thu, 13 Sep 2012 15:38:56 GMT
+    0.17 - Thu, 14 Jun 2012 15:08:47 GMT
+    0.17 - Sat, 08 Sep 2012 14:16:12 GMT
+    0.17 - Sun, 06 May 2012 08:44:19 GMT
+    0.17 - Wed, 09 May 2012 10:02:09 GMT
+    0.17 - Sat, 01 Sep 2012 16:38:10 GMT
+    0.17 - Fri, 27 Jan 2012 17:14:24 GMT
+    0.17 - Tue, 04 Sep 2012 09:43:05 GMT
+    0.17 - Fri, 10 Aug 2012 21:42:20 GMT
+    0.17 - Sat, 08 Sep 2012 13:33:03 GMT
+    0.17 - Sun, 09 Sep 2012 09:38:10 GMT
+    0.17 - Tue, 01 May 2012 20:02:47 GMT
+    0.17 - Tue, 11 Sep 2012 13:56:43 GMT
+    0.17 - Wed, 06 Jun 2012 18:07:16 GMT
+    0.17 - Fri, 14 Sep 2012 14:28:39 GMT
+    0.17 - Sat, 15 Sep 2012 14:45:58 GMT
+    0.17 - Fri, 07 Sep 2012 05:23:50 GMT
+    0.17 - Sat, 07 Jul 2012 22:02:52 GMT
+    0.17 - Sun, 16 Sep 2012 13:21:44 GMT
+    0.17 - Tue, 11 Sep 2012 13:24:12 GMT
+    0.52 - Thu, 09 Jul 2009 18:33:39 GMT
+    0.17 - Thu, 19 Jul 2012 18:38:35 GMT
+    0.17 - Sun, 29 Apr 2012 22:22:30 GMT
+    0.17 - Mon, 07 May 2012 13:57:35 GMT
+    0.17 - Sat, 08 Sep 2012 14:21:08 GMT
+    0.17 - Sat, 11 Aug 2012 01:46:44 GMT
+    0.17 - Fri, 07 Sep 2012 07:56:54 GMT
+    0.17 - Sun, 01 Jul 2012 08:28:56 GMT
+    0.17 - Thu, 16 Aug 2012 10:30:17 GMT
+    1.55 - Thu, 04 Oct 2007 21:44:39 GMT
+    0.17 - Sat, 16 Jun 2012 11:57:34 GMT
+    0.17 - Tue, 19 Jun 2012 10:05:50 GMT
+    0.17 - Tue, 29 May 2012 11:14:24 GMT
+    0.17 - Sun, 22 Jul 2012 21:06:54 GMT
+    0.17 - Sat, 14 Jul 2012 02:39:23 GMT
+    0.17 - Thu, 06 Sep 2012 14:39:12 GMT
+    0.17 - Sat, 08 Sep 2012 12:59:35 GMT
+    0.17 - Tue, 11 Sep 2012 13:27:32 GMT
+    0.17 - Mon, 27 Feb 2012 10:57:11 GMT
+    0.17 - Wed, 13 Jun 2012 14:25:20 GMT
+    0.17 - Sat, 15 Sep 2012 15:00:39 GMT
+    0.17 - Tue, 28 Aug 2012 13:14:02 GMT
+    0.17 - Mon, 23 Jul 2012 21:36:51 GMT
+    0.17 - Thu, 22 Sep 2011 23:23:45 GMT
+    0.17 - Tue, 11 Sep 2012 14:18:59 GMT
+    0.17 - Sat, 11 Aug 2012 00:58:49 GMT
+    0.17 - Mon, 21 May 2012 11:10:25 GMT
+    0.17 - Fri, 10 Aug 2012 17:45:08 GMT
+    0.17 - Thu, 05 Apr 2012 13:56:18 GMT
+    0.17 - Thu, 09 Feb 2012 13:24:41 GMT
+    0.17 - Thu, 30 Aug 2012 22:29:48 GMT
+    0.17 - Thu, 13 Sep 2012 22:56:46 GMT
+    0.17 - Tue, 11 Sep 2012 12:57:53 GMT
+    0.17 - Thu, 26 Jul 2012 14:17:13 GMT
+    0.17 - Wed, 05 Sep 2012 08:37:24 GMT
+    0.17 - Sat, 11 Aug 2012 01:23:13 GMT
+    0.17 - Tue, 11 Sep 2012 15:15:37 GMT
+    0.17 - Thu, 06 Sep 2012 01:16:12 GMT
+    0.34 - Mon, 28 May 2012 17:24:23 GMT
+    0.17 - Thu, 13 Sep 2012 11:03:23 GMT
+    0.17 - Tue, 03 Apr 2012 14:38:07 GMT
+    0.17 - Tue, 07 Aug 2012 08:16:58 GMT
+    0.17 - Tue, 11 Sep 2012 12:58:50 GMT
+    0.52 - Thu, 09 Jul 2009 18:33:41 GMT
+    0.17 - Sat, 02 Jun 2012 11:51:20 GMT
+    0.17 - Tue, 11 Sep 2012 19:40:45 GMT
+    0.17 - Sat, 07 Jul 2012 17:41:41 GMT
+    0.17 - Sat, 11 Aug 2012 18:37:29 GMT
+    0.17 - Fri, 10 Aug 2012 12:46:43 GMT
+    0.17 - Fri, 10 Aug 2012 21:39:09 GMT
+    0.17 - Thu, 07 Jun 2012 19:58:34 GMT
+    0.17 - Sun, 20 May 2012 09:40:23 GMT
+    0.17 - Sat, 08 Sep 2012 14:12:40 GMT
+    0.17 - Tue, 11 Sep 2012 14:11:47 GMT
+    0.17 - Tue, 11 Sep 2012 12:58:10 GMT
+    0.17 - Wed, 05 Sep 2012 16:15:28 GMT
+    0.17 - Mon, 10 Sep 2012 12:43:10 GMT
+    0.17 - Sat, 18 Aug 2012 15:05:43 GMT
+    0.17 - Sat, 28 Jul 2012 15:00:22 GMT
+    0.17 - Tue, 11 Sep 2012 12:59:05 GMT
+    0.17 - Sun, 19 Aug 2012 03:02:07 GMT
+    0.17 - Sun, 02 Sep 2012 12:59:45 GMT
+    0.17 - Wed, 08 Aug 2012 16:52:03 GMT
+    0.17 - Sun, 02 Sep 2012 20:08:53 GMT
+    0.17 - Sun, 06 May 2012 11:47:38 GMT
+    0.17 - Sat, 04 Aug 2012 07:36:20 GMT
+    0.17 - Tue, 17 Jul 2012 08:45:35 GMT
+    0.17 - Fri, 25 May 2012 10:26:23 GMT
+    0.52 - Wed, 09 Feb 2011 02:02:24 GMT
+    0.17 - Sat, 07 Jul 2012 03:51:23 GMT
+    0.17 - Tue, 11 Sep 2012 14:46:54 GMT
+    0.17 - Sun, 20 May 2012 14:27:23 GMT
+    0.17 - Tue, 11 Sep 2012 13:35:20 GMT
+    0.17 - Tue, 19 Jun 2012 10:17:24 GMT
+    0.17 - Mon, 06 Aug 2012 17:56:30 GMT
+    0.17 - Tue, 03 Jul 2012 19:27:29 GMT
+    0.17 - Tue, 19 Jun 2012 08:36:01 GMT
+    0.17 - Tue, 11 Sep 2012 12:58:26 GMT
+    0.17 - Sat, 08 Sep 2012 15:04:24 GMT
+    0.17 - Thu, 09 Aug 2012 11:11:18 GMT
+    0.17 - Sun, 02 Sep 2012 12:13:14 GMT
+    0.17 - Sat, 08 Sep 2012 14:01:10 GMT
+    0.17 - Fri, 24 Aug 2012 18:03:15 GMT
+    0.17 - Wed, 18 Jul 2012 08:12:31 GMT
+    0.17 - Mon, 30 Apr 2012 09:50:52 GMT
+    0.17 - Sat, 26 May 2012 09:28:57 GMT
+    0.17 - Thu, 06 Sep 2012 21:24:33 GMT
+    0.17 - Fri, 31 Aug 2012 08:06:35 GMT
+    0.17 - Tue, 11 Sep 2012 13:00:15 GMT
+    0.17 - Wed, 08 Aug 2012 15:03:22 GMT
+    0.17 - Sun, 05 Aug 2012 20:39:29 GMT
+    0.17 - Sat, 25 Aug 2012 19:48:05 GMT
+    0.17 - Tue, 11 Sep 2012 13:11:48 GMT
+    0.17 - Thu, 13 Sep 2012 13:43:42 GMT
+    0.17 - Tue, 28 Aug 2012 05:49:40 GMT
+    0.17 - Mon, 14 May 2012 07:44:30 GMT
+    0.17 - Fri, 10 Aug 2012 22:19:04 GMT
+    0.17 - Tue, 11 Sep 2012 13:01:50 GMT
+    0.17 - Tue, 28 Aug 2012 05:29:28 GMT
+    0.17 - Tue, 11 Sep 2012 08:35:17 GMT
+    0.17 - Mon, 07 May 2012 15:22:56 GMT
+    0.34 - Sun, 22 Jul 2012 19:57:52 GMT
+    0.17 - Wed, 15 Aug 2012 17:37:28 GMT
+    0.17 - Fri, 06 Jul 2012 06:26:31 GMT
+    0.17 - Tue, 11 Sep 2012 12:58:01 GMT
+    0.17 - Sat, 19 May 2012 13:14:26 GMT
+    0.17 - Sun, 09 Sep 2012 19:46:26 GMT
+    0.17 - Wed, 08 Aug 2012 17:06:42 GMT
+    0.17 - Sat, 08 Sep 2012 13:02:11 GMT
+    0.17 - Fri, 07 Sep 2012 10:36:04 GMT
+    0.17 - Tue, 12 Jun 2012 19:02:25 GMT
+    0.17 - Sat, 08 Sep 2012 12:58:23 GMT
+    0.17 - Fri, 14 Sep 2012 11:48:46 GMT
+    0.34 - Tue, 03 Jul 2012 13:21:28 GMT
+    0.52 - Mon, 13 Jul 2009 22:43:33 GMT
+    0.17 - Thu, 03 May 2012 10:41:21 GMT
+    0.17 - Fri, 24 Aug 2012 17:18:12 GMT
+    0.17 - Wed, 11 Jul 2012 13:14:44 GMT
+    0.17 - Sat, 25 Aug 2012 09:01:29 GMT
+    0.17 - Tue, 21 Aug 2012 23:43:17 GMT
+    0.17 - Tue, 19 Jun 2012 12:04:10 GMT
+    0.17 - Mon, 18 Jun 2012 08:36:53 GMT
+    0.17 - Tue, 04 Sep 2012 12:20:17 GMT
+    0.17 - Tue, 08 May 2012 21:40:56 GMT
+    0.17 - Tue, 11 Sep 2012 13:35:40 GMT
+    0.17 - Thu, 16 Aug 2012 15:07:03 GMT
+    0.17 - Mon, 28 May 2012 04:49:19 GMT
+    0.17 - Wed, 27 Jun 2012 06:13:44 GMT
+    0.17 - Tue, 04 Sep 2012 11:35:42 GMT
+    0.17 - Tue, 11 Sep 2012 12:59:21 GMT
+    0.17 - Thu, 12 Jul 2012 15:32:43 GMT
+    3.45 - Sat, 16 Aug 2003 20:42:27 GMT
+    0.17 - Sun, 17 Jun 2012 12:38:34 GMT
+    0.17 - Sat, 08 Sep 2012 13:22:47 GMT
+    0.17 - Sat, 02 Jun 2012 09:23:38 GMT
+    0.17 - Tue, 08 May 2012 15:48:28 GMT
+    0.69 - Wed, 07 Dec 2011 01:17:08 GMT
+    0.17 - Sat, 28 Jul 2012 14:01:55 GMT
+    0.17 - Thu, 23 Feb 2012 17:26:20 GMT
+    0.17 - Thu, 23 Aug 2012 14:12:54 GMT
+    0.17 - Sat, 15 Sep 2012 11:32:02 GMT
+    0.17 - Thu, 02 Aug 2012 18:57:58 GMT
+    0.17 - Sat, 08 Sep 2012 13:19:57 GMT
+    0.17 - Tue, 24 Jul 2012 10:01:33 GMT
+    0.17 - Tue, 05 Jun 2012 11:33:44 GMT
+    0.17 - Sat, 01 Sep 2012 08:10:04 GMT
+    0.17 - Tue, 11 Sep 2012 21:38:03 GMT
+    0.17 - Fri, 10 Aug 2012 22:38:09 GMT
+    0.17 - Sun, 15 Jul 2012 13:34:32 GMT
+    0.17 - Thu, 13 Sep 2012 07:32:22 GMT
+    0.17 - Mon, 03 Sep 2012 14:42:26 GMT
+    0.17 - Mon, 26 Mar 2012 08:20:39 GMT
+    0.17 - Tue, 11 Sep 2012 14:25:00 GMT
+    0.17 - Sun, 06 May 2012 22:50:44 GMT
+    0.17 - Thu, 19 Jul 2012 13:13:34 GMT
+    0.17 - Sun, 02 Sep 2012 12:11:47 GMT
+    0.17 - Sat, 08 Sep 2012 13:43:48 GMT
+    0.17 - Wed, 18 Jul 2012 20:48:33 GMT
+    0.17 - Sun, 27 May 2012 14:15:48 GMT
+    0.17 - Sat, 08 Sep 2012 08:37:56 GMT
+    0.17 - Tue, 04 Sep 2012 14:07:00 GMT
+    0.17 - Tue, 11 Sep 2012 14:11:00 GMT
+    0.17 - Fri, 17 Aug 2012 09:39:55 GMT
+    0.17 - Fri, 10 Aug 2012 21:41:18 GMT
+    0.17 - Sat, 08 Sep 2012 14:53:45 GMT
+    0.17 - Wed, 31 Aug 2011 00:39:15 GMT
+    0.17 - Sat, 11 Aug 2012 16:09:26 GMT
+    0.17 - Sat, 01 Sep 2012 11:07:13 GMT
+    0.17 - Wed, 29 Aug 2012 21:44:15 GMT
+    0.17 - Sun, 20 May 2012 15:38:43 GMT
+    0.17 - Mon, 06 Aug 2012 14:30:17 GMT
+    0.17 - Tue, 11 Sep 2012 15:34:00 GMT
+    0.17 - Mon, 21 May 2012 21:52:04 GMT
+    0.17 - Mon, 30 Jul 2012 17:16:37 GMT
+    0.17 - Sat, 18 Aug 2012 22:57:43 GMT
+    0.17 - Sun, 05 Aug 2012 11:39:24 GMT
+    0.17 - Wed, 11 Jul 2012 05:48:33 GMT
+    0.17 - Tue, 18 Oct 2011 18:06:50 GMT
+    0.17 - Tue, 22 May 2012 15:21:37 GMT
+    0.17 - Mon, 04 Jun 2012 15:45:12 GMT
+    0.17 - Fri, 10 Aug 2012 19:19:48 GMT
+    0.17 - Sat, 11 Aug 2012 20:06:10 GMT
+    0.17 - Sun, 05 Aug 2012 16:04:24 GMT
+    0.17 - Sat, 08 Sep 2012 13:30:45 GMT
+    0.17 - Wed, 09 May 2012 10:35:28 GMT
+    0.17 - Mon, 10 Sep 2012 14:07:29 GMT
+    0.17 - Tue, 14 Feb 2012 10:42:16 GMT
+    0.17 - Wed, 30 May 2012 01:21:56 GMT
+    0.17 - Wed, 22 Aug 2012 19:40:28 GMT
+    0.17 - Tue, 12 Jun 2012 04:01:17 GMT
+    0.17 - Sat, 08 Sep 2012 13:30:07 GMT
+    0.17 - Sun, 13 May 2012 15:30:24 GMT
+    0.17 - Sun, 26 Aug 2012 08:41:03 GMT
+    0.17 - Tue, 11 Sep 2012 02:35:58 GMT
+    0.17 - Mon, 12 Mar 2012 19:38:49 GMT
+    0.17 - Fri, 14 Sep 2012 08:51:29 GMT
+    0.17 - Sat, 07 Jul 2012 14:39:55 GMT
+    0.17 - Sat, 08 Sep 2012 15:11:30 GMT
+    0.17 - Wed, 04 Jul 2012 01:08:39 GMT
+    0.17 - Sun, 22 Jul 2012 17:01:34 GMT
+    0.17 - Tue, 29 May 2012 19:00:31 GMT
+    0.17 - Thu, 16 Aug 2012 09:46:47 GMT
+    0.17 - Sat, 15 Sep 2012 13:02:12 GMT
+    0.17 - Thu, 30 Aug 2012 09:38:44 GMT
+    0.17 - Thu, 30 Aug 2012 07:43:12 GMT
+    0.17 - Tue, 07 Aug 2012 07:37:04 GMT
+    0.17 - Sat, 08 Sep 2012 14:11:49 GMT
+    0.17 - Fri, 20 Jul 2012 14:06:55 GMT
+    0.17 - Tue, 11 Sep 2012 12:57:26 GMT
+    0.17 - Sat, 08 Sep 2012 13:38:05 GMT
+    0.17 - Sun, 17 Jun 2012 12:40:22 GMT
+    0.17 - Tue, 11 Sep 2012 14:14:11 GMT
+    0.17 - Fri, 10 Aug 2012 21:41:56 GMT
+    0.17 - Sun, 13 May 2012 03:14:13 GMT
+    0.17 - Wed, 05 Sep 2012 16:15:39 GMT
+    0.17 - Sun, 26 Aug 2012 17:30:36 GMT
+    0.17 - Mon, 27 Aug 2012 15:07:54 GMT
+    0.17 - Sun, 19 Aug 2012 21:02:03 GMT
+    0.17 - Fri, 01 Jun 2012 10:30:10 GMT
+    0.17 - Sat, 11 Aug 2012 01:50:49 GMT
+    0.17 - Wed, 22 Aug 2012 19:43:58 GMT
+    0.17 - Mon, 27 Aug 2012 15:34:12 GMT
+    0.17 - Tue, 29 May 2012 18:32:21 GMT
+    0.17 - Thu, 24 May 2012 11:18:02 GMT
+    0.17 - Tue, 19 Jun 2012 10:27:14 GMT
+    0.17 - Mon, 23 Jul 2012 13:20:15 GMT
+    0.17 - Fri, 06 Jul 2012 05:52:39 GMT
+    0.17 - Tue, 31 Jul 2012 15:48:22 GMT
+    0.17 - Thu, 06 Sep 2012 09:06:54 GMT
+    0.17 - Thu, 16 Aug 2012 13:58:53 GMT
+    0.17 - Tue, 04 Sep 2012 12:02:19 GMT
+    0.17 - Sat, 18 Aug 2012 05:02:04 GMT
+    0.17 - Sat, 25 Aug 2012 00:07:41 GMT
+    0.17 - Sun, 20 May 2012 14:42:22 GMT
+    0.17 - Tue, 11 Sep 2012 12:58:58 GMT
+    0.34 - Tue, 07 Aug 2012 14:03:22 GMT
+    0.17 - Tue, 27 Mar 2012 21:15:26 GMT
+    0.17 - Tue, 07 Aug 2012 20:25:37 GMT
+    0.17 - Sat, 01 Sep 2012 17:00:33 GMT
+    0.17 - Sat, 11 Aug 2012 01:19:06 GMT
+    0.17 - Mon, 06 Aug 2012 09:53:29 GMT
+    0.17 - Wed, 22 Aug 2012 20:09:25 GMT
+    0.17 - Sat, 18 Aug 2012 09:28:39 GMT
+    0.17 - Tue, 24 Jul 2012 08:40:22 GMT
+    0.17 - Tue, 14 Aug 2012 13:09:12 GMT
+    0.17 - Thu, 05 Jul 2012 15:14:06 GMT
+    0.17 - Sun, 19 Aug 2012 10:10:05 GMT
+    0.17 - Sun, 17 Jun 2012 23:05:59 GMT
+    0.17 - Sat, 05 Nov 2011 01:16:05 GMT
+    0.17 - Tue, 26 Jun 2012 15:21:36 GMT
+    0.17 - Wed, 20 Jun 2012 14:51:39 GMT
+    0.17 - Fri, 08 Jun 2012 14:56:49 GMT
+    0.17 - Tue, 11 Sep 2012 13:21:08 GMT
+    0.17 - Sat, 08 Sep 2012 12:59:56 GMT
+    0.17 - Sun, 26 Aug 2012 19:27:07 GMT
+    0.17 - Sat, 08 Sep 2012 15:22:35 GMT
+    0.17 - Thu, 06 Sep 2012 23:06:14 GMT
+    0.17 - Tue, 10 Jul 2012 05:38:47 GMT
+    0.17 - Sun, 27 May 2012 17:13:04 GMT
+    0.17 - Mon, 13 Aug 2012 15:08:14 GMT
+    0.17 - Tue, 07 Aug 2012 21:25:17 GMT
+    0.17 - Thu, 05 Jul 2012 15:14:14 GMT
+    0.17 - Thu, 30 Aug 2012 16:02:09 GMT
+    0.17 - Sun, 02 Sep 2012 13:37:15 GMT
+    0.17 - Wed, 15 Aug 2012 15:41:52 GMT
+    0.17 - Mon, 10 Sep 2012 12:43:13 GMT
+    0.17 - Sat, 08 Sep 2012 14:43:08 GMT
+    0.17 - Thu, 13 Sep 2012 13:29:02 GMT
+    0.17 - Wed, 11 Jul 2012 12:52:54 GMT
+    0.17 - Sun, 27 May 2012 14:46:06 GMT
+    0.17 - Mon, 20 Aug 2012 11:14:02 GMT
+    0.17 - Mon, 13 Aug 2012 15:28:19 GMT
+    0.17 - Sat, 08 Sep 2012 17:02:45 GMT
+    0.17 - Fri, 10 Aug 2012 23:21:42 GMT
+    0.17 - Thu, 10 May 2012 21:08:47 GMT
+    0.17 - Fri, 31 Aug 2012 15:13:32 GMT
+    0.17 - Fri, 31 Aug 2012 06:25:37 GMT
+    0.17 - Tue, 11 Sep 2012 14:36:17 GMT
+    0.17 - Thu, 07 Jun 2012 15:42:59 GMT
+    0.17 - Sat, 08 Sep 2012 19:26:14 GMT
+    0.17 - Fri, 10 Aug 2012 18:03:20 GMT
+    0.17 - Tue, 26 Jun 2012 03:19:10 GMT
+    0.17 - Tue, 11 Sep 2012 12:59:02 GMT
+    0.17 - Thu, 14 Jun 2012 11:02:49 GMT
+    0.17 - Sat, 15 Sep 2012 12:57:02 GMT
+    0.17 - Wed, 08 Aug 2012 09:35:52 GMT
+    0.17 - Sat, 26 May 2012 16:22:26 GMT
+    0.17 - Thu, 24 May 2012 13:53:11 GMT
+    0.17 - Fri, 10 Aug 2012 23:13:35 GMT
+    0.17 - Sun, 29 Jul 2012 13:36:06 GMT
+    0.17 - Tue, 29 May 2012 14:00:27 GMT
+    0.17 - Thu, 26 Jul 2012 22:33:18 GMT
+    0.17 - Tue, 11 Sep 2012 13:32:49 GMT
+    0.17 - Tue, 19 Jun 2012 09:11:49 GMT
+    0.17 - Sat, 14 Jul 2012 08:45:28 GMT
+    0.17 - Sat, 11 Aug 2012 07:18:56 GMT
+    0.17 - Tue, 07 Aug 2012 21:05:38 GMT
+    0.17 - Thu, 26 Jul 2012 15:45:51 GMT
+    0.17 - Sat, 21 Apr 2012 08:52:33 GMT
+    0.17 - Fri, 03 Aug 2012 01:42:03 GMT
+    0.17 - Wed, 15 Aug 2012 23:45:20 GMT
+    0.17 - Thu, 13 Sep 2012 13:38:23 GMT
+    0.17 - Mon, 28 May 2012 20:30:41 GMT
+    0.17 - Wed, 12 Sep 2012 18:37:16 GMT
+    0.17 - Sat, 19 May 2012 09:12:58 GMT
+    0.17 - Tue, 11 Sep 2012 14:12:50 GMT
+    0.17 - Fri, 10 Aug 2012 20:31:45 GMT
+    0.17 - Tue, 11 Sep 2012 13:16:02 GMT
+    0.17 - Wed, 05 Sep 2012 14:49:57 GMT
+    0.17 - Fri, 15 Jun 2012 03:07:56 GMT
+    0.17 - Mon, 16 Jul 2012 04:21:36 GMT
+    0.17 - Fri, 10 Aug 2012 23:15:11 GMT
+    0.17 - Sat, 08 Sep 2012 13:58:01 GMT
+    0.17 - Thu, 16 Aug 2012 19:03:48 GMT
+    0.17 - Sun, 26 Aug 2012 17:27:57 GMT
+    0.17 - Sun, 12 Aug 2012 07:11:01 GMT
+    0.17 - Sun, 20 May 2012 08:38:49 GMT
+    0.17 - Tue, 24 Apr 2012 16:36:36 GMT
+    0.17 - Fri, 27 Jul 2012 22:49:01 GMT
+    0.17 - Wed, 30 May 2012 12:03:15 GMT
+    0.17 - Sat, 28 Jul 2012 09:38:08 GMT
+    0.17 - Sun, 19 Aug 2012 07:43:48 GMT
+    0.17 - Tue, 11 Sep 2012 13:25:37 GMT
+    0.17 - Wed, 15 Aug 2012 10:31:53 GMT
+    0.17 - Sat, 08 Sep 2012 09:44:18 GMT
+    0.17 - Sun, 17 Jun 2012 16:37:28 GMT
+    0.17 - Sat, 25 Aug 2012 08:12:00 GMT
+    0.17 - Fri, 28 Oct 2011 17:41:58 GMT
+    0.17 - Tue, 11 Sep 2012 14:48:11 GMT
+    0.17 - Wed, 12 Sep 2012 16:40:05 GMT
+    0.17 - Mon, 28 May 2012 05:08:48 GMT
+    0.17 - Thu, 17 May 2012 17:47:02 GMT
+    0.17 - Tue, 26 Jun 2012 14:57:31 GMT
+    0.17 - Wed, 23 May 2012 13:54:23 GMT
+    0.17 - Thu, 31 May 2012 16:01:50 GMT
+    0.17 - Sat, 08 Sep 2012 23:57:32 GMT
+    0.17 - Wed, 11 Jul 2012 09:10:39 GMT
+    0.17 - Wed, 29 Aug 2012 10:33:42 GMT
+    0.17 - Wed, 12 Sep 2012 18:37:13 GMT
+    0.17 - Sat, 11 Aug 2012 01:17:26 GMT
+    0.17 - Thu, 23 Feb 2012 19:15:14 GMT
+    0.17 - Tue, 12 Jun 2012 21:26:01 GMT
+    0.17 - Sat, 08 Sep 2012 13:49:40 GMT
+    0.17 - Sat, 08 Sep 2012 12:54:31 GMT
+    0.17 - Mon, 30 Jul 2012 15:39:27 GMT
+    0.17 - Thu, 12 Jan 2012 00:55:52 GMT
+    0.17 - Wed, 11 Jul 2012 12:52:26 GMT
+    0.17 - Sat, 08 Sep 2012 13:56:57 GMT
+    0.17 - Tue, 14 Aug 2012 18:55:17 GMT
+    0.17 - Tue, 18 Oct 2005 20:27:18 GMT
+    0.17 - Mon, 17 Sep 2012 14:01:19 GMT
+    0.17 - Mon, 11 Jun 2012 16:23:18 GMT
+    2.07 - Mon, 27 Sep 2010 09:07:24 GMT
+    0.17 - Thu, 16 Aug 2012 18:04:43 GMT
+    0.17 - Thu, 31 May 2012 17:52:53 GMT
+    0.17 - Sat, 26 May 2012 05:30:24 GMT
+    0.17 - Thu, 26 Jul 2012 11:36:33 GMT
+    0.17 - Wed, 08 Aug 2012 14:13:23 GMT
+    0.17 - Tue, 11 Sep 2012 03:00:43 GMT
+  referer: 
+    9.18 - http://shop.ebay.fr/Perles-au-detail-/i.html?_sacat=10244&_src=allCat
+    9.18 - http://shop.ebay.fr/Jouets-Jeux-anciens-/i.html?_sacat=66599&_src=allCat
+    9.18 - http://shop.ebay.fr/Porte-cles-/i.html?_sacat=77820&_src=allCat
+    0.83 - http://shop.ebay.fr/ebayadvsearch/_?_rdc=1&_sacat=0&cmd=Blend&cmd=Blend
+    9.52 - http://shop.ebay.fr/Moto-Pieces-Accessoires-/i.html?_sacat=14780&_src=allCat
+    15.03 - http://shop.ebay.fr/Accastillage-Moteur-Pieces-/i.html?_sacat=128850&_src=allCat
+    9.02 - http://shop.ebay.fr/GPS-accessoires-/i.html?_sacat=140231&_src=allCat
+    9.35 - http://shop.ebay.fr/allcategories/all-categories?_rdc=1
+    9.18 - http://shop.ebay.fr/Arts-Artisanat-Decoration-/i.html?_sacat=120641&_src=allCat
+    10.18 - http://shop.ebay.fr/Informatique-Reseaux-/i.html?_sacat=58058&_src=allCat
+    9.35 - http://shop.ebay.fr/Outillage-Professionnel-/i.html?_sacat=118570&_src=allCat
+  pragma: 
+    100.00 - no-cache
+  date: 
+    1.84 - Tue, 18 Sep 2012 10:09:23 GMT
+    0.50 - Thu, 13 Sep 2012 07:31:27 GMT
+    0.34 - Thu, 05 Jul 2012 13:53:43 GMT
+    1.51 - Tue, 17 Jul 2012 08:01:00 GMT
+    0.67 - Wed, 29 Aug 2012 15:04:05 GMT
+    0.17 - Mon, 09 Jul 2012 08:42:39 GMT
+    0.17 - Thu, 16 Aug 2012 14:02:58 GMT
+    0.34 - Tue, 18 Sep 2012 10:09:24 GMT
+    9.38 - Tue, 18 Sep 2012 12:53:41 GMT
+    0.34 - Thu, 30 Aug 2012 09:46:28 GMT
+    7.71 - Tue, 18 Sep 2012 12:53:32 GMT
+    9.38 - Tue, 18 Sep 2012 12:53:37 GMT
+    0.50 - Tue, 18 Sep 2012 10:09:29 GMT
+    0.67 - Tue, 18 Sep 2012 10:08:56 GMT
+    0.17 - Tue, 18 Sep 2012 12:53:35 GMT
+    1.51 - Mon, 03 Sep 2012 11:18:43 GMT
+    5.70 - Tue, 18 Sep 2012 12:53:31 GMT
+    9.55 - Tue, 18 Sep 2012 12:53:40 GMT
+    8.38 - Tue, 18 Sep 2012 12:53:30 GMT
+    0.50 - Tue, 18 Sep 2012 09:52:31 GMT
+    3.18 - Tue, 18 Sep 2012 12:13:28 GMT
+    0.17 - Tue, 18 Sep 2012 12:53:29 GMT
+    0.50 - Mon, 03 Sep 2012 11:18:32 GMT
+    0.34 - Tue, 18 Sep 2012 10:09:27 GMT
+    0.17 - Thu, 05 Jul 2012 13:53:55 GMT
+    9.05 - Tue, 18 Sep 2012 12:53:42 GMT
+    0.50 - Mon, 20 Aug 2012 10:29:11 GMT
+    5.03 - Tue, 18 Sep 2012 12:53:33 GMT
+    9.21 - Tue, 18 Sep 2012 12:53:36 GMT
+    2.68 - Tue, 18 Sep 2012 12:53:27 GMT
+    9.05 - Tue, 18 Sep 2012 12:53:38 GMT
+    0.50 - Tue, 18 Sep 2012 12:53:28 GMT
+    0.17 - Mon, 03 Sep 2012 15:31:57 GMT
+    0.17 - Thu, 30 Aug 2012 08:08:17 GMT
+  :path: 
+    0.15 - /m/mjyffPTliisO-CYgoj3zxyQ/140.jpg
+    0.15 - /m/mDgvACZ78PAA2FsY1_EJeGQ/140.jpg
+    0.15 - /m/mfDrtrO2Ur7JU1wpJQiml1w/140.jpg
+    0.31 - /m/mFmx9_1J_sTLkn9XZhw6QXw/140.jpg
+    0.15 - /m/mPqhHJnscoTEpnESHT0Yymg/140.jpg
+    0.15 - /m/mnyEw2CcAAXBoeMCbbdwoww/140.jpg
+    0.15 - /allcategories/all-categories?_rdc=1
+    0.15 - /m/maHYlZNxbB5op3j3xt28bLg/140.jpg
+    0.15 - /m/mNtK7QSs5cil0WSOQqXMlgQ/140.jpg
+    0.15 - /m/mEfka7GiCNCoEh33glFM9mQ/140.jpg
+    0.15 - /m/mIPVhFw9K5zYYmt6XAli2ww/140.jpg
+    0.15 - /eboxapps/ClassicSearch/js/fr_FR/759/SearchPageAppSpec_FRClassicSearch-allcategories_75915250293_3_fr_FR.js
+    0.15 - /m/mgyHxHIQMA0yi-6n50T2-Lw/140.jpg
+    0.15 - /m/m7bCaMX25uWJXU7jfqyVpgQ/140.jpg
+    0.15 - /m/muGRuMVYo8RiYwphHneAI7A/140.jpg
+    0.15 - /m/mJGt6B5QEEEWrmh_QKmlQ6g/140.jpg
+    0.15 - /m/m7WF3HCpFyK2Na2aKKS8QIw/140.jpg
+    0.15 - /m/m8zLvhatcKp5j9TFAK_Grbg/140.jpg
+    0.15 - /m/mJy_babp5_TdraO8Hg71vYg/140.jpg
+    0.15 - /m/mW8y0K7U6AXRL6K7yYUfMCA/140.jpg
+    0.15 - /m/m67ostFYx_ARfY_NfAqcsdA/140.jpg
+    0.15 - /m/mGTLOB-ctVLtPkJcT4zf_cA/140.jpg
+    0.15 - /m/mH3k_f3tfR7IWNkjilM4IOw/140.jpg
+    0.15 - /m/m-oPnpeMyqGghQYmF66-nww/140.jpg
+    0.15 - /m/mNrw_7ARCjQvse4VQDtFG3w/140.jpg
+    0.15 - /m/mwPoVsM9Iw07KXXLHPMrlmw/140.jpg
+    0.15 - /m/mwy9N_gzidc0rfE7XnwzKIQ/140.jpg
+    0.15 - /m/mjfCKunODZwbobZ_i7MU3Bw/140.jpg
+    0.15 - /pict/3305639896564040_40.jpg
+    0.15 - /m/mOsTcRoTpWRS2m0LbXAIwxg/140.jpg
+    0.15 - /pict/2511505973354040_1.jpg
+    0.15 - /m/mFle-_RlX9iC03E9K4vwhog/140.jpg
+    0.15 - /m/mnO-rzgLlYNeiDNg9e5Mzkw/140.jpg
+    0.15 - /m/mQdZCnUhB7w8BOfTANlvWFw/140.jpg
+    0.15 - /m/mbp_hr58EyTkXVRf5vifjbA/140.jpg
+    0.15 - /m/moUwZ54p7-KSsuXYYaGHBTw/140.jpg
+    0.15 - /m/megChdsq1pab32AQfAFfrMw/140.jpg
+    0.15 - /m/mHPrN9kaKG00EQ1rUJ-4H5g/140.jpg
+    0.15 - /m/mgFXbdRCDMzokAKduLrJPtw/140.jpg
+    0.15 - /m/mDciiV94SrjwVSDcST21HdQ/140.jpg
+    0.15 - /m/m8jVrxxIDYD83u2DMFA1ZpQ/140.jpg
+    0.15 - /m/mgGdrkQPny_iDO2oFTkS2oA/140.jpg
+    0.15 - /m/mbfbf129bpsslfyZIujpgSA/140.jpg
+    0.15 - /m/mO4rrRpmlLbwdPSmDJkyvLg/140.jpg
+    0.15 - /m/mn474JEe_qFJAg5Znou5knw/140.jpg
+    0.15 - /pict/2610964184704040_1.jpg
+    0.15 - /pict/2710071109554040_2.jpg
+    0.15 - /m/mPmfpoZBYBoWpXEbsfFdCWQ/140.jpg
+    0.15 - /m/mDuRZKvgxQzRd94H4N-YKBA/140.jpg
+    0.15 - /m/m1CxNtxbl7nTS9bo4egy9XQ/140.jpg
+    0.15 - /m/muDR3tLqmQY8kfGIo-fWMWA/140.jpg
+    0.15 - /pict/2510006685134040_6.jpg
+    0.15 - /m/mvemQMBy-hr34i1Lc2MDGTQ/140.jpg
+    0.15 - /m/mHkD7dbyGXMSVfc6Fl7NqUw/140.jpg
+    0.15 - /m/mzcCp9Otdipzxta14u9x9fg/140.jpg
+    0.15 - /m/mp6ozJSXb-UODQvGA8vsjnA/140.jpg
+    0.15 - /m/m0b-gv-EOSnvHnPKLw5wOWA/140.jpg
+    0.15 - /m/mZXGFpgf0eb0I6JyZf8Xu5A/140.jpg
+    0.15 - /m/moTGMN8gaWLyn40LXPOnRuQ/140.jpg
+    0.15 - /m/mFhtKbLCpvwX6f9qVXZliHw/140.jpg
+    0.15 - /pict/3103799543124040_9.jpg
+    0.15 - /m/mu_Hb_sjRzm8BePs309sSrw/140.jpg
+    0.15 - /m/m3XtU4F3r7YVmfZ9fS6JmRw/140.jpg
+    0.15 - /m/mJhw69jcndKWYDei_WRJkmA/140.jpg
+    0.15 - /pict/2510331342744040_3.jpg
+    0.15 - /m/mUJGgwYR3lNGkU0XEt_i7Mg/140.jpg
+    0.15 - /m/mn7xOr0AW9AUVvE_Ub9BSvw/140.jpg
+    0.15 - /m/mfYrxUnS4xkdp5my-o5NrcQ/140.jpg
+    0.15 - /pict/2609620063744040_5.jpg
+    0.15 - /m/mnjJVyO2sETQeW_7Rla9pBQ/140.jpg
+    0.15 - /m/mDr8Csm-TL4Y05xB5Ul3UOg/140.jpg
+    0.15 - /m/mzzPm_wsdSfnaZlNHNC5FNg/140.jpg
+    0.15 - /m/mwVzR4GaG_rKXFs5yLU1LFg/140.jpg
+    0.15 - /pict/2610790686064040_2.jpg
+    0.15 - /m/mTOaLH3oJqzRfJ3HJolxQBg/140.jpg
+    0.15 - /m/meaqEJ0jniJiXpIZOKITjnQ/140.jpg
+    0.15 - /m/mnnXSRjW7Om69pOtlpA5ykw/140.jpg
+    0.15 - /m/mdvH5iKZuyDvvqg3GkvWm6Q/140.jpg
+    0.15 - /m/m4T42A9y_cVqfgO3bKrWGsw/140.jpg
+    0.15 - /m/mzpUES27ixpyWewONOpv4Og/140.jpg
+    0.15 - /m/mLiwb0p4_K42GAOAip8FwSg/140.jpg
+    0.15 - /m/mUhxZvC7IyOkCX5iga0NKEQ/140.jpg
+    0.15 - /m/mF8PNFUj7jVphoaYwAXQMxg/140.jpg
+    0.15 - /m/m2ni6Bc9LXqd8ORcwpcQ0UQ/140.jpg
+    0.31 - /m/mKYE0dsaQcXgIWuidrmJNCQ/140.jpg
+    0.15 - /m/mgzNYlJcsVQNO6T2OWWm9pw/140.jpg
+    0.15 - /m/moeCPJyRg0QYQhXNv8cCxaw/140.jpg
+    0.15 - /m/m4m491s2J45A6bh1F13MUoQ/140.jpg
+    0.15 - /m/mScYyH_c6WXg7Kj7i-j7UAg/140.jpg
+    0.15 - /m/mF7CsKonbCLXzIhjVVKtrcA/140.jpg
+    0.15 - /m/mqZ-WL5ab_DRXQn79eVEPWQ/140.jpg
+    0.15 - /m/mFyJyHKIY77iOBxO_EIWBqw/140.jpg
+    0.15 - /m/mEB1lLWbkjgVKj6QFqzQn2g/140.jpg
+    0.15 - /pict/2609620472294040_5.jpg
+    0.15 - /m/mdWgq6ZSgvE_GAKgxECgLuQ/140.jpg
+    0.15 - /m/mcQoiffD77OE7wOVnysMKVA/140.jpg
+    0.15 - /m/mSa8PzU0u0o_FjmnuH4Gmcg/140.jpg
+    0.15 - /m/mNYFMdLOrxOdyWLuaTW7CYw/140.jpg
+    0.15 - /pict/2508713527564040_12.jpg
+    0.15 - /pict/1307136127824040_4.jpg
+    0.15 - /m/mPjJ63KOx3cL1iHYWgGl8tQ/140.jpg
+    0.15 - /m/mEwFk-ATr2UkI85lPQWarcg/140.jpg
+    0.15 - /m/mhIGqicUk0S4ZyU6aOgB90Q/140.jpg
+    0.15 - /Moto-Pieces-Accessoires-/i.html?_sacat=14780&_src=allCat
+    0.15 - /ebayadvsearch/_?_rdc=1&_sacat=0&cmd=Blend&cmd=Blend
+    0.31 - /m/mDVV0qVHYKDU96luS5V_53g/140.jpg
+    0.15 - /m/mjzu6Q1CMHqK-72FsU6WBCw/140.jpg
+    0.15 - /m/mIoUUWNaqKxC1K2YT8t3iEg/140.jpg
+    0.15 - /m/mfS0YYkneNEXcYFxixIOF8g/140.jpg
+    0.15 - /pict/2306760239244040_14.jpg
+    0.15 - /m/mx7zok9z33SDtKibdTavB-A/140.jpg
+    0.15 - /aw/pics/ads/local/sprFormatTabsSpaced2.gif
+    0.15 - /m/mWQNpQR5euFT4h5kohtU0PA/140.jpg
+    0.15 - /m/mBy9zc-SbCCXrHhKjgvhguw/140.jpg
+    0.15 - /m/mu6QEJonVipxctYlQ8a0NBw/140.jpg
+    0.15 - /m/mYSCXNavw1Wwm0o7KIJIdPw/140.jpg
+    0.15 - /pict/2306462758674040_18.jpg
+    0.15 - /m/mJfZbmps6OD1hdS4Debv-UA/140.jpg
+    0.15 - /m/m63IsnW3pB5oypqOOmiDUmA/140.jpg
+    0.15 - /m/mMklri58dsI4_5_AD1JBFeQ/140.jpg
+    0.15 - /m/mFUWxsgY5Wo4kSSjI_F6Zng/140.jpg
+    0.15 - /m/m9SUbzggjP8GBmB_GTFtKiw/140.jpg
+    0.15 - /m/mGkzEs2JXq17cpHCIV_hKJA/140.jpg
+    0.15 - /m/mejaFjmovELcHGi7hJ-TfmQ/140.jpg
+    0.15 - /m/mTJrFlDcU2zLjEEIgcSe80A/140.jpg
+    0.15 - /m/m7YQ-0V1L6tnK7fiXQvyu8A/140.jpg
+    0.15 - /m/mDvV9_x7Crl2P23ZoSyYyrg/140.jpg
+    0.15 - /m/myHuCWIUWq9XlpJfxDLcJWw/140.jpg
+    0.15 - /Porte-cles-/i.html?_sacat=77820&_src=allCat
+    0.15 - /pict/2610233758394040_1.jpg
+    0.15 - /m/mYZ3oGvmwDPZsd5zACqv9yQ/140.jpg
+    0.15 - /m/mqnEfEvja0OfIy_FdDGJ0dA/140.jpg
+    0.15 - /m/mdxWei3VUNtLmVUV2Ml3sdg/140.jpg
+    0.15 - /m/mvWc1c62WsXza2REELO2_Fg/140.jpg
+    0.15 - /m/mJrCza414sSuoInmwl1hH0w/140.jpg
+    0.15 - /m/myBrWW-kMzPtDSbF5WFf5cg/140.jpg
+    0.15 - /pict/2609048164504040_10.jpg
+    0.15 - /m/msxELqtkX58BmMugjH0ITKQ/140.jpg
+    0.15 - /m/mdmxxNvEjf6f8PfMTsD6yug/140.jpg
+    0.15 - /m/m78ZRFBzYwkbP99IDOeMDjg/140.jpg
+    0.15 - /pict/3006166700714040_8.jpg
+    0.15 - /m/m0xweANYxmISr91KeW4Gt3w/140.jpg
+    0.15 - /m/msN59bD0QqKd76reNhde_LQ/140.jpg
+    0.15 - /m/mRZfa0PvF70rk57xMfn0J7Q/140.jpg
+    0.15 - /m/m3_h3WgkiFHz03dzE8CHkxw/140.jpg
+    0.15 - /m/mQj6IMU5xn3LtsQDdyvpiiw/140.jpg
+    0.15 - /m/m4V5J3kw437fRN8rszq9U4Q/140.jpg
+    0.15 - /m/mYDWlZ6wNQs6sDqleu7GhbQ/140.jpg
+    0.15 - /m/mFSzv87IyXWnMaN9W-FTQMw/140.jpg
+    0.15 - /aw/pics/ads/local/sprPagination.png
+    0.15 - /m/mjg3bMZ0-ygzwwHvRqwNy5w/140.jpg
+    0.15 - /m/mnZOn03WOhU8ByV0jVWAFUw/140.jpg
+    0.15 - /m/m7opBaG5Xryz1b5enSUVrVw/140.jpg
+    0.15 - /m/mqJbg-g6yuV83SzCgeMP_fg/140.jpg
+    0.15 - /m/mVDTealoL1xMQVctJhjArtQ/140.jpg
+    0.15 - /m/m9qVUajyjMwgR3dCMd7beYw/140.jpg
+    0.15 - /pict/2809673256494040_1.jpg
+    0.15 - /pict/3007311729794040_4.jpg
+    0.15 - /m/maM7vmzebk2saAB6SqBHusw/140.jpg
+    0.31 - /m/mHF0kvGkGcP4Y43slg3ayBg/140.jpg
+    0.15 - /m/mPbEfllQtkOwTXQOl6Ui9EQ/140.jpg
+    0.15 - /m/mSIL3eOXGvFCWUJnvAgIM2Q/140.jpg
+    0.15 - /m/mrhhVA1QMkxAFYZsGU9mZcA/140.jpg
+    0.15 - /m/m4W4UPrEGsniEhfS9lUCagA/140.jpg
+    0.15 - /pict/2708998570464040_5.jpg
+    0.15 - /m/m7J8EGchMhhAlGVJyC5ScyQ/140.jpg
+    0.15 - /m/mFlfZp-6Mb1Y_I5Ts18qifQ/140.jpg
+    0.15 - /roversync/?&mpt=1347972809006
+    0.15 - /pict/2306206163884040_22.jpg
+    0.15 - /m/mg2DmE3Yu6ayO2uq8HoW_-A/140.jpg
+    0.15 - /m/mAQyqnYrUUosy4UEdaXIyUw/140.jpg
+    0.15 - /m/mYAUCSKCsiTLVkG40WvQGUA/140.jpg
+    0.15 - /pict/2610726038414040_1.jpg
+    0.15 - /pict/2710565372854040_1.jpg
+    0.15 - /pict/3307566933824040_3.jpg
+    0.15 - /roversync/?site=71&stg=0&cguid=d970bdb61390a54c2621af61fee054a4&mpt=1347972808118
+    0.15 - /m/mVE62L2jx_lo96uOY7rPU-Q/140.jpg
+    0.15 - /m/moq_3zUAdC576gFfo7h6Kbg/140.jpg
+    0.15 - /Jouets-Jeux-anciens-/i.html?_sacat=66599&_src=allCat
+    0.15 - /m/m3UXq4mnOQKLUe88yCQo6QQ/140.jpg
+    0.15 - /m/mYcSHtaucNbA3ABEK6fAueA/140.jpg
+    0.15 - /pict/2510006527434040_5.jpg
+    0.15 - /m/m99TqFZsfVJiIeJ_ZmPVGCA/140.jpg
+    0.15 - /m/mxxD5I6SFBvh0yTbIN12SEg/140.jpg
+    0.15 - /pict/3103799537944040_8.jpg
+    0.15 - /m/ma0vCrVc-V0DxFH-a_8C4SQ/140.jpg
+    0.31 - /m/mCAcHJmfulV4cDu4yO86Gxw/140.jpg
+    0.15 - /m/m2CUR8huMxBg5SzFP5oaucQ/140.jpg
+    0.15 - /m/mGBB-2A2V2myVJ8ZhZ1pvBQ/140.jpg
+    0.15 - /m/mb-ZdKK2aJ7gFcNLXBXTmDw/140.jpg
+    0.15 - /pict/3307551838174040_6.jpg
+    0.15 - /pict/3007784709814040_1.jpg
+    0.15 - /m/mp80IA1KpSs7cH5oJ65oGRQ/140.jpg
+    0.15 - /pict/3305634832604040_20.jpg
+    0.15 - /m/m6VHz5dXSmyugMN-5UNJAhg/140.jpg
+    0.15 - /m/mepZIut1aljiQTPefFq92Dg/140.jpg
+    0.15 - /pict/2510655112764040_2.jpg
+    0.15 - /m/mNP6U0nLmlnvT5Cl9czXbBA/140.jpg
+    0.15 - /m/mvCoWdri1WGX88Ba8GmpmOA/140.jpg
+    0.15 - /m/mZ-qr7RhsXuark8-3Kw6nZA/140.jpg
+    1.69 - /header/css/all.min?combo=51&rvr=56&taas=1&siteid=71
+    1.39 - /eboxapps/ClassicSearch/css/fr_FR/759/SearchPageAppSpec_FRClassicSearch-blending_75915312205_fr_FR.css
+    0.46 - /aw/pics/cmp/ui/sproverlaycrnspntsrt.png
+    0.15 - /m/mV8riptDmAMAY0jaFG6U_pA/140.jpg
+    0.15 - /aw/pics/ads/local/AllCatImages/293.png
+    0.15 - /m/mjOEn9IGlbtKTDqb4TOj9jw/140.jpg
+    1.69 - /eboxapps/ClassicSearch/js/fr_FR/759/SYS-400_vjo_75915250293_opta_fr_FR.js
+    0.15 - /m/mUBpWrfK8rmgH4woOlEJ1uA/140.jpg
+    0.46 - /eboxapps/ClassicSearch/js/fr_FR/759/SYS-400_vjo_75915250293_2_fr_FR.js
+    0.15 - /m/mfIVorZVDYrxyExtvy-rGFg/140.jpg
+    0.15 - /pict/2307110762974040_11.jpg
+    0.15 - /m/muItJHKRlfMQpyaivorLlEA/140.jpg
+    0.15 - /pict/3306513111414040_14.jpg
+    0.15 - /pict/2609974786294040_1.jpg
+    0.15 - /m/mQSvDXtzcmzkRKMgsYs97Rg/140.jpg
+    0.15 - /m/mfK-AhzS_ywsdon96m6Ip0w/140.jpg
+    0.15 - /m/m37SGHoQVYbGSndlvUvHV2g/140.jpg
+    0.15 - /m/mLbapzqh4tmm7wz01h1Qa1Q/140.jpg
+    0.15 - /m/mwTr9euNtNDYH9bx0lyhJ1Q/140.jpg
+    0.15 - /m/mu4WYr4w6KROOiZyx1jYoOQ/140.jpg
+    0.15 - /m/mCOiNfSdk4qaUBH9jqxqPkA/140.jpg
+    0.15 - /m/mgkCQJbxUbr1y43VXzhex5g/140.jpg
+    0.15 - /m/mLe1ziCKLzzvdDKaZXBLyEw/140.jpg
+    3.08 - /aw/pics/s.gif
+    0.15 - /m/mteiLu_Db3ytYMK6lY76LyA/140.jpg
+    0.15 - /m/m-xp36YaGNR1BBxMpl9rttw/140.jpg
+    0.15 - /m/mlUfKbcFbWUXHiXC99RKsog/140.jpg
+    0.15 - /m/mrQvsCQoi5VFJOVDL5y9Nlg/140.jpg
+    0.15 - /pict/3206976878154040_2.jpg
+    0.15 - /m/mVLUd6NtnT00RoqYBPVBLCQ/140.jpg
+    0.15 - /m/mqfpCKM8ag5L8ktr2-iz_Ww/140.jpg
+    0.15 - /m/mBfyaojvUVFXw3FCojKiuIA/140.jpg
+    0.15 - /m/m81bQ2iIDp5jnQPFM-g4slg/140.jpg
+    0.15 - /m/m9sxgLLiz7sSBdaegXdryZg/140.jpg
+    0.15 - /m/m2upUinsApVOtzykPAcx-0Q/140.jpg
+    0.15 - /m/mdJvdWnV9tVMEJquo4hpx5Q/140.jpg
+    0.15 - /m/mDgscduIRcKqPcqIt6_ho4Q/140.jpg
+    0.15 - /m/m_UDHkp5f_C1l0B_ErdfHdA/140.jpg
+    0.15 - /m/m-PImHdm5VlVexKdjx4Yqrg/140.jpg
+    0.15 - /m/m8WQWBmqrQvhdiH3YXi81Ug/140.jpg
+    0.15 - /m/m04YwLR9IUxHnSQZPiap1nw/140.jpg
+    0.15 - /pict/2306450517004040_18.jpg
+    0.15 - /m/mVl_QyYEaGJRLk1J4FzDvbg/140.jpg
+    0.15 - /m/mhBsIUZoSs4m2mSbO6Rv_gA/140.jpg
+    0.15 - /m/m2YGQZ5-Suhvg4U6RNouwvw/140.jpg
+    0.15 - /pict/2306206115224040_24.jpg
+    0.15 - /m/mAUOphNs8RwiWWiulnnVx8g/140.jpg
+    0.15 - /m/mI_0lZHUIP_E0ceVBTVHUXQ/140.jpg
+    0.15 - /m/m_7_ceotMDRDVTmfXrdBL9Q/140.jpg
+    0.15 - /m/mXQVw7WRW_tQMJR9rJNXUkw/140.jpg
+    0.15 - /m/mYW-qos9ppbNqkuXbECZpXw/140.jpg
+    0.31 - /m/mUOY1cWdGPDU7an6gAZ44bw/140.jpg
+    0.15 - /m/mo53ZMjU5X1sCBlNMmzaFgQ/140.jpg
+    0.15 - /m/mCOTY58n9MiH84GJTSX0I9w/140.jpg
+    0.15 - /pict/3305830585284040_18.jpg
+    0.15 - /m/m7ZZ_j-1KamrikqHkVhPKgA/140.jpg
+    0.15 - /m/mGlc2N-U87zeGUJc8DZYxhw/140.jpg
+    0.15 - /m/mTj3_e07YnKVtm1h-XOntyQ/140.jpg
+    0.15 - /m/m_rXFe8ojJ2uMj6g5l6kMaQ/140.jpg
+    0.15 - /m/m5mqgmOiqCD46h6Gd1GaV0g/140.jpg
+    0.15 - /m/mCaC-IlFcBoyVJ0mWpjhdnw/140.jpg
+    0.15 - /m/maQP5YMGrjkQtnnCJx0zWow/140.jpg
+    0.15 - /m/mV8pajjWnxvG72WU9kG5tDw/140.jpg
+    0.15 - /aw/pics/fr/globalHeader/spr4.gif
+    0.15 - /m/m_fmA1F8WHxddibGYLzOBhA/140.jpg
+    0.15 - /m/mZCYGbNV7deXlHzfoPZXVxQ/140.jpg
+    0.15 - /m/m5XXMA8_baYvP3BxmyrqkdQ/140.jpg
+    0.15 - /eboxapps/ClassicSearch/js/fr_FR/759/SearchPageAppSpec_FRClassicSearch-advsearch_75915250293_3_fr_FR.js
+    0.15 - /m/mgQdWWXCSb3gdGYp3mw_Q2g/140.jpg
+    0.15 - /m/mmkM7fQVqDgE6TORFPV0XCA/140.jpg
+    0.15 - /m/mMfalmjT69X2Ixluj_-5xng/140.jpg
+    0.15 - /m/mQJMBlG30uoVl3GmWLD5XTA/140.jpg
+    0.15 - /m/mj_GXWbpeeLPWm5jm2KMGLQ/140.jpg
+    0.15 - /pict/2208214925404040_20.jpg
+    0.15 - /m/mPWQXCvPrb-04Lt6Imt3MnQ/140.jpg
+    0.15 - /m/mU8i0gpSiB4WSg8TsQcenxA/140.jpg
+    0.15 - /pict/2306209022924040_23.jpg
+    0.15 - /m/mKORPCQxh-Xe2J9apqfsHlw/140.jpg
+    0.15 - /m/mjPatHlLzTx0Di8b2yKLhgg/140.jpg
+    0.15 - /m/mJlZiVY-uLJG82zJrtDboZQ/140.jpg
+    0.15 - /m/mNZVDYUW9YMnPe0S57EpQXQ/140.jpg
+    0.15 - /m/mHU_-LSiptI7eI8pL2ZBxiA/140.jpg
+    0.15 - /m/mEXOH3WqFmoBHMHYWH24VMg/140.jpg
+    0.15 - /m/muTHPnB_WySlNegUauOr6yQ/140.jpg
+    0.15 - /m/mZW5kVwZfRNAn1RjHzKq5DQ/140.jpg
+    0.15 - /m/mTImRijvfXqUJfjWXneaRRQ/140.jpg
+    0.15 - /Perles-au-detail-/i.html?_sacat=10244&_src=allCat
+    0.15 - /m/mSGbwGjFh1LCOaYGPKn-G5A/140.jpg
+    0.15 - /m/mYLj7GNoh3zZCYlU-MY7unw/140.jpg
+    0.15 - /m/mnHuJoMsNxcCJ2LPIeVKL0g/140.jpg
+    0.15 - /pict/4003199719144040_1.jpg
+    0.15 - /m/mg6XWcXIXme1_1NrXeUY1FA/140.jpg
+    0.15 - /pict/3305634607364040_23.jpg
+    0.15 - /ws/web/SojPagePerf?cmdname=eb_MA2ShowItemsv4&st1=1347972813299&st1a=2578&ct21=370&ctbend=262&sgwt=64&slo=0&svo=0&bw=930&bh=671
+    0.15 - /m/mki9M2OVzbcLnKUqx9Mv_sQ/140.jpg
+    0.15 - /m/mVREQJuRZwjGg2dQHkl8hXw/140.jpg
+    0.15 - /m/m3JN6IFM-AIfgGjjggD42Ow/140.jpg
+    0.15 - /pict/4003115758974040_3.jpg
+    0.15 - /m/mabP-xT2TN6uLrN2amxNm1g/140.jpg
+    0.15 - /m/m4lV4MEJPnW4AanwOrnTjuA/140.jpg
+    0.15 - /m/mwNNoxi_4cs0y6Sf9UI3DQw/140.jpg
+    0.15 - /idmap/0?footer&cb=vjo.dsf.assembly.VjClientAssembler._callback0&_vrdm=1347972808092
+    0.15 - /m/mAJFCHjzW7mZ16Vzf0c_8UQ/140.jpg
+    0.15 - /roversync/?site=71&stg=0&mpt=1347972807441
+    0.15 - /m/m9BO-0RsUMGi_hsvrxALNIw/140.jpg
+    0.15 - /m/mii_p1YMbYDuEk8cJXSTlTw/140.jpg
+    0.15 - /m/mAKc6Q35ImWgTkI1bg-jkGw/140.jpg
+    0.15 - /aw/pics/cmp/ds2/sprButtons.png
+    0.15 - /m/mK4tkLt0-XQnheMVYwmdMJQ/140.jpg
+    0.15 - /pict/2510006988634040_5.jpg
+    0.15 - /pict/3305664087304040_20.jpg
+    0.15 - /m/mFiFkx36KENws1D34lMDJ7w/140.jpg
+    0.15 - /m/mgcUw3Yinr058veixHt9lAQ/140.jpg
+    0.15 - /m/mgOLolo7OTevIRtai_TQw-Q/140.jpg
+    0.31 - /m/m91PvOAM2j8M-ZIT1TVuL4Q/140.jpg
+    0.15 - /m/mBWGaK1VT48vZm-EPAtChDQ/140.jpg
+    0.15 - /m/mhOEOprNnqFGhgyrOhkHutQ/140.jpg
+    0.15 - /m/mNtlBhKtv3Bmipykjy3AHkw/140.jpg
+    0.15 - /m/m0zNgAknPsVYLTq4koNOQIA/140.jpg
+    0.15 - /m/mQ49sqF0nzbmQoLHgIqZjYA/140.jpg
+    0.15 - /pict/2306206109074040_24.jpg
+    0.15 - /m/mZlY3BAHV97yR2djhvFfUBw/140.jpg
+    0.15 - /m/mrBZ_BXddMHNSNizXvgWGsA/140.jpg
+    0.15 - /pict/2210471648074040_1.jpg
+    0.15 - /m/maluBO2rDNuSM4YB64LAGtQ/140.jpg
+    0.15 - /m/mHNNDMGy6HOhEMy3KrnXxBw/140.jpg
+    0.15 - /m/mgqV6hsH8CV-TbQXqxwnTJA/140.jpg
+    0.15 - /m/mKTc_HVp-xX8cqaew4TV9RQ/140.jpg
+    0.15 - /m/mX45jqSARtJ4hIGq7xcVR2Q/140.jpg
+    0.15 - /m/m2oi8N6qBeVZmV_YctbSP7Q/140.jpg
+    0.15 - /m/mOKDAIoxZKCQfgE19wJ39pQ/140.jpg
+    0.15 - /m/mjQ-dhDhmdp0c-Qro-Wc08A/140.jpg
+    0.15 - /pict/2609734267464040_5.jpg
+    0.62 - /aw/pics/ads/local/sprSRPassets_spaced2.gif
+    0.15 - /m/mExzMlb0rFMG46brWsZoRXg/140.jpg
+    0.15 - /m/mL0mJ4gvyMrnyYmaUSzix2w/140.jpg
+    0.15 - /m/m-a2BZ1wxeMulc2Qz2_LcIw/140.jpg
+    0.15 - /pict/2511505991274040_1.jpg
+    0.15 - /m/mBiuWDIxPx6eUSAc_NOU2PQ/140.jpg
+    0.15 - /m/ml3twEcCFb3nPvTEDb_T_lA/140.jpg
+    0.15 - /m/mIa0-Z4mUjL21Q93zTMp-Jw/140.jpg
+    0.15 - /m/mUwbDInKtLuj-WMJwIEmGUg/140.jpg
+    0.15 - /eboxapps/ClassicSearch/css/fr_FR/759/SearchPageAppSpec_FRClassicSearch-advsearch_75915312205_fr_FR.css
+    0.15 - /m/mpU5howal6AOoSC5hvE41Qg/140.jpg
+    0.15 - /m/mE94nbqGLfPTVXm8rLze7Dw/140.jpg
+    1.69 - /js/e757/us/tracking_headerJS_e7571us.js
+    0.15 - /m/mNNYZLjykmdmWmCT7h7v1tg/140.jpg
+    0.15 - /m/mIaS2Mg6CmvVt60skMuJhEw/140.jpg
+    0.15 - /m/mV6mbB_FBWcaBFWpTbv_sDQ/140.jpg
+    0.15 - /m/mtMI0S9OaC_jOm--u0reNIw/140.jpg
+    0.15 - /m/m3fhGMaQ9xK9yEBOq--4x1w/140.jpg
+    0.15 - /m/mB0dGmLqxKKsXS1JN9KGk5w/140.jpg
+    0.15 - /m/myNveDN_m4q_DYdozO1dGlQ/140.jpg
+    0.15 - /m/m7h3p6gm1HemzYY2_XVbiTQ/140.jpg
+    0.15 - /m/mgUf7d2MsJxmsRu9NJsSt6w/140.jpg
+    0.15 - /m/mb4slb1WlVsqi1yO2n4QOiQ/140.jpg
+    0.15 - /m/m-gCIlzMVq8hOif3W8zMguw/140.jpg
+    0.46 - /aw/pics/cmp/ui/sproverlaycrnspntslt.png
+    0.15 - /pict/2307850008604040_5.jpg
+    0.15 - /m/mjQ7qqY88K_L6K2MuJePYcQ/140.jpg
+    0.15 - /m/muiBoq33VS6pHiaUpELD9VQ/140.jpg
+    0.15 - /m/mV152l0Z5qVRcHoHRgvGOmQ/140.jpg
+    0.15 - /pict/2609875700144040_7.jpg
+    0.15 - /m/mM7AaX37izDOfcTwfvWwo6w/140.jpg
+    0.15 - /m/mmAphJhXGtEA09frfYrJDTg/140.jpg
+    0.15 - /m/mguIrsPWzR_86z0sVJ1Tm2w/140.jpg
+    0.15 - /m/moOgGp1U68fAwD3uuAiaJDw/140.jpg
+    0.15 - /pict/2809673256454040_1.jpg
+    0.15 - /m/mln6mmxKGGBUABC6EyuSUJg/140.jpg
+    0.15 - /m/m36NfBU663WZPWGwK5S74Ng/140.jpg
+    0.15 - /m/mSuYEI0Q_-7qQz6m0KfqlGg/140.jpg
+    0.15 - /m/mFDQWtWgKna5RUJCoZK7xdQ/140.jpg
+    0.15 - /m/mLu15J66ClBtZKSm77QEjCg/140.jpg
+    0.15 - /m/mITaHTqkkTBJcl5buP9pcYg/140.jpg
+    0.15 - /m/m_EObzEJ-wSytAY1vs6WsEQ/140.jpg
+    0.15 - /m/mLXupo9B3LtCl86lqLzR3LA/140.jpg
+    0.15 - /m/mEWSAy00epFSl9n6vHP1U6A/140.jpg
+    0.15 - /m/mVQd4rtoOpDnDMqF7eSFoqg/140.jpg
+    0.15 - /m/mvj7xhkSWTJz-C2aGouznXQ/140.jpg
+    0.15 - /m/mc57eQdYNaMCPxrHuer1Ucw/140.jpg
+    0.15 - /m/mWT1ZEju8gdd2MgOaq86wCw/140.jpg
+    0.15 - /m/mFDQq1zb2uPXnEkIBu1oq0A/140.jpg
+    0.15 - /m/mIFsKBuNLobEsHiRZzIFhFw/140.jpg
+    0.15 - /m/mKDxaBHClLrA62dQcFRBOuQ/140.jpg
+    0.15 - /m/m4ZyF_GRB-2lEWa2oZOpX3g/140.jpg
+    0.15 - /m/mUPxZdzvvn8fLauE_09A-PQ/140.jpg
+    0.15 - /m/m3836AVXMjWzPCucdcHe1vQ/140.jpg
+    0.15 - /m/mzQNKToY9nnfmo7Q36_AMMg/140.jpg
+    0.15 - /m/mO778fzyDPnC8E6JrwYBPDg/140.jpg
+    0.15 - /m/m-9BdI48DU6ZdEcAEeIOJmA/140.jpg
+    0.15 - /m/mwa96katyzjvv5BELxNvl7w/140.jpg
+    1.39 - /aw/pics/globalAssets/imgLoading_30x30.gif
+    0.15 - /m/mOrZlVL_4d6NS8u9GL7dhbg/140.jpg
+    0.15 - /m/mJIEiLwyCVqYcvtF3cOsoYw/140.jpg
+    0.15 - /m/m6z_7pQp4xb-9vCfMswIsDA/140.jpg
+    0.15 - /m/mzPxOJXoU93VR9Bb5F3zhdw/140.jpg
+    0.15 - /m/mUtR4BEjJfc14--YRJWbIsw/140.jpg
+    0.15 - /m/mGfVGY8qmscr7ga2vAGpa4Q/140.jpg
+    0.15 - /m/mDtleCfkl09lHVvZ8fWXAtQ/140.jpg
+    0.15 - /m/m0e8PsJnKk7wDW5Pmo3ccoA/140.jpg
+    0.15 - /m/mT-0EOieXky5mOXz8c78EZg/140.jpg
+    0.15 - /m/mCoTzwS7wW1ondzPTHfUxWg/140.jpg
+    0.15 - /aw/pics/cmp/ds2/sprArrows1.png
+    0.15 - /m/miuUHGePLBQSpziBxNE3cYQ/140.jpg
+    0.31 - /m/mnpA125eFXuBXuclQu-EtNw/140.jpg
+    0.15 - /m/mLu-Cw01Etx4h78-VNqMhrA/140.jpg
+    0.15 - /m/mlWppE7lZu8SYwrJjGXKlVw/140.jpg
+    0.15 - /pict/2510120758444040_8.jpg
+    0.15 - /m/mrPTZMyCzpti8BE6mBfzQWA/140.jpg
+    0.15 - /GPS-accessoires-/i.html?_sacat=140231&_src=allCat
+    0.15 - /m/mZ5TcUR463-Q2iLvKlDzZmw/140.jpg
+    0.15 - /m/miSeGrR5F5-0fBhMB-TFTLw/140.jpg
+    0.15 - /m/mxPAMXeArDeu4hK8tNYH22A/140.jpg
+    0.15 - /m/m1bXzazPK6nXc54BgGq4dbQ/140.jpg
+    0.15 - /m/mKcc2UhLzNjfwj_0AO_G26w/140.jpg
+    0.15 - /m/mRv6IgYdyhhRn_oLSQxqZlQ/140.jpg
+    0.15 - /m/mFwybi7lBdx3_SNfF1Zkw2g/140.jpg
+    0.15 - /m/mFP-6Q-5_kwdpRTFtQdBX6A/140.jpg
+    0.15 - /m/m4AJszlEgiMFOdHyHdR-RHA/140.jpg
+    0.15 - /m/mmguuLlPl5wiyMpNYsW2uAQ/140.jpg
+    0.15 - /m/mjKKb1Fy6NeE0Q4yWk_84UQ/140.jpg
+    0.15 - /Accastillage-Moteur-Pieces-/i.html?_sacat=128850&_src=allCat
+    0.15 - /m/mJ2ifFwZDtVnGlvE85jQMXw/140.jpg
+    0.15 - /m/mFvX5888eOFL_fmQRCRGh0w/140.jpg
+    0.46 - /aw/pics/ads/local/sprHdr.png
+    0.15 - /m/meDCKhOY12M8AQgJbtcYfIQ/140.jpg
+    0.15 - /m/mKLMD5okviYvnJUQq8w-OIg/140.jpg
+    0.15 - /m/m0oFB9c-uroFBkggHg2Gobg/140.jpg
+    0.15 - /m/ma4l-aQlMiQG-4xm3NpyggA/140.jpg
+    0.15 - /m/mNlThEdpVPzX2f0kHrx8Ilg/140.jpg
+    0.15 - /pict/2306205281154040_24.jpg
+    0.15 - /m/miPEjagIhJO_bnjrrF1YIcg/140.jpg
+    0.15 - /m/mjagO6U-DFJpoSkT0px9DNw/140.jpg
+    0.15 - /m/mVpbOSo5AviCatxo3FKAAYQ/140.jpg
+    0.15 - /m/mhttA-lEkWxrurYMIqVGygw/140.jpg
+    0.15 - /m/mWQDg3LZAaIaz_fRFGncNFA/140.jpg
+    1.69 - /header/js/all.min?combo=51&taas=1&siteid=71&rvr=90
+    0.15 - /eboxapps/ClassicSearch/css/fr_FR/759/SearchPageAppSpec_FRClassicSearch-allcategories_75915312205_fr_FR.css
+    0.15 - /m/mbbzdVCf_4yjDl62JFlT-cg/140.jpg
+    0.15 - /m/mQxC_qfIDUF5hrGuWJ6SmNQ/140.jpg
+    0.15 - /m/mXg6UDm8b1B1qrtLDOWZ2Iw/140.jpg
+    0.15 - /m/mvw9Njbcoh2IcYv_mRfjt_g/140.jpg
+    0.15 - /aw/pics/icon/iconError_16x16.gif
+    0.15 - /m/muozh7ir6WgQb1gSYYjR5eQ/140.jpg
+    0.15 - /m/m7R7YMRJKUtEmKCYnZQANuw/140.jpg
+    0.15 - /m/mZqD6i-2KXhhoMB-PmKW3nQ/140.jpg
+    0.15 - /aw/pics/ads/local/AllCatImages/Allimages.png
+    0.15 - /m/mT1kSYzW3tiaEhgpaD9nvTg/140.jpg
+    0.15 - /m/mTB7PpkGZjah_d14k2VkmLQ/140.jpg
+    0.15 - /m/mZmgeoCq85Hs4pDyMOrXF4Q/140.jpg
+    0.15 - /pict/2306513702744040_18.jpg
+    0.15 - /m/mTXjq_fGIyUJYpq9vBVFRrQ/140.jpg
+    0.15 - /aw/pics/ads/local/AllCatImages/58058.png
+    0.15 - /m/m2nn2QEbuhxaC4HgpAh5qmA/140.jpg
+    0.15 - /ws/web/SojPagePerf?cmdname=eb_MA2ShowItemsv4&st1=1347972821080&st1a=203&ct21=476&ctbend=163&sgwt=12&slo=0&svo=0&bw=930&bh=671
+    0.15 - /m/mi0KvjtGd_tr8UJbCGjuf1w/140.jpg
+    0.15 - /pict/3103799539704040_8.jpg
+    0.15 - /m/mfJzx4EsbPIICDf9L4RKKBA/140.jpg
+    0.15 - /pict/3305635729284040_24.jpg
+    0.15 - /m/mvKtC-7ih9IPWjZhfr5BlLw/140.jpg
+    0.15 - /m/mCsPIG7_lvmoHt7Ri0Kqy-Q/140.jpg
+    0.15 - /m/mU9JrFumtZx4u8Xp-sYDlxQ/140.jpg
+    0.15 - /m/mEhdTDHzBvJv--pYlSIghFg/140.jpg
+    0.15 - /m/m6lBQUWmmPNNvAHumUDemqQ/140.jpg
+    0.15 - /m/mwDyxUbILwpl4e-7YJyqLsQ/140.jpg
+    0.15 - /aw/pics/ads/local/AllCatImages/sprAllCategoriesL1Box_1px.gif
+    0.15 - /m/mSBb8fe8HAf0K-ijOjYpO-A/140.jpg
+    0.15 - /m/mTSx1zQDcXkW_kYgSpzxKBA/140.jpg
+    1.39 - /eboxapps/ClassicSearch/js/fr_FR/759/SearchPageAppSpec_FRClassicSearch-blending_75915250293_3_fr_FR.js
+    0.15 - /m/m9s3z0DW5WQmEp48LV5yUfg/140.jpg
+    0.15 - /m/mYkCNUVasRw2VWAM-whszrg/140.jpg
+    0.15 - /m/m4rpfjEgOrl5c9QL-r5hHcg/140.jpg
+    0.15 - /m/mx2hW--hm0fJ-O_7bqr2MPw/140.jpg
+    0.15 - /m/mA_QFcNMuAhA9ulSRsFXIFA/140.jpg
+    0.15 - /Outillage-Professionnel-/i.html?_sacat=118570&_src=allCat
+    0.15 - /m/msNuOwGPXOSH1y7QcdtgzSw/140.jpg
+    0.15 - /m/m-JhUXkFdVdJfNQkcIc0pMw/140.jpg
+    0.15 - /m/mkwLbuuFl6mJuj6NGSz6OCA/140.jpg
+    0.15 - /pict/2807146415344040_12.jpg
+    0.15 - /m/mVBrHzXSwkNIRN0MjeAPk8Q/140.jpg
+    0.15 - /m/mpH_65lxb6uCLHFzhf2jYPA/140.jpg
+    0.15 - /m/mV94YJZIyAOko_sFNcJm0KQ/140.jpg
+    0.15 - /m/mZ_k0NrSLtLFQGr0-QJi6rA/140.jpg
+    0.15 - /m/mA1Tf7YgbJqKkuvJCOGLefA/140.jpg
+    0.15 - /Arts-Artisanat-Decoration-/i.html?_sacat=120641&_src=allCat
+    0.15 - /m/msMG1tLrA4sp9ffSknoPt1A/140.jpg
+    0.15 - /m/mbenmj66-zwjEGWUQ5Y717A/140.jpg
+    0.15 - /m/m8jV-QUi3_Vzrzq_BsrovMw/140.jpg
+    1.69 - /eboxapps/ClassicSearch/js/fr_FR/759/SYS-400_vjo_75915250293_1_fr_FR.js
+    0.15 - /m/mkutw4-dFsqczRmZ6m4XIxg/140.jpg
+    0.15 - /m/mC7Im1XnN9oMX2aYh57qxDw/140.jpg
+    0.15 - /pict/3804626735634040_1.jpg
+    1.69 - /js/v/us/roverlv.js
+    0.15 - /m/mYCaDTk4Ix3khzgCtuV5gDA/140.jpg
+    0.15 - /m/mBqxjvv13G52dVuwG-6_HIw/140.jpg
+    0.15 - /m/mSGVAr2ILEvq5mHH7yYebhA/140.jpg
+    0.15 - /aw/pics/ads/local/imgEtrsHomepage_244x22.png
+    0.15 - /m/mwDily5tVJqOHI34FX83CMg/140.jpg
+    0.15 - /m/m9dItCqpKTO_twVaImaY5Dg/140.jpg
+    0.15 - /m/mBlYUjVo6yC8c4XsYBE2Tsg/140.jpg
+    0.15 - /m/mmuO5QA092xx6Pyh9rp0GEg/140.jpg
+    0.15 - /m/mIO_fHwPw0yaZSe69nW2qMw/140.jpg
+    0.15 - /m/m1S4yZ7Iy67DVWWsIR8YPDg/140.jpg
+    0.15 - /m/mriEfa7ttfRjB28yLxMYurQ/140.jpg
+    0.15 - /m/m22rfqfXW1Smw3NuolxYjVA/140.jpg
+    0.15 - /m/mRKQ7b30CirQbkMT3kpUCGg/140.jpg
+    0.15 - /m/mXEM3G2qpW7MUg1ROjjVwCQ/140.jpg
+    0.15 - /m/m5I8rYP7SsQxq2sdz5d6dLw/140.jpg
+    0.15 - /m/mDcYQn9zO8iW5u7b_pd0AHQ/140.jpg
+    0.15 - /m/mG6WtT2jlaYnetT_jTIX-AA/140.jpg
+    0.15 - /m/mMd3C_fSA4or8h3apJBxT_A/140.jpg
+    0.15 - /m/mvy3JfXM7jakU0eJFMNbnIw/140.jpg
+    0.15 - /Informatique-Reseaux-/i.html?_sacat=58058&_src=allCat
+    0.15 - /m/mCb5ScQEN_pP0uEqPVGI32g/140.jpg
+    0.15 - /m/mEAnrYUe-2MOpEAfm3V3beQ/140.jpg
+    0.15 - /m/mXUqqZghS-gwEeQBdminD2g/140.jpg
+    0.15 - /m/mlXLR3DFcmDuawb4hBe15LA/140.jpg
+    0.15 - /m/ms4EIfSaUw59sjB1XSQ6xUA/140.jpg
+    0.15 - /m/mbN1WAtAJoXXEL_tSS2ZR9A/140.jpg
+    0.46 - /aw/pics/cmp/icn/sprIconClose.gif
+    0.15 - /m/mTEZphR9lV8bdTQB5i_IncA/140.jpg
+    0.15 - /pict/2306206342674040_22.jpg
+    0.15 - /m/mCdFvWsyiFMH9FaXH8s9ZBQ/140.jpg
+    0.15 - /m/meV7pgbvdGQ15aoFAKHYbkQ/140.jpg
+    0.15 - /m/mgy2KPfXwj3Jr6A-B1YGhJA/140.jpg
+  content-encoding: 
+    100.00 - gzip
+  ntcoent-length: 
+    100.00 - 1635
+  content-type: 
+    81.38 - image/jpeg
+    0.34 - text/html
+    0.17 - text/json
+    0.17 - application/x-javascript;charset=UTF-8
+    2.35 - image/png
+    1.85 - text/css
+    1.85 - text/css;charset=UTF-8
+    1.85 - text/html;charset=UTF-8
+    3.02 - application/x-javascript
+    7.05 - image/gif
+  age: 
+    1.51 - 1301687
+    0.17 - 6149451
+    0.17 - 1286493
+    0.50 - 9870
+    0.17 - 9871
+    0.50 - 10857
+    5.36 - 1
+    80.40 - 0
+    0.17 - 3
+    3.18 - 2402
+    1.51 - 5460749
+    0.17 - 1652818
+    0.50 - 1301694
+    0.50 - 2514255
+    1.84 - 9843
+    0.67 - 9842
+    0.34 - 6476383
+    0.17 - 2847033
+    0.17 - 6476380
+    0.50 - 451319
+    0.17 - 1658713
+    0.67 - 1720161
+    0.17 - 1652820
+    0.50 - 9847
+  :status: 
+    99.23 - 200
+    0.31 - 404
+    0.31 - 0
+    0.15 - 301
+  rlogid: 
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fuk.rp73%282015d74-139d970cdd6
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fuk.rp*%60%60c65g%3F-139d970f058
+    6.67 - p4n%60rujfunmqj%3D9un%7F4g65%60%28e54f-139d970be4e-0x116
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fvo%7B2d72f%2Bbfg2-139d970e485
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fum.rp73%28c360bd7-139d970df87
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fum.rp73%285dacg05-139d970bb1c
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fvo.rp73%2852%601b40-139d970f396
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fuk.rp73%28dd5%3Dg%3E4-139d970ca40
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fuk.rp*%600gf22c-139d970c4cb
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fum.rp73%28b%3F7%601c%60-139d970c166
+    6.67 - p4n%60rujfudlwc%3D9un%7F4g66%60%28%60deg-139d970bdb6-0x196
+    6.67 - p4n%60rujfunmqj%3D9un%7F4g65%60%2875gg-139d970c023-0x10f
+    6.67 - p4n%60rujfunmqj%3D9un*ts67.%3C1%3Ef1ed-139d970c386-0x110
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fuk%601d72f%2B1602-139d970d1f3
+    6.67 - p4p%60gu%60m%60ujkrk9%3Fuk%601d72f%2B%3E021-139d970e872
+  server: 
+    0.67 - Microsoft-IIS/5.0
+    85.76 - Apache-Coyote/1.1
+    13.57 - Microsoft-IIS/6.0
+  :scheme: 
+    100.00 - http
+  cookie: 
+    7.69 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5ok9jNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzGq4lwFOJg3HpPH2ujhnVBnlq0Gvg**; s=CgAD4ACBQWcBPZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBTUFnAT2h0dHA6Ly9zaG9wLmViYXkuZnIvSW5mb3JtYXRpcXVlLVJlc2VhdXgtL2kuaHRtbD9fc3JjPWFsbENhdCZfc2FjYXQ9NTgwNTgmY21kPUJsZW5kvGQKWA**; nonsession=CgADKACBZvnBPZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh11zazUTdo; ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; ds2=ssts/1347972816601^
+    7.69 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5olVjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzGYQ1xdc8ghmS6AiN2fObTPNfaxFA**; s=CgAD4ACBQWcBVZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBuUFnAVWh0dHA6Ly9tYXRlcmllbC1wcm9mZXNzaW9ubmVsLnNob3AuZWJheS5mci9PdXRpbGxhZ2UtUHJvZmVzc2lvbm5lbC0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD0xMTg1NzAmY21kPUJsZW5kYbCzoA**; nonsession=CgADKACBZvnBVZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywACUFh13TEwtQ1EKw**; ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; ds2=ssts/1347972821830^
+    7.69 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5olNjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzEbZ4WRLb5SkXKLhD5IZe0psBnujA**; s=CgAD4ACBQWcBTZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBnUFnAU2h0dHA6Ly9hY2Nlc3NvaXJlcy1tb3RvLnNob3AuZWJheS5mci9Nb3RvLVBpZWNlcy1BY2Nlc3NvaXJlcy0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD0xNDc4MCZjbWQ9QmxlbmQJmr6V; nonsession=CgADKACBZvnBTZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh12zl8gyFX; ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; ds2=ssts/1347972820770^
+    7.69 - npii=bcguid/d970bdb61390a54c2621af61fee054a45239a248^; ebay=%5Ecv%3D15555%5Esbf%3D1048576%5E; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5okljNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFMOYJetpAN+9blUESfwfenZoi2hg**; s=CgAD4ACBQWcBJZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDTMnsWm; nonsession=CgADKACBZvnBJZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh10TKSEUIR
+    7.69 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5olFjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFIJrprcklZUMFmnjA3SBIA1+bECQ**; s=CgAD4ACBQWcBRZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBgUFnAUWh0dHA6Ly9sb2lzaXIuc2hvcC5lYmF5LmZyL0FydHMtQXJ0aXNhbmF0LURlY29yYXRpb24tL2kuaHRtbD9fc3JjPWFsbENhdCZfc2FjYXQ9MTIwNjQxJmNtZD1CbGVuZNyjvV4*; nonsession=CgADKACBZvnBRZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh12TigsHze; ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; ds2=ssts/1347972818938^
+    15.38 - ebay=%5Ecv%3D15555%5E; ns1=BAQAAATnRhjnoAAaAANgASFI5okdjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzGo/T6p7ie2d+J2ZSg/Kiu4gDXvRA**; s=CgAD4ACBQWcBHZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQWVCZV; nonsession=CgADKACBZvnBHZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh1zzGmtQ4l
+    7.69 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5okpjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFOzu1XgojTFFlaVPso6BXabeqbeA**; s=CgAD4ACBQWcBKZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBqUFnASmh0dHA6Ly9iYXRlYXUtbmF1dGlzbWUuc2hvcC5lYmF5LmZyL0FjY2FzdGlsbGFnZS1Nb3RldXItUGllY2VzLS9pLmh0bWw/X3NyYz1hbGxDYXQmX3NhY2F0PTEyODg1MCZjbWQ9QmxlbmSaSHJt; nonsession=CgADKACBZvnBKZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh10jP2AKo3; ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; ds2=ssts/1347972811191^
+    7.69 - dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5okljNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFMOYJetpAN+9blUESfwfenZoi2hg**; s=CgAD4ACBQWcBJZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDTMnsWm; nonsession=CgADKACBZvnBJZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh10TKSEUIR; npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; ebay=%5Ecv%3D15555%5Esbf%3D1048576%5E; ds2=ssts/1347972809861^
+    7.69 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5okxjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzEwAUNk+U9eseBF/k4qZD23scOt6Q**; s=CgAD4ACBQWcBMZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBVUFnATGh0dHA6Ly9jb2xsZWN0aW9ucy5zaG9wLmViYXkuZnIvUG9ydGUtY2xlcy0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD03NzgyMCZjbWQ9QmxlbmTZ6Mu4; nonsession=CgADKACBZvnBMZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh11DU5Tr5i; ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; ds2=ssts/1347972813249^
+    7.69 - ns1=BAQAAATnRhjnoAAaAANgASFI5okdjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzGo/T6p7ie2d+J2ZSg/Kiu4gDXvRA**; s=CgAD4ACBQWcBHZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQWVCZV; nonsession=CgADKACBZvnBHZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh1zzGmtQ4l; dp1=bidm/15059c048^; npii=bcguid/d970bdb61390a54c2621af61fee054a45239a248^; ebay=%5Ecv%3D15555%5Esbf%3D1048576%5E; ds2=ssts/1347972808878^
+    7.69 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5oktjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzF6Z5msOPmbCaUsp7P+8PTYAMGMaw**; s=CgAD4ACBQWcBLZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBeUFnAS2h0dHA6Ly9iaWpvdXgtbW9udHJlcy5zaG9wLmViYXkuZnIvUGVybGVzLWF1LWRldGFpbC0vaS5odG1sP19zcmM9YWxsQ2F0Jl9zYWNhdD0xMDI0NCZjbWQ9QmxlbmR7fRHn; nonsession=CgADKACBZvnBLZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh10zTQRoo7; ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; ds2=ssts/1347972812170^
+    7.69 - npii=btguid/d970baed1390a0b2add1f5c1fffc07045239a249^cguid/d970bdb61390a54c2621af61fee054a45239a249^; dp1=bidm/15059c048^; ns1=BAQAAATnRhjnoAAaAANgASFI5olFjNjh8NjAxXjEzNDc5NzI4MDc0NTJeXjFeM3wyfDV8NHw3fDUwfDMwXjFeMl40XjNeMTJeMl4yXjFeMV4wXjFeMF4wXjgxMzFIJrprcklZUMFmnjA3SBIA1+bECQ**; s=CgAD4ACBQWcBRZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQA7gBiUFnAUWh0dHA6Ly9qb3VldHMtZmlndXJpbmUuc2hvcC5lYmF5LmZyL0pvdWV0cy1KZXV4LWFuY2llbnMtL2kuaHRtbD9fc3JjPWFsbENhdCZfc2FjYXQ9NjY1OTkmY21kPUJsZW5kXVtnFg**; nonsession=CgADKACBZvnBRZDk3MGJhZWQxMzkwYTBiMmFkZDFmNWMxZmZmYzA3MDQAywABUFh12TcwD2FP; ebay=%5Ecv%3D15555%5Esbf%3D%23100080%5E; ds2=ssts/1347972817925^
+  :status-text: 
+    0.31 - unknown
+    99.23 - OK
+    0.31 - Not Found
+    0.15 - Moved Permanently
+  :host: 
+    2.00 - pics.ebaystatic.com
+    17.72 - thumbs1.ebaystatic.com
+    0.15 - rover.ebay.com
+    18.80 - thumbs4.ebaystatic.com
+    0.46 - rover.ebay.fr
+    1.69 - shop.ebay.fr
+    2.00 - q.ebaystatic.com
+    10.63 - include.ebaystatic.com
+    19.41 - thumbs3.ebaystatic.com
+    3.39 - gh.ebaystatic.com
+    0.31 - sofe.ebay.fr
+    4.62 - p.ebaystatic.com
+    18.80 - thumbs2.ebaystatic.com
+
+

@@ -98,7 +98,7 @@ date:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.3872
+ Variability: 0.3897
  Percent of Total Size: 7.059528
  Percent of Total Count: 6.190476
  Encoded: 
@@ -259,7 +259,7 @@ age:
  Average:     4.45
  Low:         1
  High:        8
- Variability: 0.4567
+ Variability: 0.4593
  Percent of Total Size: 1.057993
  Percent of Total Count: 6.047619
  Encoded: 
@@ -590,3 +590,1316 @@ x-object-meta-sha1base36 0.941176470588                                     17
 x-timestamp          0.95652173913                                      23                  
 content-disposition  1.0                                                4                   
 x-frame-options      1.0                                                1                   
+
+
+Header Frequencies:
+  content-length: 
+    0.27 - 1789
+    3.01 - 8424
+    0.27 - 210
+    0.27 - 1784
+    3.01 - 214
+    2.74 - 3491
+    0.27 - 8305
+    0.27 - 5989
+    0.27 - 2523
+    0.27 - 3250
+    0.27 - 11115
+    0.27 - 2480
+    0.27 - 2481
+    0.27 - 1373
+    0.27 - 10582
+    0.27 - 547
+    0.27 - 36779
+    0.27 - 936
+    0.27 - 1312
+    0.27 - 2852
+    0.27 - 713
+    0.27 - 1266
+    0.27 - 263
+    0.27 - 25217
+    0.27 - 4567
+    0.27 - 1498
+    3.01 - 10681
+    0.27 - 3139
+    0.27 - 11027
+    0.27 - 7252
+    0.27 - 1824
+    0.27 - 3083
+    0.27 - 8701
+    0.27 - 2259
+    0.27 - 3849
+    3.01 - 4976
+    3.01 - 295
+    3.01 - 46032
+    0.27 - 538
+    0.27 - 1278
+    0.27 - 593
+    0.27 - 318
+    0.27 - 66146
+    0.27 - 20747
+    0.27 - 11884
+    0.27 - 19925
+    2.74 - 833
+    0.55 - 2983
+    0.27 - 2303
+    2.74 - 20219
+    2.74 - 1409
+    0.27 - 45346
+    0.27 - 11280
+    0.27 - 4960
+    0.27 - 3664
+    0.27 - 31249
+    0.27 - 9156
+    0.27 - 3584
+    0.27 - 2141
+    0.27 - 2448
+    0.27 - 1137
+    0.55 - 589
+    0.27 - 13438
+    3.01 - 1667
+    3.01 - 109
+    0.27 - 16403
+    0.27 - 1640
+    0.27 - 292
+    0.27 - 6771
+    3.01 - 1438
+    0.27 - 13135
+    0.27 - 24446
+    0.27 - 4952
+    0.27 - 10861
+    0.27 - 2160
+    0.27 - 24286
+    0.27 - 3809
+    0.27 - 2612
+    0.27 - 13976
+    0.82 - 572
+    0.27 - 571
+    0.55 - 3825
+    0.27 - 12632
+    0.55 - 2197
+    0.27 - 5589
+    0.27 - 2724
+    0.27 - 5431
+    0.27 - 1883
+    0.27 - 5706
+    0.27 - 3459
+    0.27 - 180
+    0.27 - 5738
+    0.27 - 733
+    1.10 - 653
+    0.27 - 1030
+    0.27 - 25631
+    0.82 - 631
+    0.27 - 467
+    0.55 - 1357
+    3.01 - 2426
+    3.01 - 3525
+    3.01 - 4771
+    0.27 - 1047
+    0.27 - 16052
+    0.27 - 3720
+    0.27 - 1623
+    0.27 - 2212
+    0.27 - 1620
+    0.27 - 1994
+    0.55 - 1028
+    0.27 - 815
+    0.27 - 8931
+    0.27 - 720
+    0.27 - 1101
+    0.27 - 5811
+    0.55 - 2106
+    0.27 - 5114
+    0.27 - 2439
+    0.27 - 15801
+    0.27 - 601
+    0.27 - 2637
+    0.27 - 7804
+    0.27 - 20097
+    0.27 - 4761
+    3.01 - 9598
+    0.27 - 10478
+    0.27 - 9188
+    0.27 - 10351
+    0.27 - 2136
+    0.27 - 1969
+    0.27 - 13586
+    0.27 - 4924
+    0.27 - 4005
+    0.27 - 1197
+    0.27 - 10837
+    0.27 - 1441
+    0.27 - 9426
+    0.27 - 2727
+    3.01 - 144
+    0.27 - 2870
+    3.01 - 19483
+    0.55 - 204
+    0.27 - 14002
+    2.74 - 9769
+    0.27 - 3359
+    0.27 - 3707
+    0.27 - 4399
+    0.55 - 1281
+    0.27 - 1086
+    0.27 - 1048
+    0.27 - 2086
+    0.27 - 17181
+    0.27 - 4852
+    0.27 - 1574
+  via: 
+    3.85 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain, 1.0 sorga-msr:3128 (squid/2.6.STABLE21)
+    54.10 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+    36.92 - 1.1 varnish, 1.1 varnish, 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+    2.31 - 1.1 localhost.localdomain, 1.0 sorga-msr:3128 (squid/2.6.STABLE21)
+    2.82 - 1.1 varnish, 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+  accept-language: 
+    100.00 - en-US,en;q=0.8
+  proxy-connection: 
+    22.92 - close
+    77.08 - keep-alive
+  x-cache-lookup: 
+    0.26 - HIT from amssq60.esams.wikimedia.org:3128 HIT from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq53.esams.wikimedia.org:3128 HIT from amssq58.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq20.knams.wikimedia.org:3128 HIT from knsq20.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq55.esams.wikimedia.org:3128 HIT from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq47.esams.wikimedia.org:3128 HIT from amssq59.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq65.wikimedia.org:3128 HIT from knsq29.knams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq56.esams.wikimedia.org:3128 HIT from amssq57.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq50.esams.wikimedia.org:3128 HIT from amssq60.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq52.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq57.wikimedia.org:3128 HIT from amssq54.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq47.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    1.31 - HIT from amssq57.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq61.esams.wikimedia.org:3128 HIT from amssq53.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq52.esams.wikimedia.org:3128 MISS from amssq60.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq22.knams.wikimedia.org:3128 HIT from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq49.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq60.esams.wikimedia.org:3128 HIT from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq62.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq50.esams.wikimedia.org:3128 HIT from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq51.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from knsq22.knams.wikimedia.org:3128 HIT from knsq20.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq59.wikimedia.org:3128 HIT from amssq33.esams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq47.esams.wikimedia.org:3128 HIT from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq20.knams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq60.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq54.wikimedia.org:3128 HIT from knsq22.knams.wikimedia.org:3128 HIT from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq47.esams.wikimedia.org:3128 HIT from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq58.esams.wikimedia.org:3128 HIT from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq50.esams.wikimedia.org:3128 HIT from amssq58.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq22.knams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq60.esams.wikimedia.org:3128 HIT from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq51.esams.wikimedia.org:3128 HIT from amssq59.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq72.wikimedia.org:3128 HIT from amssq35.esams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq53.esams.wikimedia.org:3128 MISS from amssq53.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq54.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    2.36 - HIT from sq63.wikimedia.org:3128 HIT from amssq36.esams.wikimedia.org:3128 HIT from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq44.wikimedia.org:3128 HIT from amssq62.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq54.esams.wikimedia.org:3128 HIT from amssq60.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq57.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq63.wikimedia.org:3128 HIT from amssq36.esams.wikimedia.org:3128 HIT from amssq38.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    2.62 - HIT from sq63.wikimedia.org:3128 HIT from amssq44.esams.wikimedia.org:3128 HIT from knsq27.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq48.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq21.knams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq78.wikimedia.org:3128 HIT from amssq31.esams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq55.esams.wikimedia.org:3128 HIT from amssq51.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq48.esams.wikimedia.org:3128 HIT from knsq18.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq74.wikimedia.org:3128 HIT from amssq40.esams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq48.esams.wikimedia.org:3128 HIT from amssq49.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq49.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq51.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq47.esams.wikimedia.org:3128 HIT from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq62.esams.wikimedia.org:3128 HIT from knsq16.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq57.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq56.wikimedia.org:3128 HIT from amssq61.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq22.knams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq71.wikimedia.org:3128 HIT from amssq38.esams.wikimedia.org:3128 HIT from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq43.wikimedia.org:3128 HIT from amssq61.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq44.wikimedia.org:3128 HIT from amssq47.esams.wikimedia.org:3128 MISS from amssq59.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.79 - HIT from knsq20.knams.wikimedia.org:3128 HIT from amssq47.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq56.esams.wikimedia.org:3128 HIT from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    1.31 - HIT from amssq61.esams.wikimedia.org:3128 HIT from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq53.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq58.esams.wikimedia.org:3128 HIT from amssq53.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq47.esams.wikimedia.org:3128 HIT from amssq50.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq51.wikimedia.org:3128 HIT from amssq62.esams.wikimedia.org:3128 MISS from amssq54.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq71.wikimedia.org:3128 HIT from knsq29.knams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq49.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.79 - HIT from amssq57.esams.wikimedia.org:3128 HIT from knsq17.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq44.wikimedia.org:3128 HIT from amssq62.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq83.wikimedia.org:3128 HIT from amssq56.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq57.wikimedia.org:3128 HIT from amssq47.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq47.esams.wikimedia.org:3128 HIT from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq59.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq53.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq59.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    2.89 - HIT from sq62.wikimedia.org:3128 HIT from amssq33.esams.wikimedia.org:3128 HIT from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq57.esams.wikimedia.org:3128 HIT from amssq47.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq50.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq50.esams.wikimedia.org:3128 HIT from knsq16.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    40.68 - MISS from sorga-msr:3128
+    0.26 - HIT from amssq54.esams.wikimedia.org:3128 MISS from knsq17.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq56.wikimedia.org:3128 HIT from knsq20.knams.wikimedia.org:3128 HIT from amssq50.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    1.31 - HIT from amssq57.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq47.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq42.wikimedia.org:3128 HIT from amssq58.esams.wikimedia.org:3128 HIT from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq54.esams.wikimedia.org:3128 HIT from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq22.knams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq55.esams.wikimedia.org:3128 HIT from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq71.wikimedia.org:3128 HIT from amssq45.esams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq55.esams.wikimedia.org:3128 HIT from knsq20.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq61.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - MISS from sq85.wikimedia.org:3128 MISS from sq82.wikimedia.org:80 HIT from amssq54.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq86.wikimedia.org:3128 HIT from amssq49.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq49.esams.wikimedia.org:3128 MISS from knsq20.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq52.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq21.knams.wikimedia.org:3128 HIT from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq61.esams.wikimedia.org:3128 HIT from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq55.esams.wikimedia.org:3128 HIT from knsq16.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq60.esams.wikimedia.org:3128 HIT from amssq53.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq85.wikimedia.org:3128 MISS from sq55.wikimedia.org:80 HIT from amssq54.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq51.esams.wikimedia.org:3128 HIT from amssq52.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq55.esams.wikimedia.org:3128 HIT from amssq59.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    2.89 - HIT from sq60.wikimedia.org:3128 HIT from amssq33.esams.wikimedia.org:3128 HIT from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq60.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq59.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq61.esams.wikimedia.org:3128 HIT from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from knsq22.knams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq61.esams.wikimedia.org:3128 MISS from amssq57.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq51.esams.wikimedia.org:3128 HIT from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq72.wikimedia.org:3128 HIT from amssq42.esams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq56.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq49.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq42.wikimedia.org:3128 HIT from amssq53.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq56.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - MISS from sq74.wikimedia.org:3128 HIT from amssq46.esams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq53.wikimedia.org:3128 HIT from amssq62.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - MISS from sq83.wikimedia.org:3128 MISS from sq54.wikimedia.org:80 HIT from amssq47.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq58.esams.wikimedia.org:3128 MISS from amssq61.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq48.esams.wikimedia.org:3128 MISS from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq56.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq47.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq49.esams.wikimedia.org:3128 HIT from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq55.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq60.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    1.05 - HIT from amssq49.esams.wikimedia.org:3128 HIT from amssq51.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq52.esams.wikimedia.org:3128 HIT from knsq19.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq56.esams.wikimedia.org:3128 HIT from amssq58.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq47.esams.wikimedia.org:3128 MISS from amssq59.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq54.esams.wikimedia.org:3128 HIT from amssq59.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq50.esams.wikimedia.org:3128 HIT from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq58.esams.wikimedia.org:3128 HIT from knsq17.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    2.89 - HIT from sq66.wikimedia.org:3128 HIT from amssq33.esams.wikimedia.org:3128 HIT from knsq27.knams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq49.esams.wikimedia.org:3128 HIT from amssq50.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq60.esams.wikimedia.org:3128 HIT from amssq56.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.52 - HIT from amssq60.esams.wikimedia.org:3128 HIT from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.79 - HIT from amssq51.esams.wikimedia.org:3128 MISS from amssq53.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from sq60.wikimedia.org:3128 HIT from amssq32.esams.wikimedia.org:3128 MISS from amssq46.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq48.esams.wikimedia.org:3128 MISS from amssq62.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq51.esams.wikimedia.org:3128 MISS from amssq48.esams.wikimedia.org:80 MISS from sorga-msr:3128
+    0.26 - HIT from amssq54.esams.wikimedia.org:3128 MISS from knsq21.knams.wikimedia.org:80 MISS from sorga-msr:3128
+  vary: 
+    6.75 - Accept-Encoding,Cookie
+    93.25 - Accept-Encoding
+  accept: 
+    2.82 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    8.46 - text/css,*/*;q=0.1
+    86.15 - */*
+    2.56 - application/json, text/javascript, */*; q=0.01
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  x-object-meta-sha1base36: 
+    5.88 - nvox5i6jf2sh7v8k8muinbz4xjkzitv
+    5.88 - kakl5ngnkmi4e4nq5s9dwwketpo55qk
+    5.88 - i29a5573be182h62d2gp16oqezu84r5
+    5.88 - nrtc6baw7m032ueuqedmmhyzfijler1
+    5.88 - d2y762qvxrpo28v9654xc4x80p6a4ei
+    5.88 - p661zu1zuuyrhqu4z3n5oykixkex0cn
+    5.88 - bza470fsx6dyx14ityutlg7zeed5lqf
+    5.88 - ozwlqiz1bcls8iy1vbj2xjiiva9o9z8
+    5.88 - hx9fg0i2i0pd4f46zchybnrt12lha7p
+    5.88 - 32xq1sy8o4yef1977fusb3b8ld2c958
+    5.88 - mk4iojorm2sw1d5jb8sqsygmvmm3gab
+    5.88 - cs2feey1d73gefv5u2x06apujtsdnbc
+    5.88 - bbbxseoxkd47qzzicbg8jqbifcqktvy
+    5.88 - rqtm9k751xbcnzwhmraf4qjfcxuydgr
+    11.76 - oypkw4bdvr384vxagju7fyrklou27j7
+    5.88 - tnry9qs26g9iw3d4w0c9vhgj5hb4mw3
+  :version: 
+    100.00 - HTTP/1.1
+  content-disposition: 
+    25.00 - inline;filename*=UTF-8''Cladochytrium.menyanthis.-.lindsey.jpg
+    25.00 - inline;filename*=UTF-8''USA_10654_Bryce_Canyon_Luca_Galuzzi_2007.jpg
+    25.00 - inline;filename*=UTF-8''Crystal_128_mail.png
+    25.00 - inline;filename*=UTF-8''Xerocomus_chrysenteron_041031w.jpg
+  x-content-type-options: 
+    100.00 - nosniff
+  user-agent: 
+    100.00 - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.56 Safari/537.4
+  etag: 
+    1.16 - ad218d98c609f93f31a30ada4448d91d
+    1.16 - f09101f120f39fde404e66fc8ca36dc3
+    1.16 - 1e3fafefa313dac84d37dbc140be6f44
+    12.79 - 888fe519470d0868957e4d88ee792a03
+    1.16 - 2cc0803f61f0ad189f91c26071f0c7e6
+    1.16 - dade72cb129021b43b19688139b685c3
+    1.16 - 842eb0d1b9dff127de0a82d9cf82726c
+    12.79 - "dc5-4c8cd4e56b9c0"
+    1.16 - "1537-4c18e194"
+    1.16 - b9ffa1c93136899723d108924c6a6153
+    1.16 - 970b4828e35809918bb15849f8532e7a
+    1.16 - 44b41b977258d79cc079b6d2167176d0
+    2.33 - 66e6013e30ef0d899e5bc2b8e4dab4e2
+    1.16 - 9aab38891f181f7f9cd060f5363de8f9
+    1.16 - "cc-4c8cd4e56b9c0"
+    1.16 - a4e8384f0890d7f1e5bb1ac05e803701
+    1.16 - 5ad51b0ed06e35f1829719196ee9f69a
+    1.16 - 9aa0d6a464cd0e35b0050f8c2b3a3d29
+    1.16 - 1d1db523fca2c9cc226ab516034032ef
+    1.16 - d42b9e746565e965a8ec93f7dec317b5
+    1.16 - c3e3dd87c1de749497fe1ef3aaeeef12
+    1.16 - "13e-4c1a639e"
+    12.79 - "97a-494505e0c46c0"
+    11.63 - "341-4c7b30c2a1300"
+    1.16 - 98c6e5894f27365f7a2378f0157dc39e
+    2.33 - a8321d98126711244f33f2ad9dfa010c
+    2.33 - 37ef309e59716fbd52d4467a9c832788
+    2.33 - 093b9449304139667ef9a7fc7e79d8cf
+    12.79 - "d6-4c8cd4e56b9c0"
+    1.16 - 14060a95bcf4d9b7e7a07bcfe11fb26f
+    1.16 - "cc-4c7b30c2a1300"
+    1.16 - 06a1d30fae4111b5ef2baee2e087bdcd
+    1.16 - f28ba800b0c192f9cea9dffa6d831a0d
+  x-timestamp: 
+    4.35 - 1343816016.44317
+    4.35 - 1334835311.99380
+    4.35 - 1342448648.99727
+    4.35 - 1341216395.38715
+    4.35 - 1334754854.84200
+    4.35 - 1342385102.37775
+    4.35 - 1331643444.75545
+    4.35 - 1342193725.38502
+    4.35 - 1334847663.47967
+    4.35 - 1345140606.43743
+    4.35 - 1347022736.53091
+    4.35 - 1342372978.18983
+    4.35 - 1342656504.83203
+    4.35 - 1331557069.23181
+    4.35 - 1347022736.17358
+    4.35 - 1338402949.36837
+    4.35 - 1347626504.04928
+    4.35 - 1342316396.37871
+    4.35 - 1347019468.92437
+    4.35 - 1335195618.73941
+    8.70 - 1343008593.12629
+    4.35 - 1331562287.69759
+  :method: 
+    100.00 - get
+  cache-control: 
+    2.51 - public, s-maxage=21600, max-age=86400
+    7.06 - private, s-maxage=0, max-age=0, must-revalidate
+    2.51 - private, max-age=86400, s-maxage=0
+    10.02 - public, max-age=2592000, s-maxage=2592000
+    5.01 - public, s-maxage=300, max-age=2678400
+    12.53 - public, max-age=300, s-maxage=300
+    52.62 - max-age=0
+    7.74 - max-age=2592000
+  x-varnish: 
+    0.65 - 639173360 2512684917 2511148782
+    6.45 - 2563733350 2512609575 2511378943
+    7.10 - 639174319 2512609345 2511887839
+    7.10 - 1455104207 2147049796 2110366917
+    7.10 - 638619350 638619008 2178970789 2177899800
+    7.10 - 1455030143 2512614950 2429071643
+    6.45 - 2563680153 2147051321 2110364383
+    7.10 - 2512609286
+    6.45 - 638446712 638153877 2488240665 2043478279
+    7.10 - 2563732944 2147046927 2145512515
+    7.10 - 2161053374 2147046972 2146775660
+    0.65 - 2563533618 2512686567 2411880070
+    0.65 - 2563008113 2562248385 2452971757 2043478300
+    7.10 - 639123601 637904907 2147051707 2110364255
+    7.10 - 2562904285 2562364776 2178961981 1964907522
+    7.10 - 2161051256 2512609347 2511088226
+    0.65 - 1440695410 1440674678 1495336232 1433409163
+    7.10 - 639123704 638970364 2147052077 2110366311
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  x-cache: 
+    0.79 - HIT from amssq47.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq61.esams.wikimedia.org MISS from amssq57.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq56.esams.wikimedia.org HIT from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq52.esams.wikimedia.org HIT from knsq19.knams.wikimedia.org MISS from sorga-msr
+    2.89 - MISS from sq60.wikimedia.org MISS from amssq33.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq54.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq51.wikimedia.org HIT from amssq62.esams.wikimedia.org MISS from amssq54.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq74.wikimedia.org HIT from amssq46.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq49.esams.wikimedia.org HIT from amssq50.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq61.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq42.wikimedia.org HIT from amssq53.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq59.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq43.wikimedia.org HIT from amssq61.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq60.esams.wikimedia.org HIT from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq54.esams.wikimedia.org HIT from amssq59.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq50.esams.wikimedia.org HIT from amssq60.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3001 hit (14094) MISS from sorga-msr
+    0.26 - HIT from amssq55.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq63.wikimedia.org MISS from amssq44.esams.wikimedia.org MISS from knsq27.knams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq48.esams.wikimedia.org HIT from amssq49.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq54.esams.wikimedia.org HIT from amssq60.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq42.wikimedia.org HIT from amssq58.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq53.wikimedia.org HIT from amssq62.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org HIT from amssq61.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3001 hit (391258) MISS from sorga-msr
+    0.52 - HIT from amssq50.esams.wikimedia.org HIT from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq55.esams.wikimedia.org HIT from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq57.wikimedia.org HIT from amssq54.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq48.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq72.wikimedia.org HIT from amssq42.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq54.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq55.esams.wikimedia.org HIT from knsq20.knams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq63.wikimedia.org MISS from amssq36.esams.wikimedia.org MISS from amssq38.esams.wikimedia.org MISS from sorga-msr
+    0.79 - MISS from sq63.wikimedia.org MISS from amssq44.esams.wikimedia.org HIT from knsq27.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq56.wikimedia.org HIT from knsq20.knams.wikimedia.org MISS from amssq50.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3002 hit (5024734) MISS from sorga-msr
+    0.79 - HIT from amssq51.esams.wikimedia.org MISS from amssq53.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from knsq22.knams.wikimedia.org HIT from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq58.esams.wikimedia.org MISS from amssq53.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3002 hit (169016) MISS from sorga-msr
+    0.26 - HIT from sq85.wikimedia.org MISS from sq55.wikimedia.org HIT from amssq54.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq56.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3002 hit (2991) MISS from sorga-msr
+    0.26 - HIT from amssq61.esams.wikimedia.org HIT from amssq53.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq61.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from knsq22.knams.wikimedia.org HIT from knsq20.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq60.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.79 - HIT from amssq61.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq71.wikimedia.org MISS from amssq38.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    1.57 - MISS from sq63.wikimedia.org HIT from amssq44.esams.wikimedia.org HIT from knsq27.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq52.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org HIT from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq49.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq50.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - cp3001 hit (5309771) MISS from sorga-msr
+    0.26 - HIT from knsq22.knams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from knsq22.knams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq83.wikimedia.org MISS from sq54.wikimedia.org HIT from amssq47.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq51.esams.wikimedia.org HIT from amssq52.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3002 hit (127675) MISS from sorga-msr
+    0.26 - HIT from sq54.wikimedia.org HIT from knsq22.knams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq55.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org HIT from amssq50.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq49.esams.wikimedia.org HIT from knsq21.knams.wikimedia.org MISS from sorga-msr
+    2.89 - MISS from sq66.wikimedia.org MISS from amssq33.esams.wikimedia.org MISS from knsq27.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq51.esams.wikimedia.org HIT from amssq56.esams.wikimedia.org MISS from sorga-msr
+    1.31 - HIT from amssq57.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from knsq22.knams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq52.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.79 - HIT from amssq57.esams.wikimedia.org HIT from knsq17.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq86.wikimedia.org HIT from amssq49.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq57.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org HIT from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org HIT from amssq59.esams.wikimedia.org MISS from sorga-msr
+    1.31 - MISS from sq63.wikimedia.org HIT from amssq36.esams.wikimedia.org HIT from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq59.wikimedia.org MISS from amssq33.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq58.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq60.esams.wikimedia.org MISS from amssq53.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq49.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3002 hit (12995) MISS from sorga-msr
+    0.52 - HIT from amssq49.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq56.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq53.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq48.esams.wikimedia.org HIT from knsq18.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq48.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    1.31 - HIT from amssq57.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq60.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    2.89 - MISS from sq62.wikimedia.org MISS from amssq33.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq55.esams.wikimedia.org HIT from amssq51.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3001 miss (0) MISS from sorga-msr
+    0.26 - HIT from knsq21.knams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq57.wikimedia.org HIT from amssq47.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    2.62 - cp3001 hit (8041637) MISS from sorga-msr
+    1.05 - HIT from amssq49.esams.wikimedia.org HIT from amssq51.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from knsq22.knams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq56.esams.wikimedia.org HIT from amssq57.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq62.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq51.esams.wikimedia.org HIT from amssq59.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq61.esams.wikimedia.org HIT from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq48.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq50.esams.wikimedia.org HIT from knsq16.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org MISS from amssq59.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq56.esams.wikimedia.org HIT from amssq58.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq58.esams.wikimedia.org HIT from knsq17.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq51.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3001 hit (6171) MISS from sorga-msr
+    0.26 - HIT from sq56.wikimedia.org HIT from amssq61.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.79 - HIT from knsq20.knams.wikimedia.org HIT from amssq47.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq65.wikimedia.org HIT from knsq29.knams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq74.wikimedia.org HIT from amssq40.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3002 hit (922832) MISS from sorga-msr
+    0.79 - HIT from amssq60.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    2.62 - cp3001 hit (12794) MISS from sorga-msr
+    0.26 - HIT from knsq20.knams.wikimedia.org HIT from knsq20.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq51.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - cp3001 hit (146) MISS from sorga-msr
+    0.26 - HIT from sq44.wikimedia.org HIT from amssq47.esams.wikimedia.org MISS from amssq59.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq53.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq53.esams.wikimedia.org HIT from amssq58.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq71.wikimedia.org HIT from amssq45.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq50.esams.wikimedia.org HIT from amssq58.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq58.esams.wikimedia.org HIT from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq55.esams.wikimedia.org HIT from knsq16.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq59.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq57.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    2.89 - cp3002 hit (32423) MISS from sorga-msr
+    0.26 - HIT from knsq21.knams.wikimedia.org HIT from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq54.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq78.wikimedia.org HIT from amssq31.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq57.esams.wikimedia.org HIT from amssq47.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq49.esams.wikimedia.org MISS from knsq20.knams.wikimedia.org MISS from sorga-msr
+    2.62 - cp3002 hit (163340) MISS from sorga-msr
+    0.26 - MISS from sq85.wikimedia.org MISS from sq82.wikimedia.org HIT from amssq54.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq61.esams.wikimedia.org HIT from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq49.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - cp3001 hit (766486) MISS from sorga-msr
+    0.26 - HIT from sq83.wikimedia.org HIT from amssq56.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    1.05 - MISS from sq63.wikimedia.org MISS from amssq36.esams.wikimedia.org HIT from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq56.esams.wikimedia.org MISS from knsq21.knams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq72.wikimedia.org HIT from amssq35.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from knsq20.knams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq44.wikimedia.org HIT from amssq62.esams.wikimedia.org MISS from amssq62.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq50.esams.wikimedia.org HIT from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq71.wikimedia.org HIT from knsq29.knams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq51.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq60.esams.wikimedia.org HIT from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq53.esams.wikimedia.org MISS from amssq53.esams.wikimedia.org MISS from sorga-msr
+    0.79 - HIT from amssq60.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from sq44.wikimedia.org HIT from amssq62.esams.wikimedia.org MISS from amssq48.esams.wikimedia.org MISS from sorga-msr
+    0.26 - cp3001 hit (8) MISS from sorga-msr
+    0.26 - HIT from amssq59.esams.wikimedia.org MISS from amssq61.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq52.esams.wikimedia.org MISS from amssq60.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq54.esams.wikimedia.org MISS from knsq17.knams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq47.esams.wikimedia.org MISS from amssq56.esams.wikimedia.org MISS from sorga-msr
+    0.26 - HIT from amssq62.esams.wikimedia.org HIT from knsq16.knams.wikimedia.org MISS from sorga-msr
+    0.26 - MISS from sq60.wikimedia.org HIT from amssq32.esams.wikimedia.org MISS from amssq46.esams.wikimedia.org MISS from sorga-msr
+    0.52 - HIT from amssq55.esams.wikimedia.org HIT from amssq59.esams.wikimedia.org MISS from sorga-msr
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    8.27 - Thu, 18 Oct 2012 08:24:04 GMT
+    8.27 - Tue, 18 Sep 2012 09:46:41 GMT
+    8.27 - Tue, 18 Sep 2012 09:44:05 GMT
+    8.27 - Tue, 18 Sep 2012 09:44:06 GMT
+    8.27 - Thu, 18 Oct 2012 06:02:54 GMT
+    0.75 - Tue, 18 Sep 2012 09:44:13 GMT
+    8.27 - Tue, 16 Oct 2012 18:13:58 GMT
+    8.27 - Tue, 18 Sep 2012 09:45:44 GMT
+    0.75 - Sun, 30 Sep 2012 13:18:28 GMT
+    7.52 - Tue, 18 Sep 2012 09:44:41 GMT
+    7.52 - Thu, 18 Oct 2012 08:24:02 GMT
+    8.27 - Thu, 18 Oct 2012 02:45:32 GMT
+    8.27 - Tue, 16 Oct 2012 15:24:00 GMT
+    0.75 - Tue, 16 Oct 2012 12:34:01 GMT
+    0.75 - Thu, 18 Oct 2012 02:47:40 GMT
+    7.52 - Wed, 17 Oct 2012 02:48:16 GMT
+  last-modified: 
+    0.87 - Wed, 21 Apr 2010 12:46:58 GMT
+    0.29 - Sun, 11 Mar 2012 23:05:41 GMT
+    0.29 - Thu, 08 Mar 2012 20:22:22 GMT
+    0.29 - Wed, 01 Aug 2012 10:13:36 GMT
+    0.29 - Sun, 01 Jul 2012 15:38:45 GMT
+    0.29 - Fri, 14 Sep 2012 09:45:14 GMT
+    0.29 - Fri, 17 Jul 2009 22:08:25 GMT
+    0.29 - Sun, 03 Apr 2011 17:37:49 GMT
+    0.29 - Tue, 16 Mar 2010 02:02:09 GMT
+    0.29 - Fri, 24 Apr 2009 05:39:06 GMT
+    0.29 - Thu, 13 Sep 2012 13:43:34 GMT
+    0.29 - Sat, 12 Feb 2011 20:56:47 GMT
+    0.29 - Thu, 18 Dec 2008 14:54:13 GMT
+    0.29 - Wed, 12 Sep 2012 17:05:37 GMT
+    0.29 - Thu, 17 Jun 2010 18:04:14 GMT
+    0.29 - Sat, 18 Jul 2009 09:36:40 GMT
+    0.58 - Tue, 20 Mar 2012 23:54:41 GMT
+    0.29 - Wed, 04 Aug 2010 08:02:48 GMT
+    6.38 - Fri, 07 Sep 2012 13:03:31 GMT
+    0.29 - Fri, 13 Jul 2012 15:35:25 GMT
+    0.29 - Tue, 07 Aug 2012 23:16:41 GMT
+    0.29 - Sat, 18 Jul 2009 11:51:48 GMT
+    0.29 - Mon, 04 Apr 2011 16:07:51 GMT
+    0.29 - Tue, 04 Sep 2012 22:36:28 GMT
+    0.29 - Fri, 17 Jul 2009 22:40:48 GMT
+    0.29 - Fri, 17 Jul 2009 23:49:47 GMT
+    0.29 - Tue, 05 Apr 2011 18:40:09 GMT
+    0.29 - Fri, 08 Apr 2011 03:04:48 GMT
+    0.29 - Fri, 07 Sep 2012 12:04:28 GMT
+    0.29 - Wed, 18 Apr 2012 13:14:14 GMT
+    0.87 - Wed, 30 May 2012 18:35:49 GMT
+    0.29 - Sat, 18 Jul 2009 07:19:04 GMT
+    0.58 - Mon, 23 Jul 2012 01:56:33 GMT
+    0.29 - Fri, 08 Apr 2011 03:23:29 GMT
+    0.29 - Mon, 04 Apr 2011 11:03:25 GMT
+    0.29 - Sun, 09 Sep 2012 21:01:06 GMT
+    0.29 - Sun, 03 Apr 2011 16:22:40 GMT
+    0.58 - Sun, 03 Apr 2011 16:22:36 GMT
+    0.29 - Wed, 12 Sep 2012 17:05:32 GMT
+    0.29 - Mon, 18 Jan 2010 00:41:44 GMT
+    0.29 - Fri, 17 Jul 2009 19:15:22 GMT
+    0.29 - Wed, 14 Sep 2011 12:13:15 GMT
+    0.29 - Tue, 18 Sep 2012 09:42:22 GMT
+    0.29 - Sun, 16 Sep 2012 23:37:01 GMT
+    0.29 - Sun, 03 Apr 2011 14:44:54 GMT
+    0.29 - Sun, 15 Jul 2012 20:45:02 GMT
+    0.29 - Mon, 04 Apr 2011 07:35:28 GMT
+    6.38 - Tue, 18 Sep 2012 06:02:21 GMT
+    0.29 - Mon, 23 Jul 2012 20:26:59 GMT
+    3.19 - Fri, 29 Jun 2012 11:55:44 GMT
+    0.58 - Tue, 03 Apr 2012 10:24:19 GMT
+    3.19 - Wed, 12 Sep 2012 17:57:01 GMT
+    9.86 - Mon, 03 Sep 2012 14:53:35 GMT
+    3.19 - Mon, 20 Aug 2012 14:08:44 GMT
+    0.29 - Sat, 10 Mar 2012 05:53:33 GMT
+    3.19 - Mon, 17 Jan 2011 21:59:20 GMT
+    0.29 - Thu, 07 Apr 2011 00:39:26 GMT
+    0.29 - Mon, 23 Jul 2012 18:02:46 GMT
+    0.29 - Mon, 07 Jun 2010 16:14:31 GMT
+    0.29 - Mon, 10 Nov 2008 03:42:03 GMT
+    0.29 - Mon, 04 Apr 2011 01:29:21 GMT
+    0.87 - Mon, 01 Mar 2010 23:32:19 GMT
+    0.29 - Mon, 20 Dec 2010 17:16:31 GMT
+    0.29 - Mon, 02 Jul 2012 08:06:35 GMT
+    0.29 - Sun, 09 Nov 2008 08:20:54 GMT
+    0.29 - Sun, 16 Sep 2012 10:21:33 GMT
+    0.29 - Thu, 06 Sep 2012 23:12:13 GMT
+    0.29 - Mon, 12 Mar 2012 12:57:49 GMT
+    0.29 - Mon, 23 May 2011 23:53:45 GMT
+    0.29 - Thu, 06 Nov 2008 07:44:31 GMT
+    0.29 - Fri, 17 Jul 2009 19:15:34 GMT
+    0.29 - Mon, 17 Sep 2012 16:08:46 GMT
+    0.29 - Wed, 21 Jan 2009 19:01:27 GMT
+    0.29 - Mon, 04 Apr 2011 15:57:40 GMT
+    0.29 - Tue, 15 Mar 2011 14:21:04 GMT
+    0.58 - Sun, 15 Jul 2012 01:39:56 GMT
+    3.19 - Sun, 16 Sep 2012 04:15:55 GMT
+    0.29 - Fri, 26 Nov 2010 04:48:31 GMT
+    0.29 - Wed, 30 Sep 2009 13:56:07 GMT
+    0.29 - Sun, 29 May 2011 17:22:52 GMT
+    0.29 - Thu, 16 Aug 2012 10:24:39 GMT
+    0.29 - Wed, 23 May 2012 04:02:51 GMT
+    0.58 - Thu, 16 Aug 2012 18:10:06 GMT
+    0.29 - Mon, 23 Apr 2012 15:40:18 GMT
+    0.29 - Mon, 04 Apr 2011 05:27:15 GMT
+    0.29 - Mon, 02 Jul 2012 08:06:31 GMT
+    0.29 - Thu, 17 Jun 2010 18:56:39 GMT
+    0.29 - Sun, 03 Apr 2011 17:33:44 GMT
+    0.58 - Wed, 19 Aug 2009 10:34:35 GMT
+    0.29 - Tue, 18 Sep 2012 09:16:03 GMT
+    0.29 - Thu, 19 Apr 2012 21:08:42 GMT
+    0.58 - Tue, 05 Apr 2011 13:31:34 GMT
+    0.29 - Thu, 19 Apr 2012 15:01:03 GMT
+    0.29 - Tue, 05 Apr 2011 07:08:09 GMT
+    0.29 - Thu, 06 Nov 2008 00:02:32 GMT
+    0.29 - Wed, 12 Sep 2012 17:05:26 GMT
+    0.29 - Fri, 17 Jul 2009 20:18:50 GMT
+    0.29 - Tue, 13 Mar 2012 12:57:24 GMT
+    0.29 - Tue, 11 Nov 2008 10:51:03 GMT
+    0.29 - Sun, 22 May 2011 17:01:32 GMT
+    0.29 - Thu, 19 Jul 2012 00:08:24 GMT
+    0.58 - Tue, 03 Apr 2012 10:24:20 GMT
+    0.29 - Sun, 26 Feb 2012 15:49:46 GMT
+    0.29 - Sun, 29 Jan 2012 14:57:54 GMT
+    0.29 - Fri, 14 Sep 2012 12:41:44 GMT
+    0.29 - Fri, 08 Apr 2011 03:04:49 GMT
+    0.29 - Mon, 04 Apr 2011 00:22:14 GMT
+    0.29 - Thu, 19 Apr 2012 11:35:11 GMT
+    0.58 - Sun, 03 Apr 2011 15:20:37 GMT
+    0.29 - Tue, 18 Sep 2012 09:16:23 GMT
+    3.19 - Tue, 18 Sep 2012 02:43:29 GMT
+    0.29 - Sat, 17 Sep 2011 04:25:22 GMT
+    0.29 - Fri, 17 Jul 2009 20:43:01 GMT
+    0.29 - Mon, 16 Jul 2012 14:24:08 GMT
+    0.29 - Fri, 17 Jul 2009 23:58:22 GMT
+    0.29 - Fri, 17 Jul 2009 19:31:45 GMT
+    0.29 - Sat, 18 Feb 2012 15:21:29 GMT
+    0.58 - Fri, 07 Sep 2012 12:58:56 GMT
+    0.29 - Sat, 03 Dec 2011 16:09:53 GMT
+    3.19 - Tue, 18 Sep 2012 09:40:44 GMT
+    0.29 - Mon, 12 Mar 2012 14:24:47 GMT
+    3.19 - Tue, 18 Sep 2012 02:42:32 GMT
+    0.29 - Tue, 03 Jul 2012 13:36:16 GMT
+    0.29 - Sun, 26 Jul 2009 19:24:44 GMT
+    0.58 - Thu, 23 Jul 2009 11:25:35 GMT
+    0.29 - Tue, 06 Apr 2010 17:38:03 GMT
+    0.29 - Wed, 16 Jun 2010 14:37:08 GMT
+    0.29 - Mon, 04 Apr 2011 08:15:32 GMT
+    3.19 - Fri, 05 Nov 2010 16:00:03 GMT
+    1.74 - Thu, 06 Sep 2012 21:14:27 GMT
+    0.29 - Thu, 04 Jun 2009 10:15:32 GMT
+    0.29 - Sun, 11 Dec 2011 17:22:05 GMT
+    1.74 - Sun, 15 Jul 2012 17:22:58 GMT
+    0.29 - Sat, 10 Apr 2010 13:01:48 GMT
+    1.16 - Mon, 02 Jul 2012 08:06:34 GMT
+    0.29 - Sun, 03 Apr 2011 16:50:42 GMT
+    3.19 - Tue, 18 Sep 2012 09:42:15 GMT
+    0.29 - Sat, 18 Jul 2009 07:15:50 GMT
+    0.29 - Thu, 07 Apr 2011 04:58:32 GMT
+  referer: 
+    1.54 - http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Le_saviez-vous_%3F
+    9.23 - http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contenus_de_qualit%C3%A9
+    56.41 - http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal
+    2.56 - http://fr.wikipedia.org/wiki/8_septembre
+    3.08 - http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Crit%C3%A8res_d%27admissibilit%C3%A9_des_articles
+    2.05 - http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact
+    3.08 - http://fr.wikipedia.org/wiki/Parti_populaire_lib%C3%A9ral_et_d%C3%A9mocrate
+    5.64 - http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:%C3%80_propos
+    6.92 - http://fr.wikipedia.org/wiki/Champignon
+    8.72 - http://fr.wikipedia.org/wiki/Cheval_lorrain
+    0.77 - http://fr.wikipedia.org/wiki/Sp%C3%A9cial:Modifications_r%C3%A9centes
+  if-modified-since: 
+    4.17 - Sun, 15 Jul 2012 01:39:56 GMT
+    4.17 - Tue, 03 Apr 2012 10:24:19 GMT
+    4.17 - Wed, 30 May 2012 18:35:49 GMT
+    4.17 - Thu, 16 Aug 2012 18:10:06 GMT
+    37.50 - Thu, 06 Sep 2012 21:14:27 GMT
+    4.17 - Tue, 20 Mar 2012 23:54:41 GMT
+    41.67 - Sun, 15 Jul 2012 17:22:58 GMT
+  date: 
+    0.26 - Fri, 14 Sep 2012 10:38:57 GMT
+    1.54 - Mon, 10 Sep 2012 14:21:16 GMT
+    0.26 - Sat, 08 Sep 2012 02:05:40 GMT
+    2.56 - Tue, 18 Sep 2012 05:08:14 GMT
+    0.26 - Thu, 13 Sep 2012 03:02:40 GMT
+    0.26 - Tue, 18 Sep 2012 01:58:43 GMT
+    0.26 - Thu, 13 Sep 2012 09:31:10 GMT
+    0.26 - Sun, 16 Sep 2012 15:43:30 GMT
+    0.26 - Tue, 18 Sep 2012 09:40:36 GMT
+    0.26 - Thu, 13 Sep 2012 13:34:47 GMT
+    0.51 - Sun, 02 Sep 2012 16:27:08 GMT
+    0.26 - Mon, 27 Aug 2012 10:48:22 GMT
+    0.26 - Thu, 13 Sep 2012 22:21:04 GMT
+    0.26 - Fri, 14 Sep 2012 21:24:43 GMT
+    0.26 - Sat, 08 Sep 2012 17:35:47 GMT
+    0.26 - Tue, 18 Sep 2012 07:02:21 GMT
+    0.26 - Sun, 16 Sep 2012 19:04:50 GMT
+    1.03 - Sun, 16 Sep 2012 21:14:48 GMT
+    0.26 - Tue, 20 Mar 2012 23:54:41 GMT
+    0.26 - Fri, 14 Sep 2012 07:46:21 GMT
+    0.26 - Sun, 16 Sep 2012 21:51:39 GMT
+    0.26 - Wed, 27 Jun 2012 10:29:44 GMT
+    0.26 - Sat, 08 Sep 2012 18:14:37 GMT
+    0.26 - Thu, 13 Sep 2012 21:38:40 GMT
+    0.26 - Mon, 17 Sep 2012 16:09:07 GMT
+    0.26 - Sun, 16 Sep 2012 17:29:24 GMT
+    0.26 - Mon, 06 Aug 2012 06:49:49 GMT
+    0.26 - Thu, 30 Aug 2012 13:24:11 GMT
+    19.74 - Tue, 18 Sep 2012 09:42:15 GMT
+    0.51 - Wed, 22 Aug 2012 06:11:29 GMT
+    0.26 - Fri, 14 Sep 2012 01:04:29 GMT
+    0.26 - Fri, 14 Sep 2012 15:08:37 GMT
+    0.26 - Sun, 16 Sep 2012 19:04:46 GMT
+    0.26 - Thu, 06 Sep 2012 09:57:15 GMT
+    0.26 - Mon, 17 Sep 2012 12:21:15 GMT
+    0.26 - Sat, 05 May 2012 08:25:43 GMT
+    19.74 - Tue, 18 Sep 2012 09:42:16 GMT
+    0.51 - Fri, 14 Sep 2012 19:31:22 GMT
+    0.26 - Sun, 16 Sep 2012 15:07:06 GMT
+    0.26 - Fri, 07 Sep 2012 23:46:34 GMT
+    0.26 - Mon, 17 Sep 2012 09:30:19 GMT
+    0.51 - Tue, 18 Sep 2012 09:42:18 GMT
+    0.26 - Tue, 18 Sep 2012 09:42:22 GMT
+    0.26 - Tue, 28 Aug 2012 11:19:55 GMT
+    0.26 - Sat, 15 Sep 2012 14:25:27 GMT
+    0.26 - Wed, 22 Aug 2012 18:00:41 GMT
+    0.26 - Fri, 31 Aug 2012 15:59:08 GMT
+    0.26 - Tue, 18 Sep 2012 06:15:21 GMT
+    0.26 - Mon, 17 Sep 2012 15:50:38 GMT
+    0.26 - Fri, 14 Sep 2012 00:09:29 GMT
+    0.26 - Fri, 24 Aug 2012 08:02:29 GMT
+    0.26 - Tue, 04 Sep 2012 23:24:50 GMT
+    0.26 - Sat, 15 Sep 2012 06:04:03 GMT
+    0.26 - Thu, 13 Sep 2012 21:34:57 GMT
+    0.26 - Tue, 18 Sep 2012 05:59:38 GMT
+    0.51 - Fri, 24 Aug 2012 08:03:50 GMT
+    5.64 - Mon, 17 Sep 2012 15:46:13 GMT
+    0.26 - Tue, 18 Sep 2012 00:02:26 GMT
+    0.26 - Wed, 12 Sep 2012 14:52:47 GMT
+    0.26 - Sun, 12 Aug 2012 01:38:53 GMT
+    0.26 - Thu, 26 Apr 2012 06:44:16 GMT
+    2.82 - Tue, 18 Sep 2012 09:42:17 GMT
+    0.26 - Sat, 08 Sep 2012 08:04:39 GMT
+    0.26 - Sun, 16 Sep 2012 18:27:46 GMT
+    0.26 - Fri, 07 Sep 2012 13:36:19 GMT
+    0.26 - Sat, 16 Jun 2012 21:49:53 GMT
+    0.26 - Wed, 12 Sep 2012 08:51:58 GMT
+    2.56 - Tue, 18 Sep 2012 08:50:43 GMT
+    0.26 - Sun, 16 Sep 2012 21:15:28 GMT
+    0.26 - Sun, 16 Sep 2012 21:22:23 GMT
+    0.26 - Mon, 17 Sep 2012 18:21:04 GMT
+    0.26 - Thu, 06 Sep 2012 10:47:21 GMT
+    0.26 - Thu, 13 Sep 2012 09:18:04 GMT
+    0.26 - Fri, 10 Aug 2012 10:08:33 GMT
+    0.26 - Fri, 14 Sep 2012 19:42:26 GMT
+    0.26 - Tue, 18 Sep 2012 05:45:54 GMT
+    0.26 - Fri, 14 Sep 2012 21:37:36 GMT
+    0.26 - Sun, 16 Sep 2012 04:14:25 GMT
+    0.51 - Tue, 28 Aug 2012 11:41:33 GMT
+    0.26 - Tue, 10 Jul 2012 02:36:33 GMT
+    0.26 - Wed, 12 Sep 2012 18:18:30 GMT
+    0.77 - Tue, 18 Sep 2012 09:42:23 GMT
+    0.26 - Tue, 18 Sep 2012 09:32:41 GMT
+    0.26 - Wed, 12 Sep 2012 14:52:29 GMT
+    0.26 - Sun, 16 Sep 2012 12:58:39 GMT
+    0.26 - Sun, 16 Sep 2012 15:27:12 GMT
+    0.26 - Sun, 16 Sep 2012 16:10:14 GMT
+    0.26 - Sat, 15 Sep 2012 20:27:46 GMT
+    0.26 - Tue, 18 Sep 2012 09:39:22 GMT
+    0.26 - Mon, 07 May 2012 10:44:13 GMT
+    0.26 - Sat, 25 Aug 2012 05:25:11 GMT
+    0.26 - Fri, 14 Sep 2012 04:04:58 GMT
+    0.51 - Tue, 18 Sep 2012 09:42:12 GMT
+    0.26 - Tue, 28 Aug 2012 21:26:36 GMT
+    0.26 - Mon, 17 Sep 2012 15:25:25 GMT
+    0.26 - Sun, 16 Sep 2012 22:15:06 GMT
+    0.51 - Sat, 08 Sep 2012 17:09:44 GMT
+    0.26 - Sat, 08 Sep 2012 17:52:38 GMT
+    0.26 - Sat, 25 Aug 2012 15:53:47 GMT
+    0.26 - Tue, 31 Jul 2012 16:08:20 GMT
+    0.51 - Sat, 15 Sep 2012 01:04:45 GMT
+    0.77 - Tue, 18 Sep 2012 09:42:25 GMT
+    0.26 - Fri, 14 Sep 2012 22:05:39 GMT
+    0.26 - Sat, 15 Sep 2012 07:29:01 GMT
+    0.26 - Thu, 13 Sep 2012 14:05:39 GMT
+    0.26 - Sun, 16 Sep 2012 02:05:57 GMT
+    0.26 - Fri, 14 Sep 2012 03:04:59 GMT
+    0.51 - Fri, 14 Sep 2012 06:42:03 GMT
+    0.26 - Sun, 16 Sep 2012 17:53:39 GMT
+    0.26 - Sun, 09 Sep 2012 06:57:24 GMT
+    0.26 - Tue, 18 Sep 2012 07:25:45 GMT
+    0.26 - Tue, 18 Sep 2012 07:29:39 GMT
+    0.51 - Sun, 19 Aug 2012 16:46:50 GMT
+    0.26 - Thu, 13 Sep 2012 22:16:55 GMT
+    0.26 - Wed, 12 Sep 2012 15:33:26 GMT
+    0.26 - Fri, 14 Sep 2012 19:21:25 GMT
+    0.26 - Fri, 14 Sep 2012 19:13:13 GMT
+    0.26 - Mon, 10 Sep 2012 09:34:24 GMT
+    0.26 - Thu, 16 Feb 2012 04:44:15 GMT
+    0.26 - Mon, 17 Sep 2012 17:02:28 GMT
+    0.26 - Fri, 14 Sep 2012 14:44:05 GMT
+    0.26 - Thu, 23 Aug 2012 04:44:45 GMT
+    1.54 - Thu, 13 Sep 2012 21:04:43 GMT
+    0.26 - Mon, 20 Aug 2012 12:57:28 GMT
+    0.26 - Sat, 08 Sep 2012 21:28:19 GMT
+    0.26 - Sat, 27 Aug 2011 23:52:25 GMT
+    0.26 - Mon, 17 Sep 2012 20:57:47 GMT
+    0.26 - Tue, 18 Sep 2012 05:22:30 GMT
+    0.26 - Sat, 08 Sep 2012 08:10:51 GMT
+    0.26 - Tue, 18 Sep 2012 09:42:19 GMT
+    0.26 - Fri, 06 Jul 2012 04:50:37 GMT
+    0.26 - Sun, 16 Sep 2012 18:09:54 GMT
+    0.26 - Tue, 18 Sep 2012 05:28:50 GMT
+    0.26 - Tue, 18 Sep 2012 09:42:24 GMT
+    0.26 - Tue, 04 Sep 2012 07:55:48 GMT
+    0.51 - Tue, 18 Sep 2012 09:42:21 GMT
+    0.26 - Tue, 11 Oct 2011 19:54:52 GMT
+    0.77 - Sun, 16 Sep 2012 16:04:18 GMT
+    0.77 - Sat, 15 Sep 2012 23:07:02 GMT
+    0.26 - Mon, 17 Sep 2012 16:31:23 GMT
+    0.26 - Mon, 17 Sep 2012 04:04:29 GMT
+    0.26 - Thu, 13 Sep 2012 15:24:15 GMT
+    0.26 - Fri, 07 Sep 2012 13:33:48 GMT
+    0.26 - Mon, 10 Sep 2012 11:45:50 GMT
+    0.26 - Wed, 07 Mar 2012 17:03:10 GMT
+    0.26 - Wed, 01 Aug 2012 21:18:26 GMT
+    0.26 - Sun, 16 Sep 2012 17:11:06 GMT
+    0.26 - Sat, 25 Aug 2012 08:44:41 GMT
+    1.28 - Tue, 18 Sep 2012 09:42:20 GMT
+    0.26 - Mon, 27 Aug 2012 05:09:27 GMT
+    0.26 - Sun, 16 Sep 2012 16:04:00 GMT
+    0.26 - Sun, 16 Sep 2012 21:19:36 GMT
+  if-none-match: 
+    76.92 - 888fe519470d0868957e4d88ee792a03
+    7.69 - a8321d98126711244f33f2ad9dfa010c
+    7.69 - 66e6013e30ef0d899e5bc2b8e4dab4e2
+    7.69 - 093b9449304139667ef9a7fc7e79d8cf
+  access-control-allow-origin: 
+    100.00 - *
+  x-vary-options: 
+    100.00 - Accept-Encoding;list-contains=gzip
+  :path: 
+    0.51 - /wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/35px-Wikispecies-logo.svg.png
+    0.26 - /wikipedia/commons/8/8f/Bluebg_rounded2.png
+    0.26 - /wikipedia/commons/thumb/3/39/HSDagensdatum.svg/38px-HSDagensdatum.svg.png
+    0.51 - /wikipedia/commons/thumb/8/86/ShanhaiguanGreatWall-end.jpg/100px-ShanhaiguanGreatWall-end.jpg
+    0.26 - /wikipedia/commons/thumb/9/91/Queen_Mary_2_05_KMJ.jpg/150px-Queen_Mary_2_05_KMJ.jpg
+    0.26 - /wikipedia/commons/thumb/3/3e/Disambig_colour.svg/20px-Disambig_colour.svg.png
+    0.51 - /wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/30px-Wikiquote-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/8/8f/W-circle.svg/38px-W-circle.svg.png
+    0.26 - /wikipedia/commons/thumb/5/5a/Wikipedia-logo-v2-fr.png/120px-Wikipedia-logo-v2-fr.png
+    0.26 - /wikipedia/commons/thumb/1/18/Horseicon.svg/45px-Horseicon.svg.png
+    0.26 - /wikipedia/commons/thumb/2/24/Wikinews-logo.svg/20px-Wikinews-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/c/c2/Hourglass_drawing.svg/18px-Hourglass_drawing.svg.png
+    0.26 - /wiki/Wikip%C3%A9dia:Contenus_de_qualit%C3%A9
+    0.26 - /wiki/Wikip%C3%A9dia:Accueil_principal
+    0.51 - /wikipedia/commons/4/4c/Icone_AdQ.png
+    0.26 - /wikipedia/commons/thumb/4/4a/Office-calendar-modified.svg/35px-Office-calendar-modified.svg.png
+    2.82 - /w/index.php?title=MediaWiki:Common.css/taxobox_v3.css&action=raw&ctype=text/css
+    0.26 - /wikipedia/commons/thumb/6/6f/ChessSet.jpg/150px-ChessSet.jpg
+    0.26 - /wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/20px-Wikiversity-logo.svg.png
+    0.51 - /wikipedia/commons/thumb/2/24/Wikinews-logo.svg/35px-Wikinews-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/2/2a/Contactus-wmcolors.svg/180px-Contactus-wmcolors.svg.png
+    0.26 - /wikipedia/commons/thumb/1/1c/Cscr-featuredtopic_gold.svg/17px-Cscr-featuredtopic_gold.svg.png
+    2.56 - /static-1.20wmf10/skins/common/images/closewindow19x19.png
+    0.26 - /wikipedia/commons/thumb/c/c3/Flag_of_France.svg/20px-Flag_of_France.svg.png
+    0.51 - /wikipedia/commons/thumb/9/9f/Wiktprintable_without_text.svg/35px-Wiktprintable_without_text.svg.png
+    2.82 - /w/index.php?title=MediaWiki:Wikiminiatlas.js&action=raw&ctype=text/javascript&smaxage=21600&maxage=86400
+    2.82 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=startup&only=scripts&skin=vector&*
+    0.26 - /wikipedia/commons/thumb/c/cd/HSSamarbete.svg/38px-HSSamarbete.svg.png
+    0.26 - /wiki/Wikip%C3%A9dia:Contact
+    2.82 - /static-1.20wmf11/skins/vector/images/search-ltr.png?303-4
+    0.26 - /wikipedia/commons/thumb/0/03/P_history-green.png/35px-P_history-green.png
+    0.26 - /wikipedia/commons/thumb/c/c1/Test_wiki_logo_notext.png/35px-Test_wiki_logo_notext.png
+    0.26 - /wikipedia/commons/thumb/1/14/Wikimedia-logo-circle.svg/38px-Wikimedia-logo-circle.svg.png
+    0.26 - /wiki/Wikip%C3%A9dia:%C3%80_propos
+    0.26 - /wiki/Wikip%C3%A9dia:Crit%C3%A8res_d%27admissibilit%C3%A9_des_articles
+    0.26 - /wikipedia/commons/thumb/d/da/Xerocomus_chrysenteron_041031w.jpg/120px-Xerocomus_chrysenteron_041031w.jpg
+    0.26 - /wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/6/66/Race_Lorraine_Gayot.jpg/150px-Race_Lorraine_Gayot.jpg
+    0.26 - /wikipedia/commons/thumb/7/7f/Cladochytrium.menyanthis.-.lindsey.jpg/120px-Cladochytrium.menyanthis.-.lindsey.jpg
+    0.26 - /wikipedia/commons/thumb/4/41/David_Copperfield%2C_frontispice_of_the_cover_of_the_monthly_parts.gif/120px-David_Copperfield%2C_frontispice_of_the_cover_of_the_monthly_parts.gif
+    0.26 - /wikipedia/commons/thumb/5/5b/Society.svg/48px-Society.svg.png
+    0.26 - /wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/35px-Wikimedia_Community_Logo.svg.png
+    0.26 - /wikipedia/commons/thumb/f/f3/TeresadiLisieux.JPG/100px-TeresadiLisieux.JPG
+    0.26 - /wikipedia/commons/thumb/a/a9/HSVissteduatt.svg/38px-HSVissteduatt.svg.png
+    0.26 - /wikipedia/commons/thumb/a/ae/Star_piece_2.png/28px-Star_piece_2.png
+    0.26 - /wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/30px-Wikisource-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/1/1d/P1010242small.jpg/150px-P1010242small.jpg
+    0.26 - /wikipedia/commons/thumb/5/55/Bug_blank.svg/35px-Bug_blank.svg.png
+    0.26 - /wiki/Sp%C3%A9cial:Modifications_r%C3%A9centes
+    1.03 - /wikipedia/commons/thumb/4/4a/Commons-logo.svg/14px-Commons-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/2/2b/Crystal_Clear_action_half_lock.png/15px-Crystal_Clear_action_half_lock.png
+    0.26 - /wikipedia/commons/thumb/6/66/Race_Lorraine_Gayot.jpg/280px-Race_Lorraine_Gayot.jpg
+    0.26 - /wikipedia/commons/thumb/8/81/Wikimedia-logo.svg/120px-Wikimedia-logo.svg.png
+    2.82 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=site&only=styles&skin=vector&*
+    2.82 - /images/wikimedia-button.png
+    2.82 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=skins.vector&only=scripts&skin=vector&*
+    2.82 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=site&only=scripts&skin=vector&*
+    0.26 - /wikipedia/commons/thumb/0/02/Incubator-notext.svg/35px-Incubator-notext.svg.png
+    0.26 - /wikipedia/commons/thumb/0/0a/Attelage_lorrain.jpg/330px-Attelage_lorrain.jpg
+    0.26 - /wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/16px-Wikiquote-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/b/b8/Dr_Mustafa_Abushagur.JPG/80px-Dr_Mustafa_Abushagur.JPG
+    0.26 - /wikipedia/commons/thumb/6/67/AtlanteanA.png/150px-AtlanteanA.png
+    0.26 - /wiki/Champignon
+    0.26 - /wikipedia/commons/thumb/c/c9/Portal.svg/20px-Portal.svg.png
+    0.26 - /wikipedia/commons/4/46/Bluebg_rounded.png
+    0.26 - /wikipedia/commons/thumb/4/4d/USA_10654_Bryce_Canyon_Luca_Galuzzi_2007.jpg/150px-USA_10654_Bryce_Canyon_Luca_Galuzzi_2007.jpg
+    0.26 - /wikipedia/commons/thumb/4/4a/P_ps-green.png/35px-P_ps-green.png
+    0.26 - /wikipedia/commons/thumb/1/15/Hannover_Gehry-Tower.jpg/18px-Hannover_Gehry-Tower.jpg
+    0.26 - /wikipedia/commons/a/ad/Arr_r.png
+    0.26 - /wikipedia/commons/thumb/b/b5/Daibutsu-den_in_Todaiji_Nara01bs3200.jpg/150px-Daibutsu-den_in_Todaiji_Nara01bs3200.jpg
+    0.51 - /wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/35px-Wikiversity-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/3/3d/Mediawiki-logo.png/35px-Mediawiki-logo.png
+    2.82 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=jquery%2Cmediawiki&only=scripts&skin=vector&version=20120912T175701Z
+    0.26 - /wikipedia/commons/thumb/f/fd/HSutvald2.svg/38px-HSutvald2.svg.png
+    0.26 - /wikipedia/commons/thumb/5/57/Wikimania.svg/35px-Wikimania.svg.png
+    0.26 - /wikipedia/commons/thumb/d/d0/LA2-Blitz-0309.jpg/250px-LA2-Blitz-0309.jpg
+    0.26 - /wiki/Cheval_lorrain
+    0.26 - /wikipedia/commons/thumb/f/fc/GIC_Arhantin_Samuli.JPG/150px-GIC_Arhantin_Samuli.JPG
+    0.26 - /wikipedia/commons/thumb/3/35/Information_icon.svg/16px-Information_icon.svg.png
+    0.77 - /wikipedia/commons/thumb/b/b4/Gtk-dialog-info.svg/12px-Gtk-dialog-info.svg.png
+    0.26 - /wikipedia/commons/thumb/5/5b/Race_ardennaise-GAYOT_ATLAS_STATISTIQUE_1850.jpg/220px-Race_ardennaise-GAYOT_ATLAS_STATISTIQUE_1850.jpg
+    0.26 - /wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/33px-Flag_of_the_Netherlands.svg.png
+    0.26 - /wikipedia/commons/thumb/8/85/Forthrailbridgefromsouthqueensferry.jpg/150px-Forthrailbridgefromsouthqueensferry.jpg
+    0.26 - /wikipedia/commons/thumb/7/70/Logo-Monde-%C3%A9questre.png/24px-Logo-Monde-%C3%A9questre.png
+    0.26 - /wikipedia/commons/thumb/3/33/Truffle_4.jpg/120px-Truffle_4.jpg
+    0.26 - /wikipedia/commons/thumb/a/a6/Symptom_potato_late_blight.jpg/120px-Symptom_potato_late_blight.jpg
+    2.82 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=ext.gadget.BoutonPlus%2CWikiMiniAtlas%2CnewCollapsible%7Cjquery.autoEllipsis%2CbyteLength%2CbyteLimit%2CcheckboxShiftClick%2CcollapsibleTabs%2CdelayedBind%2ChighlightText%2CmakeCollapsible%2Cmw-jump%2Cplaceholder%2Csuggestions%2CtabIndex%2CtextSelection%7Cmediawiki.action.edit%7Cmediawiki.api%2Cuser%7Cmediawiki.legacy.mwsuggest%7Cmediawiki.page.ready&skin=vector&version=20120918T060221Z&*
+    0.26 - /wikipedia/commons/thumb/b/b8/Text-x-generic_with_pencil-2.svg/38px-Text-x-generic_with_pencil-2.svg.png
+    2.82 - /static-1.20wmf11/skins/common/images/poweredby_mediawiki_88x31.png
+    0.26 - /wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/35px-Wikisource-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/5/58/Nuvola_apps_ksig_horizonta.png/30px-Nuvola_apps_ksig_horizonta.png
+    0.51 - /wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/35px-Wikibooks-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/7/79/Blason_Lorraine.svg/22px-Blason_Lorraine.svg.png
+    0.26 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=ext.centralNotice.bannerController%7Cjquery.client%2Ccookie%2CmwExtension%7Cmediawiki.legacy.ajax%2Cwikibits%7Cmediawiki.notify%2Cspecial%2Cutil%7Cmediawiki.page.startup%7Cmediawiki.special.recentchanges&skin=vector&version=20120918T024232Z&*
+    0.26 - /wikipedia/commons/thumb/4/4a/Commons-logo.svg/35px-Commons-logo.svg.png
+    0.26 - /wiki/Wikip%C3%A9dia:Le_saviez-vous_%3F
+    2.56 - /w/index.php?cache=%2Fcn.js&title=Sp%C3%A9cial%3ABannerListLoader&language=fr&project=wikipedia&country=FR
+    0.26 - /wikipedia/commons/thumb/7/7a/Nuvola_apps_filetypes.png/30px-Nuvola_apps_filetypes.png
+    0.26 - /wikipedia/commons/1/10/Wikipedia-logo-v2-200px-transparent.png
+    2.82 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=ext.vector.collapsibleNav%2CcollapsibleTabs%2CeditWarning%2CsimpleSearch&skin=vector&version=20120918T024329Z&*
+    0.26 - /static-1.20wmf10/skins/common/images/magnify-clip.png
+    0.26 - /wikipedia/commons/thumb/6/61/Gandhi_smiling_1942.jpg/100px-Gandhi_smiling_1942.jpg
+    0.26 - /wikipedia/commons/thumb/b/b7/P_transport-green.png/35px-P_transport-green.png
+    0.26 - /wikipedia/commons/thumb/3/35/Information_icon.svg/40px-Information_icon.svg.png
+    0.26 - /wikipedia/commons/1/1b/Wikibar2.png
+    0.26 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=ext.gadget.BoutonPlus%2CWikiMiniAtlas%2CnewCollapsible%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.special.changeslist%7Cskins.vector&only=styles&skin=vector&*
+    0.26 - /wikipedia/commons/thumb/3/39/Clavaria_zollingeri_57243.jpg/120px-Clavaria_zollingeri_57243.jpg
+    0.26 - /wikipedia/commons/thumb/6/64/Mushroom_cap_morphology2.png/220px-Mushroom_cap_morphology2.png
+    0.26 - /wikipedia/commons/thumb/3/32/P_art-green.png/35px-P_art-green.png
+    2.56 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=ext.gadget.BoutonPlus%2CWikiMiniAtlas%2CnewCollapsible%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&only=styles&skin=vector&*
+    0.51 - /wikipedia/commons/thumb/6/66/Fairytale_bookmark_gold.svg/14px-Fairytale_bookmark_gold.svg.png
+    0.26 - /wikipedia/commons/thumb/a/ae/Armillaria_mellea_Linden.jpg/90px-Armillaria_mellea_Linden.jpg
+    0.26 - /wikipedia/commons/thumb/e/ef/Aiguille1.jpg/150px-Aiguille1.jpg
+    0.26 - /wikipedia/commons/thumb/c/c2/HSBild.svg/38px-HSBild.svg.png
+    0.51 - /wikipedia/commons/thumb/9/9f/Wiktprintable_without_text.svg/20px-Wiktprintable_without_text.svg.png
+    2.82 - /geoiplookup
+    0.26 - /wikipedia/commons/thumb/4/47/B-flat_clarinet_-_four_views.jpg/120px-B-flat_clarinet_-_four_views.jpg
+    0.51 - /wikipedia/commons/thumb/8/8a/Fairytale_bookmark_silver_light.png/14px-Fairytale_bookmark_silver_light.png
+    0.26 - /wikipedia/commons/thumb/4/44/Edible_fungi_in_basket_2009_G1.jpg/220px-Edible_fungi_in_basket_2009_G1.jpg
+    0.26 - /wikipedia/commons/thumb/d/d4/P_biology-green.png/35px-P_biology-green.png
+    0.26 - /wikipedia/commons/thumb/f/f0/Horse_%28PSF%29.png/100px-Horse_%28PSF%29.png
+    0.26 - /wikipedia/commons/thumb/f/fd/VVD.svg/100px-VVD.svg.png
+    0.26 - /wikipedia/commons/thumb/e/eb/Blue_check.svg/20px-Blue_check.svg.png
+    0.26 - /wikipedia/commons/thumb/a/a7/MSH80_st_helens_eruption_plume_07-22-80.jpg/120px-MSH80_st_helens_eruption_plume_07-22-80.jpg
+    0.26 - /static-1.20wmf11/skins/common/images/magnify-clip.png
+    0.26 - /wiki/8_septembre
+    2.56 - /fr.wikipedia.org/load.php?debug=false&lang=fr&modules=ext.centralNotice.bannerController%7Cjquery.client%2Ccookie%2CmwExtension%7Cmediawiki.legacy.ajax%2Cwikibits%7Cmediawiki.notify%2Cutil%7Cmediawiki.page.startup&skin=vector&version=20120918T024232Z&*
+    0.26 - /wikipedia/commons/thumb/e/e1/Onychomycosis_due_to_Trychophyton_rubrum%2C_right_and_left_great_toe_PHIL_579_lores.jpg/120px-Onychomycosis_due_to_Trychophyton_rubrum%2C_right_and_left_great_toe_PHIL_579_lores.jpg
+    0.26 - /wikipedia/commons/thumb/b/b4/Wikimedia_Community_Logo_optimized.svg/35px-Wikimedia_Community_Logo_optimized.svg.png
+    0.26 - /wiki/Parti_populaire_lib%C3%A9ral_et_d%C3%A9mocrate
+    0.26 - /wikipedia/commons/thumb/c/cd/Oryctes_nasicornis_male_2012_G1.jpg/303px-Oryctes_nasicornis_male_2012_G1.jpg
+    2.56 - /w/index.php?title=Special%3ABannerLoader&banner=wlm_2012&campaign=WLM+2012-1&userlang=fr&db=frwiki&sitename=Wikip%C3%A9dia&country=FR
+    0.26 - /wikipedia/commons/thumb/0/07/Kantarell%2C_Iduns_kokbok.png/18px-Kantarell%2C_Iduns_kokbok.png
+    0.26 - /wikipedia/commons/1/13/Arr_l.png
+    0.26 - /wikipedia/commons/thumb/2/27/Goldenwiki_2.png/40px-Goldenwiki_2.png
+    0.51 - /wikipedia/commons/thumb/6/6a/Fairytale_waring.png/16px-Fairytale_waring.png
+    0.26 - /wikipedia/commons/thumb/8/8a/P_religion-green.png/35px-P_religion-green.png
+    0.77 - /wikipedia/commons/thumb/6/61/Searchtool.svg/15px-Searchtool.svg.png
+    0.26 - /wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/19px-Wikibooks-logo.svg.png
+    0.26 - /wikipedia/commons/thumb/3/3e/Disambig_colour.svg/15px-Disambig_colour.svg.png
+    0.26 - /wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/24px-Crystal_128_mail.png
+    0.26 - /wikipedia/commons/thumb/c/c7/Fairytale_bookmark_gold.png/25px-Fairytale_bookmark_gold.png
+    0.26 - /wikipedia/commons/thumb/c/ca/Claviceps_purpurea.JPG/95px-Claviceps_purpurea.JPG
+    0.26 - /wikipedia/commons/thumb/d/d4/Marion_Jones_12.jpg/80px-Marion_Jones_12.jpg
+    0.26 - /wikipedia/commons/thumb/1/1c/Cscr-featuredtopic_gold.svg/20px-Cscr-featuredtopic_gold.svg.png
+    0.26 - /wikipedia/commons/thumb/d/db/P_sport-green.png/35px-P_sport-green.png
+    0.26 - /wikipedia/commons/thumb/e/e6/ZOLA_1902B.jpg/120px-ZOLA_1902B.jpg
+    0.26 - /wikipedia/commons/thumb/7/76/Vache_NB.svg/39px-Vache_NB.svg.png
+    0.26 - /wikipedia/commons/thumb/b/b2/Cassini_Saturn_Orbit_Insertion.jpg/150px-Cassini_Saturn_Orbit_Insertion.jpg
+    2.82 - /wikipedia/commons/5/5a/Wikipedia-logo-v2-fr.png
+    0.26 - /wikipedia/commons/thumb/8/8b/Slime_mold.jpg/120px-Slime_mold.jpg
+    0.26 - /wikipedia/commons/thumb/f/f6/Blue_Stilton_Penicillium.jpg/93px-Blue_Stilton_Penicillium.jpg
+    0.26 - /wikipedia/commons/thumb/f/f1/Children-play-on-alice-in-wonderland-sculpture-central-park-new-york-3.jpg/220px-Children-play-on-alice-in-wonderland-sculpture-central-park-new-york-3.jpg
+    2.56 - /wikipedia/commons/thumb/c/ca/Wiki_Loves_Monuments_Logo_notext.svg/60px-Wiki_Loves_Monuments_Logo_notext.svg.png
+    0.26 - /wikipedia/commons/thumb/6/6f/Confusion_colour.svg/20px-Confusion_colour.svg.png
+    2.82 - /w/index.php?title=MediaWiki:Gadget-MoveResizeAbsolute.js&action=raw&ctype=text/javascript
+    2.56 - /wikipedia/commons/thumb/b/b2/%C3%96rebro_slott_resynth.jpg/77px-%C3%96rebro_slott_resynth.jpg
+    0.26 - /wikipedia/commons/thumb/c/c8/Jupiter_from_Voyager_1.jpg/150px-Jupiter_from_Voyager_1.jpg
+  content-language: 
+    100.00 - fr
+  content-encoding: 
+    100.00 - gzip
+  content-type: 
+    11.55 - image/jpeg
+    2.89 - text/javascript
+    2.89 - text/css; charset=UTF-8
+    2.89 - text/html; charset=UTF-8
+    42.52 - image/png
+    25.46 - text/javascript; charset=utf-8
+    0.26 - image/gif
+    5.77 - text/css; charset=utf-8
+    5.77 - text/javascript; charset=UTF-8
+  age: 
+    0.26 - 3725549
+    0.52 - 2345449
+    0.26 - 834578
+    0.26 - 34790
+    0.26 - 302684
+    0.26 - 674460
+    0.26 - 326019
+    0.26 - 13360
+    0.26 - 64306
+    0.26 - 7958
+    0.26 - 131211
+    0.26 - 15207
+    0.26 - 200182
+    0.26 - 521418
+    0.79 - 149880
+    12.86 - 0
+    0.26 - 4
+    0.26 - 2051309
+    2.89 - 13161
+    0.79 - 210915
+    0.26 - 1628286
+    0.26 - 11754995
+    0.26 - 162496
+    0.26 - 386729
+    0.26 - 18593885
+    0.26 - 4105430
+    2.89 - 64563
+    0.26 - 455979
+    0.26 - 7168353
+    0.26 - 1160246
+    0.26 - 192472
+    0.52 - 356418
+    0.26 - 6073543
+    0.26 - 487427
+    0.26 - 12538683
+    0.26 - 14184
+    0.26 - 16821553
+    0.26 - 3225803
+    0.26 - 106671
+    0.26 - 2089030
+    2.62 - 111241
+    0.26 - 1917169
+    2.89 - 191
+    2.89 - 190
+    0.26 - 192
+    0.26 - 369437
+    0.79 - 5
+    0.26 - 27820
+    0.52 - 310259
+    0.26 - 61858
+    0.26 - 76868
+    0.26 - 376672
+    0.52 - 1358108
+    0.26 - 352562
+    0.26 - 936361
+    0.79 - 3
+    0.26 - 130962
+    0.26 - 497335
+    0.26 - 15589
+    0.26 - 2302895
+    0.26 - 891396
+    0.26 - 499791
+    0.26 - 580
+    0.26 - 143318
+    0.26 - 2077060
+    0.26 - 161022
+    0.26 - 309592
+    0.26 - 24885
+    0.26 - 2264253
+    0.26 - 102
+    0.26 - 303458
+    0.26 - 267196
+    0.26 - 153315
+    0.26 - 242212
+    0.26 - 433453
+    0.26 - 936508
+    0.26 - 145870
+    2.89 - 34
+    0.26 - 379972
+    0.26 - 130796
+    0.52 - 2566528
+    0.26 - 869863
+    0.26 - 432668
+    0.26 - 787496
+    0.26 - 837152
+    0.26 - 837153
+    0.26 - 327494
+    0.26 - 15673662
+    0.26 - 63192
+    2.89 - 87732
+    1.05 - 131250
+    0.26 - 899742
+    0.26 - 174
+    0.26 - 411484
+    0.26 - 1032897
+    0.26 - 389021
+    0.79 - 2
+    0.26 - 127635
+    0.52 - 6
+    0.26 - 365841
+    0.26 - 59991
+    0.26 - 1772141
+    0.26 - 1808548
+    0.26 - 1215990
+    0.26 - 499774
+    0.26 - 45872
+    0.26 - 55272
+    0.26 - 1035902
+    0.26 - 342202
+    2.89 - 91
+    0.52 - 290251
+    0.26 - 418052
+    0.26 - 29598447
+    0.26 - 65812
+    0.26 - 835592
+    0.26 - 1542233
+    0.26 - 33472194
+    0.26 - 691677
+    0.26 - 149525
+    0.26 - 8077945
+    0.26 - 144775
+    0.26 - 139052
+    2.89 - 142099
+    0.26 - 139054
+    0.26 - 391056
+    0.52 - 391055
+    0.26 - 391058
+    0.26 - 391059
+    0.26 - 310854
+    0.26 - 272298
+    0.26 - 141275
+    0.26 - 311347
+    0.26 - 821637
+    0.26 - 683789
+    0.26 - 16451
+    0.26 - 9597
+    0.26 - 11573887
+    2.62 - 4693
+    2.89 - 4692
+    0.26 - 674468
+    0.26 - 674464
+    0.26 - 674466
+    0.26 - 674461
+    0.26 - 2165987
+    0.26 - 674463
+    1.31 - 1
+    0.26 - 386476
+    0.26 - 869488
+    0.26 - 389242
+    0.26 - 391062
+    0.26 - 6411102
+    2.62 - 155
+    0.52 - 2165906
+    0.26 - 151127
+    2.89 - 25005
+    0.26 - 4210439
+    0.26 - 1896834
+    0.26 - 416202
+    0.52 - 16448
+    0.26 - 16449
+    0.26 - 301000
+    0.26 - 152106
+    0.52 - 16447
+    0.79 - 16444
+    0.26 - 16445
+    0.26 - 12419
+    0.26 - 87118
+    0.26 - 129038
+    0.26 - 833260
+    0.26 - 142349
+    0.26 - 220471
+    0.26 - 2493888
+    0.26 - 149897
+    0.26 - 3368026
+    0.52 - 1807246
+  :status: 
+    93.85 - 200
+    6.15 - 304
+  server: 
+    61.36 - Apache
+    0.59 - Sun-Java-System-Web-Server/7.0
+    3.24 - Varnish
+    34.81 - nginx/0.7.65
+  :scheme: 
+    100.00 - http
+  x-requested-with: 
+    100.00 - XMLHttpRequest
+  x-frame-options: 
+    100.00 - DENY
+  x-powered-by: 
+    100.00 - PHP/5.3.2-2wm1
+  :status-text: 
+    93.85 - OK
+    6.15 - Not Modified
+  :host: 
+    39.74 - bits.wikimedia.org
+    43.85 - upload.wikimedia.org
+    5.38 - meta.wikimedia.org
+    11.03 - fr.wikipedia.org
+
+

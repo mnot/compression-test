@@ -499,3 +499,654 @@ content-transfer-encoding 1.0                                                1
 nncoection           1.0                                                1                   
 transfer-encoding    1.0                                                1                   
 access-control-allow-credentials 1.0                                                1                   
+
+
+Header Frequencies:
+  origin: 
+    100.00 - http://www.facebook.com
+  content-length: 
+    0.85 - 6966
+    0.85 - 17475
+    0.85 - 119574
+    0.85 - 3794
+    0.85 - 11113
+    0.85 - 15685
+    0.85 - 7198
+    0.85 - 400
+    0.85 - 281
+    0.85 - 4860
+    0.85 - 19404
+    0.85 - 8148
+    0.85 - 55530
+    0.85 - 1155
+    0.85 - 10284
+    0.85 - 44191
+    0.85 - 123
+    0.85 - 124
+    0.85 - 23688
+    0.85 - 4878
+    0.85 - 7600
+    0.85 - 36615
+    0.85 - 5850
+    0.85 - 7899
+    0.85 - 8230
+    0.85 - 178
+    0.85 - 316
+    0.85 - 115
+    0.85 - 82
+    0.85 - 11688
+    0.85 - 37432
+    0.85 - 32220
+    0.85 - 5842
+    0.85 - 522
+    0.85 - 8961
+    1.71 - 10334
+    0.85 - 8457
+    0.85 - 7021
+    0.85 - 18581
+    0.85 - 8126
+    0.85 - 7905
+    0.85 - 6932
+    0.85 - 14684
+    0.85 - 6779
+    0.85 - 10902
+    0.85 - 4501
+    0.85 - 516
+    0.85 - 47844
+    0.85 - 571
+    0.85 - 8036
+    0.85 - 12969
+    3.42 - 67
+    0.85 - 1421
+    0.85 - 1589
+    0.85 - 36302
+    0.85 - 14438
+    0.85 - 7263
+    0.85 - 4676
+    0.85 - 105703
+    0.85 - 659
+    0.85 - 16109
+    0.85 - 5248
+    0.85 - 19537
+    0.85 - 754
+    0.85 - 7270
+    0.85 - 1591
+    1.71 - 6953
+    0.85 - 8261
+    0.85 - 34603
+    0.85 - 1025
+    0.85 - 960
+    0.85 - 13454
+    0.85 - 1028
+    0.85 - 36154
+    0.85 - 32579
+    0.85 - 23736
+    0.85 - 19320
+    0.85 - 35165
+    0.85 - 42391
+    0.85 - 21780
+    0.85 - 12817
+    0.85 - 13181
+    0.85 - 20791
+    0.85 - 2626
+    0.85 - 232
+    0.85 - 1814
+    0.85 - 2349
+    7.69 - 43
+    0.85 - 6222
+    0.85 - 3977
+    0.85 - 70824
+    0.85 - 6973
+    0.85 - 4316
+    0.85 - 8551
+    0.85 - 26180
+    0.85 - 8005
+    0.85 - 7949
+    1.71 - 79019
+    0.85 - 3403
+    0.85 - 36768
+    0.85 - 6332
+    0.85 - 686
+    0.85 - 35766
+  accept-language: 
+    100.00 - en-US,en;q=0.5
+  content-transfer-encoding: 
+    100.00 - binary
+  vary: 
+    100.00 - Accept-Encoding
+  accept: 
+    68.38 - image/png,image/*;q=0.8,*/*;q=0.5
+    3.42 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    8.55 - text/css,*/*;q=0.1
+    19.66 - */*
+  nncoection: 
+    100.00 - close
+  :version: 
+    0.43 - HTTP/1.0
+    99.57 - HTTP/1.1
+  x-content-type-options: 
+    100.00 - nosniff
+  x-fb-metrics: 
+    18.18 - {"w":47,"r":27,"q":0,"a":24}
+    9.09 - {"w":13,"r":137,"q":0,"a":23}
+    9.09 - {"w":33,"r":14,"q":0,"a":27}
+    9.09 - {"w":15,"r":74,"q":0,"a":21}
+    9.09 - {"w":53,"r":26,"q":0,"a":25}
+    18.18 - {"w":40,"r":33,"q":0,"a":22}
+    9.09 - {"w":26,"r":18,"q":0,"a":30}
+    9.09 - {"w":20,"r":43,"q":0,"a":30}
+    9.09 - {"w":23,"r":24,"q":0,"a":31}
+  x-fb-server: 
+    9.09 - 10.164.212.85
+    9.09 - 10.164.203.85
+    9.09 - 10.165.52.67
+    9.09 - 10.164.167.53
+    9.09 - 10.164.86.49
+    18.18 - 10.164.121.55
+    9.09 - 10.164.204.89
+    18.18 - 10.164.10.79
+    9.09 - 10.74.89.23
+  user-agent: 
+    100.00 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0
+  :method: 
+    0.85 - post
+    99.15 - get
+  cache-control: 
+    0.87 - public, max-age=17216854
+    0.87 - public, max-age=31067714
+    0.87 - public, max-age=17216856
+    0.87 - public, max-age=31067324
+    0.87 - public, max-age=17216855
+    0.87 - public, max-age=25753518
+    0.87 - public, max-age=31394885
+    0.87 - public, max-age=25638838
+    1.74 - public, max-age=31068990
+    35.65 - max-age=1209600
+    0.87 - public, max-age=31066988
+    0.87 - public, max-age=31124427
+    0.87 - public, max-age=31068529
+    0.87 - public, max-age=30419619
+    0.87 - public, max-age=31068960
+    0.87 - public, max-age=31191410
+    0.87 - public, max-age=31067361
+    0.87 - public, max-age=31068521
+    9.57 - private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0
+    0.87 - public, max-age=31066965
+    0.87 - public, max-age=31066933
+    0.87 - public, max-age=26458041
+    0.87 - public, max-age=31090886
+    1.74 - public, max-age=31088728
+    0.87 - public, max-age=260332
+    0.87 - public, max-age=16309260
+    0.87 - public, max-age=260331
+    0.87 - public, max-age=29985162
+    0.87 - public, max-age=25753573
+    0.87 - public, max-age=25639699
+    0.87 - public, max-age=26316304
+    0.87 - public, max-age=31299110
+    0.87 - public, max-age=31068570
+    0.87 - public, max-age=31068980
+    0.87 - public, max-age=25753811
+    0.87 - public, max-age=25632795
+    1.74 - public, max-age=31068989
+    0.87 - public, max-age=25753545
+    0.87 - public, max-age=31099667
+    0.87 - public, max-age=31143832
+    0.87 - public, max-age=31191685
+    0.87 - public, max-age=25628121
+    0.87 - public, max-age=17216869
+    0.87 - public, max-age=16394910
+    0.87 - public, max-age=28776235
+    0.87 - public, max-age=31068470
+    0.87 - public, max-age=31066940
+    0.87 - public, max-age=31191442
+    0.87 - private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    0.87 - public, max-age=24926560
+    0.87 - public, max-age=31067654
+    0.87 - public, max-age=29865483
+    0.87 - max-age=575215, public, no-transform, must-revalidate
+    0.87 - public, max-age=31191849
+    0.87 - public, max-age=31117935
+    0.87 - public, max-age=25628126
+    0.87 - public, max-age=31162173
+    1.74 - public, max-age=31067635
+    0.87 - public, max-age=31478360
+    0.87 - public, max-age=25753770
+    0.87 - public, max-age=25628127
+  accept-encoding: 
+    100.00 - gzip, deflate
+  transfer-encoding: 
+    100.00 - chunked
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    1.22 - Tue, 29 Oct 2013 03:00:19 GMT
+    4.88 - Tue, 29 Oct 2013 03:07:27 GMT
+    1.22 - Tue, 29 Oct 2013 11:39:02 GMT
+    1.22 - Wed, 30 Oct 2013 13:08:05 GMT
+    1.22 - Tue, 29 Oct 2013 08:36:26 GMT
+    1.22 - Tue, 15 Oct 2013 04:49:02 GMT
+    8.54 - Sat, 17 Nov 2012 12:51:03 GMT
+    1.22 - Wed, 28 Aug 2013 14:40:26 GMT
+    1.22 - Sat, 02 Nov 2013 20:50:17 GMT
+    1.22 - Wed, 30 Oct 2013 13:12:25 GMT
+    1.22 - Wed, 30 Oct 2013 05:00:35 GMT
+    1.22 - Tue, 29 Oct 2013 03:07:15 GMT
+    1.22 - Fri, 01 Nov 2013 21:39:03 GMT
+    2.44 - Tue, 29 Oct 2013 02:33:09 GMT
+    1.22 - Mon, 19 Aug 2013 00:53:24 GMT
+    1.22 - Thu, 05 Sep 2013 18:18:17 GMT
+    1.22 - Tue, 27 Aug 2013 06:45:13 GMT
+    1.22 - Tue, 27 Aug 2013 03:46:43 GMT
+    1.22 - Wed, 28 Aug 2013 14:36:20 GMT
+    1.22 - Wed, 30 Oct 2013 13:08:38 GMT
+    1.22 - Mon, 21 Oct 2013 14:44:35 GMT
+    1.22 - Tue, 27 Aug 2013 06:59:08 GMT
+    1.22 - Tue, 29 Oct 2013 02:45:10 GMT
+    1.22 - Tue, 29 Oct 2013 02:34:04 GMT
+    1.22 - Tue, 29 Oct 2013 02:40:10 GMT
+    2.44 - Tue, 06 Nov 2012 13:10:12 GMT
+    1.22 - Wed, 16 Oct 2013 14:03:31 GMT
+    1.22 - Tue, 27 Aug 2013 03:46:29 GMT
+    1.22 - Wed, 02 Oct 2013 14:15:24 GMT
+    1.22 - Tue, 29 Oct 2013 03:07:14 GMT
+    1.22 - Tue, 21 May 2013 19:18:33 GMT
+    1.22 - Sat, 17 Nov 2012 12:51:10 GMT
+    1.22 - Tue, 29 Oct 2013 02:40:01 GMT
+    1.22 - Wed, 04 Sep 2013 02:55:58 GMT
+    2.44 - Tue, 29 Oct 2013 02:59:38 GMT
+    1.22 - Tue, 29 Oct 2013 16:43:30 GMT
+    1.22 - Sat, 11 May 2013 07:12:06 GMT
+    1.22 - Tue, 27 Aug 2013 03:46:37 GMT
+    2.44 - Tue, 21 May 2013 19:18:34 GMT
+    1.22 - Wed, 28 Aug 2013 14:36:47 GMT
+    1.22 - Tue, 29 Oct 2013 23:54:49 GMT
+    1.22 - Sun, 12 May 2013 06:59:14 GMT
+    1.22 - Tue, 29 Oct 2013 08:36:24 GMT
+    1.22 - Tue, 29 Oct 2013 09:12:42 GMT
+    1.22 - Tue, 29 Oct 2013 02:33:40 GMT
+    1.22 - Wed, 28 Aug 2013 14:37:09 GMT
+    1.22 - Tue, 29 Oct 2013 18:31:11 GMT
+    1.22 - Tue, 21 May 2013 19:18:35 GMT
+    1.22 - Thu, 31 Oct 2013 19:03:10 GMT
+    1.22 - Tue, 29 Oct 2013 02:46:08 GMT
+    1.22 - Wed, 30 Oct 2013 13:15:07 GMT
+    2.44 - Tue, 29 Oct 2013 02:44:39 GMT
+    1.22 - Wed, 28 Aug 2013 14:41:07 GMT
+    1.22 - Tue, 29 Oct 2013 02:58:39 GMT
+    1.22 - Sat, 10 Nov 2012 04:37:48 GMT
+    1.22 - Tue, 27 Aug 2013 05:04:30 GMT
+    13.41 - Thu, 1 Apr 2004 01:01:01 GMT
+    1.22 - Sat, 17 Nov 2012 12:51:09 GMT
+  x-cnection: 
+    100.00 - close
+  last-modified: 
+    0.88 - Wed, 23 May 2012 13:04:05 GMT
+    0.88 - Fri, 15 Jun 2012 23:21:31 GMT
+    0.88 - Fri, 13 Jul 2012 02:50:27 GMT
+    0.88 - Tue, 15 May 2012 17:19:22 GMT
+    0.88 - Sun, 28 Oct 2012 15:06:53 GMT
+    0.88 - Sun, 28 Oct 2012 21:07:08 GMT
+    0.88 - Sun, 28 Oct 2012 21:10:32 GMT
+    0.88 - Thu, 07 Jun 2012 20:17:10 GMT
+    0.88 - Tue, 05 Jun 2012 16:58:56 GMT
+    0.88 - Fri, 18 May 2012 06:59:13 GMT
+    0.88 - Wed, 31 Oct 2012 17:25:30 GMT
+    0.88 - Fri, 26 Oct 2012 21:42:07 GMT
+    0.88 - Sun, 28 Oct 2012 21:07:48 GMT
+    0.88 - Fri, 08 Jun 2012 09:18:35 GMT
+    0.88 - Mon, 11 Jun 2012 21:11:11 GMT
+    0.88 - Sun, 28 Oct 2012 14:34:50 GMT
+    0.88 - Thu, 20 Sep 2012 01:12:35 GMT
+    1.75 - Mon, 29 Oct 2012 18:56:50 GMT
+    0.88 - Thu, 12 Apr 2012 03:03:03 GMT
+    0.88 - Wed, 09 May 2012 22:55:50 GMT
+    0.88 - Sun, 28 Oct 2012 21:11:34 GMT
+    0.88 - Fri, 20 Jul 2012 22:33:10 GMT
+    0.88 - Thu, 17 May 2012 10:31:00 GMT
+    0.88 - Thu, 27 Sep 2012 22:19:28 GMT
+    0.88 - Thu, 12 Apr 2012 03:03:24 GMT
+    0.88 - Fri, 01 Jun 2012 12:58:28 GMT
+    1.75 - Thu, 12 Apr 2012 03:03:22 GMT
+    0.88 - Tue, 28 Aug 2012 01:20:00 GMT
+    0.88 - Thu, 01 Nov 2012 20:35:28 GMT
+    0.88 - Thu, 12 Apr 2012 03:02:51 GMT
+    0.88 - Fri, 02 Nov 2012 19:03:57 GMT
+    0.88 - Mon, 29 Oct 2012 17:08:56 GMT
+    0.88 - Tue, 15 May 2012 16:53:04 GMT
+    0.88 - Fri, 18 May 2012 08:58:03 GMT
+    0.88 - Tue, 05 Jun 2012 19:33:30 GMT
+    0.88 - Mon, 14 May 2012 09:15:54 GMT
+    0.88 - Tue, 24 Apr 2012 22:13:35 GMT
+    0.88 - Tue, 15 May 2012 00:02:13 GMT
+    0.88 - Fri, 13 Jul 2012 13:05:49 GMT
+    0.88 - Sun, 28 Oct 2012 21:09:30 GMT
+    0.88 - Sat, 27 Oct 2012 21:38:44 GMT
+    0.88 - Fri, 06 Jul 2012 11:36:45 GMT
+    0.88 - Sat, 27 Oct 2012 21:42:28 GMT
+    0.88 - Mon, 14 May 2012 22:03:47 GMT
+    0.88 - Mon, 04 Jun 2012 08:35:52 GMT
+    0.88 - Mon, 15 Oct 2012 15:38:03 GMT
+    0.88 - Sun, 28 Oct 2012 21:06:47 GMT
+    0.88 - Sat, 27 Oct 2012 21:59:56 GMT
+    0.88 - Thu, 12 Apr 2012 03:03:19 GMT
+    1.75 - Thu, 12 Apr 2012 03:02:59 GMT
+    0.88 - Thu, 17 May 2012 17:02:26 GMT
+    0.88 - Tue, 15 May 2012 02:10:10 GMT
+    0.88 - Fri, 26 Oct 2012 09:41:12 GMT
+    0.88 - Sun, 28 Oct 2012 22:55:27 GMT
+    0.88 - Sat, 27 Oct 2012 21:41:38 GMT
+    0.88 - Sat, 27 Oct 2012 21:42:19 GMT
+    9.65 - Thu, 1 Apr 2004 01:01:00 GMT
+    0.88 - Mon, 29 Oct 2012 19:17:24 GMT
+    0.88 - Sat, 27 Oct 2012 21:41:45 GMT
+    0.88 - Thu, 17 May 2012 16:15:19 GMT
+    0.88 - Thu, 12 Apr 2012 03:03:05 GMT
+    0.88 - Fri, 20 Jul 2012 20:43:14 GMT
+    1.75 - Thu, 12 Apr 2012 03:03:20 GMT
+    0.88 - Sat, 03 Nov 2012 04:37:48 GMT
+    0.88 - Sun, 28 Oct 2012 21:38:28 GMT
+    0.88 - Mon, 15 Oct 2012 15:37:08 GMT
+    0.88 - Tue, 19 Jun 2012 08:51:27 GMT
+    0.88 - Sun, 28 Oct 2012 14:35:10 GMT
+    0.88 - Sat, 21 Apr 2012 07:03:57 GMT
+    0.88 - Tue, 30 Oct 2012 17:45:29 GMT
+    0.88 - Tue, 22 May 2012 23:26:43 GMT
+    0.88 - Fri, 10 Aug 2012 23:04:25 GMT
+    0.88 - Fri, 07 Sep 2012 15:18:40 GMT
+    0.88 - Thu, 12 Apr 2012 03:03:15 GMT
+    0.88 - Thu, 12 Apr 2012 03:03:34 GMT
+    0.88 - Wed, 16 May 2012 00:19:20 GMT
+    0.88 - Tue, 04 Sep 2012 05:25:17 GMT
+    0.88 - Sun, 28 Oct 2012 14:34:47 GMT
+    0.88 - Fri, 28 Sep 2012 15:01:14 GMT
+    0.88 - Thu, 25 Oct 2012 16:05:53 GMT
+    0.88 - Sun, 28 Oct 2012 21:37:10 GMT
+    0.88 - Fri, 08 Jun 2012 21:45:00 GMT
+    0.88 - Thu, 12 Apr 2012 03:03:23 GMT
+    0.88 - Thu, 01 Nov 2012 01:55:42 GMT
+    0.88 - Thu, 12 Apr 2012 03:02:57 GMT
+    0.88 - Sun, 28 Oct 2012 21:28:22 GMT
+    0.88 - Thu, 17 May 2012 16:26:06 GMT
+    0.88 - Fri, 13 Jul 2012 21:38:17 GMT
+    0.88 - Tue, 15 May 2012 16:45:13 GMT
+    0.88 - Sun, 28 Oct 2012 21:37:35 GMT
+    0.88 - Thu, 31 May 2012 01:48:38 GMT
+    0.88 - Fri, 31 Aug 2012 22:13:28 GMT
+    0.88 - Mon, 15 Oct 2012 01:19:28 GMT
+    0.88 - Sun, 28 Oct 2012 21:07:00 GMT
+    0.88 - Sun, 28 Oct 2012 21:08:50 GMT
+    0.88 - Fri, 12 Oct 2012 18:34:48 GMT
+    0.88 - Sun, 28 Oct 2012 21:38:51 GMT
+    0.88 - Tue, 15 May 2012 16:53:10 GMT
+    0.88 - Sun, 28 Oct 2012 21:06:44 GMT
+    0.88 - Fri, 14 Sep 2012 13:43:01 GMT
+  referer: 
+    1.72 - http://static.ak.fbcdn.net/rsrc.php/v2/yI/r/qANVTsC52fp.css
+    2.59 - http://www.facebook.com/profile.php?id=100004594601369&sk=photos
+    18.97 - http://www.facebook.com/appcenter/?from_bookmark=1
+    1.72 - http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/yA2DXnc1og2.css
+    3.45 - http://static.ak.fbcdn.net/rsrc.php/v2/yt/r/hUCtbPBuX7c.css
+    2.59 - http://static.ak.fbcdn.net/rsrc.php/v2/yJ/r/3wb-qLoqYr4.css
+    6.90 - http://static.ak.fbcdn.net/rsrc.php/v2/yO/r/_MRarphcCIq.css
+    20.69 - http://www.facebook.com/?sk=welcome
+    25.86 - http://www.facebook.com/appcenter/dragoncity?fb_source=appcenter
+    6.03 - http://www.facebook.com/profile.php?id=100004594601369
+    9.48 - http://www.facebook.com/
+  pragma: 
+    100.00 - no-cache
+  date: 
+    0.85 - Sat, 03 Nov 2012 12:51:29 GMT
+    4.27 - Sat, 03 Nov 2012 12:51:10 GMT
+    0.85 - Sat, 03 Nov 2012 12:51:17 GMT
+    0.85 - Sat, 03 Nov 2012 12:51:21 GMT
+    4.27 - Sat, 03 Nov 2012 12:50:58 GMT
+    0.85 - Sat, 03 Nov 2012 12:51:06 GMT
+    21.37 - Sat, 03 Nov 2012 12:51:09 GMT
+    1.71 - Sat, 03 Nov 2012 12:51:20 GMT
+    0.85 - Sat, 03 Nov 2012 12:50:55 GMT
+    5.98 - Sat, 03 Nov 2012 12:50:49 GMT
+    3.42 - Sat, 03 Nov 2012 12:51:16 GMT
+    4.27 - Sat, 03 Nov 2012 12:50:57 GMT
+    1.71 - Sat, 03 Nov 2012 12:51:00 GMT
+    10.26 - Sat, 03 Nov 2012 12:51:03 GMT
+    7.69 - Sat, 03 Nov 2012 12:50:56 GMT
+    7.69 - Sat, 03 Nov 2012 12:50:59 GMT
+    5.13 - Sat, 03 Nov 2012 12:51:04 GMT
+    5.13 - Sat, 03 Nov 2012 12:51:15 GMT
+    0.85 - Sat, 03 Nov 2012 12:51:08 GMT
+    2.56 - Sat, 03 Nov 2012 12:51:02 GMT
+    0.85 - Sat, 03 Nov 2012 12:50:53 GMT
+    3.42 - Sat, 03 Nov 2012 12:50:54 GMT
+    5.13 - Sat, 03 Nov 2012 12:50:44 GMT
+  access-control-allow-origin: 
+    98.39 - *
+    1.61 - http://www.facebook.com
+  :path: 
+    0.85 - /photos-ak-snc7/v85006/100/441805825838512/app_105_441805825838512_710894082.png
+    0.85 - /photos-ak-snc7/v85005/142/253118588122906/app_111_253118588122906_20762316.jpg
+    0.85 - /photos-ak-snc7/v85006/69/354114967982145/app_105_354114967982145_1918681689.jpg
+    0.85 - /rsrc.php/v2/ye/r/gsaq--xZjxY.js
+    0.85 - /rsrc.php/v2/yc/r/rAqxrA0WQ7k.js
+    0.85 - /rsrc.php/v2/ya/r/nTF1AFCYzRb.js
+    0.85 - /photos-ak-snc7/v85006/172/200435146757668/app_105_200435146757668_601453182.jpg
+    0.85 - /rsrc.php/v2/yk/r/oUuv4AK0DW5.css
+    0.85 - /rsrc.php/v2/yA/r/AvedqRzaAOM.js
+    0.85 - /probe?mode=stream&format=json
+    0.85 - /photos-ak-snc7/v85006/99/164174107055463/app_105_164174107055463_2004791169.png
+    0.85 - /rsrc.php/v2/yJ/r/3wb-qLoqYr4.css
+    0.85 - /rsrc.php/v2/yD/x/mt-TWdM-90o.png
+    0.85 - /rsrc.php/v2/yk/x/Z6rULnd-GE-.png
+    0.85 - /photos-ak-snc7/v85005/108/364886660238516/app_105_364886660238516_1453816191.jpg
+    0.85 - /rsrc.php/v2/yQ/x/N8eF8pLkCCD.png
+    0.85 - /photos-ak-snc7/v85005/164/397962813595952/app_105_397962813595952_1523082466.png
+    0.85 - /rsrc.php/v2/yz/r/GIbPIxMVGOB.js
+    0.85 - /rsrc.php/v2/yG/r/rMAW-OutJgX.js
+    0.85 - /rsrc.php/v2/yt/r/hUCtbPBuX7c.css
+    0.85 - /diagnostics/doppler.php?t=dns&r=1r36bi0w0.5143848973687382
+    0.85 - /rsrc.php/v2/yD/r/OWwnO_yMqhK.css
+    0.85 - /rsrc.php/v2/yP/r/Tsqt1GDoCAf.js
+    0.85 - /rsrc.php/v2/y7/x/9jt7oVdF7z3.png
+    0.85 - /rsrc.php/v2/yn/r/MGf8uql6Hg2.js
+    0.85 - /rsrc.php/v2/yd/r/ClQPhhdrGah.js
+    0.85 - /rsrc.php/v2/yn/r/aCHhaJcQ-8B.js
+    0.85 - /photos-ak-snc7/v85006/161/407383715967893/app_105_407383715967893_360958774.jpg
+    0.85 - /rsrc.php/v2/yY/r/u8iA3kXb8Y1.css
+    0.85 - /rsrc.php/v2/ys/r/fnBZhAgqpcM.png
+    0.85 - /photos-ak-snc7/v85006/145/365656366823977/app_105_365656366823977_816835206.jpg
+    0.85 - /rsrc.php/v2/yt/r/FZaMKqARgC6.png
+    0.85 - /photos-ak-snc7/v85005/69/350942048298897/app_105_350942048298897_1490110873.jpg
+    0.85 - /photos-ak-snc7/v85005/46/293326914092482/app_105_293326914092482_1817948301.jpg
+    0.85 - /photos-ak-snc7/v85005/141/216878515095705/app_105_216878515095705_609637411.jpg
+    0.85 - /photos-ak-snc7/v85005/7/332949796778851/app_105_332949796778851_1951521727.jpg
+    0.85 - /rsrc.php/v2/y2/r/ohNWG-5_fGY.js
+    0.85 - /
+    0.85 - /photos-ak-snc7/v85006/65/133667540106725/app_110_133667540106725_1772537782.jpg
+    0.85 - /photos-ak-snc7/v85005/247/377654182283191/app_105_377654182283191_658401036.png
+    0.85 - /rsrc.php/v2/yN/r/EarbWo_mDU-.js
+    0.85 - /photos-ak-snc7/v85006/148/436667123046568/app_110_436667123046568_1904723107.png
+    0.85 - /photos-ak-snc7/v85005/30/172375912892010/app_105_172375912892010_2058086797.jpg
+    0.85 - /rsrc.php/v2/y4/r/-PAXP-deijE.gif
+    0.85 - /rsrc.php/v2/yp/x/ogYrclupeJV.png
+    0.85 - /photos-ak-snc7/v85005/93/259764147477669/app_109_259764147477669_1838769723.jpg
+    0.85 - /common/rfe_endpoint.php?c=doppler&m=72cn1af4_spray4.xx.fbcdn.net_1757_186_62_63_250_http_www_ipv4&asyncSignal=366&__user=100004594601369&__a=1
+    0.85 - /diagnostics/doppler.php?t=dns&r=1crzwnwg0.5401120391955134
+    0.85 - /photos-ak-snc7/v85006/247/106500326159551/app_105_106500326159551_1344932005.png
+    0.85 - /photos-ak-snc7/v85005/63/237248043042843/app_105_237248043042843_2090464057.jpg
+    0.85 - /rsrc.php/v2/yq/r/yA2DXnc1og2.css
+    0.85 - /rsrc.php/v2/yk/r/LOOn0JtHNzb.gif
+    0.85 - /diagnostics/doppler.php?t=dns&r=72cn1af40.4125309266479781
+    0.85 - /rsrc.php/v2/yY/x/VhUL9TRdhxw.gif
+    0.85 - /rsrc.php/v2/yR/x/uSW1KWtrWGc.png
+    0.85 - /photos-ak-snc7/v85006/221/352839838115993/app_105_352839838115993_1121099655.png
+    0.85 - /rsrc.php/v2/yI/r/qANVTsC52fp.css
+    0.85 - /photos-ak-snc7/v85005/114/211916322274470/app_110_211916322274470_1583821905.png
+    0.85 - /photos-ak-snc7/v85005/148/442024642488640/app_105_442024642488640_465635287.png
+    0.85 - /rsrc.php/v2/y2/x/iYxPaZPX35F.png
+    0.85 - /rsrc.php/v2/yP/r/CRkiDDWTd1u.js
+    0.85 - /rsrc.php/v2/yL/r/yYpcvpK4Iy4.css
+    0.85 - /photos-ak-snc7/v85006/210/338085712929594/app_105_338085712929594_163175982.jpg
+    0.85 - /rsrc.php/v2/ya/x/BFOd681AL3h.png
+    0.85 - /common/rfe_endpoint.php?c=doppler&m=1crzwnwg_spray4.xx.fbcdn.net_2305_217_65_65_260_http_www_ipv4&asyncSignal=7253&__user=100004594601369&__a=1
+    0.85 - /rsrc.php/v2/y4/r/hASMsuRIkKf.js
+    0.85 - /rsrc.php/v2/yL/x/MmmFHCK3KAn.png
+    0.85 - /rsrc.php/v2/yo/x/NtxZOu14K1s.png
+    0.85 - /photos-ak-snc7/v85005/163/352292028176503/app_105_352292028176503_1516052491.png
+    0.85 - /photos-ak-snc7/v85006/4/343735125705472/app_105_343735125705472_1426576664.png
+    0.85 - /photos-ak-snc7/v85005/85/407812672605577/app_105_407812672605577_84374459.jpg
+    0.85 - /photos-ak-snc7/v85005/215/381749858546327/app_105_381749858546327_759396952.jpg
+    0.85 - /photos-ak-snc7/v85005/81/336049179822045/app_105_336049179822045_1034665052.jpg
+    0.85 - /rsrc.php/v2/yM/x/fi3XYBobMhl.png
+    0.85 - /photos-ak-snc7/v85006/194/462565653757646/app_105_462565653757646_349585670.jpg
+    0.85 - /rsrc.php/v2/yo/r/iI6TczVEj89.css
+    0.85 - /photos-ak-snc7/v85005/157/332994963450901/app_105_332994963450901_267890371.jpg
+    0.85 - /rsrc.php/v2/yw/r/drP8vlvSl_8.gif
+    0.85 - /photos-ak-snc7/v85005/135/404869786202583/app_105_404869786202583_645510307.jpg
+    0.85 - /photos-ak-snc7/v85006/170/221577111296522/app_105_221577111296522_1591079902.jpg
+    0.85 - /common/scribe_endpoint.php?c=doppler&m=72cn1af4_spray4.xx.fbcdn.net_1757_186_62_63_250_http_www_ipv4&asyncSignal=1697&__user=100004594601369&__a=1
+    0.85 - /rsrc.php/v2/ya/r/hU-7KsWmGyx.js
+    0.85 - /rsrc.php/v2/yc/x/jmkQ8OUAWR2.png
+    0.85 - /rsrc.php/v2/yZ/r/jlKDoX15kHG.js
+    0.85 - /photos-ak-snc7/v85005/170/326504807456858/app_113_326504807456858_1522418531.gif
+    0.85 - /diagnostics/doppler.php?t=bw2&r=72cn1af40.10324077280811772
+    0.85 - /photos-ak-snc7/v85006/86/153004874832518/app_105_153004874832518_1676526740.png
+    0.85 - /rsrc.php/v2/yQ/r/3MeSUFsSUjp.js
+    0.85 - /diagnostics/doppler.php?t=bw&r=1crzwnwg0.57120757882185
+    0.85 - /rsrc.php/v2/yo/x/4WSewcWboV8.png
+    0.85 - /rsrc.php/v2/yU/r/iMgZgoE90kq.js
+    0.85 - /diagnostics/doppler.php?t=bw&r=72cn1af40.39738451019820187
+    0.85 - /rsrc.php/v2/y7/r/YX4BZt4wqV5.js
+    0.85 - /photos-ak-snc7/v85005/208/439338436095592/app_105_439338436095592_124506518.jpg
+    0.85 - /photos-ak-snc7/v85005/93/103443439793493/app_109_103443439793493_662160861.jpg
+    0.85 - /photos-ak-snc7/v85005/10/383710705014430/app_104_383710705014430_674122673.png
+    0.85 - /photos-ak-snc7/v85005/103/291329234294215/app_105_291329234294215_479570984.jpg
+    0.85 - /rsrc.php/v2/yP/r/Euhp-YU-rDs.js
+    0.85 - /rsrc.php/v2/yb/r/GsNJNwuI-UM.gif
+    0.85 - /rsrc.php/v2/yX/x/Qq6L1haQrYr.png
+    0.85 - /diagnostics/doppler.php?t=bw2&r=1crzwnwg0.29063055920128955
+    0.85 - /rsrc.php/v2/yk/r/nVjP25hFolh.js
+    0.85 - /photos-ak-snc7/v85006/216/226862640749772/app_105_226862640749772_43180541.jpg
+    0.85 - /rsrc.php/v2/yz/x/ELW8FjnbiZf.png
+    0.85 - /rsrc.php/v2/yq/x/NWYW0Waognt.png
+    0.85 - /diagnostics/doppler.php?t=http&r=72cn1af40.20832902493789407
+    0.85 - /rsrc.php/v2/yM/r/sTYE-oxOp87.js
+    1.71 - /rsrc.php/v1/yY/r/z9LK9QcLrpg.swf
+    0.85 - /rsrc.php/yP/r/Ivn-CVe5TGK.ico
+    0.85 - /diagnostics/doppler.php?t=http&r=1crzwnwg0.33689286934806006
+    0.85 - /common/scribe_endpoint.php?c=doppler&m=1crzwnwg_spray4.xx.fbcdn.net_2305_217_65_65_260_http_www_ipv4&asyncSignal=8139&__user=100004594601369&__a=1
+    0.85 - /rsrc.php/v2/ye/x/Y4_2_kJqyhn.gif
+    0.85 - /rsrc.php/v2/yw/r/CrT7oZMoxGK.js
+    0.85 - /rsrc.php/v2/yO/r/_MRarphcCIq.css
+    0.85 - /rsrc.php/v2/ye/x/9LvsOkvrKgT.png
+    0.85 - /photos-ak-snc7/v85006/40/230553340395628/app_105_230553340395628_654180038.png
+  :status: 
+    100.00 - 200
+  :status-text: 
+    100.00 - OK
+  content-encoding: 
+    100.00 - gzip
+  x-fb-debug: 
+    1.35 - if1LyEGCEK6E/tHFIYqTdcReGf2YlH/8CNcvt0MSb5c=
+    1.35 - edgqdu1lFmUW32Et2hHoiAsp9kFIch8QDiciO71cQ4w=
+    1.35 - XtTsONeGHGs/1vRRv8cvNY1ciB3XqlrvnTq2GZXvnqM=
+    1.35 - DY+dO6Fs6HOjJLzXfO2vzcoACugopwtj+ZfSFe3+0Io=
+    1.35 - REVz0k4Gud7bedzv9KSTG2i1KOporb0T14mWht95MIE=
+    1.35 - BWYgCEbzeWyERD5oPP51t1mG+xnS0km1r6TZrds9BdY=
+    1.35 - s2bSrOgSOrnc1I2Y+hCmZNjO4JKRAsJvvEShk7xvQh0=
+    1.35 - yKFyrxwqBiumMPfWvv4morUUsmz9djZtSdmCoQMnchs=
+    1.35 - OOKrpYeJ1K2euVWUg0h3X4OLDU+bPXAhHe2ZbKmaIIo=
+    1.35 - mhzgPOTS+rD7XyjD1gp3zWldoiZpmeeyK0sWCXxCmL8=
+    1.35 - 7exUqkoZxtfLseR1zLxJlXnpYK6MOognZuCKx7drdRo=
+    1.35 - GMzzyj0B89LYf1zKH9hqxZekz5mYTmsuxwLugWyc2Gg=
+    1.35 - Kur2FUUQjAQ0yPQJC9fvK56/+LWZHvyQF6Ce2Fuaf2k=
+    1.35 - U6CnJQe7lFM5/wvYBRcEyvixo284qs3dxFI4vIJ3Sfo=
+    1.35 - 6DDnMStngO3Ec4qHVJLnouT/OjWIKWOh3p7X19lwA2E=
+    1.35 - dO6OKUf38jDdtAnTrM28wZTBz9Y5hU/0EJdd1CkWGDs=
+    1.35 - eRvyJLXIvW3Vu9d+m439v+LGKqXiLSKmz7w9/xMAUpc=
+    1.35 - pricqIchHztHxKAQSidQiwGmRf62vAL6I7Oi0r/Ki08=
+    1.35 - ltZY31wZe0x9jjXZ+/GQMCIZ6L+UzLcVFaj4Ye8cEag=
+    1.35 - cdKo7nf6SbFgEUsu8p8ZpYkyd14IkSsYwu8pEpjIPW8=
+    1.35 - 2KYdrNd+vAjbaW2+l9lZ0c9qQnQQuLC0uV+aDWEfnEs=
+    1.35 - WkN9kzT0IbJnmPVAe/JpiO1KA3sDm5JiLNu+peaU22E=
+    1.35 - 7JVbUHGoJcLzIbHgkJPv0DSBycKYYPPorUc0i6OdRw8=
+    1.35 - uWC6Yw5Jjt8tp6GMW/0c7q4sQiyN+cfsFumyrajMSLE=
+    1.35 - +G0d7Y1/nAK76h5l1ygZcgFyqkHdYYjzu9bN8TThTW0=
+    1.35 - Qc0GcUiwi3io8aSRIdXaahYr6KKhphvV6NlN8vo/bD4=
+    1.35 - 6/fKHkRtBpT4oqBg33tFHk2pO6SDZlUG11Uq4/AlUIE=
+    1.35 - 41/HuGcFNMmys4cvGKlBeylojdVDP4+VBIf1giu3eNQ=
+    1.35 - u363OvKFmnm717JBUXA5ePB8Ts0ppRI7+eEJwOOep6w=
+    1.35 - casrvtlqM38DGgUK+sC64wYFWqXchCM2wnMjgM8VC98=
+    1.35 - wk2MWysJhw3Et7CRGMA1sE9HWuyzy8oCvtT2V7iPXeg=
+    1.35 - fUJ2Nc9qJdBC1AnYFA5Vs1f7ozv+i/PTKO+Vep0A0HQ=
+    1.35 - cEr4CpqyPlutZEM5egM7EW1V/FoNLas8puqhILOyn6g=
+    1.35 - egJridVr0Ohgw3QbFe66p8hTV/ZDa+ldtrrj55f1Dwg=
+    1.35 - y9gp03qLmGwdrjrggsFyxKUnduRuH6ZkhHy3J217wnA=
+    1.35 - 0ci0R5R2ivIVCRrwtG507Eej+LTK8dUL8dIiZp70+dU=
+    1.35 - dSqFMj3BQam7KrjoHsDUySNYx2e/ZA4jk+iLwQD5q+M=
+    1.35 - K6O9zzGnsjkFUcjVnvogKEp8WyYKDD5/1SRA3JOqTz8=
+    1.35 - iPbLdjapQzRoatbOUDrN+exDj8EPHJAcsZ48pVtprtA=
+    1.35 - U3t5ojZAXSlz/rftvVXMdi+dQaAlCxv95u4nFdmaOpU=
+    1.35 - SjbWzWIhc5uDeUgKzkah4oVawEfOfsqgn79tJvLiODA=
+    1.35 - yE8mx2kOMcI8Q4MtoKCXYAXv7xSMQBGufoB0y/qkYEs=
+    2.70 - 8ROXKJ/K5IoNZG3RcJoN8LoohKyoDW2iTe6nY9hRINI=
+    1.35 - hMQvA7xhuAspt5fOxedr0fWzQZNLkyizVtlmspzgVG8=
+    1.35 - Yty+Te4OzfswtmjzbJmJZaybyM0hxXiRU2NtHEbDuPE=
+    1.35 - gU+KRCRWrUp+aETSVFA2+QqzJ57Mry5y8i9NZISRzV4=
+    1.35 - VKvuYL/9rqvjXh7mr8LjSJmcgQLZ/a+Ztqj2aUsPacc=
+    1.35 - 14hoEcywNNMBIVUS5B7AD7RDGiDvJ4BGeOVgJbBDzf0=
+    1.35 - q1YlNQFhUrIi0HF88gF/s47itTMC0ALVS2i6Xo/eSFQ=
+    1.35 - E2JBYTapyXFjxTTVqkrekTVKDp1lDQQT/7YxcxfNU2U=
+    1.35 - HbryxnP7HNa7kdTChA6BppSjLQw0gz9ZzESCqEH3/9k=
+    1.35 - y31IzOtXz6QEqDb4Yh8nL9E7Jz3QdrtFTVTfJpFI67s=
+    1.35 - Mcoj0fymAm3BWRvLoE9uVgrJkXk8Wldn9hUKly6PE60=
+    1.35 - 7iLjsQVXsunUKXe3NlV2ytaBGzQ0VHCkMX/J6rEuB6Y=
+    1.35 - IVe/SwucJuBsLtVHWJw2PMdOTOxuEWUir5igQNThkTg=
+    1.35 - IlZ4dyc3v7fqrfiamqJbFeFTWRkUvEUs2L8KLXNa+5o=
+    1.35 - yHzV/c0w3ZyInkRbLCDrA0t5adSMyAG4prBOk+i+t6Y=
+    1.35 - 0MQqsPt7SaQdEz9msJEk0wieC0zyyvfgvjy4gscfRm4=
+    1.35 - rXXtxI3fPgNHe6wKIDRBR0xjttUNeG+BDQM8QfKQa+A=
+    1.35 - B8TQ25HLrpUM+2nuhej+798G7ib2rXsLxKDRmmd6364=
+    1.35 - SHFiC3r5rPZSoyQ6AT4o7Lrz58o2i0cRMRoLoKKAVLc=
+    1.35 - 1EkJKYLfWucaDVhZCEVAAo57HpAH7rvF4r9IwDXM2B8=
+    1.35 - 95tUymdadFLd8Dpml8VnOoUG7KhisOwk74Kd/aIGfU0=
+    1.35 - flUDwRXAcKGlCZV+B6xp1kix2zMM2jCaLr8GXWfOS9o=
+    1.35 - oKQwv0JLYost+zqlv8x+C7MEL7zRBbeMomoc54M5RZY=
+    1.35 - 8BYYADIiLWZPRqrmghOTJnnu5b75InjLJYums29XQC4=
+    1.35 - E9XqLqcAPtaMWK+vlxTTyhNPMewUq9nSCKax+m9KMwk=
+    1.35 - zh8tRHKFtERIZ+K/eGiM1utm1H66OnOj1qwPAN7Ck9A=
+    1.35 - ur+THlFHeLotsmDlQWYPw2GRELyvg28JmE0JYVt56uo=
+    1.35 - s9ZmJKnYGlEjIGo8xQzxlhVM4nilGHgcv1fhK1Z7F1w=
+    1.35 - Zx9+0hICgorbmj40+TVQqx/6DWk0JFijw5sOouOK4x8=
+    1.35 - rg/3x10ePyW5+Yv14okaeMgQpdIDitUpRdeQlHd62wU=
+    1.35 - P2Bq0ebVXjtf8GyQp1HHux8NxlftUMXZuY8XF+yaOVo=
+  :scheme: 
+    100.00 - http
+  access-control-allow-credentials: 
+    100.00 - true
+  connection: 
+    99.57 - keep-alive
+    0.43 - Keep-Alive
+  content-type: 
+    25.42 - image/jpeg
+    8.47 - text/css; charset=utf-8
+    1.69 - application/x-shockwave-flash
+    31.36 - image/png
+    0.85 - image/x-icon
+    19.49 - application/x-javascript; charset=utf-8
+    10.17 - image/gif
+    0.85 - application/ocsp-response
+    0.85 - application/ocsp-request
+    0.85 - application/json
+  :host: 
+    12.82 - photos-e.ak.fbcdn.net
+    6.84 - photos-c.ak.fbcdn.net
+    5.13 - 1crzwnwg.spray4.xx.fbcdn.net
+    8.55 - photos-g.ak.fbcdn.net
+    52.14 - static.ak.fbcdn.net
+    6.84 - photos-a.ak.fbcdn.net
+    0.85 - 1r36bi0w.spray4.xx.fbcdn.net
+    0.85 - ocsp.verisign.com
+    5.13 - 72cn1af4.spray4.xx.fbcdn.net
+    0.85 - ect.channel.facebook.com
+
+

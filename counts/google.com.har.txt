@@ -595,3 +595,418 @@ content-length       0.8                                                90
 location             1.0                                                2                   
 set-cookie           1.0                                                3                   
 content-language     1.0                                                1                   
+
+
+Header Frequencies:
+  origin: 
+    100.00 - http://www.google.fr
+  content-length: 
+    1.11 - 1212
+    2.22 - 4082
+    1.11 - 71019
+    1.11 - 1209
+    1.11 - 154
+    2.22 - 15130
+    1.11 - 667
+    1.11 - 22604
+    1.11 - 579
+    1.11 - 1194
+    1.11 - 1482
+    2.22 - 7007
+    1.11 - 8561
+    1.11 - 16627
+    1.11 - 11574
+    1.11 - 51009
+    1.11 - 372
+    1.11 - 953
+    1.11 - 67143
+    1.11 - 43
+    1.11 - 820
+    1.11 - 8740
+    7.78 - 0
+    4.44 - 28765
+    1.11 - 1375
+    1.11 - 19572
+    1.11 - 6321
+    1.11 - 20459
+    1.11 - 738
+    1.11 - 549
+    1.11 - 1012
+    1.11 - 308
+    1.11 - 774
+    1.11 - 25679
+    1.11 - 1310
+    1.11 - 1132
+    1.11 - 759
+    1.11 - 714
+    1.11 - 713
+    1.11 - 19554
+    1.11 - 463
+    1.11 - 462
+    2.22 - 13646
+    1.11 - 22748
+    1.11 - 831
+    2.22 - 132699
+    1.11 - 566
+    1.11 - 1464
+    1.11 - 2958
+    1.11 - 21835
+    1.11 - 225
+    1.11 - 17406
+    3.33 - 387
+    1.11 - 2335
+    1.11 - 13338
+    1.11 - 1020
+    1.11 - 2273
+    1.11 - 26100
+    1.11 - 1048
+    3.33 - 9760
+    1.11 - 35
+    1.11 - 106620
+    1.11 - 3964
+    1.11 - 416
+    1.11 - 645
+    1.11 - 682
+    1.11 - 22656
+    1.11 - 241
+    1.11 - 1183
+    1.11 - 432
+    1.11 - 14804
+    1.11 - 1590
+  via: 
+    100.00 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+  accept-language: 
+    100.00 - en-US,en;q=0.8
+  proxy-connection: 
+    22.88 - close
+    77.12 - keep-alive
+  x-cache-lookup: 
+    100.00 - MISS from sorga-msr:3128
+  vary: 
+    100.00 - Accept-Encoding
+  accept: 
+    5.43 - text/css,*/*;q=0.1
+    10.87 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    83.70 - */*
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  p3p: 
+    100.00 - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."
+  :version: 
+    100.00 - HTTP/1.1
+  x-chrome-variations: 
+    100.00 - CLG1yQEIibbJAQiZtskBCKa2yQEIqLbJAQiptskBCLC2yQEIv4PKAQ==
+  x-xss-protection: 
+    100.00 - 1; mode=block
+  content-disposition: 
+    100.00 - attachment
+  x-content-type-options: 
+    98.73 - nosniff
+    1.27 - nosniff nosniff
+  user-agent: 
+    100.00 - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.56 Safari/537.4
+  location: 
+    50.00 - http://www.google.fr/intl/fr/about/products/
+    50.00 - http://translate.google.com/
+  :method: 
+    2.04 - post
+    97.96 - get
+  cache-control: 
+    31.78 - private, max-age=31536000
+    0.93 - private, max-age=86400
+    0.93 - private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+    1.87 - no-cache, must-revalidate
+    2.80 - private
+    0.93 - no-cache, no-store, max-age=0, must-revalidate
+    0.93 - private, no-cache
+    18.69 - max-age=0
+    2.80 - public, max-age=2592000
+    27.10 - public, max-age=31536000
+    6.54 - private, max-age=0
+    0.93 - max-age=43200, public
+    3.74 - public, max-age=31449600
+  x-gwt-permutation: 
+    100.00 - 001E6EA5A2185A304F01CFD30447F1F8
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  x-cache: 
+    100.00 - MISS from sorga-msr
+  set-cookie: 
+    33.33 - PREF=ID=346ffb30b5fc5463:U=f54d9b4d22f77ec5:FF=0:TM=1347956111:LM=1347956112:S=pHpebNbaLnvN1Pws; expires=Thu, 18-Sep-2014 08:15:12 GMT; path=/; domain=.google.fr
+    33.33 - PREF=ID=346ffb30b5fc5463:FF=0:TM=1347956111:LM=1347956111:S=PRmJpvMvnIro7eDq; expires=Thu, 18-Sep-2014 08:15:11 GMT; path=/; domain=.google.fr NID=64=mx2ss8zkPhI7qdrX_Tm4IBWu3zdDLk9YYmOiX1Gq4fNx7UKf2VZn0gdY1hYAZn1IiYlOf3fhYznbgNCZoFT63vzMeEYsz_qtYmZLDR0btxJmhbrLOBTg8p0JrH7rY_o2; expires=Wed, 20-Mar-2013 08:15:11 GMT; path=/; domain=.google.fr; HttpOnly
+    33.33 - PREF=ID=15958a1d88b69b05:TM=1347956114:LM=1347956114:S=GIy7zERcpUHdOexT; expires=Thu, 18-Sep-2014 08:15:14 GMT; path=/; domain=.google.com NID=64=mKOC_2LiKPEHxpiBmdCZRkWx2tptJX3sLtS5zqJvIQ4jei-KecxP_BExVi6dqZrxL7qIh8__p6WjRlaS1D2stiS-MyZ-IwEgdljKQK4t11EpkQb9yJJYX1k35NO7ZOoo; expires=Wed, 20-Mar-2013 08:15:14 GMT; path=/; domain=.google.com; HttpOnly
+  expires: 
+    2.33 - Tue, 17 Sep 2013 00:00:00 GMT
+    3.49 - Thu, 12 Sep 2013 20:57:06 GMT
+    1.16 - Fri, 13 Sep 2013 20:17:24 GMT
+    1.16 - Thu, 12 Sep 2013 18:38:29 GMT
+    2.33 - Tue, 18 Sep 2012 08:15:11 GMT
+    1.16 - Thu, 12 Sep 2013 20:57:09 GMT
+    2.33 - Fri, 13 Sep 2013 19:35:38 GMT
+    1.16 - Fri, 13 Sep 2013 19:11:04 GMT
+    1.16 - Wed, 18 Sep 2013 00:29:05 GMT
+    1.16 - Thu, 12 Sep 2013 18:46:45 GMT
+    1.16 - Thu, 12 Sep 2013 20:57:16 GMT
+    2.33 - Wed, 11 Sep 2013 10:53:29 GMT
+    1.16 - Fri, 06 Sep 2013 20:43:41 GMT
+    1.16 - Fri, 13 Sep 2013 19:36:12 GMT
+    1.16 - Thu, 12 Sep 2013 18:36:59 GMT
+    1.16 - Tue, 18 Sep 2012 08:15:12 GMT
+    1.16 - Wed, 19 Apr 2000 11:43:00 GMT
+    1.16 - Fri, 12 Oct 2012 18:48:58 GMT
+    41.86 - Tue, 18 Sep 2012 08:15:13 GMT
+    1.16 - Thu, 18 Oct 2012 08:15:14 GMT
+    1.16 - Fri, 13 Sep 2013 21:13:58 GMT
+    4.65 - Sat, 14 Sep 2013 00:35:45 GMT
+    1.16 - Thu, 12 Sep 2013 20:57:12 GMT
+    1.16 - Thu, 18 Oct 2012 00:10:23 GMT
+    3.49 - Fri, 01 Jan 1990 00:00:00 GMT
+    1.16 - Thu, 11 Jul 2013 19:33:08 GMT
+    1.16 - Fri, 06 Sep 2013 19:25:57 GMT
+    2.33 - Sat, 14 Sep 2013 00:35:41 GMT
+    3.49 - -1
+    1.16 - Thu, 12 Sep 2013 18:39:02 GMT
+    3.49 - Thu, 12 Sep 2013 18:46:46 GMT
+    1.16 - Sun, 15 Sep 2013 21:33:47 GMT
+    1.16 - Wed, 17 Sep 1975 21:32:10 GMT
+    1.16 - Mon, 16 Sep 2013 18:30:50 GMT
+    1.16 - Tue, 18 Sep 2012 14:02:36 GMT
+  last-modified: 
+    5.48 - Mon, 25 Jun 2012 14:34:28 GMT
+    1.37 - Fri, 10 Aug 2012 12:02:20 GMT
+    2.74 - Thu, 29 Mar 2012 23:53:57 GMT
+    1.37 - Thu, 07 Jun 2012 18:32:50 GMT
+    2.74 - Tue, 20 Sep 2011 00:00:00 GMT
+    1.37 - Mon, 17 Sep 2012 23:23:24 GMT
+    1.37 - Tue, 11 Sep 2012 03:20:09 GMT
+    1.37 - Fri, 13 Jul 2012 10:43:32 GMT
+    1.37 - Fri, 07 Sep 2012 03:18:06 GMT
+    1.37 - Sat, 02 Jun 2012 04:19:00 GMT
+    1.37 - Mon, 06 Feb 2012 23:52:59 GMT
+    4.11 - Wed, 12 Sep 2012 22:19:03 GMT
+    1.37 - Tue, 28 Feb 2012 21:40:41 GMT
+    1.37 - Wed, 12 Sep 2012 22:19:00 GMT
+    5.48 - Wed, 12 Sep 2012 18:49:16 GMT
+    10.96 - Mon, 02 Apr 2012 00:13:23 GMT
+    49.32 - Mon, 02 Apr 2012 02:13:37 GMT
+    1.37 - Tue, 21 Aug 2012 10:47:50 GMT
+    1.37 - Wed, 05 Sep 2012 21:33:54 GMT
+    1.37 - Wed, 21 Jan 2004 19:51:30 GMT
+    1.37 - Tue, 26 Jun 2012 00:31:54 GMT
+  referer: 
+    4.12 - http://www.google.fr/preferences?hl=fr
+    10.31 - http://translate.google.com/
+    5.15 - http://www.google.fr/imghp?hl=fr&tab=wi
+    4.12 - http://www.google.fr/webhp?hl=fr&tab=ww
+    42.27 - http://www.google.fr/intl/fr/about/products/
+    22.68 - http://www.google.fr/
+    11.34 - http://www.google.fr/shopping?hl=fr&tab=wf
+  pragma: 
+    100.00 - no-cache
+  date: 
+    1.10 - Wed, 12 Sep 2012 14:02:35 GMT
+    1.10 - Wed, 12 Sep 2012 20:57:16 GMT
+    1.10 - Thu, 06 Sep 2012 19:25:57 GMT
+    1.10 - Thu, 13 Sep 2012 18:36:59 GMT
+    3.30 - Wed, 12 Sep 2012 20:57:06 GMT
+    2.20 - Thu, 13 Sep 2012 19:35:38 GMT
+    1.10 - Wed, 12 Sep 2012 18:48:58 GMT
+    2.20 - Tue, 11 Sep 2012 10:53:29 GMT
+    1.10 - Fri, 14 Sep 2012 20:17:24 GMT
+    4.40 - Fri, 14 Sep 2012 00:35:45 GMT
+    1.10 - Sun, 16 Sep 2012 18:30:50 GMT
+    6.59 - Tue, 18 Sep 2012 08:15:12 GMT
+    1.10 - Sat, 15 Sep 2012 21:33:47 GMT
+    2.20 - Fri, 14 Sep 2012 00:35:41 GMT
+    1.10 - Wed, 12 Sep 2012 20:57:12 GMT
+    41.76 - Tue, 18 Sep 2012 08:15:13 GMT
+    1.10 - Thu, 13 Sep 2012 18:39:02 GMT
+    1.10 - Wed, 12 Sep 2012 20:57:09 GMT
+    1.10 - Tue, 18 Sep 2012 00:10:23 GMT
+    1.10 - Thu, 13 Sep 2012 21:13:58 GMT
+    1.10 - Thu, 13 Sep 2012 18:38:29 GMT
+    1.10 - Thu, 06 Sep 2012 20:43:41 GMT
+    1.10 - Wed, 11 Jul 2012 19:33:08 GMT
+    3.30 - Tue, 18 Sep 2012 08:15:14 GMT
+    1.10 - Tue, 18 Sep 2012 00:29:05 GMT
+    1.10 - Thu, 13 Sep 2012 19:11:04 GMT
+    1.10 - Thu, 13 Sep 2012 19:36:12 GMT
+    5.49 - Tue, 18 Sep 2012 08:15:11 GMT
+    1.10 - Wed, 12 Sep 2012 18:46:45 GMT
+    3.30 - Wed, 12 Sep 2012 18:46:46 GMT
+    1.10 - Tue, 18 Sep 2012 08:15:15 GMT
+    1.10 - Wed, 21 Jan 2004 19:51:30 GMT
+    1.10 - Tue, 18 Sep 2012 02:02:36 GMT
+  access-control-allow-origin: 
+    100.00 - *
+  x-gwt-module-base: 
+    100.00 - http://www.google.fr/shopping/
+  :path: 
+    1.02 - /language_tools?hl=fr
+    3.06 - /textinputassistant/tia.png
+    1.02 - /extern_chrome/ff1a6ecf6feb576a.js
+    2.04 - /images/srpr/logo3w.png
+    1.02 - /extern_chrome/ff1a6ecf6feb576a.js?hl=fr
+    1.02 - /images/icons/product/youtube-32.png
+    2.04 - /xjs/_/js/s/s,st,anim,jsa,c,sb,hv,wta,cr,cdos,pj,ssb,nos,tbpr,tbui,rsn,ob,mb,lc,du,ada,amcl,bihu,lu,m,shb,tng,hsm,j,pcc,csi/rt=j/ver=K8dd9hEkUnA.en_US./d=1/sv=1/rs=AItRSTO_suxTlbcaY0iTY5cIAzdl3K0zdA
+    1.02 - /images/icons/product/videos-32.png
+    1.02 - /imghp?hl=fr&tab=wi
+    3.06 - /gb/images/b_8d5afc09.png
+    1.02 - /images/icons/product/earth-32.png
+    2.04 - /gb/js/sem_4ba9ac0c723ff8b4a486b5e93aa19779.js
+    1.02 - /intl/fr/about/products/default.css
+    1.02 - /images/logos/google_logo_41.png
+    1.02 - /static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff
+    1.02 - /images/icons/product/blogs-32.png
+    2.04 - /
+    1.02 - /images/icons/product/translate-32.png
+    1.02 - /csi?v=3&s=webhp&action=&srt=244&e=17259,37102,39523,39976,3300017,3300105,3300121,3300134,3300136,3300137,3300144,3310015,4000116,4000293,4000354,4000473,4000519,4000545,4000553,4000741,4000784,4000825,4000833,4000841,4000949,4000973,4001006&ei=kC1YULzKAuKj0QWYsIDoBg&imc=1&imn=1&imp=0&rt=xjsls.16,prt.19,xjses.111,xjsee.197,xjs.331,ol.413,iml.19,wsrt.244,cst.0,dnst.0,rqst.164,rspt.8
+    1.02 - /images/icons/product/igoogle-32.png
+    1.02 - /webhp?hl=fr&tab=ww
+    1.02 - /images/icons/product/scholar-32.png
+    1.02 - /css?family=Open+Sans:300,600,700
+    1.02 - /shopping?hl=fr&tab=wf
+    1.02 - /xjs/_/js/i/i,jsa,sb,cdos,qi,pcc,csi/rt=j/ver=x7YZZ2fMVNw.en_US./d=1/sv=1/rs=AItRSTObxRsecLtcisZJAamdMxVWPyk8Wg
+    1.02 - /images/icons/product/maps-32.png
+    2.04 - /gb/images/j_e6a6aca6.png
+    1.02 - /ga.js
+    1.02 - /images/icons/product/books-32.png
+    2.04 - /images/swxa.png
+    1.02 - /images/icons/product/chrome-32.png
+    1.02 - /csi?v=3&s=webhp&action=&srt=220&e=17259,35700,37102,39523,39976,3300017,3300105,3300121,3300134,3300136,3300137,3300144,3310015,4000116,4000293,4000354,4000473,4000519,4000545,4000553,4000624,4000743,4000783,4000824,4000833,4000841,4000949,4000973,4001006&ei=jy1YUL7IEeO_0QWg2IGoDA&imc=1&imn=1&imp=1&rt=xjsls.14,prt.17,xjses.257,xjsee.349,xjs.400,ol.456,iml.119,wsrt.220,cst.0,dnst.0,rqst.149,rspt.7
+    1.02 - /images/icons/product/search_for_mobile-32.png
+    1.02 - /static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff
+    1.02 - /images/icons/product/mobile-32.png
+    1.02 - /csi?v=3&s=translate&action=t&it=wtsrt_.270,tbsd_.47,tbnd_.0&srt=317&tran=15&e=gbar2&rt=cl.45,rsw.65,rsl.65,rtl.65,jbl.85,jl.91,br.91,prt.93,ol.101
+    1.02 - /translate/static/te0zcEx0tqI/js/desktop_module_lazy.js
+    1.02 - /images/icons/product/customsearch-32.png
+    1.02 - /images/icons/product/sites-32.png
+    1.02 - /csi?v=3&s=imghp&action=&srt=100&e=17259,37102,39523,39976,3300017,3300105,3300121,3300134,3300136,3300137,3300144,3310015,4000116,4000293,4000354,4000473,4000519,4000545,4000553,4000741,4000784,4000825,4000833,4000841,4000949,4000973,4001006&ei=kC1YUMDxJMaf0QWUzYCIAQ&rt=xjsls.24,prt.26,xjses.192,xjsee.247,xjs.294,ol.295,wsrt.100,cst.1,dnst.0,rqst.61,rspt.9
+    1.02 - /images/icons/product/calendar-32.png
+    1.02 - /translate/static/cj0ekO_WMIw/js/desktop_module_async.js
+    1.02 - /preferences?hl=fr
+    1.02 - /shopping/data?hl=fr_FR&ei=kS1YUMjcA4LV-QaDggE&source=request1
+    1.02 - /shopping/data?hl=fr_FR&ei=kS1YUMjcA4LV-QaDggE&source=request0
+    4.08 - /generate_204
+    1.02 - /intl/fr_ALL/images/logos/images_logo_lg.gif
+    1.02 - /intl/fr/about/css/default.css
+    1.02 - /js/gweb/analytics/autotrack.js
+    4.08 - /images/nav_logo114.png
+    1.02 - /shopping/sharedjs/1701333680-searchbox.js
+    1.02 - /images/icons/product/maps_for_mobile-32.png
+    1.02 - /images/icons/product/talk-32.png
+    1.02 - /images/icons/product/blogger-32.png
+    1.02 - /intl/fr/about/products/
+    1.02 - /images/icons/product/reader-32.png
+    1.02 - /gen204?hready=hl=en,sl=auto,tl=en,slh=,tlh=,soph=0,ql=0,ttnc=230,uetrans=1
+    1.02 - /images/icons/product/news-32.png
+    1.02 - /shopping/clear.cache.gif
+    1.02 - /images/icons/product/alerts-32.png
+    1.02 - /shopping/kd.css
+    1.02 - /translate/buttons6.png
+    1.02 - /shopping/001E6EA5A2185A304F01CFD30447F1F8.cache.js
+    1.02 - /images/icons/product/groups-32.png
+    1.02 - /translate/sound_player2.swf
+    1.02 - /translate/static/CROv96ltsXE/css/desktop_ltr.css
+    1.02 - /images/icons/product/picasa-32.png
+    1.02 - /images/icons/product/docs-32.png
+    1.02 - /__utm.gif?utmwv=5.3.5&utms=1&utmn=1595279889&utmhn=www.google.fr&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x766&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=Google%20-%20Produits&utmhid=1047237258&utmr=http%3A%2F%2Fwww.google.fr%2Fshopping%3Fhl%3Dfr%26tab%3Dwf&utmp=%2Fintl%2Ffr%2Fabout%2Fproducts%2F&utmac=UA-17845800-9&utmcc=__utma%3D146932897.1604128031.1347956114.1347956114.1347956114.1%3B%2B__utmz%3D146932897.1347956114.1.1.utmcsr%3Dgoogle.fr%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Fshopping%3B&utmu=qKC~
+    1.02 - /translate/text.png
+    1.02 - /images/icons/product/images-32.gif
+    1.02 - /static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff
+    1.02 - /images/icons/product/toolbar-32.png
+    1.02 - /intl/fr/options/
+    1.02 - /images/icons/product/googlemail-32.png
+    1.02 - /xjs/_/js/p/p,sslk,pcc/rt=j/ver=dfosZg6q39g.en_US./d=1/sv=1/rs=AItRSTNudrUj7UO_BYbVl3WAveqrLfct7A
+    2.04 - /blank.html
+    1.02 - /images/icons/product/search-32.png
+    1.02 - /images/icons/product/sketchup-32.gif
+    1.02 - /images/icons/product/panoramio-32.png
+    1.02 - /translate/static/8HRBsUJRTP8/js/desktop_module_main.js
+  content-language: 
+    100.00 - en
+  content-encoding: 
+    100.00 - gzip
+  content-type: 
+    2.15 - text/x-gwt-rpc; charset=UTF-8
+    7.53 - text/javascript
+    2.15 - text/html
+    11.83 - text/html; charset=UTF-8
+    50.54 - image/png
+    1.08 - text/html; charset=utf-8
+    6.45 - text/javascript; charset=UTF-8
+    7.53 - image/gif
+    1.08 - application/x-javascript
+    3.23 - font/woff
+    1.08 - application/x-shockwave-flash
+    5.38 - text/css
+  age: 
+    1.10 - 385277
+    1.10 - 394695
+    1.10 - 22357
+    1.10 - 302270
+    1.10 - 135863
+    1.10 - 29090
+    2.20 - 391173
+    1.10 - 472680
+    1.10 - 472683
+    3.30 - 472684
+    1.10 - 273241424
+    1.10 - 472686
+    2.20 - 1
+    56.04 - 0
+    2.20 - 595304
+    1.10 - 480375
+    1.10 - 211286
+    1.10 - 497558
+    1.10 - 394605
+    1.10 - 480506
+    3.30 - 480505
+    1.10 - 996556
+    1.10 - 991892
+    2.20 - 373169
+    4.40 - 373165
+    1.10 - 391140
+    1.10 - 392650
+    1.10 - 5920926
+    1.10 - 394572
+    1.10 - 27968
+  :status: 
+    85.71 - 200
+    6.12 - 0
+    6.12 - 204
+    2.04 - 301
+  server: 
+    1.10 - Golfe
+    6.59 - GFE/2.0
+    71.43 - sffe
+    6.59 - GSE
+    7.69 - gws
+    6.59 - HTTP server (unknown)
+  :scheme: 
+    100.00 - http
+  cookie: 
+    48.65 - NID=64=mx2ss8zkPhI7qdrX_Tm4IBWu3zdDLk9YYmOiX1Gq4fNx7UKf2VZn0gdY1hYAZn1IiYlOf3fhYznbgNCZoFT63vzMeEYsz_qtYmZLDR0btxJmhbrLOBTg8p0JrH7rY_o2; PREF=ID=346ffb30b5fc5463:U=f54d9b4d22f77ec5:FF=0:TM=1347956111:LM=1347956112:S=pHpebNbaLnvN1Pws
+    13.51 - PREF=ID=15958a1d88b69b05:TM=1347956114:LM=1347956114:S=GIy7zERcpUHdOexT; NID=64=mKOC_2LiKPEHxpiBmdCZRkWx2tptJX3sLtS5zqJvIQ4jei-KecxP_BExVi6dqZrxL7qIh8__p6WjRlaS1D2stiS-MyZ-IwEgdljKQK4t11EpkQb9yJJYX1k35NO7ZOoo
+    37.84 - PREF=ID=346ffb30b5fc5463:FF=0:TM=1347956111:LM=1347956111:S=PRmJpvMvnIro7eDq; NID=64=mx2ss8zkPhI7qdrX_Tm4IBWu3zdDLk9YYmOiX1Gq4fNx7UKf2VZn0gdY1hYAZn1IiYlOf3fhYznbgNCZoFT63vzMeEYsz_qtYmZLDR0btxJmhbrLOBTg8p0JrH7rY_o2
+  x-frame-options: 
+    100.00 - SAMEORIGIN
+  :status-text: 
+    85.71 - OK
+    6.12 - No Content
+    6.12 - unknown
+    2.04 - Moved Permanently
+  :host: 
+    1.02 - fonts.googleapis.com
+    1.02 - clients1.google.com
+    35.71 - www.google.com
+    3.06 - clients1.google.fr
+    3.06 - themes.googleusercontent.com
+    7.14 - ssl.gstatic.com
+    6.12 - translate.google.com
+    1.02 - csi.gstatic.com
+    3.06 - www.gstatic.com
+    36.73 - www.google.fr
+    2.04 - www.google-analytics.com
+
+

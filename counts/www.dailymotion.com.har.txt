@@ -314,7 +314,7 @@ server:
  Average:     12.32
  Low:         2
  High:        21
- Variability: 0.3228
+ Variability: 0.3204
  Percent of Total Size: 3.022544
  Percent of Total Count: 4.722604
 
@@ -855,7 +855,7 @@ x-content-type-options 0.142857142857                                     14
 x-cache-info         0.2                                                5                   
 connection           0.25                                               4                   
 cookie               0.274809160305                                     131                 
-server               0.322815533981                                     412                 
+server               0.320388349515                                     412                 
 x-varnish-cache      0.5                                                2                   
 x-dc-node            0.5                                                2                   
 x-powered-by         0.5                                                2                   
@@ -881,3 +881,1989 @@ x-origin-date        1.0                                                1
 x-transaction        1.0                                                3                   
 x-dm-upstream-resptime 1.0                                                17                  
 x-fb-debug           1.0                                                3                   
+
+
+Header Frequencies:
+  origin: 
+    66.67 - http://www.dailymotion.com
+    33.33 - http://172.19.77.100:15871
+  content-length: 
+    0.38 - 1140
+    0.38 - 212
+    0.19 - 2960
+    0.19 - 2714
+    2.08 - 762
+    2.46 - 42
+    0.19 - 5179
+    0.19 - 9361
+    0.76 - 4478
+    0.19 - 131
+    0.19 - 32036
+    0.19 - 1797
+    0.19 - 8301
+    0.19 - 6122
+    0.19 - 4473
+    0.19 - 3657
+    0.19 - 11306
+    0.19 - 1774
+    0.19 - 7149
+    0.19 - 20
+    0.19 - 2324
+    0.19 - 1942
+    0.19 - 2487
+    0.19 - 4147
+    0.19 - 699
+    0.19 - 5622
+    0.19 - 2480
+    0.19 - 4232
+    0.38 - 9688
+    0.19 - 3855
+    0.19 - 5210
+    1.14 - 451
+    0.19 - 6060
+    0.19 - 9931
+    0.19 - 6244
+    0.19 - 66376
+    0.19 - 2013
+    0.19 - 1317
+    0.19 - 1095
+    0.19 - 3830
+    0.19 - 8439
+    1.14 - 1556
+    0.19 - 713
+    0.19 - 1152
+    0.19 - 5753
+    0.19 - 4032
+    0.19 - 6155
+    0.19 - 2899
+    0.38 - 269
+    0.19 - 1787
+    0.19 - 7123
+    0.19 - 61592
+    0.19 - 15699
+    0.19 - 9902
+    0.19 - 1557
+    0.19 - 218502
+    0.19 - 2319
+    0.19 - 8879
+    0.19 - 362
+    0.19 - 3565
+    0.19 - 20367
+    0.19 - 1067
+    0.19 - 2146
+    0.19 - 12306
+    0.19 - 5697
+    0.19 - 14633
+    0.19 - 2416
+    0.38 - 371
+    0.19 - 7334
+    0.19 - 72375
+    0.19 - 2516
+    0.19 - 31217
+    0.19 - 2902
+    0.19 - 10382
+    0.19 - 17788
+    0.19 - 5398
+    0.19 - 133571
+    0.19 - 4878
+    2.27 - 1483
+    0.19 - 1921
+    0.19 - 3142
+    0.19 - 89
+    0.19 - 6383
+    0.19 - 2824
+    0.19 - 2892
+    0.19 - 6909
+    0.19 - 85
+    0.38 - 28230
+    0.19 - 12592
+    0.19 - 2783
+    0.19 - 8878
+    0.19 - 7632
+    0.19 - 4343
+    0.19 - 6513
+    0.19 - 2307
+    0.19 - 2381
+    0.19 - 2268
+    0.19 - 7684
+    0.19 - 1252
+    0.19 - 24473
+    0.19 - 2660
+    0.19 - 1015
+    0.19 - 9542
+    0.38 - 610
+    0.19 - 31775
+    0.19 - 4217
+    0.19 - 2441
+    0.19 - 3117
+    0.19 - 556497
+    0.19 - 16847
+    1.14 - 442
+    0.19 - 2761
+    0.19 - 2760
+    5.30 - 0
+    0.19 - 9662
+    0.19 - 23492
+    0.19 - 245
+    0.19 - 3260
+    0.19 - 7111
+    0.19 - 16926
+    0.19 - 240
+    0.19 - 2839
+    0.19 - 8580
+    0.19 - 973
+    0.19 - 100
+    0.19 - 14007
+    0.19 - 22141
+    0.19 - 8356
+    0.19 - 3319
+    0.19 - 2144
+    0.19 - 11006
+    0.19 - 3397
+    0.19 - 2041
+    0.19 - 11696
+    0.19 - 86336
+    0.19 - 5573
+    4.55 - 35
+    0.38 - 34
+    0.19 - 519
+    0.19 - 1638
+    0.19 - 2168
+    0.19 - 48537
+    0.57 - 2166
+    0.19 - 1838
+    0.19 - 2372
+    0.19 - 3611
+    0.19 - 2485
+    0.19 - 15727
+    0.19 - 8210
+    0.19 - 1166
+    0.19 - 2295
+    0.19 - 2294
+    0.19 - 3815
+    0.57 - 65
+    0.19 - 8722
+    0.19 - 12843
+    2.27 - 68
+    0.19 - 16722
+    0.19 - 53994
+    0.19 - 1902
+    0.19 - 4342
+    0.19 - 3293
+    0.19 - 1421
+    0.19 - 7097
+    0.19 - 8942
+    0.19 - 8196
+    3.41 - 1635
+    0.19 - 7090
+    0.19 - 5903
+    0.19 - 1582
+    0.19 - 1730
+    0.19 - 3511
+    0.19 - 2483
+    0.19 - 15328
+    0.38 - 4744
+    0.19 - 730
+    0.19 - 45478
+    0.38 - 4669
+    0.19 - 1508
+    0.19 - 3080
+    0.19 - 62647
+    0.19 - 20142
+    0.19 - 9330
+    0.19 - 22286
+    0.19 - 7490
+    0.19 - 30640
+    0.19 - 10641
+    0.19 - 7009
+    0.19 - 7642
+    2.08 - 59736
+    0.19 - 10560
+    0.19 - 2479
+    0.19 - 1869
+    0.19 - 1910
+    0.19 - 1912
+    0.19 - 1915
+    0.19 - 20412
+    0.38 - 10014
+    0.19 - 4729
+    0.19 - 28307
+    0.19 - 5186
+    0.19 - 5956
+    0.19 - 8704
+    0.38 - 3373
+    0.19 - 35568
+    0.19 - 3442
+    0.19 - 22992
+    0.19 - 5819
+    0.19 - 2358
+    0.19 - 10476
+    0.19 - 6190
+    0.19 - 2753
+    0.19 - 2750
+    0.19 - 22673
+    0.38 - 31157
+    0.19 - 2419
+    1.14 - 2050
+    0.19 - 1510
+    0.19 - 151
+    0.19 - 153
+    0.19 - 14495154
+    0.19 - 3901
+    0.19 - 157
+    0.19 - 126417
+    0.19 - 1847
+    0.19 - 2057
+    0.19 - 552
+    0.38 - 1981
+    0.19 - 12053
+    0.19 - 7088
+    0.19 - 5059
+    0.19 - 9239
+    0.19 - 10367
+    0.19 - 93053
+    0.19 - 10363
+    0.19 - 1893
+    2.46 - 11
+    0.19 - 16115
+    0.19 - 1054
+    0.38 - 4926
+    1.14 - 1944
+    0.19 - 98135
+    0.19 - 3432
+    2.84 - 45
+    0.19 - 955
+    2.08 - 43
+    0.19 - 24066
+    0.19 - 7776
+    0.38 - 14804
+    2.08 - 56065
+    0.19 - 16289849
+    0.19 - 2504
+    0.19 - 43423
+    0.19 - 14712
+    0.19 - 7109
+    0.19 - 2873
+    0.19 - 147
+    0.19 - 4313
+    0.19 - 206
+    0.19 - 6990
+    0.19 - 1272
+    0.19 - 14003
+    0.19 - 149
+    0.38 - 7669
+    0.19 - 39645
+    0.19 - 3350
+    0.19 - 1889
+    0.19 - 4466
+    0.19 - 1717
+    0.19 - 52578
+    0.38 - 7242
+    0.19 - 79857
+    0.19 - 7335
+    0.19 - 8808
+    0.19 - 3540
+    0.19 - 39592
+    0.19 - 946
+    0.19 - 2081
+    0.38 - 1289
+    0.19 - 62398
+    0.19 - 3662
+    0.19 - 1367
+    0.19 - 857
+    0.19 - 1682
+    2.27 - 1539
+    1.14 - 1687
+    0.19 - 2005
+    0.19 - 2942
+    0.19 - 9921
+    0.19 - 7182
+    0.19 - 800
+    0.19 - 5939
+    0.38 - 169
+  via: 
+    0.19 - 1.0 cdce-lon004-002.lon004.internap.com:1081 (squid/2.7.STABLE7), 1.0 cdce-lon004-002.lon004.internap.com:80 (squid/2.7.STABLE7), 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+    0.38 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain, 1.0 sorga-msr:3128 (squid/2.6.STABLE21)
+    1.88 - 1.1 localhost.localdomain
+    0.38 - 1.1 varnish, 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+    97.18 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+  accept-language: 
+    100.00 - en-US,en;q=0.8
+  proxy-connection: 
+    20.98 - close
+    79.02 - keep-alive
+  x-varnish-cache: 
+    100.00 - HIT
+  x-cache-lookup: 
+    100.00 - MISS from sorga-msr:3128
+  x-dm-relatedalgo: 
+    66.67 - behavior-only
+    33.33 - no-related
+  vary: 
+    100.00 - Accept-Encoding
+  accept: 
+    1.65 - text/javascript, text/html, application/xml, text/xml, */*
+    9.32 - text/css,*/*;q=0.1
+    10.05 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    78.98 - */*
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  x-json: 
+    25.00 - ["DM_WidgetV3.addCss(\"\/css\/gen\/widget\/pageitem\/list.css.vf58781f143db7da16\");","DM_Widget_Page_Video.tabsLoaded();","DM_JS.load(\"\/js\/gen\/widget\/pageitem\/video\/related.js.v854cf1498510f9bc6\",\"DM_Widget_PageItem_Video_Related\", function(){EventSelectors.start(DM_Widget_PageItem_Video_Related.rules);}, true);","DM_RelatedCount = 15;","DM_AutoPlayLabelOn = 'Cliquez pour d\u00e9sactiver le lancement automatique de la vid\u00e9o suivante';","DM_AutoPlayLabelOff = 'Cliquez pour activer le lancement automatique de la vid\u00e9o suivante';","DM_AutoPlayNotifyCountDownStart = 'Lancement dans';","DM_AutoPlayNotifyCountDownEnd = 'sec';","DM_AutoPlayActivatePingUrl = 'http:\/\/www.dailymotion.com\/sense\/images\/vs\/tag.gif?action=autoplay%2Fon&log=1&locale=fr&asnum=AS3215&country=FR&lat=48.2132000000000&lng=-1.5084000000000&rid=1347970972&urange=28&ff=on';","DM_AutoPlayDeactivatePingUrl = 'http:\/\/www.dailymotion.com\/sense\/images\/vs\/tag.gif?action=autoplay%2Foff&log=1&locale=fr&asnum=AS3215&country=FR&lat=48.2132000000000&lng=-1.5084000000000&rid=1347970972&urange=28&ff=on';","relalg = 'behavior-only';","DM_LazyLoad.findInContextAndlLoad(\"div.dmpi_video_relatedlist\")"]
+    25.00 - ["DM_Widget_PageItem_AutoComplete_targetElementId = 'share_recipients';","DM_WidgetV3.addCss(\"\/css\/gen\/widget\/pageitem\/video\/tools.css.vdab9e0482bb6461e6\");"]
+    25.00 - ["DM_WidgetV3_PageItem_Comment_Post_maxCommentSizeLabel = 'Vous avez atteint la limite de taille pour votre commentaire.';","DM_WidgetV3_PageItem_Comment_Post_maxCommentSize = 1000;","DM_WidgetV3_PageItem_Comment_Post_titleTemplate = '#{commentNb} commentaires';","DM_Widget_Page_Video.tabsLoaded();","DM_JS.load(\"\/js\/gen\/widget\/pageitem\/comment\/list.js.v089e6311a7b05c9b6\",\"DM_Widget_PageItem_Comment_List\", function(){EventSelectors.start(DM_Widget_PageItem_Comment_List.rules);}, true);","DM_Widget_PageItem_Comment_Post.updateBoxTitle(0)","DM_WidgetV3.addCss(\"\/css\/gen\/widget\/pageitem\/list.css.vf58781f143db7da16\");","DM_Form.charactersUsedLabel = 'caract\u00e8res utilis\u00e9s';","DM_Form_Validator.dm_component_form = [];","DM_JS.load(\"\/js\/gen\/widget\/pageitem\/video\/related.js.v854cf1498510f9bc6\",\"DM_Widget_PageItem_Video_Related\", function(){EventSelectors.start(DM_Widget_PageItem_Video_Related.rules);}, true);","DM_RelatedCount = 15;","DM_AutoPlayLabelOn = 'Cliquez pour d\u00e9sactiver le lancement automatique de la vid\u00e9o suivante';","DM_AutoPlayLabelOff = 'Cliquez pour activer le lancement automatique de la vid\u00e9o suivante';","DM_AutoPlayNotifyCountDownStart = 'Lancement dans';","DM_AutoPlayNotifyCountDownEnd = 'sec';","DM_AutoPlayActivatePingUrl = 'http:\/\/www.dailymotion.com\/sense\/images\/vs\/tag.gif?action=autoplay%2Fon&log=1&locale=fr&asnum=AS3215&country=FR&lat=48.2132000000000&lng=-1.5084000000000&rid=1347970984&urange=28&ff=on';","DM_AutoPlayDeactivatePingUrl = 'http:\/\/www.dailymotion.com\/sense\/images\/vs\/tag.gif?action=autoplay%2Foff&log=1&locale=fr&asnum=AS3215&country=FR&lat=48.2132000000000&lng=-1.5084000000000&rid=1347970984&urange=28&ff=on';","relalg = 'no-related';","DM_LazyLoad.findInContextAndlLoad(\"div.dmpi_video_relatedlist\")"]
+    25.00 - ["DM_WidgetV3.addCss(\"\/css\/gen\/widget\/pageitem\/list.css.vf58781f143db7da16\");","DM_Widget_Page_Video.tabsLoaded();","DM_JS.load(\"\/js\/gen\/widget\/pageitem\/video\/related.js.v854cf1498510f9bc6\",\"DM_Widget_PageItem_Video_Related\", function(){EventSelectors.start(DM_Widget_PageItem_Video_Related.rules);}, true);","DM_RelatedCount = 15;","DM_AutoPlayLabelOn = 'Cliquez pour d\u00e9sactiver le lancement automatique de la vid\u00e9o suivante';","DM_AutoPlayLabelOff = 'Cliquez pour activer le lancement automatique de la vid\u00e9o suivante';","DM_AutoPlayNotifyCountDownStart = 'Lancement dans';","DM_AutoPlayNotifyCountDownEnd = 'sec';","DM_AutoPlayActivatePingUrl = 'http:\/\/www.dailymotion.com\/sense\/images\/vs\/tag.gif?action=autoplay%2Fon&log=1&locale=fr&asnum=AS3215&country=FR&lat=48.2132000000000&lng=-1.5084000000000&rid=1347971015&urange=28&ff=on';","DM_AutoPlayDeactivatePingUrl = 'http:\/\/www.dailymotion.com\/sense\/images\/vs\/tag.gif?action=autoplay%2Foff&log=1&locale=fr&asnum=AS3215&country=FR&lat=48.2132000000000&lng=-1.5084000000000&rid=1347971015&urange=28&ff=on';","relalg = 'behavior-only';","DM_LazyLoad.findInContextAndlLoad(\"div.dmpi_video_relatedlist\")"]
+  x-dm-page: 
+    4.55 - fr.html.channel_list
+    4.55 - fr.html.sas
+    13.64 - fr.html.video_item
+    9.09 - fr.html.cdn_director
+    4.55 - fr.sequence.video_sequence
+    4.55 - fr.html.contest_home
+    13.64 - fr.html.widget_v3_chunks
+    4.55 - in.html.crossdomain
+    9.09 - fr.html.channel_home
+    4.55 - fr.html.home
+    4.55 - fr.html.widget_dispatch_v3
+    9.09 - fr.html.user_home
+    9.09 - fr.html.history_management
+    4.55 - fr.json.video_item
+  p3p: 
+    13.79 - CP="NON PSA PSD IVA IVD OTP SAM IND UNI PUR COM NAV INT DEM CNT STA PRE OTC HEA"
+    9.20 - policyref="/w3c/p3p.xml",CP="NOI DSP COR CURa DEVa PSAa STP UNI COM OUR NAV INT"
+    13.79 - policyref="/w3c/p3p.xml",CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA", policyref="/w3c/p3p.xml",CP="NOI DSP COR CURa DEVa PSAa STP UNI COM NAV OUR INT"
+    1.15 - CP="NOI DSP COR NID CURa ADMa DEVa PSAo PSDo OUR SAMa IND COM NAV"
+    50.57 - policyref="http://www.dailymotion.com/w3c/p3p.xml", CP="IDC DSP CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT"
+    2.30 - CP="NOI CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV"
+    9.20 - CP="CAO DSP LAW CURa ADMa DEVa TAIa PSAa PSDa IVAa IVDa OUR BUS IND UNI COM NAV INT"
+  x-fb-debug: 
+    33.33 - hj+deBazqCwNq2ca7gXgonicYZZBOKY2wgxNbJkbzmk=
+    33.33 - ZnjEBsQZKi7vAg91gkaLzeRLX96mofIEqeP9A9vHMz8=
+    33.33 - M1CMvL1W1Db9Ad5Ko8WnvEfzHhLv0iLcSpr4PsSjxfc=
+  :version: 
+    100.00 - HTTP/1.1
+  x-prototype-version: 
+    100.00 - 1.7
+  access-control-allow-methods: 
+    100.00 - GET, POST, OPTIONS, PUT, DELETE
+  x-dm-cell: 
+    50.00 - core, rule=57, vars=video.views_hour,param.format
+    50.00 - edgecast, rule=84, vars=remote.continent,param.format
+  x-content-type-options: 
+    85.71 - nosniff
+    14.29 - nosniff nosniff
+  x-dc-node: 
+    100.00 - logaggr-03
+  x-information: 
+    50.00 - o=proxy-49 p=2855/3 c=yes h=2/2 b=558000/10/1.10
+    50.00 - o=proxy-75 p=28878/3 c=yes h=1/1 b=100000000/10/1.00
+  user-agent: 
+    100.00 - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.56 Safari/537.4
+  x-origin-expires: 
+    100.00 - Wed, 30 May 2012 15:43:21 GMT Wed, 30 May 2012 17:05:44 GMT
+  etag: 
+    0.65 - "1145cd7c8-2491-4c9707b009b00"
+    0.65 - "11454e820-b1a6-4c9eac581f000"
+    0.65 - "114859620-1bed-4c9dad460a680"
+    0.65 - "1146ee68f-fc0-4c9e33e8c8bc0"
+    0.65 - "11457fce3-1e04-4c9e4626ed600"
+    0.65 - "11401f8f5-1dda-4c9f51860a500"
+    4.58 - "f1cdb-2a-8cc09340"
+    0.65 - "10d68ca34-1edd1-4a5477cdd94c0"
+    0.65 - "114fa3731-26ae-4c9cf62181000"
+    0.65 - "114f7437c-421e-4c9e2cffb7e00"
+    0.65 - "11450f2e4-182e-4c9dabfb1d9c0"
+    0.65 - "11497732f-18ef-4c9780da4b840"
+    0.65 - "1148d89a4-b90-4c9e5eefb8f40"
+    0.65 - "114719283-1679-4c91c408b9780"
+    0.65 - "114f74466-b17-4c9e7537a6080"
+    0.65 - "1140cd3a0-adf-4c97c61190540"
+    0.65 - "1150b0d19-cdd-4c9da4dabc980"
+    0.65 - "114ad75fd-90f-4c9e592986fc0"
+    0.65 - "114c36ead-7bd-4c9e758e6ed40"
+    2.61 - "200ea-2a-8c6505c0"
+    0.65 - "11486a4ad-ac1-4c9e9a0f7cd00"
+    0.65 - "1147fb303-4f8f-4c9e014ffac40"
+    0.65 - "114b97e3c-17ea-4c9eac535a4c0"
+    0.65 - "114f25268-f0f-4c9f52a3305c0"
+    0.65 - "114fb41a8-20a4-4c9d84b7636c0"
+    0.65 - "101e83591-9c8-4af7cd9386580"
+    0.65 - "115061238-8f6-4c9a67778c440"
+    0.65 - "115051771-77b0-4c9e1665c6b40"
+    0.65 - "11372eac9-1e60-4c6af5bd36640"
+    0.65 - "466126c932f7c1afe8219c04876406a8"
+    0.65 - "113147542-557-4c154f44dddc0"
+    0.65 - "101130462-1279-46955c0e1c200"
+    0.65 - "11425cd33-2004-4c8cc1d578080"
+    0.65 - "114c56c31-cd62-4c9d921fa9880"
+    0.65 - "114ee330f-7d5-4c9e6d84675c0"
+    0.65 - "1141ef479-666-4c99c967258c0"
+    0.65 - "1150813d2-a9a-4c9f011ee3340"
+    0.65 - "114ff9adb-1bb2-4c9f58311e080"
+    0.65 - "114a5580c-16b7d-4c9136c6591c0"
+    0.65 - "1147baebf-1bb0-4c9e8ca82ad80"
+    0.65 - "114948e10-11ab7-4c9e5e99e44c0"
+    0.65 - "10ff21e46-3bb6-4c981c613e780"
+    0.65 - "1133abfc4-74d-4c38968cc54c0"
+    0.65 - "112d3911c-2546-4c154f44dddc0"
+    0.65 - "11465fd5b-f098-4c9e602d4bc80"
+    0.65 - "113fee785-1dd0-4c9e602d4bc80"
+    0.65 - "1149166b4-1bd3-4c9257e6eb4c0"
+    0.65 - "114a6850d-1c0e-4c9f3dc1d8280"
+    0.65 - "10148ba24-447-4a54a0c65be40"
+    0.65 - "101570535-457c-46955cf8b6b80"
+    0.65 - "115130833-22af-4c9f15fc6ad80"
+    0.65 - "1148d89af-22ee-4c9e5e99e44c0"
+    0.65 - "1148f8974-10348-4c9aae591bf00"
+    1.31 - "1114ea-2a-935f7400"
+    0.65 - "113c95e31-17f57-4c6be836eb880"
+    0.65 - "11480a289-9aa8-4c9e6d84675c0"
+    0.65 - "114e73690-1079-4c97d9662e080"
+    0.65 - "11455eb51-2afe-4c9f554ef9300"
+    0.65 - "114b472cf-2012-4c9e5eefb8f40"
+    0.65 - "1150412ce-2940-4c9136c2888c0"
+    0.65 - "7cf9fe2e518ebdf5f1cb779c1b45d217"
+    0.65 - "114f84ca6-b39-4c9ebdfea1480"
+    0.65 - "1148d8a16-8af0-4c9e77ddb6040"
+    0.65 - "114a488bf-1971-4c9f586f1b2c0"
+    0.65 - "10ceea7b6-964-4a5477cce5280+gzip"
+    1.96 - "377d257f2d2e294916143c069141c1c5:1328738114"
+    0.65 - "113fee278-1ca7-4c9aae54573c0"
+    0.65 - "114d262ae-288e-4c9cd16275e00"
+    0.65 - "1411999884f419ea8219bf9b531a9c66"
+    0.65 - "1149d82b3-15c5-4c9e77deaa280"
+    0.65 - "1147ba861-137f1-4c9cf62181000"
+    0.65 - "101be5321-970-47f42d8295880"
+    0.65 - "1147fa4d4-271e-4c9909af406c0"
+    0.65 - "11478b0f3-1516-4c9e253c42d00"
+    0.65 - "114f849a6-10f7-4c9e335d8c340"
+    0.65 - "1141ff374-26c1-4c9dad8ba8ac0"
+    0.65 - "1143be97f-2472-4c9e8e5bff1c0"
+    0.65 - "1143cec2f-936-4c9f063f24b40"
+    0.65 - "114c96352-1641-4c9f67772e980"
+    1.31 - "114e966a5-1744-4c9d921fa9880"
+    0.65 - "101580323-809-46955cf8b6b80"
+    0.65 - "114f94210-f3be-4c9b9b7f0ffc0"
+    0.65 - "114db3c88-9af-4c907ff0033c0"
+    1.31 - "114cf419e-123d-4c9e6d827f140"
+    0.65 - "1150243fe-1b4e-4c9f65ac76f40"
+    0.65 - "101240004-145a-474b327c48080"
+    0.65 - "11488a0de-26cb-4c9e1aa4f7040"
+    0.65 - "11454e3ef-2417-4c9e1663de6c0"
+    0.65 - "11444eb06-ded-4c9e80d06fcc0"
+    0.65 - "11430e402-b53-4c99d0b641740"
+    0.65 - "114a68040-6e93-4c9e60e096380"
+    0.65 - "114fb265b-9add-4c9e253e2b180"
+    0.65 - "114ef311c-9b5-4c917f08c4d00"
+    0.65 - "1146ed70f-2184-4c998ec72c880"
+    0.65 - "11444b469-1bc7-4c8ca6b7ac6c0"
+    0.65 - "114ab7794-9d4-4c9e97a48d8c0"
+    0.65 - "1149f82d5-ac9-4c9f4e9d387c0"
+    0.65 - "114bb8258-25be-4c9e85797bb80"
+    1.31 - "11460de14-133e-4c9e349c132c0"
+    0.65 - "7bf68fe310c3b0bd0ac87d7c9e9d4c94"
+    0.65 - "114f03c39-20f7-4c995c861b800"
+    0.65 - "11512076a-cf7-4c9e837773ec0"
+    0.65 - "1143cebb5-b08-4c9eb0b01af80"
+    0.65 - "114c86907-d2d-4c9e7dc731300"
+    0.65 - "114b97bf5-973-4c9e264379a00"
+    0.65 - "1149b8148-206d-4c9eb6c5749c0"
+    0.65 - "114a4838e-3d6f-4c9e349b1f080"
+    0.65 - "114fd3e2b-d72-4c9e3af9e7800"
+    0.65 - "114ac626c-17ac-4c97cda279f00"
+    0.65 - "11415e46d-1afd-4c9954132c900"
+    0.65 - "11431fe38-ac8-4c9e900deb180"
+    0.65 - "1143ce937-dd4-4c9e1aa4f7040"
+    0.65 - "114e96ce4-1bc5-4c9ed21d6ccc0"
+    0.65 - "11465fddc-1ca6-4c9b9b7f0ffc0"
+    0.65 - "114ef6b3d-22ae-4c9d84eae3040"
+    0.65 - "11430f351-b4c-4c9eb335be2c0"
+    0.65 - "11481ae7b-16bb-4c9e264191580"
+    0.65 - "1140ce5aa-8dc-4c9e2ae3f0480"
+    0.65 - "114b3888d-287f-4c9eaa05fb640"
+    0.65 - "1144ddf1d-2200-4c953f5bb3d40"
+    0.65 - "1149b83cc-28ec-4c9f6bfb09080"
+    0.65 - "11446deea-bd99-4c9257e5f7280"
+    0.65 - "11450d964-8f7-4c9e253f1f3c0"
+    0.65 - "11508084e-180b-4c9ba50c488c0"
+    0.65 - "114827a92-2212-4c95c73558000"
+    0.65 - "1149d416d-2991-4c8bd43389b40"
+    1.31 - "b036a791811effc968bfcb43fa6d6910"
+    0.65 - "1146ee6ba-15140-4c9e8e61b7f40"
+    0.65 - "11441ff7c-1d42-4c9d9a75081c0"
+    0.65 - "114c278a5-1864-4c9e7da2f3d80"
+    0.65 - "11472a6b3-2268-4c9d5d2c22b00"
+    0.65 - "114f0482b-1bb9-4c9d92d2f3f80"
+    0.65 - "1144cef7c-d45-4c9e5e99e44c0"
+    0.65 - "101230056-143b-46955c27dbec0"
+    0.65 - "1144ee95d-1b61-4c9e014ffac40"
+    0.65 - "114b97edf-b56-4c9ece064a640"
+    0.65 - "11455eb50-209c3-4c9f5550e1780"
+  location: 
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=4194323953
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2785037838
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=1493192205
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2550156810
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=536890875
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=3842002444
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=3489680897
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2332052998
+    8.33 - http://b.scorecardresearch.com/b2?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347970961534&ns_c=UTF-8&c8=Dailymotion%20-%20Watch%2C%20publish%2C%20share%20videos&c7=http%3A%2F%2Fwww.dailymotion.com%2Ffr&c9=http%3A%2F%2Fwww.dailymotion.com%2Ffr
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=1291865611
+    8.33 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=3691007511
+    8.33 - http://www.dailymotion.com/fr/channel/videogames
+  :method: 
+    0.44 - post
+    99.56 - get
+  cache-control: 
+    10.82 - max-age=315360000
+    0.20 - public, max-age=29834154
+    0.61 - private
+    0.20 - private, max-age=900, no-transform
+    17.14 - max-age=0
+    3.06 - max-age=1
+    0.61 - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+    0.20 - must-revalidate, max-age=376
+    0.20 - no-cache=Set-Cookie
+    3.06 - public,max-age=315360000
+    2.45 - private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+    0.20 - public, max-age=315569260
+    0.61 - public, max-age=1800
+    2.45 - no-cache, no-store, no-transform
+    0.41 - private, no-cache
+    0.20 - max-age=3600, public
+    0.20 - public, max-age=361
+    42.04 - public
+    0.41 - private, no-transform, max-age=1209600
+    0.20 - public, max-age=29834162
+    0.41 - max-age=86400
+    0.41 - max-age=43200, public
+    0.20 - must-revalidate, max-age=476
+    0.20 - private, max-age=86400
+    0.20 - private, no-transform, max-age=86400
+    0.20 - must-revalidate, max-age=7
+    0.41 - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    3.06 - private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+    7.14 - no-cache
+    2.45 - private, no-cache, no-store, proxy-revalidate
+  x-dm-upstream-resptime: 
+    5.88 - 1347890481.727
+    5.88 - 1345544097.378
+    5.88 - 1347467196.011
+    5.88 - 1347958811.812
+    5.88 - 1347605451.153
+    5.88 - 1346936079.840
+    5.88 - 1347009393.556
+    5.88 - 1347009393.231
+    5.88 - 1346059237.482
+    5.88 - 1347964216.199
+    5.88 - 1345924861.384
+    5.88 - 1347966438.113
+    5.88 - 1347605451.021
+    5.88 - 1347477991.332
+    5.88 - 1346936306.761
+    5.88 - 1346922249.527
+    5.88 - 1347912360.153
+  x-cache-info: 
+    100.00 - cached
+  x-dm-backnode: 
+    0.37 - sc-142.srv.dailymotion.com:80
+    0.37 - sc-168.srv.dailymotion.com:80
+    0.37 - sc-096.srv.dailymotion.com:80
+    0.37 - sc-146.srv.dailymotion.com:80
+    0.37 - sc-132.srv.dailymotion.com:80
+    0.37 - sc-193.srv.dailymotion.com:80
+    0.37 - sc-144.srv.dailymotion.com:80
+    0.37 - sc-015.srv.dailymotion.com:80
+    0.37 - sc-171.srv.dailymotion.com:80
+    0.37 - 195.8.215.245:80
+    0.37 - sc-036.srv.dailymotion.com:80
+    0.37 - sc-063.srv.dailymotion.com:80
+    0.37 - sc-084.srv.dailymotion.com:80
+    0.37 - sc-093.srv.dailymotion.com:80
+    0.37 - sc-095.srv.dailymotion.com:80
+    1.12 - sc-115.srv.dailymotion.com:80
+    45.72 - statyle-02.adm.dailymotion.com:80
+    0.74 - logaggr-03.adm.dailymotion.com:8000
+    0.37 - sc-141.srv.dailymotion.com:80
+    0.37 - sc-116.srv.dailymotion.com:80
+    0.37 - sc-195.srv.dailymotion.com:80
+    0.37 - sc-094.srv.dailymotion.com:80
+    0.37 - sc-035.srv.dailymotion.com:80
+    0.37 - sc-074.srv.dailymotion.com:80
+    1.49 - vsense-02.dailymotion.com:80
+    38.29 - statyle-01.adm.dailymotion.com:80
+    1.12 - 195.8.215.246:80
+    0.37 - sc-082.srv.dailymotion.com:80
+    0.74 - vsense-01.dailymotion.com:80
+    2.60 - vsense-03.dailymotion.com:80
+  x-varnish: 
+    50.00 - 1854059255 1854036062
+    50.00 - 1036510516 1036496407
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  x-cache: 
+    51.25 - HIT MISS from sorga-msr
+    48.56 - MISS from sorga-msr
+    0.19 - HIT from cdce-lon004-002.lon004.internap.com HIT from cdce-lon004-002.lon004.internap.com MISS from sorga-msr
+  set-cookie: 
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:23:31 GMT; path=/ masscast=null; path=/
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:23:05 GMT; path=/ masscast=null; path=/
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:23:25 GMT; path=/
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:23:07 GMT;
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:23:03 GMT; path=/ masscast=null; path=/
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:22:52 GMT;
+    3.03 - v1st=A39D71926243279A; path=/; expires=Wed, 19 Feb 2020 14:28:00 GMT; domain=.dailymotion.com
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:23:16 GMT; path=/ history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; expires=Mon, 18-Mar-2013 13:23:16 GMT; path=/
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:22:41 GMT;
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:22:40 GMT; path=/
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:23:36 GMT;
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:23:04 GMT;
+    3.03 - uid=4A59B2FB26A9BAC0B3637C7C49764116E429AA5C;Path=/;Domain=.visiblemeasures.com;Expires=Wed, 18-Sep-2013 12:22:54 GMT sid=FCBEADEE0FFC21576AA54B14D6313E6ECEAD42F2;Path=/;Domain=.visiblemeasures.com
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:23:27 GMT;
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:22:51 GMT; path=/ masscast=null; path=/
+    3.03 - uid=435667AE23161BDEA78F5FA60A89E87EEF07E217;Path=/;Domain=.visiblemeasures.com;Expires=Wed, 18-Sep-2013 12:22:54 GMT sid=EAF6824782BF4A46F5CFC90B42F247E41D3C7A95;Path=/;Domain=.visiblemeasures.com
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:22:51 GMT;
+    3.03 - uid=4A59B2FB26A9BAC0B3637C7C49764116E429AA5C;Path=/;Domain=.visiblemeasures.com;Expires=Wed, 18-Sep-2013 12:23:15 GMT sid=FCBEADEE0FFC21576AA54B14D6313E6ECEAD42F2;Path=/;Domain=.visiblemeasures.com
+    3.03 - tg=271033; expires=Sun, 18-Sep-2022 12:22:40 GMT; path=/ lang=fr_FR; expires=Wed, 18-Sep-2013 12:22:40 GMT; path=/ login_infos=deleted; expires=Mon, 19-Sep-2011 12:22:39 GMT; path=/ dmvk=505867907c39e; path=/; domain=.dailymotion.com ql_n=0; expires=Wed, 18-Sep-2013 12:22:40 GMT; path=/ masscast=null; path=/
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:23:32 GMT;
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:22:42 GMT;
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:22:54 GMT; path=/ history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; expires=Mon, 18-Mar-2013 13:22:54 GMT; path=/
+    3.03 - uid=4A59B2FB26A9BAC0B3637C7C49764116E429AA5C;Path=/;Domain=.visiblemeasures.com;Expires=Wed, 18-Sep-2013 12:23:14 GMT sid=FCBEADEE0FFC21576AA54B14D6313E6ECEAD42F2;Path=/;Domain=.visiblemeasures.com
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:23:13 GMT;
+    3.03 - mc=50586791-697df-56a0f-734c3; expires=Thu, 20-Mar-2014 12:22:41 GMT; path=/; domain=.quantserve.com
+    3.03 - e=UFhnkcCoAMEAAFq0R0cAAACL; path=/; expires=Fri, 16-Sep-22 12:22:41 GMT; domain=.estat.com
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:22:50 GMT; path=/
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:23:35 GMT; path=/ masscast=null; path=/
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:23:12 GMT; path=/
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:23:39 GMT;
+    3.03 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323;Version=0;Comment=aisakosId;Domain=ezakus.net;Path=/;Max-Age=63072000;expires=Thu, 18 Sep 2014 12:23:40 GMT;
+    3.03 - UID=beb775e-90.84.59.26-1347970961; expires=Mon, 08-Sep-2014 12:22:41 GMT; path=/; domain=.scorecardresearch.com UIDR=1347970961; expires=Mon, 08-Sep-2014 12:22:41 GMT; path=/; domain=.scorecardresearch.com
+    3.03 - ql_n=0; expires=Wed, 18-Sep-2013 12:23:37 GMT; path=/
+  accept-ranges: 
+    0.38 - none
+    99.62 - bytes
+  expires: 
+    0.26 - Tue, 12 Jan 2038 23:24:06 GMT
+    0.26 - Thu, 07 Jan 2038 08:05:58 GMT
+    0.53 - Sat, 02 Jan 2038 13:46:27 GMT
+    0.26 - Mon, 18 Jan 2038 07:29:47 GMT
+    0.26 - Fri, 01 Jan 2038 20:01:33 GMT
+    0.26 - Tue, 18 Sep 2012 12:23:37 GMT
+    0.26 - Fri, 01 Jan 2038 01:40:00 GMT
+    0.26 - Thu, 18 Mar 2038 05:04:17 GMT
+    0.26 - Fri, 01 Jan 2038 19:06:54 GMT
+    0.26 - Tue, 05 Jan 2038 22:51:00 GMT
+    0.26 - Fri, 01 Jan 2038 05:58:05 GMT
+    0.26 - Fri, 01 Jan 2038 03:58:15 GMT
+    0.53 - Fri, 01 Jan 2038 21:30:47 GMT
+    0.53 - Mon, 11 Jan 2038 20:13:07 GMT
+    0.26 - Tue, 05 Jan 2038 07:10:50 GMT
+    0.26 - Fri, 01 Jan 2038 22:12:57 GMT
+    0.26 - Mon, 04 Jan 2038 04:13:36 GMT
+    0.26 - Fri, 01 Jan 2038 19:06:47 GMT
+    0.26 - Fri, 01 Jan 2038 03:50:32 GMT
+    0.26 - Tue, 26 Jan 2038 11:15:51 GMT
+    0.26 - Mon, 18 Jan 2038 08:02:37 GMT
+    0.26 - Fri, 01 Jan 2038 01:14:26 GMT
+    0.26 - Tue, 12 Jan 2038 21:46:15 GMT
+    0.26 - Fri, 01 Jan 2038 06:22:54 GMT
+    0.53 - Sun, 10 Jan 2038 11:42:51 GMT
+    0.26 - Fri, 01 Jan 2038 00:45:09 GMT
+    0.53 - Fri, 01 Jan 2038 22:03:12 GMT
+    0.26 - Tue, 26 Jan 2038 09:01:34 GMT
+    0.26 - Fri, 01 Jan 2038 02:04:42 GMT
+    0.26 - Wed, 03 Feb 2038 10:10:59 GMT
+    0.26 - Tue, 18 Sep 2012 12:22:59 GMT
+    0.26 - Tue, 05 Jan 2038 13:27:08 GMT
+    0.26 - Sat, 02 Jan 2038 14:02:13 GMT
+    0.26 - Tue, 26 Jan 2038 13:46:19 GMT
+    0.26 - Fri, 01 Jan 2038 01:45:37 GMT
+    0.53 - Tue, 18 Sep 2012 12:22:55 GMT
+    0.26 - Fri, 01 Jan 2038 21:13:25 GMT
+    0.26 - Tue, 18 Sep 2012 12:23:27 GMT
+    0.26 - Sat, 02 Jan 2038 03:55:21 GMT
+    0.26 - Fri, 01 Jan 2038 17:55:42 GMT
+    0.26 - Fri, 01 Jan 2038 02:46:01 GMT
+    0.26 - Mon, 11 Jan 2038 21:57:24 GMT
+    0.26 - Fri, 01 Jan 2038 01:48:46 GMT
+    0.79 - Wed, 06 Jan 2038 16:52:37 GMT
+    0.26 - Mon, 04 Jan 2038 02:38:02 GMT
+    0.26 - Fri, 01 Jan 2038 17:09:52 GMT
+    0.53 - Tue, 12 Jan 2038 03:03:00 GMT
+    0.26 - Sat, 02 Jan 2038 04:49:34 GMT
+    0.26 - Fri, 01 Jan 2038 13:54:06 GMT
+    0.53 - Tue, 26 Jan 2038 12:03:43 GMT
+    0.26 - Sat, 23 Jan 2038 02:58:08 GMT
+    0.53 - Tue, 19 Jan 2038 19:11:03 GMT
+    0.26 - Fri, 01 Jan 2038 19:05:07 GMT
+    0.26 - Sat, 02 Jan 2038 07:03:21 GMT
+    0.26 - Fri, 01 Jan 2038 22:30:18 GMT
+    0.26 - Fri, 08 Jan 2038 02:43:10 GMT
+    0.26 - Fri, 01 Jan 2038 12:03:47 GMT
+    2.90 - Mon, 11 Jan 2038 21:58:02 GMT
+    0.26 - Mon, 11 Jan 2038 21:58:41 GMT
+    0.26 - Fri, 01 Jan 2038 19:06:45 GMT
+    0.53 - Tue, 05 Jan 2038 05:27:54 GMT
+    0.26 - Sat, 02 Jan 2038 02:14:54 GMT
+    0.26 - Wed, 19 Sep 2012 12:22:54 GMT
+    0.53 - Fri, 01 Jan 2038 21:13:31 GMT
+    0.53 - Thu, 07 Jan 2038 08:39:43 GMT
+    0.26 - Tue, 18 Sep 2012 13:22:28 GMT
+    0.26 - Fri, 01 Jan 2038 16:15:31 GMT
+    0.26 - Sat, 02 Jan 2038 13:46:01 GMT
+    0.53 - Tue, 02 Oct 2012 12:22:40 GMT
+    0.26 - Mon, 04 Jan 2038 19:46:34 GMT
+    0.26 - Thu, 07 Jan 2038 17:36:23 GMT
+    0.26 - Fri, 01 Jan 2038 19:11:38 GMT
+    0.26 - Mon, 11 Jan 2038 21:56:54 GMT
+    0.26 - Tue, 18 Sep 2012 12:23:33 GMT
+    0.26 - Mon, 17 Sep 2012 12:23:14 +0000
+    0.26 - Fri, 01 Jan 2038 00:24:22 GMT
+    1.58 - Fri, 01 Jan 2038 17:27:33 GMT
+    0.26 - Fri, 29 Jan 2038 02:03:47 GMT
+    0.26 - Mon, 11 Jan 2038 08:54:40 GMT
+    0.53 - Sat, 02 Jan 2038 03:50:21 GMT
+    0.26 - Mon, 11 Jan 2038 19:02:02 GMT
+    2.11 - Thu, 31 Dec 2037 23:55:55 GMT
+    0.26 - Fri, 01 Jan 2038 14:00:20 GMT
+    0.26 - Fri, 15 Jan 2038 02:49:26 GMT
+    0.26 - Sat, 02 Jan 2038 14:18:54 GMT
+    0.26 - Fri, 01 Jan 2038 23:36:51 GMT
+    0.53 - Wed, 13 Jan 2038 03:14:36 GMT
+    0.26 - Wed, 24 Feb 2038 22:08:21 GMT
+    0.26 - Mon, 04 Jan 2038 06:49:32 GMT
+    0.26 - Mon, 17 Sep 2012 08:23:13 EDT
+    0.26 - Tue, 05 Jan 2038 22:11:50 GMT
+    0.26 - Mon, 15 Feb 2038 01:04:17 GMT
+    0.26 - Fri, 01 Jan 2038 19:22:23 GMT
+    0.26 - Fri, 15 Jan 2038 07:22:27 GMT
+    0.26 - Tue, 12 Jan 2038 23:21:07 GMT
+    0.26 - Mon, 17 Sep 2012 08:22:41 EDT
+    0.26 - Fri, 01 Jan 2038 03:31:22 GMT
+    0.79 - -1
+    0.26 - Fri, 01 Jan 2038 16:30:21 GMT
+    0.26 - Mon, 11 Jan 2038 21:58:05 GMT
+    0.26 - Mon, 17 Sep 2012 08:23:32 EDT
+    0.26 - Thu, 07 Jan 2038 20:23:35 GMT
+    0.26 - Tue, 05 Jan 2038 15:59:39 GMT
+    0.26 - Thu, 07 Jan 2038 03:55:16 GMT
+    0.26 - Fri, 08 Jan 2038 18:49:00 GMT
+    0.53 - Thu, 11 Feb 2038 04:18:02 GMT
+    0.26 - Mon, 25 Jan 2038 22:18:08 GMT
+    0.26 - Tue, 18 Sep 2012 12:23:14 GMT
+    0.26 - Fri, 01 Jan 2038 22:35:49 GMT
+    0.26 - Tue, 19 Jan 2038 13:49:24 GMT
+    0.26 - Fri, 01 Jan 2038 08:40:33 GMT
+    0.26 - Mon, 17 Sep 2012 08:22:42 EDT
+    0.26 - Mon, 17 Sep 2012 08:23:36 EDT
+    0.26 - Tue, 05 Jan 2038 00:42:37 GMT
+    0.26 - Fri, 01 Jan 2038 04:11:58 GMT
+    0.26 - Tue, 18 Sep 2012 12:29:20 GMT
+    0.26 - Sat, 02 Jan 2038 08:04:38 GMT
+    0.26 - Sat, 16 Jan 2038 00:47:48 GMT
+    2.90 - Fri, 15 Jan 2038 01:55:14 GMT
+    0.26 - Mon, 17 Sep 2012 08:23:27 EDT
+    0.26 - Fri, 01 Jan 2038 20:55:09 GMT
+    0.26 - Fri, 01 Jan 2038 01:12:13 GMT
+    0.26 - Sun, 03 Jan 2038 04:15:04 GMT
+    0.26 - Fri, 01 Jan 2038 03:53:05 GMT
+    0.26 - Sat, 02 Jan 2038 17:39:54 GMT
+    0.26 - Fri, 01 Jan 2038 15:34:15 GMT
+    0.26 - Wed, 06 Jan 2038 20:26:42 GMT
+    0.26 - Fri, 01 Jan 2038 00:17:06 GMT
+    0.26 - Tue, 18 Sep 2012 12:23:40 GMT
+    0.26 - Sun, 03 Jan 2038 11:31:53 GMT
+    0.26 - Fri, 01 Jan 2038 22:23:41 GMT
+    2.90 - Fri, 01 Jan 2038 09:57:49 GMT
+    3.17 - Fri, 04 Aug 1978 12:00:00 GMT
+    0.26 - Wed, 19 Sep 2012 12:22:40 GMT
+    0.26 - Fri, 01 Jan 2038 16:12:45 GMT
+    0.26 - Fri, 01 Jan 2038 22:35:44 GMT
+    0.26 - Fri, 01 Jan 2038 04:03:56 GMT
+    0.53 - Sun, 03 Jan 2038 07:46:21 GMT
+    0.26 - Sat, 02 Jan 2038 05:35:16 GMT
+    0.26 - Tue, 05 Jan 2038 18:26:01 GMT
+    0.26 - Fri, 01 Jan 2038 22:17:24 GMT
+    0.26 - Fri, 01 Jan 2038 21:20:55 GMT
+    0.26 - Fri, 01 Jan 2038 07:40:06 GMT
+    0.26 - Sat, 02 Jan 2038 05:27:37 GMT
+    0.53 - Tue, 18 Sep 2012 12:23:15 GMT
+    0.53 - Wed, 06 Jan 2038 07:41:49 GMT
+    0.26 - Mon, 17 Sep 2012 08:22:51 EDT
+    0.26 - Fri, 01 Jan 2038 00:48:27 GMT
+    0.26 - Sat, 16 Jan 2038 03:02:53 GMT
+    0.26 - Fri, 01 Jan 2038 22:31:00 GMT
+    0.26 - Wed, 03 Mar 2038 16:26:18 GMT
+    0.26 - Sun, 10 Jan 2038 09:10:04 GMT
+    0.26 - Fri, 01 Jan 2038 16:26:34 GMT
+    0.26 - Fri, 01 Jan 2038 01:41:56 GMT
+    0.26 - Wed, 13 Jan 2038 08:42:43 GMT
+    0.26 - Tue, 05 Jan 2038 15:59:37 GMT
+    0.26 - Mon, 18 Jan 2038 07:21:08 GMT
+    0.26 - Mon, 18 Jan 2038 07:44:55 GMT
+    0.26 - Fri, 01 Jan 2038 20:45:20 GMT
+    0.26 - Fri, 01 Jan 2038 19:13:31 GMT
+    0.26 - Tue, 18 Sep 2012 12:23:39 GMT
+    0.26 - Thu, 29 Aug 2013 19:38:35 GMT
+    0.26 - Tue, 18 Sep 2012 12:23:05 GMT
+    0.79 - Tue, 31 Mar 1981 05:00:00 GMT
+    0.26 - Fri, 01 Jan 2038 02:15:54 GMT
+    0.26 - Fri, 01 Jan 2038 20:17:29 GMT
+    0.26 - Mon, 25 Jan 2038 09:44:39 GMT
+    0.26 - Thu, 07 Jan 2038 21:46:28 GMT
+    0.53 - Wed, 13 Jan 2038 03:14:37 GMT
+    0.26 - Mon, 17 Sep 2012 08:23:07 EDT
+    3.96 - Mon, 01 Jan 1990 00:00:00 GMT
+    0.26 - Fri, 01 Jan 2038 15:24:45 GMT
+    0.26 - Mon, 11 Jan 2038 01:56:39 GMT
+    0.26 - Mon, 31 May 2038 16:10:27 GMT
+    0.26 - Tue, 05 Jan 2038 20:22:51 GMT
+    0.26 - Sun, 17 Jan 2038 08:07:22 GMT
+    0.26 - Tue, 12 Jan 2038 02:01:13 GMT
+    0.26 - Sun, 03 Jan 2038 01:28:19 GMT
+    0.26 - Mon, 11 Jan 2038 23:10:05 GMT
+    0.53 - Thu, 01 Jan 1970 00:00:00 GMT
+    0.26 - Mon, 17 Sep 2012 08:23:40 EDT
+    0.26 - Fri, 01 Jan 2038 23:01:29 GMT
+    0.26 - Fri, 01 Jan 2038 03:18:24 GMT
+    0.26 - Tue, 05 Jan 2038 21:23:45 GMT
+    0.26 - Fri, 01 Jan 2038 02:52:36 GMT
+    0.26 - Sat, 02 Jan 2038 02:49:22 GMT
+    0.26 - Fri, 22 Jan 2038 19:02:06 GMT
+    0.53 - Fri, 01 Jan 2038 01:41:57 GMT
+    0.26 - Sat, 02 Jan 2038 16:26:25 GMT
+    0.26 - Fri, 01 Jan 2038 19:05:20 GMT
+    0.26 - Sat, 02 Jan 2038 00:27:56 GMT
+    0.26 - Fri, 22 Jan 2038 07:11:50 GMT
+    0.26 - Tue, 18 Sep 2012 12:22:42 GMT
+    0.26 - Sat, 02 Jan 2038 02:46:20 GMT
+    0.26 - Mon, 04 Jan 2038 04:35:03 GMT
+    0.26 - Sat, 02 Jan 2038 03:42:16 GMT
+    0.26 - Fri, 15 Jan 2038 01:55:27 GMT
+    0.26 - Wed, 06 Jan 2038 20:15:35 GMT
+    0.26 - Mon, 11 Jan 2038 19:39:18 GMT
+    0.26 - Tue, 18 Sep 2012 12:22:53 GMT
+    0.26 - Tue, 18 Sep 2012 12:27:24 GMT
+    0.26 - Sun, 17 Jan 2038 04:35:33 GMT
+    0.26 - Tue, 19 Jan 2038 03:52:25 GMT
+    0.26 - Tue, 05 Jan 2038 03:55:17 GMT
+    0.26 - Sat, 02 Jan 2038 03:51:43 GMT
+    0.26 - Fri, 01 Jan 2038 16:50:11 GMT
+    0.26 - Sat, 02 Jan 2038 11:59:54 GMT
+    0.26 - Wed, 06 Jan 2038 20:15:22 GMT
+    0.26 - Sat, 02 Jan 2038 14:18:18 GMT
+    0.26 - Thu, 14 Jan 2038 06:34:27 GMT
+    0.26 - Wed, 06 Jan 2038 19:52:09 GMT
+    0.26 - Mon, 04 Jan 2038 21:03:26 GMT
+    0.26 - Mon, 11 Jan 2038 20:12:27 GMT
+    0.26 - Sat, 02 Jan 2038 01:40:51 GMT
+    0.26 - Mon, 11 Jan 2038 20:12:45 GMT
+    0.26 - Fri, 01 Jan 2038 10:03:10 GMT
+    3.17 - Wed, 19 Apr 2000 11:43:00 GMT
+    0.26 - Thu, 07 Jan 2038 17:37:48 GMT
+    0.26 - Mon, 04 Jan 2038 21:03:24 GMT
+    0.26 - Sat, 02 Jan 2038 03:55:27 GMT
+    0.26 - Mon, 17 Sep 2012 08:23:39 EDT
+    0.26 - Tue, 02 Feb 2038 06:38:55 GMT
+    0.26 - Fri, 01 Jan 2038 19:44:24 GMT
+    0.26 - Fri, 01 Jan 2038 03:01:19 GMT
+    3.43 - Thu, 01 Dec 1994 16:00:00 GMT
+    0.26 - Fri, 01 Jan 2038 16:04:25 GMT
+    0.26 - Tue, 12 Jan 2038 19:24:20 GMT
+    0.26 - Fri, 15 Jan 2038 22:26:58 GMT
+    0.26 - Fri, 01 Jan 2038 07:07:34 GMT
+    0.26 - Mon, 17 Sep 2012 08:22:52 EDT
+    0.26 - Sun, 24 Jan 2038 16:17:44 GMT
+    0.26 - Sat, 02 Jan 2038 11:59:55 GMT
+    0.26 - Fri, 01 Jan 2038 04:29:46 GMT
+    0.26 - Thu, 28 Jan 2038 03:21:23 GMT
+    0.26 - Fri, 01 Jan 2038 03:18:25 GMT
+    0.26 - Wed, 19 Sep 2012 12:22:53 GMT
+    0.26 - Tue, 18 Sep 2012 12:22:52 GMT
+    0.26 - Fri, 01 Jan 2038 05:49:27 GMT
+    0.26 - Thu, 07 Jan 2038 21:44:26 GMT
+    0.26 - Mon, 17 Sep 2012 12:22:53 +0000
+    0.26 - Mon, 17 Sep 2012 08:23:04 EDT
+    0.26 - Sun, 24 Jan 2038 10:43:49 GMT
+    0.26 - Tue, 12 Jan 2038 21:17:35 GMT
+    0.26 - Thu, 28 Jan 2038 07:49:22 GMT
+    0.53 - Thu, 19 Nov 1981 08:52:00 GMT
+    0.26 - Tue, 18 Sep 2012 12:23:07 GMT
+    0.26 - Fri, 01 Jan 2038 22:11:15 GMT
+    0.53 - Tue, 18 Sep 2012 14:02:35 GMT
+    0.26 - Sat, 06 Feb 2038 18:00:32 GMT
+    0.26 - Sat, 02 Jan 2038 01:19:57 GMT
+    0.26 - Fri, 01 Jan 2038 17:49:12 GMT
+    0.26 - Tue, 05 Jan 2038 08:34:48 GMT
+    0.26 - Sat, 06 Feb 2038 17:52:46 GMT
+    0.26 - Fri, 01 Jan 2038 22:38:30 GMT
+    0.26 - Thu, 29 Aug 2013 19:38:43 GMT
+    0.26 - Tue, 12 Jan 2038 19:58:04 GMT
+    0.26 - Sat, 02 Jan 2038 03:42:25 GMT
+    0.26 - Sun, 03 Jan 2038 01:26:02 GMT
+    0.26 - Tue, 18 Sep 2012 12:31:32 GMT
+  x-dm-cache: 
+    11.36 - DO
+    88.64 - DONT
+  last-modified: 
+    0.27 - Fri, 07 Sep 2012 13:04:46 GMT
+    0.55 - Tue, 15 Jan 2008 15:37:52 GMT
+    0.55 - Tue, 18 Sep 2012 10:30:09 GMT
+    0.27 - Tue, 18 Sep 2012 07:33:59 GMT
+    0.27 - Sat, 08 Sep 2012 00:06:19 GMT
+    0.27 - Mon, 17 Sep 2012 20:46:58 GMT
+    0.27 - Sat, 28 Jul 2012 05:54:39 GMT
+    0.27 - Tue, 07 Aug 2012 16:19:29 GMT
+    0.27 - Thu, 06 Sep 2012 12:54:47 GMT
+    0.27 - Mon, 18 Mar 2013 09:23:38 EDT
+    0.27 - Mon, 18 Mar 2013 09:22:52 EDT
+    3.01 - Fri, 07 Sep 2012 14:17:52 GMT
+    0.27 - Tue, 18 Sep 2012 07:51:59 GMT
+    0.27 - Mon, 18 Mar 2013 09:22:50 EDT
+    0.27 - Mon, 17 Sep 2012 19:17:37 GMT
+    0.55 - Thu, 02 Aug 2012 16:02:56 GMT
+    0.27 - Mon, 17 Sep 2012 09:23:35 GMT
+    0.27 - Fri, 07 Sep 2012 09:17:40 GMT
+    0.55 - Wed, 02 Mar 2011 22:38:56 GMT
+    0.55 - Thu, 26 Jul 2012 08:18:14 GMT
+    0.27 - Mon, 17 Sep 2012 00:26:50 GMT
+    0.27 - Tue, 18 Sep 2012 09:45:22 GMT
+    0.27 - Fri, 27 Jul 2012 05:29:17 GMT
+    0.27 - Fri, 17 Aug 2012 07:59:12 GMT
+    0.27 - Mon, 17 Sep 2012 15:33:14 GMT
+    0.27 - Thu, 13 Sep 2012 22:44:05 GMT
+    0.82 - Sun, 16 Sep 2012 22:25:22 GMT
+    0.27 - Tue, 01 Mar 2011 05:20:55 GMT
+    0.55 - Fri, 07 Sep 2012 09:17:43 GMT
+    0.27 - Sun, 16 Sep 2012 23:49:10 GMT
+    0.27 - Mon, 17 Sep 2012 19:58:43 GMT
+    0.27 - Mon, 17 Sep 2012 17:13:57 GMT
+    0.27 - Tue, 29 Sep 2009 08:25:22 GMT
+    0.27 - Mon, 17 Sep 2012 13:15:51 GMT
+    0.27 - Tue, 18 Sep 2012 10:30:30 GMT
+    0.27 - Fri, 24 Aug 2012 23:53:27 GMT
+    0.27 - Thu, 09 Jun 2011 13:32:42 GMT
+    0.27 - Mon, 17 Sep 2012 09:48:50 GMT
+    0.27 - Sat, 09 Feb 2008 20:34:07 GMT
+    0.82 - Mon, 04 Jul 2011 14:47:12 GMT
+    0.27 - Sat, 08 Sep 2012 00:06:18 GMT
+    0.27 - Thu, 13 Sep 2012 07:53:39 GMT
+    0.27 - Tue, 11 Sep 2012 14:31:44 GMT
+    0.27 - Sun, 16 Sep 2012 21:25:23 GMT
+    0.27 - Tue, 18 Sep 2012 10:10:51 GMT
+    0.27 - Thu, 12 Jul 2012 21:32:09 GMT
+    0.27 - Wed, 12 Sep 2012 08:19:40 GMT
+    0.55 - Fri, 07 Sep 2012 16:04:27 GMT
+    0.27 - Sat, 28 Jul 2012 00:46:31 GMT
+    0.27 - Tue, 11 Sep 2012 17:34:04 GMT
+    0.27 - Wed, 12 Sep 2012 09:12:18 GMT
+    0.27 - Mon, 18 Mar 2013 09:23:36 EDT
+    0.27 - Fri, 13 Jul 2012 09:58:31 GMT
+    0.27 - Tue, 18 Sep 2012 12:16:00 GMT
+    0.55 - Sat, 15 Sep 2012 08:56:39 GMT
+    0.55 - Mon, 17 Sep 2012 14:46:53 GMT
+    0.27 - Mon, 17 Sep 2012 15:59:40 GMT
+    0.27 - Sun, 02 Sep 2012 19:45:09 GMT
+    0.55 - Wed, 12 Sep 2012 15:49:34 GMT
+    0.27 - Tue, 18 Sep 2012 10:24:02 GMT
+    0.82 - Mon, 17 Sep 2012 13:40:11 GMT
+    0.55 - Fri, 07 Sep 2012 16:04:26 GMT
+    0.55 - Tue, 11 Sep 2012 03:20:09 GMT
+    0.27 - Mon, 27 Aug 2012 15:50:34 GMT
+    0.27 - Tue, 18 Sep 2012 06:18:34 GMT
+    0.27 - Mon, 17 Sep 2012 13:50:22 GMT
+    0.27 - Mon, 17 Sep 2012 11:00:48 GMT
+    0.27 - Mon, 17 Sep 2012 11:50:48 GMT
+    0.27 - Thu, 13 Sep 2012 22:11:23 GMT
+    0.27 - Wed, 12 Sep 2012 02:36:09 GMT
+    0.27 - Tue, 18 Sep 2012 12:00:06 GMT
+    0.27 - Wed, 02 Mar 2011 22:42:25 GMT
+    0.27 - Fri, 07 Sep 2012 02:32:47 GMT
+    0.27 - Mon, 17 Sep 2012 10:26:45 GMT
+    0.27 - Fri, 24 Aug 2012 13:19:41 GMT
+    0.27 - Mon, 17 Sep 2012 10:29:11 GMT
+    1.09 - Mon, 21 Jan 2008 14:45:51 GMT
+    0.27 - Tue, 05 Jul 2011 14:23:15 GMT
+    3.28 - Wed, 21 Jan 2004 19:51:30 GMT
+    0.27 - Fri, 07 Sep 2012 07:56:04 GMT
+    0.27 - Mon, 17 Sep 2012 10:32:18 GMT
+    0.27 - Sun, 16 Sep 2012 22:28:30 GMT
+    0.27 - Tue, 18 Sep 2012 01:47:17 GMT
+    0.55 - Mon, 17 Sep 2012 14:15:13 GMT
+    0.27 - Mon, 17 Sep 2012 17:06:14 GMT
+    0.27 - Mon, 17 Sep 2012 17:21:26 GMT
+    0.55 - Fri, 14 Sep 2012 16:29:50 GMT
+    0.27 - Wed, 29 Aug 2012 07:57:10 GMT
+    0.27 - Mon, 17 Sep 2012 15:22:53 GMT
+    0.27 - Mon, 18 Mar 2013 09:23:26 EDT
+    0.27 - Mon, 18 Mar 2013 09:23:06 EDT
+    0.27 - Mon, 17 Sep 2012 20:14:39 GMT
+    0.27 - Mon, 17 Sep 2012 21:58:41 GMT
+    0.55 - Mon, 17 Sep 2012 13:41:41 GMT
+    1.91 - Mon, 21 Jan 2008 14:45:57 GMT
+    0.55 - Fri, 07 Sep 2012 16:53:56 GMT
+    0.27 - Fri, 07 Sep 2012 09:04:22 GMT
+    0.27 - Mon, 17 Sep 2012 16:25:07 GMT
+    0.27 - Mon, 17 Sep 2012 09:28:06 GMT
+    0.27 - Tue, 10 Jan 2012 15:51:05 GMT
+    0.27 - Sun, 16 Sep 2012 23:02:39 GMT
+    0.27 - Tue, 18 Sep 2012 08:03:58 GMT
+    0.55 - Thu, 07 May 2009 17:26:22 GMT
+    0.27 - Tue, 24 Jul 2012 06:27:54 GMT
+    0.27 - Mon, 17 Sep 2012 08:17:07 GMT
+    0.27 - Mon, 17 Sep 2012 16:34:06 GMT
+    0.27 - Tue, 01 Mar 2011 06:21:06 GMT
+    0.27 - Fri, 14 Sep 2012 09:58:33 GMT
+    0.27 - Tue, 18 Sep 2012 08:03:56 GMT
+    0.27 - Mon, 25 Jun 2012 19:57:36 GMT
+    0.27 - Mon, 17 Sep 2012 19:27:55 GMT
+    0.55 - Mon, 17 Sep 2012 08:36:09 GMT
+    0.55 - Mon, 17 Sep 2012 13:47:14 GMT
+    0.55 - Tue, 11 Sep 2012 09:50:50 GMT
+    0.27 - Tue, 18 Sep 2012 09:25:10 GMT
+    0.27 - Tue, 18 Sep 2012 07:47:00 GMT
+    0.27 - Mon, 17 Sep 2012 15:59:02 GMT
+    0.27 - Thu, 30 Aug 2012 08:42:19 GMT
+    0.82 - Tue, 18 Sep 2012 10:30:02 GMT
+    0.27 - Mon, 18 Mar 2013 09:23:13 EDT
+    0.55 - Mon, 28 Sep 1970 06:00:00 GMT
+    0.27 - Thu, 13 Sep 2012 14:04:16 GMT
+    0.27 - Sun, 16 Sep 2012 18:28:28 GMT
+    0.27 - Wed, 19 Oct 2011 20:21:40 GMT
+    0.27 - Mon, 17 Sep 2012 08:17:09 GMT
+    0.27 - Thu, 13 Sep 2012 17:49:06 GMT
+    0.82 - Wed, 08 Feb 2012 21:55:14 GMT
+    0.27 - Tue, 24 Jul 2012 14:42:40 GMT
+    0.27 - Mon, 17 Sep 2012 16:13:15 GMT
+    0.27 - Mon, 17 Sep 2012 15:33:13 GMT
+    0.27 - Tue, 18 Sep 2012 12:09:35 GMT
+    0.27 - Fri, 14 Sep 2012 16:31:33 GMT
+    0.55 - Mon, 17 Sep 2012 06:42:49 GMT
+    0.27 - Mon, 17 Sep 2012 18:06:12 GMT
+    0.27 - Thu, 26 Jul 2012 19:02:22 GMT
+    0.27 - Thu, 07 May 2009 17:22:43 GMT
+    0.27 - Fri, 14 Sep 2012 15:15:40 GMT
+    0.27 - Mon, 17 Sep 2012 09:58:16 GMT
+    0.27 - Tue, 18 Sep 2012 10:18:26 GMT
+    0.27 - Thu, 28 Jun 2012 14:47:23 GMT
+    3.28 - Tue, 04 Sep 2012 10:20:47 GMT
+    0.27 - Tue, 18 Sep 2012 08:16:50 GMT
+    0.27 - Tue, 18 Sep 2012 12:23:05 GMT
+    0.27 - Mon, 17 Sep 2012 17:13:51 GMT
+    0.82 - Wed, 08 Aug 2012 10:17:53 GMT
+    0.27 - Fri, 20 Jul 2012 19:08:47 GMT
+    0.27 - Mon, 17 Sep 2012 19:28:00 GMT
+    0.27 - Mon, 17 Sep 2012 19:47:26 GMT
+    0.27 - Mon, 10 Sep 2012 07:32:29 GMT
+    0.27 - Fri, 17 Aug 2012 17:23:53 GMT
+    0.27 - Tue, 04 Sep 2012 09:26:10 GMT
+    0.27 - Mon, 23 Jul 2012 15:45:29 GMT
+    1.09 - Tue, 01 Mar 2011 06:21:48 GMT
+    0.27 - Tue, 18 Sep 2012 08:17:55 GMT
+    0.27 - Mon, 18 Mar 2013 09:23:39 EDT
+    0.27 - Mon, 27 Aug 2012 18:11:12 GMT
+    0.27 - Tue, 18 Sep 2012 09:52:10 GMT
+    0.55 - Thu, 30 Aug 2012 13:31:02 GMT
+    0.55 - Wed, 12 Sep 2012 16:00:44 GMT
+    0.55 - Thu, 31 May 2012 13:22:07 GMT
+    0.55 - Thu, 24 Feb 2011 07:58:25 GMT
+    0.27 - Sun, 16 Sep 2012 21:26:17 GMT
+    0.27 - Thu, 09 Jun 2011 16:36:01 GMT
+    0.55 - Mon, 17 Sep 2012 10:32:19 GMT
+    0.55 - Fri, 27 Jul 2012 00:42:22 GMT
+    0.27 - Tue, 21 Aug 2012 13:05:20 GMT
+    0.27 - Thu, 13 Sep 2012 13:26:28 GMT
+    0.27 - Mon, 17 Sep 2012 00:21:03 GMT
+    0.27 - Mon, 17 Sep 2012 09:28:08 GMT
+    0.27 - Mon, 18 Mar 2013 09:23:03 EDT
+    0.27 - Thu, 07 May 2009 17:22:16 GMT
+    0.27 - Fri, 03 Aug 2012 13:30:30 GMT
+    0.27 - Fri, 14 Sep 2012 15:15:35 GMT
+    0.27 - Mon, 17 Sep 2012 15:21:22 GMT
+    0.27 - Mon, 18 Mar 2013 09:23:32 EDT
+    0.27 - Mon, 17 Sep 2012 09:23:32 GMT
+    0.27 - Tue, 01 Mar 2011 06:21:28 GMT
+    0.27 - Tue, 18 Sep 2012 12:23:36 GMT
+    0.27 - Mon, 17 Sep 2012 09:23:34 GMT
+    0.27 - Wed, 25 Jul 2012 05:07:31 GMT
+    0.55 - Fri, 14 Sep 2012 06:50:44 GMT
+    0.27 - Mon, 10 Sep 2012 14:23:57 GMT
+    0.55 - Tue, 05 Jun 2012 09:16:57 GMT
+    0.27 - Mon, 17 Sep 2012 17:55:23 GMT
+    0.27 - Fri, 27 Jul 2012 00:16:32 GMT
+    0.27 - Tue, 18 Sep 2012 03:20:38 GMT
+    0.27 - Wed, 10 Jun 2009 18:02:58 GMT
+    0.27 - Fri, 10 Aug 2012 16:16:24 GMT
+    4.10 - Mon, 14 Feb 2000 17:43:24 GMT
+    0.27 - Mon, 03 Sep 2012 13:28:18 GMT
+    0.55 - Fri, 30 Sep 2011 08:50:33 GMT
+    0.27 - Thu, 09 Jun 2011 13:32:43 GMT
+    0.27 - Mon, 27 Aug 2012 19:02:04 GMT
+    0.27 - Fri, 31 Aug 2012 08:20:22 GMT
+    0.27 - Tue, 18 Sep 2012 11:38:17 GMT
+    3.83 - Mon, 05 Mar 2012 16:14:11 GMT
+    0.27 - Fri, 17 Aug 2012 00:36:28 GMT
+    0.55 - Wed, 09 Feb 2011 04:36:59 GMT
+    0.55 - Fri, 07 Sep 2012 14:17:47 GMT
+    0.27 - Wed, 08 Aug 2012 10:24:18 GMT
+    0.27 - Wed, 12 Sep 2012 07:45:49 GMT
+    0.27 - Tue, 21 Aug 2012 13:12:12 GMT
+    0.27 - Fri, 07 Sep 2012 14:17:50 GMT
+    0.27 - Wed, 10 Feb 2010 18:02:58 GMT
+    0.55 - Mon, 18 Mar 2013 09:22:41 EDT
+    0.27 - Mon, 10 Sep 2012 17:40:16 GMT
+    0.27 - Sun, 16 Sep 2012 08:03:04 GMT
+    0.27 - Sat, 15 Sep 2012 09:39:23 GMT
+    0.27 - Fri, 07 Sep 2012 09:05:04 GMT
+    0.27 - Mon, 17 Oct 2011 11:24:22 GMT
+    0.27 - Mon, 23 Jul 2012 17:47:12 GMT
+    0.27 - Tue, 18 Sep 2012 12:22:52 GMT
+    3.01 - Tue, 11 Sep 2012 14:31:23 GMT
+    0.55 - Tue, 18 Sep 2012 09:52:11 GMT
+    0.27 - Tue, 18 Sep 2012 12:15:54 GMT
+    0.27 - Fri, 07 Sep 2012 02:32:43 GMT
+    0.27 - Mon, 17 Sep 2012 22:16:59 GMT
+    0.27 - Fri, 07 Sep 2012 14:17:48 GMT
+    0.27 - Wed, 19 Jan 2005 19:46:47 GMT
+    2.46 - Tue, 05 Jul 2011 09:40:12 GMT
+    0.55 - Mon, 17 Sep 2012 14:46:55 GMT
+    0.27 - Tue, 18 Sep 2012 02:10:13 GMT
+    0.55 - Sun, 16 Sep 2012 10:47:28 GMT
+    0.27 - Mon, 03 Sep 2012 11:26:59 GMT
+    0.27 - Mon, 02 Jul 2012 10:28:10 GMT
+    0.27 - Mon, 17 Sep 2012 00:28:03 GMT
+    0.27 - Tue, 18 Sep 2012 09:17:09 GMT
+    0.27 - Mon, 25 Jun 2012 09:56:07 GMT
+  referer: 
+    0.36 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=2785037838
+    5.62 - http://www.dailymotion.com/fr/channel/tv
+    0.36 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=3691007511
+    1.81 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=536890875
+    0.18 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=2332052998
+    4.89 - http://www.dailymotion.com/sas/ligue1_topbanner?estat=0
+    11.41 - http://www.dailymotion.com/fr/channels/1
+    4.35 - http://www.dailymotion.com/video/xtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news
+    0.36 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=536890875
+    1.63 - http://www.dailymotion.com/archived/index.html
+    1.81 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=4194323953
+    1.81 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2785037838
+    0.18 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=4194323953
+    0.18 - http://172.19.77.100:15871/cgi-bin/blockOptions.cgi?ws-session=3489680897
+    15.22 - http://www.dailymotion.com/fr
+    5.98 - http://www.dailymotion.com/Ligue1
+    1.63 - http://platform.twitter.com/widgets/tweet_button.1347008535.html
+    1.81 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=3489680897
+    0.18 - http://static1.dmcdn.net/mc/skins/2987-itele/index.html
+    0.18 - http://172.19.77.100:15871/cgi-bin/blockOptions.cgi?ws-session=4194323953
+    0.18 - http://172.19.77.100:15871/cgi-bin/blockOptions.cgi?ws-session=2332052998
+    1.81 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=3691007511
+    6.88 - http://www.dailymotion.com/contest/telfrance-network
+    10.14 - http://www.dailymotion.com/video/xs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv
+    0.18 - http://172.19.77.100:15871/cgi-bin/block_message.cgi?ws-session=3489680897
+    3.62 - http://www.dailymotion.com/video/xtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport?no_track=1
+    1.81 - http://172.19.77.100:15871/cgi-bin/blockpage.cgi?ws-session=2332052998
+    5.43 - http://www.dailymotion.com/fr/channel/videogames
+    9.60 - http://www.dailymotion.com/septimus
+    0.36 - http://172.19.77.100:15871/cgi-bin/blockOptions.cgi?ws-session=2785037838
+  pragma: 
+    100.00 - no-cache
+  if-modified-since: 
+    6.25 - Mon, 18 Mar 2013 09:23:13 EDT
+    6.25 - Sun, 16 Sep 2012 22:25:22 GMT
+    6.25 - Mon, 18 Mar 2013 09:23:26 EDT
+    6.25 - Mon, 18 Mar 2013 09:23:36 EDT
+    6.25 - Mon, 18 Mar 2013 09:23:06 EDT
+    12.50 - Mon, 04 Jul 2011 14:47:12 GMT
+    12.50 - Mon, 18 Mar 2013 09:22:41 EDT
+    6.25 - Tue, 04 Sep 2012 10:20:47 GMT
+    6.25 - Mon, 18 Mar 2013 09:23:03 EDT
+    6.25 - Mon, 18 Mar 2013 09:22:52 EDT
+    6.25 - Mon, 18 Mar 2013 09:23:38 EDT
+    6.25 - Wed, 12 Sep 2012 16:00:44 GMT
+    6.25 - Mon, 18 Mar 2013 09:22:50 EDT
+    6.25 - Mon, 18 Mar 2013 09:23:32 EDT
+  date: 
+    2.63 - Tue, 18 Sep 2012 12:23:36 GMT
+    2.25 - Wed, 12 Sep 2012 14:02:35 GMT
+    0.75 - Tue, 18 Sep 2012 12:23:37 GMT
+    6.00 - Tue, 18 Sep 2012 12:22:28 GMT
+    1.13 - Tue, 18 Sep 2012 12:23:03 GMT
+    0.94 - Tue, 18 Sep 2012 12:23:15 GMT
+    3.56 - Tue, 18 Sep 2012 12:22:51 GMT
+    0.19 - Tue, 18 Sep 2012 12:15:14 GMT
+    0.19 - Tue, 18 Sep 2012 12:22:56 GMT
+    7.13 - Tue, 18 Sep 2012 12:22:41 GMT
+    1.50 - Tue, 18 Sep 2012 12:22:40 GMT
+    0.75 - Mon, 16 Jul 2012 13:46:24 GMT
+    1.88 - Tue, 18 Sep 2012 12:22:54 GMT
+    1.50 - Tue, 18 Sep 2012 12:23:35 GMT
+    1.13 - Tue, 28 Aug 2012 20:37:40 GMT
+    0.19 - Mon, 18 Jun 2012 08:38:05 GMT
+    9.57 - Tue, 18 Sep 2012 12:22:50 GMT
+    1.50 - Tue, 18 Sep 2012 12:23:39 GMT
+    1.31 - Tue, 18 Sep 2012 12:23:06 GMT
+    0.38 - Tue, 18 Sep 2012 12:23:05 GMT
+    4.50 - Tue, 18 Sep 2012 12:23:32 GMT
+    0.38 - Tue, 18 Sep 2012 02:02:35 GMT
+    0.19 - Mon, 16 Jul 2012 13:46:25 GMT
+    0.56 - Tue, 18 Sep 2012 12:23:25 GMT
+    0.94 - Tue, 18 Sep 2012 12:22:55 GMT
+    5.07 - Tue, 18 Sep 2012 12:23:38 GMT
+    1.13 - Tue, 18 Sep 2012 12:22:53 GMT
+    1.13 - Tue, 18 Sep 2012 12:23:27 GMT
+    2.44 - Tue, 18 Sep 2012 12:23:14 GMT
+    0.19 - Tue, 18 Sep 2012 12:23:30 GMT
+    4.32 - Tue, 18 Sep 2012 12:22:52 GMT
+    0.38 - Tue, 18 Sep 2012 12:23:16 GMT
+    3.75 - Tue, 18 Sep 2012 12:23:04 GMT
+    0.19 - Fri, 17 Aug 2012 10:02:14 GMT
+    2.06 - Wed, 12 Sep 2012 07:59:12 GMT
+    0.56 - Tue, 18 Sep 2012 12:23:31 GMT
+    11.26 - Tue, 18 Sep 2012 11:31:07 GMT
+    3.94 - Tue, 18 Sep 2012 12:23:07 GMT
+    3.19 - Tue, 18 Sep 2012 12:23:13 GMT
+    0.19 - Tue, 18 Sep 2012 12:21:23 GMT
+    0.19 - Tue, 18 Sep 2012 12:21:10 GMT
+    4.50 - Tue, 18 Sep 2012 12:23:26 GMT
+    0.56 - Tue, 18 Sep 2012 12:22:29 GMT
+    2.81 - Tue, 18 Sep 2012 12:23:12 GMT
+    0.38 - Tue, 18 Sep 2012 12:23:40 GMT
+    0.38 - Thu, 30 Aug 2012 14:59:03 GMT
+    0.19 - Tue, 18 Sep 2012 12:22:42 GMT
+    0.19 - Tue, 18 Sep 2012 12:02:35 GMT
+  if-none-match: 
+    100.00 - "114e966a5-1744-4c9d921fa9880"
+  access-control-allow-origin: 
+    100.00 - *
+  x-cache-age: 
+    100.00 - 4943 2041
+  x-origin-date: 
+    100.00 - Tue, 29 May 2012 15:43:21 GMT Tue, 18 Sep 2012 11:48:52 GMT
+  :path: 
+    0.15 - /jot?l=%7B%22_category_%22%3A%22tfw_widgets%22%2C%22event_name%22%3A%22tweetbutton%3Aimpression%22%2C%22dnt%22%3Afalse%2C%22_%22%3A%221347970973164%22%2C%22count%22%3A%22horizontal%22%2C%22counturl%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv%22%2C%22id%22%3A%22twitter-widget-0%22%2C%22lang%22%3A%22fr%22%2C%22original_referer%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv%22%2C%22related%22%3A%22Dailymotion%2CDailymotionUSA%22%2C%22size%22%3A%22m%22%2C%22text%22%3A%22Telfrance%20Network%20pr%C3%A9sente%20%3A%20Le%20meilleur%20cliffhanger%20du%20web%20!%20-%22%2C%22url%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv%22%2C%22via%22%3A%22Dailymotion%22%2C%22type%22%3A%22share%22%2C%22logged_in%22%3Afalse%2C%22referrer%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv%22%2C%22widget%22%3Atrue%2C%22pid%22%3A%22%22%7D
+    0.15 - /css/gen/widget/pageitem/channel/item.css.v8d823c19b1b4383f6
+    0.15 - /static/video/639/418/49814936:jpeg_preview_large.jpg?20120917102316
+    0.29 - /static/video/444/208/49802444:jpeg_preview_medium.jpg?20120917001622
+    0.15 - /septimus
+    0.15 - /cgi-bin/blockOptions.cgi?ws-session=3489680897
+    0.15 - /static/video/358/363/49363853:jpeg_preview_source.jpg?20120908020642
+    0.58 - /images/icons/rating.png.v795cfa779bdb9e88
+    1.17 - /images/a.gif
+    0.15 - /static/video/642/184/49481246:jpeg_preview_small.jpg?20120917191147
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=7&utmn=295532922&utmhn=www.dailymotion.com&utme=8(3!page_type*segment)9(3!user_home*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=user_home&utmhid=1562527812&utmr=0&utmp=%2Fseptimus%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.15 - /jot?l=%7B%22_category_%22%3A%22tfw_widgets%22%2C%22event_name%22%3A%22tweetbutton%3Aimpression%22%2C%22dnt%22%3Afalse%2C%22_%22%3A%221347970985237%22%2C%22count%22%3A%22horizontal%22%2C%22counturl%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news%22%2C%22id%22%3A%22twitter-widget-0%22%2C%22lang%22%3A%22fr%22%2C%22original_referer%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news%22%2C%22related%22%3A%22Dailymotion%2CDailymotionews%22%2C%22size%22%3A%22m%22%2C%22text%22%3A%22Benghazi%20%3A%20une%20vid%C3%A9o%20montre%20le%20corps%20de%20l%27ambassadeur%20-%22%2C%22url%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news%22%2C%22via%22%3A%22Dailymotion%22%2C%22type%22%3A%22share%22%2C%22logged_in%22%3Afalse%2C%22referrer%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news%22%2C%22widget%22%3Atrue%2C%22pid%22%3A%22%22%7D
+    0.15 - /log?m=QTF%2FCHYDBwB2BHt6BwECemRESiNACgwFAAtydn93AA9zCQFxd3Z1AwNxdXpydAQAdgJ2cgMPdHdwCHgHB3QeK1dYVSdNfFYEAwN3Bw1xBwkMd3sIdBIDeHUSITcPCAJ3dQgOdgsODX0EAxYgWEFTHAd2MERZewcWUSM2WGACdlgyXX8FcXt0AgZ0fHZ0cXt2BAcHcnh0Bw1wAXd0AnUGA3B0B3oAdnQNc3JwZVZYRSJnBH82R0UFLEFGQGEKdBcLdBVxdkMxQBUHByZYLFtJVC5AKyxcHAMGIV5UYwBxSyFFRlkpTEYXCwFGKlRRKRIDcTpxUH1NBB8qUTt%2BBV8CcicBD3UCVQ4mBANUIlsCUF0CAHIJVn9RAQB6dltjU1FNIBF3BUBcV34qRU02FwR5YQd0FXZ%2FQkVOFwIGVFUvW0lYLTZQKlkVCwRXLS4XC3clMBQLAFFfWSpbV1xhC3NGTxRUIkRVYwJ2VjIrBDNeVFwuEXcFX1hYLWcEfzZeVkEhRxRUJU1UFwx0QDdACS9ZQ1w2Jx8hVkRYZAEENVtdDHJxBQ5%2FBQcBfQELCXIfUVNNUxV2dkQoWg1xIytVPFpfTShbLGYACUcqJlRWNl5WQSFHFFYhWEFHS1cNdRUGA08DXHo4DWNFUVclWy8KVgQBZnB0D3ABBQ99AAQDcgwBAAgGAWVUVTJWFQAEMlAhCkZQJVEtZgd%2FXCIrXxxzdEdUJUxXQg%3D%3D&p=1
+    0.15 - /1/urls/count.json?url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&callback=twttr.receiveCount
+    0.15 - /CHzDi/85x50-Qsy.jpg
+    0.29 - /static/video/750/728/49827057:jpeg_preview_medium.jpg?20120917154016
+    0.87 - /en/Default/master.css
+    0.15 - /page/html/user?request=%2FLigue1&from_request=%2FLigue1&method=getContactsAndGroups
+    0.44 - /swf/as3/v4.9.7/vmcdmplugin.swf?key=7f31e0630b6b11dfb7bd0019b9f1584b&pixel=1
+    0.15 - /static/video/773/128/49821377:jpeg_preview_medium.jpg?20120917191358
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347971007274&ns_c=UTF-8&c8=Ligue1%3A%20vid%C3%A9os%20sur%20Dailymotion&c7=http%3A%2F%2Fwww.dailymotion.com%2FLigue1&c9=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus
+    0.15 - /js/gen/widget/pack/home.js.v43aa45ca3c6e7f256
+    0.15 - /CHyba/80x60-byc.jpg
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df1f12e4f68%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff1ab95df88%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.15 - /static/video/624/258/49852426:jpeg_preview_medium.jpg?20120918081840
+    0.15 - /static/video/024/128/49821420:jpeg_preview_small.jpg?20120918133006
+    0.15 - /cgi-bin/block_message.cgi?ws-session=2332052998
+    0.15 - /static/video/182/048/49840281:jpeg_preview_medium.jpg?20120918001756
+    0.15 - /static/video/153/858/49858351:jpeg_preview_medium.jpg?20120918120324
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df13853a1a4%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff39a60a964%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.15 - /static/video/764/308/49803467:jpeg_preview_small.jpg?20120917091723
+    0.15 - /static/video/642/184/49481246:jpeg_preview_source.jpg?20120917191147
+    0.15 - /static/video/012/955/49559210:jpeg_preview_medium.jpg?20120915094623
+    0.15 - /static/video/501/318/49813105:jpeg_preview_large.jpg?20120917084327
+    0.15 - /BK9ZK/80x60-SqM.jpg
+    0.15 - /sense/images/vs/tag.gif?routename=video_item&pagename=player%2Finternal&video=47267495&vchan=tv&streammode=none&videotitle=Telfrance+Network+pr%C3%A9sente+%3A+Le+meilleur+cliffhanger+du+web+%21&explicit=0&videotype=creative&user=Telfrance-Network&usertype=motionmaker&locale=fr&asnum=AS3215&country=FR&lat=48.2132000000000&lng=-1.5084000000000&rid=1347970971&urange=28&ff=on&log=1&_n=32910611
+    0.15 - /static/video/534/208/49802435:jpeg_preview_medium.jpg?20120917000014
+    0.15 - /contest/telfrance-network
+    0.15 - /video/xtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news
+    0.44 - /static/video/072/408/49804270:jpeg_preview_medium.jpg?20120917003209
+    0.15 - /mc/skins/2987-itele/index.html
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=ot5ESKM2e1fXywXmH&log=1&ff=on&locale=fr&list=channel&pagename=list%2Fchannel&routename=channel_list&dr=http%3A%2F%2Fwww.dailymotion.com%2Ffr&dh=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1&cb=1347970971612
+    0.15 - /j14W/136x80-cXd.jpg
+    0.15 - /static/user/674/239/8932476:avatar_medium.jpg?20100311211736
+    0.15 - /images/contest/arrow_grey_middle.png.v8098cc5e34aa54c4
+    0.15 - /1/urls/count.json?url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport&callback=twttr.receiveCount
+    0.15 - /cgi-bin/blockOptions.cgi?ws-session=3691007511
+    0.15 - /static/video/807/157/49751708:jpeg_preview_medium.jpg?20120917154753
+    0.87 - /Images/wslogo_block_page.png
+    0.15 - /pixel;r=1518479707;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347970984572;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv;url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news;ogl=title.Benghazi%20%3A%20une%20vid%C3%A9o%20montre%20le%20corps%20de%20l'ambassadeur%2Cvideo%3Atype.application%2Fx-shockwave-flash%2Cvideo.http%3A%2F%2Fwww%252Edailymotion%252Ecom%2Fswf%2Fvideo%2Fxtoi4e%3FautoPlay%3D1%2Cvideo%3Awidth.1000%2Cvideo%3Aheight.564%2Curl.http%3A%2F%2Fwww%252Edailymotion%252Ecom%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-%2Csite_name.Dailymotion%2Ctype.video%2Cimage.http%3A%2F%2Fs1%252Edmcdn%252Enet%2FCH0mK%2F160x120-t9e%252Ejpg%2Cdescription.Une%20vid%C3%A9o%20de%20quelques%20minutes%252C%20qui%20n'a%20pas%20%C3%A9t%C3%A9%20authentifi%C3%A9e%252C%20montre%20des%20images%20d
+    0.15 - /static/user/390/785/3587093:avatar_small.jpg?20110609183602
+    0.29 - /js/gen/widget/pack/user_home.js.v182f7284253c8ee96
+    0.15 - /static/video/677/758/49857776:jpeg_preview_medium.jpg?20120918112555
+    0.15 - /sas/ligue1_topbanner?estat=0
+    0.15 - /m/web/800000206980?n=880625211&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&v=0.10
+    0.15 - /static/video/508/354/49453805:jpeg_preview_source.jpg?20120917164728
+    0.87 - /en/Default/master.js
+    0.15 - /static/video/060/437/49734060:jpeg_preview_medium.jpg?20120915113947
+    0.15 - /static/video/079/628/49826970:jpeg_preview_small.jpg?20120917160434
+    0.15 - /m/web/800000206980?n=932117968&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&v=0.10
+    0.15 - /css/gen/widget/pageitem/video/contest/item.css.v9727ffa0d66fe51c6
+    0.15 - /static/video/003/215/49512300:jpeg_preview_medium.jpg?20120918100948
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&ezC=tv
+    0.15 - /CHzDi/526x328-khY.jpg
+    0.15 - /static/video/287/438/49834782:jpeg_preview_medium.jpg?20120917190642
+    0.15 - /pageitem/video/tools?request=%2Fvideo%2Fxtnh7y&t=0.7403245349414647&from_request=%2FLigue1&method=setupForHomePage
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=3691007511
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=Gvg0kH1I26THNq8ZL&log=1&ff=on&locale=fr&routename=contest_home&dr=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1&dh=http%3A%2F%2Fwww.dailymotion.com%2Fcontest%2Ftelfrance-network&cb=1347971019007
+    0.15 - /CHzDi/136x80-Azi.jpg
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=10&utmn=136899079&utmhn=www.dailymotion.com&utme=8(channel*video_type*page_type*segment)9(sport*official*video_item*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=video_item&utmhid=2091758407&utmr=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames&utmp=%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1%26site_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    1.60 - /images/sprites/vertical_new.png.v1ce9905ab61d74ab
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df928130a8%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff51fb71c4%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.44 - /widgets.js
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Ffr&frm=1
+    0.15 - /fr
+    0.15 - /log?m=VjZ%2FCHYDBwB2BHt0BwwEdGRVWDJTEg0CQ1dCeQ0QAHwLFXF1A2BTUUEjZwwDR1FKfHIBAXd4dQYHAX8AcQUJcQIEcQUMAXAIBnR1AwV1cgZwAQd4AQMCf3MSJiJGWBR2BENcIA9fTDBFFwMFHAd0HAB2NEdDYwV1USMrVTxaX00oWyxmAHxSLC8UCwBURR12c1FYJVdbV1VBFXF2BWBTUUEjZwwDR0VLfFw2N0IcAgJnA39jAHFPM0IXAgFdVFtVS10sRF0pWRUHByFWKBICfzddJiZdHAMFOkIMdUZNHXFzRlUoX0dTV1FVZgJwKFJEQi0wUmAFdEkzUTEmXE1UZnB1VSMXBXwpUFtcKFxAQBwAdCBcXSBRWFQsJVw3EgJ9JUFncXZOVCFnBH8yRBFKJVtWXylwUQ8JFwIGBAd2AQMHenQIcg4GDncCd2VGSgxycQUOfwUHAXMBAwdwH0BBXEANd3EBf3UCcwBwDwQOcngCBABwBAoGAHVyDX8FAQx1BAR1cAsMc3gHc2VUVTJWFQAENFAhCgEKdQN7dAIABndzBwhgXVVSIVZGeSAEBAENBQl0AA1xAgUAdWcKBAYWUiRNf3RUCgAmcgcKdlABWnUEVlYmDldWCQIBelINIAYFDXYgHyNSUU00Rid%2BAxwDBjRYXSNdEg0CRV5RPVxHFwx0BXMFDHAACVd7dAFxUQ%3D%3D&p=1
+    0.15 - /static/video/079/628/49826970:jpeg_preview_medium.jpg?20120917160434
+    0.15 - /CG9hG/136x80-B34.jpg
+    0.15 - /static/video/438/486/49684834:jpeg_preview_medium.jpg?20120914171558
+    0.15 - /static/video/897/452/46254798:jpeg_preview_small.jpg?20120913143202
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df191c30dcc%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff12884428c%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.15 - /CHywm/107x60-4aK.jpg
+    0.15 - /BnbQ/80x60-Ouh.jpg
+    0.15 - /sequence/full/x3i8z4?autoPlay=1&parentURL=http%3A//www.dailymotion.com/septimus&masscastLocation=videolist_with_player&chromeless=0&withLoading=1&expandVideo=0&isEmbedded=0
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=sT5oquFxoG3VgrbvL&log=1&ff=on&locale=fr&user=ligue1&pagename=user%2Fhome&routename=user_home&dr=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus&dh=http%3A%2F%2Fwww.dailymotion.com%2FLigue1&cb=1347971007379
+    0.15 - /static/video/711/125/49521117:jpeg_preview_medium.jpg?20120912102009
+    0.15 - /m/web/264064205952?n=8109347457&v=3.0&r=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1&dom=www.dailymotion.com
+    0.15 - /static/video/058/323/49323850:jpeg_preview_medium.jpg?20120907183735
+    0.15 - /widget_chunks/video?request=%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&t=0.139859534567222&from_request=%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&config=%7B%22tabs%22%3A%7B%22replace%22%3A%22%23player_page_tabs_ph%22%2C%22options%22%3A%7B%22gg_search%22%3Afalse%7D%7D%2C%22next_page%22%3A%7B%22replace%22%3A%22%23np_seo_ph%22%7D%2C%22related%22%3A%7B%22replace%22%3A%22%23related_ph%22%2C%22options%22%3A%7B%22buzzableVideoId%22%3Afalse%2C%22buzzableTitle%22%3A%22false%22%2C%22buzzableVideoTitle%22%3Afalse%2C%22video%22%3A%2247267495%22%7D%7D%7D
+    0.15 - /CHyiC/136x80-Awe.jpg
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347970962345&ns_c=UTF-8&c8=Ligue%201%20with%20Dailymotion&c7=http%3A%2F%2Fwww.dailymotion.com%2Fsas%2Fligue1_topbanner%3Festat%3D0&c9=http%3A%2F%2Fwww.dailymotion.com%2Ffr
+    0.15 - /m/web/800000206980?n=129529172&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus&v=0.10
+    0.15 - /sas/ligue1_topbanner/images/background.png
+    0.15 - /static/video/298/257/49752892:jpeg_preview_medium.jpg?20120918102619
+    0.15 - /static/video/750/728/49827057:jpeg_preview_source.jpg?20120917154016
+    0.15 - /static/user/700/010/10007:avatar_small.jpg?20110913193619
+    0.15 - /mc/skins/2987-itele/daily-header.png
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=3842002444
+    0.29 - /css/gen/widget/pageitem/user/relationedit.css.vba8d20848acdfd2d6
+    0.15 - /log?m=USM2WGACdlpwCSExV1hFKjRUHyJTQ1lhAHRDIV4IAwkURDANBXUDBwx1cgB8AgQMdRImIkZYFHYERVErD19MMEUXAwUcB3QcAHYwAhF0clRYISZXYAV1VyRAZ3F0ewAABwkcdHQGDnRNAwJ0HAd2dHMIZgJxLEdXEyYjTSQSBX8iQCV%2BX0xCKiEXTDVXRQVwdAcJBgtzcAsEcXpydQUHcgZ0cQ4GAHMNeAN0dwMIBwZ2AwAHcwJ7YlpQWiFaQXtdDwFwBAN%2FAAAMe3cOfQYVCgAHZCBGBABwdgYAcQIOAXECCgFiUlBLBAVWcAFRdgEDBSB0W3QGVF8jAyAnAgkAeiAIX3cHDwwmE1ZRMFgQB39GRC8Nfy9DFQdyFlEqWlFKZAZyZgB9FHFyeVwqXlgddgUXAnxPXFZcXVMvWURjBQkTJiNNJBIFfydGfzBXSUUqL0RKYFZWTCUQB3YwXkYPWl1FLURGPxIDdAQQHHd0W1A1EXAARlFeLiNCHHRxX10oWV0VdnpFXV1VVTFDEXR0XUAxK1pgBXNfM1EsIFofVSI2UBxzdERMNAgCFiBYQVMcB3YgQkB7RFVFNitUMEQWXSBAI2YHf1UwIQxKKUdZXDdeW0RhCwVGUV1dIkNgLlIVB3IVWGAFAGogWDc3VwsBc3VBUD5XW0sXUEJELVRAQRwAAGYCAmMFAH83MU0sWVVNKVUsKEEcA3M2XmknR1sddnYXAnR1WkdQQRVxcxF0B2JQLCNMIRICemQGcgZWVkQiMFUcdHESCnR%2FV1EqHAcCel5RNlRRYwUAEHB0HHcHRFEkEXBzVVBDL2RXXCdGQkohCAYVdnxNAVAKSncWUCdDURB3BFEnXg0KcRImIkZYFHYER1AiDwYLcAILB3QADAYACwZlVFUyVhUABDFVJgoBCWdQIzdTHAQFJkNXewABCHQBAhV2fAUCCQIAcwAEdgcDEzAjVyFYXXAlCXJmAHwAdHcFDXMLBQpyAAIDfQ8NAA%3D%3D&p=1
+    0.15 - /static/video/975/038/49830579:jpeg_preview_small.jpg?20120917172154
+    0.29 - /js/gen/widget/pack/channel.js.v6508d22b958a65b66
+    0.15 - /pixel;r=2125768353;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347970987237;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news;url=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv;ogl=
+    0.15 - /m/web/264064205952?n=654444206&v=3.0&r=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv&dom=www.dailymotion.com
+    0.15 - /Ligue1
+    0.15 - /m/web/800000206980?n=688447177&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Ffr&v=0.10
+    0.15 - /static/video/967/818/49818769:jpeg_preview_large.jpg?20120917120128
+    0.29 - /static/video/257/818/49818752:jpeg_preview_medium.jpg?20120917112910
+    0.15 - /BK9ZK/136x80-qUY.jpg
+    1.75 - /fr_FR/all.js
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=2332052998
+    1.75 - /quant.js
+    0.29 - /css/gen/widget/pageitem/video/featured.css.v3e1f3c9a7e3aa1be6
+    0.15 - /static/video/949/308/49803949:jpeg_preview_source.jpg?20120917212813
+    0.15 - /static/video/048/648/49846840:jpeg_preview_small.jpg?20120918041005
+    0.87 - /en/Default/blockStyle.css
+    0.15 - /static/video/675/207/49702576:jpeg_preview_small.jpg?20120914091904
+    0.15 - /log?m=VjZ%2FCHYDBwB2BHt0BAsIdWRDWChWWFUNUQ8AYQtwAwkDBXsHBHEDAwFxcwhwBwkfNUd%2FcgENBnp1AQBxBg4BdxNUVSVNQEBcD3JlRUcjRQ0BA3cABwV2e3MCA3pweHJzAAIPdQV0DwcBCwdyDQQDD3cEcQl1BwJzEy0gUyBURHAlCXNwBg4IdHIIDnAADg5hBnMFYlJQSwQFVnABUXYBAwUgdFt0BlRfIwMgJwIJAHogCF93Bw8MJg%3D%3D&p=1
+    0.15 - /static/video/758/418/49814857:jpeg_preview_large.jpg?20120917170514
+    0.29 - /CA6wK/136x80-Drt.jpg
+    0.15 - /Au0gK/80x60-8h2.jpg
+    0.15 - /static/video/629/580/49085926:jpeg_preview_medium.jpg?20120911172404
+    0.15 - /js/gen/widget/pack/extras.js.v441f46b6fcabc989
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df33131a314%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff6e105c7c%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    2.62 - /en/Default/security.js
+    0.15 - /sense/images/vs/tag.gif?routename=video_sequence&pagename=player%2Finternal&video=5890288&vchan=music&streammode=none&videotitle=Kit+Thomas+-+Hello+%28videoclip%29&explicit=0&videotype=creative&user=septimus&usertype=motionmaker&locale=fr&asnum=AS3215&country=FR&lat=48.2132000000000&lng=-1.5084000000000&rid=1347970994&urange=28&ff=on&log=1&_n=46855883
+    0.15 - /CByw6/85x50-lNP.jpg
+    0.15 - /static/video/257/818/49818752:jpeg_preview_small.jpg?20120917112910
+    0.15 - /CHzDo/136x80-0Ft.jpg
+    0.15 - /static/video/807/157/49751708:jpeg_preview_source.jpg?20120917154753
+    0.15 - /images/contest/red_arrow_bkgd.png.v674d6231ca222767
+    0.15 - /1/urls/count.json?url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&callback=twttr.receiveCount
+    0.15 - /static/video/773/128/49821377:jpeg_preview_source.jpg?20120917191358
+    0.15 - /static/video/203/608/49806302:jpeg_preview_medium.jpg?20120917102759
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347970987363&ns_c=UTF-8&c8=Dailymotion%20TV%20-%20regarder%20la%20t%C3%A9l%C3%A9vision%20sur%20le%20web%2C%20profiter%20de%20la%20catchup%20tv%20et%20d%C3%A9couvrer%20le%20meilleur%20de%20vos%20programmes%20t%C3%A9l%C3%A9s%20favoris.&c7=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv&c9=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news
+    0.15 - /history/manage/add/x3i8z4_kit-thomas-hello-videoclip_music?_n=32388787
+    0.15 - /skin/data/default/partner/4382_ligue1_topbanner/chrome-v3-prod.css.vabf310fa40ea50486
+    0.15 - /pixel;r=144592473;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347971012439;tzo=-120;ref=http%3A%2F%2F172.19.77.100%3A15871%2Fcgi-bin%2FblockOptions.cgi%3Fws-session%3D2785037838;url=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames;ogl=
+    0.44 - /js/tfw/widget/hubclient.js
+    0.15 - /CD50W/320x240-k1Y.jpg
+    0.15 - /static/video/631/817/49718136:jpeg_preview_small.jpg?20120914115905
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=11&utmn=1374052178&utmhn=www.dailymotion.com&utme=8(3!page_type*segment)9(3!contest_home*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=contest_home&utmhid=1418878706&utmr=0&utmp=%2Fcontest%2Ftelfrance-network%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.15 - /jot?l=%7B%22_category_%22%3A%22tfw_widgets%22%2C%22event_name%22%3A%22tweetbutton%3Aimpression%22%2C%22dnt%22%3Afalse%2C%22_%22%3A%221347971016863%22%2C%22count%22%3A%22horizontal%22%2C%22counturl%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%22%2C%22id%22%3A%22twitter-widget-0%22%2C%22lang%22%3A%22fr%22%2C%22original_referer%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1%22%2C%22related%22%3A%22Dailymotion%2Cdmsportschannel%22%2C%22size%22%3A%22m%22%2C%22text%22%3A%22Quand%20la%20c%C3%A9l%C3%A9bration%20de%20Romarinho%20met%20le%20feu%20aux%20poudres...%20-%22%2C%22url%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%22%2C%22via%22%3A%22Dailymotion%22%2C%22type%22%3A%22share%22%2C%22logged_in%22%3Afalse%2C%22referrer%22%3A%22http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1%22%2C%22widget%22%3Atrue%2C%22pid%22%3A%22%22%7D
+    0.15 - /static/video/620/428/49824026:jpeg_preview_small.jpg?20120917151613
+    0.15 - /m/web/219019208588?n=2731294082&v=3.0
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=4194323953
+    0.44 - /dm/count_video_plugin.swf
+    0.15 - /CA6wK/320x240-6I_.jpg
+    1.75 - /ga.js
+    0.15 - /cgi-bin/blockOptions.cgi?ws-session=536890875
+    0.15 - /static/video/750/728/49827057:jpeg_preview_small.jpg?20120917154016
+    0.15 - /static/video/585/938/49839585:jpeg_preview_small.jpg?20120917221754
+    0.15 - /logger/video/access/xs53tz?session_id=&referer=&country=FR&lon=-1.5084000000000&lat=48.2132000000000&key=brxe6t8e2h1htwwm9majxco&v=50589198&i=c2029e21&h=bb0d6ef99ec7b2a05b4ccdcbae1b8e59&_n=52275596
+    3.50 - /connect/xd_arbiter.php?version=11
+    0.15 - /static/video/897/064/49460798:jpeg_preview_medium.jpg?20120913174638
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1&ezC=tv
+    0.15 - /static/video/952/538/49835259:jpeg_preview_small.jpg?20120917200926
+    0.15 - /images/contest/left.png.v1ccee9d56c8ee1ae
+    0.15 - /static/video/977/028/49820779:jpeg_preview_medium.jpg?20120917144230
+    0.15 - /t.gif?_=1347971016863&count=horizontal&counturl=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport&id=twitter-widget-0&lang=fr&original_referer=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1&related=Dailymotion%2Cdmsportschannel&size=m&text=Quand%20la%20c%C3%A9l%C3%A9bration%20de%20Romarinho%20met%20le%20feu%20aux%20poudres...%20-&url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport&via=Dailymotion&type=share&twttr_referrer=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1&twttr_widget=1&twttr_hask=0&twttr_li=0&twttr_pid=
+    0.15 - /images/contest/red_arrow_end.png.vad2ec9f3ee638593
+    0.15 - /static/video/954/025/49520459:jpeg_preview_small.jpg?20120912094555
+    0.15 - /static/video/013/608/49806310:jpeg_preview_medium.jpg?20120917102822
+    0.15 - /static/user/150/000/51:avatar_medium.jpg?20120827170952
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347970971475&ns_c=UTF-8&c8=Dailymotion%20-%20Watch%2C%20publish%2C%20share%20videos&c7=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1&c9=http%3A%2F%2Fwww.dailymotion.com%2Ffr
+    0.15 - /static/video/463/458/49854364:jpeg_preview_small.jpg?20120918133326
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=1&utmn=699127561&utmhn=www.dailymotion.com&utme=8(3!page_type*segment)9(3!home*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=home&utmhid=1534338383&utmr=http%3A%2F%2Fwww.dailymotion.com%2Ffr&utmp=%2Ffr%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2F172.19.77.100%3A15871%2Fcgi-bin%2FblockOptions.cgi%3Fws-session%3D2785037838&ezC=videogames
+    0.29 - /css/gen/widget/pack/discussion.css.v9e7f50b99e380f646
+    0.44 - /images/carousel/csl_miniplay.png.vb525932fae53fe64
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=8OwFyqu8f8Vgyobbk&log=1&ff=on&locale=fr&player=internal%2Fdailymotion&pagename=player_page%2Finternal%2Fdailymotion%2Frecent&routename=video_item&dr=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames&dh=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1&cb=1347971016606&spd=related
+    0.15 - /CG-Fa/136x80-toP.jpg
+    0.15 - /u/getuid/?nocache=0%2E8363526375032961&a=7f31e0630b6b11dfb7bd0019b9f1584b
+    0.15 - /log?m=Xic7BHJRAwgkBHRwAlsHIXMAXSBQAFogBQIBfVsMVAgHCHdSEjJEDQRxdg58AAAAeAJ0cAsfRDAnQwRycwIBBgd0cnYPdAt7c3NzcgdwBAd2dQENfAAGDXAFdAYGCwgCAwR6YF1VUiFWRnkgBAQBDQUJdAANfwEGBntnCgQCFl0gQCNmB39HKiYMCHUGAAFzBQsJcAAMBB9RRH4BB3IACQJyewBzAQMAZ1InIkZMQyZ%2FCRx0d08LLQ1IBGELcAIcAHVyFkYnWVRaLwtdeAcVCwQGenMDDwF0cQMIdgMBDH0FBw%3D%3D&p=1
+    0.44 - /images/carousel/csl_buffer.png.v9c0a8dfb8f856d1f
+    0.44 - /images/livedot.png.vccbafadefb3eb8b9
+    0.15 - /widget_chunks/video?request=%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&t=0.8795328754931688&from_request=%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&config=%7B%22tabs%22%3A%7B%22replace%22%3A%22%23player_page_tabs_ph%22%2C%22options%22%3A%7B%22gg_search%22%3Afalse%7D%7D%2C%22next_page%22%3A%7B%22replace%22%3A%22%23np_seo_ph%22%7D%2C%22related%22%3A%7B%22replace%22%3A%22%23related_ph%22%2C%22options%22%3A%7B%22buzzableVideoId%22%3Afalse%2C%22buzzableTitle%22%3A%22false%22%2C%22buzzableVideoTitle%22%3Afalse%2C%22video%22%3A%2249852094%22%7D%7D%7D
+    0.15 - /static/video/986/458/49854689:jpeg_preview_medium.jpg?20120918094700
+    0.15 - /static/video/880/387/49783088:jpeg_preview_medium.jpg?20120916100310
+    0.15 - /widget_chunks/video?request=%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport&t=0.7378450667019933&from_request=%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport&config=%7B%22tabs%22%3A%7B%22replace%22%3A%22%23player_page_tabs_ph%22%2C%22options%22%3A%7B%22gg_search%22%3Afalse%7D%7D%2C%22next_page%22%3A%7B%22replace%22%3A%22%23np_seo_ph%22%7D%2C%22related%22%3A%7B%22replace%22%3A%22%23related_ph%22%2C%22options%22%3A%7B%22buzzableVideoId%22%3Afalse%2C%22buzzableTitle%22%3A%22false%22%2C%22buzzableVideoTitle%22%3Afalse%2C%22video%22%3A%2249820074%22%7D%7D%7D
+    0.15 - /css/gen/widget/pack/base.css.v64eb73d17acfa6916
+    0.15 - /m/web/800000206980?n=538006160&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv&v=0.10
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=2785037838
+    0.15 - /cdn/H264-512x384/video/x3i8z4.mp4?auth=1348143794.33c261d875ea5dc42d9082dc97e2a535&redirect=0
+    0.15 - /log?m=USM2WGACdlo1U383RB9VIjZQHHN0RFQnCAMAYl1URlgXBQVEXCsKWEE2Mhx2dhULBxFwBUELFHEHVVQlVlkddnBcVTAcB3R6ekklBhF0cQEDcjoIdwcVCwVFFxsXC3QpMlYfIlNDWWEAdFM2TQhmXF5WMVFaJVIVBwYMXDFAX0sqEjAiXF1eLgtVBHYXBX1zBgIIdAgMAQwBAHQGDHcBFkExfwh2AwcAdgR7dAYKBnRkVVgyUxINAkZXV3kIBRRdU0QiFQEAU0NWfw5cYAUAVCRdLi9XTENmcAFaKltRXixUXFchSxAACVZFZgIEMVJSEHByHHcGc1UoUiQrU1dWJjAUC3YXBHlhBwJdYXoGF3gLRCtfUCMSAgUsI0s3VkRQN1FncQJPWDAjX01jAAcdBwYXcXQcBwJaXV4gXEE0UhUHcjdXYAUAHAIHZwILSVgwLVVcYwAHSCVHFwJ0TFtXHAAAMFlAM1ZEXC0sHHcHVFxkBnIwR0pBJixCXGMAB1EqQVdeN1wQdwsXCHMVdXBhX0AxZwt1VkZcOxFwc1ZcRDtnAwkrW1lNMFBBFXYJRV1MQBVxAFopQkMQcHJJN1hFTyRGZ3ECSEQmZwMJKlcSCnRYV1koVVBHSxcCc0JRNUNVEHByHAYEFXhxEXAGFwt0ZnB0HyJTQ1lhAHRWNgRhV1VUQiJeVyMSAnEMJ00yWEJSZ0ExJkAEBQJ3CHt0dHUKcnQLcgV6BXAKBAN0cwMFAwkCdHYIdAF1DXMNAwIHehcnI0VYYwdxTi1RDwF3DQILDgIJdAQFcAYWUSM2WGACdlpwCSExV1hFKjRUHy1XTgVzUwEBIQkDAQlQBiEBBSJRUgIgJgl1BglbeFJzdgoNU2UhRQR3AQMPfQICCXMMDQoNFFQiRFVjAnZGNjIEdRFUWDVVZ3Z0TVYwf0VcKlRFWSpWVxV2ekFXVVRCIl5XIxICBSwnTTJYQlJkBgEvVxwDcy9UUCpeUk02EAAAJ1VcVF9aUS1XUTQSAgUmNxx3B0dcIxFwAEVcUzAnQ1AjFFNZMFQXBQJdR1wEAwR2CAx2EVRUNiMccHFYWygJcXMUXVA3IxQMAEZDVHlhV1wiS1RcWlcVcQB6I0NHWjApHHcHQEtkd3FmcwBCJixFXGMABx13dBcCdHVQFwsCXSZZWCpSRUdncAkmW1lfJ1wjLVVcQ2ZwAV0zFwUIM1BQFXYJEAAIFF8hWlElQ3lRf3MKcQAJDnENdXYKAQVmcXAKYFRSWTBAQFV5DRAAfEpDdgNAPA%3D%3D&p=1
+    0.15 - /cgi-bin/block_message.cgi?ws-session=3691007511
+    0.15 - /log?m=RyMsXSpaeV18BGdxdwEGdXQBDH4HBAF0AQIDfA4TRkoPAXAEA38AAAx7dwl1ARZMMlEwfgZ4BHoAA38EAAF5fXdzc3R7BgQKBXN0cwB%2FAAYBc3MPAAMCAAB1dwAUXVA3IxQMAEJTS3lxU1koQFhdTVtfLRUGdkFZUSctSSlWSVwzEi0hWFxSNwtVBHcBAw99AgIJfQwEBw0XAwIAEiJWRFRnd38zXlQEcAd2dAsOAXp7BQB%2FBBFbMAgDA3AODAUJCwl2AQFyEVRUNiMccHFAWDMJcmVUXFA3N0NcewISCgFDW1QhVhAHf19RKl4Rc3FAWSM7XDcRVFg1VWd2dElQM38AHy1XTgVzUwEBIQkDAQlQBiEBBSJRUgIgJgl1BglbeFJzdgoNUw%3D%3D&p=1
+    0.15 - /static/video/941/748/49847149:jpeg_preview_medium.jpg?20120918053652
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347971020321&ns_c=UTF-8&c8=Dailymotion%20-%20Watch%2C%20publish%2C%20share%20videos&c7=http%3A%2F%2Fwww.dailymotion.com%2Farchived%2Findex.html&c9=http%3A%2F%2Fwww.dailymotion.com%2Fcontest%2Ftelfrance-network
+    0.29 - /static/video/758/418/49814857:jpeg_preview_medium.jpg?20120917170514
+    0.15 - /static/video/475/596/49695574:jpeg_preview_medium.jpg?20120913194930
+    0.15 - /iK4/80x60-vs5.jpg
+    0.15 - /js/gen/widget/pack/extras.js.v441f46b6fcabc9896
+    0.44 - /widgets/tweet_button.1347008535.html
+    0.15 - /static/video/254/238/49832452:jpeg_preview_small.jpg?20120917181514
+    0.15 - /CHy-y/107x60-GQI.jpg
+    0.15 - /Ycvq/136x80-iFw.jpg
+    0.15 - /static/user/334/106/71601433:skin_body.jpg?20120808173658
+    0.29 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Ffr
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347970993731&ns_c=UTF-8&c8=Septimus%20air%20Podgers%20(septimus)%3A%20ses%20vid%C3%A9os%20sur%20Dailymotion&c7=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus&c9=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv
+    0.15 - /pixel;r=1055665372;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347971007262;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus;url=http%3A%2F%2Fwww.dailymotion.com%2FLigue1;ogl=title.Ligue1%2Ctype.profile%2Curl.http%3A%2F%2Fwww%252Edailymotion%252Ecom%2FLigue1%2Cimage.http%3A%2F%2Fstatic2%252Edmcdn%252Enet%2Fstatic%2Fuser%2F334%2F106%2F71601433%3Aavatar_large%252Ejpg%3F201208081%2Cdescription.Bienvenue%20sur%20la%20cha%C3%AEne%20officielle%20de%20la%20Ligue%201%20de%20football%20sur%20Dailymotion%20!%3Cb%2Csite_name.Dailymotion
+    0.15 - /m/web/800000206980?n=986057564&type=whap&r=http%3A%2F%2F172.19.77.100%3A15871%2Fcgi-bin%2FblockOptions.cgi%3Fws-session%3D2785037838&v=0.10
+    0.15 - /static/video/982/608/49806289:jpeg_preview_medium.jpg?20120917102736
+    0.15 - /odpp/?account_key=7f31e0630b6b11dfb7bd0019b9f1584b&clip_id=x3i8z4&ts=
+    0.15 - /static/user/700/010/10007:avatar_large.jpg?20110913193619
+    2.04 - /crossdomain.xml
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=6&utmn=1049360059&utmhn=www.dailymotion.com&utme=8(channel*3!page_type*segment)9(tv*3!channel_home*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=channel_home&utmhid=354597072&utmr=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&utmp=%2Ffr%2Fchannel%2Ftv%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.15 - /static/video/142/238/49832241:jpeg_preview_small.jpg?20120918075504
+    0.15 - /pixel;r=1601547581;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347970971472;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Ffr;url=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1;ogl=
+    0.15 - /static/video/091/726/49627190:jpeg_preview_medium.jpg?20120918111734
+    0.29 - /static/video/613/458/49854316:jpeg_preview_medium.jpg?20120918100416
+    0.44 - /images/carousel/csl_videoinfo.png.va8cd309e34b5157a
+    0.15 - /static/video/183/680/49086381:jpeg_preview_medium.jpg?20120903132725
+    0.15 - /pixel;r=808102510;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=1;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347970962579;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Ffr;url=http%3A%2F%2Fwww.dailymotion.com%2Fsas%2Fligue1_topbanner%3Festat%3D0;ogl=
+    0.15 - /pixel;r=681650388;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347971016554;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames;url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1;ogl=title.Quand%20la%20c%C3%A9l%C3%A9bration%20de%20Romarinho%20met%20le%20feu%20aux%20poudres%252E%252E%252E%2Cvideo%3Atype.application%2Fx-shockwave-flash%2Cvideo.http%3A%2F%2Fwww%252Edailymotion%252Ecom%2Fswf%2Fvideo%2Fxtntey%3FautoPlay%3D1%2Cvideo%3Awidth.1000%2Cvideo%3Aheight.564%2Curl.http%3A%2F%2Fwww%252Edailymotion%252Ecom%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le%2Csite_name.Dailymotion%2Ctype.video%2Cimage.http%3A%2F%2Fstatic2%252Edmcdn%252Enet%2Fstatic%2Fvideo%2F470%2F028%2F49820074%3Ajpeg_preview_large%252Ejpg%3F20%2Cdescription.Le%20rel%C3%A9gable%20Palmeiras%20recevait%20les%20Corinthians%20lors%20de%20la%2025e%20journ%C3%A9es%20de%20S%C3%A9rie
+    0.15 - /css/gen/widget/page/contestbase.css.vf06ceb24ab22e2646
+    0.15 - /static/video/178/518/49815871:jpeg_preview_small.jpg?20120917103613
+    0.15 - /plugins/like.php?api_key=96937694899&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df114b2e214%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff3c1d7785c%26domain%3Dwww.dailymotion.com%26relation%3Dparent.parent&extended_social_context=false&font=arial&href=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport&layout=button_count&locale=fr_FR&node_type=link&sdk=joey&send=false&show_faces=false&width=90
+    0.15 - /static/video/949/308/49803949:jpeg_preview_medium.jpg?20120917212813
+    0.15 - /sense/images/vs/tag.gif?urange=22&lat=0.0000000000000&lng=0.0000000000000&country=FR&rid=5n9axCM3m9RUSBFXp&log=1&ff=on&locale=fr&routename=videos_archived_hf&dr=http%3A%2F%2Fwww.dailymotion.com%2Fcontest%2Ftelfrance-network&dh=http%3A%2F%2Fwww.dailymotion.com%2Farchived%2Findex.html&cb=1347971020461
+    0.44 - /css/gen/widget/pageitem/list.css.vf58781f143db7da16
+    0.15 - /static/video/247/897/49798742:jpeg_preview_medium.jpg?20120917000014
+    0.87 - /Images/block.png
+    0.15 - /b?c1=2&c2=4000005&c3=4000005&c4=4000005&c5=020600&c6=xtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport&ns__t=1347971016476&ns_c=UTF-8&c8=Quand%20la%20c%C3%A9l%C3%A9bration%20de%20Romarinho%20met%20le%20feu%20aux%20poudres...%20-%20Vid%C3%A9o%20Dailymotion&c7=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1&c9=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames
+    0.15 - /static/video/980/648/49846089:jpeg_preview_small.jpg?20120918044001
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347971012443&ns_c=UTF-8&c8=Jeux%20vid%C3%A9o%20%E2%80%93%20Actualit%C3%A9%20jeux%20vid%C3%A9o%2C%20test%20%26%20trailers&c7=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames&c9=http%3A%2F%2F172.19.77.100%3A15871%2Fcgi-bin%2FblockOptions.cgi%3Fws-session%3D2785037838
+    0.15 - /static/user/630/000/36:avatar_medium.jpg?20091008095328
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347971018847&ns_c=UTF-8&c8=Le%20meilleur%20cliffhanger%20du%20web%20!%20Videos%20-%20Dailymotion%20-%20telfrance-network&c7=http%3A%2F%2Fwww.dailymotion.com%2Fcontest%2Ftelfrance-network&c9=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1
+    0.15 - /static/video/560/408/49804065:jpeg_preview_medium.jpg?20120917021712
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=12&utmn=5573630&utmhn=www.dailymotion.com&utme=8(3!page_type*segment)9(3!videos_archived_hf*22)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=videos_archived_hf&utmhid=1971596620&utmr=0&utmp=%2Farchives_hf%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.15 - /static/video/687/458/49854786:jpeg_preview_small.jpg?20120918095231
+    0.15 - /b?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347970961534&ns_c=UTF-8&c8=Dailymotion%20-%20Watch%2C%20publish%2C%20share%20videos&c7=http%3A%2F%2Fwww.dailymotion.com%2Ffr&c9=http%3A%2F%2Fwww.dailymotion.com%2Ffr
+    0.15 - /static/video/497/223/49322794:jpeg_preview_small.jpg?20120907095623
+    0.15 - /static/video/750/238/49832057:jpeg_preview_small.jpg?20120917201644
+    0.15 - /static/video/236/828/49828632:jpeg_preview_medium.jpg?20120917221457
+    0.15 - /images/contest/icon_calendar.png
+    0.15 - /b2?c1=2&c2=4000005&c3=&c4=&c5=&c6=&c15=&ns__t=1347970961534&ns_c=UTF-8&c8=Dailymotion%20-%20Watch%2C%20publish%2C%20share%20videos&c7=http%3A%2F%2Fwww.dailymotion.com%2Ffr&c9=http%3A%2F%2Fwww.dailymotion.com%2Ffr
+    0.15 - /log?m=QTF%2FCHYDBwB2BHt6BwkBdWRVWDJTEg0CQ1tUeQgGBg4LB3MJDXIOCQNkJlgxVhUMB0InMQ8NFHEHCBx0dwAeJ0EPAXcNAgsOAgl6BQBwAhZAMSdLeANxDHh2cAVwCwcCe3N4BQJ1C3IGBXNzegELDgQEcgECAwMCDAMDDAYRVlwgQDcxVwQAZnB0Ty9WUldhAHRdJVBbFwx0QC9RTSNFFlogKFwmQ3ldfAVxdwUABnN7CAxyBAIdd3QDFiBYQVMcB3YzUUd7cXN3BwN9AHIAfwd3cHIHDgcCAwQNBAMDfHIGAwMBD3BxfHN0dwJydBFUVDYjHHBxQEwzCSo3RkkUcAMUCwAXBX4zQkUVdnxRU1BeSS5fQC9YXhBwB1oqWhULB0cnM0ZQXDYxFAt1RF5cIVoXAwBBBlsBSARlQlUoU19YCyYEdRICfHgMd3YGDgd6egQPfgcCCnMTWVU9BAJUCgNVcwYHdlUGV3NzXSNVB1slBHJyC1sIJXMEAXJQEVwlQVMVcX9HV18PWDdERGMEcRBwBBx3cUdONhFwBlZYWC87XFYyW1hWYQd3UytUEAB%2FVEJmAnIlX1FbLCdVYAV2TTc%3D&p=1
+    0.15 - /cdn/H264-848x480/video/xs53tz.mp4?auth=1348143771.24ae6f7e09b58b0396cae9fe4ea5ab43&redirect=0
+    0.15 - /b?c1=2&c2=4000005&c3=4000005&c4=4000005&c5=020100&c6=xtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&ns__t=1347970984496&ns_c=UTF-8&c8=Benghazi%20%3A%20une%20vid%C3%A9o%20montre%20le%20corps%20de%20l'ambassadeur%20-%20Vid%C3%A9o%20Dailymotion&c7=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&c9=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv
+    0.15 - /static/video/357/038/49830753:jpeg_preview_medium.jpg?20120917183406
+    0.15 - /static/video/767/038/49830767:jpeg_preview_source.jpg?20120917173324
+    0.15 - /CHyf6/85x50-d5u.jpg
+    0.15 - /CByw6/526x328-Mqq.jpg
+    0.15 - /cgi-bin/blockOptions.cgi?ws-session=2332052998
+    0.15 - /static/video/560/901/49109065:jpeg_preview_medium.jpg?20120903155006
+    0.29 - /static/video/821/787/49787128:jpeg_preview_medium.jpg?20120916124737
+    0.15 - /CEiuA/136x80-l5p.jpg
+    0.15 - /pixel;r=1408989116;a=p-59ARNeKbT-0fM;fpan=1;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347970961924;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Ffr;url=http%3A%2F%2Fwww.dailymotion.com%2Ffr;ogl=
+    0.15 - /json/video/xtnh7y?fields=uri%2Ctitle%2Conair%2Caudience_url%2Cpaywall%2Crental_price_formatted%2Crental_duration%2Cprice_details%2Caccess_granted&rand=1347971008218
+    0.15 - /images/contest/middle.png.vbc245207fa0b52cb
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=4&utmn=137907689&utmhn=www.dailymotion.com&utme=8(channel*video_type*page_type*segment)9(tv*creative*video_item*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=video_item&utmhid=1686439189&utmr=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1&utmp=%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.29 - /static/video/178/518/49815871:jpeg_preview_medium.jpg?20120917103613
+    0.15 - /static/video/992/743/49347299:jpeg_preview_medium.jpg?20120907150451
+    0.15 - /log?m=USM2WGACdkk0Rn8rRk1BZnFwHHR0EgoCQkVHYQtwVlhbXDpdWzJeX1tncHwmWF0cc3I0KlZcXmZwd0E1BwRMPhAHdjBcWVRLU14gVRF0c15QNjVWN1wVCwVEMCZBXF83JxQLAl5SHXZxX1UtVVlXTEAVcXRXKl5WUyojVyJSQhxzcCY2Fwt1NCdTHHN0Q05iUVNEJRwAdElbVH5GXSJSXxB3BEkpVklcMxF3BQcJBHt0BgAkCwEAcFMURDcEBAENBQl0AA1xAwkMc2RLJFlUVix9Jn4CHAMGcQENcgUCDXICAQB3DAwFABRFMFVGewNxAHsACwN1Ag8ADQACcQlzcHQCDgUFdAx9AgQEdQgDdw0ACQJxAQURVFQ2IxxwcUZQJQlzcAYOCHRyCA5yAwEJYlpQWiFaQXtdDwFwBAN%2FAAAMdXQJfAUVCgAAZChXQAx0JAIIIwIBC3RXBFJ1CFFUWwVSJwAEdw5SDCRzDH0DUh8iQH9yAQ0GenUBAHEEBwF2E1ZRMFgQB39TQyoNcgV1dXQGB3x1cXZ6cwV3dAR4cHZ2cwhydgELdQZ3BgF6cHN9BgIFAhIiVkRUZ3d%2FN1JWBClANjMXCnBmcHccdHRATzMQAHUgWFxeQF9fN1lbKBICcCEtVGAFdl8zEXAFUVFQLSxUVTUXBX51E1ZRMFgQB39RQCoNQi9TVVpnd381W1FAJEZndnQMAXZ6Bw5%2FUA4OfAFUFiBYQVMcB3YwRFl7BxZRIzZYYAJ2SS9ZfwdTUF06L15NL11ZHXYFRFkgXFpCVVNJJkISIFJRQTcwXHgBFQsETDF2AU1LZSZQTScXAn40QUINLVdGW01X&p=1
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df3a96f96a%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Fff21e34e4%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.29 - /fr/channel/videogames
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=4SqJtYFJBvvEtM4Lt&log=1&ff=on&locale=fr&pagename=home%2Ftv&routename=channel_home&dr=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&dh=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv&cb=1347970987470
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=9&utmn=1884361698&utmhn=www.dailymotion.com&utme=8(channel*3!page_type*segment)9(videogames*3!channel_home*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=channel_home&utmhid=243370335&utmr=http%3A%2F%2F172.19.77.100%3A15871%2Fcgi-bin%2FblockOptions.cgi%3Fws-session%3D2785037838&utmp=%2Ffr%2Fchannel%2Fvideogames%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    1.60 - /css/gen/widget/pack/baseskin-prod.css.v935a20fffd0f432f6
+    0.15 - /static/video/438/486/49684834:jpeg_preview_source.jpg?20120914171558
+    0.15 - /images/contest/bottom_tick.png.ve6cd7a93f4b9952c
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=3&utmn=553256374&utmhn=www.dailymotion.com&utme=8(3!page_type*segment)9(3!channel_list*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=channel_list&utmhid=2109084717&utmr=0&utmp=%2Ffr%2Fchannels%2F1%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=2&utmn=1374195160&utmhn=www.dailymotion.com&utme=8(3!page_type*segment)9(3!sas*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=sas&utmhid=548768094&utmr=0&utmp=%2Fsas%2Fligue1_topbanner%3Festat%3D0%26site_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    1.75 - /css/gen/widget/pack/users.css.v09471a88dd6a0d4d6
+    0.15 - /log?m=VjZ%2FCHYDBwB2BHt0BAwDc2RXXCdGQkohCAoVdnxNQQwBRDkVBgMHFQcHcx83Vl5dLlkLJw8JFHEHBQ9yBAMIdAYBBHcIBgcIABY3Qwl3BAQCe3UJfAAFDHMAZDZBXEN%2BdnAMf3AFfgYHBHF9e3RxCXADdQMDBQBzAXt1D3EGAQ8EAHB6c3gEAGRVWDJTEg0CQ1tUeQgGBg4LB3MJA3IGBgRkLVsvUlNNCFB%2FcgENBnp1AQBxBAIKdBABcXIfXldADwclAwUjBwYGciAPJwYBXSdWdSFWCQFye1MAIAMCAHBX&p=1
+    0.15 - /t.gif?_=1347970985237&count=horizontal&counturl=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&id=twitter-widget-0&lang=fr&original_referer=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&related=Dailymotion%2CDailymotionews&size=m&text=Benghazi%20%3A%20une%20vid%C3%A9o%20montre%20le%20corps%20de%20l%27ambassadeur%20-&url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&via=Dailymotion&type=share&twttr_referrer=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&twttr_widget=1&twttr_hask=0&twttr_li=0&twttr_pid=
+    0.15 - /static/video/470/028/49820074:jpeg_preview_small.jpg?20120917122645
+    0.15 - /odpp/?account_key=7f31e0630b6b11dfb7bd0019b9f1584b&clip_id=xs53tz&ts=
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df2d26a9c6c%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff2c6f9a8d4%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=aaja3vPZk9GlVyCGC&log=1&ff=on&locale=fr&pagename=home&routename=home&dr=http%3A%2F%2Fwww.dailymotion.com%2Ffr&dh=http%3A%2F%2Fwww.dailymotion.com%2Ffr&cb=1347970961686
+    0.15 - /cgi-bin/block_message.cgi?ws-session=2785037838
+    0.15 - /fr/channels/1
+    0.15 - /cgi-bin/blockOptions.cgi?ws-session=4194323953
+    0.15 - /m/web/219019208588?n=2474222155&v=3.0
+    0.15 - /static/user/897/178/72871798:avatar_small.jpg?20120723172220
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=8wurdfDsZZsvjRmyY&log=1&ff=on&locale=fr&pagename=sas%2Fligue1_topbanner%3Festat%3D0&routename=sas%2Fligue1_topbanner%3Festat%3D0&dr=http%3A%2F%2Fwww.dailymotion.com%2Ffr&dh=http%3A%2F%2Fwww.dailymotion.com%2Fsas%2Fligue1_topbanner%3Festat%3D0&cb=1347970962400
+    0.15 - /skin/data/player/itele.swf.va7fc8c15a128e1506?foreground=16252925&background=1514779&highlight=16763955
+    0.15 - /pixel;r=2077133986;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347971020412;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Fcontest%2Ftelfrance-network;url=http%3A%2F%2Fwww.dailymotion.com%2Farchived%2Findex.html;ogl=
+    0.15 - /static/user/506/447/21744605:avatar_medium.jpg?20120911131809
+    0.44 - /js/gen/widget/pack/video.js.vbcd82bc21009b74d6
+    0.15 - /static/video/386/107/49701683:jpeg_preview_small.jpg?20120914001123
+    0.15 - /static/video/563/838/49838365:jpeg_preview_medium.jpg?20120917224342
+    0.15 - /plugins/like.php?api_key=96937694899&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df37710d74%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Fff21e34e4%26domain%3Dwww.dailymotion.com%26relation%3Dparent.parent&extended_social_context=false&font=arial&href=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&layout=button_count&locale=fr_FR&node_type=link&sdk=joey&send=false&show_faces=false&width=90
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df3d6ef5754%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff2dd8e730c%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=xeytw6SdpyTPPLkwZ&log=1&ff=on&locale=fr&player=internal%2Fdailymotion&pagename=player_page%2Finternal%2Fdailymotion%2Frecent&routename=video_item&dr=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&dh=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&cb=1347970984654&spd=related
+    0.15 - /static/video/760/238/49832067:jpeg_preview_medium.jpg?20120917180159
+    0.15 - /images/contest/body.jpg.v50c89a3fef6b47b9
+    0.15 - /js/gen/widget/pack/contest_base.js.v9fac01b93d9dd8f06
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df107a156ac%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff3c1d7785c%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.15 - /m/web/800000206980?n=560868306&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1&v=0.10
+    0.15 - /cgi-bin/continue.cgi
+    0.15 - /BhoC/80x60-706.jpg
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=1493192205
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=4nKPGXVTtTYDODLzW&log=1&ff=on&locale=fr&pagename=home%2Fvideogames&routename=channel_home&dr=http%3A%2F%2F172.19.77.100%3A15871%2Fcgi-bin%2FblockOptions.cgi%3Fws-session%3D2785037838&dh=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames&cb=1347971012596
+    0.15 - /static/video/624/225/49522426:jpeg_preview_medium.jpg?20120912134000
+    0.15 - /images/ligue1/drapeau_ligue1.png.ve17a3e5fb0277d06
+    0.15 - /B1CE8/136x80-075.jpg
+    0.15 - /sas/ligue1_topbanner/style/style.css.v2
+    0.15 - /b?c1=1&c2=4000005&c3=4000005&c4=4000005&c5=040400&c6=x3i8z4&_n=53154578
+    0.15 - /t.gif?_=1347970973164&count=horizontal&counturl=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&id=twitter-widget-0&lang=fr&original_referer=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&related=Dailymotion%2CDailymotionUSA&size=m&text=Telfrance%20Network%20pr%C3%A9sente%20%3A%20Le%20meilleur%20cliffhanger%20du%20web%20!%20-&url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&via=Dailymotion&type=share&twttr_referrer=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&twttr_widget=1&twttr_hask=0&twttr_li=0&twttr_pid=
+    0.15 - /static/video/545/038/49830545:jpeg_preview_small.jpg?20120917172315
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=TWcJxPeWcZlUD01rt&log=1&ff=on&locale=fr&player=internal%2Fdailymotion&pagename=player_page%2Finternal%2Fdailymotion%2Frecent&routename=video_item&dr=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1&dh=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&cb=1347970972753&spd=related
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames&ezC=sport
+    0.15 - /CG6i/80x60-dUp.jpg
+    0.15 - /CBDlg/80x60-V9C.jpg
+    0.15 - /sequence/play/xtnh7y?autoPlay=1&parentURL=http%3A//www.dailymotion.com/Ligue1&expandVideo=0&chromeless=0&withLoading=1&masscastLocation=videolist_with_player&isEmbedded=0
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=8&utmn=1335583770&utmhn=www.dailymotion.com&utme=8(3!page_type*segment)9(3!user_home*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=user_home&utmhid=544933785&utmr=0&utmp=%2FLigue1%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.15 - /__utm.gif?utmwv=5.3.5&utms=5&utmn=1724015027&utmhn=www.dailymotion.com&utme=8(channel*video_type*page_type*segment)9(news*official*video_item*28)11(4!1)&utmcs=UTF-8&utmsr=1920x1200&utmvp=913x653&utmsc=32-bit&utmul=en-us&utmje=1&utmfl=11.3%20r31&utmdt=video_item&utmhid=462609215&utmr=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&utmp=%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news%3Fsite_version%3Dfr&utmac=UA-64443-1&utmcc=__utma%3D244310544.1817747656.1347970962.1347970962.1347970962.1%3B%2B__utmz%3D244310544.1347970962.1.1.utmcsr%3Ddailymotion.com%7Cutmccn%3D(referral)%7Cutmcmd%3Dreferral%7Cutmcct%3D%2Ffr%3B&utmu=DQK~
+    0.15 - /log?m=VjZ%2FCHYDBwB2BHt0Bw4AdWRVWDJTEg0CVEFZeX92cHxzdAZ1BABxcwdzdw5zdnEMdXZzd3YPAnJxdA8DcXJ5AAEAdnYfUVNNUxV2dkQzRQ1dNjZJYARxHHNyZ3F0TkY0ZwN8IlNeVD1YXUQtVlsXC3dTLF0RdHFGXCYnVmAFdkEyAXE3SBwEBTZUVSBAVlYnUBcCAFdQRk5dQigVBgJHQlAxJ1cxUhULBVgnZgB9XCYrXVUjR0UddnFRXC1fU1pYXFcmQhF0c1RAZ3B9MlJSHHRyNjUUXVA3IxQMAEBSXnldRkQ0HAZzHAB2ZgJyMUBHEHAHXSReXEAsWzYqXVcUcQdSVisXBX4iRxcCAlpdU1dcVS9DEXRxARMmI00kEgV%2FIkQrfkRQVSYtFAwAQltZPVBAFXF%2FAAIMCgZ0CVZ%2FAQgBJGRLJFlUVix9Jn4CHAMGcQgKfwsBDnQMAQdwAQ0CARRWJlFAM0VVCHdyHHdySEp0BzY5FE1CfnMCDXELAAh9AgYDcw8TR0pXQn4EdXMOcgcEAAtzdgl7AHdyAQEPAnQBBnpyCwAOcAQDBgENBwt4cwUAFlAnQ1EQdwRPLFMNCHIAdXoFCQh0dgAPdxRYWi5QUUQNXQgDCgYHegcEfwAFAnN0HHZ2Ah8qUTt%2BBV8CcicBD3UCVQ4mBANUIlsCUF0CAHIJVn9RAQB6dls%3D&p=1
+    0.15 - /static/video/762/818/49818267:jpeg_preview_small.jpg?20120917114909
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1&ezC=fun
+    0.15 - /static/video/821/787/49787128:jpeg_preview_source.jpg?20120916124737
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=1291865611
+    0.29 - /static/video/501/318/49813105:jpeg_preview_medium.jpg?20120917084327
+    1.75 - /beacon.js
+    0.15 - /log?m=VjZ%2FCHYDBwB2BHt0BgAId2RVWDJTEg0CRVNCeQkTVlhGUWYFcjZWQAhzZEskWVRWLH0mfgIcAwZ7AgF%2FAgMJcwUKB3wLBgMMFEQwDQV1AwcMdXIAcgMBDnUSJiJGWBR2BEFdNQ9zWS1ZS10rTVxdVxcCc0ZdIlJfRS4jQCBFFkwyUTB%2BBngEegADfwQAAXl9d3NzdHsGBAoFc3RzAH8ABgFzcw8AAwIAAHV3ABRdUDcjFAwARF5ceQQBBHMAAgIABQRyBgVgWFJfJyFNDFMNCHIAdXoFCQh0dggAchcEeXQTWVU9BAJUCgNVcwYHdlUGV3NzXSNVB1slBHJyC1sIJXMEAXJQEV4hVEZFNlwIAhwAdTVZUCNYFQAEMlUkTlVLZAEEdgIMCXV1CFt%2FBA8MIg%3D%3D&p=1
+    0.15 - /Is0s/80x60-kf2.jpg
+    0.15 - /video/882/098/5890288_mp4_h264_aac.flv?auth=1347978194-4224-3jrzfvpv-864a412b7ce70f01c4085aae0b16681b
+    0.15 - /static/video/037/338/49833730:jpeg_preview_small.jpg?20120917232049
+    0.15 - /static/user/334/106/71601433:avatar_large.jpg?20120808173543
+    0.15 - /b?c1=1&c2=4000005&c3=4000005&c4=4000005&c5=&c6=xs53tz&_n=45853239
+    0.15 - /images/contest/arrow_blue_end.png.v522acf77045bce2a
+    0.15 - /static/video/639/418/49814936:jpeg_preview_medium.jpg?20120917102316
+    0.15 - /cgi-bin/block_message.cgi?ws-session=4194323953
+    0.15 - /images/contest/arrow_grey_end.png.v613a29aae0efece6
+    0.15 - /static/video/719/028/49820917:jpeg_preview_large.jpg?20120917155042
+    0.15 - /u/getuid/?nocache=0%2E594274505507201&a=7f31e0630b6b11dfb7bd0019b9f1584b
+    0.15 - /pageitem/video/tools?request=%2Fvideo%2Fx3i8z4&t=0.6662726229988039&from_request=%2Fseptimus&method=setupForHomePage
+    0.15 - /CH0JU/136x80-SdK.jpg
+    0.15 - /CHzD6/85x50-3dX.jpg
+    0.15 - /static/video/001/044/49440100:jpeg_preview_medium.jpg?20120912175246
+    0.15 - /m/web/800000206980?n=239807520&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Fcontest%2Ftelfrance-network&v=0.10
+    0.15 - /m/web/800000206980?n=11345247&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Ffr&v=0.10
+    0.15 - /pixel;r=1538930173;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347970972679;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1;url=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv;ogl=title.Telfrance%20Network%20pr%C3%A9sente%20%3A%20Le%20meilleur%20cliffhanger%20du%20web%20!%2Cvideo%3Atype.application%2Fx-shockwave-flash%2Cvideo.http%3A%2F%2Fwww%252Edailymotion%252Ecom%2Fswf%2Fvideo%2Fxs53tz%3FautoPlay%3D1%2Cvideo%3Awidth.1000%2Cvideo%3Aheight.564%2Curl.http%3A%2F%2Fwww%252Edailymotion%252Ecom%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-c%2Csite_name.Dailymotion%2Ctype.video%2Cimage.http%3A%2F%2Fs2%252Edmcdn%252Enet%2FCHyf6%2F160x120-qUX%252Ejpg%2Cdescription.Le%20meilleur%20cliffhanger%20du%20web%20!Cliffhanger%20%3A%20m%C3%A9thode%20narrative%20visant%20%C3%A0%20conclur
+    0.15 - /images/contest/arrow_blue_middle.png.v8ede82c2298fba75
+    1.60 - /js/gen/widget/pack/mandatory.js.v1fa9e453c0de1e4e6
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=536890875
+    0.15 - /cdn/H264-848x480/video/xs53tz.mp4?auth=1348143817.b20fc84eb2284f63a71c7f49cc1a75df&redirect=0
+    0.15 - /skin/data/default/partner/2987_itele/img/body.jpg.v913f96adaab6045a
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&ezC=news
+    0.15 - /CFqeo/80x60-XaR.jpg
+    0.15 - /page/html/user?request=%2Fseptimus&from_request=%2Fseptimus&method=getContactsAndGroups
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus
+    0.15 - /BUKsA/80x60-uaC.jpg
+    0.44 - /js/gen/widget/pack/base.js.v5c15c38c2e1662816
+    0.15 - /CHyba/136x80-NKm.jpg
+    0.15 - /marker/image/dailymotion?cref=http%3A%2F%2Fwww.dailymotion.com%2Fcontest%2Ftelfrance-network
+    0.15 - /u/getuid/?nocache=0%2E8483612453565001&a=7f31e0630b6b11dfb7bd0019b9f1584b
+    0.15 - /archived/index.html
+    0.15 - /static/video/642/184/49481246:jpeg_preview_medium.jpg?20120917191147
+    0.15 - /cgi-bin/blockOptions.cgi?ws-session=2785037838
+    0.15 - /BKHWC/80x60-rS-.jpg
+    0.87 - /widgets/hub.html
+    0.15 - /static/video/613/458/49854316:jpeg_preview_source.jpg?20120918100416
+    0.15 - /static/video/839/408/49804938:jpeg_preview_medium.jpg?20120917021550
+    0.15 - /static/video/402/695/49596204:jpeg_preview_medium.jpg?20120913152815
+    0.15 - /CDNpi/80x60-Cvx.jpg
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=3489680897
+    0.15 - /sense/images/vs/tag.gif?urange=28&asnum=AS3215&lat=48.2132000000000&lng=-1.5084000000000&country=FR&rid=YL9eceR0GHEDKN20M&log=1&ff=on&locale=fr&user=septimus&pagename=user%2Fhome&routename=user_home&dr=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv&dh=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus&cb=1347970993824
+    0.15 - /pixel;r=2059598826;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347971018952;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1;url=http%3A%2F%2Fwww.dailymotion.com%2Fcontest%2Ftelfrance-network;ogl=title.Le%20meilleur%20cliffhanger%20du%20web%20!%2Curl.%2Fcontest%2Ftelfrance-network%2Csite_name.Dailymotion%2Cimage.http%3A%2F%2Fstatic2%252Edmcdn%252Enet%2Fstatic%2Fcontest%2F869%2F700%2F7968%3Aicon_large%252Ejpg%3F201208081031%2Cdescription.Participer%20au%20concours%20%22Le%20meilleur%20cliffhanger%20du%20web%20!%22%20sur%20Dailymotion
+    0.15 - /b?c1=2&c2=4000005&c3=4000005&c4=4000005&c5=&c6=xs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&ns__t=1347970972689&ns_c=UTF-8&c8=Telfrance%20Network%20pr%C3%A9sente%20%3A%20Le%20meilleur%20cliffhanger%20du%20web%20!%20-%20Vid%C3%A9o%20Dailymotion&c7=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv&c9=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannels%2F1
+    0.15 - /log?m=USM2WGACdkk0Rn8rRk1BZnFwHHR0EgoCQkVHYQtwVlhbXDpdWzJeX1tncHwmWF0cc3IxJkJNWC43Qhx0AUFRIFBdFXd9TQFQCkp3Fl8jTg0CJHEIIAcGCnFWdCEDCFUlIAZbIgIHCX1XC1Z1DA0GWxREMA0FdQMHDHVyAHwCBAxyEiYiRlgUdgRSSS8PQVEgUF0VcX9YU1BcFXZ2RCpWSVAwZEw2UkIEdXV3enALdwFwB3h%2FcHZ7dHcBBncOdgV6Bgl0BgB3BgZwdnAABHYFemdQIzdTHAQFMFRfe1pDTDQQAXFhC3MXC3RHNEcRdHJUVCsuQChYRFAuWmdxd1peLmcDfyBAEgoCVlpRKldQXhwAdjdGEilVWlAhNnAhCgEKdQN7dAIACHZ0AwBjAXYKYlFTRCUcAHRPW1R%2BAQdyAAkCcnsAcQ4JD2dXNn4DCgV0ewYJfwsCDnYMFFQlTVQXDHRRMFkJAHRycAMGfAAHdn8CBnN2BQ9wAncFe3cGcw53BAF1cnx2d3h2BHF2BmBFUVsmLVQMUw0JZAYHewIJAnZ0BA52AwENcgUGBGJfUFNNR0ImDQF2EgJwOnFQfU0E&p=1
+    0.15 - /js/gen/widget/pack/mandatory.js.v572be68d68d4931a6
+    0.15 - /m/web/800000206980?n=567317234&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport%3Fno_track%3D1&v=0.10
+    0.15 - /CHSpg/136x80-LRa.jpg
+    0.15 - /CHyf6/526x328-sYw.jpg
+    0.15 - /CByw6/320x240-rPq.jpg
+    0.15 - /static/user/334/106/71601433:avatar_small.jpg?20120808173543
+    0.15 - /static/video/809/261/48162908:jpeg_preview_medium.jpg?20120807181941
+    0.15 - /static/video/298/257/49752892:jpeg_preview_source.jpg?20120918102619
+    0.15 - /plugins/like.php?href=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus&send=false&layout=button_count&width=100&show_faces=true&action=like&colorscheme=light&font&height=21
+    0.29 - /pagead/show_ads.js
+    0.15 - /static/video/819/458/49854918:jpeg_preview_medium.jpg?20120918102751
+    0.15 - /CHzD6/526x328-tJg.jpg
+    0.15 - /plugins/like.php?href=http%3A%2F%2Fwww.dailymotion.com%2FLigue1&send=false&layout=button_count&width=100&show_faces=true&action=like&colorscheme=light&font&height=21
+    0.15 - /static/user/097/000/790:avatar_medium.jpg?20100310101950
+    0.15 - /json/video/x3i8z4?fields=uri%2Ctitle%2Conair%2Caudience_url%2Cpaywall%2Crental_price_formatted%2Crental_duration%2Cprice_details%2Caccess_granted&rand=1347970994658
+    0.15 - /static/video/501/638/49836105:jpeg_preview_small.jpg?20120917203012
+    0.29 - /js-api/2.0/api.dm.js
+    0.15 - /plugins/like.php?api_key=96937694899&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df1c86d762%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff12884428c%26domain%3Dwww.dailymotion.com%26relation%3Dparent.parent&extended_social_context=false&font=arial&href=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxtoi4e_benghazi-une-video-montre-le-corps-de-l-ambassadeur_news&layout=button_count&locale=fr_FR&node_type=link&sdk=joey&send=false&show_faces=false&width=90
+    0.15 - /history/manage/add/xs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv?_n=3654796
+    1.75 - /en/Default/base64.js
+    1.60 - /js/whap.js
+    0.15 - /cgi-bin/block_message.cgi?ws-session=536890875
+    0.29 - /static/video/508/354/49453805:jpeg_preview_medium.jpg?20120917164728
+    0.15 - /images/contest/red_arrow_start.png.v2598c35e8008405c
+    0.15 - /static/video/058/323/49323850:jpeg_preview_source.jpg?20120907183735
+    0.15 - /cdn/H264-848x480/video/xs53tz.mp4?77838fedd64fa52abe6a11b3bdbb4e62f4387ebf7cbce2147ea4bec854e05d44f86968e8b9906cc681767416f976f840ed7900f100fbde034a5fd3ecef14ad1757b35a2b3fae9c9cb21e5007652bf96fdc3c&ec_prebuf=20&ec_rate=122
+    0.15 - /css/gen/widget/pageitem/video/tools.css.vdab9e0482bb6461e6
+    0.15 - /static/video/597/248/49842795:jpeg_preview_small.jpg?20120918001322
+    0.15 - /images/avatar/male/40x40.jpg.vb581b2c656c70b566
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df8897c3f4%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff1918e84f4%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.15 - /CGcQy/136x80-O7c.jpg
+    0.15 - /css/gen/widget/page/contest.css.v4b3b9f6786b5e7b46
+    0.15 - /pixel;r=132331280;a=p-59ARNeKbT-0fM;fpan=0;fpa=P0-685848963-1347970961925;ns=0;ce=1;je=1;sr=1920x1200x32;enc=n;dst=1;et=1347970993719;tzo=-120;ref=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Ftv;url=http%3A%2F%2Fwww.dailymotion.com%2Fseptimus;ogl=title.Septimus%2Ctype.profile%2Curl.http%3A%2F%2Fwww%252Edailymotion%252Ecom%2Fseptimus%2Cimage.http%3A%2F%2Fstatic2%252Edmcdn%252Enet%2Fstatic%2Fuser%2F700%2F010%2F10007%3Aavatar_large%252Ejpg%3F201109131936%2Cdescription.%2Csite_name.Dailymotion
+    0.15 - /static/video/674/116/49611476:jpeg_preview_medium.jpg?20120913160608
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df32abad3c%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff2f2aea66c%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    1.75 - /marker/
+    0.15 - /static/video/224/328/49823422:jpeg_preview_medium.jpg?20120917135054
+    0.15 - /m/web/800000206980?n=749474709&type=whap&r=http%3A%2F%2Fwww.dailymotion.com%2Ffr%2Fchannel%2Fvideogames&v=0.10
+    0.15 - /fr/channel/tv
+    0.15 - /static/video/569/038/49830965:jpeg_preview_small.jpg?20120917185100
+    0.87 - /flash/dmplayerv4/dmplayer-prod-compressed.swf.v6fbd42ee91b28da46
+    0.15 - /video/xs53tz_telfrance-network-presente-le-meilleur-cliffhanger-du-web_tv
+    0.15 - /cgi-bin/blockpage.cgi?ws-session=2550156810
+    0.15 - /static/video/358/363/49363853:jpeg_preview_medium.jpg?20120908020642
+    0.15 - /BA0dG/80x60-JyF.jpg
+    0.15 - /static/video/464/558/49855464:jpeg_preview_medium.jpg?20120918101802
+    0.15 - /CH0mK/136x80-Qyu.jpg
+    0.15 - /static/video/508/354/49453805:jpeg_preview_small.jpg?20120917164728
+    0.15 - /images/dotted.png.v5f3f452026fd3306
+    0.15 - /logger/video/access/x3i8z4?session_id=&referer=&country=FR&lon=-1.5084000000000&lat=48.2132000000000&key=2dps7klgo61htwwm9majxco&v=50589198&i=c2029e21&h=e08be6107ff2eac4e56754ec73e8a56b&_n=56785489
+    0.15 - /cgi-bin/block_message.cgi?ws-session=3489680897
+    0.15 - /ABmFC/136x80-QiZ.jpg
+    0.15 - /Au0gK/136x80-Alj.jpg
+    0.15 - /static/video/449/794/49497944:jpeg_preview_medium.jpg?20120911203728
+    0.29 - /static/video/767/038/49830767:jpeg_preview_medium.jpg?20120917173324
+    0.15 - /dialog/oauth/?client_id=96937694899&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.dailymotion.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df10310c08%26origin%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Ff3ec062618%26domain%3Dwww.dailymotion.com%26relation%3Dparent&sdk=joey
+    0.15 - /CHgfA/136x80-vi0.jpg
+    0.15 - /video/xtntey_quand-la-celebration-de-romarinho-met-le-feu-aux-poudres_sport?no_track=1
+    0.15 - /static/video/072/408/49804270:jpeg_preview_source.jpg?20120917003209
+    0.15 - /images/contest/right.png.vb19a10f529d526b7
+    0.15 - /static/video/312/148/49841213:jpeg_preview_small.jpg?20120917225155
+  x-transaction: 
+    33.33 - b06c911079dc13bc
+    33.33 - 0a871c1884b1664a
+    33.33 - 5327f77300acb951
+  content-encoding: 
+    100.00 - gzip
+  x-ezakus: 
+    100.00 - If you're reading this, why don't you apply for a position in our team ? Use jobs-at-ezakus.com and mention this header in your email.
+  content-type: 
+    0.20 - text/xml
+    0.40 - text/xml;charset=ISO-8859-1
+    34.65 - image/jpeg
+    11.49 - image/png
+    0.40 - application/json
+    0.40 - application/x-www-form-urlencoded; charset=UTF-8
+    0.20 - application/x-www-form-urlencoded
+    5.15 - text/html; charset=utf-8
+    13.27 - image/gif
+    0.20 - application/javascript
+    0.59 - application/xml
+    0.59 - application/javascript;charset=utf-8
+    3.76 - text/html; charset=UTF-8
+    0.20 - video/x-flv
+    10.10 - application/x-javascript
+    0.20 - text/xml; charset=utf-8
+    0.40 - application/javascript; charset=utf-8
+    3.17 - text/javascript
+    0.20 - video/mp4
+    3.17 - text/html
+    0.20 - application/x-javascript; charset=utf-8
+    1.19 - application/x-shockwave-flash
+    9.90 - text/css
+  age: 
+    1.15 - 1784700
+    0.19 - 512432
+    0.19 - 1262
+    0.19 - 512438
+    1.92 - 3140
+    0.19 - 512457
+    0.19 - 512452
+    0.38 - 3148
+    1.54 - 3149
+    0.19 - 5524575
+    0.19 - 512417
+    0.19 - 512416
+    1.34 - 3104
+    0.58 - 3105
+    1.92 - 3125
+    5.57 - 1
+    67.18 - 0
+    0.19 - 3
+    0.19 - 1465
+    0.19 - 7962289
+    0.19 - 512429
+    0.19 - 77
+    0.38 - 37205
+    0.19 - 512463
+    0.19 - 512465
+    0.19 - 102
+    0.77 - 5524576
+    0.19 - 2773282
+    1.92 - 3139
+    3.26 - 11
+    2.69 - 13
+    0.58 - 12
+    0.19 - 58
+    0.19 - 512461
+    0.38 - 1632229
+    0.38 - 512406
+    1.92 - 3117
+    0.19 - 3392
+    0.19 - 479
+    2.11 - 534208
+  :status: 
+    92.86 - 200
+    2.04 - 204
+    1.75 - 302
+    0.44 - 304
+    2.77 - 0
+    0.15 - 404
+  server: 
+    0.24 - ECS (lhr/4B99)
+    0.24 - ECS (cdg/D637)
+    0.24 - ECS (cdg/D626)
+    3.40 - nginx/1.0.14
+    0.73 - ECS (cdg/D62B)
+    0.24 - ECS (lhr/4BAA)
+    0.24 - ECS (cdg/D6FA)
+    0.24 - ECS (lhr/4BC7)
+    0.24 - ECS (lhr/4BBF)
+    0.24 - ECS (lhr/4B8B)
+    3.40 - GFE/2.0
+    0.24 - ECS (lhr/4B9B)
+    0.24 - ECS (cdg/D631)
+    0.24 - ECS (lhr/4BBA)
+    0.24 - ECS (lhr/4BE4)
+    2.67 - ECS (lhr/4BCC)
+    0.49 - ECS (cdg/D6F4)
+    0.73 - ECS (cdg/448A)
+    0.49 - ECS (lhr/4BD2)
+    0.49 - ECS (lhr/4BB5)
+    0.49 - ECS (lhr/4B85)
+    0.49 - ECS (lhr/4BC8)
+    0.49 - ECS (cdg/D6F6)
+    0.24 - ECS (lhr/4BF2)
+    0.49 - ECS (lhr/4B86)
+    0.73 - ECS (lhr/4B9A)
+    0.24 - ECS (lhr/4BCA)
+    10.68 - DMS/1.0.42
+    0.24 - nginx
+    0.73 - ECS (cdg/D62C)
+    0.49 - ECS (cdg/D6F8)
+    1.21 - ECS (cdg/D6FB)
+    0.24 - ECS (cdg/D627)
+    0.24 - ECS (lhr/4BC3)
+    1.21 - ECS (cdg/D630)
+    0.24 - ECS (lhr/4BE3)
+    0.24 - ECS (lhr/4BDF)
+    0.24 - ECS (lhr/4BD3)
+    0.49 - ECS (lhr/4BB2)
+    0.73 - ECS (cdg/449F)
+    0.24 - ECS (cdg/D6F7)
+    0.49 - ECS (lhr/4BF3)
+    0.24 - ECS (lhr/4BCB)
+    0.73 - ECS (lhr/4BEA)
+    1.21 - ECS (cdg/D62D)
+    0.49 - ECS (cdg/D63D)
+    0.24 - ECS (cdg/D6F9)
+    0.24 - nginx/0.7.65
+    0.49 - ECS (lhr/4BE2)
+    0.24 - ECS (lhr/4BC2)
+    0.24 - ECS (lhr/4BA3)
+    0.24 - ECS (lhr/4BB3)
+    0.24 - lumberjack/0.7.6
+    0.49 - ECS (cdg/D634)
+    0.24 - ECS (lhr/4BEF)
+    0.73 - ECS (lhr/4B97)
+    0.73 - ECS (cdg/44A2)
+    0.49 - ECS (cdg/448C)
+    0.73 - ECS (cdg/4488)
+    0.97 - ECS (cdg/449D)
+    0.24 - ECS (cdg/D62E)
+    0.73 - ECS (lhr/4BF1)
+    0.73 - ECS (lhr/4B88)
+    0.24 - ECS (cdg/D635)
+    0.49 - ECS (lhr/4BA4)
+    0.73 - ECS (lhr/4BFD)
+    0.24 - ECS (lhr/4BA9)
+    0.24 - ECAcc (cdg/D65A)
+    0.24 - ECS (lhr/4BC5)
+    0.49 - ECS (lhr/4BF9)
+    0.49 - ECS (cdg/D628)
+    3.16 - ECS (lhr/4BE1)
+    0.73 - ECS (lhr/4B96)
+    0.24 - ECS (cdg/44A1)
+    1.46 - ECS (cdg/4489)
+    0.24 - ECS (lhr/4BB0)
+    0.24 - ECS (lhr/4BF6)
+    0.24 - ECS (lhr/4B95)
+    1.21 - ECS (cdg/44A0)
+    0.24 - ECS (lhr/4BE8)
+    0.49 - ECS (cdg/4490)
+    0.49 - ECS (lhr/4BFE)
+    0.24 - ECS (lhr/4BA8)
+    1.21 - ECS (cdg/D6FD)
+    0.24 - ECS (lhr/4BBE)
+    0.49 - ECS (lhr/4B91)
+    0.49 - ECS (cdg/D629)
+    0.24 - ECS (lhr/4BE0)
+    0.49 - ECS (cdg/449C)
+    0.24 - ECS (lhr/4BB1)
+    1.21 - ECS (lhr/4BCF)
+    0.49 - ECS (cdg/448F)
+    5.83 - Ezakus Server
+    1.46 - tfe
+    5.58 - Apache
+    0.49 - ECS (cdg/D63A)
+    0.24 - ECS (cdg/D6FE)
+    1.21 - Jetty(7.x.y-SNAPSHOT)
+    0.24 - ECS (lhr/4B9C)
+    0.73 - ECS (lhr/4BD7)
+    4.13 - ECS (cdg/449B)
+    0.49 - ECS (lhr/4B9E)
+    0.49 - ECS (cdg/D636)
+    0.73 - ECS (lhr/4B94)
+    0.24 - ECS (lhr/4BDC)
+    0.49 - ECS (lhr/4BD8)
+    0.24 - ECS (lhr/4BFC)
+    0.24 - ECS (lhr/4BF4)
+    0.97 - ECS (cdg/D632)
+    0.24 - ECS (lhr/4BDB)
+    0.49 - ECS (lhr/4BBC)
+    0.24 - ECS (lhr/4BA6)
+    0.73 - ECS (lhr/4BD0)
+    0.24 - ECS (lhr/4BB7)
+    0.24 - ECS (lhr/4BEE)
+    0.24 - ECS (lhr/4BA7)
+    0.73 - ECS (lhr/4B93)
+    0.49 - ECS (lhr/4BD9)
+    0.49 - ECS (cdg/D62A)
+    1.21 - ECS (cdg/D625)
+    0.24 - ECS (lhr/4BAC)
+    0.24 - ECS (lhr/4BE5)
+    2.91 - QS
+    0.24 - ECS (lhr/4B8A)
+    0.49 - ECS (lhr/4BC1)
+    0.49 - ECS (cdg/4485)
+    0.24 - ECS (lhr/4BAD)
+    0.49 - ECS (cdg/D6F5)
+    0.24 - ECS (lhr/4B92)
+    0.24 - ECS (lhr/4BDD)
+    0.24 - ECS (lhr/4B84)
+    0.49 - ECS (lhr/4BED)
+    0.24 - ECS (lhr/4BC9)
+  :scheme: 
+    96.06 - http
+    3.94 - https
+  x-dm-upstream-cache-status: 
+    63.04 - HIT
+    36.96 - MISS
+  connection: 
+    100.00 - keep-alive
+  x-requested-with: 
+    100.00 - XMLHttpRequest
+  cookie: 
+    11.45 - UID=beb775e-90.84.59.26-1347970961; UIDR=1347970961
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.10.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok; ql_n=0
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.5.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; masscast=null; ql_n=0; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.11.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok
+    0.76 - dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.7.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1
+    16.79 - aisakosId=2631acfe-41c6-41d1-ad3b-179988847323
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; masscast=null; ez=ok; ql_n=0; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.11.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.4.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; ql_n=0; masscast=null
+    4.58 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; masscast=null; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; ql_n=0; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.8.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    13.74 - e=UFhnkcCoAMEAAFq0R0cAAACL
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.4.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok; ql_n=0; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.1.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; ql_n=0; timezoneOffset=-7200
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.7.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; ql_n=0
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; ez=ok; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.6.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    3.82 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.4.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.10.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; masscast=null; ez=ok; ql_n=0; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.7.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; ez=ok; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.5.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.6.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok; ql_n=0
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; ql_n=0; masscast=null
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.9.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok; ql_n=0; masscast=null
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; masscast=null; ql_n=0; ez=ok; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.12.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=22=1; timezoneOffset=-7200
+    12.21 - uid=4A59B2FB26A9BAC0B3637C7C49764116E429AA5C; sid=FCBEADEE0FFC21576AA54B14D6313E6ECEAD42F2
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; ez=ok; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.10.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    8.40 - mc=50586791-697df-56a0f-734c3
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; masscast=null; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; ql_n=0; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.3.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok
+    6.11 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; masscast=null; ql_n=0; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.7.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.7.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ql_n=0; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.9.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    2.29 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; ez=ok; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.4.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; masscast=null; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; ez=ok; ql_n=0; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.3.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.3.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok; ql_n=0; masscast=null
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=M2MzMWQ1MTZ6O3VfzxbbCDVIPRqJG/4CZOdNVme2qlCbnBHiqtoQ.yZxF35LsXSfE4stZ1fvLc8NTZsAHgSYHq2ZtOj70MVVVsfCHhwz.0JzW4BGZ7/KJhRGs2R8I4.aSXiuHCDdOWPxuhA.dUnKEOQ9tru0XTXatigBTADsphPV; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.9.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; history_video_list_id=MjMyYWM5NmaAp3ETN2.YAcViIx9MHRb1ftECxIUF4UEE1n2mumND5hr99V.tZxy.7psumdV0OLuZajdaRIZq8n1FJ1Gi/LHz/4Omt/0//kF2E0xkEAMxLHMFX5L19QwxAD1DQ2eQ; ql_n=0; masscast=null; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.6.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; masscast=null; ql_n=0; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.2.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200
+    0.76 - tg=271033; lang=fr_FR; dmvk=505867907c39e; masscast=null; ql_n=0; v1st=A39D71926243279A; __qca=P0-685848963-1347970961925; cookie_enabled=y; __utma=244310544.1817747656.1347970962.1347970962.1347970962.1; __utmb=244310544.2.10.1347970962; __utmc=244310544; __utmz=244310544.1347970962.1.1.utmcsr=dailymotion.com|utmccn=(referral)|utmcmd=referral|utmcct=/fr; __utmv=244310544.|4=segment=28=1; timezoneOffset=-7200; ez=ok
+  x-powered-by: 
+    100.00 - PHP/5.3.13
+  :status-text: 
+    92.86 - OK
+    2.77 - unknown
+    0.44 - Not Modified
+    0.15 - Not Found
+    2.04 - No Content
+    1.75 - Moved Temporarily
+  :host: 
+    8.02 - www.dailymotion.com
+    1.75 - edge.quantserve.com
+    3.21 - s2.dmcdn.net
+    0.44 - cdn.api.twitter.com
+    0.29 - cleeng.com
+    1.75 - connect.facebook.net
+    0.44 - cdn.visiblemeasures.com
+    1.31 - prof.estat.com
+    4.23 - b.scorecardresearch.com
+    2.19 - platform.twitter.com
+    1.75 - pixel.quantserve.com
+    12.24 - 172.19.77.100:15871
+    1.75 - s-static.ak.facebook.com
+    1.17 - audience.visiblemeasures.com
+    17.78 - static1.dmcdn.net
+    19.97 - static2.dmcdn.net
+    0.29 - pagead2.googlesyndication.com
+    0.15 - proxy-49.dailymotion.com
+    0.44 - p.twitter.com
+    3.21 - w.estat.com
+    3.64 - s1.dmcdn.net
+    0.15 - vid.ec.dmcdn.net
+    2.48 - www.facebook.com
+    2.19 - video.od.visiblemeasures.com
+    1.75 - static.ak.facebook.com
+    3.50 - www.google-analytics.com
+    3.50 - dailymotion.ezakus.net
+    0.44 - r.twimg.com
+
+

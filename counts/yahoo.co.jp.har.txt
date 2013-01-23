@@ -87,7 +87,7 @@ date:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.8037
+ Variability: 0.7975
  Percent of Total Size: 8.925099
  Percent of Total Count: 7.161687
  Encoded: 
@@ -589,3 +589,1054 @@ set-cookie           1.0                                                3
 x-transaction        1.0                                                2                   
 x-frame-options      1.0                                                1                   
 x-fb-debug           1.0                                                1                   
+
+
+Header Frequencies:
+  content-length: 
+    0.71 - 9074
+    0.71 - 58130
+    0.71 - 2842
+    0.71 - 1266
+    0.71 - 40155
+    0.71 - 132
+    0.71 - 130
+    0.71 - 49341
+    0.71 - 134
+    0.71 - 2459
+    0.71 - 4226
+    0.71 - 3044
+    0.71 - 5075
+    1.42 - 39065
+    0.71 - 1913
+    0.71 - 16161
+    0.71 - 343
+    0.71 - 349
+    0.71 - 2466
+    0.71 - 4563
+    0.71 - 1956
+    0.71 - 125
+    1.42 - 126
+    0.71 - 1554
+    0.71 - 2999
+    0.71 - 58
+    0.71 - 2077
+    0.71 - 15199
+    0.71 - 370
+    0.71 - 2790
+    0.71 - 37897
+    0.71 - 418
+    0.71 - 1381
+    0.71 - 3000
+    0.71 - 49990
+    0.71 - 5016
+    2.13 - 6598
+    0.71 - 34108
+    0.71 - 115
+    0.71 - 1906
+    0.71 - 111
+    0.71 - 8015
+    0.71 - 4043
+    0.71 - 95124
+    0.71 - 3570
+    1.42 - 1525
+    0.71 - 2660
+    0.71 - 6068
+    0.71 - 360
+    0.71 - 2441
+    0.71 - 4198
+    0.71 - 2445
+    0.71 - 2448
+    0.71 - 40210
+    0.71 - 244
+    0.71 - 1930
+    0.71 - 242
+    0.71 - 102
+    0.71 - 24565
+    0.71 - 10033
+    0.71 - 3509
+    0.71 - 3462
+    0.71 - 5087
+    0.71 - 3091
+    0.71 - 4953
+    2.13 - 2067
+    0.71 - 22625
+    0.71 - 2454
+    0.71 - 571
+    0.71 - 2922
+    0.71 - 84501
+    0.71 - 258
+    0.71 - 64
+    1.42 - 65
+    0.71 - 38851
+    0.71 - 542
+    0.71 - 2561
+    0.71 - 4746
+    0.71 - 38390
+    0.71 - 248
+    0.71 - 11586
+    0.71 - 654
+    0.71 - 734
+    0.71 - 188
+    0.71 - 189
+    0.71 - 3750
+    0.71 - 13244
+    0.71 - 13642
+    0.71 - 49413
+    0.71 - 2189
+    0.71 - 6059
+    0.71 - 1459
+    0.71 - 72174
+    0.71 - 5117
+    0.71 - 4963
+    0.71 - 5111
+    0.71 - 39870
+    0.71 - 3064
+    0.71 - 3063
+    0.71 - 7172
+    1.42 - 17825
+    0.71 - 237
+    0.71 - 1814
+    0.71 - 1052
+    0.71 - 2340
+    0.71 - 1965
+    0.71 - 44
+    2.13 - 43
+    0.71 - 2740
+    0.71 - 47909
+    0.71 - 1561
+    0.71 - 10839
+    0.71 - 1750
+    0.71 - 777
+    0.71 - 2721
+    0.71 - 18659
+    1.42 - 17172
+    0.71 - 2977
+    0.71 - 21367
+    0.71 - 25699
+    0.71 - 2333
+    0.71 - 2334
+    0.71 - 36408
+    0.71 - 354
+    0.71 - 7501
+    0.71 - 31033
+    0.71 - 1573
+    0.71 - 7462
+    0.71 - 9691
+  via: 
+    0.81 - HTTP/1.1 ytsorigin1301.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1302.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3422.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3420.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin1303.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1319.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3502.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3414.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3419.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3502.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3503.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3419.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3440.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3410.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cSsSfU])
+    0.81 - HTTP/1.1 l7cache3431.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3418.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin1303.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1315.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin3502.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3419.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cSsNfU]), HTTP/1.1 yts3404.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1302.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1319.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin3403.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3404.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1303.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1314.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3433.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3416.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1201.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1311.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3501.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3420.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3503.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3453.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3413.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3503.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3404.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1201.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1305.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin1302.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1318.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin1301.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1314.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1201.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1315.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin1202.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1314.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3403.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3417.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3417.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin3502.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3503.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3417.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3502.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3416.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1202.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1315.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin1201.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1318.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3418.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3452.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3415.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3423.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3410.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3503.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3501.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3417.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cSsNfU])
+    0.81 - HTTP/1.1 ytsorigin3502.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3417.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3501.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3503.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3414.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3416.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3419.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1202.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1318.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1302.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1316.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3405.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3408.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1201.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1302.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin3503.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3420.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1303.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1318.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1303.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1302.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3420.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3408.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    4.07 - HTTP/1.1 ytsorigin1301.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1318.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3417.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3403.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cSsNfU]), HTTP/1.1 yts3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin1203.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1318.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3403.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3415.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3451.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3401.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    2.44 - HTTP/1.1 ytsorigin3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3403.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3419.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3443.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3413.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1202.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1310.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3404.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1201.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1306.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1302.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1315.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    3.25 - HTTP/1.1 ytsorigin3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3418.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3403.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cSsNfU]), HTTP/1.1 yts3420.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1203.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1309.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3501.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1302.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1314.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3501.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3419.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1202.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1316.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1203.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1314.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin3403.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3414.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 l7cache3424.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ]), HTTP/1.1 l7switch3409.img.umd.yahoo.co.jp (YahooTrafficServer/1.20.13 [cHs f ])
+    3.25 - HTTP/1.1 ytsorigin3402.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ]), HTTP/1.1 yts3401.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    0.81 - HTTP/1.1 ytsorigin1303.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts1309.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+    1.63 - HTTP/1.1 ytsorigin3501.img.bbt.yahoo.co.jp (YahooTrafficServer/1.19.11 [cHs f ]), HTTP/1.1 yts3417.img.bbt.yahoo.co.jp (YahooTrafficServer/1.20.10 [cHs f ])
+  accept-language: 
+    100.00 - en-US,en;q=0.5
+  content-transfer-encoding: 
+    100.00 - binary
+  vary: 
+    98.88 - Accept-Encoding
+    1.12 - User-Agent,Accept-Encoding
+  accept: 
+    66.46 - image/png,image/*;q=0.8,*/*;q=0.5
+    2.44 - text/css,*/*;q=0.1
+    9.15 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    21.95 - */*
+  p3p: 
+    43.33 - policyref="http://privacy.yahoo.co.jp/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE GOV"
+    16.67 - CP="CAO DSP LAW CURa ADMa DEVa TAIa PSAa PSDa IVAa IVDa OUR BUS IND UNI COM NAV INT"
+    40.00 - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+  x-fb-debug: 
+    100.00 - rF76OrbF3LZnPsuLh+PbH9FfuEE+dciHHwpI+ZiOnZw=
+  nncoection: 
+    100.00 - close
+  :version: 
+    0.30 - HTTP/1.0
+    99.70 - HTTP/1.1
+  x-xrds-location: 
+    100.00 - http://open.login.yahoo.co.jp/openid20/www.yahoo.co.jp/xrds
+  x-content-type-options: 
+    100.00 - nosniff
+  user-agent: 
+    100.00 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0
+  etag: 
+    25.00 - "377d257f2d2e294916143c069141c1c5:1328738114"
+    12.50 - "497e201fe295613554cd92defc844e51"
+    12.50 - "71f8fbeed96e2ac38d4638d6c6e2ece4:1351146129"
+    12.50 - "eeaccca8778f3be533564253af185e3e"
+    12.50 - "2303f17798f0116b59cd53fbb5f89873:1351145901"
+    12.50 - "8387ae31da8d953f1223ed70a0922e74"
+    12.50 - "8368eacadbc3f4346427d9e5d658e1df"
+  location: 
+    100.00 - http://www.yahoo.co.jp/
+  :method: 
+    0.61 - post
+    99.39 - get
+  cache-control: 
+    0.62 - public, max-age=1209988
+    0.62 - public, max-age=1209979
+    0.62 - public, max-age=1209985
+    1.24 - public, max-age=1209980
+    0.62 - public, max-age=1209800
+    0.62 - public, max-age=1209669
+    0.62 - public, max-age=1209668
+    0.62 - public, max-age=1209786
+    1.86 - max-age=5184000
+    0.62 - public, max-age=287
+    0.62 - public, max-age=1209660
+    0.62 - public, max-age=1209789
+    0.62 - public, max-age=1209665
+    0.62 - public, max-age=1209709
+    0.62 - public, max-age=1209900
+    0.62 - public, max-age=1209879
+    0.62 - public, max-age=1209703
+    0.62 - public, max-age=1210175
+    0.62 - public, max-age=1210173
+    0.62 - public, max-age=1209704
+    0.62 - public, max-age=1210003
+    1.24 - public, max-age=1210002
+    0.62 - public, max-age=1210004
+    0.62 - public, max-age=1210008
+    0.62 - public, max-age=1209609
+    1.24 - public, max-age=1209684
+    0.62 - public, max-age=1209925
+    0.62 - public, max-age=1210083
+    0.62 - public, max-age=1209676
+    0.62 - public, max-age=1209674
+    0.62 - public, max-age=1209673
+    0.62 - public, max-age=1209936
+    0.62 - public, max-age=1210166
+    0.62 - public, max-age=1210160
+    0.62 - public, max-age=1209854
+    0.62 - public, max-age=1209859
+    1.24 - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+    0.62 - public, max-age=1209692
+    0.62 - public, max-age=1209931
+    0.62 - public, max-age=1209824
+    0.62 - public, max-age=1209603
+    0.62 - public, max-age=1210200
+    0.62 - public, max-age=1209600
+    0.62 - public, max-age=1209605
+    0.62 - public, max-age=1210153
+    0.62 - public, max-age=1209608
+    0.62 - public
+    0.62 - public, max-age=1210029
+    0.62 - public, max-age=1210140
+    0.62 - public, max-age=1210141
+    0.62 - public, max-age=1209991
+    0.62 - must-revalidate, max-age=490
+    0.62 - public, max-age=1209843
+    0.62 - public, max-age=1209758
+    0.62 - public, max-age=1209751
+    0.62 - public, max-age=1209750
+    0.62 - public, max-age=1209757
+    0.62 - public, max-age=1209756
+    0.62 - public, max-age=1210133
+    0.62 - public, max-age=1210038
+    0.62 - public, max-age=1210039
+    0.62 - public, max-age=1209835
+    1.24 - public, max-age=1209839
+    0.62 - public, max-age=1210012
+    8.07 - private
+    3.11 - max-age=1209600, public
+    3.11 - max-age=10800
+    0.62 - public, max-age=1800
+    0.62 - max-age=2592000
+    1.24 - public, max-age=315569260
+    0.62 - public, max-age=1209746
+    0.62 - public, max-age=1209949
+    0.62 - public, max-age=1209625
+    0.62 - private, no-cache, no-store, must-revalidate
+    0.62 - public, max-age=1209627
+    1.24 - public, max-age=1209943
+    0.62 - public, max-age=1209748
+    0.62 - public, max-age=1209975
+    0.62 - public, max-age=1210125
+    0.62 - public, max-age=1209973
+    0.62 - public, max-age=1209801
+    0.62 - public, max-age=1209978
+    0.62 - public, max-age=1210176
+    1.24 - public, max-age=1209791
+    0.62 - public, max-age=1209876
+    0.62 - public, max-age=1209884
+    0.62 - public, max-age=1209639
+    1.24 - no-cache
+    0.62 - public, max-age=1210171
+    0.62 - public, max-age=1210047
+    0.62 - public, max-age=1209631
+    0.62 - public, max-age=1209635
+    0.62 - public, max-age=1210118
+    0.62 - public, max-age=1209896
+    0.62 - public, max-age=1209970
+    0.62 - max-age=573085, public, no-transform, must-revalidate
+    0.62 - no-cache, no-store, must-revalidate, private
+    0.62 - public, max-age=1209641
+    0.62 - public, max-age=1209721
+    0.62 - public, max-age=1209891
+    0.62 - public, max-age=1209724
+    0.62 - public, max-age=1209897
+    1.24 - public, max-age=1209726
+    0.62 - public, max-age=1209727
+    1.24 - public, max-age=1210054
+    0.62 - no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+    0.62 - public, max-age=1209994
+    0.62 - public, max-age=1210104
+    0.62 - private, no-cache, no-store, must-revalidate, max-age=315360000
+    1.24 - max-age=31536000
+    0.62 - public, max-age=1209794
+    0.62 - must-revalidate, max-age=129
+    0.62 - public, max-age=1209716
+    3.11 - no-cache, must-revalidate, private
+    1.24 - public, max-age=1209849
+    0.62 - public, max-age=1209650
+    0.62 - public, max-age=1209913
+    0.62 - public, max-age=1209868
+    0.62 - public, max-age=1209715
+    1.24 - public, max-age=1209730
+    0.62 - public, max-age=1209713
+  status: 
+    100.00 - 200 OK
+  accept-encoding: 
+    100.00 - gzip, deflate
+  x-cache: 
+    100.00 - MISS from proxy00.amd.ogk.yahoo.co.jp
+  transfer-encoding: 
+    100.00 - chunked
+  set-cookie: 
+    33.33 - YJNEWSFB=d=g52f45b4EjeJqzak676NkVYuFf6EMD66FMZIfmpIG32ywhp.ZRx6EAf7vGDLjqk7eQGKmGgvFcgo&v=1; expires=Tue, 04-Nov-2014 13:26:29 GMT; path=/; domain=headlines.yahoo.co.jp
+    33.33 - guest_id=v1%3A135194918249685081; Expires=Mon, 3-Nov-2014 13:26:22 GMT; Path=/; Domain=.twitter.com
+    33.33 - guest_id=v1%3A135194918258532307; Expires=Mon, 3-Nov-2014 13:26:22 GMT; Path=/; Domain=.twitter.com
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    0.74 - Sat, 03 Nov 2012 13:34:32 GMT
+    8.82 - Sat, 17 Nov 2012 13:26:19 GMT
+    0.74 - Sat, 03 Nov 2012 13:27:16 GMT
+    0.74 - Wed, 02 Jan 2013 13:26:23 GMT
+    0.74 - Sat, 03 Nov 2012 15:49:45 GMT
+    2.94 - Sat, 17 Nov 2012 13:26:42 GMT
+    6.62 - Sat, 17 Nov 2012 13:26:27 GMT
+    0.74 - Sat, 17 Nov 2012 13:22:49 GMT
+    0.74 - Sat, 03 Nov 2012 15:50:07 GMT
+    10.29 - Sat, 17 Nov 2012 13:26:13 GMT
+    1.47 - Tue, 31 Mar 1981 05:00:00 GMT
+    0.74 - Sat, 03 Nov 2012 13:28:39 GMT
+    6.62 - Sat, 17 Nov 2012 13:26:36 GMT
+    0.74 - Sat, 03 Nov 2012 14:33:43 GMT
+    3.68 - Sat, 17 Nov 2012 13:26:53 GMT
+    0.74 - Wed, 02 Jan 2013 13:26:13 GMT
+    0.74 - Sat, 17 Nov 2012 06:32:12 GMT
+    0.74 - Sat, 03 Nov 2012 13:31:06 GMT
+    11.76 - Sat, 17 Nov 2012 13:26:17 GMT
+    11.03 - Sat, 17 Nov 2012 13:26:29 GMT
+    0.74 - Fri, 16 Nov 2012 08:11:21 GMT
+    0.74 - Sat, 03 Nov 2012 13:34:36 GMT
+    2.21 - Sat, 17 Nov 2012 13:26:49 GMT
+    8.82 - Sat, 17 Nov 2012 13:26:12 GMT
+    0.74 - Fri, 16 Nov 2012 07:50:37 GMT
+    2.21 - Sat, 17 Nov 2012 13:26:30 GMT
+    0.74 - Sat, 03 Nov 2012 13:26:22 GMT
+    0.74 - Wed, 02 Jan 2013 13:26:31 GMT
+    4.41 - Sat, 17 Nov 2012 13:26:28 GMT
+    0.74 - Mon, 03 Dec 2012 13:02:48 GMT
+    1.47 - -1
+    0.74 - Tue, 01 Nov 2022 13:26:12 GMT
+    0.74 - Sat, 10 Nov 2012 04:37:48 GMT
+    0.74 - Sat, 17 Nov 2012 13:21:58 GMT
+    0.74 - Sat, 03 Nov 2012 15:54:12 GMT
+    2.21 - Sat, 17 Nov 2012 13:26:18 GMT
+  last-modified: 
+    2.21 - Fri, 24 Aug 2012 08:06:57 GMT
+    0.74 - Sat, 03 Nov 2012 13:14:46 GMT
+    0.74 - Thu, 25 Oct 2012 03:19:32 GMT
+    0.74 - Tue, 13 Sep 2011 04:45:00 GMT
+    0.74 - Wed, 19 Dec 2007 03:34:50 GMT
+    0.74 - Wed, 17 Oct 2012 02:23:05 GMT
+    0.74 - Thu, 17 May 2007 02:50:08 GMT
+    0.74 - Wed, 31 Oct 2012 06:18:39 GMT
+    0.74 - Wed, 24 Oct 2012 03:27:32 GMT
+    0.74 - Sat, 03 Nov 2012 13:19:40 GMT
+    0.74 - Wed, 24 Oct 2012 03:14:31 GMT
+    0.74 - Fri, 16 Jun 2006 06:51:47 GMT
+    0.74 - Thu, 23 Jun 2011 07:07:35 GMT
+    0.74 - Thu, 20 Sep 2012 09:12:03 GMT
+    0.74 - Mon, 22 Oct 2012 03:17:32 GMT
+    0.74 - Fri, 03 Aug 2012 09:06:23 GMT
+    0.74 - Wed, 19 Mar 2008 07:24:54 GMT
+    0.74 - Fri, 11 Nov 2005 08:51:19 GMT
+    0.74 - Fri, 02 Nov 2012 09:36:43 GMT
+    0.74 - Wed, 24 Oct 2012 03:15:04 GMT
+    0.74 - Thu, 27 Sep 2012 05:53:29 GMT
+    0.74 - Mon, 29 Oct 2012 07:31:33 GMT
+    0.74 - Mon, 23 Jan 2012 11:27:34 GMT
+    0.74 - Wed, 04 Feb 2009 04:55:04 GMT
+    0.74 - Sat, 03 Nov 2012 13:02:47 GMT
+    0.74 - Thu, 25 Oct 2012 06:18:18 GMT
+    0.74 - Sat, 03 Nov 2012 12:57:44 GMT
+    0.74 - Mon, 30 Jan 2012 08:30:32 GMT
+    1.47 - Fri, 26 Nov 2010 05:21:38 GMT
+    0.74 - Wed, 24 Oct 2012 03:26:02 GMT
+    0.74 - Sat, 03 Nov 2012 12:54:12 GMT
+    0.74 - Tue, 26 May 2009 06:39:11 GMT
+    0.74 - Fri, 02 Nov 2012 09:36:25 GMT
+    0.74 - Mon, 11 Jun 2012 12:19:04 GMT
+    0.74 - Mon, 24 Jan 2011 09:04:39 GMT
+    0.74 - Fri, 29 Oct 2010 04:57:02 GMT
+    0.74 - Thu, 08 Jan 2009 05:39:05 GMT
+    0.74 - Wed, 24 Oct 2012 03:16:01 GMT
+    0.74 - Wed, 05 Nov 2008 05:02:19 GMT
+    0.74 - Wed, 17 Feb 2010 01:58:27 GMT
+    0.74 - Wed, 24 Oct 2012 03:22:02 GMT
+    0.74 - Wed, 24 Oct 2012 03:15:34 GMT
+    0.74 - Thu, 06 Aug 2009 06:40:20 GMT
+    0.74 - Mon, 06 Aug 2012 11:23:56 GMT
+    0.74 - Wed, 24 Oct 2012 03:23:02 GMT
+    0.74 - Wed, 19 Dec 2007 03:34:43 GMT
+    0.74 - Tue, 30 Oct 2012 03:13:04 GMT
+    0.74 - Tue, 03 Jun 2008 09:14:01 GMT
+    0.74 - Wed, 14 Sep 2011 03:40:00 GMT
+    0.74 - Wed, 24 Oct 2012 03:21:32 GMT
+    0.74 - Thu, 31 May 2007 10:55:37 GMT
+    0.74 - Tue, 23 Oct 2012 06:00:52 GMT
+    0.74 - Wed, 24 Oct 2012 03:31:32 GMT
+    0.74 - Mon, 20 Apr 2009 03:09:14 GMT
+    0.74 - Wed, 03 Oct 2012 10:39:40 GMT
+    0.74 - Wed, 24 Oct 2012 03:21:34 GMT
+    0.74 - Fri, 28 Sep 2012 07:18:41 GMT
+    0.74 - Fri, 02 Nov 2012 07:48:22 GMT
+    0.74 - Wed, 31 Oct 2012 14:38:09 GMT
+    0.74 - Fri, 31 Aug 2012 09:28:33 GMT
+    0.74 - Wed, 04 Feb 2009 04:55:07 GMT
+    0.74 - Fri, 14 Sep 2012 05:44:17 GMT
+    2.21 - Tue, 30 Oct 2012 03:21:03 GMT
+    0.74 - Mon, 29 Oct 2012 10:49:53 GMT
+    1.47 - Wed, 08 Feb 2012 21:55:14 GMT
+    0.74 - Thu, 19 Mar 2009 06:27:02 GMT
+    0.74 - Thu, 04 Oct 2012 01:56:15 GMT
+    0.74 - Wed, 24 Oct 2012 03:13:01 GMT
+    0.74 - Sat, 03 Nov 2012 01:33:21 GMT
+    0.74 - Wed, 08 Apr 2009 06:33:03 GMT
+    0.74 - Wed, 24 Oct 2012 03:12:33 GMT
+    1.47 - Wed, 15 Feb 2012 01:50:20 GMT
+    0.74 - Fri, 11 Jun 2010 09:21:29 GMT
+    0.74 - Sat, 03 Nov 2012 04:37:48 GMT
+    0.74 - Sat, 03 Nov 2012 12:49:46 GMT
+    0.74 - Thu, 01 Dec 2011 09:14:48 GMT
+    0.74 - Fri, 02 Nov 2012 09:48:09 GMT
+    0.74 - Fri, 29 Jul 2011 06:15:10 GMT
+    0.74 - Wed, 11 Jan 2012 08:36:26 GMT
+    0.74 - Mon, 22 Oct 2012 03:19:32 GMT
+    0.74 - Thu, 08 Jan 2009 05:41:05 GMT
+    0.74 - Fri, 14 Sep 2012 05:48:04 GMT
+    0.74 - Fri, 24 Aug 2012 08:06:56 GMT
+    0.74 - Fri, 12 Oct 2012 06:30:49 GMT
+    0.74 - Thu, 26 May 2011 08:25:04 GMT
+    0.74 - Mon, 12 Mar 2012 08:21:35 GMT
+    0.74 - Wed, 24 Oct 2012 03:29:02 GMT
+    0.74 - Wed, 19 Mar 2008 07:24:44 GMT
+    1.47 - Tue, 02 Oct 2012 13:59:07 GMT
+    0.74 - Wed, 19 Dec 2007 03:35:16 GMT
+    0.74 - Wed, 27 Jun 2012 03:31:06 GMT
+    0.74 - Wed, 11 Apr 2012 09:32:17 GMT
+    0.74 - Mon, 01 Oct 2012 03:27:20 GMT
+    1.47 - Fri, 14 Sep 2012 05:44:28 GMT
+    0.74 - Tue, 12 Jun 2007 10:31:42 GMT
+    0.74 - Mon, 28 Nov 2011 09:51:36 GMT
+    0.74 - Wed, 01 Feb 2012 09:32:26 GMT
+    0.74 - Mon, 20 Apr 2009 03:09:10 GMT
+    0.74 - Tue, 13 Dec 2011 08:41:14 GMT
+    0.74 - Thu, 25 Oct 2012 03:11:02 GMT
+    0.74 - Wed, 24 Oct 2012 03:11:03 GMT
+    0.74 - Wed, 19 Mar 2008 07:24:03 GMT
+    0.74 - Wed, 22 Aug 2012 06:15:24 GMT
+    0.74 - Mon, 25 Apr 2011 05:33:27 GMT
+    0.74 - Thu, 26 May 2011 08:52:03 GMT
+    0.74 - Tue, 30 Oct 2012 03:10:33 GMT
+    0.74 - Wed, 24 Oct 2012 03:18:02 GMT
+    0.74 - Wed, 24 Oct 2012 03:15:33 GMT
+    0.74 - Thu, 04 Oct 2012 05:01:41 GMT
+    1.47 - Thu, 25 Oct 2012 02:19:38 GMT
+    0.74 - Thu, 25 Oct 2012 06:22:09 GMT
+    0.74 - Tue, 27 Feb 2007 09:56:58 GMT
+    1.47 - Sat, 03 Nov 2012 13:26:22 GMT
+    0.74 - Mon, 09 Jul 2012 10:22:34 GMT
+    0.74 - Tue, 30 Oct 2012 03:11:33 GMT
+    2.94 - Tue, 30 Oct 2012 03:19:02 GMT
+    0.74 - Wed, 26 Sep 2012 05:54:31 GMT
+    0.74 - Tue, 27 Feb 2007 09:56:30 GMT
+    0.74 - Fri, 30 Sep 2011 08:45:44 GMT
+    0.74 - Sat, 03 Nov 2012 12:49:45 GMT
+    0.74 - Tue, 18 Sep 2012 06:24:24 GMT
+    0.74 - Wed, 17 Oct 2007 02:47:40 GMT
+  cookie: 
+    51.43 - B=76j09a189a6h4&b=3&s=0b
+    22.86 - pid=v3:1351947306477664316206054; k=10.35.101.123.1351947536129989; guest_id=v1%3A135194753658491573; __utma=43838368.2140315505.1351947542.1351947542.1351947542.1; __utmb=43838368.2.10.1351947542; __utmz=43838368.1351947542.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    11.43 - B=76j09a189a6h4&b=3&s=0b; YJTOPICSFBREAD=d=juTus3MJdA6fAPKQn3MJyoWvkTaY6I2RngPiVKE3BMv8AFX.C4TMg0utwM_uXg_sKn7y2yDVFKE-&v=1
+    14.29 - B=76j09a189a6h4&b=3&s=0b; YJNEWSCOMMENT=d=06yLIwT4EjfCUHM_ZATPTTC.be6FwFeXux__KeWeqlDK.dHwKDQYqgJFHj9.HJlNGmTwWgk.h4h.sU8V_TDfRcrHwDjLWrrsKoxSuxiWaUP8PvEUAbJUe9xIk79LoWKr6tlDjWRkyBVLbqWqtJB_axSkadUO&v=1; YJNEWSFB=d=g52f45b4EjeJqzak676NkVYuFf6EMD66FMZIfmpIG32ywhp.ZRx6EAf7vGDLjqk7eQGKmGgvFcgo&v=1
+  pragma: 
+    68.75 - no-cache
+    31.25 - public
+  date: 
+    0.61 - Sat, 03 Nov 2012 13:26:09 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:08 GMT
+    1.23 - Sat, 03 Nov 2012 13:17:29 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:53 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:38 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:28 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:51 GMT
+    0.61 - Sat, 03 Nov 2012 13:16:41 GMT
+    0.61 - Sat, 03 Nov 2012 13:21:53 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:52 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:35 GMT
+    1.23 - Sat, 03 Nov 2012 13:25:48 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:41 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:30 GMT
+    0.61 - Sat, 03 Nov 2012 13:25:11 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:25 GMT
+    1.23 - Sat, 03 Nov 2012 13:25:19 GMT
+    0.61 - Sat, 03 Nov 2012 13:18:52 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:02 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:27 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:24 GMT
+    0.61 - Sat, 03 Nov 2012 13:21:29 GMT
+    1.23 - Sat, 03 Nov 2012 13:26:43 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:46 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:43 GMT
+    0.61 - Sat, 03 Nov 2012 13:18:50 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:52 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:37 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:44 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:32 GMT
+    0.61 - Sat, 03 Nov 2012 13:18:43 GMT
+    0.61 - Sat, 03 Nov 2012 12:54:12 GMT
+    0.61 - Sat, 03 Nov 2012 13:17:35 GMT
+    0.61 - Sat, 03 Nov 2012 13:17:04 GMT
+    2.45 - Sat, 03 Nov 2012 13:26:12 GMT
+    0.61 - Sat, 03 Nov 2012 13:21:16 GMT
+    0.61 - Sat, 03 Nov 2012 13:25:14 GMT
+    0.61 - Sat, 03 Nov 2012 13:25:22 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:59 GMT
+    0.61 - Sat, 03 Nov 2012 13:21:38 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:18 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:27 GMT
+    0.61 - Sat, 03 Nov 2012 12:50:06 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:10 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:07 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:53 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:30 GMT
+    0.61 - Sat, 03 Nov 2012 13:21:21 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:12 GMT
+    0.61 - Sat, 03 Nov 2012 11:33:43 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:35 GMT
+    0.61 - Sat, 03 Nov 2012 13:17:16 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:53 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:03 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:11 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:18 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:52 GMT
+    1.84 - Sat, 03 Nov 2012 13:26:29 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:45 GMT
+    0.61 - Sat, 03 Nov 2012 13:17:43 GMT
+    0.61 - Sat, 03 Nov 2012 13:21:36 GMT
+    1.23 - Sat, 03 Nov 2012 13:21:45 GMT
+    1.23 - Sat, 03 Nov 2012 13:26:49 GMT
+    0.61 - Sat, 03 Nov 2012 13:17:55 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:34 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:48 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:23 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:42 GMT
+    1.23 - Sat, 03 Nov 2012 13:26:23 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:29 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:46 GMT
+    0.61 - Sat, 03 Nov 2012 13:21:58 GMT
+    0.61 - Sat, 03 Nov 2012 13:17:18 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:11 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:58 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:28 GMT
+    0.61 - Sat, 03 Nov 2012 13:16:42 GMT
+    1.23 - Sat, 03 Nov 2012 13:26:36 GMT
+    0.61 - Sat, 03 Nov 2012 13:25:40 GMT
+    0.61 - Sat, 03 Nov 2012 13:17:50 GMT
+    0.61 - Sat, 03 Nov 2012 06:32:12 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:29 GMT
+    1.84 - Sat, 03 Nov 2012 13:23:42 GMT
+    1.84 - Sat, 03 Nov 2012 13:25:03 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:54 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:45 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:09 GMT
+    3.07 - Sat, 03 Nov 2012 13:26:17 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:07 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:04 GMT
+    1.23 - Sat, 03 Nov 2012 13:24:30 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:20 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:59 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:08 GMT
+    0.61 - Sat, 03 Nov 2012 13:16:39 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:13 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:59 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:21 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:16 GMT
+    0.61 - Sat, 03 Nov 2012 13:25:38 GMT
+    0.61 - Sat, 03 Nov 2012 13:17:34 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:31 GMT
+    0.61 - Sat, 03 Nov 2012 13:18:53 GMT
+    0.61 - Sat, 03 Nov 2012 10:34:36 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:37 GMT
+    2.45 - Sat, 03 Nov 2012 13:26:19 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:14 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:30 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:52 GMT
+    0.61 - Sat, 03 Nov 2012 13:16:19 GMT
+    0.61 - Sat, 03 Nov 2012 13:24:19 GMT
+    0.61 - Sat, 03 Nov 2012 13:20:47 GMT
+    0.61 - Sat, 03 Nov 2012 13:02:48 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:43 GMT
+    0.61 - Sat, 03 Nov 2012 13:25:54 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:01 GMT
+    0.61 - Fri, 02 Nov 2012 07:50:37 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:39 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:31 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:19 GMT
+    1.23 - Sat, 03 Nov 2012 13:26:21 GMT
+    3.68 - Sat, 03 Nov 2012 13:26:22 GMT
+    1.23 - Sat, 03 Nov 2012 13:24:22 GMT
+    0.61 - Sat, 03 Nov 2012 13:19:30 GMT
+    0.61 - Sat, 03 Nov 2012 13:23:16 GMT
+    0.61 - Sat, 03 Nov 2012 13:18:38 GMT
+    0.61 - Fri, 02 Nov 2012 08:11:21 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:48 GMT
+    0.61 - Sat, 03 Nov 2012 13:26:11 GMT
+    0.61 - Sat, 03 Nov 2012 12:49:45 GMT
+    0.61 - Sat, 03 Nov 2012 13:22:13 GMT
+  :path: 
+    0.61 - /images/topics/wiki/nestopics_icon_40.png
+    0.61 - /oi?s=anemos_news00549&i=2078709537&w=&apg=1&t=m&u=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fc%3Dmoto%26t%3Dl&ref=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /images/news/bylines/v201209/main/bnr/bnr_300x90.png
+    0.61 - /images/tech/bcn1.js
+    0.61 - /images/video-topics/rec/1211/03_e01.jpg
+    0.61 - /hl?c=moto&t=l
+    0.61 - /images/mh/news.gif
+    0.61 - /sc/show?func=getSocialModule&callback=YJNEWS.Util.execCallback&noCacheIE=1351949189660
+    0.61 - /yui/jp/ult/arrow.gif
+    0.61 - /atoms/71/f8/fb/ee/71f8fbeed96e2ac38d4638d6c6e2ece4.jpg
+    0.61 - /bdv/3514/1070875/20121102/di3ufilunjw9ul9nrygs-a.jpg
+    0.61 - /images/media/ymui/img/photoNew_45x15.gif
+    0.61 - /bdv/30/1072095/20121029/_wzyz3fszhqvouc6tuav-a.jpg
+    0.61 - /lib/news/jquery/jquery.js
+    0.61 - /bdv/26008/1077726/20121029/zuabaglgdswip3wx_faw-a.jpg
+    0.61 - /images/top/sp2/pr/tb_bg-120110.png
+    0.61 - /lib/news/widgets/tweet_button.html?_=1351949189636&count=horizontal&id=twitter_tweet_button_0&lang=ja&original_referer=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base&redirect=http%3A%2F%2Frd.yahoo.co.jp%2Fmedia%2Fnews%2Fsocialbutton%2Ftwitter%2Fpc%2Fdetail%2FSIG%3D11rdd1k7b%2F*&text=%E5%B7%A8%E4%BA%BA%E3%81%8C%EF%BC%93%E5%B9%B4%E3%81%B6%E3%82%8A%E6%97%A5%E6%9C%AC%E4%B8%80%EF%BC%81%E5%BE%A9%E5%B8%B0%E3%81%AE%E9%98%BF%E9%83%A8%E3%81%8C%E6%B1%BA%E5%8B%9D%E6%89%93%EF%BC%88%E3%82%B5%E3%83%B3%E3%82%B1%E3%82%A4%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%EF%BC%89%20-%20Y!%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9&url=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base
+    0.61 - /images/top/sp2/uhd/homepage_bg-120123.png
+    0.61 - /lib/news/jquery/jquery.template.js
+    0.61 - /images/media/ymui/img/carrrot_2.png
+    0.61 - /bdv/164354/1080825/20121101/hii0znrxvsbx0dt01k_g-a.gif
+    0.61 - /images/news/v1/sprite_bgRTSearchBox.png
+    0.61 - /oi?t=j&s=anemos_customkw00359&i=tct
+    0.61 - /images/topics/wiki/bullet_list.gif
+    0.61 - /bdv/yahoo/javascript/yfa_visual5.js
+    0.61 - /images/top/sp2/clr/1/clr-121025.png
+    0.61 - /images/bookstore/common/special/2012/0829_05/banner/84x84_2.jpg
+    0.61 - /images/sicons/movie16.gif
+    0.61 - /images/rapid/1.5.0/ult.js
+    0.61 - /images/media/ymui/img/lineWide_4x1.gif
+    0.61 - /images/weather/general/transparent_s/sun.gif
+    0.61 - /images/new2.gif
+    0.61 - /bdv/30/1072106/20121029/hczia9w6zzi3jskznvxo-a.jpg
+    0.61 - /images/news/twitter/tw_spo_300_60.jpg
+    0.61 - /bdv/71629/1075880/20121029/vstketkrv3fci_zfj0fb-a.jpg
+    0.61 - /jot?l=%7B%22_category_%22%3A%22tfw_widgets%22%2C%22event_name%22%3A%22followbutton%3Aimpression%22%2C%22dnt%22%3Afalse%2C%22_%22%3A%221351949181073%22%2C%22id%22%3A%22twitter-widget-1%22%2C%22lang%22%3A%22ja%22%2C%22screen_name%22%3A%22YahooNewsTopics%22%2C%22show_count%22%3A%22false%22%2C%22show_screen_name%22%3A%22true%22%2C%22size%22%3A%22m%22%2C%22twttr_variant%22%3A%222.0%22%2C%22logged_in%22%3Afalse%2C%22referrer%22%3A%22http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494%22%2C%22widget%22%3Atrue%2C%22pid%22%3A%22v3%3A1351947306477664316206054%22%7D
+    0.61 - /images/topics/wiki/ytopics_sprite_backgrounds.png
+    0.61 - /widgets/tweet_button.1351848862.html
+    0.61 - /js/yjaxc.js
+    0.61 - /bdv/71629/1074517/20121029/qym5s_fuonkwfh4vw608-a.gif
+    0.61 - /lib/news/widgets/images/tweet.png
+    0.61 - /bdv/2959/1085127/20121102/ilaj2_d_zo_9bjginqty-a.gif
+    0.61 - /bdv/164354/1084075/20121101/4feasfvz47csxcoydlvl-a.jpg
+    0.61 - /ja_JP/all.js
+    0.61 - /images/bookstore/common/special/2012/0829_05/banner/84x84_5.jpg
+    0.61 - /images/security/pf/yjsecure.js
+    0.61 - /images/bookstore/common/special/2012/0829_05/banner/84x84_3.jpg
+    0.61 - /images/bookstore/common/special/2012/0829_05/banner/84x84_1.jpg
+    0.61 - /bdv/193/1072227/20121029/uyzwkpexjszyi2zgct4p-a.gif
+    0.61 - /images/news/v1/yn_sprite_background.png
+    0.61 - /images/news/module/md20120709_gsearch.jpg
+    0.61 - /bdv/30/1072134/20121029/qv2c_lhjbra0qr5ps55w-a.jpg
+    0.61 - /bdv/71629/1082190/20121029/_xhxh5ukdv3s6oigo4bq-a.gif
+    0.61 - /atoms/23/03/f1/77/2303f17798f0116b59cd53fbb5f89873.jpg
+    0.61 - /images/premium/contents/bnr/2012/50x50/0928_store_supernatural.jpg
+    1.83 - /
+    0.61 - /bdv/yahoo/javascript/csc/20060824/lib2obf_b6.js
+    0.61 - /lib/news/json/jsr_class_1_1.js
+    0.61 - /im_siggSTQFSGS6B_ulqQXD.kRB.g---x150-y83-q90/amd/20121103-00000687-yom-000-1-thumb.jpg
+    0.61 - /images/top/sp2/clr/1/clr-121025.css
+    0.61 - /images/css/yj2.css
+    0.61 - /images/sicons/fortune16.gif
+    0.61 - /im_siggHulEjLwgzPyrVDkZ9oNPng---x200-y133-q90/amd/20121031-00005828-yj_corptrend-000-51670401-view.jpg
+    0.61 - /bdv/2959/1085124/20121102/bz9rzgnremydaxbp4ihb-a.gif
+    0.61 - /images/topics/wiki/accountTitleBg.png
+    0.61 - /t.gif?_=1351949181047&count=horizontal&id=twitter-widget-0&lang=ja&original_referer=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494&size=m&text=%E5%B7%A8%E4%BA%BA%E3%81%8C%E6%97%A5%E6%9C%AC%E4%B8%80%203%E5%B9%B4%E3%81%B6%E3%82%8A22%E5%9B%9E%E7%9B%AE&url=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3Fid%3D6062441&type=share&twttr_referrer=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494&twttr_widget=1&twttr_hask=1&twttr_li=0&twttr_pid=v3%3A1351947306477664316206054
+    0.61 - /1/users/show.json?screen_name=YahooNewsTopics&callback=twttr.setFollowersCount
+    0.61 - /images/top/sp2/cmp/comp_all-121012.png
+    0.61 - /lib/news/socialModule/realtimeSearch_1_0-min.js
+    0.61 - /bdv/yahoo/javascript/yfa_visual5_tbp.js
+    0.61 - /images/news/v1/yn_gnavi_sprite.png
+    0.61 - /images/icon/photo.gif
+    0.61 - /images/news/v1/yn_sprite_icons.png
+    0.61 - /v1/post?query=URL%3Ahttp%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base+OR+%22%E5%B7%A8%E4%BA%BA%E3%81%8C%EF%BC%93%E5%B9%B4%E3%81%B6%E3%82%8A%E6%97%A5%E6%9C%AC%E4%B8%80%EF%BC%81%E5%BE%A9%E5%B8%B0%E3%81%AE%E9%98%BF%E9%83%A8%E3%81%8C%E6%B1%BA%E5%8B%9D%E6%89%93%22&callback=YJNEWS.REALTIME.cb&results=5&eappid=VR_EsYitmbyrPoweYLMgxZa7vjfKLr562QO8xJz1vqhVXfQ1_UaYwdmfo13IKah2.KXTF6itv1Bhep4MVfYMl25Qc5uKe4qszvD8rx.UK70DoBxpNszWJUtetA--
+    0.61 - /images/news/v1/yn_gnavi_sprite_20120926.png
+    0.61 - /hl?a=20121103-00000542-sanspo-base
+    0.61 - /images/topics/wiki/editor/topics_pr_linkimg_l2.png
+    0.61 - /bdv/30/1072203/20121029/rzqkxhmakk4bokrlm87_-a.jpg
+    0.61 - /bdv/71629/1073618/20121029/ypxcyyekc_ruhypdisqu-a.jpg
+    0.61 - /images/topics/social/btnMx.png
+    0.61 - /?sig=12qguhfo6&s=0&prop=search_realtime&url=http%3a%2f%2fa0.twimg.com%2fprofile_images%2f2676333274%2f19e1fe9781564b045be78fefae140183_normal.jpeg
+    1.83 - /favicon.ico
+    0.61 - /detail?hid=6062441&type=pc&callback=_getDetailResponse&_=1351949181524
+    0.61 - /1/urls/count.json?url=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base&callback=twttr.receiveCount
+    0.61 - /yui/jp/uft/1.0.0/img/utfChnk.png
+    0.61 - /bdv/yahoo/javascript/csc/20060824/lib2obf_b4.js
+    0.61 - /images/news/v1/sprite_icoTwitter.png
+    0.61 - /oi?s=anemos_topics00376&i=590597204&w=&apg=1&t=m&u=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494&ref=http%3A%2F%2Fwww.yahoo.co.jp%2F&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /?sig=12ecut3ac&s=0&prop=search_realtime&url=http%3a%2f%2fa0.twimg.com%2fsticky%2fdefault_profile_images%2fdefault_profile_2_normal.png
+    0.61 - /bdv/2959/1085127/20121102/crs1gvpzl74_ilnbd8yl-a.gif
+    0.61 - /images/sicons/game16.gif
+    0.61 - /hl?c=spo&t=l
+    0.61 - /fc/sports/nippon_series/?1351933494
+    0.61 - /images/topics/wiki/ytopics_sprite_icons.png
+    0.61 - /jot?l=%7B%22_category_%22%3A%22tfw_widgets%22%2C%22event_name%22%3A%22tweetbutton%3Aimpression%22%2C%22dnt%22%3Afalse%2C%22_%22%3A%221351949181047%22%2C%22count%22%3A%22horizontal%22%2C%22id%22%3A%22twitter-widget-0%22%2C%22lang%22%3A%22ja%22%2C%22original_referer%22%3A%22http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494%22%2C%22size%22%3A%22m%22%2C%22text%22%3A%22%E5%B7%A8%E4%BA%BA%E3%81%8C%E6%97%A5%E6%9C%AC%E4%B8%80%203%E5%B9%B4%E3%81%B6%E3%82%8A22%E5%9B%9E%E7%9B%AE%22%2C%22url%22%3A%22http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3Fid%3D6062441%22%2C%22type%22%3A%22share%22%2C%22logged_in%22%3Afalse%2C%22referrer%22%3A%22http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494%22%2C%22widget%22%3Atrue%2C%22pid%22%3A%22v3%3A1351947306477664316206054%22%7D
+    0.61 - /images/news/facebook/news_Facebook_76x76.png
+    0.61 - /f.gif?_=1351949181073&id=twitter-widget-1&lang=ja&screen_name=YahooNewsTopics&show_count=false&show_screen_name=true&size=m&twttr_variant=2.0&twttr_referrer=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494&twttr_widget=1&twttr_hask=1&twttr_li=0&twttr_pid=v3%3A1351947306477664316206054
+    0.61 - /im_siggrMDL3ZpnqnwM4Z1FYvhX2Q---x200-y133-q90/amd/20121101-00005830-yj_corptrend-000-51751400-view.jpg
+    0.61 - /images/top/sp2/emg/disaster_ttl2.png
+    0.61 - /images/news/cobranding/sanspo.gif
+    0.61 - /bdv/1862/1083691/20121030/fk8wxszqyglpfwkac5kl-a.gif
+    0.61 - /fc/js/fb_pc.js?date=20121023
+    0.61 - /lib/news/widgets/widgets_1_1.js
+    0.61 - /images/topics/wiki/trendTitleBg.png
+    0.61 - /oi?s=anemos_news00549&i=2078709533&w=&apg=1&t=m&u=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fc%3Dbase%26t%3Dl&ref=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fc%3Dsocc%26t%3Dl&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /bdv/30/1077242/20121029/ixbislu9ygczxzdkfnpt-a.jpg
+    0.61 - /bdv/71629/1074517/20121029/kqo8rgbu_aykmxxf3cqf-a.gif
+    0.61 - /im_sigg537mI30DS9hWeZeGpWl75Q---x200-y190-q90/amd/20121103-00000542-sanspo-000-view.jpg
+    0.61 - /lib/news/widgets/images/tweet_ja.png?v2
+    0.61 - /images/weather/general/transparent_s/clouds.gif
+    0.61 - /images/news/fc.gif
+    0.61 - /bdv/2959/1085124/20121102/71ewr2thlfq_2yiqyhjw-a.gif
+    0.61 - /bdv/2959/1085124/20121102/vval_chos32k_7okick9-a.gif
+    0.61 - /bdv/3124/1073472/20121029/mkgcwzthl_hbpnxy_tno-a.gif
+    0.61 - /bdv/2237/1080330/20121103/bg6so7sbgcqenc9py6xk-a.jpg
+    0.61 - /widgets/follow_button.1351848862.html
+    0.61 - /bdv/2959/1085127/20121102/dalvv9p9fw9tribawawe-a.gif
+    0.61 - /images/top/sp2/cmn/pic_all-121004.png
+    0.61 - /bdv/193/1074340/20121029/rhnusvihwpg9khhap9vn-a.jpg
+    0.61 - /javascript/fp_base_bd_ga_5.0.42.js
+    0.61 - /im_siggvNnG417_XZJF5TsJPh7FFQ---x200-y190-q90/amd/20121103-00000542-sanspo-000-4-view.jpg
+    0.61 - /images/clear.gif
+    0.61 - /bdv/70506/1082209/20121024/ffmwiwdybofwysftxna1-a.gif
+    0.61 - /images/im/imgim/pc2/im1001149230pcmr1.jpg
+    0.61 - /images/media/ymui/img/carrrot_5.png
+    0.61 - /yui/jp/uhd/olympic/1.0.2/img/uhdChnk.png
+    0.61 - /?sig=121gkt090&s=0&prop=search_realtime&url=http%3a%2f%2fa0.twimg.com%2fprofile_images%2f1827087610%2fPIC_0037_normal.JPG
+    0.61 - /hl?c=socc&t=l
+    0.61 - /oi?s=anemos_customkw00349&i=ct&w=&apg=1&t=j&u=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base&ref=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /images/topics/wiki/relTabRight.gif
+    0.61 - /images/topics/20121103-00000193-sph-000-thumb.jpg
+    0.61 - /oi?t=j&s=ytop_ams_rmdl_utf8&i=toppage
+    0.61 - /1/urls/count.json?url=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3Fid%3D6062441&callback=twttr.receiveCount
+    0.61 - /images/topics/social/sprite_icoSns16.png
+    0.61 - /widgets.js
+    0.61 - /lib/news/widgets/tweet_button.html?_=1351949189638&count=none&id=twitter_tweet_button_2&lang=ja&original_referer=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base&redirect=&text=%E5%B7%A8%E4%BA%BA%E3%81%8C%EF%BC%93%E5%B9%B4%E3%81%B6%E3%82%8A%E6%97%A5%E6%9C%AC%E4%B8%80%EF%BC%81%E5%BE%A9%E5%B8%B0%E3%81%AE%E9%98%BF%E9%83%A8%E3%81%8C%E6%B1%BA%E5%8B%9D%E6%89%93%EF%BC%88%E3%82%B5%E3%83%B3%E3%82%B1%E3%82%A4%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%EF%BC%89%20-%20Y!%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9&url=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base
+    0.61 - /bdv/70506/1082210/20121024/0ffcv4drh8ir07jvroju-a.gif
+    0.61 - /oi?s=anemos_news00549&i=2078709534&w=&apg=1&t=m&u=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base&ref=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /images/topics/css/import_ver2.css?date=20121029
+    0.61 - /images/news/v1/css/master-news.css?v11
+    0.61 - /images/news/v1/ranking.png
+    0.61 - /?sig=12q7ti50r&s=0&prop=search_realtime&url=http%3a%2f%2fa0.twimg.com%2fprofile_images%2f2787920985%2fa8da34051dc5da8e95976bfa70d862da_normal.jpeg
+    0.61 - /oi?s=anemos_news01295&i=2078709534&w=&apg=1&t=j&u=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base&ref=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /images/top/sp2/spotlight/2011/1031o.jpg
+    0.61 - /bdv/71629/1073618/20121029/tldo4m5hcuajwtl9ebr7-a.jpg
+    0.61 - /oi?s=anemos_news00549&i=2078709531&w=&apg=1&t=m&u=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fc%3Dspo%26t%3Dl&ref=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fc%3Dbase%26t%3Dl&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /bdv/71629/1073614/20121029/wnskbirfjfjyqqjwjnx3-a.jpg
+    0.61 - /oi?s=anemos_news00549&i=2078709535&w=&apg=1&t=m&u=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fc%3Dsocc%26t%3Dl&ref=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fc%3Dmoto%26t%3Dl&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /images/sicons/bookstore16.gif
+    0.61 - /bdv/500052/1080894/20121029/meulz5rknmobtjfqmyz8-a.gif
+    0.61 - /hl?c=base&t=l
+    0.61 - /lib/news/socialModule/facebook_1_3_1-min.js
+    0.61 - /images/top/sp/logo.gif
+    0.61 - /images/commerce/js/libs/jquery/core/1.4.2/jquery.min.js
+    0.61 - /bdv/71629/1082189/20121029/2n1tdzicd8j7eotfexbi-a.jpg
+    0.61 - /images/news/v1/news_socialbutton.gif
+    0.61 - /oi?s=anemos_customkw00349&i=ct&w=&apg=1&t=j&u=http%3A%2F%2Fdailynews.yahoo.co.jp%2Ffc%2Fsports%2Fnippon_series%2F%3F1351933494&ref=http%3A%2F%2Fwww.yahoo.co.jp%2F&enc=EUC-JP&spaceId=&jisx0402=&type=&crawlUrl=
+    0.61 - /images/topics/wiki/relTabLeft.gif
+    0.61 - /images/listing/tool/yjaxc/yjaxc-iframe.html?src0=http%3A%2F%2Fyjaxc.yahoo.co.jp%2Foi%3Fs%3Danemos_news01295%26i%3D2078709534%26w%3D%26apg%3D1%26t%3Dj%26u%3Dhttp%253A%252F%252Fheadlines.yahoo.co.jp%252Fhl%253Fa%253D20121103-00000542-sanspo-base%26ref%3Dhttp%253A%252F%252Fdailynews.yahoo.co.jp%252Ffc%252Fsports%252Fnippon_series%252F%253F1351933494%26enc%3DEUC-JP%26spaceId%3D%26jisx0402%3D%26type%3D%26crawlUrl%3D&src1=http%3A%2F%2Fyjaxc.yahoo.co.jp%2Fjs%2Fyjaxc-internal-banner.js%3Fimgurl%3Dhttp%253A%252F%252Fah.yimg.jp%252Fimages%252Fim%252Finnerad%252F%26imgpath%3Dbnr1_ss_1_300-250.jpg%26clickurl%3Dhttp%253A%252F%252Frd.yahoo.co.jp%252Fbzc%252Fsds%252F97648%252Fevt%253D97648%252F*http%253A%252F%252Flisting.yahoo.co.jp%252Fy_promo%252Flisting01%252F%253Fo%253DJP1350
+    0.61 - /?sig=11q0nsv9u&s=0&prop=search_realtime&url=http%3a%2f%2fa0.twimg.com%2fprofile_images%2f1581356110%2fp_normal.PNG
+  x-transaction: 
+    50.00 - 10f928e6dd79d0c4
+    50.00 - ec3fdacbcc36092f
+  :status: 
+    0.61 - 301
+    99.39 - 200
+  :status-text: 
+    99.39 - OK
+    0.61 - Moved Permanently
+  age: 
+    0.81 - 224
+    1.63 - 130
+    0.81 - 429
+    0.81 - 27
+    0.81 - 0
+    0.81 - 540
+    0.81 - 541
+    0.81 - 403
+    1.63 - 402
+    1.63 - 343
+    0.81 - 8
+    0.81 - 349
+    0.81 - 408
+    0.81 - 331
+    0.81 - 121
+    0.81 - 106553
+    0.81 - 124
+    0.81 - 10301
+    1.63 - 126
+    0.81 - 127
+    0.81 - 268
+    0.81 - 50
+    0.81 - 24858
+    0.81 - 378
+    0.81 - 533
+    0.81 - 412
+    0.81 - 296
+    0.81 - 297
+    0.81 - 373
+    0.81 - 375
+    0.81 - 291
+    0.81 - 146
+    0.81 - 313
+    0.81 - 194
+    1.63 - 191
+    0.81 - 115
+    0.81 - 391
+    0.81 - 116
+    0.81 - 276
+    0.81 - 394
+    0.81 - 279
+    1.63 - 84
+    0.81 - 379
+    0.81 - 2172
+    0.81 - 525
+    0.81 - 3
+    0.81 - 1405
+    0.81 - 25
+    0.81 - 300
+    0.81 - 447
+    1.63 - 380
+    0.81 - 109
+    0.81 - 385
+    0.81 - 243
+    0.81 - 370
+    0.81 - 388
+    0.81 - 103
+    1.63 - 249
+    0.81 - 104
+    0.81 - 39
+    0.81 - 31
+    0.81 - 35
+    0.81 - 105309
+    0.81 - 518
+    0.81 - 438
+    0.81 - 439
+    0.81 - 573
+    0.81 - 571
+    0.81 - 336
+    1.63 - 454
+    0.81 - 576
+    0.81 - 575
+    0.81 - 60
+    0.81 - 259
+    0.81 - 65
+    0.81 - 68
+    0.81 - 69
+    0.81 - 254
+    0.81 - 2202
+    0.81 - 404
+    0.81 - 186
+    0.81 - 504
+    0.81 - 189
+    0.81 - 560
+    0.81 - 566
+    0.81 - 553
+    0.81 - 92
+    0.81 - 223
+    0.81 - 12
+    0.81 - 272
+    0.81 - 6754
+    0.81 - 284
+    0.81 - 151
+    0.81 - 150
+    0.81 - 600
+    0.81 - 157
+    0.81 - 156
+    0.81 - 158
+    0.81 - 113
+    1.63 - 239
+    0.81 - 235
+    0.81 - 41
+    0.81 - 5
+    0.81 - 325
+    0.81 - 9
+    0.81 - 201
+    0.81 - 200
+    0.81 - 148
+    0.81 - 76
+    0.81 - 74
+    0.81 - 73
+    0.81 - 483
+    0.81 - 1957
+  content-encoding: 
+    100.00 - gzip
+  server: 
+    84.73 - YTS/1.20.10
+    0.76 - NJS v0.4.13-pre/1.2.3/3.0.14.0
+    9.16 - YTS/1.20.13
+    3.82 - tfe
+    1.53 - Apache
+  :scheme: 
+    100.00 - http
+  connection: 
+    7.98 - close
+    91.72 - keep-alive
+    0.31 - Keep-Alive
+  referer: 
+    6.33 - http://i.yimg.jp/images/topics/css/import_ver2.css?date=20121029
+    21.52 - http://dailynews.yahoo.co.jp/fc/sports/nippon_series/?1351933494
+    6.33 - http://headlines.yahoo.co.jp/hl?c=moto&t=l
+    1.90 - http://platform.twitter.com/widgets/follow_button.1351848862.html
+    1.90 - http://platform.twitter.com/widgets/tweet_button.1351848862.html
+    1.27 - http://i.yimg.jp/images/listing/tool/yjaxc/yjaxc-iframe.html?src0=http%3A%2F%2Fyjaxc.yahoo.co.jp%2Foi%3Fs%3Danemos_news01295%26i%3D2078709534%26w%3D%26apg%3D1%26t%3Dj%26u%3Dhttp%253A%252F%252Fheadlines.yahoo.co.jp%252Fhl%253Fa%253D20121103-00000542-sanspo-base%26ref%3Dhttp%253A%252F%252Fdailynews.yahoo.co.jp%252Ffc%252Fsports%252Fnippon_series%252F%253F1351933494%26enc%3DEUC-JP%26spaceId%3D%26jisx0402%3D%26type%3D%26crawlUrl%3D&src1=http%3A%2F%2Fyjaxc.yahoo.co.jp%2Fjs%2Fyjaxc-internal-banner.js%3Fimgurl%3Dhttp%253A%252F%252Fah.yimg.jp%252Fimages%252Fim%252Finnerad%252F%26imgpath%3Dbnr1_ss_1_300-250.jpg%26clickurl%3Dhttp%253A%252F%252Frd.yahoo.co.jp%252Fbzc%252Fsds%252F97648%252Fevt%253D97648%252F*http%253A%252F%252Flisting.yahoo.co.jp%252Fy_promo%252Flisting01%252F%253Fo%253DJP1350
+    4.43 - http://headlines.yahoo.co.jp/hl?c=socc&t=l
+    6.96 - http://i.yimg.jp/images/news/v1/css/master-news.css?v11
+    4.43 - http://headlines.yahoo.co.jp/hl?c=base&t=l
+    0.63 - http://k.yimg.jp/images/top/sp2/clr/1/clr-121025.css
+    18.99 - http://www.yahoo.co.jp/
+    3.80 - http://headlines.yahoo.co.jp/hl?c=spo&t=l
+    1.90 - http://i.yimg.jp/lib/news/widgets/tweet_button.html?_=1351949189638&count=none&id=twitter_tweet_button_2&lang=ja&original_referer=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base&redirect=&text=%E5%B7%A8%E4%BA%BA%E3%81%8C%EF%BC%93%E5%B9%B4%E3%81%B6%E3%82%8A%E6%97%A5%E6%9C%AC%E4%B8%80%EF%BC%81%E5%BE%A9%E5%B8%B0%E3%81%AE%E9%98%BF%E9%83%A8%E3%81%8C%E6%B1%BA%E5%8B%9D%E6%89%93%EF%BC%88%E3%82%B5%E3%83%B3%E3%82%B1%E3%82%A4%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%EF%BC%89%20-%20Y!%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9&url=http%3A%2F%2Fheadlines.yahoo.co.jp%2Fhl%3Fa%3D20121103-00000542-sanspo-base
+    19.62 - http://headlines.yahoo.co.jp/hl?a=20121103-00000542-sanspo-base
+  x-frame-options: 
+    100.00 - SAMEORIGIN
+  content-type: 
+    1.21 - application/x-javascript; charset=UTF-8
+    0.61 - application/javascript; charset=utf-8
+    21.82 - image/jpeg
+    4.24 - text/html; charset=utf-8
+    1.82 - application/javascript;charset=utf-8
+    0.61 - application/ocsp-response
+    1.82 - image/x-icon
+    2.42 - text/css
+    0.61 - application/x-javascript; charset=utf-8
+    24.24 - image/gif
+    10.91 - application/javascript
+    0.61 - application/x-javascript
+    5.45 - application/x-javascript; charset=EUC-JP
+    0.61 - text/javascript; charset=utf-8
+    0.61 - application/ocsp-request
+    3.64 - text/html; charset=euc-jp
+    18.79 - image/png
+  :host: 
+    4.27 - headlines.yahoo.co.jp
+    23.17 - ai.yimg.jp
+    0.61 - lpt.c.yimg.jp
+    0.61 - connect.facebook.net
+    1.83 - platform.twitter.com
+    1.83 - www.yahoo.co.jp
+    12.80 - k.yimg.jp
+    2.44 - amd.c.yimg.jp
+    0.61 - bkskapi.dailynews.yahoo.co.jp
+    1.83 - dailynews.yahoo.co.jp
+    1.22 - cdn.api.twitter.com
+    0.61 - news.c.yimg.jp
+    0.61 - yahoo.co.jp
+    1.22 - ah.yimg.jp
+    0.61 - realtime.search.yahooapis.jp
+    1.22 - p.twitter.com
+    30.49 - i.yimg.jp
+    0.61 - ocsp.verisign.com
+    1.22 - r.twimg.com
+    3.05 - puffer.c.yimg.jp
+    0.61 - urls.api.twitter.com
+    1.22 - content.yieldmanager.edgesuite.net
+    7.32 - yjaxc.yahoo.co.jp
+
+

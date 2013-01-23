@@ -76,19 +76,32 @@ class Counter(object):
   """
   BloomFilter-based unique value count
   """
-  uniques = 0
-  count = 0
   
   def __init__(self):
     self.bloom = BloomFilter(10000,0.1)
+    self.uniques = 0
+    self.count = 0
+    self.val_freek = {}
     
   def inc(self,val):
     self.count += 1
     if not self.bloom.add(val):
       self.uniques += 1
+
+    if not val in self.val_freek:
+      self.val_freek[val] = 1
+    else:
+      self.val_freek[val] += 1
       
   def ratio(self):
     return float(self.uniques)/float(self.count)
+
+  def freeks(self):
+    tw = sum(v for k,v in self.val_freek.items())
+    ret = {}
+    for k,v in self.val_freek.items():
+      ret[k] = (float(v)/float(tw)) * 100
+    return ret
 
 class CompressionTester(object):
   """
@@ -208,6 +221,14 @@ class CompressionTester(object):
     ord = sorted(tmp,key=tmp.get)
     for key in sorted(tmp,key=tmp.get):
       print fmt.format(key,tmp[key],self.v[key].count)
+      
+    print '\n'
+    print 'Header Frequencies:'
+    for (key,value) in self.v.items():
+      print '  %s: ' % key
+      for k,v in value.freeks().items():
+        print '    %.2f - %s' % (v,k)
+    print '\n'
 
     
   def load_streamifier(self, name):

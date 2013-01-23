@@ -566,3 +566,844 @@ x-varnish            1.0                                                5
 if-modified-since    1.0                                                2                   
 edge-control         1.0                                                1                   
 x-fb-debug           1.0                                                1                   
+
+
+Header Frequencies:
+  content-length: 
+    0.35 - 3714
+    1.04 - 215
+    0.35 - 20679
+    0.69 - 218
+    0.35 - 11057
+    0.35 - 1611
+    1.04 - 1084
+    1.04 - 3552
+    0.69 - 4701
+    0.35 - 5829
+    0.35 - 4381
+    1.04 - 7057
+    0.35 - 4981
+    0.35 - 12278
+    0.35 - 13169
+    2.08 - 1679
+    3.82 - 20160
+    0.69 - 2919
+    0.35 - 1796
+    0.69 - 124
+    1.04 - 3132
+    1.04 - 3339
+    0.35 - 3241
+    0.35 - 26086
+    0.35 - 2396
+    0.35 - 7683
+    0.35 - 2253
+    1.39 - 4640
+    0.69 - 377
+    1.39 - 538
+    0.35 - 2476
+    0.69 - 318
+    0.35 - 3776
+    0.35 - 5394
+    0.35 - 4892
+    0.35 - 5399
+    0.35 - 2479
+    1.39 - 1127
+    0.35 - 3146
+    1.04 - 9305
+    0.35 - 3382
+    0.35 - 5257
+    1.74 - 5412
+    0.35 - 4285
+    0.35 - 18975
+    0.69 - 2667
+    0.35 - 2174
+    0.35 - 915
+    0.35 - 422
+    0.35 - 10874
+    1.04 - 4198
+    3.82 - 2280
+    0.35 - 4218
+    0.35 - 7908
+    0.35 - 38060
+    0.35 - 2830
+    0.35 - 5089
+    0.35 - 5402
+    1.04 - 16812
+    1.04 - 1245
+    1.04 - 2795
+    0.35 - 23699
+    0.35 - 430
+    0.35 - 579
+    1.04 - 17339
+    0.35 - 624
+    0.35 - 334
+    0.35 - 452
+    0.35 - 45
+    0.35 - 1321
+    0.35 - 7912
+    0.69 - 175
+    0.35 - 172
+    0.69 - 254
+    0.69 - 0
+    0.69 - 7492
+    0.69 - 156
+    0.69 - 183
+    1.39 - 184
+    1.04 - 312
+    0.69 - 6685
+    0.69 - 2428
+    0.35 - 21221
+    1.04 - 750
+    0.35 - 3857
+    1.04 - 564
+    0.69 - 4428
+    0.35 - 567
+    0.69 - 99
+    1.04 - 2184
+    0.35 - 221
+    0.35 - 3207
+    0.35 - 5345
+    0.35 - 42712
+    0.35 - 2236
+    0.35 - 25740
+    0.35 - 5225
+    0.35 - 6214
+    0.35 - 62647
+    0.35 - 1162
+    0.35 - 5299
+    1.39 - 159
+    1.04 - 3634
+    0.35 - 608
+    0.69 - 553
+    0.35 - 2868
+    0.35 - 235
+    1.39 - 3069
+    0.35 - 237
+    0.69 - 230
+    2.08 - 231
+    0.35 - 57099
+    0.69 - 2992
+    3.82 - 11401
+    1.39 - 876
+    0.69 - 3340
+    2.08 - 952
+    0.35 - 3346
+    3.82 - 43
+    0.35 - 41
+    0.69 - 320
+    0.35 - 4595
+    0.35 - 6973
+    0.35 - 77
+    0.69 - 484
+    0.35 - 4509
+    0.35 - 480
+    0.35 - 4398
+    0.35 - 5449
+    0.69 - 291
+    1.04 - 60478
+    1.04 - 5444
+    0.35 - 356
+    1.04 - 6239
+    0.69 - 9095
+    1.04 - 807
+    0.69 - 6036
+    0.69 - 683
+    0.35 - 4582
+  via: 
+    0.63 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain, 1.0 sorga-msr:3128 (squid/2.6.STABLE21)
+    97.81 - 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+    1.57 - 1.1 varnish, 1.0 sorga-msr:3128 (squid/2.6.STABLE21), 1.0 localhost.localdomain
+  accept-language: 
+    100.00 - en-US,en;q=0.8
+  proxy-connection: 
+    16.49 - close
+    83.51 - keep-alive
+  x-cache-lookup: 
+    100.00 - MISS from sorga-msr:3128
+  vary: 
+    60.61 - Accept-Encoding
+    39.39 - User-Agent
+  accept: 
+    8.29 - text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    12.29 - text/css,*/*;q=0.1
+    79.43 - */*
+  accept-charset: 
+    100.00 - ISO-8859-1,utf-8;q=0.7,*;q=0.3
+  p3p: 
+    10.00 - policyref="/w3c/p3p.xml",CP="NON DSP COR CURa PSA PSD OUR BUS NAV STA"
+    60.00 - policyref=http://logc257.xiti.com/w3c/p3p.xml,CP=NON DSP COR CURa PSA PSD OUR BUS NAV STA
+    30.00 - policyref="/w3c/p3p.xml",CP="NOI DSP COR CURa DEVa PSAa STP UNI COM OUR NAV INT"
+  x-fb-debug: 
+    100.00 - hj+deBazqCwNq2ca7gXgonicYZZBOKY2wgxNbJkbzmk=
+  :version: 
+    100.00 - HTTP/1.1
+  user-agent: 
+    100.00 - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.56 Safari/537.4
+  etag: 
+    0.35 - "b8-4c4ed2df27400"
+    0.70 - "7c-4c4ed2de331c0"
+    0.70 - "794-4c3ec6db32dc0"
+    0.35 - "244c56d75636cc1:96ab"
+    1.06 - "c3c-4c4ee37b964c0"
+    0.35 - "52e5-4b66887cc2680"
+    0.70 - "d0c-4c4ed2df27400"
+    0.35 - "1a6-4c4ee37aa2280"
+    0.70 - "125d-4c4ed2df27400"
+    0.35 - "57e5-4c4ee37aa2280"
+    1.41 - "36c-4c4ed2df27400"
+    0.35 - "1ae-4c4ed2de331c0"
+    0.70 - "9c-4c4ed2de331c0"
+    0.35 - "13e1-4c4ed2e10f880"
+    0.35 - "a6d8-4c3ec6db32dc0"
+    0.35 - "d36-4c4ed2e203ac0"
+    0.70 - "fe-4c4ed2df27400"
+    0.35 - "ed-4c4ed2df27400"
+    0.70 - "179-4c4ed2de331c0"
+    0.70 - "114c-4c4ed2df27400"
+    0.70 - "229-4c4ed2de331c0"
+    0.35 - "50c7-4bbb5a759d680"
+    1.06 - "234-4c4ed2df27400"
+    0.35 - "37f39-4c42569297000"
+    0.35 - "d55f44f9b0a3c81:96fe"
+    0.35 - "ba362424c8b5c41:90f6"
+    1.06 - "9f-4c3ec6db32dc0"
+    0.35 - "1e03-4c4ed2df27400"
+    0.35 - "ba362424c8b5c41:3fa4"
+    0.35 - "8bc-4c4ed2df27400"
+    1.06 - "907d-4c7bca93d7980"
+    1.06 - "1544-4b66887cc2680"
+    0.35 - "14e1-4c4ed2e01b640"
+    0.35 - "1a10fdf9c729cc1:93d5"
+    1.06 - "ba362424c8b5c41:45a5"
+    0.35 - "243-4c4ed2de331c0"
+    1.41 - "bfd-4c4ed2e203ac0"
+    0.35 - "12e8441da040c81:93d5"
+    3.87 - "8e8-4c4ee37aa2280"
+    0.35 - "94ac-4b66887cc2680"
+    0.70 - "2edc-4c3ec6db32dc0"
+    1.06 - "1066-4c2e46ca61b80"
+    0.35 - "221e8cfac729cc1:96fe"
+    0.35 - "5c93-4b6688958e100"
+    0.35 - "2d-38a83ebc"
+    0.35 - "48a-4c3ec6db32dc0"
+    0.35 - "1cbd1047e173c81:96ab"
+    0.35 - "8cd-4c4ed2e10f880"
+    0.35 - "107a-4c4ed2e203ac0"
+    2.46 - "2c89-4c4ed2e01b640"
+    0.35 - "65e6-4b6688b136240"
+    0.35 - "87e-4c4ed2e10f880"
+    0.70 - "b7-4c4ee37aa2280"
+    0.35 - "9014326d074c81:96fe"
+    0.35 - "270-4c4ee37aa2280"
+    0.35 - "7cf9fe2e518ebdf5f1cb779c1b45d217"
+    2.11 - "e7-4c4ee37aa2280"
+    0.35 - "64b-4c2317cb0f300"
+    0.35 - "3ccd-4a77752fb7280"
+    1.06 - "43bb-4c6be300bacc0"
+    0.35 - "b0e-4c4ed2df27400"
+    0.35 - "f11-4c2e46ca61b80"
+    0.70 - "1794-4c4ed2df27400"
+    0.35 - "13e-4c4ee37aa2280"
+    2.11 - "3b8-4c4ee37b964c0"
+    0.35 - "ee9d6daae173c81:9b85"
+    1.06 - "888-4c4ee37aa2280"
+    0.35 - "89d-4c4ed2de331c0"
+    0.35 - "1ee8-48b7ffef"
+    0.35 - "1512-4c2e46ebc2a40"
+    0.35 - "ac-4c4ed2de331c0"
+    0.35 - "696b4c51b1a3c81:96ab"
+    0.35 - "2b31-4c4ed2df27400"
+    0.70 - "13c-4c3ec6da3eb80"
+    1.06 - "aeb-4c4ee37aa2280"
+    0.35 - "164-4c4ee37aa2280"
+    1.06 - "d0b-4c4ee37b964c0"
+    1.06 - "ec3e-4b6e4817b9000"
+    0.35 - "1c4-42e0e059"
+    0.35 - "cc1a7359c274c81:96ab"
+    0.70 - "af-4c4ed2de331c0"
+    1.06 - "1b91-4c4ee37aa2280"
+    1.06 - "4dd-4c4ee37b964c0"
+    1.76 - "1524-4c4ed2df27400"
+    0.35 - "1a71784bc274c81:93d5"
+    0.70 - "1d44-4c4ed2e01b640"
+    0.35 - "16c5-4b668890c95c0"
+    0.70 - "1c4-4c3ec6db32dc0"
+    0.35 - "513e-4c4ee37aa2280"
+    1.41 - "1220-4c4ee37b964c0"
+    0.70 - "ae-4c3ec6da3eb80"
+    2.46 - "2ba28-4c4ed2de331c0"
+    0.35 - "151a-4ba4be0c282c0"
+    0.35 - "704-4c4ed2df27400"
+    0.35 - "9ac-4c4ed2e203ac0"
+    1.06 - "7db-4c3ec6da3eb80"
+    0.35 - "1e0-4c4ed2df27400"
+    0.35 - "eb-4c4ed2e01b640"
+    0.35 - "c4a-4c4ed2e203ac0"
+    1.06 - "2c89-4c3ec6db32dc0"
+    0.35 - "1c9-4c4ed2de331c0"
+    0.35 - "ec0-4c4ed2e203ac0"
+    1.06 - "185f-4c2e470ffffc0"
+    0.35 - "11e6-4c4ed2e10f880"
+    0.35 - "648c-4b6688bca7d40"
+    0.70 - "3ec-4c3ec6da3eb80"
+    1.41 - "21a-4c4ed2de331c0"
+    0.35 - "119d-4bbca571aba80"
+    0.35 - "d12-4c4ed2e01b640"
+    0.70 - "da-4c4ed2de331c0"
+    0.35 - "ca9-4c4ed2e203ac0"
+    3.87 - "14c76-4c4ee37aa2280"
+    1.06 - "41ac-4b9320b4de400"
+    1.76 - "ba362424c8b5c41:0"
+    0.35 - "237-4c4ee37aa2280"
+    0.70 - "a6b-4c4ed2e01b640"
+    0.35 - "69906045b1a3c81:a4eb"
+    0.35 - "7872fff9c729cc1:93d5"
+    1.06 - "b8-4c4ee37aa2280"
+    1.41 - "467-4c4ed2e01b640"
+    0.35 - "ba362424c8b5c41:471b"
+    0.35 - "4f36-4c4ee37aa2280"
+    0.35 - "111d-4c4ed2e10f880"
+    0.35 - "c87-4c8d6e4dba8c0"
+    0.35 - "9f-4c5b92806d280"
+    0.70 - "140-4c4ed2de331c0"
+    0.35 - "1846-4b6688a00b9c0"
+    0.35 - "9af-4c4ed2e10f880"
+    1.06 - "43c-4c4ee37aa2280"
+    0.35 - "15-4c3ec6da3eb80"
+    0.35 - "12ade-4c5b92806d280"
+    1.06 - "e32-4c9f83ab73440"
+    1.06 - "138-4c4ee37aa2280"
+    1.06 - "2459-4c4ee37aa2280"
+    0.35 - "6647efe7e273c81:96ab"
+    1.06 - "d7-4c4ee37b964c0"
+    0.70 - "2387-4c4ed2df27400"
+    0.35 - "2c89-4c5b92806d280"
+    0.35 - "df0b-4b37fa1772080"
+    0.70 - "97c-4c4ed2de331c0"
+    2.11 - "68f-4c4ed2e01b640"
+    0.35 - "2ff6-4c3ec6db32dc0"
+    0.35 - "1e5f2d9692b1cb1:93d5"
+  location: 
+    33.33 - /v2/services_cartes_postales/pagesjaunes/cartes-postales-liste.asp?theme=pagesjaunes&ville=88795
+    33.33 - /hit.xiti?s=483323&s2=1&p=ILO_Home_page::Recherche-Pros::Homepage_PJ_localisee&hl=14x21x48&vrn=1&amp;ac=&amp;an=&amp;ptype=1-0-0&lng=en-US&vtag=42004-31011&idp=1421489496482&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22%3C!cookie%3AlieuChoisi%3E%22,%22localiterechercheeILOPOI%22%3A%22%3C!cookie%3AlieuAccueil%3E%22,%22OASid%22%3A%22%3C!cookie%3AOAX%3E%22}&ref=http://www.pagesjaunes.fr/&Rdt=On
+    33.33 - http://www.notrefamille.com/v2/services_cartes_postales/pagesjaunes/cartes-postales.asp?insee=75056
+  :method: 
+    100.00 - get
+  cache-control: 
+    2.36 - max-age=0, must-revalidate, no-cache
+    5.79 - max-age=604800
+    1.07 - max-age=5184000
+    45.92 - max-age=7776000
+    0.64 - max-age=259200 public
+    0.43 - private
+    1.72 - max-age=1209600
+    0.21 - max-age=5
+    41.63 - max-age=0
+    0.21 - public, max-age=361
+  x-varnish: 
+    20.00 - 1401605526 1389631457
+    20.00 - 1401605517 1389631441
+    20.00 - 523634944 511663485
+    20.00 - 384543774 372422963
+    20.00 - 523634949 511718106
+  accept-encoding: 
+    100.00 - gzip,deflate,sdch
+  x-cache: 
+    100.00 - MISS from sorga-msr
+  set-cookie: 
+    3.85 - idfrontal=29;path=/ nb%5Ffrontal=10; expires=Fri, 21-Sep-2012 12:24:40 GMT; path=/ stop%5Fiterat=1; expires=Fri, 21-Sep-2012 12:24:40 GMT; path=/ ASP%2ENET%5FSessionId=; expires=Sun, 29-Jul-2012 22:00:00 GMT; path=/ inscriptionNewsletter=0; expires=Mon, 24-Sep-2012 22:00:00 GMT; domain=.notrefamille.com; path=/ %2EAspNetForums=; expires=Sun, 29-Jul-2012 22:00:00 GMT; path=/ id%5Ffrontal=1; expires=Fri, 21-Sep-2012 12:24:40 GMT; path=/ AspNetForums=; expires=Sun, 29-Jul-2012 22:00:00 GMT; path=/ joyeuxEvenement=; expires=Tue, 18-Sep-2012 12:34:40 GMT; domain=.notrefamille.com; path=/ ConnexionAutomatique=; expires=Sun, 29-Jul-2012 22:00:00 GMT; domain=.notrefamille.com; path=/ akalog=; expires=Sun, 29-Jul-2012 22:00:00 GMT; path=/ akalang=; path=/ AspNetRoles=; expires=Sun, 29-Jul-2012 22:00:00 GMT; path=/
+    3.85 - JSESSIONID=CC5BB94D5BC07E5612337B3BCF176115; Path=/seo; HttpOnly
+    3.85 - e=UFhnX8CoAHEAAUK9Opg; path=/; expires=Fri, 16-Sep-22 12:21:51 GMT; domain=.pagesjaunes.fr
+    3.85 - idfrontal=29;path=/ ASPSESSIONIDCASTCBBC=FKLNHCDAMJILAMBKCJGEPNLI; path=/
+    7.69 - idfrontal=29;path=/
+    7.69 - idfrontal=24;path=/
+    3.85 - cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; Path=/ VisitorID=189134797090758500; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/ IdPage=1891347970907585001347970909154; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/ IdPagePrecedent=1891347970907585001347970908465; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/ lieuChoisi=L07505600; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/ lieuAccueil=""; Domain=.pagesjaunes.fr; Expires=Tue, 18-Dec-2012 18:21:49 GMT; Path=/ lieuxConsultes=""; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/
+    3.85 - cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; Path=/ VisitorID=189134797090758500; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/ IdPage=1891347970907585001347970909801; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/ IdPagePrecedent=1891347970907585001347970909154; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/ lieuChoisi=L07505600; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/ lieuAccueil=""; Domain=.pagesjaunes.fr; Expires=Tue, 18-Dec-2012 18:21:49 GMT; Path=/ lieuxConsultes=""; Expires=Fri, 16-Sep-2022 12:21:49 GMT; Path=/
+    3.85 - VisitorID=189134797090757458; Expires=Fri, 16-Sep-2022 12:21:47 GMT; Path=/ IdPage=1891347970907574581347970907574; Expires=Fri, 16-Sep-2022 12:21:47 GMT; Path=/ IdPagePrecedent=0; Expires=Fri, 16-Sep-2022 12:21:47 GMT; Path=/ PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; Path=/; HttpOnly cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; Path=/ VisitorID=189134797090758556; Expires=Fri, 16-Sep-2022 12:21:47 GMT; Path=/ IdPage=1891347970907585561347970907585; Expires=Fri, 16-Sep-2022 12:21:47 GMT; Path=/ VisitorID=189134797090758500; Expires=Fri, 16-Sep-2022 12:21:47 GMT; Path=/
+    3.85 - cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; Path=/ VisitorID=189134797090758500; Expires=Fri, 16-Sep-2022 12:21:50 GMT; Path=/ IdPage=1891347970907585001347970910361; Expires=Fri, 16-Sep-2022 12:21:50 GMT; Path=/ IdPagePrecedent=1891347970907585001347970909801; Expires=Fri, 16-Sep-2022 12:21:50 GMT; Path=/ lieuChoisi=L07505600; Expires=Fri, 16-Sep-2022 12:21:50 GMT; Path=/ lieuAccueil=""; Domain=.pagesjaunes.fr; Expires=Tue, 18-Dec-2012 18:21:50 GMT; Path=/ lieuxConsultes=""; Expires=Fri, 16-Sep-2022 12:21:50 GMT; Path=/
+    3.85 - cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; Path=/ VisitorID=189134797090758500; Expires=Fri, 16-Sep-2022 12:21:48 GMT; Path=/ IdPage=1891347970907585001347970908465; Expires=Fri, 16-Sep-2022 12:21:48 GMT; Path=/ IdPagePrecedent=1891347970907585561347970907585; Expires=Fri, 16-Sep-2022 12:21:48 GMT; Path=/
+    3.85 - idrxvr=67240C86-D4FB-4D45-BF17-65BAC968EAC5; expires=Thu, 18-Sep-2014 12:21:47 GMT; domain=at.pagesjaunes.fr; path=/;
+    3.85 - JSESSIONID=07272B4A42D2B15F4FA30B54CE075836; Path=/seo; HttpOnly
+    3.85 - e=UFhnX8CoAHEAAUK5OEU; path=/; expires=Fri, 16-Sep-22 12:21:51 GMT; domain=.pagesjaunes.fr
+    3.85 - cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; Path=/ VisitorID=189134797090758500; Expires=Fri, 16-Sep-2022 12:21:51 GMT; Path=/ IdPage=1891347970907585001347970911438; Expires=Fri, 16-Sep-2022 12:21:51 GMT; Path=/ IdPagePrecedent=1891347970907585001347970910361; Expires=Fri, 16-Sep-2022 12:21:51 GMT; Path=/
+    3.85 - JSESSIONID=A44F182734329079179F2541BE8B720F; Path=/seo; HttpOnly
+    3.85 - cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; Path=/ VisitorID=189134797090758500; Expires=Fri, 16-Sep-2022 12:21:53 GMT; Path=/ IdPage=1891347970907585001347970913500; Expires=Fri, 16-Sep-2022 12:21:53 GMT; Path=/ IdPagePrecedent=1891347970907585001347970911438; Expires=Fri, 16-Sep-2022 12:21:53 GMT; Path=/ lieuChoisi=L08212100; Expires=Fri, 16-Sep-2022 12:21:53 GMT; Path=/ lieuAccueil=""; Domain=.pagesjaunes.fr; Expires=Tue, 18-Dec-2012 18:21:53 GMT; Path=/ lieuxConsultes=L07505600; Expires=Fri, 16-Sep-2022 12:21:53 GMT; Path=/
+    3.85 - JSESSIONID=088D9FC7A5ECA57B0537C18FC065A680; Path=/activites; HttpOnly
+    15.38 - idfrontal=25;path=/
+    3.85 - idfrontal=42;path=/
+    3.85 - idfrontal=5;path=/
+  accept-ranges: 
+    100.00 - bytes
+  expires: 
+    0.72 - Fri, 14 Sep 2012 16:01:58 GMT
+    3.26 - Tue, 25 Sep 2012 12:21:53 GMT
+    4.35 - Wed, 12 Dec 2012 07:03:48 GMT
+    0.72 - Tue, 18 Sep 2012 11:31:39 GMT
+    1.09 - Sat, 17 Nov 2012 12:21:23 GMT
+    0.36 - Tue, 18 Sep 2012 12:27:24 GMT
+    5.07 - Mon, 17 Dec 2012 12:21:50 GMT
+    0.36 - Sat, 17 Nov 2012 12:21:21 GMT
+    2.54 - Thu, 06 Dec 2012 14:05:57 GMT
+    0.36 - Thu, 08 Nov 2012 15:05:00 GMT
+    0.72 - Mon, 17 Dec 2012 12:21:49 GMT
+    3.99 - Fri, 30 Oct 1998 14:19:41 GMT
+    3.62 - Tue, 16 Oct 2012 12:20:18 GMT
+    0.36 - Mon, 17 Dec 2012 12:21:55 GMT
+    1.45 - Mon, 17 Dec 2012 12:22:12 GMT
+    0.36 - Tue, 18 Sep 2012 12:21:56 GMT
+    1.09 - Fri, 21 Sep 2012 07:18:06 GMT
+    0.72 - Tue, 16 Oct 2012 12:20:23 GMT
+    10.51 - Wed, 05 Dec 2012 05:38:42 GMT
+    0.72 - Tue, 02 Oct 2012 12:21:53 GMT
+    1.09 - Tue, 25 Sep 2012 12:21:51 GMT
+    0.72 - Mon, 17 Dec 2012 12:21:47 GMT
+    1.09 - Thu, 06 Dec 2012 08:34:22 GMT
+    2.17 - Mon, 17 Dec 2012 12:22:13 GMT
+    0.36 - Thu, 22 Nov 2012 14:31:50 GMT
+    0.36 - Sat, 17 Nov 2012 12:21:54 GMT
+    5.43 - Tue, 25 Sep 2012 12:21:23 GMT
+    0.36 - Mon, 17 Dec 2012 12:21:51 GMT
+    0.36 - Thu, 25 Oct 2012 15:01:42 GMT
+    6.52 - Mon, 17 Dec 2012 12:21:53 GMT
+    2.17 - Thu, 06 Dec 2012 09:06:03 GMT
+    0.72 - Sun, 18 Nov 2012 09:25:10 GMT
+    0.36 - Mon, 22 Oct 2012 14:12:09 GMT
+    17.75 - Thu, 06 Dec 2012 09:06:01 GMT
+    0.72 - Tue, 18 Sep 2012 13:22:09 GMT
+    1.45 - Tue, 16 Oct 2012 09:58:53 GMT
+    9.06 - Wed, 05 Dec 2012 05:38:41 GMT
+    0.36 - Sun, 09 Dec 2012 07:19:06 GMT
+    2.17 - Tue, 02 Oct 2012 12:21:23 GMT
+    3.26 - Wed, 12 Dec 2012 07:03:29 GMT
+    0.72 - Mon, 17 Dec 2012 12:21:54 GMT
+    0.36 - Sun, 04 Nov 2012 09:00:47 GMT
+  last-modified: 
+    3.79 - Tue, 19 Oct 2004 10:41:07 GMT
+    1.72 - Fri, 13 Jan 2012 13:06:18 GMT
+    0.34 - Fri, 13 Jan 2012 13:06:44 GMT
+    1.03 - Wed, 08 Aug 2012 10:00:59 GMT
+    0.34 - Fri, 13 Jan 2012 13:06:39 GMT
+    1.38 - Wed, 20 Jun 2012 09:57:18 GMT
+    0.34 - Fri, 13 Jan 2012 13:06:55 GMT
+    1.03 - Thu, 26 Jul 2012 10:35:38 GMT
+    0.34 - Sat, 03 Mar 2012 00:36:03 GMT
+    0.69 - Thu, 03 May 2012 13:21:34 GMT
+    1.03 - Tue, 21 Aug 2012 01:36:54 GMT
+    0.34 - Wed, 20 Feb 2008 16:54:37 GMT
+    0.69 - Mon, 13 Jun 2011 12:46:55 GMT
+    0.34 - Fri, 13 Jan 2012 13:07:25 GMT
+    3.45 - Mon, 16 Jul 2012 07:14:27 GMT
+    0.34 - Thu, 21 Feb 2008 19:45:45 GMT
+    1.03 - Wed, 01 Aug 2012 13:50:02 GMT
+    0.34 - Wed, 20 Feb 2008 17:06:17 GMT
+    0.34 - Mon, 21 Apr 2008 13:09:47 GMT
+    1.03 - Thu, 19 Jan 2012 17:00:48 GMT
+    0.34 - Thu, 21 Feb 2008 21:24:31 GMT
+    0.34 - Mon, 21 Apr 2008 13:11:54 GMT
+    0.34 - Wed, 07 Dec 2011 12:24:18 GMT
+    0.34 - Tue, 11 Jan 2011 13:22:25 GMT
+    20.34 - Mon, 16 Jul 2012 08:28:42 GMT
+    0.69 - Mon, 23 Apr 2012 10:40:20 GMT
+    2.07 - Mon, 16 Jul 2012 07:14:26 GMT
+    0.34 - Fri, 29 Aug 2008 13:55:59 GMT
+    5.17 - Tue, 03 Jul 2012 12:55:27 GMT
+    1.03 - Tue, 18 Sep 2012 11:31:21 GMT
+    1.03 - Sat, 18 Feb 2012 00:21:36 GMT
+    0.34 - Thu, 07 Jul 2011 09:27:22 GMT
+    0.34 - Wed, 21 Mar 2012 00:12:58 GMT
+    0.34 - Mon, 21 Apr 2008 13:12:14 GMT
+    11.03 - Mon, 16 Jul 2012 07:14:23 GMT
+    0.34 - Mon, 17 Dec 2007 11:29:41 GMT
+    0.34 - Fri, 13 Jan 2012 13:07:13 GMT
+    11.03 - Mon, 16 Jul 2012 07:14:24 GMT
+    7.59 - Mon, 16 Jul 2012 08:28:43 GMT
+    0.34 - Thu, 21 Feb 2008 19:45:21 GMT
+    0.34 - Wed, 20 Feb 2008 16:57:24 GMT
+    3.45 - Tue, 03 Jul 2012 12:55:26 GMT
+    8.28 - Mon, 16 Jul 2012 07:14:25 GMT
+    0.34 - Mon, 13 Jun 2011 12:46:56 GMT
+    0.34 - Fri, 22 Jul 2005 12:02:33 GMT
+    0.34 - Mon, 14 Feb 2000 17:43:24 GMT
+    0.34 - Wed, 20 Jun 2012 09:57:53 GMT
+    0.34 - Thu, 22 Mar 2012 00:53:46 GMT
+    0.34 - Mon, 11 Jun 2012 12:28:28 GMT
+    0.34 - Wed, 29 Jun 2011 12:19:49 GMT
+    0.34 - Tue, 04 Sep 2012 02:19:55 GMT
+    0.34 - Fri, 06 Jul 2012 08:54:24 GMT
+    1.03 - Wed, 20 Jun 2012 09:58:31 GMT
+  referer: 
+    2.57 - http://www.pagesjaunes.fr/ville/paris-75
+    4.29 - http://www.pagesjaunes.fr/ville/montauban-82
+    4.86 - http://www.pagesjaunes.fr/sorties/voodoo-burlesque-391935
+    8.86 - http://www.pagesjaunes.fr/annuaire/corse
+    56.00 - http://www.pagesjaunes.fr/
+    2.29 - http://www.pagesjaunes.fr/ville/paris-75/photos-anciennes/
+    1.71 - http://www.pagesjaunes.fr/pagesblanches/P
+    3.43 - http://www.pagesjaunes.fr/pagesblanches
+    2.57 - http://www.pagesjaunes.fr/activites/
+    6.86 - http://www.pagesjaunes.fr/ville/paris-75/meteo/
+    5.14 - http://www.notrefamille.com/v2/services_cartes_postales/pagesjaunes/cartes-postales-liste.asp?theme=pagesjaunes&ville=88795
+    1.43 - http://www.pagesjaunes.fr/annonceurs/nouveaux-pack-visibilite-internet-1
+  pragma: 
+    100.00 - no-cache
+  if-modified-since: 
+    50.00 - Thu, 03 May 2012 13:21:34 GMT
+    50.00 - Mon, 23 Apr 2012 10:40:20 GMT
+  date: 
+    0.94 - Fri, 07 Sep 2012 08:34:22 GMT
+    0.63 - Wed, 18 Jul 2012 12:20:23 GMT
+    0.31 - Tue, 18 Sep 2012 12:22:01 GMT
+    0.31 - Fri, 10 Aug 2012 15:05:00 GMT
+    2.51 - Tue, 18 Sep 2012 12:21:49 GMT
+    2.19 - Fri, 07 Sep 2012 14:05:57 GMT
+    1.25 - Wed, 18 Jul 2012 09:58:53 GMT
+    0.63 - Mon, 20 Aug 2012 09:25:10 GMT
+    0.31 - Tue, 18 Sep 2012 12:21:27 GMT
+    3.76 - Thu, 13 Sep 2012 07:03:48 GMT
+    2.82 - Thu, 13 Sep 2012 07:03:29 GMT
+    0.63 - Fri, 14 Sep 2012 15:08:15 GMT
+    7.84 - Thu, 06 Sep 2012 05:38:41 GMT
+    0.31 - Mon, 10 Sep 2012 07:19:06 GMT
+    0.31 - Fri, 24 Aug 2012 14:31:50 GMT
+    1.25 - Tue, 18 Sep 2012 12:21:52 GMT
+    0.63 - Tue, 18 Sep 2012 10:31:57 GMT
+    15.36 - Fri, 07 Sep 2012 09:06:01 GMT
+    10.34 - Tue, 18 Sep 2012 12:21:53 GMT
+    2.82 - Tue, 18 Sep 2012 12:21:54 GMT
+    3.76 - Tue, 18 Sep 2012 12:24:40 GMT
+    1.25 - Tue, 18 Sep 2012 12:22:12 GMT
+    0.31 - Tue, 18 Sep 2012 12:21:55 GMT
+    1.88 - Fri, 07 Sep 2012 09:06:03 GMT
+    9.09 - Thu, 06 Sep 2012 05:38:42 GMT
+    1.57 - Tue, 18 Sep 2012 12:21:48 GMT
+    0.31 - Fri, 27 Jul 2012 15:01:42 GMT
+    4.39 - Tue, 18 Sep 2012 12:21:51 GMT
+    0.94 - Tue, 18 Sep 2012 07:18:06 GMT
+    0.31 - Mon, 06 Aug 2012 09:00:47 GMT
+    0.31 - Tue, 24 Jul 2012 14:12:09 GMT
+    7.84 - Tue, 18 Sep 2012 12:21:23 GMT
+    0.31 - Tue, 18 Sep 2012 12:21:21 GMT
+    1.88 - Tue, 18 Sep 2012 12:22:13 GMT
+    3.13 - Wed, 18 Jul 2012 12:20:18 GMT
+    5.64 - Tue, 18 Sep 2012 12:21:50 GMT
+    1.88 - Tue, 18 Sep 2012 12:21:47 GMT
+  :path: 
+    0.95 - /img/homepage/AutoPromoProfessionnels/Professionnel_1/medias/images/visu-demipave-buc-scp.gif
+    0.24 - /stat/pages?IdPage=&IdPagePrecedent=&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Factivites%2F&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=294094197725&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=PJ&UserId=NOCONECT&TypeFormulaire=DEFAUT&CodeService=21&TagPage=TOP-VILLES&GroupeNiveau1=PAGE-ANNUAIRE&GroupeNiveau2=CORSE&Param1=&Param2=&CodeServiceVED=DEFAUT&Localisation=LOCAL
+    0.47 - /ilo/static_3.3.0.10/images/pic-localization-bg-light.png
+    2.61 - /yellowscript/static_3.3.0.8/js/pj.min.js
+    0.24 - /boilo/ilo/0000/000/000/000/283/949/283949.jpg
+    0.24 - /seo/static_3.3.0.3/css/global_seo_pb.css
+    0.24 - /css/pj_alertes.css
+    2.61 - /scc/static_3.3.0.5/js/clobs.js?id=pages-jaunes&i=9&ra=10&20111026
+    0.24 - /ilo/static_3.3.0.10/images/calendar_bg_gbl.gif
+    0.95 - /ilo/static_3.3.0.10/images/pic-localization.png
+    0.71 - /scc/static_3.3.0.5/images/contentform-bg-pj.png
+    1.42 - /ilo/static_3.3.0.10/images/common-bg-title-dark.sp.png
+    0.71 - /scc/static_3.3.0.5/images/footer-bg-bullet.png
+    0.24 - /ilo/static_3.3.0.10/images/events-push-contrib-visu.jpg
+    0.71 - /scc/static_3.3.0.5/images/common-pic-dark.sp.png
+    2.61 - /scc/static_3.3.0.5/js/xtcore.js
+    0.24 - /dialog/oauth/?client_id=115557168472025&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.pagesjaunes.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df26fa5a4f%26origin%3Dhttp%253A%252F%252Fwww.pagesjaunes.fr%252Ff1abcbb838%26domain%3Dwww.pagesjaunes.fr%26relation%3Dparent&sdk=joey
+    0.71 - /scc/static_3.3.0.5/images/gbl-bg-body.png
+    0.24 - /hit.xiti?s=483323&s2=2&p=Thematiques::region::top_villes&hl=14x21x53&amp;ac=&amp;an=&amp;ptype=3-3-3&lng=en-US&vtag=42004-31011&idp=1421532476645&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localiterechercheeYESPB%22%3A%22%22,%22Coderubrique%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/activites/
+    0.24 - /annonceurs/nouveaux-pack-visibilite-internet-1
+    0.71 - /ilo/static_3.3.0.10/images/navwebcams-bg-nav.sp.png
+    0.24 - /ilo/static_3.3.0.10/images/meteo/50_png/50_sun.png
+    1.18 - /fr_FR/all.js
+    0.95 - /RealMedia/ads/Creatives/OasDefault/repli_habillage_home/habillage.css
+    0.71 - /boilo//ilo/0000/000/000/000/286/720/286720.jpg
+    0.71 - /carto/vignette/pca/1.0/075/L07505600.png
+    0.95 - /scc/static_3.3.0.5/images/global-bg-button.sp.png
+    0.24 - /activites/static_3.3.0.8/images/logo-pagesjaunes.png
+    0.71 - /scc/static_3.3.0.5/images/gbl-pic-buttons.sp.png
+    0.24 - /RealMedia/ads/adstream_jx.ads/PJ2010/PF/YES/d075/L07505600/default@x01
+    0.24 - /stat/pages?IdPage=1891347970907585001347970913500&IdPagePrecedent=1891347970907585001347970911438&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Fannuaire%2Fcorse&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=212012198557&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=PJ&UserId=NOCONECT&TypeFormulaire=EXPRESS&CodeService=54&TagPage=HP_LOCALE&GroupeNiveau1=PJ&GroupeNiveau2=HP&Param1=LOCALE&Param2=&CodeServiceVED=METEO&Localisation=LOCAL
+    0.24 - /carto/vignette/ud/1.0/082/L08212100.jpg
+    0.24 - /scc/static_3.3.0.5/images/containerGlobalMainLarge_bg.png
+    0.24 - /ilo/static_3.3.0.10/images/meteo/50_png/50_lwhitecloud.png
+    0.71 - /HP_FONDDEPAGE/R11/D075/hp_habillage_L075_Paris.jpg
+    0.71 - /seo/static_3.3.0.3/images/lst_puce.png
+    0.24 - /seo/static_3.3.0.3/images/bg_v_mix.png
+    0.95 - /boilo//ilo/0000/000/000/000/299/702/299702.jpg
+    0.24 - /stat/pages?IdPage=1891347970907585001347970910361&IdPagePrecedent=1891347970907585001347970909801&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Fville%2Fparis-75%2Fmeteo%2F&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=232032197723&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=ILO&UserId=NOCONECT&TypeFormulaire=EXPRESS&CodeService=11&TagPage=HOME.VILLE.1900&GroupeNiveau1=VILLE1900&GroupeNiveau2=PJ&Param1=&Param2=&CodeServiceVED=METEO&Localisation=LOCAL
+    0.47 - /ilo/static_3.3.0.10/images/tlc-bg-current-item.png
+    0.24 - /ilo/static_3.3.0.10/images/meteo/50_png/50_ldarkcloud_sun_heavyrain.png
+    0.24 - /ilo/static_3.3.0.10/images/meteo-bg-map-beach-france.sp.png
+    0.24 - /produits/publique/cartespostales/version_150/20070929/5084/5g5d1b1z7p4q2s0m1l1c.jpg
+    0.47 - /seo/static_3.3.0.3/css/pagination.css
+    0.24 - /ilo/static_3.3.0.10/js/resize_iframe.js
+    0.24 - /moncompte/avatar/publication/public/2012/06/11/TYFPMJ8386.jpg
+    0.24 - /ilo/static_3.3.0.10/images/global-bg-pictos.sp.png
+    1.66 - /ilo/static_3.3.0.10/js/ilo.min.js
+    0.24 - /hit.xiti?s=483323&s2=1&p=ILO_RUBRIQUES::SORTIES::Sorties_FD&hl=14x21x52&amp;ac=&amp;an=&amp;ptype=2-0-0&lng=en-US&vtag=42004-31011&idp=1421529281282&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22L07505600%22,%22localiterechercheeILOPOI%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/ville/paris-75/photos-anciennes/
+    0.47 - /seo/static_3.3.0.3/css/footerBUC.css
+    0.71 - /ilo/static_3.3.0.10/images/magazine-bg-navlist.png
+    0.95 - /ilo/static_3.3.0.10/images/tlc-fleche.png
+    0.24 - /ilo/static_3.3.0.10/images/meteo/50_png/50_ldarkcloud.png
+    0.24 - /ville/paris-75/meteo/
+    0.71 - /ilo/static_3.3.0.10/images/gbl-pictos.sp.png
+    0.24 - /activites/static_3.3.0.8/images/lst_puce.png
+    0.24 - /activites/static_3.3.0.8/css/global_seoThema.css
+    0.95 - /boilo/ilo/0000/000/000/000/299/381/299381.jpg
+    0.24 - /hit.xiti?s=483323&s2=1&p=ILO_Home_page::Recherche-Pros::Homepage_PJ_localisee&hl=14x21x48&vrn=1&amp;ac=&amp;an=&amp;ptype=1-0-0&lng=en-US&vtag=42004-31011&idp=1421489496482&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22%3C!cookie%3AlieuChoisi%3E%22,%22localiterechercheeILOPOI%22%3A%22%3C!cookie%3AlieuAccueil%3E%22,%22OASid%22%3A%22%3C!cookie%3AOAX%3E%22}&ref=http://www.pagesjaunes.fr/&Rdt=On
+    0.24 - /stat/pages?IdPage=1891347970907585001347970909801&IdPagePrecedent=1891347970907585001347970909154&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Fville%2Fparis-75&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=232032197723&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=ILO&UserId=NOCONECT&TypeFormulaire=EXPRESS&CodeService=11&TagPage=HOME.METEO.LOCALE&GroupeNiveau1=METEO&GroupeNiveau2=PJ&Param1=&Param2=&CodeServiceVED=METEO&Localisation=LOCAL
+    0.24 - /ville/paris-75
+    0.24 - /boilo/ilo/0000/000/000/000/288/457/288457.jpg
+    0.24 - /ilo/static_3.3.0.10/images/meteo/61/lwhitecloud_sun.png
+    0.24 - /carto/vignette/pca/1.0/082/L08212100.png
+    0.24 - /stat/pages?IdPage=1891347970907574581347970907574&IdPagePrecedent=0&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2F&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=212012198557&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=PJ&UserId=NOCONECT&TypeFormulaire=EXPRESS&CodeService=54&TagPage=HP_NUM&GroupeNiveau1=PJ&GroupeNiveau2=HP&Param1=NUM&Param2=&CodeServiceVED=METEO&Localisation=NATIONAL
+    0.24 - /
+    0.71 - /seo/static_3.3.0.3/images/logo-pagesjaunes.png
+    0.47 - /seo/static_3.3.0.3/css/right-column-SEO.css
+    0.24 - /stat/pages?IdPage=1891347970907585001347970911438&IdPagePrecedent=1891347970907585001347970910361&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Fville%2Fparis-75%2Fphotos-anciennes%2F&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=232032197723&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=ILO&UserId=NOCONECT&TypeFormulaire=EXPRESS&CodeService=11&TagPage=FICHE.SORTIE&GroupeNiveau1=SORTIE&GroupeNiveau2=PJ&Param1=&Param2=&CodeServiceVED=METEO&Localisation=LOCAL
+    0.71 - /scc/static_3.3.0.5/images/section-footer-1.png
+    0.24 - /produits/publique/cartespostales/version_150/20070929/5054/5p6f2b1v1y6s8z9b1h0y.jpg
+    0.47 - /v2/services_cartes_postales/pagesjaunes/cartes-postales.asp?insee=75056
+    0.47 - /ilo/static_3.3.0.10/images/common-bg-bullets.sp.png
+    0.24 - /stat/pages?IdPage=&IdPagePrecedent=&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Fville%2Fmontauban-82&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=294094197725&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=PJ&UserId=NOCONECT&TypeFormulaire=DEFAUT&CodeService=21&TagPage=NOUVEAUX&GroupeNiveau1=PAGE-ANNUAIRE&GroupeNiveau2=PVI&Param1=&Param2=&CodeServiceVED=DEFAUT&Localisation=LOCAL
+    0.24 - /seo/static_3.3.0.3/images/sectionrightcolumn-bg-navcarto.sp.png
+    0.71 - /boilo//ilo/0000/000/000/000/282/974/282974.jpg
+    0.24 - /ilo/static_3.3.0.10/images/cinema/bg-search-form-cinema.png
+    0.24 - /dialog/oauth/?client_id=115557168472025&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.pagesjaunes.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df3fa13eafc%26origin%3Dhttp%253A%252F%252Fwww.pagesjaunes.fr%252Ff14d1af26c%26domain%3Dwww.pagesjaunes.fr%26relation%3Dparent&sdk=joey
+    0.71 - /carto/vignette/ud/1.0/075/L07505600.jpg
+    0.95 - /partenaires/PagesJaunes/logo_haut.png
+    0.24 - /hit.xiti?s=483323&s2=2&p=Thematiques::PVI::nouveaux&hl=14x21x54&amp;ac=&amp;an=&amp;ptype=3-3-3&lng=en-US&vtag=42004-31011&idp=1421548740593&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localiterechercheeYESPB%22%3A%22%22,%22Coderubrique%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/ville/montauban-82
+    0.24 - /hit.xiti?s=483323&s2=1&p=ILO_RUBRIQUES::METEO::Meteo_locale_MP&hl=14x21x50&amp;ac=&amp;an=&amp;ptype=2-0-0&lng=en-US&vtag=42004-31011&idp=1421506993348&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22L07505600%22,%22localiterechercheeILOPOI%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/ville/paris-75
+    0.24 - /boilo//ilo/0000/000/000/000/287/771/287771.jpg
+    0.24 - /js/242030198266.js
+    0.71 - /ilo/static_3.3.0.10/images/containercut-bg-container.png
+    0.24 - /dialog/oauth/?client_id=115557168472025&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.pagesjaunes.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df2e76d5fac%26origin%3Dhttp%253A%252F%252Fwww.pagesjaunes.fr%252Ff2984d3ca4%26domain%3Dwww.pagesjaunes.fr%26relation%3Dparent&sdk=joey
+    0.95 - /img/homepage/AutoPromoPlusDeServices/Autopromo_4/medias/images/pds-visu-servpj-highl-2.jpg
+    0.47 - /ilo/static_3.3.0.10/images/navlocate-bg-linkbuttonbig.sp.png
+    0.71 - /scc/static_3.3.0.5/images/logo-FB.png
+    0.71 - /scc/static_3.3.0.5/images/gbl-logos-footer.png
+    0.24 - /ilo/static_3.3.0.10/images/global-bg-bullets.sp.png
+    0.71 - /ilo/static_3.3.0.10/images/common-bg-grey-1px.png
+    0.24 - /ilo/static_3.3.0.10/images/btn-fnac-reserver.png
+    0.47 - /ilo/static_3.3.0.10/images/pic-activities.png
+    0.71 - /ilo/static_3.3.0.10/images/no-avatar-homme-small.png
+    0.47 - /seo/static_3.3.0.3/css/seo_yes.css
+    0.24 - /ville/montauban-82
+    2.61 - /scc/static_3.3.0.5/images/logo-footer-pagesjaunes.gif
+    0.71 - /scc/static_3.3.0.5/images/header-bg-nav.sp.png
+    0.71 - /scc/static_3.3.0.5/images/containerGlobalMain_bg.png
+    0.24 - /dialog/oauth/?client_id=115557168472025&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.pagesjaunes.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Dfbeb500e8%26origin%3Dhttp%253A%252F%252Fwww.pagesjaunes.fr%252Ff2d4acb094%26domain%3Dwww.pagesjaunes.fr%26relation%3Dparent&sdk=joey
+    0.47 - /ilo/static_3.3.0.10/images/mvi-num-bg.sp.png
+    0.24 - /ilo/static_3.3.0.10/images/common-pic.sp.png
+    0.24 - /hit.xiti?s=483323&s2=1&p=ILO_Home_page::Recherche-Pros::Homepage_PJ_localisee&hl=14x21x48&vrn=1&amp;ac=&amp;an=&amp;ptype=1-0-0&lng=en-US&vtag=42004-31011&idp=1421489496482&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22%3C!cookie%3AlieuChoisi%3E%22,%22localiterechercheeILOPOI%22%3A%22%3C!cookie%3AlieuAccueil%3E%22,%22OASid%22%3A%22%3C!cookie%3AOAX%3E%22}&ref=http://www.pagesjaunes.fr/
+    0.71 - /scc/static_3.3.0.5/images/global-bg-formfields.sp.png
+    0.24 - /stat/pages?IdPage=&IdPagePrecedent=&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Fannonceurs%2Fnouveaux-pack-visibilite-internet-1&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=294094197725&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=SEO_PB&UserId=NOCONECT&TypeFormulaire=DEFAUT&CodeService=21&TagPage=INTERVALLE&GroupeNiveau1=PAGE-ANNUAIRE&GroupeNiveau2=PB&Param1=&Param2=&CodeServiceVED=DEFAUT&Localisation=LOCAL
+    2.37 - /connect/xd_arbiter.php?version=11
+    0.24 - /ilo/static_3.3.0.10/images/meteo/50_png/50_lwhitecloud_sun_lightrain.png
+    2.61 - /scc/static_3.3.0.5/css/global_scc.css
+    0.24 - /ilo/static_3.3.0.10/images/common-bg-pagination.sp.png
+    1.66 - /ilo/static_3.3.0.10/images/logo-pagesjaunes.png
+    0.24 - /produits/publique/cartespostales/version_150/20071028/7889/0w7b5f9c7t7f6x0c5j5l.jpg
+    0.24 - /produits/publique/cartespostales/version_150/20070929/5058/d2g6u2t4o8m7q1x7y6f3.jpg
+    0.71 - /scc/static_3.3.0.5/images/section-footer-2.png
+    0.24 - /ilo/static_3.3.0.10/images/pic-localization-pb.png
+    0.24 - /produits/publique/cartespostales/version_150/20071028/7889/t5x5v4e1d8m1m6k6k7g0.jpg
+    0.24 - /hit.xiti?s=483323&s2=2&p=Thematiques::non_localise::index&hl=14x21x53&amp;ac=&amp;an=0&amp;ptype=3-3-3&lng=en-US&vtag=42004-31011&idp=1421536883743&jv=1&r=1920x1200x32x32&re=930x670&ref=http://www.pagesjaunes.fr/sorties/voodoo-burlesque-391935
+    0.47 - /ilo/static_3.3.0.10/images/meteo/50_png/50_swhitecloud_sun.png
+    0.24 - /pagesblanches/P
+    0.24 - /scc/static_3.3.0.5/images/containerGlobalMainLargeRight_bg.png
+    0.71 - /scc/static_3.3.0.5/images/containerform-bg.png
+    0.71 - /ilo/static_3.3.0.10/images/magazine-bg-encarttitle.png
+    0.47 - /seo/static_3.3.0.3/css/rightcolumn.css
+    0.71 - /ilo/static_3.3.0.10/images/contribute-bg-container.png
+    0.24 - /hit.xiti?s=483323&s2=1&p=ILO_Home_page::Recherche-Pros::Homepage_PJ_localisee&hl=14x21x49&amp;ac=&amp;an=&amp;ptype=1-0-0&lng=en-US&vtag=42004-31011&idp=1421498846019&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22%22,%22localiterechercheeILOPOI%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/pagesblanches
+    0.24 - /hit.xiti?s=483323&s2=1&p=ILO_Home_page::Recherche-Pros::Homepage_PJ_localisee&hl=14x21x54&amp;ac=&amp;an=&amp;ptype=1-0-0&lng=en-US&vtag=42004-31011&idp=1421549377637&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22L07505600%22,%22localiterechercheeILOPOI%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/annuaire/corse
+    0.24 - /ilo/static_3.3.0.10/images/meteo/regions/idf.png
+    0.24 - /stat/pages?IdPage=&IdPagePrecedent=&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Fsorties%2Fvoodoo-burlesque-391935&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=273073198548&TypeLangue=1&NewVisitor=-1&IdRequete=&TypePage=PORTAIL&TypePortail=P_THE&UserId=NOCONECT&TypeFormulaire=DEFAUT&CodeService=19&TagPage=INDEX&GroupeNiveau1=(PRO)LR&GroupeNiveau2=P-THEMATIQUES&Param1=&Param2=&CodeServiceVED=DEFAUT&Localisation=LOCAL
+    0.24 - /boilo//ilo/0000/000/000/000/288/265/288265.jpg
+    0.71 - /scc/static_3.3.0.5/images/footer-bg-bullet2.png
+    0.24 - /css/pj_photos-1900.css
+    0.95 - /ilo/static_3.3.0.10/images/meteo/50_png/50_lwhitecloud_sun.png
+    0.24 - /js/m.js
+    0.24 - /RealMedia/ads/adstream_jx.ads/PJ2010/PF/ILO/d075/L07505600/context@x01
+    0.24 - /ilo/static_3.3.0.10/images/mapbeach-bg-flag.sp.png
+    0.24 - /boilo/ilo/0000/000/000/000/283/640/283640.jpg
+    0.24 - /stat/pages?IdPage=1891347970907585001347970909154&IdPagePrecedent=1891347970907585001347970908465&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2Fpagesblanches&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=212012198557&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=PJ&UserId=NOCONECT&TypeFormulaire=EXPRESS&CodeService=54&TagPage=HP_LOCALE&GroupeNiveau1=PJ&GroupeNiveau2=HP&Param1=LOCALE&Param2=&CodeServiceVED=METEO&Localisation=LOCAL
+    0.71 - /ilo/static_3.3.0.10/images/urbanview.png
+    0.71 - /ilo/static_3.3.0.10/images/notation-bg.png
+    0.24 - /v2/javascript/ciwstat.js
+    0.24 - /boilo//ilo/0000/000/000/000/283/449/283449.jpg
+    1.18 - /ilo/static_3.3.0.10/images/form-local-tab.sp.png
+    0.24 - /m/web/242030198266?n=253067142&g=232032197723&c=PJ&p=VILLE.1900&l3=LR&l4=LOCALITE&scw=1920&sch=1200&scp=32&r=http%3A//www.pagesjaunes.fr/ville/paris-75/photos-anciennes/&dom=www.notrefamille.com&enc=iso-8859-1&t=ml&v=1.16
+    0.24 - /produits/publique/cartespostales/version_150/20080114/7968/u9h9g4d5h6h7d0e5w5l4.jpg
+    0.24 - /produits/publique/cartespostales/version_150/20080114/7968/r2h1h2s6j4b4y1c9t6z8.jpg
+    0.95 - /ilo/static_3.3.0.10/images/tlc-bg.sp.png
+    0.24 - /boilo//ilo/0000/000/000/000/283/387/283387.jpg
+    0.24 - /annuaire/corse
+    0.24 - /stat/pages?IdPage=1891347970907585001347970908465&IdPagePrecedent=1891347970907585561347970907585&Referrer=http%3A%2F%2Fwww.pagesjaunes.fr%2F&VersionApplication=3.3.0.8&Cumul=298098197719&NoCompte=212012198557&TypeLangue=1&NewVisitor=TRUE&IdRequete=&TypePage=PORTAIL&TypePortail=PJ&UserId=NOCONECT&TypeFormulaire=DEFAUT&CodeService=54&TagPage=HP_NUM&GroupeNiveau1=PB&GroupeNiveau2=HP&Param1=NUM&Param2=&CodeServiceVED=METEO&Localisation=NATIONAL
+    0.24 - /boilo/ilo/0000/000/000/000/284/125/284125.jpg
+    2.37 - /pagesjaunes/pjsbx.js
+    0.71 - /ilo/static_3.3.0.10/images/pds-bg-pic.sp.jpg
+    0.24 - /seo/static_3.3.0.3/images/bg_bp-B.png
+    0.24 - /ville/paris-75/photos-anciennes/
+    0.24 - /ilo/static_3.3.0.10/images/meteo/61/ldarkcloud.png
+    0.24 - /hit.xiti?s=483323&s2=1&p=ILO_RUBRIQUES::1900::1900::1900_MP&hl=14x21x51&amp;ac=&amp;an=&amp;ptype=2-0-0&lng=en-US&vtag=42004-31011&idp=1421512883822&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22L07505600%22,%22localiterechercheeILOPOI%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/ville/paris-75/meteo/
+    2.61 - /scc/static_3.3.0.5/js/xtclicks.js
+    0.71 - /seo/static_3.3.0.3/css/seo.css
+    0.24 - /css/pj_reset.css
+    0.24 - /produits/publique/cartespostales/version_150/20070929/5063/4i7a8f0p9v4h5z5d8m8d.jpg
+    0.24 - /activites/
+    0.24 - /ilo/static_3.3.0.10/images/common-bg-tabs-list-items.sp.png
+    0.24 - /ilo/static_3.3.0.10/images/bg-btn-push.png
+    0.24 - /javascript/nf.js
+    0.24 - /produits/publique/cartespostales/version_150/20071028/7889/2m3h7q6j1e0o1o5b6u5g.jpg
+    0.24 - /ilo/static_3.3.0.10/images/meteo/61/lwhitecloud.png
+    0.24 - /hit.xiti?s=483323&s2=2&p=Thematiques::PB::intervalle&hl=14x21x55&amp;ac=&amp;an=&amp;ptype=3-3-3&lng=en-US&vtag=42004-31011&idp=1421556564404&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localiterechercheeYESPB%22%3A%22%22,%22Coderubrique%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/annonceurs/nouveaux-pack-visibilite-internet-1
+    0.24 - /dialog/oauth/?client_id=115557168472025&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.pagesjaunes.fr&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df183544738%26origin%3Dhttp%253A%252F%252Fwww.pagesjaunes.fr%252Ff1cd21d088%26domain%3Dwww.pagesjaunes.fr%26relation%3Dparent&sdk=joey
+    0.24 - /ilo/static_3.3.0.10/images/meteo/50_png/50_moon.png
+    0.24 - /sorties/voodoo-burlesque-391935
+    0.24 - /css/pj_global-photos-1900.css?20080428
+    0.24 - /HP_FONDDEPAGE/R73/D082/hp_habillage_L082_Montauban.jpg
+    0.47 - /seo/static_3.3.0.3/css/global_seo_yes.css
+    0.71 - /ilo/static_3.3.0.10/images/pds-bg-title.png
+    0.24 - /v2/services_cartes_postales/pagesjaunes/cartes-postales-liste.asp?theme=pagesjaunes&ville=88795
+    0.24 - /scc/static_3.3.0.5/images/contentformlarge-bg-pb.png
+    0.24 - /hit.xiti?s=483323&s2=1&p=ILO_Home_page::Pages-Blanches::HomePage_formulaire_PB_moteur_express&hl=14x21x49&amp;ac=&amp;an=&amp;ptype=1-0-0&lng=en-US&vtag=42004-31011&idp=142149654257&jv=1&r=1920x1200x32x32&re=930x670&stc={%22localitechoisieILOPOI%22%3A%22%22,%22localiterechercheeILOPOI%22%3A%22%22,%22OASid%22%3A%22%22}&ref=http://www.pagesjaunes.fr/
+    0.24 - /scc/static_3.3.0.5/images/contentform-bg-pb.png
+    0.71 - /scc/static_3.3.0.5/images/global-bg-bullets.sp.png
+    0.71 - /scc/static_3.3.0.5/images/header-bg.png
+    0.24 - /scc/static_3.3.0.5/images/contentformlarge-bg-pj.png
+    0.24 - /boilo/ilo/0000/000/000/000/300/351/300351.jpg
+    0.24 - /boilo//ilo/0000/000/000/000/282/997/282997.jpg
+    0.95 - /bva/track.js
+    0.24 - /boilo//ilo/0000/000/000/000/282/964/282964.jpg
+    0.71 - /moncompte/avatar/publication/public/2012/09/18/UDYGEP8612.jpg
+    0.24 - /ilo/static_3.3.0.10/images/meteo/50_png/50_ldarkcloud_sun_lightrain.png
+    0.24 - /pagesblanches
+    1.66 - /ilo/static_3.3.0.10/css/global_ilo.css
+  set-toto: 
+    100.00 - zozo=6
+  content-encoding: 
+    100.00 - gzip
+  content-type: 
+    2.22 - text/html;charset=ISO-8859-15
+    0.63 - text/html
+    15.56 - image/jpeg
+    9.84 - image/gif
+    52.38 - image/png
+    0.32 - application/x-javascript; charset=utf-8
+    1.90 - image/GIF
+    0.32 - text/html;charset=UTF-8
+    3.49 - application/x-javascript
+    12.38 - text/css
+    0.95 - text/html;charset=ISO-8859-1
+  age: 
+    2.19 - 944149
+    0.63 - 86470
+    0.31 - 709365
+    0.63 - 2516201
+    0.31 - 3359810
+    0.31 - 4831781
+    0.31 - 86194
+    0.31 - 87243
+    1.25 - 24
+    0.63 - 25
+    0.31 - 2152200
+    6.58 - 23
+    0.94 - 1
+    35.42 - 0
+    10.66 - 1060985
+    5.33 - 1060984
+    0.94 - 1060986
+    15.05 - 962145
+    0.31 - 962147
+    1.88 - 962143
+    0.31 - 3727267
+    0.63 - 5356885
+    3.13 - 5356888
+    3.76 - 451078
+    0.63 - 6589
+    0.94 - 964050
+    0.94 - 18220
+    1.25 - 5365373
+    0.31 - 86481
+    2.82 - 451097
+    0.63 - 335611
+    0.31 - 4569610
+  :status: 
+    0.24 - 301
+    0.47 - 302
+    0.47 - 304
+    7.35 - 0
+    91.47 - 200
+  server: 
+    0.63 - Apache-Coyote/1.1
+    7.26 - Microsoft-IIS/6.0
+    1.58 - Microsoft-IIS/7.5
+    0.32 - BigIP
+    0.95 - nginx/1.0.2
+    88.33 - Apache
+    0.95 - Apache/1.3.41 (Unix) mod_ssl/2.8.31 OpenSSL/0.9.8e
+  :scheme: 
+    97.63 - http
+    2.37 - https
+  edge-control: 
+    100.00 - no-store
+  cookie: 
+    1.72 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; e=UFhnX8CoAHEAAUK5OEU; lieuAccueil=""; cookieEnabled=OK; trackEnabled=0; xtan=-; xtant=1
+    0.57 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; xtan=-; xtant=1; lieuAccueil=""
+    0.57 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; e=UFhnX8CoAHEAAUK5OEU; lieuAccueil=""; xtan=-; xtant=1; cookieEnabled=OK; trackEnabled=0
+    1.72 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; e=UFhnX8CoAHEAAUK5OEU; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970913500; IdPagePrecedent=1891347970907585001347970911438; lieuChoisi=L08212100; lieuAccueil=""; lieuxConsultes=L07505600; cookieEnabled=OK; trackEnabled=0; xtan=-; xtant=1
+    0.57 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970910361; IdPagePrecedent=1891347970907585001347970909801; lieuChoisi=L07505600; lieuAccueil=""; lieuxConsultes=""; xtan=-; xtant=1
+    1.15 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970909801; IdPagePrecedent=1891347970907585001347970909154; lieuChoisi=L07505600; lieuAccueil=""; lieuxConsultes=""; xtan=-; xtant=1
+    2.30 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; lieuChoisi=L07505600; lieuAccueil=""; lieuxConsultes=""; e=UFhnX8CoAHEAAUK5OEU; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970911438; IdPagePrecedent=1891347970907585001347970910361; xtan=-; xtant=1
+    3.45 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; e=UFhnX8CoAHEAAUK5OEU; xtan=-; xtant=1; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970913500; IdPagePrecedent=1891347970907585001347970911438; lieuChoisi=L08212100; lieuAccueil=""; lieuxConsultes=L07505600
+    2.87 - IdPagePrecedent=0; PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; IdPage=1891347970907585561347970907585; VisitorID=189134797090758500; xtvrn=$483323$; xtan=-; xtant=1; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0
+    11.49 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; xtan=-; xtant=1; cookieEnabled=OK; trackEnabled=0; lieuAccueil=""
+    2.87 - inscriptionNewsletter=0; joyeuxEvenement=
+    12.07 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; lieuAccueil=""; e=UFhnX8CoAHEAAUK5OEU; xtan=-0; xtant=1
+    1.15 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970909154; IdPagePrecedent=1891347970907585001347970908465; lieuChoisi=L07505600; lieuAccueil=""; lieuxConsultes=""; xtan=-; xtant=1; cookieEnabled=OK; trackEnabled=0
+    4.02 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; lieuChoisi=L07505600; lieuAccueil=""; lieuxConsultes=""; e=UFhnX8CoAHEAAUK5OEU; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970911438; IdPagePrecedent=1891347970907585001347970910361; xtan=-0; xtant=1
+    1.72 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; lieuChoisi=L07505600; lieuAccueil=""; lieuxConsultes=""; xtan=-; xtant=1; e=UFhnX8CoAHEAAUK5OEU; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970911438; IdPagePrecedent=1891347970907585001347970910361
+    1.72 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; idrxvr=67240C86-D4FB-4D45-BF17-65BAC968EAC5; cookieEnabled=OK; trackEnabled=0; lieuAccueil=""; xtan=-; xtant=1
+    4.02 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; lieuAccueil=""; xtan=-; xtant=1; e=UFhnX8CoAHEAAUK5OEU
+    0.57 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970910361; IdPagePrecedent=1891347970907585001347970909801; lieuChoisi=L07505600; lieuAccueil=""; lieuxConsultes=""; xtan=-; xtant=1; e=UFhnX8CoAHEAAUK5OEU
+    0.57 - ASPSESSIONIDCASTCBBC=FKLNHCDAMJILAMBKCJGEPNLI; idfrontal=29; nb%5Ffrontal=10; stop%5Fiterat=1; inscriptionNewsletter=0; id%5Ffrontal=1; joyeuxEvenement=; akalang=
+    1.15 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; idrxvr=67240C86-D4FB-4D45-BF17-65BAC968EAC5; e=UFhnX8CoAHEAAUK5OEU; lieuAccueil=""; cookieEnabled=OK; trackEnabled=0; xtan=-; xtant=1
+    0.57 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; idrxvr=67240C86-D4FB-4D45-BF17-65BAC968EAC5; cookieEnabled=OK; trackEnabled=0; lieuAccueil=""; e=UFhnX8CoAHEAAUK5OEU; xtan=-0; xtant=1
+    10.92 - xtvrn=$483323$; xtan=-; xtant=1
+    4.60 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; lieuAccueil=""; e=UFhnX8CoAHEAAUK5OEU; xtan=-; xtant=1
+    0.57 - xtvrn=$483323$; xtan=-; xtant=1; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; idrxvr=67240C86-D4FB-4D45-BF17-65BAC968EAC5
+    0.57 - idfrontal=29; ASPSESSIONIDCASTCBBC=FKLNHCDAMJILAMBKCJGEPNLI
+    5.17 - ASPSESSIONIDCASTCBBC=FKLNHCDAMJILAMBKCJGEPNLI; nb%5Ffrontal=10; stop%5Fiterat=1; inscriptionNewsletter=0; id%5Ffrontal=1; joyeuxEvenement=; akalang=; idfrontal=29
+    1.15 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; lieuAccueil=""; xtan=-; xtant=1
+    0.57 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; idrxvr=67240C86-D4FB-4D45-BF17-65BAC968EAC5; cookieEnabled=OK; trackEnabled=0; e=UFhnX8CoAHEAAUK5OEU; lieuAccueil=""; xtan=-; xtant=1
+    0.57 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0; idrxvr=67240C86-D4FB-4D45-BF17-65BAC968EAC5; xtan=-; xtant=1
+    1.15 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970908465; IdPagePrecedent=1891347970907585561347970907585; xtan=-; xtant=1; cookieEnabled=OK; trackEnabled=0
+    12.64 - IdPagePrecedent=0; PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; IdPage=1891347970907585561347970907585; VisitorID=189134797090758500
+    2.30 - xtvrn=$483323$; xtan=-; xtant=1; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; cookieEnabled=OK; trackEnabled=0
+    1.15 - xtvrn=$483323$; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; idrxvr=67240C86-D4FB-4D45-BF17-65BAC968EAC5; cookieEnabled=OK; trackEnabled=0; lieuAccueil=""; e=UFhnX8CoAHEAAUK5OEU; xtan=-; xtant=1
+    1.72 - PJSESSIONID=886A50F90162C744D7DBFD3F44D2759D.yas61f; xtvrn=$483323$; rdmvalidation=0; Date1stVisit=Tue%20Sep%2018%202012%2014%3A21%3A48%20GMT+0200%20%28Romance%20Daylight%20Time%29; e=UFhnX8CoAHEAAUK5OEU; cookieYESSEO=886A50F90162C744D7DBFD3F44D2759D.yas61f; VisitorID=189134797090758500; IdPage=1891347970907585001347970913500; IdPagePrecedent=1891347970907585001347970911438; lieuChoisi=L08212100; lieuAccueil=""; lieuxConsultes=L07505600; xtan=-; xtant=1; cookieEnabled=OK; trackEnabled=0
+  x-powered-by: 
+    95.83 - ASP.NET
+    4.17 - JSF/2.0
+  :status-text: 
+    7.35 - unknown
+    91.47 - OK
+    0.47 - Not Modified
+    0.47 - Moved Temporarily
+    0.24 - Moved Permanently
+  :host: 
+    26.54 - static2.pagesjaunes.fr
+    0.95 - img.planet.fr
+    1.18 - s-static.ak.facebook.com
+    1.18 - www.facebook.com
+    40.28 - static.pagesjaunes.fr
+    1.18 - static.ak.facebook.com
+    0.47 - p.pagesjaunes.fr
+    15.88 - www.pagesjaunes.fr
+    2.84 - logc257.at.pagesjaunes.fr
+    1.18 - media.notrefamille.com
+    0.24 - e.pagesjaunes.fr
+    2.84 - www.notrefamille.com
+    1.18 - connect.facebook.net
+    3.79 - sbx.pagesjaunes.fr
+    0.24 - pagesjaunes.notrefamille.com
+
+
