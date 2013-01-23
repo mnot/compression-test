@@ -55,7 +55,7 @@ expires:
  Average:     28.87
  Low:         28
  High:        29
- Variability: 0.7073
+ Variability: 0.6951
  Percent of Total Size: 10.247197
  Percent of Total Count: 5.269923
  Encoded: 
@@ -321,7 +321,7 @@ user-agent:
  Average:     54.81
  Low:         1
  High:        147
- Variability: 0.9915
+ Variability: 0.9829
  Percent of Total Size: 19.197150
  Percent of Total Count: 9.076804
 

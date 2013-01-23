@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     54209
 NUMBER OF UNIQUE HEADERS:      35
 TOTAL NUMBER OF HEADERS:       3272
 TOTAL NUMBER OF MESSAGES:      256
-TOTAL BYTES SAVED BY ENCODING: 16549
+TOTAL BYTES SAVED BY ENCODING: 20817
 set-cookie: 
  Instances:   57
  Total:       6306
@@ -13,6 +13,12 @@ set-cookie:
  Variability: 0.4737
  Percent of Total Size: 11.632755
  Percent of Total Count: 1.742054
+ Encoded: 
+  Total:      2038
+  Average:    35.75
+  Low:        14
+  High:       45
+  Ratio:      67.68
 
 
 p3p: 
@@ -459,7 +465,7 @@ referer:
  Average:     61.40
  Low:         1
  High:        701
- Variability: 0.9258
+ Variability: 0.9297
  Percent of Total Size: 14.075149
  Percent of Total Count: 8.022563
 

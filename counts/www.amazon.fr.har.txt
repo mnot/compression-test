@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     330238
 NUMBER OF UNIQUE HEADERS:      27
 TOTAL NUMBER OF HEADERS:       12660
 TOTAL NUMBER OF MESSAGES:      873
-TOTAL BYTES SAVED BY ENCODING: 64875
+TOTAL BYTES SAVED BY ENCODING: 68502
 set-cookie: 
  Instances:   19
  Total:       5476
@@ -13,6 +13,12 @@ set-cookie:
  Variability: 0.2632
  Percent of Total Size: 1.658198
  Percent of Total Count: 0.150079
+ Encoded: 
+  Total:      1849
+  Average:    97.32
+  Low:        32
+  High:       139
+  Ratio:      66.23
 
 
 via: 
@@ -76,7 +82,7 @@ date:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.6537
+ Variability: 0.6549
  Percent of Total Size: 7.227212
  Percent of Total Count: 6.500790
  Encoded: 
@@ -93,7 +99,7 @@ last-modified:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.6638
+ Variability: 0.6663
  Percent of Total Size: 7.051581
  Percent of Total Count: 6.342812
  Encoded: 
@@ -591,10 +597,10 @@ nncoection           0.5                                                2
 x-amz-id-2           0.578947368421                                     19                  
 age                  0.644336175396                                     821                 
 date                 0.654921020656                                     823                 
-last-modified        0.66500622665                                      803                 
+last-modified        0.663760896638                                     803                 
 etag                 0.692307692308                                     39                  
 content-length       0.693928128872                                     807                 
-:path                0.729667812142                                     873                 
+:path                0.730813287514                                     873                 
 x-amz-cf-id          0.814352574103                                     641                 
 cookie               0.842105263158                                     19                  
 x-amzn-requestid     1.0                                                1                   

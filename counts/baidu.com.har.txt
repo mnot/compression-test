@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     74278
 NUMBER OF UNIQUE HEADERS:      26
 TOTAL NUMBER OF HEADERS:       5282
 TOTAL NUMBER OF MESSAGES:      455
-TOTAL BYTES SAVED BY ENCODING: 33694
+TOTAL BYTES SAVED BY ENCODING: 35778
 x-via: 
  Instances:   7
  Total:       882
@@ -24,6 +24,12 @@ set-cookie:
  Variability: 0.6333
  Percent of Total Size: 4.096772
  Percent of Total Count: 0.567967
+ Encoded: 
+  Total:      959
+  Average:    31.97
+  Low:        22
+  High:       44
+  Ratio:      68.49
 
 
 p3p: 
@@ -88,7 +94,7 @@ last-modified:
  Average:     28.99
  Low:         24
  High:        29
- Variability: 0.7426
+ Variability: 0.7449
  Percent of Total Size: 17.132933
  Percent of Total Count: 8.311246
  Encoded: 
@@ -127,7 +133,7 @@ cache-control:
  Average:     15.04
  Low:         7
  High:        28
- Variability: 0.5321
+ Variability: 0.5275
  Percent of Total Size: 8.827647
  Percent of Total Count: 8.254449
 
@@ -371,7 +377,7 @@ referer:
  Average:     62.26
  Low:         1
  High:        958
- Variability: 0.9802
+ Variability: 0.9780
  Percent of Total Size: 16.397979
  Percent of Total Count: 8.466691
 
@@ -508,7 +514,7 @@ cache-control        0.532110091743                                     436
 expires              0.608076009501                                     421                 
 set-cookie           0.633333333333                                     30                  
 last-modified        0.742596810934                                     439                 
-content-length       0.861244019139                                     209                 
+content-length       0.851674641148                                     209                 
 etag                 0.964285714286                                     56                  
 :path                0.98021978022                                      455                 
 x-via                1.0                                                7                   

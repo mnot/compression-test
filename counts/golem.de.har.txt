@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     74280
 NUMBER OF UNIQUE HEADERS:      42
 TOTAL NUMBER OF HEADERS:       4742
 TOTAL NUMBER OF MESSAGES:      311
-TOTAL BYTES SAVED BY ENCODING: 22216
+TOTAL BYTES SAVED BY ENCODING: 26035
 x-webkit-csp: 
  Instances:   4
  Total:       2248
@@ -35,6 +35,12 @@ set-cookie:
  Variability: 0.3111
  Percent of Total Size: 7.271136
  Percent of Total Count: 0.948967
+ Encoded: 
+  Total:      1582
+  Average:    35.16
+  Low:        24
+  High:       39
+  Ratio:      70.71
 
 
 p3p: 
@@ -730,7 +736,7 @@ location             0.461538461538                                     13
 google-lineitem-id   0.681818181818                                     22                  
 google-creative-id   0.681818181818                                     22                  
 content-length       0.846416382253                                     293                 
-last-modified        0.852589641434                                     251                 
+last-modified        0.856573705179                                     251                 
 age                  0.9375                                             32                  
 etag                 0.976958525346                                     217                 
 :path                0.990353697749                                     311                 

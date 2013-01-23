@@ -18,6 +18,7 @@ from pybloomfilter import BloomFilter
 from collections import defaultdict
 from importlib import import_module
 from datetime import datetime
+from Cookie import BaseCookie
 import sys
 import locale
 import optparse
@@ -46,6 +47,7 @@ def enc_date(val):
       val = 0
     return enc_uvarint(val)
     
+# Encode a number as a uvarint (unsigned variable length int)
 def enc_uvarint(val):
   if '' == val:
     val = 0
@@ -60,6 +62,33 @@ def enc_uvarint(val):
     v += chr((val & 0x7F) | (0x80 if shift != 0 else 0x00))
     val = shift
   return v
+  
+# Encoding a Set-Cookie header value.. basic encoding (no extensions supported beyond HttpOnly and Secure)
+def enc_setcookie(val):
+  vals = val.split('\x00');
+  encoded = ''
+  for v in vals:
+    if len(encoded) > 0:
+      encoded += '\x00';
+    v = v.replace(']','_') # work around parsing bug for some cookie values
+    v = v.replace('[','_')
+    cookie = BaseCookie(v)
+    for n in cookie:
+      morsel = cookie[n]
+      encoded += '.' #non-op... represent the bit flags
+      encoded += struct.pack('!B',len(n))
+      encoded += n
+      encoded += struct.pack('!L',len(morsel.value))
+      for f in ['path', 'domain']:
+        l = len(morsel[f])
+        encoded += struct.pack('!H',l)
+        if l > 0:
+          encoded += morsel[f]
+      if len(morsel['max-age']) > 0:
+        encoded += enc_uvarint(morsel['max-age'])
+      else:
+        encoded += enc_date(morsel['expires'])
+  return encoded
 
 encoders = {
   'last-modified': enc_date,
@@ -69,7 +98,8 @@ encoders = {
   'if-unmodified-since': enc_date,
   ':status': enc_uvarint,
   'content-length': enc_uvarint,
-  'age': enc_uvarint
+  'age': enc_uvarint,
+  'set-cookie': enc_setcookie
 }
 
 class Counter(object):

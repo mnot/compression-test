@@ -3,7 +3,7 @@ TOTAL HEADER VALUE LENGTH:     130444
 NUMBER OF UNIQUE HEADERS:      26
 TOTAL NUMBER OF HEADERS:       6655
 TOTAL NUMBER OF MESSAGES:      562
-TOTAL BYTES SAVED BY ENCODING: 24382
+TOTAL BYTES SAVED BY ENCODING: 24494
 set-cookie: 
  Instances:   2
  Total:       192
@@ -13,6 +13,12 @@ set-cookie:
  Variability: 1.0000
  Percent of Total Size: 0.147190
  Percent of Total Count: 0.030053
+ Encoded: 
+  Total:      80
+  Average:    40.00
+  Low:        28
+  High:       52
+  Ratio:      58.33
 
 
 location: 
@@ -551,7 +557,7 @@ accept-ranges        0.0344827586207                                    29
 cache-control        0.0420560747664                                    214                 
 x-requested-with     0.1                                                10                  
 last-modified        0.148337595908                                     391                 
-age                  0.151079136691                                     417                 
+age                  0.153477218225                                     417                 
 date                 0.158273381295                                     417                 
 expires              0.181818181818                                     99                  
 etag                 0.208333333333                                     24                  
