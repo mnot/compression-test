@@ -1,12 +1,13 @@
 res: 
-TOTAL HEADER VALUE LENGTH: 160209
-NUMBER OF UNIQUE HEADERS:  29
-TOTAL NUMBER OF HEADERS:   6300
-TOTAL NUMBER OF MESSAGES:  390
+TOTAL HEADER VALUE LENGTH:     160209
+NUMBER OF UNIQUE HEADERS:      29
+TOTAL NUMBER OF HEADERS:       6300
+TOTAL NUMBER OF MESSAGES:      390
+TOTAL BYTES SAVED BY ENCODING: 23552
 x-cache-lookup: 
  Instances:   381
  Total:       30491
- Average:     80.00
+ Average:     80.03
  Low:         24
  High:        173
  Variability: 0.3675
@@ -17,7 +18,7 @@ x-cache-lookup:
 via: 
  Instances:   390
  Total:       30242
- Average:     77.00
+ Average:     77.54
  Low:         66
  High:        107
  Variability: 0.0128
@@ -28,7 +29,7 @@ via:
 x-cache: 
  Instances:   381
  Total:       29504
- Average:     77.00
+ Average:     77.44
  Low:         34
  High:        152
  Variability: 0.4173
@@ -50,7 +51,7 @@ content-disposition:
 cache-control: 
  Instances:   208
  Total:       7181
- Average:     34.00
+ Average:     34.52
  Low:         15
  High:        47
  Variability: 0.0337
@@ -72,7 +73,7 @@ x-vary-options:
 x-varnish: 
  Instances:   155
  Total:       5236
- Average:     33.00
+ Average:     33.78
  Low:         10
  High:        43
  Variability: 0.1161
@@ -100,6 +101,12 @@ date:
  Variability: 0.3897
  Percent of Total Size: 7.059528
  Percent of Total Count: 6.190476
+ Encoded: 
+  Total:      1560
+  Average:    1560.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 last-modified: 
@@ -111,6 +118,12 @@ last-modified:
  Variability: 0.4029
  Percent of Total Size: 6.244968
  Percent of Total Count: 5.476190
+ Encoded: 
+  Total:      1380
+  Average:    1380.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 expires: 
@@ -122,12 +135,18 @@ expires:
  Variability: 0.1203
  Percent of Total Size: 2.407480
  Percent of Total Count: 2.111111
+ Encoded: 
+  Total:      532
+  Average:    532.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 etag: 
  Instances:   86
  Total:       2119
- Average:     24.00
+ Average:     24.64
  Low:         14
  High:        32
  Variability: 0.3837
@@ -138,7 +157,7 @@ etag:
 content-type: 
  Instances:   381
  Total:       6665
- Average:     17.00
+ Average:     17.49
  Low:         9
  High:        30
  Variability: 0.0236
@@ -160,7 +179,7 @@ x-timestamp:
 vary: 
  Instances:   163
  Total:       2522
- Average:     15.00
+ Average:     15.47
  Low:         15
  High:        22
  Variability: 0.0123
@@ -179,6 +198,17 @@ x-powered-by:
  Percent of Total Count: 1.571429
 
 
+server: 
+ Instances:   339
+ Total:       2801
+ Average:     8.26
+ Low:         6
+ High:        30
+ Variability: 0.0118
+ Percent of Total Size: 1.748341
+ Percent of Total Count: 5.380952
+
+
 :version: 
  Instances:   390
  Total:       3120
@@ -188,17 +218,6 @@ x-powered-by:
  Variability: 0.0026
  Percent of Total Size: 1.947456
  Percent of Total Count: 6.190476
-
-
-server: 
- Instances:   339
- Total:       2801
- Average:     8.00
- Low:         6
- High:        30
- Variability: 0.0118
- Percent of Total Size: 1.748341
- Percent of Total Count: 5.380952
 
 
 x-content-type-options: 
@@ -237,12 +256,18 @@ proxy-connection:
 age: 
  Instances:   381
  Total:       1695
- Average:     4.00
+ Average:     4.45
  Low:         1
  High:        8
  Variability: 0.4593
  Percent of Total Size: 1.057993
  Percent of Total Count: 6.047619
+ Encoded: 
+  Total:      918
+  Average:    822.10
+  Low:        1
+  High:       4
+  Ratio:      45.84
 
 
 content-encoding: 
@@ -267,6 +292,23 @@ x-frame-options:
  Percent of Total Count: 0.015873
 
 
+content-length: 
+ Instances:   365
+ Total:       1449
+ Average:     3.97
+ Low:         3
+ High:        5
+ Variability: 0.4219
+ Percent of Total Size: 0.904444
+ Percent of Total Count: 5.793651
+ Encoded: 
+  Total:      764
+  Average:    763.20
+  Low:        1
+  High:       3
+  Ratio:      47.27
+
+
 :status: 
  Instances:   390
  Total:       1170
@@ -276,23 +318,18 @@ x-frame-options:
  Variability: 0.0051
  Percent of Total Size: 0.730296
  Percent of Total Count: 6.190476
-
-
-content-length: 
- Instances:   365
- Total:       1449
- Average:     3.00
- Low:         3
- High:        5
- Variability: 0.4219
- Percent of Total Size: 0.904444
- Percent of Total Count: 5.793651
+ Encoded: 
+  Total:      780
+  Average:    780.00
+  Low:        2
+  High:       2
+  Ratio:      33.33
 
 
 :status-text: 
  Instances:   390
  Total:       1020
- Average:     2.00
+ Average:     2.62
  Low:         2
  High:        12
  Variability: 0.0051
@@ -323,10 +360,11 @@ access-control-allow-origin:
 
 
 req: 
-TOTAL HEADER VALUE LENGTH: 150835
-NUMBER OF UNIQUE HEADERS:  16
-TOTAL NUMBER OF HEADERS:   4958
-TOTAL NUMBER OF MESSAGES:  390
+TOTAL HEADER VALUE LENGTH:     150835
+NUMBER OF UNIQUE HEADERS:      16
+TOTAL NUMBER OF HEADERS:       4958
+TOTAL NUMBER OF MESSAGES:      390
+TOTAL BYTES SAVED BY ENCODING: 600
 user-agent: 
  Instances:   390
  Total:       41340
@@ -341,7 +379,7 @@ user-agent:
 :path: 
  Instances:   390
  Total:       39553
- Average:     101.00
+ Average:     101.42
  Low:         12
  High:        446
  Variability: 0.4051
@@ -352,7 +390,7 @@ user-agent:
 referer: 
  Instances:   390
  Total:       23040
- Average:     59.00
+ Average:     59.08
  Low:         39
  High:        93
  Variability: 0.0282
@@ -391,12 +429,18 @@ if-modified-since:
  Variability: 0.2917
  Percent of Total Size: 0.461431
  Percent of Total Count: 0.484066
+ Encoded: 
+  Total:      96
+  Average:    96.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 :host: 
  Instances:   390
  Total:       7276
- Average:     18.00
+ Average:     18.66
  Low:         16
  High:        20
  Variability: 0.0103
@@ -473,7 +517,7 @@ cache-control:
 accept: 
  Instances:   390
  Total:       2755
- Average:     7.00
+ Average:     7.06
  Low:         3
  High:        63
  Variability: 0.0103

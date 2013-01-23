@@ -1,8 +1,9 @@
 res: 
-TOTAL HEADER VALUE LENGTH: 130444
-NUMBER OF UNIQUE HEADERS:  26
-TOTAL NUMBER OF HEADERS:   6655
-TOTAL NUMBER OF MESSAGES:  562
+TOTAL HEADER VALUE LENGTH:     130444
+NUMBER OF UNIQUE HEADERS:      26
+TOTAL NUMBER OF HEADERS:       6655
+TOTAL NUMBER OF MESSAGES:      562
+TOTAL BYTES SAVED BY ENCODING: 24382
 set-cookie: 
  Instances:   2
  Total:       192
@@ -39,7 +40,7 @@ p3p:
 via: 
  Instances:   417
  Total:       36748
- Average:     88.00
+ Average:     88.12
  Low:         66
  High:        107
  Variability: 0.0072
@@ -50,7 +51,7 @@ via:
 x-cache: 
  Instances:   417
  Total:       19071
- Average:     45.00
+ Average:     45.73
  Low:         19
  High:        73
  Variability: 0.0120
@@ -61,7 +62,7 @@ x-cache:
 content-disposition: 
  Instances:   285
  Total:       9729
- Average:     34.00
+ Average:     34.14
  Low:         23
  High:        76
  Variability: 0.5544
@@ -78,6 +79,12 @@ date:
  Variability: 0.1583
  Percent of Total Size: 9.270645
  Percent of Total Count: 6.265965
+ Encoded: 
+  Total:      1668
+  Average:    1668.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 last-modified: 
@@ -89,6 +96,12 @@ last-modified:
  Variability: 0.1483
  Percent of Total Size: 8.692619
  Percent of Total Count: 5.875282
+ Encoded: 
+  Total:      1564
+  Average:    1564.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 expires: 
@@ -100,6 +113,12 @@ expires:
  Variability: 0.1818
  Percent of Total Size: 2.200944
  Percent of Total Count: 1.487603
+ Encoded: 
+  Total:      396
+  Average:    396.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 x-cache-lookup: 
@@ -116,7 +135,7 @@ x-cache-lookup:
 etag: 
  Instances:   24
  Total:       465
- Average:     19.00
+ Average:     19.38
  Low:         0
  High:        27
  Variability: 0.2083
@@ -127,7 +146,7 @@ etag:
 x-powered-by: 
  Instances:   383
  Total:       7253
- Average:     18.00
+ Average:     18.94
  Low:         7
  High:        19
  Variability: 0.0052
@@ -160,7 +179,7 @@ x-xss-protection:
 content-type: 
  Instances:   416
  Total:       4625
- Average:     11.00
+ Average:     11.12
  Low:         8
  High:        30
  Variability: 0.0264
@@ -171,7 +190,7 @@ content-type:
 cache-control: 
  Instances:   105
  Total:       1016
- Average:     9.00
+ Average:     9.68
  Low:         6
  High:        43
  Variability: 0.0762
@@ -204,7 +223,7 @@ x-content-type-options:
 server: 
  Instances:   416
  Total:       2668
- Average:     6.00
+ Average:     6.41
  Low:         4
  High:        17
  Variability: 0.0120
@@ -248,18 +267,41 @@ content-encoding:
 content-length: 
  Instances:   415
  Total:       1523
- Average:     3.00
+ Average:     3.67
  Low:         1
  High:        6
  Variability: 0.5301
  Percent of Total Size: 1.167551
  Percent of Total Count: 6.235913
+ Encoded: 
+  Total:      808
+  Average:    774.52
+  Low:        1
+  High:       3
+  Ratio:      46.95
+
+
+age: 
+ Instances:   417
+ Total:       1223
+ Average:     2.93
+ Low:         1
+ High:        7
+ Variability: 0.1535
+ Percent of Total Size: 0.937567
+ Percent of Total Count: 6.265965
+ Encoded: 
+  Total:      719
+  Average:    613.31
+  Low:        1
+  High:       4
+  Ratio:      41.21
 
 
 :status-text: 
  Instances:   562
  Total:       1551
- Average:     2.00
+ Average:     2.76
  Low:         2
  High:        17
  Variability: 0.0089
@@ -270,34 +312,30 @@ content-length:
 :status: 
  Instances:   562
  Total:       1538
- Average:     2.00
+ Average:     2.74
  Low:         1
  High:        3
  Variability: 0.0089
  Percent of Total Size: 1.179050
  Percent of Total Count: 8.444778
-
-
-age: 
- Instances:   417
- Total:       1223
- Average:     2.00
- Low:         1
- High:        7
- Variability: 0.1535
- Percent of Total Size: 0.937567
- Percent of Total Count: 6.265965
+ Encoded: 
+  Total:      1050
+  Average:    1059.83
+  Low:        1
+  High:       2
+  Ratio:      31.73
 
 
 req: 
-TOTAL HEADER VALUE LENGTH: 232206
-NUMBER OF UNIQUE HEADERS:  17
-TOTAL NUMBER OF HEADERS:   6394
-TOTAL NUMBER OF MESSAGES:  562
+TOTAL HEADER VALUE LENGTH:     232206
+NUMBER OF UNIQUE HEADERS:      17
+TOTAL NUMBER OF HEADERS:       6394
+TOTAL NUMBER OF MESSAGES:      562
+TOTAL BYTES SAVED BY ENCODING: 75
 cookie: 
  Instances:   393
  Total:       61079
- Average:     155.00
+ Average:     155.42
  Low:         14
  High:        187
  Variability: 0.0127
@@ -319,7 +357,7 @@ user-agent:
 referer: 
  Instances:   491
  Total:       31865
- Average:     64.00
+ Average:     64.90
  Low:         34
  High:        118
  Variability: 0.0244
@@ -330,7 +368,7 @@ referer:
 :path: 
  Instances:   562
  Total:       34892
- Average:     62.00
+ Average:     62.09
  Low:         9
  High:        393
  Variability: 0.5178
@@ -358,6 +396,12 @@ if-modified-since:
  Variability: 0.6667
  Percent of Total Size: 0.037467
  Percent of Total Count: 0.046919
+ Encoded: 
+  Total:      12
+  Average:    12.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 if-none-match: 
@@ -374,7 +418,7 @@ if-none-match:
 :host: 
  Instances:   562
  Total:       10094
- Average:     17.00
+ Average:     17.96
  Low:         13
  High:        24
  Variability: 0.0125
@@ -451,7 +495,7 @@ cache-control:
 accept: 
  Instances:   417
  Total:       2931
- Average:     7.00
+ Average:     7.03
  Low:         3
  High:        63
  Variability: 0.0072
@@ -517,7 +561,7 @@ x-xss-protection     0.5                                                2
 x-content-type-options 0.5                                                2                   
 location             0.5                                                2                   
 if-none-match        0.5                                                2                   
-:path                0.516014234875                                     562                 
+:path                0.517793594306                                     562                 
 content-length       0.530120481928                                     415                 
 content-disposition  0.554385964912                                     285                 
 if-modified-since    0.666666666667                                     3                   

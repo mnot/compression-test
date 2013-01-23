@@ -1,12 +1,13 @@
 res: 
-TOTAL HEADER VALUE LENGTH: 164536
-NUMBER OF UNIQUE HEADERS:  35
-TOTAL NUMBER OF HEADERS:   9544
-TOTAL NUMBER OF MESSAGES:  792
+TOTAL HEADER VALUE LENGTH:     164536
+NUMBER OF UNIQUE HEADERS:      35
+TOTAL NUMBER OF HEADERS:       9544
+TOTAL NUMBER OF MESSAGES:      792
+TOTAL BYTES SAVED BY ENCODING: 33091
 set-cookie: 
  Instances:   11
  Total:       1450
- Average:     131.00
+ Average:     131.82
  Low:         90
  High:        136
  Variability: 1.0000
@@ -17,7 +18,7 @@ set-cookie:
 p3p: 
  Instances:   50
  Total:       5696
- Average:     113.00
+ Average:     113.92
  Low:         84
  High:        152
  Variability: 0.0400
@@ -28,7 +29,7 @@ p3p:
 location: 
  Instances:   32
  Total:       2231
- Average:     69.00
+ Average:     69.72
  Low:         68
  High:        70
  Variability: 1.0000
@@ -39,7 +40,7 @@ location:
 via: 
  Instances:   653
  Total:       41786
- Average:     63.00
+ Average:     63.99
  Low:         25
  High:        66
  Variability: 0.0031
@@ -78,6 +79,12 @@ date:
  Variability: 0.0622
  Percent of Total Size: 12.743108
  Percent of Total Count: 7.575440
+ Encoded: 
+  Total:      2892
+  Average:    2892.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 last-modified: 
@@ -89,6 +96,12 @@ last-modified:
  Variability: 0.3488
  Percent of Total Size: 5.305222
  Percent of Total Count: 3.153814
+ Encoded: 
+  Total:      1204
+  Average:    1204.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 expires: 
@@ -100,6 +113,23 @@ expires:
  Variability: 0.2151
  Percent of Total Size: 3.278310
  Percent of Total Count: 1.948868
+ Encoded: 
+  Total:      660
+  Average:    610.89
+  Low:        1
+  High:       4
+  Ratio:      87.76
+
+
+cache-control: 
+ Instances:   380
+ Total:       9260
+ Average:     24.37
+ Low:         8
+ High:        62
+ Variability: 0.0737
+ Percent of Total Size: 5.627948
+ Percent of Total Count: 3.981559
 
 
 x-cache-lookup: 
@@ -111,17 +141,6 @@ x-cache-lookup:
  Variability: 0.0016
  Percent of Total Size: 9.058200
  Percent of Total Count: 6.506706
-
-
-cache-control: 
- Instances:   380
- Total:       9260
- Average:     24.00
- Low:         8
- High:        62
- Variability: 0.0737
- Percent of Total Size: 5.627948
- Percent of Total Count: 3.981559
 
 
 x-cache: 
@@ -138,7 +157,7 @@ x-cache:
 content-type: 
  Instances:   691
  Total:       13029
- Average:     18.00
+ Average:     18.86
  Low:         8
  High:        39
  Variability: 0.0217
@@ -149,7 +168,7 @@ content-type:
 etag: 
  Instances:   204
  Total:       3681
- Average:     18.00
+ Average:     18.04
  Low:         10
  High:        45
  Variability: 0.4461
@@ -259,7 +278,7 @@ pragma:
 x-content-type-options: 
  Instances:   113
  Total:       879
- Average:     7.00
+ Average:     7.78
  Low:         7
  High:        15
  Variability: 0.0177
@@ -292,7 +311,7 @@ status:
 server: 
  Instances:   342
  Total:       1743
- Average:     5.00
+ Average:     5.10
  Low:         3
  High:        7
  Variability: 0.0146
@@ -336,45 +355,63 @@ content-encoding:
 content-length: 
  Instances:   699
  Total:       2644
- Average:     3.00
+ Average:     3.78
  Low:         1
  High:        6
  Variability: 0.2089
  Percent of Total Size: 1.606943
  Percent of Total Count: 7.323973
-
-
-:status-text: 
- Instances:   792
- Total:       2249
- Average:     2.00
- Low:         2
- High:        17
- Variability: 0.0038
- Percent of Total Size: 1.366874
- Percent of Total Count: 8.298407
+ Encoded: 
+  Total:      1415
+  Average:    1453.87
+  Low:        1
+  High:       3
+  Ratio:      46.48
 
 
 :status: 
  Instances:   792
  Total:       2302
- Average:     2.00
+ Average:     2.91
  Low:         1
  High:        3
  Variability: 0.0038
  Percent of Total Size: 1.399086
  Percent of Total Count: 8.298407
+ Encoded: 
+  Total:      1547
+  Average:    1547.26
+  Low:        1
+  High:       2
+  Ratio:      32.80
 
 
 age: 
  Instances:   670
  Total:       1912
- Average:     2.00
+ Average:     2.85
  Low:         1
  High:        7
  Variability: 0.1134
  Percent of Total Size: 1.162056
  Percent of Total Count: 7.020117
+ Encoded: 
+  Total:      1139
+  Average:    962.90
+  Low:        1
+  High:       4
+  Ratio:      40.43
+
+
+:status-text: 
+ Instances:   792
+ Total:       2249
+ Average:     2.84
+ Low:         2
+ High:        17
+ Variability: 0.0038
+ Percent of Total Size: 1.366874
+ Percent of Total Count: 8.298407
 
 
 content-language: 
@@ -389,14 +426,15 @@ content-language:
 
 
 req: 
-TOTAL HEADER VALUE LENGTH: 317122
-NUMBER OF UNIQUE HEADERS:  16
-TOTAL NUMBER OF HEADERS:   9389
-TOTAL NUMBER OF MESSAGES:  792
+TOTAL HEADER VALUE LENGTH:     317122
+NUMBER OF UNIQUE HEADERS:      16
+TOTAL NUMBER OF HEADERS:       9389
+TOTAL NUMBER OF MESSAGES:      792
+TOTAL BYTES SAVED BY ENCODING: 0
 cookie: 
  Instances:   28
  Total:       4512
- Average:     161.00
+ Average:     161.14
  Low:         26
  High:        240
  Variability: 0.6071
@@ -418,10 +456,10 @@ user-agent:
 :path: 
  Instances:   792
  Total:       73077
- Average:     92.00
+ Average:     92.27
  Low:         1
  High:        594
- Variability: 0.4192
+ Variability: 0.4242
  Percent of Total Size: 23.043813
  Percent of Total Count: 8.435403
 
@@ -429,7 +467,7 @@ user-agent:
 referer: 
  Instances:   760
  Total:       63125
- Average:     83.00
+ Average:     83.06
  Low:         31
  High:        393
  Variability: 0.1053
@@ -462,7 +500,7 @@ accept-charset:
 :host: 
  Instances:   792
  Total:       14219
- Average:     17.00
+ Average:     17.95
  Low:         11
  High:        32
  Variability: 0.0278
@@ -473,7 +511,7 @@ accept-charset:
 accept: 
  Instances:   758
  Total:       13569
- Average:     17.00
+ Average:     17.90
  Low:         3
  High:        63
  Variability: 0.0040
@@ -550,7 +588,7 @@ cache-control:
 :scheme: 
  Instances:   792
  Total:       3257
- Average:     4.00
+ Average:     4.11
  Low:         4
  High:        5
  Variability: 0.0025
@@ -609,8 +647,8 @@ content-length       0.20886981402                                      699
 expires              0.215053763441                                     186                 
 x-fb-debug           0.25                                               12                  
 last-modified        0.348837209302                                     301                 
-:path                0.417929292929                                     792                 
-etag                 0.446078431373                                     204                 
+:path                0.421717171717                                     792                 
+etag                 0.441176470588                                     204                 
 x-powered-by         0.5                                                2                   
 cookie               0.607142857143                                     28                  
 location             1.0                                                32                  

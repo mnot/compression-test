@@ -17,12 +17,60 @@ requires: https://github.com/axiak/pybloomfiltermmap
 from pybloomfilter import BloomFilter
 from collections import defaultdict
 from importlib import import_module
+from datetime import datetime
 import sys
 import locale
 import optparse
+import struct
 
 from lib.harfile import read_har_file
 from lib.processors import Processors
+
+
+def epoch(dt):
+  return (dt - datetime.utcfromtimestamp(0)).total_seconds()
+
+NEW_EPOCH = epoch(datetime(1990,1,1,0,0,0,0))
+
+# Optimized date encoding based on NEW_EPOCH VALUE
+def enc_date(val):
+  try:
+    _v = epoch(datetime.strptime(val, '%a, %d %b %Y %H:%M:%S GMT')) - NEW_EPOCH 
+    return struct.pack('!I',_v)
+  except:
+    # parse it as delta-seconds... at least try 
+    try:
+      val = max(0,int(val))
+    except:
+      # it's an invalid timestamp... just set to 0 and move on
+      val = 0
+    return enc_uvarint(val)
+    
+def enc_uvarint(val):
+  if '' == val:
+    val = 0
+  # on the offchance there are multiple values... TODO: handle this better...
+  if hasattr(val,'split'):
+    val = val.split('\x00')[0]
+  val = int(val) 
+  v = ''
+  shift = True
+  while shift:
+    shift = val >> 7
+    v += chr((val & 0x7F) | (0x80 if shift != 0 else 0x00))
+    val = shift
+  return v
+
+encoders = {
+  'last-modified': enc_date,
+  'date': enc_date,
+  'expires': enc_date,
+  'if-modified-since': enc_date,
+  'if-unmodified-since': enc_date,
+  ':status': enc_uvarint,
+  'content-length': enc_uvarint,
+  'age': enc_uvarint
+}
 
 class Counter(object):
   """
@@ -52,11 +100,13 @@ class CompressionTester(object):
   c = {
     'req':{
       '_TOTAL_HEADER_VALUE_LEN': 0,
+      '_TOTAL_ENCODED_VALUE_LEN': 0,
       '_TOTAL_MESSAGES': 0,
       '_TOTAL_HEADER_INSTANCES': 0
     },
     'res':{
       '_TOTAL_HEADER_VALUE_LEN': 0,
+      '_TOTAL_ENCODED_VALUE_LEN': 0,
       '_TOTAL_MESSAGES': 0,
       '_TOTAL_HEADER_INSTANCES': 0
     }
@@ -87,6 +137,11 @@ class CompressionTester(object):
           if not key in self.v:
             self.v[key] = Counter()
           self.v[key].inc(val)
+          
+          encoded = val
+          if key in encoders:
+            encoded = encoders[key](val)
+          
           if not key in section:
             section[key] = {
               'C':0,
@@ -94,23 +149,36 @@ class CompressionTester(object):
               'A':0.0,
               'L':sys.maxint,
               'H':0,
+              'ET':0,
+              'EA':0.0,
+              'EL':sys.maxint,
+              'EH':0,
               'V': Counter()}
           l = len(val)
+          el = len(encoded)
           section['_TOTAL_HEADER_VALUE_LEN'] += l
           section['_TOTAL_HEADER_INSTANCES'] += 1
+          section['_TOTAL_ENCODED_VALUE_LEN'] += el
           k = section[key]
           k['C'] += 1
           k['T'] += l
-          k['A'] = k['T'] / k['C']
+          k['A'] = float(k['T']) / float(k['C'])
           k['L'] = min(k['L'], l)
           k['H'] = max(k['H'], l)
+          
+          k['ET'] += el
+          k['EA'] += float(k['ET']) / float(k['C'])
+          k['EL'] = min(k['EL'],el)
+          k['EH'] = max(k['EH'],el)
+          
           k['V'].inc(val)
     for section,data in self.c.iteritems():
       print '%s: ' % section
-      print 'TOTAL HEADER VALUE LENGTH: %d' % data['_TOTAL_HEADER_VALUE_LEN']
-      print 'NUMBER OF UNIQUE HEADERS:  %d' % (len(data) - 3)
-      print 'TOTAL NUMBER OF HEADERS:   %d' % data['_TOTAL_HEADER_INSTANCES']
-      print 'TOTAL NUMBER OF MESSAGES:  %d' % data['_TOTAL_MESSAGES']
+      print 'TOTAL HEADER VALUE LENGTH:     %d' % data['_TOTAL_HEADER_VALUE_LEN']
+      print 'NUMBER OF UNIQUE HEADERS:      %d' % (len(data) - 4)
+      print 'TOTAL NUMBER OF HEADERS:       %d' % data['_TOTAL_HEADER_INSTANCES']
+      print 'TOTAL NUMBER OF MESSAGES:      %d' % data['_TOTAL_MESSAGES']
+      print 'TOTAL BYTES SAVED BY ENCODING: %d' % (data['_TOTAL_HEADER_VALUE_LEN'] - data['_TOTAL_ENCODED_VALUE_LEN'])
       
       for (key,value) in sorted(data.iteritems(), key=lambda(k,v): (v,k), reverse=True):
         if not key[0] == '_':
@@ -123,6 +191,13 @@ class CompressionTester(object):
           print ' Variability: %.4f' % value['V'].ratio()
           print ' Percent of Total Size: %.6f' % ((float(value['T']) / float(data['_TOTAL_HEADER_VALUE_LEN'])) * 100)
           print ' Percent of Total Count: %.6f' % ((float(value['C']) / float(data['_TOTAL_HEADER_INSTANCES'])) * 100)
+          if key in encoders:
+            print ' Encoded: '
+            print '  Total:      %d' % value['ET']
+            print '  Average:    %.2f' % value['EA']
+            print '  Low:        %d' % value['EL']
+            print '  High:       %d' % value['EH']
+            print '  Ratio:      %.2f' % (100 - ((float(value['ET']) / float(value['T'])) * 100))
           print '\n'
  
     print 'TOTAL VARIABILITY FOR ALL HEADERS:'

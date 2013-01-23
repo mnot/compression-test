@@ -1,12 +1,13 @@
 res: 
-TOTAL HEADER VALUE LENGTH: 110743
-NUMBER OF UNIQUE HEADERS:  44
-TOTAL NUMBER OF HEADERS:   5374
-TOTAL NUMBER OF MESSAGES:  366
+TOTAL HEADER VALUE LENGTH:     110743
+NUMBER OF UNIQUE HEADERS:      44
+TOTAL NUMBER OF HEADERS:       5374
+TOTAL NUMBER OF MESSAGES:      366
+TOTAL BYTES SAVED BY ENCODING: 26005
 p3p: 
  Instances:   52
  Total:       7610
- Average:     146.00
+ Average:     146.35
  Low:         28
  High:        238
  Variability: 0.1731
@@ -17,7 +18,7 @@ p3p:
 location: 
  Instances:   15
  Total:       1832
- Average:     122.00
+ Average:     122.13
  Low:         22
  High:        152
  Variability: 0.4000
@@ -28,7 +29,7 @@ location:
 set-cookie: 
  Instances:   48
  Total:       5014
- Average:     104.00
+ Average:     104.46
  Low:         56
  High:        176
  Variability: 0.2500
@@ -119,9 +120,15 @@ date:
  Average:     29.00
  Low:         29
  High:        29
- Variability: 0.6932
+ Variability: 0.6904
  Percent of Total Size: 9.558166
  Percent of Total Count: 6.791961
+ Encoded: 
+  Total:      1460
+  Average:    1460.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 last-modified: 
@@ -133,23 +140,35 @@ last-modified:
  Variability: 0.8808
  Percent of Total Size: 7.908401
  Percent of Total Count: 5.619650
+ Encoded: 
+  Total:      1208
+  Average:    1208.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 expires: 
  Instances:   314
  Total:       8777
- Average:     27.00
+ Average:     27.95
  Low:         1
  High:        29
  Variability: 0.2006
  Percent of Total Size: 7.925557
  Percent of Total Count: 5.842948
+ Encoded: 
+  Total:      1190
+  Average:    1121.96
+  Low:        1
+  High:       4
+  Ratio:      86.44
 
 
 cache-control: 
  Instances:   321
  Total:       8073
- Average:     25.00
+ Average:     25.15
  Low:         7
  High:        67
  Variability: 0.2118
@@ -182,7 +201,7 @@ x-sap-pg:
 etag: 
  Instances:   83
  Total:       1831
- Average:     22.00
+ Average:     22.06
  Low:         15
  High:        40
  Variability: 0.2169
@@ -201,6 +220,17 @@ x-amz-id-1:
  Percent of Total Count: 0.558243
 
 
+vary: 
+ Instances:   103
+ Total:       2040
+ Average:     19.81
+ Low:         15
+ High:        26
+ Variability: 0.0194
+ Percent of Total Size: 1.842103
+ Percent of Total Count: 1.916636
+
+
 x-cache: 
  Instances:   236
  Total:       4485
@@ -210,17 +240,6 @@ x-cache:
  Variability: 0.0085
  Percent of Total Size: 4.049917
  Percent of Total Count: 4.391515
-
-
-vary: 
- Instances:   103
- Total:       2040
- Average:     19.00
- Low:         15
- High:        26
- Variability: 0.0194
- Percent of Total Size: 1.842103
- Percent of Total Count: 1.916636
 
 
 keep-alive: 
@@ -270,7 +289,7 @@ x-xss-protection:
 content-type: 
  Instances:   366
  Total:       4584
- Average:     12.00
+ Average:     12.52
  Low:         8
  High:        29
  Variability: 0.0464
@@ -292,7 +311,7 @@ x-ocsp-reponder-id:
 x-host: 
  Instances:   3
  Total:       31
- Average:     10.00
+ Average:     10.33
  Low:         10
  High:        11
  Variability: 1.0000
@@ -314,7 +333,7 @@ x-frame-options:
 connection: 
  Instances:   306
  Total:       3025
- Average:     9.00
+ Average:     9.89
  Low:         5
  High:        10
  Variability: 0.0098
@@ -366,26 +385,32 @@ x-content-type-options:
  Percent of Total Count: 0.055824
 
 
-server: 
- Instances:   357
- Total:       2382
- Average:     6.00
- Low:         4
- High:        83
- Variability: 0.0280
- Percent of Total Size: 2.150926
- Percent of Total Count: 6.643096
-
-
 age: 
  Instances:   239
  Total:       1604
- Average:     6.00
+ Average:     6.71
  Low:         4
  High:        8
  Variability: 0.9582
  Percent of Total Size: 1.448399
  Percent of Total Count: 4.447339
+ Encoded: 
+  Total:      818
+  Average:    811.60
+  Low:        2
+  High:       4
+  Ratio:      49.00
+
+
+server: 
+ Instances:   357
+ Total:       2382
+ Average:     6.67
+ Low:         4
+ High:        83
+ Variability: 0.0280
+ Percent of Total Size: 2.150926
+ Percent of Total Count: 6.643096
 
 
 content-transfer-encoding: 
@@ -454,6 +479,23 @@ dl_s:
  Percent of Total Count: 0.055824
 
 
+content-length: 
+ Instances:   343
+ Total:       1283
+ Average:     3.74
+ Low:         1
+ High:        6
+ Variability: 0.8805
+ Percent of Total Size: 1.158538
+ Percent of Total Count: 6.382583
+ Encoded: 
+  Total:      692
+  Average:    696.74
+  Low:        1
+  High:       3
+  Ratio:      46.06
+
+
 :status: 
  Instances:   366
  Total:       1098
@@ -463,23 +505,18 @@ dl_s:
  Variability: 0.0109
  Percent of Total Size: 0.991485
  Percent of Total Count: 6.810569
-
-
-content-length: 
- Instances:   343
- Total:       1283
- Average:     3.00
- Low:         1
- High:        6
- Variability: 0.8805
- Percent of Total Size: 1.158538
- Percent of Total Count: 6.382583
+ Encoded: 
+  Total:      732
+  Average:    732.00
+  Low:        2
+  High:       2
+  Ratio:      33.33
 
 
 :status-text: 
  Instances:   366
  Total:       795
- Average:     2.00
+ Average:     2.17
  Low:         2
  High:        17
  Variability: 0.0109
@@ -488,14 +525,15 @@ content-length:
 
 
 req: 
-TOTAL HEADER VALUE LENGTH: 166665
-NUMBER OF UNIQUE HEADERS:  19
-TOTAL NUMBER OF HEADERS:   4163
-TOTAL NUMBER OF MESSAGES:  366
+TOTAL HEADER VALUE LENGTH:     166665
+NUMBER OF UNIQUE HEADERS:      19
+TOTAL NUMBER OF HEADERS:       4163
+TOTAL NUMBER OF MESSAGES:      366
+TOTAL BYTES SAVED BY ENCODING: 542
 cookie: 
  Instances:   63
  Total:       16117
- Average:     255.00
+ Average:     255.83
  Low:         31
  High:        479
  Variability: 0.2381
@@ -506,7 +544,7 @@ cookie:
 referer: 
  Instances:   360
  Total:       47986
- Average:     133.00
+ Average:     133.29
  Low:         22
  High:        291
  Variability: 0.0694
@@ -517,10 +555,10 @@ referer:
 :path: 
  Instances:   366
  Total:       31967
- Average:     87.00
+ Average:     87.34
  Low:         1
  High:        1067
- Variability: 0.9617
+ Variability: 0.9645
  Percent of Total Size: 19.180392
  Percent of Total Count: 8.791737
 
@@ -550,7 +588,7 @@ content-type:
 accept: 
  Instances:   366
  Total:       12612
- Average:     34.00
+ Average:     34.46
  Low:         3
  High:        63
  Variability: 0.0191
@@ -578,12 +616,18 @@ if-modified-since:
  Variability: 0.1429
  Percent of Total Size: 0.365404
  Percent of Total Count: 0.504444
+ Encoded: 
+  Total:      84
+  Average:    84.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 :host: 
  Instances:   366
  Total:       7735
- Average:     21.00
+ Average:     21.13
  Low:         10
  High:        29
  Variability: 0.0683
@@ -646,7 +690,7 @@ connection:
  Percent of Total Count: 8.791737
 
 
-pragma: 
+cache-control: 
  Instances:   8
  Total:       64
  Average:     8.00
@@ -657,7 +701,7 @@ pragma:
  Percent of Total Count: 0.192169
 
 
-cache-control: 
+pragma: 
  Instances:   8
  Total:       64
  Average:     8.00
@@ -679,26 +723,32 @@ cache-control:
  Percent of Total Count: 8.791737
 
 
-:method: 
- Instances:   366
- Total:       1107
- Average:     3.00
- Low:         3
- High:        4
- Variability: 0.0055
- Percent of Total Size: 0.664207
- Percent of Total Count: 8.791737
-
-
 content-length: 
  Instances:   12
  Total:       38
- Average:     3.00
+ Average:     3.17
  Low:         3
  High:        5
  Variability: 0.5000
  Percent of Total Size: 0.022800
  Percent of Total Count: 0.288254
+ Encoded: 
+  Total:      21
+  Average:    24.69
+  Low:        1
+  High:       3
+  Ratio:      44.74
+
+
+:method: 
+ Instances:   366
+ Total:       1107
+ Average:     3.02
+ Low:         3
+ High:        4
+ Variability: 0.0055
+ Percent of Total Size: 0.664207
+ Percent of Total Count: 8.791737
 
 
 TOTAL VARIABILITY FOR ALL HEADERS:
@@ -746,9 +796,9 @@ dl_s                 0.666666666667                                     3
 date                 0.693150684932                                     365                 
 x-amz-request-id     0.75                                               8                   
 x-amz-id-2           0.815789473684                                     38                  
+x-amz-id-1           0.833333333333                                     30                  
 x-amz-meta-md5-hash  0.833333333333                                     6                   
 x-amz-meta-jets3t-original-file-date-iso8601 0.833333333333                                     6                   
-x-amz-id-1           0.866666666667                                     30                  
 content-length       0.867605633803                                     355                 
 last-modified        0.880794701987                                     302                 
 age                  0.958158995816                                     239                 

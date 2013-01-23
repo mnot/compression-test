@@ -1,8 +1,9 @@
 res: 
-TOTAL HEADER VALUE LENGTH: 453916
-NUMBER OF UNIQUE HEADERS:  46
-TOTAL NUMBER OF HEADERS:   27976
-TOTAL NUMBER OF MESSAGES:  1538
+TOTAL HEADER VALUE LENGTH:     453916
+NUMBER OF UNIQUE HEADERS:      46
+TOTAL NUMBER OF HEADERS:       27976
+TOTAL NUMBER OF MESSAGES:      1538
+TOTAL BYTES SAVED BY ENCODING: 96523
 x-ezakus: 
  Instances:   5
  Total:       670
@@ -28,7 +29,7 @@ set-cookie:
 p3p: 
  Instances:   9
  Total:       780
- Average:     86.00
+ Average:     86.67
  Low:         80
  High:        91
  Variability: 0.3333
@@ -39,7 +40,7 @@ p3p:
 via: 
  Instances:   1373
  Total:       104515
- Average:     76.00
+ Average:     76.12
  Low:         25
  High:        79
  Variability: 0.0022
@@ -50,7 +51,7 @@ via:
 location: 
  Instances:   13
  Total:       905
- Average:     69.00
+ Average:     69.62
  Low:         69
  High:        70
  Variability: 1.0000
@@ -133,6 +134,12 @@ date:
  Variability: 0.0320
  Percent of Total Size: 8.771887
  Percent of Total Count: 4.907778
+ Encoded: 
+  Total:      5492
+  Average:    5492.00
+  Low:        4
+  High:       4
+  Ratio:      86.21
 
 
 last-modified: 
@@ -144,17 +151,29 @@ last-modified:
  Variability: 0.1808
  Percent of Total Size: 8.196891
  Percent of Total Count: 4.586074
+ Encoded: 
+  Total:      5120
+  Average:    5131.69
+  Low:        1
+  High:       4
+  Ratio:      86.24
 
 
 expires: 
  Instances:   1022
  Total:       29602
- Average:     28.00
+ Average:     28.96
  Low:         28
  High:        29
  Variability: 0.1292
  Percent of Total Size: 6.521471
  Percent of Total Count: 3.653131
+ Encoded: 
+  Total:      4073
+  Average:    4082.42
+  Low:        1
+  High:       4
+  Ratio:      86.24
 
 
 x-cache-lookup: 
@@ -171,7 +190,7 @@ x-cache-lookup:
 cache-control: 
  Instances:   1294
  Total:       28360
- Average:     21.00
+ Average:     21.92
  Low:         8
  High:        62
  Variability: 0.0371
@@ -182,7 +201,7 @@ cache-control:
 x-cache: 
  Instances:   1360
  Total:       26860
- Average:     19.00
+ Average:     19.75
  Low:         19
  High:        23
  Variability: 0.0015
@@ -193,7 +212,7 @@ x-cache:
 x-cdn: 
  Instances:   1115
  Total:       21319
- Average:     19.00
+ Average:     19.12
  Low:         17
  High:        37
  Variability: 0.0027
@@ -226,7 +245,7 @@ x-pad:
 content-type: 
  Instances:   1360
  Total:       22887
- Average:     16.00
+ Average:     16.83
  Low:         8
  High:        39
  Variability: 0.0162
@@ -281,7 +300,7 @@ vary:
 x-varnish-ip: 
  Instances:   3
  Total:       37
- Average:     12.00
+ Average:     12.33
  Low:         11
  High:        14
  Variability: 1.0000
@@ -292,7 +311,7 @@ x-varnish-ip:
 x-varnish: 
  Instances:   1114
  Total:       12772
- Average:     11.00
+ Average:     11.46
  Low:         8
  High:        21
  Variability: 0.2406
@@ -322,6 +341,28 @@ x-ooyala-server-id:
  Percent of Total Count: 0.017872
 
 
+x-content-type-options: 
+ Instances:   44
+ Total:       380
+ Average:     8.64
+ Low:         7
+ High:        15
+ Variability: 0.0455
+ Percent of Total Size: 0.083716
+ Percent of Total Count: 0.157278
+
+
+server: 
+ Instances:   1297
+ Total:       10587
+ Average:     8.16
+ Low:         3
+ High:        17
+ Variability: 0.0409
+ Percent of Total Size: 2.332370
+ Percent of Total Count: 4.636117
+
+
 :version: 
  Instances:   1538
  Total:       12304
@@ -331,28 +372,6 @@ x-ooyala-server-id:
  Variability: 0.0007
  Percent of Total Size: 2.710634
  Percent of Total Count: 5.497569
-
-
-server: 
- Instances:   1297
- Total:       10587
- Average:     8.00
- Low:         3
- High:        17
- Variability: 0.0409
- Percent of Total Size: 2.332370
- Percent of Total Count: 4.636117
-
-
-x-content-type-options: 
- Instances:   44
- Total:       380
- Average:     8.00
- Low:         7
- High:        15
- Variability: 0.0455
- Percent of Total Size: 0.083716
- Percent of Total Count: 0.157278
 
 
 pragma: 
@@ -391,7 +410,7 @@ status:
 accept-ranges: 
  Instances:   1251
  Total:       6555
- Average:     5.00
+ Average:     5.24
  Low:         5
  High:        11
  Variability: 0.0016
@@ -402,7 +421,7 @@ accept-ranges:
 x-server: 
  Instances:   1115
  Total:       5609
- Average:     5.00
+ Average:     5.03
  Low:         4
  High:        7
  Variability: 0.0063
@@ -432,21 +451,10 @@ content-encoding:
  Percent of Total Count: 2.627252
 
 
-content-length: 
- Instances:   1370
- Total:       5142
- Average:     3.00
- Low:         1
- High:        6
- Variability: 0.2307
- Percent of Total Size: 1.132809
- Percent of Total Count: 4.897055
-
-
 x-varnish-cache: 
  Instances:   1109
  Total:       4234
- Average:     3.00
+ Average:     3.82
  Low:         3
  High:        4
  Variability: 0.0018
@@ -454,10 +462,44 @@ x-varnish-cache:
  Percent of Total Count: 3.964112
 
 
+content-length: 
+ Instances:   1370
+ Total:       5142
+ Average:     3.75
+ Low:         1
+ High:        6
+ Variability: 0.2307
+ Percent of Total Size: 1.132809
+ Percent of Total Count: 4.897055
+ Encoded: 
+  Total:      2848
+  Average:    2887.34
+  Low:        1
+  High:       3
+  Ratio:      44.61
+
+
+:status: 
+ Instances:   1538
+ Total:       4492
+ Average:     2.92
+ Low:         1
+ High:        3
+ Variability: 0.0020
+ Percent of Total Size: 0.989610
+ Percent of Total Count: 5.497569
+ Encoded: 
+  Total:      3015
+  Average:    3064.07
+  Low:        1
+  High:       2
+  Ratio:      32.88
+
+
 :status-text: 
  Instances:   1538
  Total:       3576
- Average:     2.00
+ Average:     2.33
  Low:         2
  High:        17
  Variability: 0.0020
@@ -465,26 +507,21 @@ x-varnish-cache:
  Percent of Total Count: 5.497569
 
 
-:status: 
- Instances:   1538
- Total:       4492
- Average:     2.00
- Low:         1
- High:        3
- Variability: 0.0020
- Percent of Total Size: 0.989610
- Percent of Total Count: 5.497569
-
-
 age: 
  Instances:   1360
  Total:       2829
- Average:     2.00
+ Average:     2.08
  Low:         1
  High:        7
  Variability: 0.0853
  Percent of Total Size: 0.623243
  Percent of Total Count: 4.861310
+ Encoded: 
+  Total:      2018
+  Average:    1882.35
+  Low:        1
+  High:       4
+  Ratio:      28.67
 
 
 x-plista-node: 
@@ -510,14 +547,15 @@ access-control-allow-origin:
 
 
 req: 
-TOTAL HEADER VALUE LENGTH: 560941
-NUMBER OF UNIQUE HEADERS:  17
-TOTAL NUMBER OF HEADERS:   18678
-TOTAL NUMBER OF MESSAGES:  1538
+TOTAL HEADER VALUE LENGTH:     560941
+NUMBER OF UNIQUE HEADERS:      17
+TOTAL NUMBER OF HEADERS:       18678
+TOTAL NUMBER OF MESSAGES:      1538
+TOTAL BYTES SAVED BY ENCODING: 168
 cookie: 
  Instances:   160
  Total:       58116
- Average:     363.00
+ Average:     363.23
  Low:         43
  High:        536
  Variability: 0.1125
@@ -539,7 +577,7 @@ user-agent:
 :path: 
  Instances:   1538
  Total:       124869
- Average:     81.00
+ Average:     81.19
  Low:         1
  High:        756
  Variability: 0.2861
@@ -550,7 +588,7 @@ user-agent:
 referer: 
  Instances:   1434
  Total:       65114
- Average:     45.00
+ Average:     45.41
  Low:         22
  High:        147
  Variability: 0.0146
@@ -589,6 +627,12 @@ if-modified-since:
  Variability: 0.8333
  Percent of Total Size: 0.031019
  Percent of Total Count: 0.032123
+ Encoded: 
+  Total:      6
+  Average:    6.00
+  Low:        1
+  High:       1
+  Ratio:      96.55
 
 
 accept-encoding: 
@@ -627,7 +671,7 @@ x-requested-with:
 :host: 
  Instances:   1538
  Total:       20123
- Average:     13.00
+ Average:     13.08
  Low:         11
  High:        55
  Variability: 0.0299
@@ -671,7 +715,7 @@ cache-control:
 accept: 
  Instances:   1415
  Total:       9839
- Average:     6.00
+ Average:     6.95
  Low:         3
  High:        63
  Variability: 0.0028
@@ -682,7 +726,7 @@ accept:
 :scheme: 
  Instances:   1538
  Total:       6162
- Average:     4.00
+ Average:     4.01
  Low:         4
  High:        5
  Variability: 0.0013
@@ -747,8 +791,8 @@ x-ezakus             0.2                                                5
 x-plista-node        0.2                                                5                   
 content-length       0.230656934307                                     1370                
 x-varnish            0.240574506284                                     1114                
-:path                0.285435630689                                     1538                
 x-amz-meta-md5-hash  0.285714285714                                     7                   
+:path                0.286085825748                                     1538                
 p3p                  0.333333333333                                     9                   
 status               0.333333333333                                     3                   
 x-fb-debug           0.333333333333                                     6                   
