@@ -35,10 +35,10 @@ class Processor(BaseProcessor):
       frame_len += len(val)
     stream_id = 1
     num_kv_pairs = len(request.keys())
-    out_frame.append(struct.pack('!L', 0x1 << 31 | 0x11 << 15 | 0x8))
-    out_frame.append(struct.pack('!L', frame_len))
-    out_frame.append(struct.pack('!L', stream_id))
-    out_frame.append(struct.pack('!L', num_kv_pairs))
+#    out_frame.append(struct.pack('!L', 0x1 << 31 | 0x11 << 15 | 0x8))
+#    out_frame.append(struct.pack('!L', frame_len))
+#    out_frame.append(struct.pack('!L', stream_id))
+#    out_frame.append(struct.pack('!L', num_kv_pairs))
     for (key, val) in request.iteritems():
       out_frame.append(struct.pack('!L', len(key)))
       out_frame.append(key)
