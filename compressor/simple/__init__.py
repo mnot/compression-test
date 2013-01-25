@@ -10,6 +10,7 @@ from email.utils import formatdate as lib_formatdate
 from urlparse import urlsplit
 import os.path  
 from copy import copy
+import zlib
 
 import seven
 
@@ -74,7 +75,6 @@ class Processor(BaseProcessor):
   ]
 
   compress_dates = True
-  use_seven = True
   ignore_hdrs = [':status-text', ":version"]
   
   def __init__(self, options, is_request, params):
@@ -82,6 +82,18 @@ class Processor(BaseProcessor):
     self.last_c = None
     self.last_d = None
     self.rev_lookups = {v:k for k, v in self.lookups.items()}
+    if "seven" in params:
+      self.encode = seven.encode
+      self.decode = seven.decode
+    elif "huffman" in params:
+      self.compressor = zlib.compressobj(zlib.Z_DEFAULT_COMPRESSION,
+                        zlib.DEFLATED, 15, 8, zlib.Z_HUFFMAN_ONLY)
+      self.decompressor = zlib.decompressobj()
+      self.encode = self.huffman_encode
+      self.decode = self.huffman_decode
+    else:
+      self.encode = lambda a:a
+      self.decode = lambda a:a
     assert len(self.lookups) == len(self.rev_lookups)
 
   def compress(self, in_headers, host):
@@ -119,15 +131,11 @@ class Processor(BaseProcessor):
                        valsep=":", 
                        host='h', 
                        version="H/2")
-    if self.use_seven:
-      return seven.encode(msg)
-    else:
-      return msg
+    return self.encode(msg)
   
 
   def decompress(self, compressed):
-    if self.use_seven:
-      compressed = seven.decode(compressed)
+    compressed = self.decode(compressed)
     headers = parse_http1(compressed, self.is_request, 'h')
     out_headers = {}
     for name in headers.keys():
@@ -172,6 +180,17 @@ class Processor(BaseProcessor):
       return name
     return self.lookups.get(name, "!%s" % name)
 
+  def huffman_encode(self, msg):
+    return ''.join([
+                   self.compressor.compress(msg),
+                   self.compressor.flush(zlib.Z_SYNC_FLUSH)
+                  ])
+                      
+  def huffman_decode(self, blob):
+    return ''.join([
+                   self.decompressor.decompress(blob),
+                   self.decompressor.flush(zlib.Z_SYNC_FLUSH)
+                  ])
 
 
 DATE = r"""(?:\w{3},\ [0-9]{2}\ \w{3}\ [0-9]{4}\ [0-9]{2}:[0-9]{2}:[0-9]{2}\ GMT |
