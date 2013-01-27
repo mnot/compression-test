@@ -106,11 +106,7 @@ class Huffman(object):
     'include_eof' is true, then an EFO will also be encoded at the end.
     """
     for c in text:
-      prelen = bb.GetAllBits()[1]
-      prestr = str(bb)
       bb.StoreBits(self.code_table[c])
-      if bb.GetAllBits()[1] == prelen:
-        raise StandardError()
     if include_eof:
       bb.StoreBits(self.code_table[256])
 
