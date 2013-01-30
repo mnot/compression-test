@@ -74,7 +74,6 @@ class Processor(BaseProcessor):
     'expires'
   ]
 
-  compress_dates = True
   ignore_hdrs = [':status-text', ":version"]
   
   def __init__(self, options, is_request, params):
@@ -94,6 +93,10 @@ class Processor(BaseProcessor):
     else:
       self.encode = lambda a:a
       self.decode = lambda a:a
+    if "date" in params:
+      self.compress_dates = True
+    else:
+      self.compress_dates = False
     assert len(self.lookups) == len(self.rev_lookups)
 
   def compress(self, in_headers, host):
