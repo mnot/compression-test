@@ -11,8 +11,9 @@ class Processor(BaseProcessor):
     BaseProcessor.__init__(self, options, is_request, params)
     self.compressor = zlib.compressobj(zlib.Z_DEFAULT_COMPRESSION,
                                        zlib.DEFLATED, 15)
-    self.compressor.compress(spdy_dictionary.spdy_dict);
-    self.compressor.flush(zlib.Z_SYNC_FLUSH)
+    if 'dict' in params:
+      self.compressor.compress(spdy_dictionary.spdy_dict);
+      self.compressor.flush(zlib.Z_SYNC_FLUSH)
 
   def compress(self, in_headers, host):
     raw_spdy3_frame = self.Spdy3HeadersFormat(strip_conn_headers(in_headers))
