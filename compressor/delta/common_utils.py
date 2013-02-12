@@ -54,9 +54,14 @@ def FormatAsBits(output_and_bits):
 
 class IDStore(object):
   """ Manages a store of IDs"""
-  def __init__(self):
+  def __init__(self, max_id):
     self.ids = set()
     self.next_idx = 0
+    self.mininum_id = 0
+    self.maximum_id = max_id
+    if self.maximum_id is None:
+      print "need a max id"
+      raise StandardError()
 
   def GetNext(self):
     """ Gets the next available ID. If an ID was returned, it will use that,
@@ -64,6 +69,8 @@ class IDStore(object):
     if self.ids:
       return self.ids.pop()
     self.next_idx += 1
+    if self.maximum_id and self.next_idx >= self.maximum_id:
+      self.next_idx = self.minimum_id
     return self.next_idx
 
   def DoneWithId(self, id):

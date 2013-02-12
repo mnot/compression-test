@@ -29,8 +29,9 @@ class Processor(BaseProcessor):
     self.compressor   = spdy4_codec_impl.Spdy4CoDe()
     self.decompressor = spdy4_codec_impl.Spdy4CoDe()
     self.hosts = {}
-    self.group_ids = common_utils.IDStore()
+    self.group_ids = common_utils.IDStore(2**31)
     self.wf = self.compressor.wf
+    self.name = "delta"
     if is_request:
       request_freq_table = header_freq_tables.request_freq_table
       self.compressor.huffman_table = huffman.Huffman(request_freq_table)
@@ -64,23 +65,20 @@ class Processor(BaseProcessor):
     Note that compressing with an unmodified stream-compressor like gzip is
     effective, however it is insecure.
     """
-    header_group = 0
-    inp_ops = self.compressor.MakeOperations(inp_headers, header_group)
-
-    inp_real_ops = self.compressor.OpsToRealOps(inp_ops)
+    normalized_host = re.sub('[0-1a-zA-Z-\.]*\.([^.]*\.[^.]*)', '\\1',
+                             host)
+    if normalized_host in self.hosts:
+      group_id = self.hosts[normalized_host]
+    else:
+      group_id = self.group_ids.GetNext()
+      self.hosts[normalized_host] = group_id
+    inp_ops = self.compressor.MakeOperations(inp_headers, group_id)
+    inp_real_ops = self.compressor.OpsToRealOps(inp_ops, group_id)
     compressed_blob = self.compressor.Compress(inp_real_ops)
-    retval = {
-      'compressed': compressed_blob,
-      'serialized_ops': inp_real_ops,                    # should be equal \
-      'input_headers': inp_headers,                   # should be equal \
-      'interpretable_ops': inp_ops,               # should be equal \
-      'header_group': header_group
-    }
     return compressed_blob
 
-  def decompress(self, compressed):
-    header_group = 0
-    out_real_ops = self.decompressor.Decompress(compressed)
-    out_ops = self.decompressor.RealOpsToOpAndExecute(
-        out_real_ops, header_group)
-    return self.decompressor.GenerateAllHeaders(header_group)
+  def decompress(self, compressed_blob):
+    out_real_ops = self.decompressor.Decompress(compressed_blob)
+    (group_id, out_ops) = self.decompressor.RealOpsToOpAndExecute(out_real_ops)
+    out_headers = self.decompressor.GenerateAllHeaders(group_id)
+    return out_headers

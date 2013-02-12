@@ -1,18 +1,50 @@
 #!/usr/bin/python
 from collections import deque
 
-class KV:
-  def __init__(self, key=None, val=None, seq_num=None):
-    self.key = key
-    self.val = val
-    self.seq_num = seq_num
+class RefCntString:
+  def __init__(self, x):
+    if type(x) is str:
+      self.data = [x, 1]
+    else:
+      self.data = x.data
+      self.data[1] += 1
 
-  def ByteSize(self):
-    return len(self.val) + len(self.key)
+  def __del__(self):
+    self.data[1] -= 1
+
+  def __str__(self):
+    return self.data[0]
 
   def __repr__(self):
-    return "{(%r, %r) %r}" % \
-        (self.key, self.val, self.seq_num)
+    return '"%s":%d' % (self.data[0], self.data[1])
+
+  def __len__(self):
+    if self.data[1] == 1:
+      return len(self.data[0])
+    return 0
+
+
+class KV:
+  def __init__(self, key=None, val=None, seq_num=None):
+    self.key_ = RefCntString(key)
+    self.val_ = RefCntString(val)
+    self.khash = hash(key)
+    self.kvhash = self.khash + hash(val)
+    self.seq_num = seq_num
+
+  def key(self):
+    return str(self.key_)
+
+  def val(self):
+    return str(self.val_)
+
+  def ByteSize(self):
+    #return len(self.val()) + len(self.key())
+    return len(self.val_) + len(self.key_)
+
+  def __repr__(self):
+    return "{(%s, %s) %r}" % \
+        (repr(self.key_), repr(self.val_), self.seq_num)
 
 class LruStorage:
   def __init__(self, max_bytes=None, max_items=None, max_seq_num=None,
@@ -81,20 +113,29 @@ class LruStorage:
       #print "b ",;
       lru_idx = seq_num - first_seq_num
     #print "Looking up: ", lru_idx
-    entry = self.ring[lru_idx]
-    return KV(entry.key, entry.val, entry.seq_num)
+    try:
+      entry = self.ring[lru_idx]
+    except IndexError:
+      print self.ring
+      print "first_seq_num:", first_seq_num
+      print "seq_num:", seq_num
+      print "lru_idx: ", lru_idx
+      raise
+    return KV(entry.key(), entry.val(), entry.seq_num)
 
   def FindKeyValEntries(self, key, val):
     # Looks for key/vals starting from the last entry
+    khash = hash(key)
+    kvhash = khash + hash(val)
     ke = None
     ve = None
     for i in xrange(len(self.ring)-1, 0, -1):
       entry = self.ring[i]
-      if entry.key == key:
+      if khash == entry.khash and entry.key() == key:
         ke = entry
         for j in xrange(i, 0, -1):
           entry = self.ring[i]
-          if entry.val == val:
+          if kvhash == entry.kvhash and entry.val() == val:
             ve = entry
             break
         break
@@ -102,3 +143,6 @@ class LruStorage:
 
   def __len__(self):
     return len(self.ring)
+
+  def __repr__(self):
+    return repr(self.ring)

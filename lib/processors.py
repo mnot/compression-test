@@ -5,6 +5,7 @@ from copy import copy
 from importlib import import_module
 import os
 import sys
+from compressor import format_http1
 
 # pylint: disable=W0311
 
@@ -66,20 +67,21 @@ class Processors(object):
 
     Returns a dictionary of processor names mapped to their results.
     """
+    if self.options.verbose > 3:
+      self.output('#' * 80)
+      self.output('\n')
     results = {}
     for processor in self.processors[msg_type]:
+      if self.options.verbose >= 3:
+        self.output("# %s\n" % processor.name)
       start_time = sum(os.times()[:2])
       compressed = processor.compress(copy(hdrs), host)
       results[processor.name] = {
         'size': len(compressed),
         'time': sum(os.times()[:2]) - start_time
       }
-      if self.options.verbose > 3:
-        txt = unicode(compressed, 'utf-8', 'replace') \
-              .encode('utf-8', 'replace')
-        self.output("# %s\n%s" % (processor.name, txt))
-        if txt[-1] != "\n":
-          self.output("\n\n")
+
+      decompressed = None
       try:
         decompressed = processor.decompress(compressed)
       except NotImplementedError:
@@ -89,16 +91,26 @@ class Processors(object):
           )
           self.warned[processor.name] = True
         continue
-      compare_result = self.compare_headers(copy(hdrs), decompressed)
+      if self.options.verbose > 3:
+        if decompressed is not None:
+          txt = format_http1(decompressed)
+        else:
+          txt = unicode(compressed, 'utf-8', 'replace') \
+                .encode('utf-8', 'replace')
+        self.output("%s" % txt)
+        if not txt or txt[-1] != "\n":
+          self.output("\n\n")
+      compare_result = self.compare_headers(hdrs, "orig", decompressed, processor.name)
       if compare_result:
         self.output('  - mismatch in %s' % processor.name)
         if self.options.verbose > 1:
           self.output(':\n' + compare_result + "\n")
         self.output("\n")
+        raise StandardError()
     return results
 
   @staticmethod
-  def compare_headers(a_hdr, b_hdr):
+  def compare_headers(a_hdr, a_name, b_hdr, b_name):
     """
     Compares two dicts of headers, and returns a message denoting any
     differences. It ignores:
@@ -109,6 +121,8 @@ class Processors(object):
     If nothing is different, it returns an empty string. If it is, it
     returns a string explaining what is different.
     """
+    a_hdr = dict(a_hdr)
+    b_hdr = dict(b_hdr)
     output = []
     for d_hdr in [a_hdr, b_hdr]:
       if 'cookie' in d_hdr.keys():
@@ -122,14 +136,14 @@ class Processors(object):
       elif key in [':version', ':status-text']:
         pass
       elif not key in b_hdr:
-        output.append('    %s present in only one (A)' % key)
+        output.append('    %s present in only one (%s)' % (key, a_name))
         continue
       elif val.strip() != b_hdr[key].strip():
         output.append('    %s has mismatched values' % key)
-        output.append('      a -> %s' % val)
-        output.append('      b -> %s' % b_hdr[key])
+        output.append('      %s -> %s' % (a_name, val))
+        output.append('      %s -> %s' % (b_name, b_hdr[key]))
       if b_hdr.has_key(key):
         del b_hdr[key]
     for key in b_hdr.keys():
-        output.append('    %s present in only one (B)' % key)
+        output.append('    %s present in only one (%s)' % (key, b_name))
     return '\n'.join(output)

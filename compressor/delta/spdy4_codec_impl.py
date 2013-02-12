@@ -10,8 +10,7 @@ import struct
 from bit_bucket import BitBucket
 from collections import defaultdict
 from collections import deque
-from common_utils import *
-#from common_utils import IDStore
+import common_utils
 from huffman import Huffman
 from optparse import OptionParser
 from ..spdy_dictionary import spdy_dict
@@ -149,7 +148,7 @@ def UnpackStr(input, params, huff):
           break
   if pad_to_byte_boundary:
     input.AdvanceToByteBoundary()
-  retval = ListToStr(retval)
+  retval = common_utils.ListToStr(retval)
   return retval
 
 # this assumes the bits are near the LSB, but must be packed to be close to MSB
@@ -173,7 +172,7 @@ def PackInt(data, bitlen, val, huff):
     tmp_val = struct.pack('>L', val << (24 - bitlen))[1:]
   else:
     tmp_val = struct.pack('>L', val << (32 - bitlen))
-  data.StoreBits( (StrToList(tmp_val), bitlen) )
+  data.StoreBits( (common_utils.StrToList(tmp_val), bitlen) )
 
 def PackStr(data, params, val, huff):
   """
@@ -198,7 +197,7 @@ def PackStr(data, params, val, huff):
     # without either a bitlen size or an EOF, we can't know when the string ends
     # having both is certainly fine, however.
     raise StandardError()
-  val_as_list = StrToList(val)
+  val_as_list = common_utils.StrToList(val)
   len_in_bits = len(val) * 8
   if huff:
     (val_as_list, len_in_bits) = huff.Encode(val_as_list, use_eof)
@@ -223,14 +222,14 @@ packing_instructions = {
   'key'         : (str_pack_params, PackStr, UnpackStr),
 }
 
-def PackOps(data, packing_instructions, ops, huff):
+def PackOps(data, packing_instructions, ops, huff, group_id):
   """ Packs (i.e. renders into wire-format) the operations in 'ops' into the
   BitBucket 'data', using the 'packing_instructions' and possibly the Huffman
   encoder 'huff'
   """
   seder = Spdy4SeDer()
   data.StoreBits(seder.SerializeInstructions(ops, packing_instructions,
-                                             huff, 1234, True))
+                                             huff, 1234, group_id, True))
 
 def UnpackOps(data, packing_instructions, huff):
   """
@@ -354,7 +353,11 @@ class Spdy4SeDer(object):  # serializer deserializer
       data.StoreBits8(min(256, ops_to_go) - 1)
       orig_idx = ops_idx
       for i in xrange(ops_to_go):
-        self.WriteOpData(data, ops[orig_idx + i], huff)
+        try:
+          self.WriteOpData(data, ops[orig_idx + i], huff)
+        except:
+          print opcode, ops
+          raise
         ops_idx += 1
 
   def WriteOpData(self, data, op, huff):
@@ -369,7 +372,11 @@ class Spdy4SeDer(object):  # serializer deserializer
         continue
       (params, pack_fn, _) = packing_instructions[field_name]
       val = op[field_name]
-      pack_fn(data, params, val, huff)
+      try:
+        pack_fn(data, params, val, huff)
+      except:
+        print field_name, data, params, val
+        raise
 
   def WriteControlFrameStreamId(self, data, stream_id):
     if (stream_id & 0x80000000):
@@ -381,6 +388,7 @@ class Spdy4SeDer(object):  # serializer deserializer
       frame_len,
       flags,
       stream_id,
+      group_id,
       frame_type):
     """ Writes the frame-length, flags, stream-id, and frame-type
     in SPDY4 format into the bit-bucket represented bt 'data'"""
@@ -389,12 +397,14 @@ class Spdy4SeDer(object):  # serializer deserializer
     #data.StoreBits32(stream_id)
     self.WriteControlFrameStreamId(data, stream_id)
     data.StoreBits8(frame_type)
+    data.StoreBits8(group_id)
 
   def SerializeInstructions(self,
       ops,
       packing_instructions,
       huff,
       stream_id,
+      group_id,
       end_of_frame):
     """ Serializes a set of instructions possibly containing many different
     type of opcodes into SPDY4 wire format, discovers the resultant length,
@@ -414,7 +424,7 @@ class Spdy4SeDer(object):  # serializer deserializer
     (payload, payload_len) = payload_bb.GetAllBits()
     payload_len = (payload_len + 7) / 8  # partial bytes are counted as full
     frame_bb = BitBucket()
-    self.WriteControlFrameBoilerplate(frame_bb, 0, 0, 0, 0)
+    self.WriteControlFrameBoilerplate(frame_bb, 0, 0, 0, group_id, 0)
     boilerplate_length = frame_bb.BytesOfStorage()
     frame_bb = BitBucket()
     overall_bb = BitBucket()
@@ -426,7 +436,7 @@ class Spdy4SeDer(object):  # serializer deserializer
       end_of_frame = (bytes_to_consume <= payload_len)
       #print 'end_of_Frame: ', end_of_frame
       self.WriteControlFrameBoilerplate(overall_bb, bytes_to_consume,
-                                        end_of_frame, stream_id, 0x8)
+                                        end_of_frame, stream_id, group_id, 0x8)
       overall_bb.StoreBits( (payload, bytes_to_consume*8))
       payload = payload[bytes_to_consume:]
       payload_len -= bytes_allowed
@@ -453,6 +463,8 @@ class Spdy4SeDer(object):  # serializer deserializer
       #print 'stream_id: ', stream_id
       frame_type = bb.GetBits8()
       #print 'frame_type: ', frame_type
+      group_id = bb.GetBits8()
+      #print 'group_id: ', group_id
       while frame_len > 16:  # 16 bits minimum for the opcode + count...
         bits_remaining_at_start = bb.BitsRemaining()
         opcode_val = bb.GetBits8()
@@ -482,7 +494,7 @@ class Spdy4SeDer(object):  # serializer deserializer
         #  raise StandardError()
         frame_len -= bits_consumed
     #print 'ops: ', ops
-    return ops
+    return (group_id, ops)
 
 class HeaderGroup(object):
   """ A HeaderGroup is a list of ValueEntries (VEs) which are the key-values to
@@ -546,8 +558,8 @@ class Storage(object):
   mechanism for expiring key/value entries as necessary"""
   def __init__(self):  ####
     self.key_map = {}
-    self.key_ids = IDStore()
-    self.lru_ids = IDStore()
+    self.key_ids = common_utils.IDStore(2**16)
+    self.lru_ids = common_utils.IDStore(2**16)
     self.state_size = 0
     self.num_vals = 0
     self.max_vals = 1024
@@ -608,7 +620,8 @@ class Storage(object):
     ke['ref_cnt'] -= 1
 
   def NewKE(self, key): ####
-    return {'key_idx': self.key_ids.GetNext(),
+    key_idx = self.GetNextUnusedKeyId()
+    return {'key_idx': key_idx,
             'ref_cnt': 0,
             'val_map': {},
             'key': key,
@@ -646,11 +659,30 @@ class Storage(object):
     self.DecrementRefCnt(ke)
     return ve
 
+  def GetNextUnusedLruId(self):
+    return Storage.GetNextUnusedId(self.lru_ids, self.lru_idx_to_ve)
+
+  def GetNextUnusedKeyId(self):
+    return Storage.GetNextUnusedId(self.key_ids, self.key_idx_to_ke)
+
+  @staticmethod
+  def GetNextUnusedId(idstore, mapdata):
+    first_idx = idx = idstore.GetNext()
+    while 1:
+      if idx in mapdata:
+        idx = idstore.GetNext()
+        if idx == first_idx:
+          print "Apparently ALL IDs are in use"
+          raise StandardError()
+        continue
+      break
+    return idx
+
   def AddToHeadOfLRU(self, ve): ####
     if ve['lru_idx'] >= 0:
       raise StandardError()
     if ve is not None:
-      lru_idx = self.lru_ids.GetNext()
+      lru_idx = self.GetNextUnusedLruId()
       ve['lru_idx'] = lru_idx
       self.lru_idx_to_ve[lru_idx] = ve
       self.lru.append(ve)
@@ -723,7 +755,7 @@ class Spdy4CoDe(object):
           to_be_removed.append(group_id)
       for group_id in to_be_removed:
         #print "Deleted group_id: %d" % group_id
-        del header_group[group_id]
+        del self.header_groups[group_id]
 
     self.storage.SetRemoveValCB(RemoveVEFromAllHeaderGroups)
 
@@ -800,19 +832,23 @@ class Spdy4CoDe(object):
       self.ExecuteOp(None, self.MakeKvsto(k, v))
       ke = self.storage.FindKeyEntry(k)
       ve = self.storage.FindValEntry(ke, v)
-      ve['lru_idx'] = lru_idx = self.storage.lru_ids.GetNext()
+      ve['lru_idx'] = lru_idx = self.storage.GetNextUnusedLruId()
       self.storage.lru_idx_to_ve[lru_idx] = ve
+      self.storage.lru_ids.minimum_id = lru_idx
 
-  def OpsToRealOps(self, in_ops):
+      self.storage.lru_ids.next_id = 2**16 - 8
+      self.storage.key_ids.next_id = 2**16 - 8
+
+  def OpsToRealOps(self, in_ops, header_group):
     """ Packs in-memory format operations into wire format"""
     data = BitBucket()
-    PackOps(data, packing_instructions, in_ops, self.huffman_table)
-    return ListToStr(data.GetAllBits()[0])
+    PackOps(data, packing_instructions, in_ops, self.huffman_table, header_group)
+    return common_utils.ListToStr(data.GetAllBits()[0])
 
   def RealOpsToOps(self, realops):
     """ Unpacks wire format operations into in-memory format"""
     bb = BitBucket()
-    bb.StoreBits((StrToList(realops), len(realops)*8))
+    bb.StoreBits((common_utils.StrToList(realops), len(realops)*8))
     return UnpackOps(bb, packing_instructions, self.huffman_table)
 
   def Compress(self, realops):
@@ -864,7 +900,10 @@ class Spdy4CoDe(object):
 
   def RenumberVELruIdx(self, ve):
     lru_idx = ve['lru_idx']
-    new_lru_idx = ve['lru_idx'] = self.storage.lru_ids.GetNext()
+    if lru_idx is None:
+      print ve
+      raise StandardError()
+    new_lru_idx = ve['lru_idx'] = self.storage.GetNextUnusedLruId()
     del self.storage.lru_idx_to_ve[lru_idx]
     self.storage.lru_idx_to_ve[new_lru_idx] = ve
 
@@ -936,14 +975,14 @@ class Spdy4CoDe(object):
     #FormatOps(instructions, 'MO\t')
     return instructions
 
-  def RealOpsToOpAndExecute(self, realops, group_id):
+  def RealOpsToOpAndExecute(self, realops):
     """ Deserializes from SPDY4 wire format and executes the operations"""
-    ops = self.RealOpsToOps(realops)
+    (group_id, ops) = self.RealOpsToOps(realops)
     #FormatOps(ops,'ROTOAE\t')
     self.storage.PinLRU()
     self.ExecuteOps(ops, group_id)
     self.storage.UnPinLRU()
-    return ops
+    return (group_id, ops)
 
   def ExecuteOps(self, ops, group_id, ephemereal_headers=None):
     """ Executes a list of operations"""

@@ -31,6 +31,7 @@ class Processor(BaseProcessor):
     self.hosts = {}
     self.group_ids = common_utils.IDStore()
     self.wf = self.compressor.wf
+    self.name="delta-bohe"
     if is_request:
       request_freq_table = header_freq_tables.request_freq_table
       self.compressor.huffman_table = huffman.Huffman(request_freq_table)

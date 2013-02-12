@@ -186,6 +186,7 @@ class BitBucket:
     retval = []
     bits_left = num_bits
     if self.idx_boff == 0:
+      #print "idx_boff 0"
       while bits_left >= 8:
         retval.append(self.output[self.idx_byte])
         self.idx_byte += 1
