@@ -18,71 +18,6 @@ import lrustorage
 
 options = {}
 
-def compare_headers(a_input, b_input):
-  """
-  Compares two dicts of headers, and returns a message denoting any
-  differences. It ignores:
-   - ordering differences in cookies
-   - connection headers
-   - HTTP version
-   - HTTP status phrase
-  If nothing is different, it returns an empty string. If it is, it
-  returns a string explaining what is different.
-  """
-  def NormalizeDict(d):
-    nd = {}
-    for k,v in d:
-      if k == 'cookie':
-        nd[k] = set([x.lstrip(' ') for x in d[k].split(';')])
-      else:
-        nd[j] = set([x for x in k.split('\0')])
-    return nd
-
-  ignores = [':version', ':status-text']
-  a_hdr = NormalizeDict(a_input)
-  b_hdr = NormalizeDict(b_input)
-  retval = {'a_only': {},
-            'shared': {},
-            'b_only': {}}
-
-  # ignores = ignores + ["connection"] + conn
-  for (key, val) in a_hdr.iteritems():
-    if key in ignores:
-      pass
-    elif not key in b_hdr:
-      retval['a_only'][key] = val
-    else:
-      b_val = b_hdr[key]
-      a_only = val.difference(b_val)
-      b_only = b_val.difference(val)
-      shared = val.intersection(b_val)
-      if a_only:
-        retval['a_only'][key] = a_only
-      if shared:
-        retval['shared'][key] = shared
-      if shared:
-        retval['b_only'][key] = b_only
-      del b_hdr[key]
-  for key in b_hdr.keys():
-    if key in ignores:
-      pass
-    elif not key in a_hdr:
-      retval['b_only'][key] = val
-    else:
-      a_val = a_hdr[key]
-      b_only = val.difference(a_val)
-      a_only = a_val.difference(val)
-      shared = val.intersection(a_val)
-      if a_only:
-        retval['a_only'][key] = a_only
-      if shared:
-        retval['shared'][key] = shared
-      if shared:
-        retval['b_only'][key] = b_only
-  if not retval['a_only'] and not retval['b_only'] and not retval['shared']:
-    return None
-  return retval
-
 g_default_kvs = [
     (':scheme', 'http'),
     (':scheme', 'https'),
@@ -151,31 +86,6 @@ g_default_kvs = [
     ('connection', 'keep-alive'),
     ]
 
-# Performance is a non-goal for this code.
-
-# TODO:try var-int encoding for indices, or use huffman-coding on the indices
-# TODO:use a separate huffman encoding for cookies, and possibly for path
-# TODO:interpret cookies as binary instead of base-64, does it reduce entropy?
-# TODO:make index renumbering useful so things which are often used together
-#      have near indices, or remove it as not worth the cost/complexity
-# TODO:use other mechanisms other than LRU to perform entry expiry
-# TODO:use canonical huffman codes, like the c++ version
-# TODO:use huffman coding on the operation type. Clones and toggles are by far
-#      the most common operations.
-# TODO:use huffman coding on the operation count. Small counts are far more
-#      common than large counts. Alternatively, simply use a smaller fixed-size.
-# TODO:modify the huffman-coding to always emit a code starting with 1 so that
-#      we can differentiate easily between strings that are huffman encoded or
-#      strings which are not huffman encoded by examining the first bit.
-#      Alternately, define different opcodes for the various variations.
-# TODO:modify the string packing/unpacking to indicate whether the following
-#      string is huffman-encoded or not. Assuming 7-bit ascii (which is
-#      something to be discussed, this can be accomplished by adding a single
-#      bit before huffman-encoded strings (with value 1). There are other ways
-#      of accomplishing the same thing, e.g. using different operation opcodes
-#      to indicate whether the string parameters in that operation are huffman
-#      encoded.
-
 # Note: Huffman coding is used here instead of range-coding or
 # arithmetic-coding because of its relative CPU efficiency and because it is
 # fairly well known (though the canonical huffman code is a bit less well
@@ -203,7 +113,6 @@ strings_padded_to_byte_boundary = 1
 strings_use_huffman = 1
 
 ###### END IMPORTANT PARAMS ######
-
 
 def UnpackInt(input, bitlen, huff):
   """
@@ -459,9 +368,7 @@ class Spdy4SeDer(object):  # serializer deserializer
     (output_toggles, output_toggle_ranges)
     """
 
-    toggles = instructions['toggl']
-    toggles.sort()
-    return (toggles, [])
+    toggles = sorted(instructions['toggl'])
     ot = []
     otr = []
     for toggle in toggles:
@@ -564,6 +471,8 @@ class Spdy4SeDer(object):  # serializer deserializer
     """
     #print 'SerializeInstructions\n', ops
     (ot, otr) = self.MutateTogglesToToggleRanges(ops)
+    #print FormatOps({'toggl': ot, 'trang': otr, 'clone': ops['clone'],
+    #                 'kvsto': ops['kvsto'], 'eref': ops['eref']})
 
     payload_bb = BitBucket()
     self.OutputOps(packing_instructions, huff, payload_bb, ot, 'toggl')
@@ -674,12 +583,12 @@ class HeaderGroup(object):
     return repr(self.hg_store)
 
 class Storage(object):
-  def __init__(self):
+  def __init__(self, max_byte_size, max_entries):
     self.static_storage = lrustorage.LruStorage()
     for k,v in g_default_kvs:
       self.static_storage.Store(lrustorage.KV(k,v))
-    self.lru_storage = lrustorage.LruStorage(16*1024,
-                                             1024,
+    self.lru_storage = lrustorage.LruStorage(max_byte_size,
+                                             max_entries,
                                              2**16,
                                              len(self.static_storage))
 
@@ -692,29 +601,38 @@ class Storage(object):
     return self.lru_storage.Lookup(entry_seqnum)
 
   def InsertVal(self, entry):
-    self.lru_storage.Reserve(entry.ByteSize(), 1)
-    self.lru_storage.Store(entry)
-    return self.lru_storage.ring[-1].seq_num
+    if self.lru_storage.Reserve(entry, 1):
+      self.lru_storage.Store(entry)
+      return self.lru_storage.ring[-1].seq_num
+    return None
 
   def MoveToHeadOfLRU(self, entry):
-    self.InsertVal(entry)
+    # When moving to the head of the LRU, one must reserve differently..
+    self.lru_storage.Reserve(entry, 1)
+    return self.InsertVal(lrustorage.KV(entry.key_, entry.val_))
 
   def FindEntryIdx(self, key, val):
     retval = [None, None]
     (ke, ve) = self.lru_storage.FindKeyValEntries(key, val)
-    if ke:
+    if ve is not None:
+      return (ve.seq_num, ve.seq_num)
+    elif ke is not None:
+      return (ke.seq_num, None)
+    else:
+      return (None, None)
+    if ke is not None:
       retval[0] = ke.seq_num
-      if ve:
+      if ve is not None:
         retval[1] = ve.seq_num
       else:
         (__, ve) = self.static_storage.FindKeyValEntries(key, val)
-        if ve:
+        if ve is not None:
           retval[1] = ve.seq_num
     else:
       (ke, ve) = self.static_storage.FindKeyValEntries(key, val)
-      if ke:
+      if ke is not None:
         retval[0] = ke.seq_num
-      if ve:
+      if ve is not None:
         retval[1] = ve.seq_num
     #print "\t\tLooking for(%s, %s): found at: (%r, %r)" % \
     #    (key, val, retval[0], retval[1])
@@ -724,18 +642,32 @@ class Storage(object):
     return repr(self.lru_storage)
 
 class Spdy4CoDe(object):
-  def __init__(self):
+  def __init__(self, params):
+    param_dict = {}
+    for param in params:
+      kv = param.split('=')
+      if len(kv) > 1:
+        param_dict[kv[0]] = '='.join(kv[1:])
+      else:
+        param_dict[kv[0]] = None
+
+    max_byte_size = 16*1024
+    max_entries = 4096
+
+    if 'max_byte_size' in param_dict:
+      max_byte_size = int(param_dict['max_byte_size'])
+    if 'max_entries' in param_dict:
+      max_entries = int(param_dict['max_entries'])
+
+    self.options = options
     self.header_groups = {}
     self.huffman_table = None
     self.wf = WordFreak()
-    self.storage = Storage()
-    #self.to_be_saved = {}
+    self.storage = Storage(max_byte_size, max_entries)
     def RemoveVIdxFromAllHeaderGroups(entry):
       v_idx = entry.seq_num
       #print "Removing %d from all!" % v_idx
       to_be_removed = []
-      #if entry in self.header_groups[self.current_header_group]:
-      #  self.to_be_saved.append(entry)
       for group_id, header_group in self.header_groups.iteritems():
         #print "Removing %d from hg %d" % (ve['lru_idx'], group_id)
         header_group.RemoveEntry(v_idx)
@@ -749,7 +681,6 @@ class Spdy4CoDe(object):
   def OpsToRealOps(self, in_ops, header_group):
     """ Packs in-memory format operations into wire format"""
     data = BitBucket()
-    #print FormatOps(in_ops)
     PackOps(data, packing_instructions, in_ops, self.huffman_table, header_group)
     return common_utils.ListToStr(data.GetAllBits()[0])
 
@@ -774,9 +705,6 @@ class Spdy4CoDe(object):
   def MakeKvsto(self, key, val):
     return {'opcode': 'kvsto', 'val': val, 'key': key}
 
-  def MakeTclon(self, key, val):
-    return {'opcode': 'tclon', 'val': val, 'key': key}
-
   def MakeClone(self, key_idx, val):
     return {'opcode': 'clone', 'val': val, 'key_idx': key_idx}
 
@@ -800,22 +728,35 @@ class Spdy4CoDe(object):
   def AdjustHeaderGroupEntries(self, group_id):
     """ Moves elements which have been referenced/modified to the head of the LRU
     and possibly renumbers them"""
-    header_group = self.header_groups[group_id]
-    return
+
+    self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
+    indices = self.header_groups[group_id].hg_store
+    #print "hg:adjust:b4 ", sorted(indices)
     try:
       items_to_move = []
-      for v_idx in sorted(header_group.hg_store):
-        items_to_move.append(self.storage.LookupFromIdx(v_idx))
+      moved_items = set()
+      # if this is not done in a defined order, you end up with problems.
+      # Ideally, this would be in the order in which they were specified.
+      #... but I'm taking a shortcut here and just using sorted()
+      for v_idx in sorted(indices):
+        looked_up_item = self.storage.LookupFromIdx(v_idx)
+        #print "Storing: (%d): %r" % (v_idx, looked_up_item)
+        items_to_move.append(looked_up_item)
       for item in items_to_move:
-        self.storage.MoveToHeadOfLRU(item)
+        last_moved=self.storage.MoveToHeadOfLRU(item)
+        moved_items.add(last_moved)
+        #print "Moved to front of LRU at: (%r): %r" % (last_moved, item)
+      self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
+      self.header_groups[group_id].hg_store = moved_items
     except:
-      print header_group
       raise
+    #print "hg:adjust:af ", sorted(self.header_groups[group_id].hg_store)
 
   def MakeOperations(self, headers, group_id):
     """ Computes the entire set of operations necessary to encode the 'headers'
     for header-group 'group_id'
     """
+    instructions = {'toggl': [], 'clone': [], 'kvsto': [], 'eref': []}
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
     #print "CMP HGb4:", sorted(self.header_groups[group_id].hg_store)
     #if self.storage.lru_storage.ring:
@@ -874,7 +815,7 @@ class Spdy4CoDe(object):
     #print "       clones: \n\t\t\t", '\n\t\t\t'.join([repr(x) for x in clones])
     #print "       kvstos: \n\t\t\t", '\n\t\t\t'.join([repr(x) for x in kvstos])
 
-    instructions = {'toggl': [], 'clone': [], 'kvsto': [], 'eref': []}
+
     full_toggl_list = toggls.union(done_set)
     for idx in full_toggl_list:
       instructions['toggl'].append(self.MakeToggl(idx))
@@ -891,10 +832,14 @@ class Spdy4CoDe(object):
                     instructions['eref']
     #print FormatOps(output_instrs)
 
+    #print "storage befor exe: ", self.storage.lru_storage.ring
     self.DecompressorExecuteOps(output_instrs, group_id)
-
-    #print "CMP HGaf:", sorted(self.header_groups[group_id].hg_store)
+    #print "storage after exe: ", self.storage.lru_storage.ring
     self.AdjustHeaderGroupEntries(group_id)
+
+    #print self.storage.lru_storage.ring
+    #print "CMP HGaf:", sorted(self.header_groups[group_id].hg_store)
+
 
     #print "Done making operations"
     #print '#' * 8
@@ -903,9 +848,17 @@ class Spdy4CoDe(object):
   def RealOpsToOpAndExecute(self, realops):
     """ Deserializes from SPDY4 wire format and executes the operations"""
     (group_id, ops) = self.RealOpsToOps(realops)
+    self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
     #FormatOps(ops,'ROTOAE\t')
     #self.storage.PinLRU()
+    #print "Decompressing+Executing"
+    #print "DCM HGb4:", sorted(self.header_groups[group_id].hg_store)
     headers = self.DecompressorExecuteOps(ops, group_id)
+    self.AdjustHeaderGroupEntries(group_id)
+    #print self.storage.lru_storage.ring
+    #print "DCM HGaf:", sorted(self.header_groups[group_id].hg_store)
+    #print "Done decompressing"
+    #print '#' *4
     #self.storage.UnPinLRU()
     return (group_id, ops, headers)
 
@@ -916,12 +869,7 @@ class Spdy4CoDe(object):
     def DoToggle(idx):
       self.header_groups[group_id].Toggle(idx)
 
-    # this is done so that when we pop items off the end of the list, if
-    # they refer to something from here, we 
-    self.current_group_id = group_id
-    self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    #print "Decompressing+Executing"
-    #print "DCM HGb4:", sorted(self.header_groups[group_id].hg_store)
+    header_group = self.FindOrMakeHeaderGroup(group_id)
     headers = {}
     turnons = set()
     for op in ops:
@@ -931,7 +879,8 @@ class Spdy4CoDe(object):
         for i in xrange(op['index_start'], op['index']+1):
           MaybeAddTurnon(i, turnons)
 
-    #print "Instantiating(adding): ", turnons
+    #print "Instantiating(adding): \n\t\t\t", '\n\t\t\t'.join(
+    #    [repr((x, self.storage.LookupFromIdx(x))) for x in turnons])
     for idx in turnons:
       ve = self.storage.LookupFromIdx(idx)
       #print "%d: %s: %s" % (idx, ve.key(), ve.val())
@@ -947,65 +896,31 @@ class Spdy4CoDe(object):
           DoToggle(i)
       elif opcode == 'clone':
         ke = self.storage.LookupFromIdx(op['key_idx'])
-        #AppendToHeaders(headers, ke.key(), op['val'])
-        kvs_to_store.append( (ke.key(), op['val']) )
+        kvs_to_store.append( lrustorage.KV(ke.key_, op['val']) )
       elif opcode == 'eclon':
         ke = self.storage.LookupFromIdx(op['key_idx'])
         AppendToHeaders(headers, ke.key(), op['val'])
       elif opcode == 'kvsto':
-        #AppendToHeaders(headers, op['key'], op['val'])
-        kvs_to_store.append( (op['key'], op['val']) )
+        kvs_to_store.append( lrustorage.KV(op['key'], op['val']) )
       elif opcode == 'eref':
         AppendToHeaders(headers, op['key'], op['val'])
 
     # now actually make the state changes to the LRU
     for kv in kvs_to_store:
-      v_idx = self.storage.InsertVal(lrustorage.KV(kv[0], kv[1]))
-      self.TouchHeaderGroupEntry(group_id, v_idx)
+      v_idx = self.storage.InsertVal(kv)
+      if v_idx is not None:
+        self.TouchHeaderGroupEntry(group_id, v_idx)
     # and now instantiate the stuff from header_group which we haven't
     # yet instantiated.
-    uninstantiated = self.header_groups[group_id].hg_store.difference(turnons)
+    uninstantiated = header_group.hg_store.difference(turnons)
     #print "uninstantiated entries: ", uninstantiated
     for idx in uninstantiated:
       ve = self.storage.LookupFromIdx(idx)
       #print "%d: %s: %s" % (idx, ve.key(), ve.val())
       AppendToHeaders(headers, ve.key(), ve.val())
-
-
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')
     #print self.storage
-    #print "DCM HGaf:", sorted(self.header_groups[group_id].hg_store)
-    #print "Done decompressing"
-    #print '#' *4
 
     return headers
-
-  def ExecuteToggle(self, group_id, idx):
-    #print "\t\t!!!   toggl: ", idx, self.storage.LookupFromIdx(idx)
-    return self.header_groups[group_id].Toggle(idx)
-
-  def ExecuteOp(self, group_id, op):
-    """ Executes a single operation """
-    #print 'Executing: ', FormatOp(op)
-    opcode = op['opcode']
-    if opcode == 'toggl':
-      # Toggl - toggle visibility
-      idx = op['index']
-      self.ExecuteToggle(group_id, idx)
-    elif opcode == 'trang':
-      # Trang - toggles visibility for a range of indices
-      for idx in xrange(op['index_start'], op['index']+1):
-        self.ExecuteToggle(group_id, idx)
-    elif opcode == 'clone':
-      ke = self.storage.LookupFromIdx(op['key_idx'])
-      v_idx = self.storage.InsertVal(lrustorage.KV(ke.key(), op['val']))
-      self.TouchHeaderGroupEntry(group_id, v_idx)
-    elif opcode == 'kvsto' or opcode == 'tclon':
-      # kvsto - store key,value
-      #print "\t\t!!! %s %s %s" % (opcode, op['key'], op['val'])
-      v_idx = self.storage.InsertVal(lrustorage.KV(op['key'], op['val']))
-      self.TouchHeaderGroupEntry(group_id, v_idx)
-
-
 

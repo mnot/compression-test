@@ -18,6 +18,73 @@ from word_freak import WordFreak
 
 options = {}
 
+g_default_kvs = [
+    (':scheme', 'http'),
+    (':scheme', 'https'),
+    (':method', 'get'),
+    (':path', '/'),
+    (':host', ''),
+    ('cookie', ''),
+    (':status', '200'),
+    (':status-text', 'OK'),
+    (':version', '1.1'),
+    ('accept', ''),
+    ('accept-charset', ''),
+    ('accept-encoding', ''),
+    ('accept-language', ''),
+    ('accept-ranges', ''),
+    ('allow', ''),
+    ('authorizations', ''),
+    ('cache-control', ''),
+    ('content-base', ''),
+    ('content-encoding', ''),
+    ('content-length', ''),
+    ('content-location', ''),
+    ('content-md5', ''),
+    ('content-range', ''),
+    ('content-type', ''),
+    ('date', ''),
+    ('etag', ''),
+    ('expect', ''),
+    ('expires', ''),
+    ('from', ''),
+    ('if-match', ''),
+    ('if-modified-since', ''),
+    ('if-none-match', ''),
+    ('if-range', ''),
+    ('if-unmodified-since', ''),
+    ('last-modified', ''),
+    ('location', ''),
+    ('max-forwards', ''),
+    ('origin', ''),
+    ('pragma', ''),
+    ('proxy-authenticate', ''),
+    ('proxy-authorization', ''),
+    ('range', ''),
+    ('referer', ''),
+    ('retry-after', ''),
+    ('server', ''),
+    ('set-cookie', ''),
+    ('status', ''),
+    ('te', ''),
+    ('trailer', ''),
+    ('transfer-encoding', ''),
+    ('upgrade', ''),
+    ('user-agent', ''),
+    ('vary', ''),
+    ('via', ''),
+    ('warning', ''),
+    ('www-authenticate', ''),
+    ('access-control-allow-origin', ''),
+    ('content-disposition', ''),
+    ('get-dictionary', ''),
+    ('p3p', ''),
+    ('x-content-type-options', ''),
+    ('x-frame-options', ''),
+    ('x-powered-by', ''),
+    ('x-xss-protection', ''),
+    ('connection', 'keep-alive'),
+    ]
 # Performance is a non-goal for this code.
 
 # TODO:try var-int encoding for indices, or use huffman-coding on the indices
@@ -98,11 +165,11 @@ def UnpackInt(input, bitlen, huff):
   retval = (struct.unpack('>L', arg)[0] >> rshift)
   return retval
 
-def UnpackStr(input, params, huff):
+def UnpackStr(input_data, params, huff):
   """
   Reads a string from an input BitBucket and returns it.
 
-  'input' is a BitBucket containing the data to be interpreted as a string.
+  'input_data' is a BitBucket containing the data to be interpreted as a string.
 
   'params' is (bitlen_size, use_eof, pad_to_byte_boundary, use_huffman)
 
@@ -131,23 +198,23 @@ def UnpackStr(input, params, huff):
     # having both is certainly fine, however.
     raise StandardError()
   if bitlen_size:
-    bitlen = UnpackInt(input, bitlen_size, huff)
+    bitlen = UnpackInt(input_data, bitlen_size, huff)
     if huff:
-      retval = huff.DecodeFromBB(input, use_eof, bitlen)
+      retval = huff.DecodeFromBB(input_data, use_eof, bitlen)
     else:
-      retval = input.GetBits(bitlen)[0]
+      retval = input_data.GetBits(bitlen)[0]
   else:  # bitlen_size == 0
     if huff:
-      retval = huff.DecodeFromBB(input, use_eof, 0)
+      retval = huff.DecodeFromBB(input_data, use_eof, 0)
     else:
       retval = []
       while True:
-        c = input.GetBits8()
+        c = input_data.GetBits8()
         retval.append(c)
         if c == 0:
           break
   if pad_to_byte_boundary:
-    input.AdvanceToByteBoundary()
+    input_data.AdvanceToByteBoundary()
   retval = common_utils.ListToStr(retval)
   return retval
 
@@ -206,6 +273,8 @@ def PackStr(data, params, val, huff):
   if bitlen_size:
     PackInt(data, bitlen_size, len_in_bits, huff)
   data.StoreBits( (val_as_list, len_in_bits) )
+  if use_eof and not huff:
+    data.StoreBits([[0],8])
 
 str_pack_params = (string_length_field_bitlen, strings_use_eof,
                    strings_padded_to_byte_boundary, strings_use_huffman)
@@ -254,6 +323,11 @@ opcodes = {
     'clone': (0x3,                         'key_idx', 'val'),
     'kvsto': (0x4,          'key',                    'val'),
     'eref' : (0x5,          'key',                    'val'),
+
+    #'etoggl': (0x5, 'index'),
+    #'etrang': (0x6, 'index', 'index_start'),
+    #'eclone': (0x7,                         'key_idx', 'val'),
+    #'ekvsto': (0x8,          'key',                    'val'),
     }
 
 # an inverse dict of opcode-val: opcode-name list-of-fields-for-opcode
@@ -303,14 +377,14 @@ class Spdy4SeDer(object):  # serializer deserializer
   """
   A class which serializes into and/or deserializes from SPDY4 wire format
   """
-  def PreProcessToggles(self, instructions):
+  def MutateTogglesToToggleRanges(self, instructions):
     """
     Examines the 'toggl' operations in 'instructions' and computes the
     'trang' and remnant 'toggle' operations, returning them as:
     (output_toggles, output_toggle_ranges)
     """
-    toggles = instructions['toggl']
-    toggles.sort()
+
+    toggles = sorted(instructions['toggl'])
     ot = []
     otr = []
     for toggle in toggles:
@@ -412,7 +486,9 @@ class Spdy4SeDer(object):  # serializer deserializer
     in a new BitBucket
     """
     #print 'SerializeInstructions\n', ops
-    (ot, otr) = self.PreProcessToggles(ops)
+    (ot, otr) = self.MutateTogglesToToggleRanges(ops)
+    #print FormatOps({'toggl': ot, 'trang': otr, 'clone': ops['clone'],
+    #                 'kvsto': ops['kvsto'], 'eref': ops['eref']})
 
     payload_bb = BitBucket()
     self.OutputOps(packing_instructions, huff, payload_bb, ot, 'toggl')
@@ -762,73 +838,7 @@ class Spdy4CoDe(object):
     # TODO: Order this such that toggles for the initial request are all
     # together, and thus the client may use a single trang to get what it
     # wants.
-    default_dict = {
-        'date': '',
-        ':scheme': 'https',
-        ':method': 'get',
-        ':path': '/',
-        ':host': '',
-        'cookie': '',
-        ':status': '200',
-        ':status-text': 'OK',
-        ':version': '1.1',
-        'accept': '',
-        'accept-charset': '',
-        'accept-encoding': '',
-        'accept-language': '',
-        'accept-ranges': '',
-        'allow': '',
-        'authorizations': '',
-        'cache-control': '',
-        'content-base': '',
-        'content-encoding': '',
-        'content-length': '',
-        'content-location': '',
-        'content-md5': '',
-        'content-range': '',
-        'content-type': '',
-        'etag': '',
-        'expect': '',
-        'expires': '',
-        'from': '',
-        'if-match': '',
-        'if-modified-since': '',
-        'if-none-match': '',
-        'if-range': '',
-        'if-unmodified-since': '',
-        'last-modified': '',
-        'location': '',
-        'max-forwards': '',
-        'origin': '',
-        'pragma': '',
-        'proxy-authenticate': '',
-        'proxy-authorization': '',
-        'range': '',
-        'referer': '',
-        'retry-after': '',
-        'server': '',
-        'set-cookie': '',
-        'status': '',
-        'te': '',
-        'trailer': '',
-        'transfer-encoding': '',
-        'upgrade': '',
-        'user-agent': '',
-        'user-agent': '',
-        'vary': '',
-        'via': '',
-        'warning': '',
-        'www-authenticate': '',
-        'access-control-allow-origin': '',
-        'content-disposition': '',
-        'get-dictionary': '',
-        'p3p': '',
-        'x-content-type-options': '',
-        'x-frame-options': '',
-        'x-powered-by': '',
-        'x-xss-protection': '',
-        }
-    for (k, v) in default_dict.iteritems():
+    for (k, v) in g_default_kvs:
       self.ExecuteOp(None, self.MakeKvsto(k, v))
       ke = self.storage.FindKeyEntry(k)
       ve = self.storage.FindValEntry(ke, v)
