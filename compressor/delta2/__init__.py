@@ -24,13 +24,12 @@ class Processor(BaseProcessor):
   can eventually be constructed for use with the Huffman encoder.
   """
   def __init__(self, options, is_request, params):
+    BaseProcessor.__init__(self, options, is_request, params)
     self.compressor   = spdy4_codec_impl.Spdy4CoDe(params)
     self.decompressor = spdy4_codec_impl.Spdy4CoDe(params)
-    self.options = options
     self.hosts = {}
     self.group_ids = common_utils.IDStore(2**31)
     self.wf = self.compressor.wf
-    self.name = "delta2"
     if is_request:
       request_freq_table = header_freq_tables.request_freq_table
       self.compressor.huffman_table = huffman.Huffman(request_freq_table)
