@@ -1,7 +1,7 @@
 
 # pylint: disable=W0311
 
-from .. import BaseProcessor, strip_conn_headers, format_http1, parse_http1
+from .. import BaseProcessor, format_http1, parse_http1
 from collections import defaultdict
 import re
 import calendar
@@ -102,7 +102,7 @@ class Processor(BaseProcessor):
   def compress(self, in_headers, host):
     headers = {}
     refs = []
-    for name, value in strip_conn_headers(in_headers).items():
+    for name, value in in_headers.items():
       # look for refs
       if self.last_c \
       and name[0] != ":" \

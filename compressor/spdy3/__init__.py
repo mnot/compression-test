@@ -4,7 +4,7 @@
 
 import zlib
 import struct
-from .. import spdy_dictionary, BaseProcessor, strip_conn_headers
+from .. import spdy_dictionary, BaseProcessor
 
 class Processor(BaseProcessor):
   def __init__(self, options, is_request, params):
@@ -16,7 +16,7 @@ class Processor(BaseProcessor):
       self.compressor.flush(zlib.Z_SYNC_FLUSH)
 
   def compress(self, in_headers, host):
-    raw_spdy3_frame = self.Spdy3HeadersFormat(strip_conn_headers(in_headers))
+    raw_spdy3_frame = self.Spdy3HeadersFormat(in_headers)
     compress_me_payload = raw_spdy3_frame[12:]
     final_frame = raw_spdy3_frame[:12]
     final_frame += self.compressor.compress(compress_me_payload)

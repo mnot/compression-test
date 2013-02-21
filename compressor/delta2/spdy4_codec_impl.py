@@ -185,10 +185,8 @@ def UnpackStr(input_data, params, huff):
       retval = []
       while True:
         c = input_data.GetBits8()
-        #print "(%c)" % c,
         retval.append(c)
         if c == 0:
-          #print "||||"
           break
   if pad_to_byte_boundary:
     input_data.AdvanceToByteBoundary()
@@ -249,7 +247,6 @@ def PackStr(data, params, val, huff):
       len_in_bits = len(val_as_list) *8
   if bitlen_size:
     PackInt(data, bitlen_size, len_in_bits, huff)
-  #print "Storing bits: ", ["%c" % c for c in val_as_list]
   data.StoreBits( (val_as_list, len_in_bits) )
   if use_eof and not huff:
     data.StoreBits([[0],8])
@@ -559,7 +556,7 @@ class Spdy4SeDer(object):  # serializer deserializer
 class HeaderGroup(object):
   """ A HeaderGroup is a list of ValueEntries (VEs) which are the key-values to
   be instantiated as a header frame """
-  def __init__(self, storage):
+  def __init__(self):
     self.hg_store = set()
 
   def Empty(self):
@@ -583,6 +580,8 @@ class HeaderGroup(object):
     return repr(self.hg_store)
 
 class Storage(object):
+  """ This object keeps track of key and LRU ids, all keys and values, and the
+  mechanism for expiring key/value entries as necessary"""
   def __init__(self, max_byte_size, max_entries):
     self.static_storage = lrustorage.LruStorage()
     for k,v in g_default_kvs:
@@ -676,6 +675,7 @@ class Spdy4CoDe(object):
       for group_id in to_be_removed:
         #print "Deleted group_id: %d" % group_id
         del self.header_groups[group_id]
+
     self.storage.SetRemoveValCB(RemoveVIdxFromAllHeaderGroups)
 
   def OpsToRealOps(self, in_ops, header_group):
@@ -715,7 +715,7 @@ class Spdy4CoDe(object):
     try:
       return self.header_groups[group_id]
     except KeyError:
-      self.header_groups[group_id] = HeaderGroup(self.storage)
+      self.header_groups[group_id] = HeaderGroup()
       return self.header_groups[group_id]
 
   def TouchHeaderGroupEntry(self, group_id, v_idx):
@@ -762,56 +762,55 @@ class Spdy4CoDe(object):
     #if self.storage.lru_storage.ring:
     #  print "first lru idx: ", self.storage.lru_storage.ring[0].seq_num
 
-    headers_copy = dict(headers)
+    headers_set = set()
     keep_set = set()
     done_set = set()
-    for k, v in headers_copy.iteritems():
+    for k, v in headers.iteritems():
       if k == 'cookie':
-        headers_copy[k] = [x.lstrip(' ') for x in v.split(';')]
+        splitlist = [x.strip(' ') for x in v.split(';')]
       else:
-        headers_copy[k] = v.split('\0')
+        splitlist = [x.strip(' ') for x in v.split('\0')]
+      for elem in splitlist:
+        headers_set.add( (k, elem) )
+
     for idx in self.header_groups[group_id].hg_store:
       entry = self.storage.LookupFromIdx(idx)
-      (key, val) = (entry.key(), entry.val())
-      if not key in headers_copy:
-        done_set.add(idx)
+      kv = (entry.key() , entry.val() )
+      if kv in headers_set:
+        # keep it.
+        keep_set.add(idx)
+        headers_set.remove(kv)
       else:
-        h_vals = headers_copy[key]
-        new_h_vals = []
-        for h_val in h_vals:
-          if val == h_val:
-            keep_set.add(idx)
-          else:
-            done_set.add(idx)
-            new_h_vals.append(h_val)
-        if not new_h_vals:
-          # no values left for this key. Eliminate it.
-          del headers_copy[key]
-        else:
-          headers_copy[key] = new_h_vals
+        done_set.add(idx)
     #print "keep_set: ", sorted(keep_set)
     #print "done_set: ", sorted(done_set)
-    #print "tbd_set: ", repr(headers_copy)
+    #print "tbd_set: ", repr(headers_set)
     toggls = set()
     clones = []
     kvstos = []
+    erefs = []
 
-    for key, vals in headers_copy.iteritems():
-      for val in vals:
-        (k_idx, v_idx) = self.storage.FindEntryIdx(key, val)
-        if v_idx is not None:
-          # a new toggle.
-          toggls.add(v_idx)
-        elif k_idx is not None:
-          clones.append( (k_idx, val) )
-          # a new clone
-        else:
-          # kvsto
-          kvstos.append( (key, val) )
+    for kv in headers_set:
+      (key, val) = kv
+      if key in [":path", "referer"]:
+        erefs.append( (key, val) )
+        continue
+      (k_idx, v_idx) = self.storage.FindEntryIdx(key, val)
+      if v_idx is not None:
+        # a new toggle.
+        toggls.add(v_idx)
+      elif k_idx is not None:
+        clones.append( (k_idx, val) )
+        # a new clone
+      else:
+        # kvsto
+        kvstos.append( (key, val) )
+    def Cleanup(x):
+      return x
     #print "   keeping on: \n\t\t\t", '\n\t\t\t'.join(
-    #    [repr((x, self.storage.LookupFromIdx(x))) for x in keep_set])
+    #    [repr((x, Cleanup(self.storage.LookupFromIdx(x)))) for x in keep_set])
     #print "new toggls on: \n\t\t\t", '\n\t\t\t'.join(
-    #    [repr((x, self.storage.LookupFromIdx(x))) for x in toggls])
+    #    [repr((x, Cleanup(self.storage.LookupFromIdx(x)))) for x in toggls])
     #print "       clones: \n\t\t\t", '\n\t\t\t'.join([repr(x) for x in clones])
     #print "       kvstos: \n\t\t\t", '\n\t\t\t'.join([repr(x) for x in kvstos])
 
@@ -823,9 +822,14 @@ class Spdy4CoDe(object):
     for (idx, val) in clones:
       op = self.MakeClone(idx, val)
       instructions['clone'].append(self.MakeClone(idx, val))
+
     for (idx, val) in kvstos:
       op = self.MakeKvsto(idx, val)
       instructions['kvsto'].append(op)
+
+    for (key, val) in erefs:
+      op = self.MakeERef(key, val)
+      instructions['eref'].append(op)
 
     output_instrs = instructions['toggl'] + \
                     instructions['clone'] + instructions['kvsto'] + \
@@ -849,17 +853,8 @@ class Spdy4CoDe(object):
     """ Deserializes from SPDY4 wire format and executes the operations"""
     (group_id, ops) = self.RealOpsToOps(realops)
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    #FormatOps(ops,'ROTOAE\t')
-    #self.storage.PinLRU()
-    #print "Decompressing+Executing"
-    #print "DCM HGb4:", sorted(self.header_groups[group_id].hg_store)
     headers = self.DecompressorExecuteOps(ops, group_id)
     self.AdjustHeaderGroupEntries(group_id)
-    #print self.storage.lru_storage.ring
-    #print "DCM HGaf:", sorted(self.header_groups[group_id].hg_store)
-    #print "Done decompressing"
-    #print '#' *4
-    #self.storage.UnPinLRU()
     return (group_id, ops, headers)
 
   def DecompressorExecuteOps(self, ops, group_id):
@@ -879,11 +874,9 @@ class Spdy4CoDe(object):
         for i in xrange(op['index_start'], op['index']+1):
           MaybeAddTurnon(i, turnons)
 
-    #print "Instantiating(adding): \n\t\t\t", '\n\t\t\t'.join(
-    #    [repr((x, self.storage.LookupFromIdx(x))) for x in turnons])
     for idx in turnons:
       ve = self.storage.LookupFromIdx(idx)
-      #print "%d: %s: %s" % (idx, ve.key(), ve.val())
+      #print "TRNON %d: %s: %s" % (idx, ve.key(), ve.val())
       AppendToHeaders(headers, ve.key(), ve.val())
 
     kvs_to_store = []
@@ -897,9 +890,6 @@ class Spdy4CoDe(object):
       elif opcode == 'clone':
         ke = self.storage.LookupFromIdx(op['key_idx'])
         kvs_to_store.append( lrustorage.KV(ke.key_, op['val']) )
-      elif opcode == 'eclon':
-        ke = self.storage.LookupFromIdx(op['key_idx'])
-        AppendToHeaders(headers, ke.key(), op['val'])
       elif opcode == 'kvsto':
         kvs_to_store.append( lrustorage.KV(op['key'], op['val']) )
       elif opcode == 'eref':
@@ -908,15 +898,17 @@ class Spdy4CoDe(object):
     # now actually make the state changes to the LRU
     for kv in kvs_to_store:
       v_idx = self.storage.InsertVal(kv)
-      if v_idx is not None:
-        self.TouchHeaderGroupEntry(group_id, v_idx)
+      if v_idx is None:
+        continue
+      self.TouchHeaderGroupEntry(group_id, v_idx)
     # and now instantiate the stuff from header_group which we haven't
     # yet instantiated.
-    uninstantiated = header_group.hg_store.difference(turnons)
+    #uninstantiated = turnons.difference(header_group.hg_store)
+    uninstantiated = self.header_groups[group_id].hg_store.difference(turnons)
     #print "uninstantiated entries: ", uninstantiated
     for idx in uninstantiated:
       ve = self.storage.LookupFromIdx(idx)
-      #print "%d: %s: %s" % (idx, ve.key(), ve.val())
+      #print "UNINST %d: %s: %s" % (idx, ve.key(), ve.val())
       AppendToHeaders(headers, ve.key(), ve.val())
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')

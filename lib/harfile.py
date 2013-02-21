@@ -72,6 +72,8 @@ def process_headers(hdrdicts):
   for hdrdict in hdrdicts:
     name = hdrdict["name"].lower()
     val = hdrdict["value"]
+    if not name:
+      raise StandardError()
     if name == "host":
       name = ":host"
     if name in out:

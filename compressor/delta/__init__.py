@@ -25,13 +25,11 @@ class Processor(BaseProcessor):
   """
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
-    # 'params' is ignored
-    self.compressor   = spdy4_codec_impl.Spdy4CoDe()
-    self.decompressor = spdy4_codec_impl.Spdy4CoDe()
+    self.compressor   = spdy4_codec_impl.Spdy4CoDe(params)
+    self.decompressor = spdy4_codec_impl.Spdy4CoDe(params)
     self.hosts = {}
-    self.group_ids = common_utils.IDStore(2**31)
+    self.group_ids = common_utils.IDStore(255)
     self.wf = self.compressor.wf
-    self.name = "delta"
     if is_request:
       request_freq_table = header_freq_tables.request_freq_table
       self.compressor.huffman_table = huffman.Huffman(request_freq_table)
@@ -46,25 +44,6 @@ class Processor(BaseProcessor):
       print "\t", spdy4_codec_impl.FormatOp(op)
 
   def compress(self, inp_headers, host):
-    """
-    'inp_headers' are the headers that will be processed
-    'request_headers' are the request headers associated with this frame
-       the host is extracted from this data. For a response, this would be
-       the request that engendered the response. For a request, it is just
-       the request again.
-
-    It returns:
-    (compressed_frame,
-     wire_formatted_operations_before_compression,
-     wire_formatted_operations_after_decompression,
-     input_headers,
-     outputted_headers_after_encode_decode,
-     operations_as_computed_by_encoder,
-     operations_as_recovered_after_decode)
-
-    Note that compressing with an unmodified stream-compressor like gzip is
-    effective, however it is insecure.
-    """
     normalized_host = re.sub('[0-1a-zA-Z-\.]*\.([^.]*\.[^.]*)', '\\1',
                              host)
     if normalized_host in self.hosts:
@@ -79,6 +58,6 @@ class Processor(BaseProcessor):
 
   def decompress(self, compressed_blob):
     out_real_ops = self.decompressor.Decompress(compressed_blob)
-    (group_id, out_ops) = self.decompressor.RealOpsToOpAndExecute(out_real_ops)
-    out_headers = self.decompressor.GenerateAllHeaders(group_id)
+    (group_id, out_ops, out_headers) = \
+        self.decompressor.RealOpsToOpAndExecute(out_real_ops)
     return out_headers

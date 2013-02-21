@@ -57,7 +57,7 @@ class IDStore(object):
   def __init__(self, max_id):
     self.ids = set()
     self.next_idx = 0
-    self.mininum_id = 0
+    self.minimum_id = 0
     self.maximum_id = max_id
     if self.maximum_id is None:
       print "need a max id"

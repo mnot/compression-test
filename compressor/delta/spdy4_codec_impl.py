@@ -85,30 +85,6 @@ g_default_kvs = [
     ('x-xss-protection', ''),
     ('connection', 'keep-alive'),
     ]
-# Performance is a non-goal for this code.
-
-# TODO:try var-int encoding for indices, or use huffman-coding on the indices
-# TODO:use a separate huffman encoding for cookies, and possibly for path
-# TODO:interpret cookies as binary instead of base-64, does it reduce entropy?
-# TODO:make index renumbering useful so things which are often used together
-#      have near indices, or remove it as not worth the cost/complexity
-# TODO:use other mechanisms other than LRU to perform entry expiry
-# TODO:use canonical huffman codes, like the c++ version
-# TODO:use huffman coding on the operation type. Clones and toggles are by far
-#      the most common operations.
-# TODO:use huffman coding on the operation count. Small counts are far more
-#      common than large counts. Alternatively, simply use a smaller fixed-size.
-# TODO:modify the huffman-coding to always emit a code starting with 1 so that
-#      we can differentiate easily between strings that are huffman encoded or
-#      strings which are not huffman encoded by examining the first bit.
-#      Alternately, define different opcodes for the various variations.
-# TODO:modify the string packing/unpacking to indicate whether the following
-#      string is huffman-encoded or not. Assuming 7-bit ascii (which is
-#      something to be discussed, this can be accomplished by adding a single
-#      bit before huffman-encoded strings (with value 1). There are other ways
-#      of accomplishing the same thing, e.g. using different operation opcodes
-#      to indicate whether the string parameters in that operation are huffman
-#      encoded.
 
 # Note: Huffman coding is used here instead of range-coding or
 # arithmetic-coding because of its relative CPU efficiency and because it is
@@ -137,7 +113,6 @@ strings_padded_to_byte_boundary = 1
 strings_use_huffman = 1
 
 ###### END IMPORTANT PARAMS ######
-
 
 def UnpackInt(input, bitlen, huff):
   """
@@ -373,6 +348,12 @@ def FormatOps(ops, prefix=None):
       print FormatOp(op)
 
 
+def AppendToHeaders(headers, key, val):
+  if key in headers:
+    headers[key] += '\0' + val
+  else:
+    headers[key] = val
+
 class Spdy4SeDer(object):  # serializer deserializer
   """
   A class which serializes into and/or deserializes from SPDY4 wire format
@@ -576,92 +557,108 @@ class HeaderGroup(object):
   """ A HeaderGroup is a list of ValueEntries (VEs) which are the key-values to
   be instantiated as a header frame """
   def __init__(self):
-    self.storage = dict()
-    self.generation = 0
+    self.hg_store = set()
 
   def Empty(self):
-    return not self.storage
+    return not self.hg_store
 
-  def IncrementGeneration(self):
-    self.generation += 1
-
-  def HasEntry(self, ve):
-    retval = id(ve) in self.storage
-    #if retval:
-    #  print "Has Entry for %s: %s" % (ve['key'], ve['val'])
-    #else:
-    #  print " NO Entry for %s: %s" % (ve['key'], ve['val'])
-    return retval
-
-  def TouchEntry(self, ve):
-    #print "TE:touched: %s: %s (%d)" % (ve['key'], ve['val'], self.generation)
-    self.storage[id(ve)] = (ve, self.generation)
-
-  def AddEntry(self, ve):
-    if id(ve) in self.storage:
+  def TouchEntry(self, v_idx):
+    if v_idx is None:
       raise StandardError()
-    self.storage[id(ve)] = (ve, self.generation)
-    #print "AE:  added: %s: %s (%d)", (ve['key'], ve['val'], self.generation)
+    self.hg_store.add(v_idx)
 
-  def RemoveEntry(self, ve):
+  def RemoveEntry(self, v_idx):
     try:
-      del self.storage[id(ve)]
+      self.hg_store.remove(v_idx)
     except KeyError:
       pass
 
-  def FindOldEntries(self):
-    def NotCurrent(x):
-      return x != self.generation
-    retval = [e for he,(e,g) in self.storage.iteritems() if NotCurrent(g)]
-    return retval
+  def Toggle(self, v_idx):
+    self.hg_store.symmetric_difference_update([v_idx])
 
-  def GetEntries(self):
-    return [e for he,(e, g) in self.storage.iteritems()]
+  def __repr__(self):
+    return repr(self.hg_store)
 
-  def Toggle(self, ve):
-    try:
-      #g = self.storage[id(ve)][1]
-      del self.storage[id(ve)]
-      #print "TG: removed: %s: %s (%d)" % (ve['key'], ve['val'], g)
-    except KeyError:
-      if id(ve) in self.storage:
-        raise StandardError()
-      self.storage[id(ve)] = (ve, self.generation)
-      #print "TG:  added: %s: %s (%d)" % (ve['key'], ve['val'], self.generation)
+class LRU(object):
+  class Node(object):
+    def __init__(self):
+      self.n = None
+      self.p = None
+      self.d = None
+  def __init__(self):
+    self.first = None
+    self.last = None
+
+  def __getitem__(self, idx):
+    if idx == 0 and self.first is not None:
+      return self.first.d
+    c = self.first
+    for i in xrange(idx):
+      c = c.n
+    return c.d
+
+  def remove(self, item):
+    pass
+  def append(self, item):
+    pass
+
+
+
 
 class Storage(object):
   """ This object keeps track of key and LRU ids, all keys and values, and the
   mechanism for expiring key/value entries as necessary"""
-  def __init__(self):  ####
+  class KE(object):
+    def __init__(self, key_idx, key):
+      self.key = key
+      self.key_idx = key_idx
+      self.ref_cnt = 0
+      self.val_map = {}
+    def __repr__(self):
+      return repr({'key_idx': self.lru_idx, 'key': self.key,
+                   'ref_cnt': self.ref_cnt, 'val_map': self.val_map})
+  
+  class VE(object):
+    def __init__(self, key, val, ke):
+      self.lru_idx = None
+      self.key = key
+      self.val = val
+      self.ke = ke
+  
+    def __repr__(self):
+      return repr({'lru_idx': self.lru_idx, 'key': self.key,
+                   'val': self.val, 'ke':id(self.ke)})
+  def __init__(self, max_byte_size, max_entries):
     self.key_map = {}
     self.key_ids = common_utils.IDStore(2**16)
     self.lru_ids = common_utils.IDStore(2**16)
     self.state_size = 0
     self.num_vals = 0
-    self.max_vals = 1024
-    self.max_state_size = 64*1024
+    self.max_vals = max_entries
+    self.max_state_size = max_byte_size
     self.pinned = None
     self.remove_val_cb = None
     self.lru = deque()
     self.lru_idx_to_ve = {}
     self.key_idx_to_ke = {}
 
+    for (k, v) in g_default_kvs:
+      ke = self.FindKeyEntry(key)
+      if ke is None:
+        self.key_map[key] = ke = self.NewKE(key)
+      ke.val_map[val] = ve = self.NewVE(key, val, ke)
+      ve.lru_idx = lru_idx = self.GetNextUnusedLruId()
+      self.lru_idx_to_ve[lru_idx] = ve
+      self.lru_ids.minimum_id = lru_idx
+
   def PopOne(self):  ####
-    """ Gets rid of the oldest entry on the LRU so long as
-    we haven't yet hit the 'pin' (an entry which is None)
-    TODO: This should skip entries in the header-group which is being
-    processed, but since this is annoying to do in python, this function
-    doesn't yet do it.
-    """
     if not self.lru:
-      return
-    if self.lru[0] is None:
-      # hit the pin.
-      return
+      return None
     ve = self.lru[0]
     if self.remove_val_cb:
-      self.remove_val_cb(ve)
+      self.remove_val_cb(ve.lru_idx)
     self.RemoveVal(ve)
+    return 1
 
   def MakeSpace(self, space_required, adding_val):  ####
     """
@@ -680,43 +677,29 @@ class Storage(object):
       return self.key_map[key]
     return None
 
-  def FindKeyIdxByKey(self, key): ####
-    ke = self.FindKeyEntry(key)
-    if ke:
-      return ke['key_idx']
-    return -1
-
   def FindKeyByKeyIdx(self, key_idx):
     return self.key_idx_to_ke.get(key_idx, None)
 
   def IncrementRefCnt(self, ke): ####
-    ke['ref_cnt'] += 1
+    ke.ref_cnt += 1
 
   def DecrementRefCnt(self, ke): ####
-    ke['ref_cnt'] -= 1
+    ke.ref_cnt -= 1
 
   def NewKE(self, key): ####
     key_idx = self.GetNextUnusedKeyId()
-    return {'key_idx': key_idx,
-            'ref_cnt': 0,
-            'val_map': {},
-            'key': key,
-            }
+    return Storage.KE(key_idx, key)
 
   def NewVE(self, key, val, ke):  ####
-    return {'lru_idx': None,
-            'key': key,
-            'val': val,
-            'ke': ke,
-            }
+    return Storage.VE(key, val, ke)
 
   def FindOrAddKey(self, key): ####
     ke = self.FindKeyEntry(key)
-    if ke:
+    if ke is not None:
       return ke
     self.MakeSpace(len(key), 0)
     self.key_map[key] = ke = self.NewKE(key)
-    key_idx = ke['key_idx']
+    key_idx = ke.key_idx
     if key_idx in self.key_idx_to_ke:
       raise StandardError()
     self.key_idx_to_ke[key_idx] = ke
@@ -725,13 +708,12 @@ class Storage(object):
 
   def InsertVal(self, key, val): ####
     ke = self.FindOrAddKey(key)
-    if ke['val_map'].get(val, None) is not None:
-      print "Hmm. This (%s) shouldn't have existed already" % val
-      raise StandardError()
+    if ke.val_map.get(val, None) is not None:
+      return None
     self.IncrementRefCnt(ke)
     self.MakeSpace(len(val), 1)
     self.num_vals += 1
-    ke['val_map'][val] = ve = self.NewVE(key, val, ke)
+    ke.val_map[val] = ve = self.NewVE(key, val, ke)
     self.DecrementRefCnt(ke)
     return ve
 
@@ -755,15 +737,16 @@ class Storage(object):
     return idx
 
   def AddToHeadOfLRU(self, ve): ####
-    if ve['lru_idx'] >= 0:
+    if ve.lru_idx >= 0:
       raise StandardError()
     if ve is not None:
       lru_idx = self.GetNextUnusedLruId()
-      ve['lru_idx'] = lru_idx
+      ve.lru_idx = lru_idx
       self.lru_idx_to_ve[lru_idx] = ve
+      #print "Appending %d ve to LRU: " % lru_idx, ve
       self.lru.append(ve)
 
-  def GetVEFromLRUIdx(self, lru_idx):
+  def LookupFromIdx(self, lru_idx):
     return self.lru_idx_to_ve.get(lru_idx, None)
 
   def MoveToHeadOfLRU(self, ve):  ####
@@ -774,26 +757,26 @@ class Storage(object):
       pass
 
   def RemoveFromLRU(self, ve): ####
-    # print "removing from LRU: (%r,%r, %d)" % (ve['key'], ve['val'], ve['lru_idx'])
+    # print "removing from LRU: (%r,%r, %d)" % (ve.key, ve.val, ve.lru_idx)
     self.lru.remove(ve)
-    lru_idx = ve['lru_idx']
+    lru_idx = ve.lru_idx
     del self.lru_idx_to_ve[lru_idx]
-    ve['lru_idx'] = None
+    ve.lru_idx = None
 
   def RemoveFromValMap(self, ve): ####
-    self.state_size -= len(ve['val'])
+    self.state_size -= len(ve.val)
     self.num_vals -= 1
-    del ve['ke']['val_map'][ve['val']]
+    del ve.ke.val_map[ve.val]
 
   def MaybeRemoveFromKeyMap(self, ke): ####
-    if not ke or len(ke['val_map']) > 0 or ke['ref_cnt'] > 0:
+    if not ke or len(ke.val_map) > 0 or ke.ref_cnt > 0:
       return
-    self.state_size -= len(ke['key'])
+    self.state_size -= len(ke.key)
 
   def RemoveVal(self, ve): ####
     self.RemoveFromLRU(ve)
     self.RemoveFromValMap(ve)
-    self.MaybeRemoveFromKeyMap(ve['ke'])
+    self.MaybeRemoveFromKeyMap(ve.ke)
 
   def SetRemoveValCB(self, cb): ####
     self.remove_val_cb = cb
@@ -801,53 +784,55 @@ class Storage(object):
   def FindValEntry(self, ke, val): ####
     if ke is None:
       return None
-    return ke['val_map'].get(val, None)
+    return ke.val_map.get(val, None)
 
-  def PinLRU(self):
-    if self.pinned:
-      raise StandardError()
-    self.pinned = True
-    self.lru.append(None)
+  def __repr__(self):
+    retval = []
+    for item in self.lru:
+      if item is not None:
+        retval.append("(%d %d, %s: %s)" % (item['ke']['key_idx'], item['lru_idx'], item['key'], item['val']))
+      else:
+        retval.append("(None)")
 
-  def UnPinLRU(self):
-    if not self.pinned:
-      raise StandardError()
-    self.pinned = False
-    self.lru = deque([x for x in self.lru if x is not None])
+    return '\n'.join(retval)
+
 
 
 class Spdy4CoDe(object):
-  def __init__(self):
+  def __init__(self, params):
+    param_dict = {}
+    for param in params:
+      kv = param.split('=')
+      if len(kv) > 1:
+        param_dict[kv[0]] = '='.join(kv[1:])
+      else:
+        param_dict[kv[0]] = None
+
+    max_byte_size = 16*1024
+    max_entries = 4096
+
+    if 'max_byte_size' in param_dict:
+      max_byte_size = int(param_dict['max_byte_size'])
+    if 'max_entries' in param_dict:
+      max_entries = int(param_dict['max_entries'])
+
+    self.options = options
     self.header_groups = {}
     self.huffman_table = None
     self.wf = WordFreak()
-    self.storage = Storage()
-    def RemoveVEFromAllHeaderGroups(ve):
+    self.storage = Storage(max_byte_size, max_entries)
+    def RemoveVIdxFromAllHeaderGroups(v_idx):
       to_be_removed = []
       for group_id, header_group in self.header_groups.iteritems():
-        #print "Removing %d from hg %d" % (ve['lru_idx'], group_id)
-        header_group.RemoveEntry(ve)
+        #print "Removing %d from hg %d" % (ve.lru_idx, group_id)
+        header_group.RemoveEntry(v_idx)
         if header_group.Empty():
           to_be_removed.append(group_id)
       for group_id in to_be_removed:
         #print "Deleted group_id: %d" % group_id
         del self.header_groups[group_id]
 
-    self.storage.SetRemoveValCB(RemoveVEFromAllHeaderGroups)
-
-    # TODO: Order this such that toggles for the initial request are all
-    # together, and thus the client may use a single trang to get what it
-    # wants.
-    for (k, v) in g_default_kvs:
-      self.ExecuteOp(None, self.MakeKvsto(k, v))
-      ke = self.storage.FindKeyEntry(k)
-      ve = self.storage.FindValEntry(ke, v)
-      ve['lru_idx'] = lru_idx = self.storage.GetNextUnusedLruId()
-      self.storage.lru_idx_to_ve[lru_idx] = ve
-      self.storage.lru_ids.minimum_id = lru_idx
-
-      self.storage.lru_ids.next_id = 2**16 - 8
-      self.storage.key_ids.next_id = 2**16 - 8
+    self.storage.SetRemoveValCB(RemoveVIdxFromAllHeaderGroups)
 
   def OpsToRealOps(self, in_ops, header_group):
     """ Packs in-memory format operations into wire format"""
@@ -889,170 +874,217 @@ class Spdy4CoDe(object):
       self.header_groups[group_id] = HeaderGroup()
       return self.header_groups[group_id]
 
-  def TouchHeaderGroupEntry(self, group_id, ve):
-    self.header_groups[group_id].TouchEntry(ve)
-
-  def VEInHeaderGroup(self, group_id, ve):
-    return self.header_groups[group_id].HasEntry(ve)
-
-  def IdxToVE(self, idx):
-    return self.storage.lru_idx_to_ve[idx]
-
-  def DiscoverTurnOffs(self, group_id, instructions):
-    """ Discovers the elements in the header-group which are not current, and
-    thus should be removed from the header group (i.e. turned off)
-    """
-    toggles_off = []
+  def TouchHeaderGroupEntry(self, group_id, v_idx):
+    if v_idx is None:
+      raise StandardError()
     header_group = self.FindOrMakeHeaderGroup(group_id)
-    for ve in header_group.FindOldEntries():
-      toggles_off.append(self.MakeToggl(ve['lru_idx']))
-    return toggles_off
+    #print "\t\t\ttouching/adding idx: %r in group: %d" % (v_idx, group_id)
+    header_group.TouchEntry(v_idx)
 
-  def RenumberVELruIdx(self, ve):
-    lru_idx = ve['lru_idx']
+  def RenumberVELruIdx(self, ve, group_id):
+    lru_idx = ve.lru_idx
+    removals = []
+    for grp_id, hdr_grp in self.header_groups.iteritems():
+      try:
+        hdr_grp.hg_store.remove(lru_idx)
+      except:
+        pass
+      if not hdr_grp and grp_id != group_id:
+        removals.append(grp_id)
+    for grp_id in removals:
+      del self.header_groups[grp_id]
+
     if lru_idx is None:
       print ve
       raise StandardError()
-    new_lru_idx = ve['lru_idx'] = self.storage.GetNextUnusedLruId()
+    new_lru_idx = ve.lru_idx = self.storage.GetNextUnusedLruId()
     del self.storage.lru_idx_to_ve[lru_idx]
     self.storage.lru_idx_to_ve[new_lru_idx] = ve
+    self.header_groups[group_id].hg_store.add(new_lru_idx)
+    #print "Renumbering: %d to %d " % (lru_idx, new_lru_idx)
 
   def AdjustHeaderGroupEntries(self, group_id):
     """ Moves elements which have been referenced/modified to the head of the LRU
     and possibly renumbers them"""
     header_group = self.header_groups[group_id]
-    for ve in sorted(header_group.GetEntries(),key=lambda x: x['lru_idx']):
+    #print "Adjust b4: ", self.header_groups[group_id].hg_store
+    for ve in [self.storage.LookupFromIdx(x) for x in sorted(header_group.hg_store)]:
       self.storage.MoveToHeadOfLRU(ve)
-      self.RenumberVELruIdx(ve)
+      self.RenumberVELruIdx(ve, group_id)
+    #print "Adjust af: ", self.header_groups[group_id].hg_store
 
-  def ExecuteInstructionsExceptERefs(self, group_id, instructions):
-    if 'trang' in instructions:
-      raise StandardError()
-    for op in instructions['toggl']:
-      self.ExecuteOp(group_id, op)
-    for op in instructions['clone']:
-      self.ExecuteOp(group_id, op)
-    for op in instructions['kvsto']:
-      self.ExecuteOp(group_id, op)
-
-  def ProcessKV(self, key, val, group_id, instructions):
-    """ Comes up with the appropriate operation for the key, value, and adds
-    it into 'instructions'"""
-    ke = self.storage.FindKeyEntry(key)
-    ve = self.storage.FindValEntry(ke, val)
-    if ve is not None:
-      if not self.VEInHeaderGroup(group_id, ve):
-        instructions['toggl'].append(self.MakeToggl(ve['lru_idx']))
-      else:
-        self.TouchHeaderGroupEntry(group_id, ve)
-    elif ke is not None:
-      instructions['clone'].append(self.MakeClone(ke['key_idx'], val))
-    else:
-      instructions['kvsto'].append(self.MakeKvsto(key, val))
 
   def MakeOperations(self, headers, group_id):
     """ Computes the entire set of operations necessary to encode the 'headers'
     for header-group 'group_id'
     """
     instructions = {'toggl': [], 'clone': [], 'kvsto': [], 'eref': []}
-    incremented_keys = []
-    self.storage.PinLRU()
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    for k in headers.iterkeys():
-      ke = self.storage.FindKeyEntry(k)
-      if ke:
-        self.storage.IncrementRefCnt(ke)
-        incremented_keys.append(ke)
-    for k,v in headers.iteritems():
+
+    headers_set = set()
+    keep_set = set()
+    done_set = set()
+    for k, v in headers.iteritems():
       if k == 'cookie':
-        splitvals = [x.lstrip(' ') for x in v.split(';')]
-        splitvals.sort()
-        for splitval in splitvals:
-          self.ProcessKV(k, splitval, group_id, instructions)
+        splitlist = [x.strip(' ') for x in v.split(';')]
       else:
-        self.ProcessKV(k, v, group_id, instructions)
+        splitlist = [x.strip(' ') for x in v.split('\0')]
+      for elem in splitlist:
+        headers_set.add( (k, elem) )
 
-    turn_offs = self.DiscoverTurnOffs(group_id, instructions)
-    instructions['toggl'].extend(turn_offs)
-    self.ExecuteInstructionsExceptERefs(group_id, instructions)
+    for idx in self.header_groups[group_id].hg_store:
+      entry = self.storage.LookupFromIdx(idx)
+      kv = (entry.key, entry.val)
+      if kv in headers_set:
+        # keep it.
+        keep_set.add(idx)
+        headers_set.remove(kv)
+      else:
+        done_set.add(idx)
+    #print "keep_set: ", sorted(keep_set)
+    #print "done_set: ", sorted(done_set)
+    #print "tbd_set: ", repr(headers_set)
+    toggls = set()
+    clones = []
+    kvstos = []
+    erefs = []
 
-    for ke in incremented_keys:
-      self.storage.DecrementRefCnt(ke)
-    # SerializeInstructions()
-    self.storage.UnPinLRU()
-    self.header_groups[group_id].IncrementGeneration()
+    for kv in headers_set:
+      (key, val) = kv
+      if key in [":path", "referer"]:
+        erefs.append( (key, val) )
+        continue
+      k_idx = None
+      v_idx = None
+
+      ke = self.storage.FindKeyEntry(key)
+      if ke is not None:
+        k_idx = ke.key_idx
+
+      ve = self.storage.FindValEntry(ke, val)
+      if ve is not None:
+        v_idx = ve.lru_idx
+
+      if v_idx is not None:
+        # a new toggle.
+        toggls.add(v_idx)
+      elif k_idx is not None:
+        clones.append( (k_idx, val) )
+        # a new clone
+      else:
+        # kvsto
+        kvstos.append( (key, val) )
+    #def Cleanup(x):
+    #  y = dict(x)
+    #  del y['ke']
+    #  return y
+    #print "   keeping on: \n\t\t\t", '\n\t\t\t'.join(
+    #    [repr((x, Cleanup(self.storage.LookupFromIdx(x)))) for x in keep_set])
+    #print "new toggls on: \n\t\t\t", '\n\t\t\t'.join(
+    #    [repr((x, Cleanup(self.storage.LookupFromIdx(x)))) for x in toggls])
+    #print "       clones: \n\t\t\t", '\n\t\t\t'.join([repr(x) for x in clones])
+    #print "       kvstos: \n\t\t\t", '\n\t\t\t'.join([repr(x) for x in kvstos])
+
+
+    full_toggl_list = toggls.union(done_set)
+    for idx in full_toggl_list:
+      instructions['toggl'].append(self.MakeToggl(idx))
+
+    for (idx, val) in clones:
+      op = self.MakeClone(idx, val)
+      instructions['clone'].append(self.MakeClone(idx, val))
+
+    for (idx, val) in kvstos:
+      op = self.MakeKvsto(idx, val)
+      instructions['kvsto'].append(op)
+
+    for (key, val) in erefs:
+      op = self.MakeERef(key, val)
+      instructions['eref'].append(op)
+
+    output_instrs = instructions['toggl'] + \
+                    instructions['clone'] + instructions['kvsto'] + \
+                    instructions['eref']
+    #print FormatOps(output_instrs)
+
+    #print "storage befor exe: ", self.storage.lru_storage.ring
+    self.DecompressorExecuteOps(output_instrs, group_id)
+    #print "storage after exe: ", self.storage.lru_storage.ring
     self.AdjustHeaderGroupEntries(group_id)
-    #FormatOps(instructions, 'MO\t')
+
+    #print self.storage.lru_storage.ring
+    #print "CMP HGaf:", sorted(self.header_groups[group_id].hg_store)
+
+
+    #print "Done making operations"
+    #print '#' * 8
     return instructions
 
   def RealOpsToOpAndExecute(self, realops):
     """ Deserializes from SPDY4 wire format and executes the operations"""
     (group_id, ops) = self.RealOpsToOps(realops)
-    #FormatOps(ops,'ROTOAE\t')
-    self.storage.PinLRU()
-    self.ExecuteOps(ops, group_id)
-    self.storage.UnPinLRU()
-    return (group_id, ops)
-
-  def ExecuteOps(self, ops, group_id, ephemereal_headers=None):
-    """ Executes a list of operations"""
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    if ephemereal_headers is None:
-      ephemereal_headers = {}
-    #print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-    for op in ops:
-      self.ExecuteOp(group_id, op, ephemereal_headers)
-    #print 'DONE'
+    headers = self.DecompressorExecuteOps(ops, group_id)
+    self.AdjustHeaderGroupEntries(group_id)
+    return (group_id, ops, headers)
 
-  def ExecuteToggle(self, group_id, idx):
-    self.header_groups[group_id].Toggle(self.IdxToVE(idx))
+  def DecompressorExecuteOps(self, ops, group_id):
+    def MaybeAddTurnon(idx, addme):
+      if not idx in self.header_groups[group_id].hg_store:
+        addme.add(idx)
+    def DoToggle(idx):
+      self.header_groups[group_id].Toggle(idx)
 
-  def ExecuteOp(self, group_id, op, ephemereal_headers=None):
-    """ Executes a single operation """
-    #print 'Executing: ', FormatOp(op)
-    opcode = op['opcode']
-    if opcode == 'toggl':
-      # Toggl - toggle visibility
-      idx = op['index']
-      self.ExecuteToggle(group_id, idx)
-    elif opcode == 'trang':
-      # Trang - toggles visibility for a range of indices
-      for idx in xrange(op['index_start'], op['index']+1):
-        self.ExecuteToggle(group_id, idx)
-    elif opcode == 'clone':
-      key_idx = op['key_idx']
-      # Clone - copies key and stores new value
-      ke = self.storage.FindKeyByKeyIdx(key_idx)
-      if ke is None:
-        raise StandardError()
-      ve = self.storage.InsertVal(ke['key'], op['val'])
-      self.storage.AddToHeadOfLRU(ve)
-      self.TouchHeaderGroupEntry(group_id, ve)
-    elif opcode == 'kvsto':
-      # kvsto - store key,value
-      ve = self.storage.InsertVal(op['key'], op['val'])
-      if group_id is not None:
-        self.storage.AddToHeadOfLRU(ve)
-        self.TouchHeaderGroupEntry(group_id, ve)
-    elif opcode == 'eref' and ephemereal_headers is not None:
-      ephemereal_headers[op['key']] = op['val']
-
-  def GenerateAllHeaders(self, group_id):
-    """ Given a group-id, generates the set of headers currently associated
-    with that header group, and returns them.
-    """
+    header_group = self.FindOrMakeHeaderGroup(group_id)
     headers = {}
-    header_group = self.header_groups[group_id]
+    turnons = set()
+    for op in ops:
+      if op['opcode'] == 'toggl':
+        MaybeAddTurnon(op['index'], turnons)
+      elif op['opcode'] == 'trang':
+        for i in xrange(op['index_start'], op['index']+1):
+          MaybeAddTurnon(i, turnons)
 
-    for ve in sorted(header_group.GetEntries(),key=lambda x: x['lru_idx']):
-      key = ve['key']
-      val = ve['val']
-      if key in headers:
-        headers[key] = headers[key] + '\0' + val
-      else:
-        headers[key] = val
+    for idx in turnons:
+      ve = self.storage.LookupFromIdx(idx)
+      #print "TRNON %d: %s: %s" % (idx, ve.key, ve.val)
+      AppendToHeaders(headers, ve.key, ve.val)
+
+    kvs_to_store = []
+    for op in ops:
+      opcode = op['opcode']
+      if opcode == 'toggl':
+        DoToggle(op['index'])
+      elif opcode == 'trang':
+        for i in xrange(op['index_start'], op['index']+1):
+          DoToggle(i)
+      elif opcode == 'clone':
+        ke = self.storage.FindKeyByKeyIdx(op['key_idx'])
+        kvs_to_store.append( (ke.key, op['val']) )
+      elif opcode == 'kvsto':
+        kvs_to_store.append( (op['key'], op['val']) )
+      elif opcode == 'eref':
+        AppendToHeaders(headers, op['key'], op['val'])
+
+    # now actually make the state changes to the LRU
+    for kv in kvs_to_store:
+      ve = self.storage.InsertVal(kv[0], kv[1])
+      if ve is None:
+        continue
+      self.storage.AddToHeadOfLRU(ve)
+      self.TouchHeaderGroupEntry(group_id, ve.lru_idx)
+    # and now instantiate the stuff from header_group which we haven't
+    # yet instantiated.
+    #uninstantiated = turnons.difference(header_group.hg_store)
+    uninstantiated = self.header_groups[group_id].hg_store.difference(turnons)
+    #print "uninstantiated entries: ", uninstantiated
+    for idx in uninstantiated:
+      ve = self.storage.LookupFromIdx(idx)
+      #print "UNINST %d: %s: %s" % (idx, ve.key, ve.val)
+      AppendToHeaders(headers, ve.key, ve.val)
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')
-    self.AdjustHeaderGroupEntries(group_id)
+    #print repr(self.storage)
+
     return headers
 

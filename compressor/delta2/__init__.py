@@ -28,7 +28,7 @@ class Processor(BaseProcessor):
     self.compressor   = spdy4_codec_impl.Spdy4CoDe(params)
     self.decompressor = spdy4_codec_impl.Spdy4CoDe(params)
     self.hosts = {}
-    self.group_ids = common_utils.IDStore(2**31)
+    self.group_ids = common_utils.IDStore(255)
     self.wf = self.compressor.wf
     if is_request:
       request_freq_table = header_freq_tables.request_freq_table
@@ -58,11 +58,6 @@ class Processor(BaseProcessor):
 
   def decompress(self, compressed_blob):
     out_real_ops = self.decompressor.Decompress(compressed_blob)
-    try:
-      (group_id, out_ops, out_headers) = \
-          self.decompressor.RealOpsToOpAndExecute(out_real_ops)
-    except:
-      raise
+    (group_id, out_ops, out_headers) = \
+        self.decompressor.RealOpsToOpAndExecute(out_real_ops)
     return out_headers
-
-

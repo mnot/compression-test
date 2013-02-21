@@ -9,6 +9,27 @@ from compressor import format_http1
 
 # pylint: disable=W0311
 
+def compare_headers_impl(a_input, b_input, ignores):
+  def NormalizeDict(d):
+    nd = set()
+    for k,v in d.iteritems():
+      if k in ignores:
+        continue
+      if k == 'cookie':
+        splitlist = set([x.strip(' ') for x in v.split(';')])
+      else:
+        splitlist = set([x.strip(' ') for x in v.split('\0')])
+      for item in splitlist:
+        nd.add( (k, item) )
+    return nd
+
+  a_hdr = NormalizeDict(a_input)
+  b_hdr = NormalizeDict(b_input)
+  retval = {'a_only': a_hdr.difference(b_hdr),
+            'shared': a_hdr.intersection(b_hdr),
+            'b_only': b_hdr.difference(a_hdr)}
+  return retval
+
 
 class Processors(object):
   """
@@ -56,6 +77,19 @@ class Processors(object):
           ratio = 1.0 * resu['size'] / results[self.options.baseline]['size']
         stream.record_result(proc_name, resu['size'], ratio, resu['time'])
 
+  @staticmethod
+  def filter_headers(hdrs):
+    new_hdrs = {}
+    ignore_hdrs = [':status-text', ':version', 'keep-alive', 'connection']
+    if 'connection' in hdrs:
+      ignore_hdrs.extend([x.strip(' ') for x in hdrs['connection'].split(',')])
+
+    for k,v in hdrs.iteritems():
+      if k in ignore_hdrs:
+        continue
+      new_hdrs[k] = v
+    return new_hdrs
+
   def process_message(self, hdrs, msg_type, host):
     """
     message is a HTTP header dictionary in the format described in
@@ -75,7 +109,9 @@ class Processors(object):
       if self.options.verbose >= 3:
         self.output("# %s\n" % processor.name)
       start_time = sum(os.times()[:2])
-      compressed = processor.compress(copy(hdrs), host)
+      filtered_hdrs = Processors.filter_headers(hdrs)
+
+      compressed = processor.compress(filtered_hdrs, host)
       results[processor.name] = {
         'size': len(compressed),
         'time': sum(os.times()[:2]) - start_time
@@ -100,7 +136,8 @@ class Processors(object):
         self.output("%s" % txt)
         if not txt or txt[-1] != "\n":
           self.output("\n\n")
-      compare_result = self.compare_headers(hdrs, "orig", decompressed, processor.name)
+      compare_result = self.compare_headers(filtered_hdrs, "orig",
+                                            decompressed, processor.name)
       if compare_result:
         self.output('  - mismatch in %s' % processor.name)
         if self.options.verbose > 1:
@@ -121,29 +158,17 @@ class Processors(object):
     If nothing is different, it returns an empty string. If it is, it
     returns a string explaining what is different.
     """
+    ignores = [':version', ':status-text', 'connection']
     a_hdr = dict(a_hdr)
     b_hdr = dict(b_hdr)
-    output = []
-    for d_hdr in [a_hdr, b_hdr]:
-      if 'cookie' in d_hdr.keys():
-        splitvals = d_hdr['cookie'].split(';')
-        d_hdr['cookie'] = \
-          '; '.join(sorted([x.lstrip(' ') for x in splitvals]))
-    conn = [v.strip().lower() for v in a_hdr.get("connection", "").split(",")]
-    for (key, val) in a_hdr.iteritems():
-      if key in "connection" or conn:
-        pass
-      elif key in [':version', ':status-text']:
-        pass
-      elif not key in b_hdr:
-        output.append('    %s present in only one (%s)' % (key, a_name))
-        continue
-      elif val.strip() != b_hdr[key].strip():
-        output.append('    %s has mismatched values' % key)
-        output.append('      %s -> %s' % (a_name, val))
-        output.append('      %s -> %s' % (b_name, b_hdr[key]))
-      if b_hdr.has_key(key):
-        del b_hdr[key]
-    for key in b_hdr.keys():
-        output.append('    %s present in only one (%s)' % (key, b_name))
-    return '\n'.join(output)
+    compare_result = compare_headers_impl(a_hdr, b_hdr, ignores)
+    retval = []
+    if compare_result['a_only']:
+      retval.append('Only found in: %s' % a_name)
+      for a_item in compare_result['a_only']:
+        retval.append("\t%s: %s" % (a_item[0], a_item[1]))
+    if compare_result['b_only']:
+      retval.append('Only found in: %s' % b_name)
+      for b_item in compare_result['b_only']:
+        retval.append("\t%s: %s" % (b_item[0], b_item[1]))
+    return '\n'.join(retval)

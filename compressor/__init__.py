@@ -55,12 +55,12 @@ def format_http1(frame,
   avoid_list = []
   if ':method' in frame:
     top_line = '%s %s %s%s' % (
-        frame.get(':method',""), frame.get(':path', ""), 
+        frame.get(':method',""), frame.get(':path', ""),
         frame.get(':version', version), delimiter)
-    avoid_list = [':method', ':path', ':version', ':scheme']
+    avoid_list = [':method', ':path', ':version']
   else:
     top_line = '%s %s %s%s' % (
-        frame.get(':version', version), frame.get(':status',"") , 
+        frame.get(':version', version), frame.get(':status',""),
         frame.get(':status-text', '?'), delimiter)
     avoid_list = [':version', ':status', ':status-text']
   out_frame.append(top_line)
@@ -79,20 +79,6 @@ def format_http1(frame,
   return ''.join(out_frame)
   
   
-def strip_conn_headers(hdrs):
-  """Remove hop-by-hop headers from a header dictionary."""
-  hop_by_hop = ['transfer-encoding', 'te', 'keep-alive', 'trailers']
-  if hdrs.has_key('connection'):
-    hop_by_hop.extend([v.strip() for v in hdrs['connection'].split(None)])
-    del hdrs['connection']
-  for hdr in hop_by_hop:
-    try:
-      del hdrs[hdr]
-    except KeyError:
-      pass
-  return hdrs
-
-
 def parse_http1(message, is_request, host='host'):
   """Take a HTTP1 message and return the header structure for it."""
   out = {}
@@ -101,14 +87,17 @@ def parse_http1(message, is_request, host='host'):
   for line in lines:
     if not line: 
       break
-    name, value = line.split(":", 1)
+    if line[0] == ':':
+      name, value = line[1:].split(":", 1)
+      name = ":" + name
+    else:
+      name, value = line.split(":", 1)
     name = name.lower()
     if out.has_key(name):
       out[name] += "\0" + value.strip()
     else:
       out[name] = value.strip()
   if is_request:
-    out[":scheme"] = "http" # FIXME: find https?
     out[':method'] = top_line[0]
     out[':path'] = top_line[1]
     out[':version'] = top_line[2].strip()
