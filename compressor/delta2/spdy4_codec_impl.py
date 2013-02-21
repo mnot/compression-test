@@ -665,10 +665,8 @@ class Spdy4CoDe(object):
     self.storage = Storage(max_byte_size, max_entries)
     def RemoveVIdxFromAllHeaderGroups(entry):
       v_idx = entry.seq_num
-      #print "Removing %d from all!" % v_idx
       to_be_removed = []
       for group_id, header_group in self.header_groups.iteritems():
-        #print "Removing %d from hg %d" % (ve['lru_idx'], group_id)
         header_group.RemoveEntry(v_idx)
         if header_group.Empty():
           to_be_removed.append(group_id)
@@ -758,9 +756,6 @@ class Spdy4CoDe(object):
     """
     instructions = {'toggl': [], 'clone': [], 'kvsto': [], 'eref': []}
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    #print "CMP HGb4:", sorted(self.header_groups[group_id].hg_store)
-    #if self.storage.lru_storage.ring:
-    #  print "first lru idx: ", self.storage.lru_storage.ring[0].seq_num
 
     headers_set = set()
     keep_set = set()
@@ -889,15 +884,15 @@ class Spdy4CoDe(object):
           DoToggle(i)
       elif opcode == 'clone':
         ke = self.storage.LookupFromIdx(op['key_idx'])
-        kvs_to_store.append( lrustorage.KV(ke.key_, op['val']) )
+        kvs_to_store.append( (ke.key_, op['val']) )
       elif opcode == 'kvsto':
-        kvs_to_store.append( lrustorage.KV(op['key'], op['val']) )
+        kvs_to_store.append( (op['key'], op['val']) )
       elif opcode == 'eref':
         AppendToHeaders(headers, op['key'], op['val'])
 
     # now actually make the state changes to the LRU
     for kv in kvs_to_store:
-      v_idx = self.storage.InsertVal(kv)
+      v_idx = self.storage.InsertVal(lrustorage.KV(kv[0], kv[1]))
       if v_idx is None:
         continue
       self.TouchHeaderGroupEntry(group_id, v_idx)
@@ -912,7 +907,7 @@ class Spdy4CoDe(object):
       AppendToHeaders(headers, ve.key(), ve.val())
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')
-    #print self.storage
+    #print repr(self.storage)
 
     return headers
 

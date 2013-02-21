@@ -610,24 +610,34 @@ class Storage(object):
   mechanism for expiring key/value entries as necessary"""
   class KE(object):
     def __init__(self, key_idx, key):
-      self.key = key
+      self.key_ = key
       self.key_idx = key_idx
       self.ref_cnt = 0
       self.val_map = {}
+
+    def key(self):
+      return self.key_
+
     def __repr__(self):
-      return repr({'key_idx': self.lru_idx, 'key': self.key,
+      return repr({'key_idx': self.lru_idx, 'key': self.key_,
                    'ref_cnt': self.ref_cnt, 'val_map': self.val_map})
-  
+
   class VE(object):
     def __init__(self, key, val, ke):
       self.lru_idx = None
-      self.key = key
-      self.val = val
+      self.key_ = key
+      self.val_ = val
       self.ke = ke
-  
+
+    def key(self):
+      return self.key_
+
+    def val(self):
+      return self.val_
+
     def __repr__(self):
-      return repr({'lru_idx': self.lru_idx, 'key': self.key,
-                   'val': self.val, 'ke':id(self.ke)})
+      return repr({'lru_idx': self.lru_idx, 'key': self.key_,
+                   'val': self.val_, 'ke':id(self.ke)})
   def __init__(self, max_byte_size, max_entries):
     self.key_map = {}
     self.key_ids = common_utils.IDStore(2**16)
@@ -757,21 +767,20 @@ class Storage(object):
       pass
 
   def RemoveFromLRU(self, ve): ####
-    # print "removing from LRU: (%r,%r, %d)" % (ve.key, ve.val, ve.lru_idx)
     self.lru.remove(ve)
     lru_idx = ve.lru_idx
     del self.lru_idx_to_ve[lru_idx]
     ve.lru_idx = None
 
   def RemoveFromValMap(self, ve): ####
-    self.state_size -= len(ve.val)
+    self.state_size -= len(ve.val())
     self.num_vals -= 1
-    del ve.ke.val_map[ve.val]
+    del ve.ke.val_map[ve.val()]
 
   def MaybeRemoveFromKeyMap(self, ke): ####
     if not ke or len(ke.val_map) > 0 or ke.ref_cnt > 0:
       return
-    self.state_size -= len(ke.key)
+    self.state_size -= len(ke.key())
 
   def RemoveVal(self, ve): ####
     self.RemoveFromLRU(ve)
@@ -824,7 +833,6 @@ class Spdy4CoDe(object):
     def RemoveVIdxFromAllHeaderGroups(v_idx):
       to_be_removed = []
       for group_id, header_group in self.header_groups.iteritems():
-        #print "Removing %d from hg %d" % (ve.lru_idx, group_id)
         header_group.RemoveEntry(v_idx)
         if header_group.Empty():
           to_be_removed.append(group_id)
@@ -934,7 +942,7 @@ class Spdy4CoDe(object):
 
     for idx in self.header_groups[group_id].hg_store:
       entry = self.storage.LookupFromIdx(idx)
-      kv = (entry.key, entry.val)
+      kv = (entry.key() , entry.val() )
       if kv in headers_set:
         # keep it.
         keep_set.add(idx)
@@ -1047,8 +1055,8 @@ class Spdy4CoDe(object):
 
     for idx in turnons:
       ve = self.storage.LookupFromIdx(idx)
-      #print "TRNON %d: %s: %s" % (idx, ve.key, ve.val)
-      AppendToHeaders(headers, ve.key, ve.val)
+      #print "TRNON %d: %s: %s" % (idx, ve.key(), ve.val())
+      AppendToHeaders(headers, ve.key(), ve.val())
 
     kvs_to_store = []
     for op in ops:
@@ -1060,7 +1068,7 @@ class Spdy4CoDe(object):
           DoToggle(i)
       elif opcode == 'clone':
         ke = self.storage.FindKeyByKeyIdx(op['key_idx'])
-        kvs_to_store.append( (ke.key, op['val']) )
+        kvs_to_store.append( (ke.key_, op['val']) )
       elif opcode == 'kvsto':
         kvs_to_store.append( (op['key'], op['val']) )
       elif opcode == 'eref':
@@ -1080,8 +1088,8 @@ class Spdy4CoDe(object):
     #print "uninstantiated entries: ", uninstantiated
     for idx in uninstantiated:
       ve = self.storage.LookupFromIdx(idx)
-      #print "UNINST %d: %s: %s" % (idx, ve.key, ve.val)
-      AppendToHeaders(headers, ve.key, ve.val)
+      #print "UNINST %d: %s: %s" % (idx, ve.key(), ve.val())
+      AppendToHeaders(headers, ve.key(), ve.val())
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')
     #print repr(self.storage)
