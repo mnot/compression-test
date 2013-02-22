@@ -29,7 +29,7 @@ import zlib
 
 from headerDiffCodec import HeaderDiffCodec, IndexedHeader
 
-from .. import BaseProcessor, strip_conn_headers, spdy_dictionary
+from .. import BaseProcessor,  spdy_dictionary
 
 #####################################################
 ## Class for representing a Header: (name, value)  ##
@@ -99,7 +99,7 @@ class Processor(BaseProcessor):
       )
   
   def compress(self, in_headers, host):
-    hdrs = strip_conn_headers(in_headers)
+    hdrs = dict(in_headers)
     # Concat ":scheme", ":host" and ":path" into "url".
     if self.is_request:
       scheme = hdrs.get(":scheme", "http")
