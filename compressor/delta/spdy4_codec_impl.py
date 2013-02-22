@@ -562,11 +562,6 @@ class HeaderGroup(object):
   def Empty(self):
     return not self.hg_store
 
-  def TouchEntry(self, v_idx):
-    if v_idx is None:
-      raise StandardError()
-    self.hg_store.add(v_idx)
-
   def RemoveEntry(self, v_idx):
     try:
       self.hg_store.remove(v_idx)
@@ -579,6 +574,7 @@ class HeaderGroup(object):
   def __repr__(self):
     return repr(self.hg_store)
 
+#Note that this class mutates the things that are stored within...
 class LRU(object):
   class Node(object):
     def __init__(self):
@@ -591,18 +587,30 @@ class LRU(object):
 
   def __getitem__(self, idx):
     if idx == 0 and self.first is not None:
-      return self.first.d
+      return self.first
     c = self.first
     for i in xrange(idx):
       c = c.n
-    return c.d
+    return c
 
   def remove(self, item):
-    pass
+    if item == self.first:
+      self.first = item.n
+    if item == self.last:
+      self.last = item.p
+    if item.p:
+      item.p.n = item.n
+    if item.n:
+      item.n.p = item.p
+
   def append(self, item):
-    pass
-
-
+    if self.last is not None:
+      self.last.n = item
+    item.n = None
+    item.p = self.last
+    self.last = item
+    if self.first is None:
+      self.first = item
 
 
 class Storage(object):
@@ -628,6 +636,7 @@ class Storage(object):
       self.key_ = key
       self.val_ = val
       self.ke = ke
+      self.groups = set()
 
     def key(self):
       return self.key_
@@ -648,7 +657,8 @@ class Storage(object):
     self.max_state_size = max_byte_size
     self.pinned = None
     self.remove_val_cb = None
-    self.lru = deque()
+    #self.lru = deque()
+    self.lru = LRU()
     self.lru_idx_to_ve = {}
     self.key_idx_to_ke = {}
 
@@ -666,7 +676,7 @@ class Storage(object):
       return None
     ve = self.lru[0]
     if self.remove_val_cb:
-      self.remove_val_cb(ve.lru_idx)
+      self.remove_val_cb(ve)
     self.RemoveVal(ve)
     return 1
 
@@ -799,7 +809,7 @@ class Storage(object):
     retval = []
     for item in self.lru:
       if item is not None:
-        retval.append("(%d %d, %s: %s)" % (item['ke']['key_idx'], item['lru_idx'], item['key'], item['val']))
+        retval.append("%r" % item)
       else:
         retval.append("(None)")
 
@@ -830,17 +840,12 @@ class Spdy4CoDe(object):
     self.huffman_table = None
     self.wf = WordFreak()
     self.storage = Storage(max_byte_size, max_entries)
-    def RemoveVIdxFromAllHeaderGroups(v_idx):
-      to_be_removed = []
-      for group_id, header_group in self.header_groups.iteritems():
-        header_group.RemoveEntry(v_idx)
-        if header_group.Empty():
-          to_be_removed.append(group_id)
-      for group_id in to_be_removed:
-        #print "Deleted group_id: %d" % group_id
-        del self.header_groups[group_id]
+    def RemoveVEFromAllHeaderGroups(ve):
+      for group_id in ve.groups:
+        header_group = self.header_groups[group_id]
+        header_group.RemoveEntry(ve.lru_idx)
 
-    self.storage.SetRemoveValCB(RemoveVIdxFromAllHeaderGroups)
+    self.storage.SetRemoveValCB(RemoveVEFromAllHeaderGroups)
 
   def OpsToRealOps(self, in_ops, header_group):
     """ Packs in-memory format operations into wire format"""
@@ -882,31 +887,16 @@ class Spdy4CoDe(object):
       self.header_groups[group_id] = HeaderGroup()
       return self.header_groups[group_id]
 
-  def TouchHeaderGroupEntry(self, group_id, v_idx):
-    if v_idx is None:
-      raise StandardError()
-    header_group = self.FindOrMakeHeaderGroup(group_id)
-    #print "\t\t\ttouching/adding idx: %r in group: %d" % (v_idx, group_id)
-    header_group.TouchEntry(v_idx)
-
   def RenumberVELruIdx(self, ve, group_id):
-    lru_idx = ve.lru_idx
+    v_idx = ve.lru_idx
     removals = []
-    for grp_id, hdr_grp in self.header_groups.iteritems():
-      try:
-        hdr_grp.hg_store.remove(lru_idx)
-      except:
-        pass
-      if not hdr_grp and grp_id != group_id:
-        removals.append(grp_id)
-    for grp_id in removals:
-      del self.header_groups[grp_id]
-
-    if lru_idx is None:
-      print ve
-      raise StandardError()
+    for group_id in ve.groups:
+      header_group = self.header_groups[group_id]
+      header_group.RemoveEntry(v_idx)
+    ve.groups.clear()
+    ve.groups.add(group_id)
+    del self.storage.lru_idx_to_ve[v_idx]
     new_lru_idx = ve.lru_idx = self.storage.GetNextUnusedLruId()
-    del self.storage.lru_idx_to_ve[lru_idx]
     self.storage.lru_idx_to_ve[new_lru_idx] = ve
     self.header_groups[group_id].hg_store.add(new_lru_idx)
     #print "Renumbering: %d to %d " % (lru_idx, new_lru_idx)
@@ -1036,12 +1026,22 @@ class Spdy4CoDe(object):
     self.AdjustHeaderGroupEntries(group_id)
     return (group_id, ops, headers)
 
+  def DoToggle(self, group_id, idx):
+    if type(idx) == Storage.VE:
+      ve = idx
+      idx = ve.lru_idx
+    else:
+      ve = self.storage.LookupFromIdx(idx)
+    if group_id in ve.groups:
+      ve.groups.remove(group_id)
+    else:
+      ve.groups.add(group_id)
+    self.header_groups[group_id].Toggle(idx)
+
   def DecompressorExecuteOps(self, ops, group_id):
     def MaybeAddTurnon(idx, addme):
       if not idx in self.header_groups[group_id].hg_store:
         addme.add(idx)
-    def DoToggle(idx):
-      self.header_groups[group_id].Toggle(idx)
 
     header_group = self.FindOrMakeHeaderGroup(group_id)
     headers = {}
@@ -1062,10 +1062,10 @@ class Spdy4CoDe(object):
     for op in ops:
       opcode = op['opcode']
       if opcode == 'toggl':
-        DoToggle(op['index'])
+        self.DoToggle(group_id, op['index'])
       elif opcode == 'trang':
         for i in xrange(op['index_start'], op['index']+1):
-          DoToggle(i)
+          self.DoToggle(group_id, i)
       elif opcode == 'clone':
         ke = self.storage.FindKeyByKeyIdx(op['key_idx'])
         kvs_to_store.append( (ke.key_, op['val']) )
@@ -1077,18 +1077,22 @@ class Spdy4CoDe(object):
     # now actually make the state changes to the LRU
     for kv in kvs_to_store:
       ve = self.storage.InsertVal(kv[0], kv[1])
+      #print "Stored: %r" % ve
       if ve is None:
         continue
       self.storage.AddToHeadOfLRU(ve)
-      self.TouchHeaderGroupEntry(group_id, ve.lru_idx)
+      self.DoToggle(group_id, ve)
     # and now instantiate the stuff from header_group which we haven't
     # yet instantiated.
     #uninstantiated = turnons.difference(header_group.hg_store)
+    #print "turnons: ", turnons
+    #print "hg_store: ", self.header_groups[group_id].hg_store
     uninstantiated = self.header_groups[group_id].hg_store.difference(turnons)
     #print "uninstantiated entries: ", uninstantiated
     for idx in uninstantiated:
       ve = self.storage.LookupFromIdx(idx)
-      #print "UNINST %d: %s: %s" % (idx, ve.key(), ve.val())
+      #print "XXXXXXXXXXXXXX UNINST %r:" % idx,
+      #print "%s: %s" % (ve.key(), ve.val())
       AppendToHeaders(headers, ve.key(), ve.val())
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')
