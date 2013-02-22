@@ -19,10 +19,10 @@ from word_freak import WordFreak
 options = {}
 
 g_default_kvs = [
+    (':path', '/'),
     (':scheme', 'http'),
     (':scheme', 'https'),
     (':method', 'get'),
-    (':path', '/'),
     (':host', ''),
     ('cookie', ''),
     (':status', '200'),
@@ -576,11 +576,6 @@ class HeaderGroup(object):
 
 #Note that this class mutates the things that are stored within...
 class LRU(object):
-  class Node(object):
-    def __init__(self):
-      self.n = None
-      self.p = None
-      self.d = None
   def __init__(self):
     self.first = None
     self.last = None
@@ -598,9 +593,9 @@ class LRU(object):
       self.first = item.n
     if item == self.last:
       self.last = item.p
-    if item.p:
+    if item.p is not None:
       item.p.n = item.n
-    if item.n:
+    if item.n is not None:
       item.n.p = item.p
 
   def append(self, item):
@@ -611,6 +606,10 @@ class LRU(object):
     self.last = item
     if self.first is None:
       self.first = item
+
+  def __nonzero__(self):
+    return self.first is not None
+
 
 
 class Storage(object):
@@ -841,6 +840,8 @@ class Spdy4CoDe(object):
     self.wf = WordFreak()
     self.storage = Storage(max_byte_size, max_entries)
     def RemoveVEFromAllHeaderGroups(ve):
+      if ve is None:
+        return
       for group_id in ve.groups:
         header_group = self.header_groups[group_id]
         header_group.RemoveEntry(ve.lru_idx)
@@ -1039,19 +1040,18 @@ class Spdy4CoDe(object):
     self.header_groups[group_id].Toggle(idx)
 
   def DecompressorExecuteOps(self, ops, group_id):
-    def MaybeAddTurnon(idx, addme):
-      if not idx in self.header_groups[group_id].hg_store:
-        addme.add(idx)
 
     header_group = self.FindOrMakeHeaderGroup(group_id)
     headers = {}
+    toggles = set()
     turnons = set()
     for op in ops:
       if op['opcode'] == 'toggl':
-        MaybeAddTurnon(op['index'], turnons)
+        toggles.add(op['index'])
       elif op['opcode'] == 'trang':
         for i in xrange(op['index_start'], op['index']+1):
-          MaybeAddTurnon(i, turnons)
+          toggles.add(i)
+    turnons =  toggles.symmetric_difference(header_group.hg_store)
 
     for idx in turnons:
       ve = self.storage.LookupFromIdx(idx)
@@ -1069,8 +1069,10 @@ class Spdy4CoDe(object):
       elif opcode == 'clone':
         ke = self.storage.FindKeyByKeyIdx(op['key_idx'])
         kvs_to_store.append( (ke.key_, op['val']) )
+        AppendToHeaders(headers, ke.key(), op['val'])
       elif opcode == 'kvsto':
         kvs_to_store.append( (op['key'], op['val']) )
+        AppendToHeaders(headers, op['key'], op['val'])
       elif opcode == 'eref':
         AppendToHeaders(headers, op['key'], op['val'])
 
@@ -1082,18 +1084,6 @@ class Spdy4CoDe(object):
         continue
       self.storage.AddToHeadOfLRU(ve)
       self.DoToggle(group_id, ve)
-    # and now instantiate the stuff from header_group which we haven't
-    # yet instantiated.
-    #uninstantiated = turnons.difference(header_group.hg_store)
-    #print "turnons: ", turnons
-    #print "hg_store: ", self.header_groups[group_id].hg_store
-    uninstantiated = self.header_groups[group_id].hg_store.difference(turnons)
-    #print "uninstantiated entries: ", uninstantiated
-    for idx in uninstantiated:
-      ve = self.storage.LookupFromIdx(idx)
-      #print "XXXXXXXXXXXXXX UNINST %r:" % idx,
-      #print "%s: %s" % (ve.key(), ve.val())
-      AppendToHeaders(headers, ve.key(), ve.val())
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')
     #print repr(self.storage)
