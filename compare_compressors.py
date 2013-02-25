@@ -84,6 +84,11 @@ class CompressionTester(object):
                   help='set verbosity, 1-5 (default: %default)',
                   default=0,
                   metavar='VERBOSITY')
+    optp.add_option('-d', '--debug',
+                  action='store_true',
+                  dest="debug",
+                  help="debug mode. Stops on first header mismatch.",
+                  default=False)
     optp.add_option('-c', '--codec',
                   action='append',
                   dest='processor_names',

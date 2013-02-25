@@ -143,7 +143,8 @@ class Processors(object):
         if self.options.verbose > 1:
           self.output(':\n' + compare_result + "\n")
         self.output("\n")
-        raise StandardError()
+        if self.options.debug:
+            sys.exit(1)
     return results
 
   @staticmethod
