@@ -50,6 +50,7 @@ class CompressionTester(object):
       self.processors.process_stream(stream)
       if self.options.verbose > 0:
         stream.print_summary(self.output, self.options.baseline)
+    self.processors.done()
     for msg_type in self.msg_types:
       ttl_stream = sum([s for s in streams if s.msg_type == msg_type])
       ttl_stream.name = "TOTAL"

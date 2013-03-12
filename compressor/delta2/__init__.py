@@ -25,11 +25,13 @@ class Processor(BaseProcessor):
   """
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
-    self.compressor   = spdy4_codec_impl.Spdy4CoDe(params)
-    self.decompressor = spdy4_codec_impl.Spdy4CoDe(params)
+    description = "request"
+    if not is_request:
+      description = "response"
+    self.compressor   = spdy4_codec_impl.Spdy4CoDe(params, description, options)
+    self.decompressor = spdy4_codec_impl.Spdy4CoDe(params, description, options)
     self.hosts = {}
     self.group_ids = common_utils.IDStore(255)
-    self.wf = self.compressor.wf
     if is_request:
       request_freq_table = header_freq_tables.request_freq_table
       self.compressor.huffman_table = huffman.Huffman(request_freq_table)
@@ -61,3 +63,6 @@ class Processor(BaseProcessor):
     (group_id, out_ops, out_headers) = \
         self.decompressor.RealOpsToOpAndExecute(out_real_ops)
     return out_headers
+
+  def done(self):
+    self.compressor.Done()

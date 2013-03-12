@@ -82,11 +82,12 @@ class BitBucket:
     else:
       leftover_bits = 8
     if self.out_boff == 0:
-      self.output.extend(inp_bytes)
       if not type(inp_bytes[0]) == int:
         print "type(inp_bytes[0]) == ", type(inp_bytes[0])
-        print repr(input)
+        print "repr(inp_bytes)=%s" % repr(inp_bytes)
+        print "repr(input_tuple)=%s" % repr(input_tuple)
         raise StandardError()
+      self.output.extend(inp_bytes)
       self.output[-1] &= ~(255 >> leftover_bits)
       self.out_boff = leftover_bits % 8
     else:

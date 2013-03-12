@@ -2,6 +2,8 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
+import string
+
 class WordFreak:
   """
   Observes and accumulates letter frequencies.
@@ -35,18 +37,23 @@ class WordFreak:
     return self.character_freaks
 
   def __repr__(self):
+    printable = string.digits + string.letters + string.punctuation + ' '
+    max_freq = 0
+    for i in self.character_freaks:
+      if i > max_freq:
+        max_freq = i
+    freq_len = len("%d" % max_freq)
     retval = ["["]
     cur_pair = ""
     cur_line = "  "
+    format_string = "(%%s, %%%dd)," % freq_len
     for i in xrange(len(self.character_freaks)):
-      if (i < 256):
-        cur_pair = "(%s, %d)," % (repr(chr(i)), self.character_freaks[i])
-        #retval.append( (chr(i), self.character_freaks[i]))
+      if i < 128 and chr(i) in printable:
+        sym = '{:>4}'.format(repr(chr(i)))
       else:
-        cur_pair = "(%d, %d)," % (i, self.character_freaks[i])
-        #retval.append( (i, self.character_freaks[i]))
-
-      if len(cur_pair) + len(cur_line) > 80:
+        sym = '{:>4}'.format(repr(i))
+      cur_pair = format_string % (sym, self.character_freaks[i])
+      if len(cur_pair) + len(cur_line) > 60:
         retval.append(cur_line)
         cur_line = "  "
       cur_line = cur_line + cur_pair

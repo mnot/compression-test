@@ -146,13 +146,13 @@ class LruStorage:
     # Looks for key/vals starting from the last entry
     (khash, kvhash) = ComputeKVHash(key, val)
     ke = None
-    for i in xrange(len(self.ring) - 1, 0, -1):
+    for i in xrange(len(self.ring) - 1, -1, -1):
       item = self.ring[i]
       if khash == item.khash and item.key() == key:
         ke = item
         if kvhash == item.kvhash and item.val() == val:
           return (item, item)
-        for j in xrange(i - 1, 0, -1):
+        for j in xrange(i - 1, -1, -1):
           item = self.ring[j]
           if kvhash == item.kvhash and item.key() == key and item.val() == val:
             return (item, item)

@@ -73,11 +73,10 @@ class Huffman(object):
     return (output, bitlen)
 
   def BuildCodeTable(self, code_tree):
-    """ Given a code-tree as constructed in BuildCodeTree,
-    construct a table useful or doing (realtively) quick
-    encoding of a plaintext symbol into into its huffman encoding.
-    The table is ordered in the order of symbols, and contains
-    the binary representation of the huffman encoding for each symbol.
+    """ Given a code-tree as constructed in BuildCodeTree, construct a table
+    useful for doing encoding of a plaintext symbol into into its huffman
+    encoding.  The table is ordered in the order of symbols, and contains the
+    binary representation of the huffman encoding for each symbol.
     """
     queue = deque([(code_tree, '')])
     pre_table = []
@@ -193,14 +192,14 @@ class Huffman(object):
     """
     Makes a formatted version of the code table, useful for debugging
     """
-    printable = string.digits + string.letters + string.punctuation + ' ' + "\t"
+    printable = string.digits + string.letters + string.punctuation + ' '
     x = sorted([(i,FormatAsBits( self.code_table[i]))
                 for i in xrange(len(self.code_table))])
     retval = []
     for entry in x:
       code, description = entry
       readable_code = ""
-      if code < 256 and chr(code) in printable and chr(code) != '\t':
+      if code < 128 and chr(code) in printable:
         readable_code = "'%c'" % chr(code)
       while len(readable_code) < 5:
           readable_code = " " + readable_code

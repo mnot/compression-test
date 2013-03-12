@@ -16,7 +16,7 @@
 #include "huffman.h"
 #include "trivial_http_parse.h"
 #include "spdy4_headers_codec.h"
-#include "spdy3_dictionary.h"
+#include "../spdy3/spdy3_dictionary.h"
 
 using std::unique_ptr;
 using std::vector;

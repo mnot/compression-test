@@ -404,9 +404,10 @@ class Huffman {
 
   Branches branches;
   DecodeTable decode_table;
+  const int lookup_bits = 8;
+  const int kNumLookups = ceil(32.0 / lookup_bits);
 
   void BuildDecodeTable() {
-    const int lookup_bits = 8;
     //const uint32_t max_val = (0x1U << lookup_bits);
 
     vector<pair<uint32_t, int> > sorted_by_code; // code->symbol
@@ -520,7 +521,7 @@ class Huffman {
     uint32_t b_idx = 0;
     uint32_t d_idx = 0;
     //cout << "(b_idx: " << b_idx << " ";
-    for (unsigned int i = 0; i < 4; ++i) {
+    for (unsigned int i = 0; i < kNumLookups; ++i) {
       d_idx = branches[b_idx].base_idx;
       d_idx += (word & branches[b_idx].mask) >> branches[b_idx].shift;
       b_idx = decode_table[d_idx].next_table;

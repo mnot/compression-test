@@ -1,8 +1,7 @@
 # Copyright (c) 2012 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
-
-
+import string
 
 def ListToStr(val):
   """ Takes a list of ints and makes it into a string """
@@ -44,7 +43,6 @@ def FormatAsBits(output_and_bits):
     retval.append('|')
     retval.append('{0:08b}'.format(c))
     total_bits -= 8
-
   if (bits % 8) != 0:
     retval.append('|')
     retval.append('{0:08b}'.format(output[idx])[0:(bits % 8)])

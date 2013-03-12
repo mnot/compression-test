@@ -16,8 +16,6 @@ from optparse import OptionParser
 from word_freak import WordFreak
 import lrustorage
 
-options = {}
-
 g_default_kvs = [
     (':path', '/'),
     (':scheme', 'http'),
@@ -185,9 +183,9 @@ def UnpackStr(input_data, params, huff):
       retval = []
       while True:
         c = input_data.GetBits8()
-        retval.append(c)
         if c == 0:
           break
+        retval.append(c)
   if pad_to_byte_boundary:
     input_data.AdvanceToByteBoundary()
   retval = common_utils.ListToStr(retval)
@@ -261,19 +259,19 @@ packing_instructions = {
   'opcode'      : (  8,             PackInt, UnpackInt),
   'index'       : ( 16,             PackInt, UnpackInt),
   'index_start' : ( 16,             PackInt, UnpackInt),
-  'key_idx'     : ( 16,             PackInt, UnpackInt),
   'val'         : (str_pack_params, PackStr, UnpackStr),
   'key'         : (str_pack_params, PackStr, UnpackStr),
 }
 
-def PackOps(data, packing_instructions, ops, huff, group_id):
+def PackOps(data, packing_instructions, ops, huff, group_id, verbose):
   """ Packs (i.e. renders into wire-format) the operations in 'ops' into the
   BitBucket 'data', using the 'packing_instructions' and possibly the Huffman
   encoder 'huff'
   """
   seder = Spdy4SeDer()
   data.StoreBits(seder.SerializeInstructions(ops, packing_instructions,
-                                             huff, 1234, group_id, True))
+                                             huff, 1234, group_id, True,
+                                             verbose))
 
 def UnpackOps(data, packing_instructions, huff):
   """
@@ -286,23 +284,20 @@ def UnpackOps(data, packing_instructions, huff):
 packing_order = ['opcode',
                  'index',
                  'index_start',
-                 'key_idx',
                  'key',
                  'val',
                  ]
 
 # opcode-name: opcode-value list-of-fields-for-opcode
 opcodes = {
-    'toggl': (0x1, 'index'),
-    'trang': (0x2, 'index', 'index_start'),
-    'clone': (0x3,                         'key_idx', 'val'),
-    'kvsto': (0x4,          'key',                    'val'),
-    'eref' : (0x5,          'key',                    'val'),
-
-    #'etoggl': (0x5, 'index'),
-    #'etrang': (0x6, 'index', 'index_start'),
-    #'eclone': (0x7,                         'key_idx', 'val'),
-    #'ekvsto': (0x8,          'key',                    'val'),
+    'stoggl': (0x0, 'index'),
+    'etoggl': (0x1, 'index'),
+    'strang': (0x2, 'index', 'index_start'),
+    'etrang': (0x3, 'index', 'index_start'),
+    'sclone': (0x4, 'index', 'val'),
+    'eclone': (0x5, 'index', 'val'),
+    'skvsto': (0x6,   'key', 'val'),
+    'ekvsto': (0x7,   'key', 'val'),
     }
 
 # an inverse dict of opcode-val: opcode-name list-of-fields-for-opcode
@@ -337,16 +332,19 @@ def FormatOps(ops, prefix=None):
   consumption"""
   if prefix is None:
     prefix = ''
+  output = []
   if isinstance(ops, list):
     for op in ops:
-      print prefix,
-      print FormatOp(op)
+      output.append(prefix)
+      output.extend(FormatOp(op))
+      output.append('\n');
     return
   for optype in ops.iterkeys():
     for op in ops[optype]:
-      print prefix,
-      print FormatOp(op)
-
+      output.append(prefix)
+      output.extend(FormatOp(op))
+      output.append('\n');
+  return ''.join(output)
 
 def AppendToHeaders(headers, key, val):
   if key in headers:
@@ -354,18 +352,28 @@ def AppendToHeaders(headers, key, val):
   else:
     headers[key] = val
 
+def PrintHex(output_bytes):
+  output_bytes_len = len(output_bytes)
+  for i in xrange(0, output_bytes_len, 16):
+    last_byte = min(i+16, output_bytes_len)
+    line = output_bytes[i:last_byte]
+    to_hex = lambda x: ' '.join(['{:02X}'.format(i) for i in x])
+    to_str = lambda x: ''.join([31 < i < 127 and chr(i) or '.' for i in x])
+    print '{:47} | {}'.format(to_hex(line), to_str(line))
+  print
+
 class Spdy4SeDer(object):  # serializer deserializer
   """
   A class which serializes into and/or deserializes from SPDY4 wire format
   """
   def MutateTogglesToToggleRanges(self, instructions):
     """
-    Examines the 'toggl' operations in 'instructions' and computes the
-    'trang' and remnant 'toggle' operations, returning them as:
+    Examines the 'stoggl' operations in 'instructions' and computes the
+    'strang' and remnant 'stoggle' operations, returning them as:
     (output_toggles, output_toggle_ranges)
     """
 
-    toggles = sorted(instructions['toggl'])
+    toggles = sorted(instructions['stoggl'])
     ot = []
     otr = []
     for toggle in toggles:
@@ -376,7 +384,7 @@ class Spdy4SeDer(object):  # serializer deserializer
         otr.append(ot.pop())
         otr[-1]['index_start'] = otr[-1]['index']
         otr[-1]['index'] = idx
-        otr[-1]['opcode'] = 'trang'
+        otr[-1]['opcode'] = 'strang'
       else:
         ot.append(toggle)
     return [ot, otr]
@@ -403,7 +411,6 @@ class Spdy4SeDer(object):  # serializer deserializer
     ops_len = len(ops)
     while ops_len > ops_idx:
       ops_to_go = ops_len - ops_idx
-      iteration_end = min(ops_to_go, 256) + ops_idx
       data.StoreBits8(OpcodeToVal(opcode))
       data.StoreBits8(min(256, ops_to_go) - 1)
       orig_idx = ops_idx
@@ -448,10 +455,9 @@ class Spdy4SeDer(object):  # serializer deserializer
     """ Writes the frame-length, flags, stream-id, and frame-type
     in SPDY4 format into the bit-bucket represented bt 'data'"""
     data.StoreBits16(frame_len)
-    data.StoreBits8(flags)
-    #data.StoreBits32(stream_id)
-    self.WriteControlFrameStreamId(data, stream_id)
     data.StoreBits8(frame_type)
+    data.StoreBits8(flags)
+    self.WriteControlFrameStreamId(data, stream_id)
     data.StoreBits8(group_id)
 
   def SerializeInstructions(self,
@@ -460,23 +466,25 @@ class Spdy4SeDer(object):  # serializer deserializer
       huff,
       stream_id,
       group_id,
-      end_of_frame):
+      end_of_frame,
+      verbose):
     """ Serializes a set of instructions possibly containing many different
     type of opcodes into SPDY4 wire format, discovers the resultant length,
     computes the appropriate SPDY4 boilerplate, and then returns this
     in a new BitBucket
     """
     #print 'SerializeInstructions\n', ops
-    (ot, otr) = self.MutateTogglesToToggleRanges(ops)
-    #print FormatOps({'toggl': ot, 'trang': otr, 'clone': ops['clone'],
-    #                 'kvsto': ops['kvsto'], 'eref': ops['eref']})
+    if verbose >= 5:
+      print
+      print FormatOps(ops)
+      print
 
     payload_bb = BitBucket()
-    self.OutputOps(packing_instructions, huff, payload_bb, ot, 'toggl')
-    self.OutputOps(packing_instructions, huff, payload_bb, otr, 'trang')
-    self.OutputOps(packing_instructions, huff, payload_bb, ops['clone'],'clone')
-    self.OutputOps(packing_instructions, huff, payload_bb, ops['kvsto'],'kvsto')
-    self.OutputOps(packing_instructions, huff, payload_bb, ops['eref'], 'eref')
+    for opcode, oplist in ops.iteritems():
+      self.OutputOps(packing_instructions, huff, payload_bb, oplist, opcode)
+
+      tmp_bb = BitBucket()
+      self.OutputOps(packing_instructions, huff, tmp_bb, oplist, opcode)
 
     (payload, payload_len) = payload_bb.GetAllBits()
     payload_len = (payload_len + 7) / 8  # partial bytes are counted as full
@@ -499,6 +507,9 @@ class Spdy4SeDer(object):  # serializer deserializer
       payload_len -= bytes_allowed
       if payload_len <= 0:
         break
+    if verbose >= 5:
+      PrintHex(overall_bb.GetAllBits()[0])
+
     return overall_bb.GetAllBits()
 
   def DeserializeInstructions(self, frame, packing_instructions, huff):
@@ -514,12 +525,12 @@ class Spdy4SeDer(object):  # serializer deserializer
     while flags == 0:
       frame_len = bb.GetBits16() * 8
       #print 'frame_len: ', frame_len
+      frame_type = bb.GetBits8()
+      #print 'frame_type: ', frame_type
       flags = bb.GetBits8()
       #print 'flags: ', flags
       stream_id = bb.GetBits32()
       #print 'stream_id: ', stream_id
-      frame_type = bb.GetBits8()
-      #print 'frame_type: ', frame_type
       group_id = bb.GetBits8()
       #print 'group_id: ', group_id
       while frame_len > 16:  # 16 bits minimum for the opcode + count...
@@ -613,12 +624,6 @@ class Storage(object):
   def FindEntryIdx(self, key, val):
     retval = [None, None]
     (ke, ve) = self.lru_storage.FindKeyValEntries(key, val)
-    if ve is not None:
-      return (ve.seq_num, ve.seq_num)
-    elif ke is not None:
-      return (ke.seq_num, None)
-    else:
-      return (None, None)
     if ke is not None:
       retval[0] = ke.seq_num
       if ve is not None:
@@ -641,7 +646,8 @@ class Storage(object):
     return repr(self.lru_storage)
 
 class Spdy4CoDe(object):
-  def __init__(self, params):
+  def __init__(self, params, description, options):
+    self.description = description
     param_dict = {}
     for param in params:
       kv = param.split('=')
@@ -661,7 +667,7 @@ class Spdy4CoDe(object):
     self.options = options
     self.header_groups = {}
     self.huffman_table = None
-    self.wf = WordFreak()
+    #self.wf = WordFreak()  # for figuring out the letter freq counts
     self.storage = Storage(max_byte_size, max_entries)
     def RemoveVIdxFromAllHeaderGroups(entry):
       v_idx = entry.seq_num
@@ -679,7 +685,8 @@ class Spdy4CoDe(object):
   def OpsToRealOps(self, in_ops, header_group):
     """ Packs in-memory format operations into wire format"""
     data = BitBucket()
-    PackOps(data, packing_instructions, in_ops, self.huffman_table, header_group)
+    PackOps(data, packing_instructions, in_ops, self.huffman_table,
+        header_group, self.options.verbose)
     return common_utils.ListToStr(data.GetAllBits()[0])
 
   def RealOpsToOps(self, realops):
@@ -697,17 +704,44 @@ class Spdy4CoDe(object):
     """ basically does nothing"""
     return op_blob
 
-  def MakeToggl(self, index):
-    return {'opcode': 'toggl', 'index': index}
+  def MakeSToggl(self, index):
+    return {'opcode': 'stoggl', 'index': index}
 
-  def MakeKvsto(self, key, val):
-    return {'opcode': 'kvsto', 'val': val, 'key': key}
+  def MakeSKvsto(self, key, val):
+    return {'opcode': 'skvsto', 'val': val, 'key': key}
 
-  def MakeClone(self, key_idx, val):
-    return {'opcode': 'clone', 'val': val, 'key_idx': key_idx}
+  def MakeEKvsto(self, key, value):
+    return {'opcode': 'ekvsto', 'key': key, 'val': value}
 
-  def MakeERef(self, key, value):
-    return {'opcode': 'eref', 'key': key, 'val': value}
+  def MakeSClone(self, index, val):
+    return {'opcode': 'sclone', 'val': val, 'index': index}
+
+  def MakeEClone(self, index, val):
+    return {'opcode': 'eclone', 'val': val, 'index': index}
+
+  def MutateTogglesToTrangs(self, instructions):
+    def FigureOutRanges(ops, new_opcode):
+      toggles = sorted(ops)
+      ot = []
+      otr = []
+      for toggle in toggles:
+        idx = toggle['index']
+        if otr and idx - otr[-1]['index'] == 1:
+          otr[-1]['index'] = idx
+        elif ot and idx - ot[-1]['index'] == 1:
+          otr.append(ot.pop())
+          otr[-1]['index_start'] = otr[-1]['index']
+          otr[-1]['index'] = idx
+          otr[-1]['opcode'] = new_opcode
+        else:
+          ot.append(toggle)
+      return [ot, otr]
+    etggl, etrng = FigureOutRanges(instructions['etoggl'], 'etrang')
+    stggl, strng = FigureOutRanges(instructions['stoggl'], 'strang')
+    instructions['etoggl'] = etggl
+    instructions['etrang'] = etrng
+    instructions['stoggl'] = stggl
+    instructions['strang'] = strng
 
   def FindOrMakeHeaderGroup(self, group_id):
     try:
@@ -724,8 +758,8 @@ class Spdy4CoDe(object):
     header_group.TouchEntry(v_idx)
 
   def AdjustHeaderGroupEntries(self, group_id):
-    """ Moves elements which have been referenced/modified to the head of the LRU
-    and possibly renumbers them"""
+    """ Moves elements which have been referenced/modified to the head of the
+    LRU and possibly renumbers them"""
 
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
     indices = self.header_groups[group_id].hg_store
@@ -754,7 +788,9 @@ class Spdy4CoDe(object):
     """ Computes the entire set of operations necessary to encode the 'headers'
     for header-group 'group_id'
     """
-    instructions = {'toggl': [], 'clone': [], 'kvsto': [], 'eref': []}
+    instructions = {'stoggl': [], 'etoggl': [],
+                    'sclone': [], 'eclone': [],
+                    'skvsto': [], 'ekvsto': []}
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
 
     headers_set = set()
@@ -780,56 +816,37 @@ class Spdy4CoDe(object):
     #print "keep_set: ", sorted(keep_set)
     #print "done_set: ", sorted(done_set)
     #print "tbd_set: ", repr(headers_set)
-    toggls = set()
-    clones = []
-    kvstos = []
-    erefs = []
+    stoggls = set()
 
     for kv in headers_set:
       (key, val) = kv
-      if key in [":path", "referer"]:
-        erefs.append( (key, val) )
+      if key in ["date"]:
+        instructions['ekvsto'].append(self.MakeEKvsto(key, val))
         continue
       (k_idx, v_idx) = self.storage.FindEntryIdx(key, val)
       if v_idx is not None:
         # a new toggle.
-        toggls.add(v_idx)
+        stoggls.add(v_idx)
       elif k_idx is not None:
-        clones.append( (k_idx, val) )
+        if key in [":path"]:
+          instructions['eclone'].append(self.MakeEClone(k_idx, val) )
+        else:
+          instructions['sclone'].append(self.MakeSClone(k_idx, val) )
         # a new clone
       else:
         # kvsto
-        kvstos.append( (key, val) )
-    def Cleanup(x):
-      return x
-    #print "   keeping on: \n\t\t\t", '\n\t\t\t'.join(
-    #    [repr((x, Cleanup(self.storage.LookupFromIdx(x)))) for x in keep_set])
-    #print "new toggls on: \n\t\t\t", '\n\t\t\t'.join(
-    #    [repr((x, Cleanup(self.storage.LookupFromIdx(x)))) for x in toggls])
-    #print "       clones: \n\t\t\t", '\n\t\t\t'.join([repr(x) for x in clones])
-    #print "       kvstos: \n\t\t\t", '\n\t\t\t'.join([repr(x) for x in kvstos])
+        instructions['skvsto'].append(self.MakeSKvsto(key, val) )
 
-
-    full_toggl_list = toggls.union(done_set)
+    full_toggl_list = stoggls.union(done_set)
     for idx in full_toggl_list:
-      instructions['toggl'].append(self.MakeToggl(idx))
+      instructions['stoggl'].append(self.MakeSToggl(idx))
+    self.MutateTogglesToTrangs(instructions)
 
-    for (idx, val) in clones:
-      op = self.MakeClone(idx, val)
-      instructions['clone'].append(self.MakeClone(idx, val))
+    output_instrs = []
+    for oplist in instructions.values():
+      output_instrs.extend(oplist)
 
-    for (idx, val) in kvstos:
-      op = self.MakeKvsto(idx, val)
-      instructions['kvsto'].append(op)
-
-    for (key, val) in erefs:
-      op = self.MakeERef(key, val)
-      instructions['eref'].append(op)
-
-    output_instrs = instructions['toggl'] + \
-                    instructions['clone'] + instructions['kvsto'] + \
-                    instructions['eref']
-    #print FormatOps(output_instrs)
+    #self.wf.LookAt(output_instrs)
 
     #print "storage befor exe: ", self.storage.lru_storage.ring
     self.DecompressorExecuteOps(output_instrs, group_id)
@@ -838,7 +855,6 @@ class Spdy4CoDe(object):
 
     #print self.storage.lru_storage.ring
     #print "CMP HGaf:", sorted(self.header_groups[group_id].hg_store)
-
 
     #print "Done making operations"
     #print '#' * 8
@@ -853,53 +869,75 @@ class Spdy4CoDe(object):
     return (group_id, ops, headers)
 
   def DecompressorExecuteOps(self, ops, group_id):
-    def DoToggle(idx):
-      self.header_groups[group_id].Toggle(idx)
+    store_later = deque()
+    stoggles = set()
+    etoggles = set()
+    headers = dict()
+    current_header_group = self.FindOrMakeHeaderGroup(group_id)
 
-    header_group = self.FindOrMakeHeaderGroup(group_id)
-    headers = {}
-    toggles = set()
-    turnons = set()
-    for op in ops:
-      if op['opcode'] == 'toggl':
-        toggles.add(op['index'])
-      elif op['opcode'] == 'trang':
-        for i in xrange(op['index_start'], op['index']+1):
-          toggles.add(i)
-    turnons =  toggles.symmetric_difference(header_group.hg_store)
-
-    for idx in turnons:
-      ve = self.storage.LookupFromIdx(idx)
-      #print "TRNON %d: %s: %s" % (idx, ve.key(), ve.val())
-      AppendToHeaders(headers, ve.key(), ve.val())
-
-    kvs_to_store = []
     for op in ops:
       opcode = op['opcode']
-      if opcode == 'toggl':
-        DoToggle(op['index'])
-      elif opcode == 'trang':
-        for i in xrange(op['index_start'], op['index']+1):
-          DoToggle(i)
-      elif opcode == 'clone':
-        ke = self.storage.LookupFromIdx(op['key_idx'])
-        kvs_to_store.append( (ke.key_, op['val']) )
-        AppendToHeaders(headers, ke.key(), op['val'])
-      elif opcode == 'kvsto':
-        kvs_to_store.append( (op['key'], op['val']) )
-        AppendToHeaders(headers, op['key'], op['val'])
-      elif opcode == 'eref':
-        AppendToHeaders(headers, op['key'], op['val'])
+      if opcode == 'stoggl':
+        lru_idx = op['index']
+        stoggles.symmetric_difference_update([lru_idx])
+      elif opcode == 'etoggl':
+        lru_idx = op['index']
+        etoggles.symmetric_difference_update([lru_idx])
+      elif opcode == 'strang':
+        lru_idx_last = op['index']
+        lru_idx_start = op['index_start']
+        for lru_idx in xrange(lru_idx_start, lru_idx_last+1):
+          stoggles.symmetric_difference_update([lru_idx])
+      elif opcode == 'etrang':
+        lru_idx_last = op['index']
+        lru_idx_start = op['index_start']
+        for lru_idx in xrange(lru_idx_start, lru_idx_last+1):
+          etoggles.symmetric_difference_update([lru_idx])
+      elif opcode == 'sclone':
+        lru_idx = op['index']
+        val = op['val']
+        kv = self.storage.LookupFromIdx(lru_idx)
+        AppendToHeaders(headers, kv.key(), val)
+        store_later.append(lrustorage.KV(kv.key_, val))
+      elif opcode == 'eclone':
+        lru_idx = op['index']
+        val = op['val']
+        kv = self.storage.LookupFromIdx(lru_idx)
+        AppendToHeaders(headers, kv.key(), val)
+      elif opcode == 'skvsto':
+        key = op['key']
+        val = op['val']
+        AppendToHeaders(headers, key, val)
+        store_later.append(lrustorage.KV(key, val))
+      elif opcode == 'ekvsto':
+        key = op['key']
+        val = op['val']
+        AppendToHeaders(headers, key, val)
 
-    # now actually make the state changes to the LRU
-    for kv in kvs_to_store:
-      v_idx = self.storage.InsertVal(lrustorage.KV(kv[0], kv[1]))
-      if v_idx is None:
-        continue
-      self.TouchHeaderGroupEntry(group_id, v_idx)
+    # modify and store the new header group.
+    current_header_group.hg_store.symmetric_difference_update(stoggles)
+    kv_references = etoggles.symmetric_difference(current_header_group.hg_store)
+
+    for lru_idx in sorted(kv_references):
+      kv = self.storage.LookupFromIdx(lru_idx)
+      AppendToHeaders(headers, kv.key(), kv.val())
+
+    for lru_idx in sorted(current_header_group.hg_store):
+      kv = self.storage.LookupFromIdx(lru_idx)
+      store_later.appendleft(kv)
+
+    # Modify the LRU.
+    for kv in store_later:
+      new_idx = self.storage.InsertVal(lrustorage.KV(kv.key_, kv.val()))
+      #if new_idx is not None:
+      #  current_header_group.hg_store.add(new_idx)
+
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')
-    #print repr(self.storage)
-
     return headers
+
+  def Done(self):
+    pass
+    #print self.description, "\n", self.wf
+
 

@@ -147,6 +147,14 @@ class Processors(object):
             sys.exit(1)
     return results
 
+  def done(self):
+    for processor_kind in self.processors.values():
+      for processor in processor_kind:
+        try:
+          processor.done()
+        except:
+          pass
+
   @staticmethod
   def compare_headers(a_hdr, a_name, b_hdr, b_name):
     """
