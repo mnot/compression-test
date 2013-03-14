@@ -476,6 +476,7 @@ class Spdy4SeDer(object):  # serializer deserializer
     #print 'SerializeInstructions\n', ops
     if verbose >= 5:
       print
+      print "stream_id: %s group_id: %s" % (stream_id, group_id)
       print FormatOps(ops)
       print
 
@@ -820,9 +821,6 @@ class Spdy4CoDe(object):
 
     for kv in headers_set:
       (key, val) = kv
-      if key in ["date"]:
-        instructions['ekvsto'].append(self.MakeEKvsto(key, val))
-        continue
       (k_idx, v_idx) = self.storage.FindEntryIdx(key, val)
       if v_idx is not None:
         # a new toggle.

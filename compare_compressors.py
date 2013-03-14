@@ -27,10 +27,13 @@ class CompressionTester(object):
   """
   msg_types = ['req', 'res']
   streamifier_dir = "lib.streamifiers"
-  default_processor = "http1"
 
   def __init__(self, output):
     self.options, self.args = self.parse_options()
+    if self.options.baseline is None:
+      self.options.baseline = "http1"
+    self.options.processor_names = [self.options.baseline]
+    self.options.processor_names.extend(self.options.processor_names)
     self.output = output
     self.tsv_out = defaultdict(list)  # accumulator for TSV output
     self.processors = Processors(self.options, self.msg_types, output)
@@ -60,7 +63,7 @@ class CompressionTester(object):
       out = {}
       for msg_type in self.msg_types:
         out[msg_type] = [
-          open("%s%s" % (self.options.prefix, "%s.tsv" % msg_type), 'w'), 
+          open("%s%s" % (self.options.prefix, "%s.tsv" % msg_type), 'w'),
           0
         ]
         streams[0].print_tsv_header(out[msg_type][0].write)
@@ -97,12 +100,12 @@ class CompressionTester(object):
                   'parameters. '
                   'e.g. -c spdy3 -c fork="abc" '
                   '(default: %default)',
-                  default=[self.default_processor])
+                  default=[])
     optp.add_option('-b', '--baseline',
                   dest='baseline',
                   help='baseline codec to base comparisons upon. '
                   '(default: %default)',
-                  default=self.default_processor)
+                  default=None)
     optp.add_option('-t', '--tsv',
                   action="store_true",
                   dest="tsv",

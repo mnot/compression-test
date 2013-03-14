@@ -347,13 +347,17 @@ class Huffman(object):
                 for i in xrange(len(self.code_table))])
     retval = []
     for entry in x:
-      code, description = entry
-      readable_code = ""
-      if code < 128 and chr(code) in printable:
-        readable_code = "'%c'" % chr(code)
-      while len(readable_code) < 5:
-          readable_code = " " + readable_code
-      retval.append('%s (%3d): %s' % (readable_code, code, description))
+      sym, description = entry
+      code = self.canonical_code_table[sym][1]
+      code_len = self.canonical_code_table[sym][0][1]
+      readable_sym = ""
+      if sym < 128 and chr(sym) in printable:
+        readable_sym = "'%c'" % chr(sym)
+      while len(readable_sym) < 5:
+          readable_sym = " " + readable_sym
+      s = '{0:5s} ({1:>3d}) {2:<40} {3:8x} [{4:}]'.format(
+          readable_sym, sym, description, code, code_len)
+      retval.append(s)
     return '\n'.join(retval)
 
   def __repr__(self):
