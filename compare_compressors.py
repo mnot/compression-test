@@ -32,8 +32,10 @@ class CompressionTester(object):
     self.options, self.args = self.parse_options()
     if self.options.baseline is None:
       self.options.baseline = "http1"
-    self.options.processor_names = [self.options.baseline]
-    self.options.processor_names.extend(self.options.processor_names)
+    if not self.options.baseline in self.options.processor_names:
+      new_processor_names = [self.options.baseline]
+      new_processor_names.extend(self.options.processor_names)
+      self.options.processor_names = new_processor_names
     self.output = output
     self.tsv_out = defaultdict(list)  # accumulator for TSV output
     self.processors = Processors(self.options, self.msg_types, output)
