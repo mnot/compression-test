@@ -83,6 +83,8 @@ class Processor(BaseProcessor):
 
   ignore_hdrs = [':status-text', ":version"]
   
+  big = "9999999999"
+  
   def __init__(self, options, is_request, params):
     BaseProcessor.__init__(self, options, is_request, params)
     self.last_c = None
@@ -105,7 +107,7 @@ class Processor(BaseProcessor):
     else:
       self.compress_dates = False
     pd = dict([i.split("=", 1) for i in params if "=" in i])
-    self.max_entries = int(pd.get('max_entries', '-1'))
+    self.max_entries = int(pd.get('max_entries', self.big))
     assert len(self.lookups) == len(self.rev_lookups)
 
   def compress(self, in_headers, host):
@@ -145,8 +147,7 @@ class Processor(BaseProcessor):
                        valsep=":", 
                        host='h', 
                        version="H/2")
-    return self.encode(msg)
-  
+    return self.encode(msg)  
 
   def decompress(self, compressed):
     compressed = self.decode(compressed)
