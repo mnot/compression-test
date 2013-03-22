@@ -35,6 +35,13 @@ class Processor(BaseProcessor):
   * The reason phrase is omitted.
   
   * All text is encoded using seven bits.
+  
+  It takes the following params:
+  * "seven" - use seven-bit encoding on the results (i.e., strip the least
+    significant bit).
+  * "huffman" - huffman-encode the results.
+  * "date" - compress headers whose values are known to be dates.
+  * "max_entries=n" - only allow ref to use at most n entries.
   """
 
   lookups = {
@@ -97,6 +104,8 @@ class Processor(BaseProcessor):
       self.compress_dates = True
     else:
       self.compress_dates = False
+    pd = dict([i.split("=", 1) for i in params if "=" in i])
+    self.max_entries = int(pd.get('max_entries', '-1'))
     assert len(self.lookups) == len(self.rev_lookups)
 
   def compress(self, in_headers, host):
@@ -106,12 +115,14 @@ class Processor(BaseProcessor):
       # look for refs
       if self.last_c \
       and name[0] != ":" \
-      and self.last_c.get(name, None) == value:
+      and self.last_c.get(name, None) == value \
+      and len(refs) < self.max_entries:
         refs.append(name)
         continue
       elif self.last_c \
       and name == ':host' \
-      and self.last_c.get(name, None) == value:
+      and self.last_c.get(name, None) == value \
+      and len(refs) < self.max_entries:
           refs.append('h')
           continue
       elif name in self.ignore_hdrs:
