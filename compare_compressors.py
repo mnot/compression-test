@@ -44,20 +44,20 @@ class CompressionTester(object):
 
   def run(self):
     "Let's do this thing."
-    streams = []
+    sessions = []
     for filename in self.args:
       har_requests, har_responses = read_har_file(filename)
       messages = zip(har_requests, har_responses)
-      streams.extend(self.streamify(messages))
-    for stream in streams:
+      sessions.extend(self.streamify(messages))
+    for session in sessions:
       if self.options.verbose > 0:
-        stream.print_header(self.output)
-      self.processors.process_stream(stream)
+        session.print_header(self.output)
+      self.processors.process_session(session)
       if self.options.verbose > 0:
-        stream.print_summary(self.output, self.options.baseline)
+        session.print_summary(self.output, self.options.baseline)
     self.processors.done()
     for msg_type in self.msg_types:
-      ttl_stream = sum([s for s in streams if s.msg_type == msg_type])
+      ttl_stream = sum([s for s in sessions if s.msg_type == msg_type])
       ttl_stream.name = "TOTAL"
       ttl_stream.print_header(self.output)
       ttl_stream.print_summary(self.output, self.options.baseline)
@@ -68,10 +68,10 @@ class CompressionTester(object):
           open("%s%s" % (self.options.prefix, "%s.tsv" % msg_type), 'w'),
           0
         ]
-        streams[0].print_tsv_header(out[msg_type][0].write)
-      for stream in streams:
-        tsvfh, tsv_count = out[stream.msg_type]
-        out[stream.msg_type][1] = stream.print_tsv(tsvfh.write, tsv_count)
+        sessions[0].print_tsv_header(out[msg_type][0].write)
+      for session in sessions:
+        tsvfh, tsv_count = out[session.msg_type]
+        out[session.msg_type][1] = session.print_tsv(tsvfh.write, tsv_count)
       for fh, count in out.values():
         fh.close()
 

@@ -63,23 +63,23 @@ class Processors(object):
       procs['res'].append(module.Processor(self.options, False, params))
     return procs
 
-  def process_stream(self, stream):
+  def process_session(self, session):
     """
-    Process the messages in the stream with all processors, and record
+    Process the messages in the session with all processors, and record
     results.
     """
     msg_idx = 0
-    msg_tot = len(stream.messages)
-    for (hdrs, host) in stream.messages:
+    msg_tot = len(session.messages)
+    for (hdrs, host) in session.messages:
       msg_idx += 1
-      results = self.process_message(hdrs, stream.msg_type,
+      results = self.process_message(hdrs, session.msg_type,
                                      host, msg_idx, msg_tot)
       for proc_name, resu in results.items():
         if proc_name == self.options.baseline:
           ratio = 1.0
         else:
           ratio = 1.0 * resu['size'] / results[self.options.baseline]['size']
-        stream.record_result(proc_name, resu['size'], ratio, resu['time'])
+        session.record_result(proc_name, resu['size'], ratio, resu['time'])
 
   @staticmethod
   def filter_headers(hdrs):
