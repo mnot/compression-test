@@ -70,6 +70,7 @@ class Processors(object):
     """
     msg_idx = 0
     msg_tot = len(session.messages)
+    self.processors = self.get_processors(self.options.processor_names)
     for (hdrs, host) in session.messages:
       msg_idx += 1
       results = self.process_message(hdrs, session.msg_type,
