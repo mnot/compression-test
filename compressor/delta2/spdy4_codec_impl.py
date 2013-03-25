@@ -758,33 +758,6 @@ class Spdy4CoDe(object):
     #print "\t\t\ttouching/adding idx: %r in group: %d" % (v_idx, group_id)
     header_group.TouchEntry(v_idx)
 
-  def AdjustHeaderGroupEntries(self, group_id):
-    """ Moves elements which have been referenced/modified to the head of the
-    LRU and possibly renumbers them"""
-
-    self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    indices = self.header_groups[group_id].hg_store
-    #print "hg:adjust:b4 ", sorted(indices)
-    try:
-      items_to_move = []
-      moved_items = set()
-      # if this is not done in a defined order, you end up with problems.
-      # Ideally, this would be in the order in which they were specified.
-      #... but I'm taking a shortcut here and just using sorted()
-      for v_idx in sorted(indices):
-        looked_up_item = self.storage.LookupFromIdx(v_idx)
-        #print "Storing: (%d): %r" % (v_idx, looked_up_item)
-        items_to_move.append(looked_up_item)
-      for item in items_to_move:
-        last_moved=self.storage.MoveToHeadOfLRU(item)
-        moved_items.add(last_moved)
-        #print "Moved to front of LRU at: (%r): %r" % (last_moved, item)
-      self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-      self.header_groups[group_id].hg_store = moved_items
-    except:
-      raise
-    #print "hg:adjust:af ", sorted(self.header_groups[group_id].hg_store)
-
   def MakeOperations(self, headers, group_id):
     """ Computes the entire set of operations necessary to encode the 'headers'
     for header-group 'group_id'
@@ -849,7 +822,6 @@ class Spdy4CoDe(object):
     #print "storage befor exe: ", self.storage.lru_storage.ring
     self.DecompressorExecuteOps(output_instrs, group_id)
     #print "storage after exe: ", self.storage.lru_storage.ring
-    self.AdjustHeaderGroupEntries(group_id)
 
     #print self.storage.lru_storage.ring
     #print "CMP HGaf:", sorted(self.header_groups[group_id].hg_store)
@@ -863,7 +835,6 @@ class Spdy4CoDe(object):
     (group_id, ops) = self.RealOpsToOps(realops)
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
     headers = self.DecompressorExecuteOps(ops, group_id)
-    self.AdjustHeaderGroupEntries(group_id)
     return (group_id, ops, headers)
 
   def DecompressorExecuteOps(self, ops, group_id):
@@ -920,9 +891,12 @@ class Spdy4CoDe(object):
       kv = self.storage.LookupFromIdx(lru_idx)
       AppendToHeaders(headers, kv.key(), kv.val())
 
+    older_entries = []
     for lru_idx in sorted(current_header_group.hg_store):
       kv = self.storage.LookupFromIdx(lru_idx)
-      store_later.appendleft(kv)
+      older_entries.append(kv)
+    older_entries.extend(store_later)
+    store_later = older_entries
 
     # Modify the LRU.
     for kv in store_later:
