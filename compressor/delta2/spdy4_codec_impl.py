@@ -6,6 +6,7 @@
 
 import string
 import struct
+import copy
 
 from bit_bucket import BitBucket
 from collections import defaultdict
@@ -17,10 +18,10 @@ from word_freak import WordFreak
 import lrustorage
 
 g_default_kvs = [
-    (':path', '/'),
     (':scheme', 'http'),
-    (':scheme', 'https'),
+    (':path', '/'),
     (':method', 'get'),
+    (':scheme', 'https'),
     (':host', ''),
     ('cookie', ''),
     (':status', '200'),
@@ -95,20 +96,20 @@ g_default_kvs = [
 
 # If strings_use_eof is true, then the bitlen is not necessary, and possibly
 #  detrimental, as it caps the maximum length of any particular string.
-string_length_field_bitlen = 0
+g_string_length_field_bitlen = 0
 
-# If strings_use_eof is false, however, then string_length_field_bitlen
+# If strings_use_eof is false, however, then g_string_length_field_bitlen
 #  MUST be >0
-strings_use_eof = 1
+g_strings_use_eof = 1
 
 # If strings_padded_to_byte_boundary is true, then it is potentially faster
 # (in an optimized implementation) to decode/encode, at the expense of some
 # compression efficiency.
-strings_padded_to_byte_boundary = 1
+g_strings_padded_to_byte_boundary = 1
 
 # if strings_use_huffman is false, then strings will not be encoded with
 # huffman encoding
-strings_use_huffman = 1
+g_strings_use_huffman = 1
 
 ###### END IMPORTANT PARAMS ######
 
@@ -249,18 +250,22 @@ def PackStr(data, params, val, huff):
   if use_eof and not huff:
     data.StoreBits([[0],8])
 
-str_pack_params = (string_length_field_bitlen, strings_use_eof,
-                   strings_padded_to_byte_boundary, strings_use_huffman)
+g_str_pack_params = (g_string_length_field_bitlen, g_strings_use_eof,
+                   g_strings_padded_to_byte_boundary, g_strings_use_huffman)
+del g_string_length_field_bitlen
+del g_strings_use_eof
+del g_strings_padded_to_byte_boundary
+del g_strings_use_huffman
 # This is the list of things to do for each fieldtype we may be packing.
 # the first param is what is passed to the pack/unpack function.
 # the second and third params are the packing and unpacking functions,
 # respectively.
-packing_instructions = {
-  'opcode'      : (  8,             PackInt, UnpackInt),
-  'index'       : ( 16,             PackInt, UnpackInt),
-  'index_start' : ( 16,             PackInt, UnpackInt),
-  'val'         : (str_pack_params, PackStr, UnpackStr),
-  'key'         : (str_pack_params, PackStr, UnpackStr),
+g_default_packing_instructions = {
+  'opcode'      : (    8,             PackInt, UnpackInt),
+  'index'       : (   16,             PackInt, UnpackInt),
+  'index_start' : (   16,             PackInt, UnpackInt),
+  'val'         : (g_str_pack_params, PackStr, UnpackStr),
+  'key'         : (g_str_pack_params, PackStr, UnpackStr),
 }
 
 def PackOps(data, packing_instructions, ops, huff, group_id, verbose):
@@ -281,7 +286,7 @@ def UnpackOps(data, packing_instructions, huff):
   return seder.DeserializeInstructions(data, packing_instructions, huff)
 
 # The order in which to format and pack operations.
-packing_order = ['opcode',
+g_packing_order = ['opcode',
                  'index',
                  'index_start',
                  'key',
@@ -289,7 +294,7 @@ packing_order = ['opcode',
                  ]
 
 # opcode-name: opcode-value list-of-fields-for-opcode
-opcodes = {
+g_opcodes = {
     'stoggl': (0x0, 'index'),
     'etoggl': (0x1, 'index'),
     'strang': (0x2, 'index', 'index_start'),
@@ -301,17 +306,19 @@ opcodes = {
     }
 
 # an inverse dict of opcode-val: opcode-name list-of-fields-for-opcode
-opcode_to_op = {}
-for (key, val) in opcodes.iteritems():
-  opcode_to_op[val[0]] = [key] + list(val[1:])
+g_opcode_to_op = {}
+for (key, val) in g_opcodes.iteritems():
+  g_opcode_to_op[val[0]] = [key] + list(val[1:])
+del key
+del val
 
 def OpcodeToVal(opcode_name):
   """ Gets the opcode-value for an opcode-name"""
-  return opcodes[opcode_name][0]
+  return g_opcodes[opcode_name][0]
 
 def FormatOp(op):
   """ Pretty-prints an op to a string for easy human consumption"""
-  order = packing_order
+  order = g_packing_order
   outp = ['{']
   inp = []
   for key in order:
@@ -366,29 +373,6 @@ class Spdy4SeDer(object):  # serializer deserializer
   """
   A class which serializes into and/or deserializes from SPDY4 wire format
   """
-  def MutateTogglesToToggleRanges(self, instructions):
-    """
-    Examines the 'stoggl' operations in 'instructions' and computes the
-    'strang' and remnant 'stoggle' operations, returning them as:
-    (output_toggles, output_toggle_ranges)
-    """
-
-    toggles = sorted(instructions['stoggl'])
-    ot = []
-    otr = []
-    for toggle in toggles:
-      idx = toggle['index']
-      if otr and idx - otr[-1]['index'] == 1:
-        otr[-1]['index'] = idx
-      elif ot and idx - ot[-1]['index'] == 1:
-        otr.append(ot.pop())
-        otr[-1]['index_start'] = otr[-1]['index']
-        otr[-1]['index'] = idx
-        otr[-1]['opcode'] = 'strang'
-      else:
-        ot.append(toggle)
-    return [ot, otr]
-
   def OutputOps(self, packing_instructions, huff, data, ops, opcode):
     """
     formats ops (all of type represented by opcode) into wire-format, and
@@ -416,18 +400,18 @@ class Spdy4SeDer(object):  # serializer deserializer
       orig_idx = ops_idx
       for i in xrange(ops_to_go):
         try:
-          self.WriteOpData(data, ops[orig_idx + i], huff)
+          self.WriteOpData(data, ops[orig_idx + i], huff, packing_instructions)
         except:
           print opcode, ops
           raise
         ops_idx += 1
 
-  def WriteOpData(self, data, op, huff):
+  def WriteOpData(self, data, op, huff, packing_instructions):
     """
     A helper function for OutputOps which does the packing for
     the operation's fields.
     """
-    for field_name in packing_order:
+    for field_name in g_packing_order:
       if not field_name in op:
         continue
       if field_name == 'opcode':
@@ -540,12 +524,12 @@ class Spdy4SeDer(object):  # serializer deserializer
         #print 'opcode_val: ', opcode_val
         op_count = bb.GetBits8() + 1
         #print 'op_count: ', op_count
-        opcode_description = opcode_to_op[opcode_val]
+        opcode_description = g_opcode_to_op[opcode_val]
         opcode = opcode_description[0]
         fields = opcode_description[1:]
         for i in xrange(op_count):
           op = {'opcode': opcode}
-          for field_name in packing_order:
+          for field_name in g_packing_order:
             if not field_name in fields:
               continue
             (params, _, unpack_fn) = packing_instructions[field_name]
@@ -594,13 +578,13 @@ class HeaderGroup(object):
 class Storage(object):
   """ This object keeps track of key and LRU ids, all keys and values, and the
   mechanism for expiring key/value entries as necessary"""
-  def __init__(self, max_byte_size, max_entries):
+  def __init__(self, max_byte_size, max_entries, max_index_size):
     self.static_storage = lrustorage.LruStorage()
     for k,v in g_default_kvs:
       self.static_storage.Store(lrustorage.KV(k,v))
     self.lru_storage = lrustorage.LruStorage(max_byte_size,
                                              max_entries,
-                                             2**16,
+                                             max_index_size,
                                              len(self.static_storage))
 
   def SetRemoveValCB(self, remove_val_cb):
@@ -616,11 +600,6 @@ class Storage(object):
       self.lru_storage.Store(entry)
       return self.lru_storage.ring[-1].seq_num
     return None
-
-  def MoveToHeadOfLRU(self, entry):
-    # When moving to the head of the LRU, one must reserve differently..
-    self.lru_storage.Reserve(entry, 1)
-    return self.InsertVal(lrustorage.KV(entry.key_, entry.val_))
 
   def FindEntryIdx(self, key, val):
     retval = [None, None]
@@ -646,9 +625,21 @@ class Storage(object):
   def __repr__(self):
     return repr(self.lru_storage)
 
+def IsTrue(param_dict, key):
+  if key in param_dict:
+    string = param_dict[key]
+    if (string is None or
+        string == "True" or
+        string == "true" or
+        string == '1' or
+        string == 't'):
+      return 1
+  return 0
+
 class Spdy4CoDe(object):
   def __init__(self, params, description, options):
     self.description = description
+    self.packing_instructions = copy.deepcopy(g_default_packing_instructions)
     param_dict = {}
     for param in params:
       kv = param.split('=')
@@ -657,19 +648,32 @@ class Spdy4CoDe(object):
       else:
         param_dict[kv[0]] = None
 
-    max_byte_size = 16*1024
-    max_entries = 4096
+    max_byte_size = 4*1024
+    max_index = 2**16 - 1
+    max_entries = 1024
+
 
     if 'max_byte_size' in param_dict:
       max_byte_size = int(param_dict['max_byte_size'])
     if 'max_entries' in param_dict:
-      max_entries = int(param_dict['max_entries'])
+      max_entries = min(max_index - len(g_default_kvs),
+                        int(param_dict['max_entries']))
+    if IsTrue(param_dict, 'small_index'):
+      self.packing_instructions['index']       = (8, PackInt, UnpackInt);
+      self.packing_instructions['index_start'] = (8, PackInt, UnpackInt);
+      max_index = 256 - 1
+      max_entries = min(max_index - len(g_default_kvs), max_entries)
+
+    self.hg_adjust =       IsTrue(param_dict, 'hg_adjust')
+    self.implicit_hg_add = IsTrue(param_dict, 'implicit_hg_add')
+    self.refcnt_vals =      IsTrue(param_dict, 'refcnt_vals')
 
     self.options = options
     self.header_groups = {}
     self.huffman_table = None
     #self.wf = WordFreak()  # for figuring out the letter freq counts
-    self.storage = Storage(max_byte_size, max_entries)
+    #print param_dict, "MaxEntries: ", max_entries, "MaxIndex: ", max_index
+    self.storage = Storage(max_byte_size, max_entries, max_index)
     def RemoveVIdxFromAllHeaderGroups(entry):
       v_idx = entry.seq_num
       to_be_removed = []
@@ -686,7 +690,7 @@ class Spdy4CoDe(object):
   def OpsToRealOps(self, in_ops, header_group):
     """ Packs in-memory format operations into wire format"""
     data = BitBucket()
-    PackOps(data, packing_instructions, in_ops, self.huffman_table,
+    PackOps(data, self.packing_instructions, in_ops, self.huffman_table,
         header_group, self.options.verbose)
     return common_utils.ListToStr(data.GetAllBits()[0])
 
@@ -694,7 +698,7 @@ class Spdy4CoDe(object):
     """ Unpacks wire format operations into in-memory format"""
     bb = BitBucket()
     bb.StoreBits((common_utils.StrToList(realops), len(realops)*8))
-    return UnpackOps(bb, packing_instructions, self.huffman_table)
+    return UnpackOps(bb, self.packing_instructions, self.huffman_table)
 
   def Compress(self, realops):
     """ basically does nothing"""
@@ -722,20 +726,26 @@ class Spdy4CoDe(object):
 
   def MutateTogglesToTrangs(self, instructions):
     def FigureOutRanges(ops, new_opcode):
-      toggles = sorted(ops)
+      toggles = sorted(copy.deepcopy(ops))
       ot = []
       otr = []
+      collapsed = 0
       for toggle in toggles:
         idx = toggle['index']
         if otr and idx - otr[-1]['index'] == 1:
           otr[-1]['index'] = idx
+          collapsed += 1
         elif ot and idx - ot[-1]['index'] == 1:
           otr.append(ot.pop())
           otr[-1]['index_start'] = otr[-1]['index']
           otr[-1]['index'] = idx
           otr[-1]['opcode'] = new_opcode
+          collapsed += 1
         else:
           ot.append(toggle)
+      if collapsed <= 2:
+        ot = sorted(ops)
+        otr = []
       return [ot, otr]
     etggl, etrng = FigureOutRanges(instructions['etoggl'], 'etrang')
     stggl, strng = FigureOutRanges(instructions['stoggl'], 'strang')
@@ -758,41 +768,17 @@ class Spdy4CoDe(object):
     #print "\t\t\ttouching/adding idx: %r in group: %d" % (v_idx, group_id)
     header_group.TouchEntry(v_idx)
 
-  def AdjustHeaderGroupEntries(self, group_id):
-    """ Moves elements which have been referenced/modified to the head of the
-    LRU and possibly renumbers them"""
-
-    self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    indices = self.header_groups[group_id].hg_store
-    #print "hg:adjust:b4 ", sorted(indices)
-    try:
-      items_to_move = []
-      moved_items = set()
-      # if this is not done in a defined order, you end up with problems.
-      # Ideally, this would be in the order in which they were specified.
-      #... but I'm taking a shortcut here and just using sorted()
-      for v_idx in sorted(indices):
-        looked_up_item = self.storage.LookupFromIdx(v_idx)
-        #print "Storing: (%d): %r" % (v_idx, looked_up_item)
-        items_to_move.append(looked_up_item)
-      for item in items_to_move:
-        last_moved=self.storage.MoveToHeadOfLRU(item)
-        moved_items.add(last_moved)
-        #print "Moved to front of LRU at: (%r): %r" % (last_moved, item)
-      self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-      self.header_groups[group_id].hg_store = moved_items
-    except:
-      raise
-    #print "hg:adjust:af ", sorted(self.header_groups[group_id].hg_store)
-
   def MakeOperations(self, headers, group_id):
     """ Computes the entire set of operations necessary to encode the 'headers'
     for header-group 'group_id'
     """
+    #print headers
+
     instructions = {'stoggl': [], 'etoggl': [],
                     'sclone': [], 'eclone': [],
                     'skvsto': [], 'ekvsto': []}
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
+    #print "CMP HGb4:", sorted(self.header_groups[group_id].hg_store)
 
     headers_set = set()
     keep_set = set()
@@ -808,11 +794,14 @@ class Spdy4CoDe(object):
     for idx in self.header_groups[group_id].hg_store:
       entry = self.storage.LookupFromIdx(idx)
       kv = (entry.key() , entry.val() )
+      #print "Examining: (%d) %s" % (idx, repr(kv))
       if kv in headers_set:
         # keep it.
+        #print "Keeping it (%d)" % idx
         keep_set.add(idx)
         headers_set.remove(kv)
       else:
+        #print "Removnig it"
         done_set.add(idx)
     #print "keep_set: ", sorted(keep_set)
     #print "done_set: ", sorted(done_set)
@@ -849,9 +838,8 @@ class Spdy4CoDe(object):
     #print "storage befor exe: ", self.storage.lru_storage.ring
     self.DecompressorExecuteOps(output_instrs, group_id)
     #print "storage after exe: ", self.storage.lru_storage.ring
-    self.AdjustHeaderGroupEntries(group_id)
 
-    #print self.storage.lru_storage.ring
+    #self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
     #print "CMP HGaf:", sorted(self.header_groups[group_id].hg_store)
 
     #print "Done making operations"
@@ -863,8 +851,12 @@ class Spdy4CoDe(object):
     (group_id, ops) = self.RealOpsToOps(realops)
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
     headers = self.DecompressorExecuteOps(ops, group_id)
-    self.AdjustHeaderGroupEntries(group_id)
     return (group_id, ops, headers)
+
+  def Store(self, kv):
+    if self.refcnt_vals:
+      return self.storage.InsertVal(lrustorage.KV(kv.key_, kv.val_))
+    return self.storage.InsertVal(lrustorage.KV(kv.key_, kv.val()))
 
   def DecompressorExecuteOps(self, ops, group_id):
     store_later = deque()
@@ -916,19 +908,33 @@ class Spdy4CoDe(object):
     current_header_group.hg_store.symmetric_difference_update(stoggles)
     kv_references = etoggles.symmetric_difference(current_header_group.hg_store)
 
-    for lru_idx in sorted(kv_references):
+    for lru_idx in kv_references:
       kv = self.storage.LookupFromIdx(lru_idx)
       AppendToHeaders(headers, kv.key(), kv.val())
 
-    for lru_idx in sorted(current_header_group.hg_store):
-      kv = self.storage.LookupFromIdx(lru_idx)
-      store_later.appendleft(kv)
+    if self.hg_adjust:
+      hg_store_later = []
+      for lru_idx in sorted(current_header_group.hg_store):
+        kv = self.storage.LookupFromIdx(lru_idx)
+        hg_store_later.append((kv, lru_idx));
 
     # Modify the LRU.
     for kv in store_later:
-      new_idx = self.storage.InsertVal(lrustorage.KV(kv.key_, kv.val()))
-      #if new_idx is not None:
-      #  current_header_group.hg_store.add(new_idx)
+      #print "Storing: ", kv
+      new_idx = self.Store(kv)
+      if self.implicit_hg_add and new_idx is not None:
+        current_header_group.hg_store.add(new_idx)
+    if self.hg_adjust:
+      for kv, old_idx in hg_store_later:
+        if old_idx in current_header_group.hg_store:
+          #print "removing lru_idx: ", old_idx,
+          current_header_group.hg_store.remove(old_idx)
+          #print "hg_adjust: Moving: ", kv,
+        new_idx = self.Store(kv)
+        if new_idx is not None:
+          current_header_group.hg_store.add(new_idx)
+          #print "adding new_lru_idx: ", new_idx,
+        #print
 
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')

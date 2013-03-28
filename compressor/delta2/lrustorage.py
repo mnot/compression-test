@@ -140,6 +140,14 @@ class LruStorage:
       print "first_seq_num:", first_seq_num
       print "seq_num requested:", seq_num
       raise
+    if entry.seq_num != seq_num:
+      print "Something strange has happened"
+      print "entry: ", entry
+      print self.ring
+      print "lru_idx: ", lru_idx
+      print "first_seq_num:", first_seq_num
+      print "seq_num requested:", seq_num
+      raise StandardError()
     return entry
 
   def FindKeyValEntries(self, key, val):
