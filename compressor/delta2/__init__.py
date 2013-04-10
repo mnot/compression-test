@@ -14,6 +14,9 @@ from .. import BaseProcessor
 # There are a number of TODOS in the spdy4
 #      have near indices. Possibly renumber whever something is referenced)
 
+request_huffman = huffman.Huffman(header_freq_tables.request_freq_table)
+response_huffman = huffman.Huffman(header_freq_tables.response_freq_table)
+
 class Processor(BaseProcessor):
   """
   This class formats header frames in SPDY4 wire format, and then reads the
@@ -33,13 +36,11 @@ class Processor(BaseProcessor):
     self.hosts = {}
     self.group_ids = common_utils.IDStore(255)
     if is_request:
-      request_freq_table = header_freq_tables.request_freq_table
-      self.compressor.huffman_table = huffman.Huffman(request_freq_table)
-      self.decompressor.huffman_table = huffman.Huffman(request_freq_table)
+      self.compressor.huffman = request_huffman
+      self.decompressor.huffman = request_huffman
     else:
-      response_freq_table = header_freq_tables.response_freq_table
-      self.compressor.huffman_table = huffman.Huffman(response_freq_table)
-      self.decompressor.huffman_table = huffman.Huffman(response_freq_table)
+      self.compressor.huffman = response_huffman
+      self.decompressor.huffman = response_huffman
 
   def PrintOps(self, ops):
     for op in ops:

@@ -25,7 +25,7 @@ class BitBucket:
     self.idx_byte = 0
     self.idx_boff = 0
 
-  def AdvanceToByteBoundary(self):
+  def AdvanceReadPtrToByteBoundary(self):
     """
     Inserts enough '0's to ensure that the number of bits stored % 8 == 0
     """
@@ -44,6 +44,12 @@ class BitBucket:
     else:
       bit = 0
     self.StoreBits( ([bit << 7], 1) )
+
+  def StoreBits4(self, val):
+    """
+    Stores the 4 least-significant-bits from val
+    """
+    self.StoreBits( ([val << 4], 4))
 
   def StoreBits8(self, val):
     """
@@ -145,6 +151,14 @@ class BitBucket:
   def AllConsumed(self):
     """ Returns true if all stored bits were consumed, else returns false"""
     return self.NumBits() <= (8*self.idx_byte + self.idx_boff)
+
+  def GetBits4(self):
+    """
+    Gets the next 4 unconsumed bits from the BitBucket and returns that as
+    an int
+    """
+    raw_data = self.GetBits(4)[0]
+    return raw_data[0] >> 4
 
   def GetBits8(self):
     """

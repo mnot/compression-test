@@ -113,7 +113,16 @@ g_strings_use_huffman = 1
 
 ###### END IMPORTANT PARAMS ######
 
-def UnpackInt(input, bitlen, huff):
+def UnpackInt8(inp_stream, bitlen, huff):
+  return inp_stream.GetBits8()
+
+def UnpackInt16(inp_stream, bitlen, huff):
+  return inp_stream.GetBits16()
+
+def UnpackInt32(inp_stream, bitlen, huff):
+  return inp_stream.GetBits32()
+
+def UnpackInt(inp_stream, bitlen, huff):
   """
   Reads an int from an input BitBucket and returns it.
 
@@ -122,22 +131,40 @@ def UnpackInt(input, bitlen, huff):
 
   'huff' is unused.
   """
-  raw_input = input.GetBits(bitlen)[0]
+  raw_in_stream = inp_stream.GetBits(bitlen)[0]
   rshift = 0
-  if bitlen <=8:
-    arg = '%c%c%c%c' % (0,0, 0,raw_input[0])
+  if bitlen <= 8:
+    arg = '%c%c%c%c' % (0,0, 0,raw_in_stream[0])
     rshift = 8 - bitlen
-  elif bitlen <=16:
-    arg = '%c%c%c%c' % (0,0, raw_input[0], raw_input[1])
+  elif bitlen <= 16:
+    arg = '%c%c%c%c' % (0,0, raw_in_stream[0], raw_in_stream[1])
     rshift = 16 - bitlen
-  elif bitlen <=24:
-    arg = '%c%c%c%c' % (0,raw_input[0], raw_input[1], raw_input[2])
+  elif bitlen <= 24:
+    arg = '%c%c%c%c' % (0,raw_in_stream[0], raw_in_stream[1], raw_in_stream[2])
     rshift = 24 - bitlen
   else:
-    arg = '%c%c%c%c' % (raw_input[0], raw_input[1], raw_input[2], raw_input[3])
+    arg = '%c%c%c%c' % (raw_in_stream[0], raw_in_stream[1],
+                        raw_in_stream[2], raw_in_stream[3])
     rshift = 32 - bitlen
   retval = (struct.unpack('>L', arg)[0] >> rshift)
   return retval
+
+def UnpackVarInt(inp_stream, bitlen, huff):
+  # unpacks a varint encoded int.
+  val = inp_stream.GetBits4()
+  if val < 0x0f:
+    return val
+
+  val = inp_stream.GetBits8()
+  if val < 0xff:
+    return val
+
+  val = inp_stream.GetBits16()
+  if val < 0xffff:
+    return val
+
+  val = inp_stream.GetBits32()
+  return val
 
 def UnpackStr(input_data, params, huff):
   """
@@ -188,11 +215,16 @@ def UnpackStr(input_data, params, huff):
           break
         retval.append(c)
   if pad_to_byte_boundary:
-    input_data.AdvanceToByteBoundary()
-  retval = common_utils.ListToStr(retval)
-  return retval
+    input_data.AdvanceReadPtrToByteBoundary()
+  return common_utils.ListToStr(retval)
 
 # this assumes the bits are near the LSB, but must be packed to be close to MSB
+def PackInt8(data, bitlen, val, huff):
+  data.StoreBits8(val)
+
+def PackInt16(data, bitlen, val, huff):
+  data.StoreBits16(val)
+
 def PackInt(data, bitlen, val, huff):
   """ Packs an int of up to 32 bits, as specified by the 'bitlen' parameter into
   the BitBucket object 'data'.
@@ -214,6 +246,24 @@ def PackInt(data, bitlen, val, huff):
   else:
     tmp_val = struct.pack('>L', val << (32 - bitlen))
   data.StoreBits( (common_utils.StrToList(tmp_val), bitlen) )
+
+def PackVarInt(data, bitlen, val, huff):
+  if val < 0x0f:
+    data.StoreBits4(val)
+    return
+  data.StoreBits4(0x0f)
+
+  if val < 0xff:
+    data.StoreBits8(val)
+    return
+  data.StoreBits8(0xff)
+
+  if val < 0xffff:
+    data.StoreBits16(val)
+    return
+  data.StoreBits16(0xffff)
+
+  data.StoreBits32(val)
 
 def PackStr(data, params, val, huff):
   """
@@ -261,11 +311,11 @@ del g_strings_use_huffman
 # the second and third params are the packing and unpacking functions,
 # respectively.
 g_default_packing_instructions = {
-  'opcode'      : (    8,             PackInt, UnpackInt),
-  'index'       : (   16,             PackInt, UnpackInt),
-  'index_start' : (   16,             PackInt, UnpackInt),
-  'val'         : (g_str_pack_params, PackStr, UnpackStr),
-  'key'         : (g_str_pack_params, PackStr, UnpackStr),
+  'opcode'      : (    8,             PackInt8 , UnpackInt8),
+  'index'       : (   16,             PackInt16, UnpackInt16),
+  'index_start' : (   16,             PackInt16, UnpackInt16),
+  'val'         : (g_str_pack_params, PackStr  , UnpackStr),
+  'key'         : (g_str_pack_params, PackStr  , UnpackStr),
 }
 
 def PackOps(data, packing_instructions, ops, huff, group_id, verbose):
@@ -345,7 +395,7 @@ def FormatOps(ops, prefix=None):
       output.append(prefix)
       output.extend(FormatOp(op))
       output.append('\n');
-    return
+    return ''.join(output)
   for optype in ops.iterkeys():
     for op in ops[optype]:
       output.append(prefix)
@@ -368,6 +418,109 @@ def PrintHex(output_bytes):
     to_str = lambda x: ''.join([31 < i < 127 and chr(i) or '.' for i in x])
     print '{:47} | {}'.format(to_hex(line), to_str(line))
   print
+
+class Stats:
+  class HeaderStat:
+    def __init__(self, length):
+      self.count = 1
+      self.vlen = length
+    def __repr__(self):
+      return "{'c': %d, 'vlen': %d}" % (self.count, self.vlen)
+  class HeaderBytesSentStat:
+    def __init__(self, klen, vlen):
+      self.count = 1
+      self.klen = klen
+      self.vlen = vlen
+
+    def __repr__(self):
+      return "{'c': %d, 'klen': %d, 'vlen': %d}" % (self.count,
+          self.klen, self.vlen)
+
+  def __init__(self):
+    # key, {count, vlen}
+    self.raw_header_stats = {}
+    # key, {count, key_bytes_saved, v_bytes_saved}
+    self.header_bytes_sent_stats = {}
+    # opcode, {count, {histogram of fieldcount}}
+    self.op_stats = {}
+    # histogram of dist-from-end
+    self.idx_stats = {}
+
+  def __str__(self):
+    return '\n'.join(["raw_header_stats=" + repr(self.raw_header_stats),
+      "header_bytes_sent_stats=" + repr(self.header_bytes_sent_stats),
+      "op_stats=" + repr(self.op_stats),
+      "idx_stats=" + repr(self.idx_stats)])
+
+  def DistFromNewest(self, storage, seq_num):
+    if seq_num < storage.lru_storage.offset:
+      return -1
+    first_seq_num = storage.lru_storage.ring[0].seq_num
+    if first_seq_num > seq_num:
+      if storage.lru_storage.max_seq_num:
+        lru_idx = (storage.lru_storage.max_seq_num - first_seq_num) + \
+                  (seq_num - storage.lru_storage.offset)
+    else:
+      lru_idx = seq_num - first_seq_num
+    return len(storage.lru_storage.ring) - lru_idx
+
+  def Process(self, storage, headers, ops):
+    def AddHeaderByteSentStats(key, klen, vlen):
+      try:
+        self.header_bytes_sent_stats[key].count += 1
+        self.header_bytes_sent_stats[key].vlen += vlen
+        self.header_bytes_sent_stats[key].klen += klen
+      except:
+        self.header_bytes_sent_stats[key] = Stats.HeaderBytesSentStat(klen,
+                                                                      vlen)
+    ##
+    opcounts = {'stoggl': 0, 'etoggl': 0,
+                'strang': 0, 'etrang': 0,
+                'sclone': 0, 'eclone': 0,
+                'skvsto': 0, 'ekvsto': 0}
+
+    for k,v in headers.iteritems():
+      nulls = 0
+      for i in v:
+        if i == '\0':
+          nulls += 1
+      try:
+        self.raw_header_stats[k].count += 1 + nulls
+        self.raw_header_stats[k].vlen += len(v) - nulls
+      except:
+        self.raw_header_stats[k] = Stats.HeaderStat(len(v) - nulls)
+        self.raw_header_stats[k].count += nulls
+
+    # process distances from the end and construct op fieldcounts
+    # for this set of ops.
+    for op in ops:
+      opcode = op['opcode']
+      opcounts[opcode] += 1
+      # handle counting bytes sent.
+      if opcode[1:] == 'clone':
+        idx = op['index']
+        kv = storage.LookupFromIdx(idx)
+        AddHeaderByteSentStats(kv.key(), 0, len(op['val']))
+      elif opcode[1:] == 'kvsto':
+        AddHeaderByteSentStats(op['key'], len(op['key']), len(op['val']))
+
+      for name in ['index', 'index_start']:
+        if name in op:
+          idx = op[name]
+          try:
+            self.idx_stats[self.DistFromNewest(storage, idx)] += 1
+          except:
+            self.idx_stats[self.DistFromNewest(storage, idx)] = 1
+
+    # Now deal with operation field count frequencies.
+    for k in opcounts.keys():
+      if not k in self.op_stats:
+        self.op_stats[k] = {}
+    for k,v in opcounts.iteritems():
+      self.op_stats[k].__setitem__(v, self.op_stats[k].get(v,0) + 1)
+
+g_stats = Stats()
+
 
 class Spdy4SeDer(object):  # serializer deserializer
   """
@@ -394,13 +547,15 @@ class Spdy4SeDer(object):  # serializer deserializer
     ops_idx = 0
     ops_len = len(ops)
     while ops_len > ops_idx:
-      ops_to_go = ops_len - ops_idx
-      data.StoreBits8(OpcodeToVal(opcode))
-      data.StoreBits8(min(256, ops_to_go) - 1)
-      orig_idx = ops_idx
+      ops_to_go = min(ops_len - ops_idx, 16)
+
+      opcode_val = OpcodeToVal(opcode)
+      opcode_val_and_op_count = (opcode_val << 4| (ops_to_go-1) & 0x0f)
+      data.StoreBits8(opcode_val_and_op_count)
+
       for i in xrange(ops_to_go):
         try:
-          self.WriteOpData(data, ops[orig_idx + i], huff, packing_instructions)
+          self.WriteOpData(data, ops[ops_idx], huff, packing_instructions)
         except:
           print opcode, ops
           raise
@@ -468,9 +623,6 @@ class Spdy4SeDer(object):  # serializer deserializer
     for opcode, oplist in ops.iteritems():
       self.OutputOps(packing_instructions, huff, payload_bb, oplist, opcode)
 
-      tmp_bb = BitBucket()
-      self.OutputOps(packing_instructions, huff, tmp_bb, oplist, opcode)
-
     (payload, payload_len) = payload_bb.GetAllBits()
     payload_len = (payload_len + 7) / 8  # partial bytes are counted as full
     frame_bb = BitBucket()
@@ -508,7 +660,7 @@ class Spdy4SeDer(object):  # serializer deserializer
     flags = 0
     #print 'DeserializeInstructions'
     while flags == 0:
-      frame_len = bb.GetBits16() * 8
+      frame_len = bb.GetBits16() * 8 # in bits
       #print 'frame_len: ', frame_len
       frame_type = bb.GetBits8()
       #print 'frame_type: ', frame_type
@@ -518,34 +670,36 @@ class Spdy4SeDer(object):  # serializer deserializer
       #print 'stream_id: ', stream_id
       group_id = bb.GetBits8()
       #print 'group_id: ', group_id
-      while frame_len > 16:  # 16 bits minimum for the opcode + count...
+      while frame_len > 8:
         bits_remaining_at_start = bb.BitsRemaining()
-        opcode_val = bb.GetBits8()
-        #print 'opcode_val: ', opcode_val
-        op_count = bb.GetBits8() + 1
-        #print 'op_count: ', op_count
-        opcode_description = g_opcode_to_op[opcode_val]
-        opcode = opcode_description[0]
-        fields = opcode_description[1:]
-        for i in xrange(op_count):
-          op = {'opcode': opcode}
-          for field_name in g_packing_order:
-            if not field_name in fields:
-              continue
-            (params, _, unpack_fn) = packing_instructions[field_name]
-            val = unpack_fn(bb, params, huff)
-            #print val
-            op[field_name] = val
-            #print "BitsRemaining: %d (%d)" % (bb.BitsRemaining(), bb.BitsRemaining() % 8)
-          #print "Deser %d" % (bb.NumBits() - bb.BitsRemaining())
-          #print op
-          ops.append(op)
-        bits_consumed = (bits_remaining_at_start - bb.BitsRemaining())
-        #if not bits_consumed % 8 == 0:
-        #  print "somehow didn't consume whole bytes..."
-        #  print "Bits consumed: %d (%d)" % (bits_consumed, bits_consumed % 8)
-        #  raise StandardError()
-        frame_len -= bits_consumed
+        try:
+          opcode_val_and_op_count = bb.GetBits8()
+          opcode_val = opcode_val_and_op_count >> 4
+          op_count = (opcode_val_and_op_count & 0x0f) + 1
+          opcode_description = g_opcode_to_op[opcode_val]
+          opcode = opcode_description[0]
+          fields = opcode_description[1:]
+          for i in xrange(op_count):
+            op = {'opcode': opcode}
+            for field_name in g_packing_order:
+              if not field_name in fields:
+                continue
+              (params, _, unpack_fn) = packing_instructions[field_name]
+              val = unpack_fn(bb, params, huff)
+              #print val
+              op[field_name] = val
+              #print "BitsRemaining: %d (%d)" % (bb.BitsRemaining(), bb.BitsRemaining() % 8)
+            #print "Deser %d" % (bb.NumBits() - bb.BitsRemaining())
+            #print op
+            ops.append(op)
+          bits_consumed = (bits_remaining_at_start - bb.BitsRemaining())
+          #if not bits_consumed % 8 == 0:
+          #  print "somehow didn't consume whole bytes..."
+          #  print "Bits consumed: %d (%d)" % (bits_consumed, bits_consumed % 8)
+          #  raise StandardError()
+          frame_len -= bits_consumed
+        except:
+          break
     #print 'ops: ', ops
     return (group_id, ops)
 
@@ -625,15 +779,15 @@ class Storage(object):
   def __repr__(self):
     return repr(self.lru_storage)
 
-def IsTrue(param_dict, key):
-  if key in param_dict:
-    string = param_dict[key]
-    if (string is None or
-        string == "True" or
-        string == "true" or
-        string == '1' or
-        string == 't'):
-      return 1
+def IsTrueWithDefault(param_dict, key, default):
+  if not key in param_dict or param_dict[key] is None:
+    return default
+  string = param_dict[key]
+  if (string == "True" or
+      string == "true" or
+      string == '1' or
+      string == 't'):
+    return 1
   return 0
 
 class Spdy4CoDe(object):
@@ -658,21 +812,26 @@ class Spdy4CoDe(object):
     if 'max_entries' in param_dict:
       max_entries = min(max_index - len(g_default_kvs),
                         int(param_dict['max_entries']))
-    if IsTrue(param_dict, 'small_index'):
-      self.packing_instructions['index']       = (8, PackInt, UnpackInt);
-      self.packing_instructions['index_start'] = (8, PackInt, UnpackInt);
+    if IsTrueWithDefault(param_dict, 'small_index', True):
+      self.packing_instructions['index']       = (8, PackInt8, UnpackInt8);
+      self.packing_instructions['index_start'] = (8, PackInt8, UnpackInt8);
+
       max_index = 256 - 1
       max_entries = min(max_index - len(g_default_kvs), max_entries)
 
-    self.hg_adjust =       IsTrue(param_dict, 'hg_adjust')
-    self.implicit_hg_add = IsTrue(param_dict, 'implicit_hg_add')
-    self.refcnt_vals =      IsTrue(param_dict, 'refcnt_vals')
+    if IsTrueWithDefault(param_dict, 'varint_encoding', False):
+      self.packing_instructions['index']       = (8, PackVarInt, UnpackVarInt);
+      self.packing_instructions['index_start'] = (8, PackVarInt, UnpackVarInt);
+
+    self.hg_adjust =       IsTrueWithDefault(param_dict, 'hg_adjust', False)
+    self.implicit_hg_add = IsTrueWithDefault(param_dict, 'implicit_hg_add', False)
+    self.refcnt_vals =     IsTrueWithDefault(param_dict, 'refcnt_vals', False)
+    self.only_etoggles =   IsTrueWithDefault(param_dict, 'only_etoggles', False)
 
     self.options = options
     self.header_groups = {}
-    self.huffman_table = None
+    self.huffman = None
     #self.wf = WordFreak()  # for figuring out the letter freq counts
-    #print param_dict, "MaxEntries: ", max_entries, "MaxIndex: ", max_index
     self.storage = Storage(max_byte_size, max_entries, max_index)
     def RemoveVIdxFromAllHeaderGroups(entry):
       v_idx = entry.seq_num
@@ -682,7 +841,6 @@ class Spdy4CoDe(object):
         if header_group.Empty():
           to_be_removed.append(group_id)
       for group_id in to_be_removed:
-        #print "Deleted group_id: %d" % group_id
         del self.header_groups[group_id]
 
     self.storage.SetRemoveValCB(RemoveVIdxFromAllHeaderGroups)
@@ -690,7 +848,7 @@ class Spdy4CoDe(object):
   def OpsToRealOps(self, in_ops, header_group):
     """ Packs in-memory format operations into wire format"""
     data = BitBucket()
-    PackOps(data, self.packing_instructions, in_ops, self.huffman_table,
+    PackOps(data, self.packing_instructions, in_ops, self.huffman,
         header_group, self.options.verbose)
     return common_utils.ListToStr(data.GetAllBits()[0])
 
@@ -698,7 +856,7 @@ class Spdy4CoDe(object):
     """ Unpacks wire format operations into in-memory format"""
     bb = BitBucket()
     bb.StoreBits((common_utils.StrToList(realops), len(realops)*8))
-    return UnpackOps(bb, self.packing_instructions, self.huffman_table)
+    return UnpackOps(bb, self.packing_instructions, self.huffman)
 
   def Compress(self, realops):
     """ basically does nothing"""
@@ -711,6 +869,9 @@ class Spdy4CoDe(object):
 
   def MakeSToggl(self, index):
     return {'opcode': 'stoggl', 'index': index}
+
+  def MakeEToggl(self, index):
+    return {'opcode': 'etoggl', 'index': index}
 
   def MakeSKvsto(self, key, val):
     return {'opcode': 'skvsto', 'val': val, 'key': key}
@@ -772,14 +933,10 @@ class Spdy4CoDe(object):
     """ Computes the entire set of operations necessary to encode the 'headers'
     for header-group 'group_id'
     """
-    #print headers
-
     instructions = {'stoggl': [], 'etoggl': [],
                     'sclone': [], 'eclone': [],
                     'skvsto': [], 'ekvsto': []}
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    #print "CMP HGb4:", sorted(self.header_groups[group_id].hg_store)
-
     headers_set = set()
     keep_set = set()
     done_set = set()
@@ -794,18 +951,12 @@ class Spdy4CoDe(object):
     for idx in self.header_groups[group_id].hg_store:
       entry = self.storage.LookupFromIdx(idx)
       kv = (entry.key() , entry.val() )
-      #print "Examining: (%d) %s" % (idx, repr(kv))
       if kv in headers_set:
         # keep it.
-        #print "Keeping it (%d)" % idx
         keep_set.add(idx)
         headers_set.remove(kv)
       else:
-        #print "Removnig it"
         done_set.add(idx)
-    #print "keep_set: ", sorted(keep_set)
-    #print "done_set: ", sorted(done_set)
-    #print "tbd_set: ", repr(headers_set)
     stoggls = set()
 
     for kv in headers_set:
@@ -813,13 +964,15 @@ class Spdy4CoDe(object):
       (k_idx, v_idx) = self.storage.FindEntryIdx(key, val)
       if v_idx is not None:
         # a new toggle.
-        stoggls.add(v_idx)
+        if not self.only_etoggles:
+          stoggls.add(v_idx)
+        else:
+          instructions['etoggl'].append(self.MakeEToggl(v_idx))
       elif k_idx is not None:
         if key in [":path"]:
           instructions['eclone'].append(self.MakeEClone(k_idx, val) )
         else:
           instructions['sclone'].append(self.MakeSClone(k_idx, val) )
-        # a new clone
       else:
         # kvsto
         instructions['skvsto'].append(self.MakeSKvsto(key, val) )
@@ -832,18 +985,10 @@ class Spdy4CoDe(object):
     output_instrs = []
     for oplist in instructions.values():
       output_instrs.extend(oplist)
-
+    #### If wishing to track stats, uncomment out the following.
+    #g_stats.Process(self.storage, headers, output_instrs)
     #self.wf.LookAt(output_instrs)
-
-    #print "storage befor exe: ", self.storage.lru_storage.ring
     self.DecompressorExecuteOps(output_instrs, group_id)
-    #print "storage after exe: ", self.storage.lru_storage.ring
-
-    #self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
-    #print "CMP HGaf:", sorted(self.header_groups[group_id].hg_store)
-
-    #print "Done making operations"
-    #print '#' * 8
     return instructions
 
   def RealOpsToOpAndExecute(self, realops):
@@ -917,24 +1062,18 @@ class Spdy4CoDe(object):
       for lru_idx in sorted(current_header_group.hg_store):
         kv = self.storage.LookupFromIdx(lru_idx)
         hg_store_later.append((kv, lru_idx));
-
     # Modify the LRU.
     for kv in store_later:
-      #print "Storing: ", kv
       new_idx = self.Store(kv)
       if self.implicit_hg_add and new_idx is not None:
         current_header_group.hg_store.add(new_idx)
     if self.hg_adjust:
       for kv, old_idx in hg_store_later:
         if old_idx in current_header_group.hg_store:
-          #print "removing lru_idx: ", old_idx,
           current_header_group.hg_store.remove(old_idx)
-          #print "hg_adjust: Moving: ", kv,
         new_idx = self.Store(kv)
         if new_idx is not None:
           current_header_group.hg_store.add(new_idx)
-          #print "adding new_lru_idx: ", new_idx,
-        #print
 
     if 'cookie' in headers:
       headers['cookie'] = headers['cookie'].replace('\0', '; ')
@@ -942,6 +1081,6 @@ class Spdy4CoDe(object):
 
   def Done(self):
     pass
-    #print self.description, "\n", self.wf
+
 
 
