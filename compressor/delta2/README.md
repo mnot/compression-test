@@ -12,3 +12,4 @@ Parameters
 * implict_hg_add: when set, items being added via sclone or skvsto have their indices automatically inserted into the current header-group.
 * small_index: when set, causes the index size (on the wire) to become one byte, down from two bytes.  This indirectly causes the maximum number of items in the LRU to drop to ~200 elements (though smaller values are still honored if set via max_entries, above).
 * refcnt_vals: when set, value strings are refcounted. This only matters when/if hg_adjust is enabled.
+* only_etoggles: when set, the compressor is forced to make explicit backreferences to everything, and thus acts similarly to the headerdiff encoder.
