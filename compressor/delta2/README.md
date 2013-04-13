@@ -13,3 +13,7 @@ Parameters
 * small_index: when set, causes the index size (on the wire) to become one byte, down from two bytes.  This indirectly causes the maximum number of items in the LRU to drop to ~200 elements (though smaller values are still honored if set via max_entries, above).
 * refcnt_vals: when set, value strings are refcounted. This only matters when/if hg_adjust is enabled.
 * only_etoggles: when set, the compressor is forced to make explicit backreferences to everything, and thus acts similarly to the headerdiff encoder.
+* varint_encoding: when set, indices are encoded as variable-length integers. For values <= 15, 4 bits will be used. For values >15 and <= 255, 12 bits will be used. For values >255 and <= 16535, 28 bits will be used, and for values >16535, 60 bits will be used. For this to be effective, obviously, the expectation is that most integer values are quite small.
+# idx_from_end: when set, indices are encoded as distance-from-the-newest element. In conjunection with varint_encoding, this should yield a space savings on the wire.
+
+

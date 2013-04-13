@@ -19,70 +19,70 @@ import lrustorage
 
 g_default_kvs = [
     (':scheme', 'http'),
-    (':path', '/'),
-    (':method', 'get'),
-    (':scheme', 'https'),
-    (':host', ''),
-    ('cookie', ''),
-    (':status', '200'),
-    (':status-text', 'OK'),
-    (':version', '1.1'),
-    ('accept', ''),
-    ('accept-charset', ''),
-    ('accept-encoding', ''),
-    ('accept-language', ''),
-    ('accept-ranges', ''),
-    ('allow', ''),
-    ('authorizations', ''),
-    ('cache-control', ''),
-    ('content-base', ''),
-    ('content-encoding', ''),
-    ('content-length', ''),
-    ('content-location', ''),
-    ('content-md5', ''),
-    ('content-range', ''),
-    ('content-type', ''),
-    ('date', ''),
-    ('etag', ''),
-    ('expect', ''),
-    ('expires', ''),
-    ('from', ''),
-    ('if-match', ''),
-    ('if-modified-since', ''),
-    ('if-none-match', ''),
-    ('if-range', ''),
-    ('if-unmodified-since', ''),
-    ('last-modified', ''),
-    ('location', ''),
-    ('max-forwards', ''),
-    ('origin', ''),
-    ('pragma', ''),
-    ('proxy-authenticate', ''),
-    ('proxy-authorization', ''),
-    ('range', ''),
-    ('referer', ''),
-    ('retry-after', ''),
-    ('server', ''),
-    ('set-cookie', ''),
-    ('status', ''),
-    ('te', ''),
-    ('trailer', ''),
-    ('transfer-encoding', ''),
-    ('upgrade', ''),
-    ('user-agent', ''),
-    ('vary', ''),
-    ('via', ''),
-    ('warning', ''),
-    ('www-authenticate', ''),
-    ('access-control-allow-origin', ''),
-    ('content-disposition', ''),
-    ('get-dictionary', ''),
-    ('p3p', ''),
-    ('x-content-type-options', ''),
-    ('x-frame-options', ''),
-    ('x-powered-by', ''),
-    ('x-xss-protection', ''),
     ('connection', 'keep-alive'),
+    ('x-xss-protection', ''),
+    ('x-powered-by', ''),
+    ('x-frame-options', ''),
+    ('x-content-type-options', ''),
+    ('p3p', ''),
+    ('get-dictionary', ''),
+    ('content-disposition', ''),
+    ('access-control-allow-origin', ''),
+    ('www-authenticate', ''),
+    ('warning', ''),
+    ('via', ''),
+    ('vary', ''),
+    ('user-agent', ''),
+    ('upgrade', ''),
+    ('transfer-encoding', ''),
+    ('trailer', ''),
+    ('te', ''),
+    ('status', ''),
+    ('set-cookie', ''),
+    ('server', ''),
+    ('retry-after', ''),
+    ('referer', ''),
+    ('range', ''),
+    ('proxy-authorization', ''),
+    ('proxy-authenticate', ''),
+    ('pragma', ''),
+    ('origin', ''),
+    ('max-forwards', ''),
+    ('location', ''),
+    ('last-modified', ''),
+    ('if-unmodified-since', ''),
+    ('if-range', ''),
+    ('if-none-match', ''),
+    ('if-modified-since', ''),
+    ('if-match', ''),
+    ('from', ''),
+    ('expires', ''),
+    ('expect', ''),
+    ('etag', ''),
+    ('date', ''),
+    ('content-type', ''),
+    ('content-range', ''),
+    ('content-md5', ''),
+    ('content-location', ''),
+    ('content-length', ''),
+    ('content-encoding', ''),
+    ('content-base', ''),
+    ('cache-control', ''),
+    ('authorizations', ''),
+    ('allow', ''),
+    ('accept-ranges', ''),
+    ('accept-language', ''),
+    ('accept-encoding', ''),
+    ('accept-charset', ''),
+    ('accept', ''),
+    (':version', '1.1'),
+    (':status-text', 'OK'),
+    (':status', '200'),
+    ('cookie', ''),
+    (':host', ''),
+    (':scheme', 'https'),
+    (':method', 'get'),
+    (':path', '/'),
     ]
 
 # Note: Huffman coding is used here instead of range-coding or
@@ -94,18 +94,10 @@ g_default_kvs = [
 ###### BEGIN IMPORTANT PARAMS ######
 #  THESE PARAMETERS ARE IMPORTANT
 
-# If strings_use_eof is true, then the bitlen is not necessary, and possibly
-#  detrimental, as it caps the maximum length of any particular string.
-g_string_length_field_bitlen = 0
-
-# If strings_use_eof is false, however, then g_string_length_field_bitlen
-#  MUST be >0
-g_strings_use_eof = 1
-
 # If strings_padded_to_byte_boundary is true, then it is potentially faster
 # (in an optimized implementation) to decode/encode, at the expense of some
 # compression efficiency.
-g_strings_padded_to_byte_boundary = 1
+g_strings_padded_to_byte_boundary = 0
 
 # if strings_use_huffman is false, then strings will not be encoded with
 # huffman encoding
@@ -191,29 +183,19 @@ def UnpackStr(input_data, params, huff):
   None, then it must be a Huffman compatible object which is used to do huffman
   decoding.
   """
-  (bitlen_size, use_eof, pad_to_byte_boundary, use_huffman) = params
+  (pad_to_byte_boundary, use_huffman) = params
   if not use_huffman:
     huff = None
-  if not use_eof and not bitlen_size:
-    # without either a bitlen size or an EOF, we can't know when the string ends
-    # having both is certainly fine, however.
-    raise StandardError()
-  if bitlen_size:
-    bitlen = UnpackInt(input_data, bitlen_size, huff)
-    if huff:
-      retval = huff.DecodeFromBB(input_data, use_eof, bitlen)
-    else:
-      retval = input_data.GetBits(bitlen)[0]
-  else:  # bitlen_size == 0
-    if huff:
-      retval = huff.DecodeFromBB(input_data, use_eof, 0)
-    else:
-      retval = []
-      while True:
-        c = input_data.GetBits8()
-        if c == 0:
-          break
-        retval.append(c)
+
+  if huff:
+    retval = huff.DecodeFromBB(input_data, True, 0)
+  else:
+    retval = []
+    while True:
+      c = input_data.GetBits8()
+      if c == 0:
+        break
+      retval.append(c)
   if pad_to_byte_boundary:
     input_data.AdvanceReadPtrToByteBoundary()
   return common_utils.ListToStr(retval)
@@ -248,21 +230,25 @@ def PackInt(data, bitlen, val, huff):
   data.StoreBits( (common_utils.StrToList(tmp_val), bitlen) )
 
 def PackVarInt(data, bitlen, val, huff):
+  assert val >= 0
   if val < 0x0f:
     data.StoreBits4(val)
     return
-  data.StoreBits4(0x0f)
 
   if val < 0xff:
+    data.StoreBits4(0x0f)
     data.StoreBits8(val)
     return
-  data.StoreBits8(0xff)
 
   if val < 0xffff:
+    data.StoreBits4(0x0f)
+    data.StoreBits8(0xff)
     data.StoreBits16(val)
     return
-  data.StoreBits16(0xffff)
 
+  data.StoreBits4(0x0f)
+  data.StoreBits8(0xff)
+  data.StoreBits16(0xffff)
   data.StoreBits32(val)
 
 def PackStr(data, params, val, huff):
@@ -279,31 +265,19 @@ def PackStr(data, params, val, huff):
   'val' is the string to be packed
   'huff' is the Huffman object to be used when doing huffman encoding.
   """
-  (bitlen_size, use_eof, pad_to_byte_boundary, use_huffman) = params
+  (pad_to_byte_boundary, use_huffman) = params
   # if eof, then don't technically need bitlen at all...
-  if not use_huffman:
-    huff = None
-
-  if not use_eof and not bitlen_size:
-    # without either a bitlen size or an EOF, we can't know when the string ends
-    # having both is certainly fine, however.
-    raise StandardError()
   val_as_list = common_utils.StrToList(val)
-  len_in_bits = len(val) * 8
-  if huff:
-    (val_as_list, len_in_bits) = huff.Encode(val_as_list, use_eof)
-    if pad_to_byte_boundary:
-      len_in_bits = len(val_as_list) *8
-  if bitlen_size:
-    PackInt(data, bitlen_size, len_in_bits, huff)
-  data.StoreBits( (val_as_list, len_in_bits) )
-  if use_eof and not huff:
-    data.StoreBits([[0],8])
 
-g_str_pack_params = (g_string_length_field_bitlen, g_strings_use_eof,
-                   g_strings_padded_to_byte_boundary, g_strings_use_huffman)
-del g_string_length_field_bitlen
-del g_strings_use_eof
+  if huff and use_huffman:
+    (val_as_list, len_in_bits) = huff.Encode(val_as_list, True)
+  else:
+    val_as_list.append(0)
+  data.StoreBits( (val_as_list, len_in_bits) )
+  if pad_to_byte_boundary:
+    data.PadToByteBoundary()
+
+g_str_pack_params = (g_strings_padded_to_byte_boundary, g_strings_use_huffman)
 del g_strings_padded_to_byte_boundary
 del g_strings_use_huffman
 # This is the list of things to do for each fieldtype we may be packing.
@@ -317,23 +291,6 @@ g_default_packing_instructions = {
   'val'         : (g_str_pack_params, PackStr  , UnpackStr),
   'key'         : (g_str_pack_params, PackStr  , UnpackStr),
 }
-
-def PackOps(data, packing_instructions, ops, huff, group_id, verbose):
-  """ Packs (i.e. renders into wire-format) the operations in 'ops' into the
-  BitBucket 'data', using the 'packing_instructions' and possibly the Huffman
-  encoder 'huff'
-  """
-  seder = Spdy4SeDer()
-  data.StoreBits(seder.SerializeInstructions(ops, packing_instructions,
-                                             huff, 1234, group_id, True,
-                                             verbose))
-
-def UnpackOps(data, packing_instructions, huff):
-  """
-  Unpacks wire-formatted ops into an in-memory representation
-  """
-  seder = Spdy4SeDer()
-  return seder.DeserializeInstructions(data, packing_instructions, huff)
 
 # The order in which to format and pack operations.
 g_packing_order = ['opcode',
@@ -409,14 +366,19 @@ def AppendToHeaders(headers, key, val):
   else:
     headers[key] = val
 
-def PrintHex(output_bytes):
+def FormatHex(output_bytes):
+  output = []
   output_bytes_len = len(output_bytes)
   for i in xrange(0, output_bytes_len, 16):
     last_byte = min(i+16, output_bytes_len)
     line = output_bytes[i:last_byte]
     to_hex = lambda x: ' '.join(['{:02X}'.format(i) for i in x])
     to_str = lambda x: ''.join([31 < i < 127 and chr(i) or '.' for i in x])
-    print '{:47} | {}'.format(to_hex(line), to_str(line))
+    output.append('{:47} | {}'.format(to_hex(line), to_str(line)))
+  return '\n'.join(output)
+
+def PrintHex(output_bytes):
+  print FormatHex(output_bytes)
   print
 
 class Stats:
@@ -616,12 +578,20 @@ class Spdy4SeDer(object):  # serializer deserializer
     if verbose >= 5:
       print
       print "stream_id: %s group_id: %s" % (stream_id, group_id)
+      print "Ops to be serialied:"
       print FormatOps(ops)
       print
+      descr = deque()
 
     payload_bb = BitBucket()
     for opcode, oplist in ops.iteritems():
       self.OutputOps(packing_instructions, huff, payload_bb, oplist, opcode)
+      #payload_bb.PadBytesToByteBoundary()
+      if verbose >= 5:
+        tmp_bb = BitBucket()
+        self.OutputOps(packing_instructions, huff, tmp_bb, oplist, opcode)
+        descr.append(FormatHex(tmp_bb.GetAllBits()[0]))
+        descr.append("\n")
 
     (payload, payload_len) = payload_bb.GetAllBits()
     payload_len = (payload_len + 7) / 8  # partial bytes are counted as full
@@ -639,6 +609,8 @@ class Spdy4SeDer(object):  # serializer deserializer
       #print 'end_of_Frame: ', end_of_frame
       self.WriteControlFrameBoilerplate(overall_bb, bytes_to_consume,
                                         end_of_frame, stream_id, group_id, 0x8)
+      if verbose >= 5:
+        descr.appendleft(FormatHex(overall_bb.GetAllBits()[0]))
       overall_bb.StoreBits( (payload, bytes_to_consume*8))
       payload = payload[bytes_to_consume:]
       payload_len -= bytes_allowed
@@ -646,13 +618,15 @@ class Spdy4SeDer(object):  # serializer deserializer
         break
     if verbose >= 5:
       PrintHex(overall_bb.GetAllBits()[0])
+      print ''.join(descr)
 
     return overall_bb.GetAllBits()
 
   def DeserializeInstructions(self, frame, packing_instructions, huff):
     """ Takes SPDY4 wire-format data and de-serializes it into in-memory
     operations
-    It returns these operations.
+    It returns the group ID and these operations.
+    (group_id, ops)
     """
     ops = []
     bb = BitBucket()
@@ -712,19 +686,11 @@ class HeaderGroup(object):
   def Empty(self):
     return not self.hg_store
 
-  def TouchEntry(self, v_idx):
-    if v_idx is None:
-      raise StandardError()
-    self.hg_store.add(v_idx)
-
   def RemoveEntry(self, v_idx):
     try:
       self.hg_store.remove(v_idx)
     except KeyError:
       pass
-
-  def Toggle(self, v_idx):
-    self.hg_store.symmetric_difference_update([v_idx])
 
   def __repr__(self):
     return repr(self.hg_store)
@@ -732,22 +698,40 @@ class HeaderGroup(object):
 class Storage(object):
   """ This object keeps track of key and LRU ids, all keys and values, and the
   mechanism for expiring key/value entries as necessary"""
-  def __init__(self, max_byte_size, max_entries, max_index_size):
+  def __init__(self, max_byte_size, max_entries,
+               max_index_size, idx_from_end=None):
     self.static_storage = lrustorage.LruStorage()
+    self.idx_from_end = idx_from_end
     for k,v in g_default_kvs:
       self.static_storage.Store(lrustorage.KV(k,v))
     self.lru_storage = lrustorage.LruStorage(max_byte_size,
                                              max_entries,
                                              max_index_size,
                                              len(self.static_storage))
+  def LruIdxToHgIdx(self, idx):
+    if idx < len(self.lru_storage):
+      retval = self.lru_storage.ring[-(idx+1)].seq_num
+      #desc = 'a'
+    else:
+      retval = (len(self.static_storage) - 1) - (idx - len(self.lru_storage))
+      #desc = 'b'
+    #print "lru_idx: %d ->(%s) -> hg_idx: %d" %(idx, desc, retval)
+    return retval
+
+  def HgIdxToLruIdx(self, idx):
+    #desc = 'c'
+    retval = idx
+    if idx >= len(self.static_storage):
+      retval = self.lru_storage.SeqNumToIdxFromLeft(idx)
+      retval += len(self.static_storage)
+      #desc = 'd(%d)' % retval
+    retval = (len(self.lru_storage) + len(self.static_storage) - 1) - retval
+    #print "hg_idx: %d ->(%s)-> lru_idx: %d" %( idx, desc, retval)
+    return retval
+
 
   def SetRemoveValCB(self, remove_val_cb):
     self.lru_storage.pop_cb = remove_val_cb
-
-  def LookupFromIdx(self, entry_seqnum):
-    if entry_seqnum < len(self.static_storage):
-      return self.static_storage.Lookup(entry_seqnum)
-    return self.lru_storage.Lookup(entry_seqnum)
 
   def InsertVal(self, entry):
     if self.lru_storage.Reserve(entry, 1):
@@ -755,26 +739,41 @@ class Storage(object):
       return self.lru_storage.ring[-1].seq_num
     return None
 
+  def LookupFromIdx(self, entry_seqnum, by_seqnum=None):
+    #if by_seqnum or not self.idx_from_end:
+      if entry_seqnum < len(self.static_storage):
+        return self.static_storage.Lookup(entry_seqnum)
+      return self.lru_storage.Lookup(entry_seqnum)
+    #else:
+    #  if entry_seqnum < len(self.lru_storage):
+    #    return self.lru_storage.LookupFromEnd(entry_seqnum)
+    #  static_idx = entry_seqnum - len(self.lru_storage)
+    #  return self.static_storage.LookupFromEnd(static_idx)
+
   def FindEntryIdx(self, key, val):
-    retval = [None, None]
-    (ke, ve) = self.lru_storage.FindKeyValEntries(key, val)
-    if ke is not None:
-      retval[0] = ke.seq_num
-      if ve is not None:
-        retval[1] = ve.seq_num
-      else:
-        (__, ve) = self.static_storage.FindKeyValEntries(key, val)
-        if ve is not None:
-          retval[1] = ve.seq_num
-    else:
-      (ke, ve) = self.static_storage.FindKeyValEntries(key, val)
-      if ke is not None:
-        retval[0] = ke.seq_num
-      if ve is not None:
-        retval[1] = ve.seq_num
-    #print "\t\tLooking for(%s, %s): found at: (%r, %r)" % \
-    #    (key, val, retval[0], retval[1])
-    return retval
+    #if not self.idx_from_end:
+      (ke_idx, ve_idx) = self.lru_storage.FindKeyValEntries(key, val)
+      if ve_idx is not None:
+        return (ke_idx, ve_idx)
+      if ke_idx:
+        (_, ve_idx) = self.static_storage.FindKeyValEntries(key, val)
+        return (ke_idx, ve_idx)
+      return self.static_storage.FindKeyValEntries(key, val)
+   # else:
+   #   (ke_idx, ve_idx) = self.lru_storage.FindKeyValEntriesFromEnd(key, val)
+   #   if ve_idx is not None:
+   #     return (ke_idx, ve_idx)
+   #   if ke_idx is not None:
+   #     (_, ve_idx) = self.static_storage.FindKeyValEntriesFromEnd(key, val)
+   #     if ve_idx is not None:
+   #       ve_idx += len(self.lru_storage)
+   #     return (ke_idx, ve_idx)
+   #   (ke_idx, ve_idx) = self.static_storage.FindKeyValEntriesFromEnd(key, val)
+   #   if ke_idx is not None:
+   #     ke_idx += len(self.lru_storage)
+   #   if ve_idx is not None:
+   #     ve_idx += len(self.lru_storage)
+   #   return (ke_idx, ve_idx)
 
   def __repr__(self):
     return repr(self.lru_storage)
@@ -806,7 +805,6 @@ class Spdy4CoDe(object):
     max_index = 2**16 - 1
     max_entries = 1024
 
-
     if 'max_byte_size' in param_dict:
       max_byte_size = int(param_dict['max_byte_size'])
     if 'max_entries' in param_dict:
@@ -820,19 +818,21 @@ class Spdy4CoDe(object):
       max_entries = min(max_index - len(g_default_kvs), max_entries)
 
     if IsTrueWithDefault(param_dict, 'varint_encoding', False):
-      self.packing_instructions['index']       = (8, PackVarInt, UnpackVarInt);
-      self.packing_instructions['index_start'] = (8, PackVarInt, UnpackVarInt);
+      self.packing_instructions['index']       = (0, PackVarInt, UnpackVarInt);
+      self.packing_instructions['index_start'] = (0, PackVarInt, UnpackVarInt);
 
     self.hg_adjust =       IsTrueWithDefault(param_dict, 'hg_adjust', False)
     self.implicit_hg_add = IsTrueWithDefault(param_dict, 'implicit_hg_add', False)
     self.refcnt_vals =     IsTrueWithDefault(param_dict, 'refcnt_vals', False)
     self.only_etoggles =   IsTrueWithDefault(param_dict, 'only_etoggles', False)
+    self.idx_from_end =    IsTrueWithDefault(param_dict, 'idx_from_end', False)
 
     self.options = options
     self.header_groups = {}
     self.huffman = None
     #self.wf = WordFreak()  # for figuring out the letter freq counts
-    self.storage = Storage(max_byte_size, max_entries, max_index)
+    self.storage = Storage(max_byte_size, max_entries,
+                           max_index,self.idx_from_end)
     def RemoveVIdxFromAllHeaderGroups(entry):
       v_idx = entry.seq_num
       to_be_removed = []
@@ -845,18 +845,57 @@ class Spdy4CoDe(object):
 
     self.storage.SetRemoveValCB(RemoveVIdxFromAllHeaderGroups)
 
+  def TranslateOpIdxFromHgToLru(self, in_ops):
+    if not self.idx_from_end:
+      return
+
+    if type(in_ops) == dict:
+      for op_type, ops in in_ops.iteritems():
+        self.TranslateOpIdxFromHgToLru(ops)
+      return
+
+    for op in in_ops:
+      #print op
+      for key in ['index', 'index_start']:
+        if key in op:
+          op[key] = self.storage.HgIdxToLruIdx(op[key])
+
+  def TranslateOpIdxFromLruToHg(self, in_ops):
+    if not self.idx_from_end:
+      return
+
+    if type(in_ops) == dict:
+      for op_type, ops in in_ops.iteritems():
+        self.TranslateOpIdxFromLruToHg(ops)
+      return
+
+    for op in in_ops:
+      #print op
+      for key in ['index', 'index_start']:
+        if key in op:
+          op[key] = self.storage.LruIdxToHgIdx(op[key])
+
   def OpsToRealOps(self, in_ops, header_group):
     """ Packs in-memory format operations into wire format"""
     data = BitBucket()
-    PackOps(data, self.packing_instructions, in_ops, self.huffman,
-        header_group, self.options.verbose)
+    seder = Spdy4SeDer()
+
+    data.StoreBits(seder.SerializeInstructions(in_ops,
+                                               self.packing_instructions,
+                                               self.huffman,
+                                               0xffff, header_group,
+                                               True, self.options.verbose))
     return common_utils.ListToStr(data.GetAllBits()[0])
 
   def RealOpsToOps(self, realops):
     """ Unpacks wire format operations into in-memory format"""
     bb = BitBucket()
     bb.StoreBits((common_utils.StrToList(realops), len(realops)*8))
-    return UnpackOps(bb, self.packing_instructions, self.huffman)
+    seder = Spdy4SeDer()
+    (group_id, ops) = seder.DeserializeInstructions(bb,
+                                                    self.packing_instructions,
+                                                    self.huffman)
+    return (group_id, ops)
 
   def Compress(self, realops):
     """ basically does nothing"""
@@ -922,13 +961,6 @@ class Spdy4CoDe(object):
       self.header_groups[group_id] = HeaderGroup()
       return self.header_groups[group_id]
 
-  def TouchHeaderGroupEntry(self, group_id, v_idx):
-    if v_idx is None:
-      raise StandardError()
-    header_group = self.FindOrMakeHeaderGroup(group_id)
-    #print "\t\t\ttouching/adding idx: %r in group: %d" % (v_idx, group_id)
-    header_group.TouchEntry(v_idx)
-
   def MakeOperations(self, headers, group_id):
     """ Computes the entire set of operations necessary to encode the 'headers'
     for header-group 'group_id'
@@ -948,12 +980,14 @@ class Spdy4CoDe(object):
       for elem in splitlist:
         headers_set.add( (k, elem) )
 
+    #print "hg_store: ", self.header_groups[group_id].hg_store
     for idx in self.header_groups[group_id].hg_store:
-      entry = self.storage.LookupFromIdx(idx)
+      entry = self.storage.LookupFromIdx(idx, True)
       kv = (entry.key() , entry.val() )
+      #print "Looked up: (%d)" % idx, kv
       if kv in headers_set:
         # keep it.
-        keep_set.add(idx)
+        keep_set.add(idx) # only for debugging.
         headers_set.remove(kv)
       else:
         done_set.add(idx)
@@ -976,26 +1010,35 @@ class Spdy4CoDe(object):
       else:
         # kvsto
         instructions['skvsto'].append(self.MakeSKvsto(key, val) )
+    #print "Done set: ", done_set
+    #print "keep set: ", keep_set
 
+    #if self.idx_from_end:
+    #  done_set = set([self.storage.HgIdxToLruIdx(x) for x in done_set])
     full_toggl_list = stoggls.union(done_set)
     for idx in full_toggl_list:
       instructions['stoggl'].append(self.MakeSToggl(idx))
     self.MutateTogglesToTrangs(instructions)
 
+    self.TranslateOpIdxFromHgToLru(instructions)
     output_instrs = []
     for oplist in instructions.values():
-      output_instrs.extend(oplist)
+      output_instrs.extend(copy.deepcopy(oplist))
     #### If wishing to track stats, uncomment out the following.
     #g_stats.Process(self.storage, headers, output_instrs)
     #self.wf.LookAt(output_instrs)
+    #print "Compressor Executing: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     self.DecompressorExecuteOps(output_instrs, group_id)
+    #print "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DONE Compressor Executing"
     return instructions
 
   def RealOpsToOpAndExecute(self, realops):
     """ Deserializes from SPDY4 wire format and executes the operations"""
     (group_id, ops) = self.RealOpsToOps(realops)
     self.FindOrMakeHeaderGroup(group_id)  # make the header group if necessary
+    #print "Deompressor Executing: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY"
     headers = self.DecompressorExecuteOps(ops, group_id)
+    #print "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DONE Decompressor Executing"
     return (group_id, ops, headers)
 
   def Store(self, kv):
@@ -1009,6 +1052,8 @@ class Spdy4CoDe(object):
     etoggles = set()
     headers = dict()
     current_header_group = self.FindOrMakeHeaderGroup(group_id)
+
+    self.TranslateOpIdxFromLruToHg(ops)
 
     for op in ops:
       opcode = op['opcode']
@@ -1049,18 +1094,24 @@ class Spdy4CoDe(object):
         val = op['val']
         AppendToHeaders(headers, key, val)
 
+    #print self.storage.lru_storage.ring
+    #etoggles = set([self.storage.LruIdxToHgIdx(x) for x in etoggles])
+    #stoggles = set([self.storage.LruIdxToHgIdx(x) for x in stoggles])
+    #print "etoggles: ", etoggles
+    #print "stoggles: ", stoggles
+
     # modify and store the new header group.
     current_header_group.hg_store.symmetric_difference_update(stoggles)
     kv_references = etoggles.symmetric_difference(current_header_group.hg_store)
 
     for lru_idx in kv_references:
-      kv = self.storage.LookupFromIdx(lru_idx)
+      kv = self.storage.LookupFromIdx(lru_idx, True)
       AppendToHeaders(headers, kv.key(), kv.val())
 
     if self.hg_adjust:
       hg_store_later = []
       for lru_idx in sorted(current_header_group.hg_store):
-        kv = self.storage.LookupFromIdx(lru_idx)
+        kv = self.storage.LookupFromIdx(lru_idx, True)
         hg_store_later.append((kv, lru_idx));
     # Modify the LRU.
     for kv in store_later:

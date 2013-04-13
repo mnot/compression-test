@@ -69,9 +69,12 @@ class TestLruStorage(unittest.TestCase):
       s.Store(KV(key_fmt % i, val_fmt % i))
 
     (ke, ve) = s.FindKeyValEntries("key_009", "")
+    ke = s.Lookup(ke)
     self.assertEqual(ke.key(), "key_009")
     self.assertIsNone(ve)
     (ke, ve) = s.FindKeyValEntries("key_001", "val_001")
+    ke = s.Lookup(ke)
+    ve = s.Lookup(ve)
     self.assertEqual(ke.key(), "key_001")
     self.assertEqual(ve.key(), "key_001")
     self.assertEqual(ve.val(), "val_001")
@@ -106,14 +109,9 @@ class TestLruStorage(unittest.TestCase):
     self.assertEqual(len(s.ring), 0)
 
     caught_error = 0
-    try:
-      s.PopOne()
-    except:
-      caught_error = 1
-      pass
-    if not caught_error:
-      self.fail("Did PopOne() with empty LruStorage, and got no error!?")
-      return
+    retval = s.PopOne()
+    if retval:
+      self.fail("Failure: PopOne() didn't return false when no elements to pop!")
 
   def test_Reserve(self):
     max_items = 10
@@ -132,7 +130,7 @@ class TestLruStorage(unittest.TestCase):
           self.fail("This shouldn't have worked. Error.")
           return
         except MemoryError as me:
-          s.Reserve(kv.ByteSize(), 1)
+          s.Reserve(kv, 1)
           kv = KV(key_fmt % i, val_fmt % i)
           s.Store(kv)
     s = LruStorage(20, max_items)
@@ -143,7 +141,7 @@ class TestLruStorage(unittest.TestCase):
       self.fail("This shouldn't have worked. Error.")
       return
     except MemoryError as me:
-      s.Reserve(11,1)
+      s.Reserve(KV("12345","123456"),1)
       s.Store(KV("12345", "678901"))
       self.assertEqual(len(s.ring), 1)
 
@@ -156,7 +154,7 @@ class TestLruStorage(unittest.TestCase):
     val_fmt = "val_%06d"
     for i in xrange(max_items + max_items/2):
       kv = KV(key_fmt % i, val_fmt % i)
-      s.Reserve(kv.ByteSize(), 1)
+      s.Reserve(kv, 1)
       s.Store(kv)
     for i in xrange(max_items/2, max_items + max_items/2):
       key_str = key_fmt % i
@@ -177,7 +175,7 @@ class TestLruStorage(unittest.TestCase):
         idx = offset
       key_str = key_fmt % idx
       kv = KV(key_fmt % idx, val_fmt % idx)
-      s.Reserve(kv.ByteSize(), 1)
+      s.Reserve(kv, 1)
       s.Store(kv)
       item = s.Lookup(idx)
       self.assertEqual(item.seq_num, idx)

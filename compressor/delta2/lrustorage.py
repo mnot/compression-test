@@ -102,10 +102,12 @@ class LruStorage:
   def Store(self, item):
     item_byte_size = item.ByteSize()
     if self.max_bytes is not None and self.byte_size + item_byte_size > self.max_bytes:
-      print self.max_bytes
-      print self.byte_size
-      print item.ByteSize()
-      raise MemoryError("max_bytes exceeded")
+      error_string =' '.join([
+        "Max bytes exceeded",
+        "max bytes: %d" % self.max_bytes,
+        "self.byte_size: %d" % self.byte_size,
+        "item.ByteSize: %d" % item.ByteSize()])
+      raise MemoryError(error_string)
     if self.max_items and (self.max_items < (len(self.ring) + 1)):
       raise MemoryError("max_items exceeded")
     item.seq_num = self.seq_num
@@ -115,38 +117,45 @@ class LruStorage:
     self.byte_size += item_byte_size
     self.ring.append(item)
 
-  def Lookup(self, seq_num):
+  def SeqNumToIdxFromLeft(self, seq_num):
+    #print "\tlen(ring): ", len(self.ring),
     first_seq_num = self.ring[0].seq_num
     if seq_num < self.offset:
       raise IndexError("Negative indices unsupported: ", seq_num)
     if first_seq_num > seq_num:
-      #print "fsn: %d, sn: %d" % (first_seq_num, seq_num)
+      #print " fsn: %d, sn: %d" % (first_seq_num, seq_num)
       if self.max_seq_num:
-        #print "a ",;
+        #print " A ",
         lru_idx = (self.max_seq_num - first_seq_num) + (seq_num - self.offset)
       else:
         raise IndexError("MaxSeqNum not defined and "
                          "seq_num(%d) < first_seq_num(%d)" %
                          (seq_num, first_seq_num))
     else:
-      #print "b ",;
+      #print " B ",
       lru_idx = seq_num - first_seq_num
+    #print "idx_from_left: ", lru_idx
+    return lru_idx
+
+  def Lookup(self, seq_num):
+    lru_idx = self.SeqNumToIdxFromLeft(seq_num)
     #print "Looking up: ", lru_idx
     try:
       entry = self.ring[lru_idx]
     except IndexError:
       print self.ring
+      print "len(ring): ", len(self.ring)
       print "lru_idx: ", lru_idx
-      print "first_seq_num:", first_seq_num
       print "seq_num requested:", seq_num
+      print "first_seq_num:", self.ring[0].seq_num
       raise
     if entry.seq_num != seq_num:
       print "Something strange has happened"
       print "entry: ", entry
       print self.ring
       print "lru_idx: ", lru_idx
-      print "first_seq_num:", first_seq_num
       print "seq_num requested:", seq_num
+      print "first_seq_num:", self.ring[0].seq_num
       raise StandardError()
     return entry
 
@@ -159,12 +168,12 @@ class LruStorage:
       if khash == item.khash and item.key() == key:
         ke = item
         if kvhash == item.kvhash and item.val() == val:
-          return (item, item)
+          return (item.seq_num, item.seq_num)
         for j in xrange(i - 1, -1, -1):
           item = self.ring[j]
           if kvhash == item.kvhash and item.key() == key and item.val() == val:
-            return (item, item)
-        return (ke, None)
+            return (item.seq_num, item.seq_num)
+        return (ke.seq_num, None)
     return (None, None)
 
   def __len__(self):
