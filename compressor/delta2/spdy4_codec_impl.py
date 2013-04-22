@@ -97,7 +97,7 @@ g_default_kvs = [
 # If strings_padded_to_byte_boundary is true, then it is potentially faster
 # (in an optimized implementation) to decode/encode, at the expense of some
 # compression efficiency.
-g_strings_padded_to_byte_boundary = 0
+g_strings_padded_to_byte_boundary = 1
 
 # if strings_use_huffman is false, then strings will not be encoded with
 # huffman encoding
@@ -147,15 +147,14 @@ def UnpackVarInt(inp_stream, bitlen, huff):
   if val < 0x0f:
     return val
 
-  val = inp_stream.GetBits8()
-  if val < 0xff:
-    return val
+  n = inp_stream.GetBits4()
+  shift = 0
+  val += (n & 0x7) << shift
 
-  val = inp_stream.GetBits16()
-  if val < 0xffff:
-    return val
-
-  val = inp_stream.GetBits32()
+  while n & 0x8:
+    n = inp_stream.GetBits4()
+    shift += 3
+    val += (n & 0x7) << shift
   return val
 
 def UnpackStr(input_data, params, huff):
@@ -231,25 +230,17 @@ def PackInt(data, bitlen, val, huff):
 
 def PackVarInt(data, bitlen, val, huff):
   assert val >= 0
+
   if val < 0x0f:
-    data.StoreBits4(val)
+    data.StoreBits4(val & 0xf)
     return
+  data.StoreBits4(0xf)
 
-  if val < 0xff:
-    data.StoreBits4(0x0f)
-    data.StoreBits8(val)
-    return
-
-  if val < 0xffff:
-    data.StoreBits4(0x0f)
-    data.StoreBits8(0xff)
-    data.StoreBits16(val)
-    return
-
-  data.StoreBits4(0x0f)
-  data.StoreBits8(0xff)
-  data.StoreBits16(0xffff)
-  data.StoreBits32(val)
+  val -= 0xf
+  while val > 0x7:
+    data.StoreBits4(0x8 | (val & 0x7))
+    val = val >> 3
+  data.StoreBits4(val & 0x7)
 
 def PackStr(data, params, val, huff):
   """
@@ -386,6 +377,7 @@ class Stats:
     def __init__(self, length):
       self.count = 1
       self.vlen = length
+
     def __repr__(self):
       return "{'c': %d, 'vlen': %d}" % (self.count, self.vlen)
   class HeaderBytesSentStat:
@@ -407,6 +399,7 @@ class Stats:
     self.op_stats = {}
     # histogram of dist-from-end
     self.idx_stats = {}
+    self.wf = {}
 
   def __str__(self):
     return '\n'.join(["raw_header_stats=" + repr(self.raw_header_stats),
@@ -426,60 +419,63 @@ class Stats:
       lru_idx = seq_num - first_seq_num
     return len(storage.lru_storage.ring) - lru_idx
 
-  def Process(self, storage, headers, ops):
-    def AddHeaderByteSentStats(key, klen, vlen):
-      try:
-        self.header_bytes_sent_stats[key].count += 1
-        self.header_bytes_sent_stats[key].vlen += vlen
-        self.header_bytes_sent_stats[key].klen += klen
-      except:
-        self.header_bytes_sent_stats[key] = Stats.HeaderBytesSentStat(klen,
-                                                                      vlen)
+  def Process(self, storage, headers, ops, description):
+    #def AddHeaderByteSentStats(key, klen, vlen):
+    #  try:
+    #    self.header_bytes_sent_stats[key].count += 1
+    #    self.header_bytes_sent_stats[key].vlen += vlen
+    #    self.header_bytes_sent_stats[key].klen += klen
+    #  except:
+    #    self.header_bytes_sent_stats[key] = Stats.HeaderBytesSentStat(klen,
+    #                                                                  vlen)
     ##
-    opcounts = {'stoggl': 0, 'etoggl': 0,
-                'strang': 0, 'etrang': 0,
-                'sclone': 0, 'eclone': 0,
-                'skvsto': 0, 'ekvsto': 0}
+    if not description in self.wf:
+      self.wf[description] = WordFreak()
+    self.wf[description].LookAt(ops)
+    #opcounts = {'stoggl': 0, 'etoggl': 0,
+    #            'strang': 0, 'etrang': 0,
+    #            'sclone': 0, 'eclone': 0,
+    #            'skvsto': 0, 'ekvsto': 0}
 
-    for k,v in headers.iteritems():
-      nulls = 0
-      for i in v:
-        if i == '\0':
-          nulls += 1
-      try:
-        self.raw_header_stats[k].count += 1 + nulls
-        self.raw_header_stats[k].vlen += len(v) - nulls
-      except:
-        self.raw_header_stats[k] = Stats.HeaderStat(len(v) - nulls)
-        self.raw_header_stats[k].count += nulls
+    #for k,v in headers.iteritems():
+    #  nulls = 0
+    #  for i in v:
+    #    if i == '\0':
+    #      nulls += 1
+    #  try:
+    #    self.raw_header_stats[k].count += 1 + nulls
+    #    self.raw_header_stats[k].vlen += len(v) - nulls
+    #  except:
+    #    self.raw_header_stats[k] = Stats.HeaderStat(len(v) - nulls)
+    #    self.raw_header_stats[k].count += nulls
 
-    # process distances from the end and construct op fieldcounts
-    # for this set of ops.
-    for op in ops:
-      opcode = op['opcode']
-      opcounts[opcode] += 1
-      # handle counting bytes sent.
-      if opcode[1:] == 'clone':
-        idx = op['index']
-        kv = storage.LookupFromIdx(idx)
-        AddHeaderByteSentStats(kv.key(), 0, len(op['val']))
-      elif opcode[1:] == 'kvsto':
-        AddHeaderByteSentStats(op['key'], len(op['key']), len(op['val']))
+    ## process distances from the end and construct op fieldcounts
+    ## for this set of ops.
+    #for op in ops:
+    #  opcode = op['opcode']
+    #  opcounts[opcode] += 1
+    #  # handle counting bytes sent.
+    #  if opcode[1:] == 'clone':
+    #    idx = op['index']
+    #    kv = storage.LookupFromIdx(idx)
+    #    AddHeaderByteSentStats(kv.key(), 0, len(op['val']))
+    #  elif opcode[1:] == 'kvsto':
+    #    AddHeaderByteSentStats(op['key'], len(op['key']), len(op['val']))
 
-      for name in ['index', 'index_start']:
-        if name in op:
-          idx = op[name]
-          try:
-            self.idx_stats[self.DistFromNewest(storage, idx)] += 1
-          except:
-            self.idx_stats[self.DistFromNewest(storage, idx)] = 1
+    #  for name in ['index', 'index_start']:
+    #    if name in op:
+    #      idx = op[name]
+    #      try:
+    #        self.idx_stats[self.DistFromNewest(storage, idx)] += 1
+    #      except:
+    #        self.idx_stats[self.DistFromNewest(storage, idx)] = 1
 
-    # Now deal with operation field count frequencies.
-    for k in opcounts.keys():
-      if not k in self.op_stats:
-        self.op_stats[k] = {}
-    for k,v in opcounts.iteritems():
-      self.op_stats[k].__setitem__(v, self.op_stats[k].get(v,0) + 1)
+    ## Now deal with operation field count frequencies.
+    #for k in opcounts.keys():
+    #  if not k in self.op_stats:
+    #    self.op_stats[k] = {}
+    #for k,v in opcounts.iteritems():
+    #  self.op_stats[k].__setitem__(v, self.op_stats[k].get(v,0) + 1)
 
 g_stats = Stats()
 
@@ -586,12 +582,11 @@ class Spdy4SeDer(object):  # serializer deserializer
     payload_bb = BitBucket()
     for opcode, oplist in ops.iteritems():
       self.OutputOps(packing_instructions, huff, payload_bb, oplist, opcode)
-      #payload_bb.PadBytesToByteBoundary()
-      if verbose >= 5:
-        tmp_bb = BitBucket()
-        self.OutputOps(packing_instructions, huff, tmp_bb, oplist, opcode)
-        descr.append(FormatHex(tmp_bb.GetAllBits()[0]))
-        descr.append("\n")
+      #if verbose >= 5:
+      #  tmp_bb = BitBucket()
+      #  self.OutputOps(packing_instructions, huff, tmp_bb, oplist, opcode)
+      #  descr.append(FormatHex(tmp_bb.GetAllBits()[0]))
+      #  descr.append("\n")
 
     (payload, payload_len) = payload_bb.GetAllBits()
     payload_len = (payload_len + 7) / 8  # partial bytes are counted as full
@@ -817,7 +812,7 @@ class Spdy4CoDe(object):
       max_index = 256 - 1
       max_entries = min(max_index - len(g_default_kvs), max_entries)
 
-    if IsTrueWithDefault(param_dict, 'varint_encoding', False):
+    if IsTrueWithDefault(param_dict, 'varint_encoding', True):
       self.packing_instructions['index']       = (0, PackVarInt, UnpackVarInt);
       self.packing_instructions['index_start'] = (0, PackVarInt, UnpackVarInt);
 
@@ -825,7 +820,7 @@ class Spdy4CoDe(object):
     self.implicit_hg_add = IsTrueWithDefault(param_dict, 'implicit_hg_add', False)
     self.refcnt_vals =     IsTrueWithDefault(param_dict, 'refcnt_vals', False)
     self.only_etoggles =   IsTrueWithDefault(param_dict, 'only_etoggles', False)
-    self.idx_from_end =    IsTrueWithDefault(param_dict, 'idx_from_end', False)
+    self.idx_from_end =    IsTrueWithDefault(param_dict, 'idx_from_end', True)
 
     self.options = options
     self.header_groups = {}
@@ -1025,8 +1020,7 @@ class Spdy4CoDe(object):
     for oplist in instructions.values():
       output_instrs.extend(copy.deepcopy(oplist))
     #### If wishing to track stats, uncomment out the following.
-    #g_stats.Process(self.storage, headers, output_instrs)
-    #self.wf.LookAt(output_instrs)
+    g_stats.Process(self.storage, headers, output_instrs, self.description)
     #print "Compressor Executing: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     self.DecompressorExecuteOps(output_instrs, group_id)
     #print "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DONE Compressor Executing"
@@ -1131,6 +1125,7 @@ class Spdy4CoDe(object):
     return headers
 
   def Done(self):
+    print g_stats.wf
     pass
 
 
