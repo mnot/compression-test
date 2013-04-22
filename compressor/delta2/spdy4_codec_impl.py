@@ -1125,7 +1125,7 @@ class Spdy4CoDe(object):
     return headers
 
   def Done(self):
-    print g_stats.wf
+    #print g_stats.wf
     pass
 
 
