@@ -1,10 +1,10 @@
-HTTP/2.0 Codec
-==============
+HPACK Codec
+===========
 
 Specification
 -------------
-This codec is an implementation of the HTTP/2.0 header compression at:
-https://datatracker.ietf.org/doc/draft-ietf-httpbis-header-compression/
+This codec is an implementation of HPACK (Header Compression for HTTP/2.0) which specification can be found at:
+https://datatracker.ietf.org/doc/draft-ietf-httpbis-header-compression/. More specifically, this codec implements the 3rd draft of this specification.
 
 Contents
 --------
