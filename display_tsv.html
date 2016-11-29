@@ -68,7 +68,7 @@ function display_tsv(filename, title) {
       return {
         name: name,
         values: data.map(function(d) {
-          return {num: d.num, csize: +d[name]};
+          return {num: d.num, stream: d["name"], csize: +d[name]};
         })
       };
     });
@@ -128,6 +128,24 @@ function display_tsv(filename, title) {
         .attr("dy", ".71em")
         .style("text-anchor", "end")
         .text("compressed size, bytes");
+
+    // stream labels
+    var lastLabel = null;
+    var streamLabels = items[1].values.forEach( function(i) {
+      if (lastLabel != i.stream) {
+        svg.append("g")
+          .attr("class", "note")
+          .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("text-anchor", "end")
+            .attr("y", x(i.num))
+            .attr("x", -25)
+            .text(i.stream);
+        svg.append("g")
+            
+        lastLabel = i.stream;
+      }
+    });
 
     // title
     svg.append("g")
