@@ -49,27 +49,7 @@ function display_tsv(filename, title) {
       width = 1200 - margin.left - margin.right,
       height = 600 - margin.top - margin.bottom;
 
-  var x = d3.scale.linear()
-      .range([0, width]);
-
-  var y = d3.scale.linear()
-      .range([height, 0]);
-
   var color = d3.scale.category10();
-
-  var xAxis = d3.svg.axis()
-      .scale(x)
-      .orient("bottom");
-
-  var yAxis = d3.svg.axis()
-      .scale(y)
-      .tickSize(-width)
-      .orient("left");
-
-  var line = d3.svg.line()
-      .interpolate("basis")
-      .x(function(d) { return x(d.num); })
-      .y(function(d) { return y(d.csize); });
 
   var svg = d3.select("body").append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -78,6 +58,7 @@ function display_tsv(filename, title) {
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   d3.tsv(filename, function(error, data) {
+
     var lines = d3.keys(data[0]).filter(function(key) {
       return ["num", "name"].indexOf(key) === -1;
     })
@@ -91,6 +72,26 @@ function display_tsv(filename, title) {
         })
       };
     });
+
+    var x = d3.scale.linear()
+        .range([0, width]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .tickSize(-width)
+        .orient("left");
+
+    var line = d3.svg.line()
+        .interpolate("basis")
+        .x(function(d) { return x(d.num); })
+        .y(function(d) { return y(d.csize); });
 
     // x scale
     x.domain([0, data.length]);
